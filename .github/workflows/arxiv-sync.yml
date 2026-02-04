@@ -1,0 +1,126 @@
+name: 📚 Sync arXiv Papers Daily
+
+on:
+  schedule:
+    # 每天北京时间9点 (UTC+8) = UTC 1点
+    - cron: '0 1 * * *'
+  
+  workflow_dispatch:  # 支持手动触发
+    inputs:
+      max_results:
+        description: '每个分类最多获取论文数'
+        required: false
+        default: '20'
+        type: string
+
+jobs:
+  sync-arxiv:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🐍 Set up Python 3.9
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: ⚙️ Create logs directory
+      run: |
+        mkdir -p logs output/validation
+    
+    - name: 🚀 Run arXiv sync
+      id: sync_arxiv
+      env:
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      run: |
+        python src/msgskill/scheduler.py --once --limit ${{ github.event.inputs.max_results || '20' }} 2>&1 | tee output/arxiv_sync_$(date +%Y%m%d_%H%M%S).log
+      continue-on-error: true
+    
+    - name: 🔍 Check for arXiv failures
+      id: check_failures
+      if: always()
+      run: |
+        LOG_FILE=$(ls -t output/arxiv_sync_*.log 2>/dev/null | head -1)
+        if [ -f "$LOG_FILE" ]; then
+          # 检查是否有错误标记
+          FAILED_CATEGORIES=$(grep -E "(同步失败|同步异常|Error fetching)" "$LOG_FILE" | wc -l | tr -d ' ')
+          
+          if [ "$FAILED_CATEGORIES" -gt 0 ]; then
+            echo "has_failures=true" >> $GITHUB_OUTPUT
+            echo "failed_count=$FAILED_CATEGORIES" >> $GITHUB_OUTPUT
+            
+            # 提取失败的分类信息
+            FAILED_LIST=$(grep -E "(同步失败|同步异常)" "$LOG_FILE" | head -10)
+            echo "FAILED_INFO<<EOF" >> $GITHUB_OUTPUT
+            echo "$FAILED_LIST" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "has_failures=false" >> $GITHUB_OUTPUT
+            echo "failed_count=0" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "has_failures=false" >> $GITHUB_OUTPUT
+          echo "failed_count=0" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 📧 Send arXiv failure notification
+      if: steps.check_failures.outputs.has_failures == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.126.com
+        server_port: 465
+        secure: true
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "⚠️ arXiv论文同步异常 - ${{ steps.check_failures.outputs.failed_count }}个分类失败"
+        to: liuyongshun2@126.com
+        from: ${{ secrets.EMAIL_USERNAME }}
+        body: |
+          arXiv论文同步发现异常
+          
+          失败数量: ${{ steps.check_failures.outputs.failed_count }}
+          同步时间: ${{ github.run_id }}
+          
+          失败信息:
+          ${{ steps.check_failures.outputs.FAILED_INFO }}
+          
+          详细日志请查看：
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          ---
+          此邮件由GitHub Actions自动发送
+    
+    - name: 💾 Commit data to repository
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add output/*.json
+        git commit -m "chore: update arXiv data $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        git push || echo "Nothing to push"
+    
+    - name: 📊 Upload sync logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: arxiv-sync-logs-${{ github.run_number }}
+        path: |
+          logs/
+          output/
+        retention-days: 7
+    
+    - name: 📝 Create sync summary
+      if: success()
+      run: |
+        echo "## 📚 arXiv 论文同步完成" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ 同步时间: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        echo "📊 数据已保存到 output/ 目录" >> $GITHUB_STEP_SUMMARY
+        echo "📋 同步日志已上传到 Artifacts" >> $GITHUB_STEP_SUMMARY

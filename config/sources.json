@@ -1,0 +1,695 @@
+{
+  "$schema": "./sources_schema.json",
+  "version": "1.1.0",
+  "last_updated": "2026-01-21",
+  "sources": {
+    "news": {
+      "hackernews": {
+        "enabled": true,
+        "name": "Hacker News",
+        "type": "api",
+        "api_base_url": "https://hacker-news.firebaseio.com/v0",
+        "description": "科技新闻社区，聚焦创业、编程、AI等话题。支持topstories(热门)、newstories(最新)、beststories(高分)三类，使用AI模型批量判断标题是否与AI相关",
+        "fetch_limit": {
+          "default": 10,
+          "max": 50
+        },
+        "cache_ttl": 300,
+        "keywords": [
+          "ai",
+          "artificial intelligence",
+          "machine learning",
+          "ml",
+          "deep learning",
+          "neural network",
+          "llm",
+          "large language model",
+          "gpt",
+          "claude",
+          "gemini",
+          "chatgpt",
+          "openai",
+          "anthropic",
+          "transformer",
+          "nlp",
+          "computer vision",
+          "generative ai"
+        ],
+        "story_types": [
+          "top",
+          "new",
+          "best"
+        ],
+        "ai_filter_enabled": true
+      }
+    },
+    "rss": {
+      "mit_tech_review": {
+        "enabled": true,
+        "name": "MIT Technology Review AI",
+        "url": "https://www.technologyreview.com/feed/",
+        "description": "MIT科技评论AI频道",
+        "category": "technology_news",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "openai_blog": {
+        "enabled": true,
+        "name": "OpenAI News",
+        "url": "https://openai.com/news/rss.xml",
+        "description": "OpenAI官方新闻",
+        "category": "company_blog",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "google_ai": {
+        "enabled": false,
+        "name": "Google AI Blog",
+        "url": "https://ai.google/discover/rss.xml",
+        "description": "Google AI官方博客",
+        "category": "company_blog",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "status": "已禁用",
+        "note": "RSS源不稳定，暂时禁用",
+        "ai_filter_enabled": true
+      },
+      "huggingface": {
+        "enabled": false,
+        "name": "Hugging Face Blog",
+        "url": "https://rsshub.app/huggingface/daily-papers",
+        "description": "Hugging Face官方博客",
+        "category": "company_blog",
+        "tags": [
+          "AI工具",
+          "技术博客"
+        ],
+        "status": "已禁用",
+        "note": "RSS源不稳定，暂时禁用",
+        "ai_filter_enabled": true
+      },
+      "deeplearning_ai": {
+        "enabled": true,
+        "name": "The Batch (DeepLearning.AI)",
+        "url": "https://www.deeplearning.ai/feed/",
+        "description": "Andrew Ng的AI周报",
+        "category": "newsletter",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "sebastian_raschka": {
+        "enabled": true,
+        "name": "AI News (Sebastian Raschka)",
+        "url": "https://magazine.sebastianraschka.com/feed",
+        "description": "Sebastian Raschka的AI杂志",
+        "category": "personal_blog",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "anthropic_blog": {
+        "enabled": true,
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news.rss",
+        "description": "Anthropic官方博客",
+        "category": "company_blog",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "meta_ai": {
+        "enabled": true,
+        "name": "Meta AI Blog",
+        "url": "https://rsshub.app/meta/ai/blog",
+        "description": "Meta AI官方博客",
+        "category": "company_blog",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "microsoft_ai": {
+        "enabled": true,
+        "name": "Microsoft AI Blog",
+        "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
+        "description": "Microsoft AI研究博客",
+        "category": "company_blog",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "langchain_blog": {
+        "enabled": true,
+        "name": "LangChain Blog",
+        "url": "https://blog.langchain.dev/rss/",
+        "description": "LangChain官方博客",
+        "category": "engineering",
+        "tags": [
+          "AI工具",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "llamaindex_blog": {
+        "enabled": false,
+        "name": "LlamaIndex Blog",
+        "url": "https://blog.llamaindex.ai/feed",
+        "description": "LlamaIndex官方博客",
+        "category": "engineering",
+        "tags": [
+          "AI工具",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "techmeme": {
+        "enabled": true,
+        "name": "Techmeme",
+        "url": "https://www.techmeme.com/feed.xml",
+        "description": "科技新闻聚合网站",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "techcrunch": {
+        "enabled": true,
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "description": "TechCrunch AI频道",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "sequoia_blog": {
+        "enabled": true,
+        "name": "Sequoia Capital Blog",
+        "url": "https://www.sequoiacap.com/feed/",
+        "description": "红杉资本博客（关注AI趋势）",
+        "category": "trends",
+        "tags": [
+          "AI资讯",
+          "趋势分析"
+        ],
+        "ai_filter_enabled": true
+      },
+      "a16z_blog": {
+        "enabled": true,
+        "name": "a16z Blog",
+        "url": "https://a16z.com/feed/",
+        "description": "a16z博客（关注AI趋势）",
+        "category": "trends",
+        "tags": [
+          "AI资讯",
+          "趋势分析"
+        ],
+        "ai_filter_enabled": true
+      },
+      "thoughtworks": {
+        "enabled": true,
+        "name": "Thoughtworks Insights",
+        "url": "https://www.thoughtworks.com/insights/rss",
+        "description": "Thoughtworks技术洞察",
+        "category": "trends",
+        "tags": [
+          "AI资讯",
+          "趋势分析"
+        ],
+        "ai_filter_enabled": true
+      },
+      "gartner": {
+        "enabled": true,
+        "name": "Gartner Blog",
+        "url": "https://www.gartner.com/en/newsroom/rss",
+        "description": "Gartner技术趋势分析",
+        "category": "trends",
+        "tags": [
+          "AI资讯",
+          "趋势分析"
+        ],
+        "ai_filter_enabled": true
+      },
+      "product_hunt": {
+        "enabled": true,
+        "name": "Product Hunt AI Tools",
+        "url": "https://www.producthunt.com/feed?category=artificial_intelligence",
+        "description": "Product Hunt AI工具",
+        "category": "ai_tools",
+        "tags": [
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "futurepedia": {
+        "enabled": true,
+        "name": "Futurepedia",
+        "url": "https://www.futurepedia.io/rss",
+        "description": "Futurepedia AI工具目录",
+        "category": "ai_tools",
+        "tags": [
+          "AI工具"
+        ],
+        "ai_filter_enabled": true
+      },
+      "huggingface_daily_papers": {
+        "enabled": true,
+        "name": "Hugging Face Daily Papers",
+        "url": "https://huggingface.co/papers/rss",
+        "description": "Hugging Face每日论文",
+        "category": "papers",
+        "tags": [
+          "AI论文"
+        ],
+        "ai_filter_enabled": true
+      },
+      "sspai": {
+        "enabled": true,
+        "name": "少数派",
+        "url": "https://sspai.com/feed",
+        "description": "少数派科技深度内容",
+        "category": "news",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "arstechnica": {
+        "enabled": true,
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/feed/",
+        "description": "Ars Technica 极客视角科技新闻",
+        "category": "technology_news",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "theneuron": {
+        "enabled": false,
+        "name": "The Neuron",
+        "url": "https://theneuron.ai/feed",
+        "description": "The Neuron AI应用和工具（Newsletter，需验证RSS）",
+        "category": "newsletter",
+        "tags": [
+          "AI资讯",
+          "AI工具"
+        ],
+        "status": "未完成",
+        "note": "Newsletter类型，RSS feed需验证",
+        "ai_filter_enabled": true
+      },
+      "qbitai": {
+        "enabled": true,
+        "name": "量子位 (QbitAI)",
+        "url": "https://www.qbitai.com/feed",
+        "description": "量子位AI产业动态（官方RSS）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "jiqizhixin": {
+        "enabled": true,
+        "name": "机器之心",
+        "url": "https://www.jiqizhixin.com/rss",
+        "description": "机器之心AI专业媒体（官方RSS）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "huxiu": {
+        "enabled": true,
+        "name": "虎嗅",
+        "url": "https://rsshub.rssforever.com/huxiu/article",
+        "description": "虎嗅商业科技评论（通过RSSHub）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "geekpark": {
+        "enabled": false,
+        "name": "极客公园",
+        "url": "https://incomplete.placeholder",
+        "description": "极客公园科技媒体（需验证RSS）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "status": "未完成",
+        "note": "RSS feed需验证",
+        "ai_filter_enabled": true
+      },
+      "36kr_ai": {
+        "enabled": true,
+        "name": "36氪AI",
+        "url": "http://localhost:8878/36kr/information/AI",
+        "description": "36氪AI行业资讯（通过RSSHub）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "tmtpost": {
+        "enabled": true,
+        "name": "钛媒体",
+        "url": "https://rsshub.app/tmtpost/column/6916385",
+        "description": "钛媒体科技媒体（通过RSSHub）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "juejin": {
+        "enabled": false,
+        "name": "掘金",
+        "url": "https://incomplete.placeholder",
+        "description": "掘金技术社区（需官方API）",
+        "category": "tech_community",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "status": "未完成",
+        "note": "需要通过官方API接口，非RSS",
+        "ai_filter_enabled": true
+      },
+      "infoq": {
+        "enabled": true,
+        "name": "InfoQ",
+        "url": "https://feed.infoq.com/",
+        "description": "InfoQ技术社区（官方RSS）",
+        "category": "tech_community",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": true
+      },
+      "ithome": {
+        "enabled": true,
+        "name": "IT之家",
+        "url": "https://www.ithome.com/rss/",
+        "description": "IT之家科技新闻（官方RSS）",
+        "category": "news",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "v2ex": {
+        "enabled": true,
+        "name": "V2EX",
+        "url": "https://www.v2ex.com/feed/tab/tech.xml",
+        "description": "V2EX技术社区（官方RSS）",
+        "category": "tech_community",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": true
+      },
+      "coolapk": {
+        "enabled": false,
+        "name": "酷安",
+        "url": "https://incomplete.placeholder",
+        "description": "酷安应用社区（需官方API）",
+        "category": "tech_community",
+        "tags": [
+          "AI资讯"
+        ],
+        "status": "未完成",
+        "note": "需要通过官方API接口，非RSS",
+        "ai_filter_enabled": true
+      },
+      "tldr_tech": {
+        "enabled": false,
+        "name": "TLDR Tech",
+        "url": "https://incomplete.placeholder",
+        "description": "TLDR Tech每日科技/AI精华（Newsletter）",
+        "category": "newsletter",
+        "tags": [
+          "AI资讯"
+        ],
+        "status": "未完成",
+        "note": "Newsletter类型，非RSS，需邮件流处理",
+        "ai_filter_enabled": true
+      },
+      "therundown_ai": {
+        "enabled": false,
+        "name": "The Rundown AI",
+        "url": "https://incomplete.placeholder",
+        "description": "The Rundown AI全球最大AI社区（Newsletter）",
+        "category": "newsletter",
+        "tags": [
+          "AI资讯"
+        ],
+        "status": "未完成",
+        "note": "Newsletter类型，非RSS，需邮件流处理",
+        "ai_filter_enabled": true
+      }
+    },
+    "github": {
+      "trending_daily": {
+        "enabled": true,
+        "name": "GitHub Trending (Daily)",
+        "type": "api",
+        "api_base_url": "https://api.github.com",
+        "description": "GitHub每日趋势项目（AI相关）。支持pushed(最近推送)、created(最近创建)、stars(高热度)三类，支持Python/JavaScript/TypeScript/Rust四种语言，使用AI模型批量判断项目是否与AI相关",
+        "fetch_limit": {
+          "default": 20,
+          "max": 50
+        },
+        "cache_ttl": 3600,
+        "languages": [
+          "python",
+          "javascript",
+          "typescript",
+          "rust"
+        ],
+        "topics": [
+          "ai"
+        ],
+        "trending_types": [
+          "pushed",
+          "created",
+          "stars"
+        ],
+        "star_limits": {
+          "pushed": 500,
+          "created": 100,
+          "stars": 500
+        },
+        "ai_filter_enabled": true
+      }
+    },
+    "arxiv": {
+      "cs_ai": {
+        "enabled": true,
+        "name": "Artificial Intelligence",
+        "category": "cs.AI",
+        "description": "人工智能领域论文",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_lg": {
+        "enabled": true,
+        "name": "Machine Learning",
+        "category": "cs.LG",
+        "description": "机器学习领域论文",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_cl": {
+        "enabled": true,
+        "name": "Computation and Language (NLP)",
+        "category": "cs.CL",
+        "description": "自然语言处理领域论文",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_cv": {
+        "enabled": true,
+        "name": "Computer Vision",
+        "category": "cs.CV",
+        "description": "计算机视觉领域论文",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_ne": {
+        "enabled": true,
+        "name": "Neural and Evolutionary Computing",
+        "category": "cs.NE",
+        "description": "神经网络与进化计算",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_ro": {
+        "enabled": true,
+        "name": "Robotics",
+        "category": "cs.RO",
+        "description": "机器人领域论文",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "stat_ml": {
+        "enabled": true,
+        "name": "Machine Learning (Statistics)",
+        "category": "stat.ML",
+        "description": "统计学中的机器学习",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_ir": {
+        "enabled": true,
+        "name": "Information Retrieval",
+        "category": "cs.IR",
+        "description": "信息检索（RAG、向量检索、检索增强生成）",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_se": {
+        "enabled": true,
+        "name": "Software Engineering",
+        "category": "cs.SE",
+        "description": "软件工程（AI辅助编程、代码大模型）",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_ma": {
+        "enabled": true,
+        "name": "Multiagent Systems",
+        "category": "cs.MA",
+        "description": "多智能体系统（Multi-Agent、协作AI）",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_hc": {
+        "enabled": true,
+        "name": "Human-Computer Interaction",
+        "category": "cs.HC",
+        "description": "人机交互（AI Agent界面、交互设计）",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "cs_dc": {
+        "enabled": true,
+        "name": "Distributed Computing",
+        "category": "cs.DC",
+        "description": "分布式计算（大模型训练、推理优化）",
+        "tags": [
+          "AI论文"
+        ]
+      },
+      "eess_as": {
+        "enabled": true,
+        "name": "Audio and Speech Processing",
+        "category": "eess.AS",
+        "description": "音频与语音处理（语音大模型）",
+        "tags": [
+          "AI论文"
+        ]
+      }
+    }
+  },
+  "global_settings": {
+    "default_cache_ttl": 300,
+    "default_fetch_limit": 10,
+    "max_fetch_limit": 50,
+    "request_timeout": 30,
+    "user_agent": "Mozilla/5.0 (compatible; MsgSkill/1.0; +https://github.com/msgskill)",
+    "maintenance": {
+      "log_retention_days": 7,
+      "cache_retention_days": 30,
+      "auto_cleanup": {
+        "enabled": true,
+        "log_cleanup_time": "03:00",
+        "cache_cleanup_time": "02:00",
+        "cache_cleanup_day": "sunday",
+        "note": "自动清理配置：日志每天3点清理，缓存每周日2点清理"
+      }
+    },
+    "scheduler": {
+      "enabled": true,
+      "tasks": {
+        "arxiv": {
+          "enabled": false,
+          "time": "11:00",
+          "max_results": 20,
+          "note": "每个分类最多抓取的论文数（优化token消耗：从50减少到20）",
+          "translation_strategy": {
+            "enabled": true,
+            "selective_translation": true,
+            "min_authors": 2,
+            "note": "选择性翻译：只翻译作者数>=2的高质量论文"
+          }
+        },
+        "hackernews": {
+          "enabled": true,
+          "time": ["10:20", "14:05", "17:20", "20:40"],
+          "max_results": 50,
+          "note": "控制原始抓取数量，AI筛选后的所有结果都会保存"
+        },
+        "rss": {
+          "enabled": true,
+          "time": ["10:20", "14:05", "17:20", "20:40"],
+          "max_results": 20,
+          "note": "每个RSS源最多抓取的条目数，AI筛选后的所有结果都会保存。每天从06:00到21:00，每2小时同步一次（共9次）。"
+        },
+        "github": {
+          "enabled": false,
+          "time": "11:00",
+          "max_results": 100,
+          "note": "控制每种查询类型的抓取上限，AI筛选后的所有结果都会保存"
+        }
+      }
+    }
+  },
+  "llm": {
+    "enabled": true,
+    "provider": "deepseek",
+    "api_key": "",
+    "api_url": "https://api.deepseek.com/v1/chat/completions",
+    "model_name": "deepseek-chat",
+    "max_tokens": 1000,
+    "temperature": 0.3
+  }
+}

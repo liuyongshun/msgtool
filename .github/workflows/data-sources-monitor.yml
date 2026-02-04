@@ -1,0 +1,202 @@
+name: 🔍 Monitor All Data Sources
+
+on:
+  schedule:
+    # 每天北京时间21点 (UTC 13:00) 运行全面检查
+    - cron: '0 13 * * *'
+  
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  monitor-all-sources:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🐍 Set up Python 3.9
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: ⚙️ Create output directory
+      run: |
+        mkdir -p logs output/validation
+    
+    - name: 🧪 Test all data sources
+      id: test_sources
+      env:
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      run: |
+        echo "Testing all data sources..." > output/monitor_report.txt
+        echo "======================================" >> output/monitor_report.txt
+        echo "" >> output/monitor_report.txt
+        
+        # 1. 测试RSS源
+        echo "📰 Testing RSS Sources..." >> output/monitor_report.txt
+        python test/validate_sources.py > output/rss_test.log 2>&1 || true
+        RSS_FAILURES=$(grep -E "失败:|❌" output/rss_test.log | wc -l | tr -d ' ')
+        echo "RSS失败数: $RSS_FAILURES" >> output/monitor_report.txt
+        echo "" >> output/monitor_report.txt
+        
+        # 2. 测试GitHub
+        echo "🐙 Testing GitHub Trending..." >> output/monitor_report.txt
+        python -c "
+import asyncio
+import sys
+sys.path.insert(0, '.')
+from src.msgskill.tools.github_fetcher import fetch_github_trending
+
+async def test():
+    result = await fetch_github_trending(limit=5)
+    if not result.success:
+        print(f'GitHub Trending失败: {result.error}')
+        return 1
+    print(f'GitHub Trending正常: {result.total_count}个项目')
+    return 0
+
+sys.exit(asyncio.run(test()))
+        " >> output/monitor_report.txt 2>&1
+        GITHUB_STATUS=$?
+        
+        # 3. 测试Hacker News
+        echo "" >> output/monitor_report.txt
+        echo "📡 Testing Hacker News..." >> output/monitor_report.txt
+        python -c "
+import asyncio
+import sys
+sys.path.insert(0, '.')
+from src.msgskill.tools.news_scraper import fetch_ai_news
+
+async def test():
+    result = await fetch_ai_news(source='hackernews', limit=5)
+    if not result.success:
+        print(f'Hacker News失败: {result.error}')
+        return 1
+    print(f'Hacker News正常: {result.total_count}个新闻')
+    return 0
+
+sys.exit(asyncio.run(test()))
+        " >> output/monitor_report.txt 2>&1
+        HN_STATUS=$?
+        
+        # 4. 测试arXiv（测试一个分类即可）
+        echo "" >> output/monitor_report.txt
+        echo "📚 Testing arXiv..." >> output/monitor_report.txt
+        python -c "
+import asyncio
+import sys
+sys.path.insert(0, '.')
+from src.msgskill.tools.arxiv_fetcher import fetch_arxiv_papers
+
+async def test():
+    result = await fetch_arxiv_papers(category='cs.AI', max_results=3)
+    if 'error' in result and result['error']:
+        print(f'arXiv失败: {result[\"error\"]}')
+        return 1
+    count = result.get('count', 0)
+    print(f'arXiv正常: {count}篇论文')
+    return 0
+
+sys.exit(asyncio.run(test()))
+        " >> output/monitor_report.txt 2>&1
+        ARXIV_STATUS=$?
+        
+        # 汇总结果
+        echo "" >> output/monitor_report.txt
+        echo "======================================" >> output/monitor_report.txt
+        echo "📊 Summary:" >> output/monitor_report.txt
+        echo "- RSS源失败数: $RSS_FAILURES" >> output/monitor_report.txt
+        echo "- GitHub状态: $([ $GITHUB_STATUS -eq 0 ] && echo '✅ 正常' || echo '❌ 异常')" >> output/monitor_report.txt
+        echo "- Hacker News状态: $([ $HN_STATUS -eq 0 ] && echo '✅ 正常' || echo '❌ 异常')" >> output/monitor_report.txt
+        echo "- arXiv状态: $([ $ARXIV_STATUS -eq 0 ] && echo '✅ 正常' || echo '❌ 异常')" >> output/monitor_report.txt
+        
+        # 判断是否有失败
+        TOTAL_FAILURES=$((RSS_FAILURES + GITHUB_STATUS + HN_STATUS + ARXIV_STATUS))
+        
+        if [ $TOTAL_FAILURES -gt 0 ]; then
+          echo "has_failures=true" >> $GITHUB_OUTPUT
+          echo "total_failures=$TOTAL_FAILURES" >> $GITHUB_OUTPUT
+        else
+          echo "has_failures=false" >> $GITHUB_OUTPUT
+          echo "total_failures=0" >> $GITHUB_OUTPUT
+        fi
+        
+        # 输出到控制台
+        cat output/monitor_report.txt
+      continue-on-error: true
+    
+    - name: 📧 Send failure notification
+      if: steps.test_sources.outputs.has_failures == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.126.com
+        server_port: 465
+        secure: true
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "⚠️ 数据源监控告警 - 发现异常"
+        to: liuyongshun2@126.com
+        from: ${{ secrets.EMAIL_USERNAME }}
+        body: |
+          数据源每日监控发现异常
+          
+          检测时间: $(date +'%Y-%m-%d %H:%M:%S')
+          
+          异常统计: ${{ steps.test_sources.outputs.total_failures }}处
+          
+          详细报告已保存，请查看运行日志：
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          ---
+          建议：
+          1. 检查失败的数据源连接
+          2. 查看详细日志分析失败原因
+          3. 必要时更新配置或禁用失败源
+          
+          此邮件由GitHub Actions自动发送
+        attachments: output/monitor_report.txt
+    
+    - name: 💾 Save monitoring report
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        cp output/monitor_report.txt output/monitor_latest.txt
+        git add output/monitor_latest.txt
+        git commit -m "chore: update monitoring report $(date +'%Y-%m-%d')" || echo "No changes"
+        git push || echo "Nothing to push"
+    
+    - name: 📊 Upload monitoring results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: monitoring-report-${{ github.run_number }}
+        path: |
+          output/
+        retention-days: 30
+    
+    - name: 📝 Create summary
+      if: always()
+      run: |
+        echo "## 🔍 数据源监控报告" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "检测时间: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.test_sources.outputs.has_failures }}" == "true" ]; then
+          echo "⚠️ **发现异常**: ${{ steps.test_sources.outputs.total_failures }}处" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📧 已发送邮件通知到 liuyongshun2@126.com" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "✅ **所有数据源正常**" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "详细报告已保存到仓库 output/monitor_latest.txt" >> $GITHUB_STEP_SUMMARY
