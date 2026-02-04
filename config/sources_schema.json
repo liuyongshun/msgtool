@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MsgSkill数据源配置Schema",
+  "description": "定义MsgSkill项目的数据源配置结构",
+  "type": "object",
+  "required": ["version", "sources"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "配置文件版本号"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "最后更新日期"
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "news": {
+          "type": "object",
+          "description": "新闻网站数据源",
+          "patternProperties": {
+            "^[a-z_]+$": {
+              "type": "object",
+              "required": ["enabled", "name", "type"],
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["api", "scrape"]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "cache_ttl": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        },
+        "rss": {
+          "type": "object",
+          "description": "RSS订阅源",
+          "patternProperties": {
+            "^[a-z_]+$": {
+              "type": "object",
+              "required": ["enabled", "name", "url"],
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ai_filter_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用AI筛选，默认true"
+                }
+              }
+            }
+          }
+        },
+        "arxiv": {
+          "type": "object",
+          "description": "arXiv论文分类",
+          "patternProperties": {
+            "^[a-z_]+$": {
+              "type": "object",
+              "required": ["enabled", "name", "category"],
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "pattern": "^(cs|stat)\\.[A-Z]{2}$"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "global_settings": {
+      "type": "object",
+      "description": "全局设置",
+      "properties": {
+        "default_cache_ttl": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "default_fetch_limit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_fetch_limit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "request_timeout": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "user_agent": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

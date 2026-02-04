@@ -1,0 +1,129 @@
+name: 📰 Sync RSS Feeds
+
+on:
+  schedule:
+    # 每天北京时间6点、12点、18点 (UTC-2, 4, 10)
+    - cron: '0 22 * * *'  # 06:00 北京时间
+    - cron: '0 4 * * *'   # 12:00 北京时间
+    - cron: '0 10 * * *'  # 18:00 北京时间
+  
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  sync-rss:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🐍 Set up Python 3.9
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: ⚙️ Create logs directory
+      run: |
+        mkdir -p logs output/validation
+    - name: 🔍 Validate RSS sources
+      id: validate
+      run: |
+        python test/validate_sources.py > output/rss_validation_$(date +%Y%m%d_%H%M%S).json
+        echo "validation_file=output/rss_validation_$(date +%Y%m%d_%H%M%S).json" >> $GITHUB_OUTPUT
+    
+    - name: 🔍 Check for RSS failures
+      id: check_failures
+      run: |
+        # 检查验证结果中是否有失败的RSS源
+        if [ -f "${{ steps.validate.outputs.validation_file }}" ]; then
+          FAILED_COUNT=$(python -c "
+import json, sys
+try:
+    with open('${{ steps.validate.outputs.validation_file }}', 'r') as f:
+        data = json.load(f)
+        failed = [s for s in data.get('sources', []) if s.get('status') == 'failed']
+        print(len(failed))
+        if failed:
+            print('FAILED_SOURCES<<EOF', file=sys.stderr)
+            for s in failed:
+                print(f\"- {s['name']}: {s.get('error', 'Unknown error')}\", file=sys.stderr)
+            print('EOF', file=sys.stderr)
+except Exception as e:
+    print(0)
+    print(f'Error: {e}', file=sys.stderr)
+" 2>&1)
+          
+          echo "failed_count=$FAILED_COUNT" >> $GITHUB_OUTPUT
+          
+          if [ "$FAILED_COUNT" -gt 0 ]; then
+            echo "has_failures=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_failures=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "failed_count=0" >> $GITHUB_OUTPUT
+          echo "has_failures=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 📧 Send failure notification email
+      if: steps.check_failures.outputs.has_failures == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.126.com
+        server_port: 465
+        secure: true
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "⚠️ RSS源异常通知 - ${{ steps.check_failures.outputs.failed_count }}个源失败"
+        to: liuyongshun2@126.com
+        from: ${{ secrets.EMAIL_USERNAME }}
+        body: |
+          RSS源验证发现异常
+          
+          失败数量: ${{ steps.check_failures.outputs.failed_count }}
+          验证时间: ${{ github.run_id }}
+          
+          详细信息请查看GitHub Actions运行日志：
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          ---
+          此邮件由GitHub Actions自动发送
+    
+    - name: 💾 Commit validation results
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add output/*.json
+        git commit -m "chore: update RSS validation $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        git push || echo "Nothing to push"
+    
+    - name: 📊 Upload validation results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: rss-validation-${{ github.run_number }}
+        path: |
+          logs/
+          output/
+        retention-days: 7
+    
+    - name: 📝 Create sync summary
+      if: success()
+      run: |
+        echo "## 📰 RSS 源验证完成" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ 验证时间: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ steps.check_failures.outputs.has_failures }}" == "true" ]; then
+          echo "⚠️  失败数量: ${{ steps.check_failures.outputs.failed_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "📧 已发送邮件通知到 liuyongshun2@126.com" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "✅ 所有RSS源正常" >> $GITHUB_STEP_SUMMARY
+        fi
+        echo "📊 数据已保存到 output/ 目录" >> $GITHUB_STEP_SUMMARY
+        echo "📋 验证日志已上传到 Artifacts" >> $GITHUB_STEP_SUMMARY

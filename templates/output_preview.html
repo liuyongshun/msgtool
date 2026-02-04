@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output数据预览</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .tab-active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+    <div class="container mx-auto p-6 max-w-6xl">
+        <!-- 控制面板 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <!-- 日期选择器 -->
+                <div class="flex-1">
+                    <select id="date-selector" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">加载中...</option>
+                    </select>
+                </div>
+                
+                <!-- Tab导航 -->
+                <div class="flex gap-1 bg-gray-100 p-1 rounded-md flex-wrap">
+                    <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
+                            data-type="arxiv">
+                        arXiv论文
+                    </button>
+                    <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
+                            data-type="hackernews">
+                        HackerNews
+                    </button>
+                    <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
+                            data-type="rss">
+                        RSS源
+                    </button>
+                    <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
+                            data-type="github">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div id="content" class="bg-white rounded-lg shadow-md p-6 min-h-96 relative">
+            <div class="flex items-center justify-center h-64 text-gray-500">
+                <div class="text-center">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    <p class="text-lg font-medium">正在连接服务器...</p>
+                    <p class="text-sm mt-1">请确保已启动预览服务器</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 状态提示 -->
+        <div id="status" class="mt-4 text-center text-sm text-gray-500 hidden">
+            提示信息将显示在这里
+        </div>
+    </div>
+
+    <script src="static/js/preview.js"></script>
+</body>
+</html>

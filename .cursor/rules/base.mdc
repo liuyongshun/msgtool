@@ -1,0 +1,46 @@
+---
+alwaysApply: true
+---
+
+# 目录文件创建约束和规范
+
+- 测试脚本必须在test文件夹下创建
+- 测试输出必须报纸output文件夹输出，标识 + 时间戳
+
+# 对话要求
+- 没有明确要求生成文档时，禁止自动生成markdown总结文档，如果有需要，暂停并询问
+- 没有明确要求生成脚本时，禁止自动生成脚本，如果有需要，暂停并询问
+- 用户如果发表了带有**疑问**或**咨询询问**的表述时，应该回答问题，而不是直接写代码
+
+# 指令理解
+
+## 当要求输出示例时，应按照如下要求输出
+
+### 接口示例
+```
+// keyword 查询关键词
+https://baidu.com/query?keyword=value1
+```
+
+### 网页抓取示例
+```
+// 测试脚本
+test/xxxxxx.py 
+
+// 执行命令
+python ./test/xxxxx.py
+```
+
+## 当询问，sources下各个数据源，开发思路，保持如下结构输出
+
+```
+### 1. hackernews（已实现）
+- 配置位置：sources.news.hackernews
+- 类型：api
+- 实现函数：_fetch_hackernews()
+- 处理方式：
+    - 使用 Firebase API 获取 topstories/newstories/beststories
+    - 支持多类型抓取（top/new/best）
+    - 使用 AI 模型批量筛选标题
+    - 配置了 story_types 和 ai_filter_enabled
+```
