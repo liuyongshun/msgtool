@@ -31,15 +31,24 @@
 
 ### 步骤 1：检查 Python 版本
 
+**Linux / macOS:**
 ```bash
 python3 --version
+# 应显示 Python 3.10 或更高版本
+```
+
+**Windows:**
+```cmd
+python --version
+# 或
+py --version
 # 应显示 Python 3.10 或更高版本
 ```
 
 如果版本过低，请先安装/升级 Python：
 - **macOS**: `brew install python@3.11`
 - **Ubuntu/Debian**: `sudo apt install python3.11`
-- **Windows**: 从 [python.org](https://www.python.org/downloads/) 下载安装
+- **Windows**: 从 [python.org](https://www.python.org/downloads/) 下载安装，安装时勾选 "Add Python to PATH"
 
 ### 步骤 2：克隆项目
 
@@ -50,13 +59,21 @@ cd msgskill
 
 ### 步骤 3：安装依赖
 
+**Linux / macOS:**
 ```bash
 pip3 install -r requirements.txt
 ```
 
+**Windows:**
+```cmd
+python -m pip install -r requirements.txt
+```
+
 **可能遇到的问题**：
-- 如果提示 `pip3: command not found`，使用 `python3 -m pip install -r requirements.txt`
-- 如果权限不足，加上 `--user` 参数：`pip3 install --user -r requirements.txt`
+- **Linux/macOS**: 如果提示 `pip3: command not found`，使用 `python3 -m pip install -r requirements.txt`
+- **Linux/macOS**: 如果权限不足，加上 `--user` 参数：`pip3 install --user -r requirements.txt`
+- **Windows**: 如果提示 `pip` 命令不存在，使用 `python -m pip install -r requirements.txt`
+- **Windows**: 如果提示 `python` 命令不存在，尝试使用 `py` 命令（Windows Python Launcher）
 
 ### 步骤 4：配置 API 密钥
 
@@ -93,6 +110,8 @@ config/sources.json
 
 ### 步骤 5：启动服务
 
+#### Linux / macOS
+
 ```bash
 # 赋予启动脚本执行权限（首次需要）
 chmod +x start.sh
@@ -101,12 +120,42 @@ chmod +x start.sh
 ./start.sh
 ```
 
-启动后：
-- 🔄 定时任务自动在后台运行
+#### Windows
+
+**方式 1：使用 PowerShell 脚本（推荐）**
+
+在 PowerShell 中运行：
+
+```powershell
+.\start.ps1
+```
+
+如果遇到执行策略限制，先运行：
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+**方式 2：手动启动（两个终端窗口）**
+
+终端 1 - 启动定时任务：
+```cmd
+python src\msgskill\multi_scheduler.py
+```
+
+终端 2 - 启动预览服务：
+```cmd
+python src\msgskill\preview_server.py
+```
+
+**启动后：**
+- 🔄 定时任务自动在后台运行（Windows 会在新窗口显示）
 - 🌐 访问 `http://localhost:5001` 预览数据
-- 按 `Ctrl+C` 停止所有服务
+- 按 `Ctrl+C` 停止预览服务
+- 关闭调度器窗口停止定时任务
 
 ### 手动测试数据源
+
+**Linux / macOS:**
 ```bash
 # 快速测试所有数据源
 python3 test/run_all_sources.py --fast
@@ -228,7 +277,8 @@ msgskill/
 │
 ├── docs/                     # 文档目录
 ├── .github/workflows/       # GitHub Actions工作流
-├── start.sh                  # 统一启动脚本
+├── start.sh                  # Linux/macOS 启动脚本
+├── start.ps1                 # Windows PowerShell 启动脚本
 ├── requirements.txt          # Python依赖
 └── pyproject.toml           # 项目配置
 ```
@@ -324,12 +374,13 @@ scheduler.run_once()  # 立即同步所有数据源
 
 ### 启动方式
 
+#### Linux / macOS
+
 **统一启动** (`start.sh`)
-1. 激活虚拟环境
-2. 检查并安装依赖
-3. 启动定时任务调度器（后台）
-4. 启动数据预览服务器（前台）
-5. 捕获退出信号，优雅关闭
+1. 检查并安装依赖
+2. 启动定时任务调度器（后台）
+3. 启动数据预览服务器（前台）
+4. 捕获退出信号，优雅关闭
 
 **单独启动**
 ```bash
@@ -340,12 +391,35 @@ python3 src/msgskill/multi_scheduler.py
 python3 src/msgskill/preview_server.py
 ```
 
+#### Windows
+
+**统一启动** (`start.ps1`)
+1. 检查 Python 和依赖
+2. 在新窗口启动定时任务调度器
+3. 在当前窗口启动数据预览服务器
+4. 按 `Ctrl+C` 停止预览服务，关闭调度器窗口停止定时任务
+
+**单独启动**
+```cmd
+REM 仅启动定时任务
+python src\msgskill\multi_scheduler.py
+
+REM 仅启动预览服务
+python src\msgskill\preview_server.py
+```
+
+**Windows 注意事项：**
+- 如果提示 `python` 命令不存在，尝试使用 `py` 或 `python3`
+- PowerShell 脚本可能需要设置执行策略：`Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- 预览服务器会在端口 5001 启动，确保端口未被占用
+
 ## 🛠️ 维护管理
 
 ### 日志管理
 
 日志文件存储在 `logs/` 目录，建议定期清理：
 
+**Linux / macOS:**
 ```bash
 # 清理7天前的日志
 ./scripts/cleanup_logs.sh
@@ -354,22 +428,48 @@ python3 src/msgskill/preview_server.py
 tail -f logs/scheduler.log
 ```
 
-**自动清理**（推荐）- 添加到 crontab：
+**Windows:**
+```powershell
+# 手动查看日志（PowerShell）
+Get-Content logs\scheduler.log -Tail 50 -Wait
+
+# 或使用记事本打开
+notepad logs\scheduler.log
+```
+
+**自动清理**（Linux/macOS 推荐）- 添加到 crontab：
 ```bash
 # 每天凌晨3点自动清理
 0 3 * * * /path/to/msgskill/scripts/cleanup_logs.sh
 ```
 
+**Windows 自动清理** - 使用任务计划程序：
+1. 打开"任务计划程序"
+2. 创建基本任务
+3. 设置触发器（每天凌晨3点）
+4. 操作：启动程序 `powershell.exe`
+5. 参数：`-File "D:\path\to\msgtool\scripts\cleanup_logs.ps1"`
+
 ### 缓存管理
 
 缓存文件存储在 `.cache/` 目录，会自动过期：
 
+**Linux / macOS:**
 ```bash
 # 清理30天前的缓存
 ./scripts/cleanup_cache.sh
 
 # 一键清理日志和缓存
 ./scripts/cleanup_all.sh
+```
+
+**Windows:**
+```powershell
+# 手动删除缓存目录
+Remove-Item -Path .cache -Recurse -Force
+
+# 或使用批处理脚本（如果存在）
+.\scripts\cleanup_cache.bat
 ```
 
 **缓存类型**：
@@ -425,4 +525,4 @@ tail -f logs/scheduler.log
 💡 **提示**: 获取完整的数据源清单和详细配置说明，请查阅 [资源清单](./docs/资源.md)。
 
 **版本**: 3.0.0  
-**最后更新**: 2026-02-02
+**最后更新**: 2026-02-06

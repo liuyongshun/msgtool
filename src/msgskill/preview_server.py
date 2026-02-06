@@ -192,12 +192,20 @@ def get_files(date):
 
 def main():
     """启动服务器"""
+    import sys
+    import io
+    
+    # Fix Windows console encoding issue
+    if sys.platform == 'win32':
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+    
     port = 5001  # 改用5001端口
     print("=" * 60)
-    print("🚀 Output数据预览服务器启动中...")
+    print("Output数据预览服务器启动中...")
     print("=" * 60)
-    print(f"📁 数据目录: {OUTPUT_DIR.absolute()}")
-    print(f"🌐 访问地址: http://localhost:{port}")
+    print(f"数据目录: {OUTPUT_DIR.absolute()}")
+    print(f"访问地址: http://localhost:{port}")
     print("=" * 60)
     print("按 Ctrl+C 停止服务器")
     print("=" * 60)
