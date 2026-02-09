@@ -1,0 +1,3127 @@
+{
+  "source": "RSS Feeds",
+  "feeds_count": 27,
+  "total_items": 267,
+  "errors_count": 10,
+  "fetched_at": "2026-02-05T10:20:30.758852",
+  "feeds": {
+    "https://www.technologyreview.com/feed/": {
+      "url": "https://www.technologyreview.com/feed/",
+      "title": "MIT Technology Review",
+      "description": "",
+      "link": "https://www.technologyreview.com",
+      "updated": "Wed, 04 Feb 2026 12:45:46 +0000",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "From guardrails to governance: A CEO’s guide for securing agentic systems",
+          "link": "https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/",
+          "summary": "The previous article in this series, “Rules fail at the prompt, succeed at the boundary,” focused on the first AI-orchestrated espionage campaign and the failure of prompt-level control. This article is the prescription. The question every CEO is now getting from their board is some version of:...",
+          "published": "Wed, 04 Feb 2026 14:00:00 +0000",
+          "author": "Jessica Hammond",
+          "tags": [
+            "Artificial intelligence",
+            "sponsored"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Download: the future of nuclear power plants, and social media-fueled AI hype",
+          "link": "https://www.technologyreview.com/2026/02/04/1132115/the-download-the-future-of-nuclear-power-plants-and-social-media-fueled-ai-hype/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Why AI companies are betting on next-gen nuclear AI is driving unprecedented investment for massive data centers and an energy supply that can support its huge...",
+          "published": "Wed, 04 Feb 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Download: squeezing more metal out of aging mines, and AI’s truth crisis",
+          "link": "https://www.technologyreview.com/2026/02/03/1132105/the-download-squeezing-more-metal-out-of-aging-mines-and-ais-truth-crisis/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Microbes could extract the metal needed for cleantech In a pine forest on Michigan’s Upper Peninsula, the only active nickel mine in the US is nearing the end of...",
+          "published": "Tue, 03 Feb 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Microbes could extract the metal needed for cleantech",
+          "link": "https://www.technologyreview.com/2026/02/03/1132047/microbes-extract-metal-cleantech/",
+          "summary": "In a pine forest on Michigan’s Upper Peninsula, the only active nickel mine in the US is nearing the end of its life. At a time when carmakers want the metal for electric-vehicle batteries, nickel concentration at Eagle Mine is falling and could soon drop too low to warrant digging. But earlier...",
+          "published": "Tue, 03 Feb 2026 10:00:00 +0000",
+          "author": "Matt Blois",
+          "tags": [
+            "Climate change and energy",
+            "App"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "What we’ve been getting wrong about AI’s truth crisis",
+          "link": "https://www.technologyreview.com/2026/02/02/1132068/what-weve-been-getting-wrong-about-ais-truth-crisis/",
+          "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. What would it take to convince you that the era of truth decay we were long warned about—where AI content dupes us, shapes our beliefs even when we catch the...",
+          "published": "Mon, 02 Feb 2026 18:09:57 +0000",
+          "author": "James O'Donnell",
+          "tags": [
+            "Artificial intelligence",
+            "App",
+            "artificial intelligence",
+            "The Algorithm"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The crucial first step for designing a successful enterprise AI system",
+          "link": "https://www.technologyreview.com/2026/02/02/1131822/the-crucial-first-step-for-designing-a-successful-enterprise-ai-system/",
+          "summary": "Many organizations rushed into generative AI, only to see pilots fail to deliver value. Now, companies want measurable outcomes—but how do you design for success? At Mistral AI, we partner with global industry leaders to co-design tailored AI solutions that solve their most difficult problems....",
+          "published": "Mon, 02 Feb 2026 14:20:29 +0000",
+          "author": "Corentin Petit and Sarah Beldo",
+          "tags": [
+            "Artificial intelligence",
+            "sponsored"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Download: inside a deepfake marketplace, and EV batteries’ future",
+          "link": "https://www.technologyreview.com/2026/02/02/1132049/the-download-inside-a-deepfake-marketplace-and-ev-batteries-future/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Inside the marketplace powering bespoke AI deepfakes of real women Civitai—an online marketplace for buying and selling AI-generated content, backed by the...",
+          "published": "Mon, 02 Feb 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "What’s next for EV batteries in 2026",
+          "link": "https://www.technologyreview.com/2026/02/02/1132042/whats-next-for-ev-batteries-in-2026/",
+          "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. Demand for electric vehicles and the batteries that power them has never been hotter. In 2025, EVs made up over a quarter of new...",
+          "published": "Mon, 02 Feb 2026 10:00:00 +0000",
+          "author": "Casey Crownhart",
+          "tags": [
+            "Climate change and energy",
+            "App",
+            "What's Next in Tech",
+            "Why It Matters"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Inside the marketplace powering bespoke AI deepfakes of real women",
+          "link": "https://www.technologyreview.com/2026/01/30/1131945/inside-the-marketplace-powering-bespoke-ai-deepfakes-of-real-women/",
+          "summary": "Civitai—an online marketplace for buying and selling AI-generated content, backed by the venture capital firm Andreessen Horowitz—is letting users buy custom instruction files for generating celebrity deepfakes. Some of these files were specifically designed to make pornographic images banned by...",
+          "published": "Fri, 30 Jan 2026 16:32:31 +0000",
+          "author": "James O'Donnell",
+          "tags": [
+            "Artificial intelligence",
+            "App",
+            "artificial intelligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Download: US immigration agencies’ AI videos, and inside the Vitalism movement",
+          "link": "https://www.technologyreview.com/2026/01/30/1132022/the-download-us-immigration-agencies-ai-videos-and-inside-the-vitalism-movement/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. DHS is using Google and Adobe AI to make videos The news: The US Department of Homeland Security is using AI video generators from Google and Adobe to make and...",
+          "published": "Fri, 30 Jan 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://openai.com/news/rss.xml": {
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News",
+      "description": "The OpenAI blog",
+      "link": "https://openai.com/news",
+      "updated": "Thu, 05 Feb 2026 01:17:50 GMT",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Navigating health questions with ChatGPT",
+          "link": "https://openai.com/index/navigating-health-questions",
+          "summary": "A family shares how ChatGPT helped them prepare for critical cancer treatment decisions for their son alongside expert guidance from his doctors.",
+          "published": "Thu, 05 Feb 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "ChatGPT"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Unlocking the Codex harness: how we built the App Server",
+          "link": "https://openai.com/index/unlocking-the-codex-harness",
+          "summary": "Learn how to embed the Codex agent using the Codex App Server, a bidirectional JSON-RPC API powering streaming progress, tool use, approvals, and diffs.",
+          "published": "Wed, 04 Feb 2026 13:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "VfL Wolfsburg turns ChatGPT into a club-wide capability",
+          "link": "https://openai.com/index/vfl-wolfsburg",
+          "summary": "By focusing on people, not pilots, the Bundesliga club is scaling efficiency, creativity, and knowledge—without losing its football identity.",
+          "published": "Wed, 04 Feb 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "ChatGPT"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Sora feed philosophy",
+          "link": "https://openai.com/index/sora-feed-philosophy",
+          "summary": "Discover the Sora feed philosophy—built to spark creativity, foster connections, and keep experiences safe with personalized recommendations, parental controls, and strong guardrails.",
+          "published": "Tue, 03 Feb 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Snowflake and OpenAI partner to bring frontier intelligence to enterprise data",
+          "link": "https://openai.com/index/snowflake-partnership",
+          "summary": "OpenAI and Snowflake partner in a $200M agreement to bring frontier intelligence into enterprise data, enabling AI agents and insights directly in Snowflake.",
+          "published": "Mon, 02 Feb 2026 06:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing the Codex app",
+          "link": "https://openai.com/index/introducing-the-codex-app",
+          "summary": "Introducing the Codex app for macOS—a command center for AI coding and software development with multiple agents, parallel workflows, and long-running tasks.",
+          "published": "Mon, 02 Feb 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Inside OpenAI’s in-house data agent",
+          "link": "https://openai.com/index/inside-our-in-house-data-agent",
+          "summary": "How OpenAI built an in-house AI data agent that uses GPT-5, Codex, and memory to reason over massive datasets and deliver reliable insights in minutes.",
+          "published": "Thu, 29 Jan 2026 10:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Taisei Corporation shapes the next generation of talent with ChatGPT",
+          "link": "https://openai.com/index/taisei",
+          "summary": "Taisei Corporation uses ChatGPT Enterprise to support HR-led talent development and scale generative AI across its global construction business.",
+          "published": "Thu, 29 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "ChatGPT"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT",
+          "link": "https://openai.com/index/retiring-gpt-4o-and-older-models",
+          "summary": "On February 13, 2026, alongside the previously announced retirement⁠ of GPT‑5 (Instant, Thinking, and Pro), we will retire GPT‑4o, GPT‑4.1, GPT‑4.1 mini, and OpenAI o4-mini from ChatGPT. In the API, there are no changes at this time.",
+          "published": "Thu, 29 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "EMEA Youth & Wellbeing Grant",
+          "link": "https://openai.com/index/emea-youth-and-wellbeing-grant",
+          "summary": "Apply for the EMEA Youth & Wellbeing Grant, a €500,000 program funding NGOs and researchers advancing youth safety and wellbeing in the age of AI.",
+          "published": "Wed, 28 Jan 2026 01:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The next chapter for AI in the EU",
+          "link": "https://openai.com/index/the-next-chapter-for-ai-in-the-eu",
+          "summary": "OpenAI launches the EU Economic Blueprint 2.0 with new data, partnerships, and initiatives to accelerate AI adoption, skills, and growth across Europe.",
+          "published": "Wed, 28 Jan 2026 01:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Keeping your data safe when an AI agent clicks a link",
+          "link": "https://openai.com/index/ai-agent-link-safety",
+          "summary": "Learn how OpenAI protects user data when AI agents open links, preventing URL-based data exfiltration and prompt injection with built-in safeguards.",
+          "published": "Wed, 28 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "PVH reimagines the future of fashion with OpenAI",
+          "link": "https://openai.com/index/pvh-future-of-fashion",
+          "summary": "PVH Corp., parent company of Calvin Klein and Tommy Hilfiger, is adopting ChatGPT Enterprise to bring AI into fashion design, supply chain, and consumer engagement.",
+          "published": "Tue, 27 Jan 2026 06:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing Prism",
+          "link": "https://openai.com/index/introducing-prism",
+          "summary": "Prism is a free LaTeX-native workspace with GPT-5.2 built in, helping researchers write, collaborate, and reason in one place.",
+          "published": "Tue, 27 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Powering tax donations with AI powered personalized recommendations",
+          "link": "https://openai.com/index/trustbank",
+          "summary": "TRUSTBANK partnered with Recursive to build Choice AI using OpenAI models, delivering personalized, conversational recommendations that simplify Furusato Nozei gift discovery. A multi-agent system helps donors navigate thousands of options and find gifts that match their preferences.",
+          "published": "Tue, 27 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "How Indeed uses AI to help evolve the job search",
+          "link": "https://openai.com/index/indeed-maggie-hulce",
+          "summary": "Indeed’s CRO Maggie Hulce shares how AI is transforming job search, recruiting, and talent acquisition for employers and job seekers.",
+          "published": "Mon, 26 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Unrolling the Codex agent loop",
+          "link": "https://openai.com/index/unrolling-the-codex-agent-loop",
+          "summary": "A technical deep dive into the Codex agent loop, explaining how Codex CLI orchestrates models, tools, prompts, and performance using the Responses API.",
+          "published": "Fri, 23 Jan 2026 12:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Scaling PostgreSQL to power 800 million ChatGPT users",
+          "link": "https://openai.com/index/scaling-postgresql",
+          "summary": "An inside look at how OpenAI scaled PostgreSQL to millions of queries per second using replicas, caching, rate limiting, and workload isolation.",
+          "published": "Thu, 22 Jan 2026 12:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Inside Praktika's conversational approach to language learning",
+          "link": "https://openai.com/index/praktika",
+          "summary": "How Praktika uses GPT-4.1 and GPT-5.2 to build adaptive AI tutors that personalize lessons, track progress, and help learners achieve real-world language fluency",
+          "published": "Thu, 22 Jan 2026 05:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Inside GPT-5 for Work: How Businesses Use GPT-5",
+          "link": "https://openai.com/business/guides-and-resources/chatgpt-usage-and-adoption-patterns-at-work",
+          "summary": "A data-driven report on how workers across industries use ChatGPT—covering adoption trends, top tasks, departmental patterns, and the future of AI at work.",
+          "published": "Thu, 22 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.deeplearning.ai/feed/": {
+      "url": "https://www.deeplearning.ai/feed/",
+      "error": "HTTP 404 error fetching feed: https://www.deeplearning.ai/feed/ (RSS地址不存在)",
+      "items": []
+    },
+    "https://magazine.sebastianraschka.com/feed": {
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "title": "Ahead of AI",
+      "description": "Ahead of AI focuses on machine learning and AI research and is read by more than 150,000 researchers and practitioners who want to stay ahead in a rapidly evolving field.",
+      "link": "https://magazine.sebastianraschka.com",
+      "updated": "Thu, 05 Feb 2026 01:49:50 GMT",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Categories of Inference-Time Scaling for Improved LLM Reasoning",
+          "link": "https://magazine.sebastianraschka.com/p/categories-of-inference-time-scaling",
+          "summary": "And an Overview of Recent Inference-Scaling Papers",
+          "published": "Sat, 24 Jan 2026 11:23:18 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The State Of LLMs 2025: Progress, Problems, and Predictions",
+          "link": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+          "summary": "A 2025 review of large language models, from DeepSeek R1 and RLVR to inference-time scaling, benchmarks, architectures, and predictions for 2026.",
+          "published": "Tue, 30 Dec 2025 12:22:26 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "LLM Research Papers: The 2025 List (July to December)",
+          "link": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-part2",
+          "summary": "In June, I shared a bonus article with my curated and bookmarked research paper lists to the paid subscribers who make this Substack possible.",
+          "published": "Tue, 30 Dec 2025 12:15:39 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "From DeepSeek V3 to V3.2: Architecture, Sparse Attention, and RL Updates",
+          "link": "https://magazine.sebastianraschka.com/p/technical-deepseek",
+          "summary": "Understanding How DeepSeek's Flagship Open-Weight Models Evolved",
+          "published": "Wed, 03 Dec 2025 12:03:33 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Beyond Standard LLMs",
+          "link": "https://magazine.sebastianraschka.com/p/beyond-standard-llms",
+          "summary": "Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers",
+          "published": "Tue, 04 Nov 2025 13:06:07 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)",
+          "link": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
+          "summary": "Multiple-Choice Benchmarks, Verifiers, Leaderboards, and LLM Judges with Code Examples",
+          "published": "Sun, 05 Oct 2025 11:12:32 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Understanding and Implementing Qwen3 From Scratch",
+          "link": "https://magazine.sebastianraschka.com/p/qwen3-from-scratch",
+          "summary": "A Detailed Look at One of the Leading Open-Source LLMs",
+          "published": "Sat, 06 Sep 2025 11:10:21 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "From GPT-2 to gpt-oss: Analyzing the Architectural Advances",
+          "link": "https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the",
+          "summary": "And How They Stack Up Against Qwen3",
+          "published": "Sat, 09 Aug 2025 11:23:07 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Big LLM Architecture Comparison",
+          "link": "https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison",
+          "summary": "From DeepSeek-V3 to Kimi K2: A Look At Modern LLM Architecture Design",
+          "published": "Sat, 19 Jul 2025 11:11:10 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "LLM Research Papers: The 2025 List (January to June)",
+          "link": "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-list-one",
+          "summary": "A topic-organized collection of 200+ LLM research papers from 2025",
+          "published": "Tue, 01 Jul 2025 11:11:45 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Understanding and Coding the KV Cache in LLMs from Scratch",
+          "link": "https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms",
+          "summary": "KV caches are one of the most critical techniques for efficient inference in LLMs in production.",
+          "published": "Tue, 17 Jun 2025 10:55:34 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Coding LLMs from the Ground Up: A Complete Course",
+          "link": "https://magazine.sebastianraschka.com/p/coding-llms-from-the-ground-up",
+          "summary": "Why build LLMs from scratch? It's probably the best and most efficient way to learn how LLMs really work. Plus, many readers have told me they had a lot of fun doing it.",
+          "published": "Sat, 10 May 2025 11:03:17 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The State of Reinforcement Learning for LLM Reasoning",
+          "link": "https://magazine.sebastianraschka.com/p/the-state-of-llm-reasoning-model-training",
+          "summary": "Understanding GRPO and New Insights from Reasoning Model Papers",
+          "published": "Sat, 19 Apr 2025 11:02:44 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "First Look at Reasoning From Scratch: Chapter 1",
+          "link": "https://magazine.sebastianraschka.com/p/first-look-at-reasoning-from-scratch",
+          "summary": "Welcome to the next stage of large language models (LLMs): reasoning. LLMs have transformed how we process and generate text, but their success has been largely driven by statistical pattern recognition. However, new advances in reasoning methodologies now enable LLMs to tackle more complex tasks,...",
+          "published": "Sat, 29 Mar 2025 11:11:41 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The State of LLM Reasoning Model Inference",
+          "link": "https://magazine.sebastianraschka.com/p/state-of-llm-reasoning-and-inference-scaling",
+          "summary": "Inference-Time Compute Scaling Methods to Improve Reasoning Models",
+          "published": "Sat, 08 Mar 2025 12:11:42 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Understanding Reasoning LLMs",
+          "link": "https://magazine.sebastianraschka.com/p/understanding-reasoning-llms",
+          "summary": "Methods and Strategies for Building and Refining Reasoning Models",
+          "published": "Wed, 05 Feb 2025 12:11:39 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Noteworthy AI Research Papers of 2024 (Part Two)",
+          "link": "https://magazine.sebastianraschka.com/p/ai-research-papers-2024-part-2",
+          "summary": "Six influential AI papers from July to December",
+          "published": "Wed, 15 Jan 2025 12:11:49 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Noteworthy AI Research Papers of 2024 (Part One)",
+          "link": "https://magazine.sebastianraschka.com/p/ai-research-papers-2024-part-1",
+          "summary": "Six influential AI papers from January to June",
+          "published": "Tue, 31 Dec 2024 12:21:42 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "LLM Research Papers: The 2024 List",
+          "link": "https://magazine.sebastianraschka.com/p/llm-research-papers-the-2024-list",
+          "summary": "A curated list of interesting LLM-related research papers from 2024, shared for those looking for something to read over the holidays.",
+          "published": "Sun, 08 Dec 2024 12:11:04 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Understanding Multimodal LLMs",
+          "link": "https://magazine.sebastianraschka.com/p/understanding-multimodal-llms",
+          "summary": "An introduction to the main techniques and latest models",
+          "published": "Sun, 03 Nov 2024 12:44:00 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.anthropic.com/news.rss": {
+      "url": "https://www.anthropic.com/news.rss",
+      "error": "HTTP 404 error fetching feed: https://www.anthropic.com/news.rss (RSS地址不存在)",
+      "items": []
+    },
+    "https://rsshub.app/meta/ai/blog": {
+      "url": "https://rsshub.app/meta/ai/blog",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/": {
+      "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
+      "title": "Artificial intelligence - Microsoft Research",
+      "description": "",
+      "link": "https://www.microsoft.com/en-us/research/blog/category/intelligence/artificial-intelligence/",
+      "updated": "Fri, 10 Feb 2023 23:19:16 +0000",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "Research Collection: Research Supporting Responsible AI",
+          "link": "https://www.microsoft.com/en-us/research/blog/research-collection-research-supporting-responsible-ai/",
+          "summary": "Microsoft is committed to the advancement and use of AI grounded in principles that put people first and benefit society. We are putting these principles into practice throughout the company by embracing diverse perspectives, fostering continuous learning, and proactively responding as AI...",
+          "published": "Mon, 13 Apr 2020 16:00:00 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artifical intelligence",
+            "Artificial intelligence",
+            "Human Computing Interaction",
+            "Machine learning",
+            "privacy and cryptography"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Microsoft Research 2019 reflection—a year of progress on technology’s toughest challenges",
+          "link": "https://www.microsoft.com/en-us/research/blog/microsoft-research-2019-reflection-a-year-of-progress-on-technologys-toughest-challenges/",
+          "summary": "Research is about achieving long-term goals, often through incremental progress. As the year comes to an end, it’s a good time to step back and reflect on the work that researchers at Microsoft and their collaborators have done to advance the state of the art in computing, particularly by...",
+          "published": "Mon, 23 Dec 2019 20:49:04 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artificial intelligence",
+            "Human Computing Interaction",
+            "Machine learning"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Making machines recognize and transcribe conversations in meetings using audio and video",
+          "link": "https://www.microsoft.com/en-us/research/blog/making-machines-recognize-and-transcribe-conversations-in-meetings-using-audio-and-video/",
+          "summary": "The ability to perceive communication signals and make sense of them played an essential role in the evolution of human intelligence. Computing technology is following the same trajectory. Now, computer vision and automatic speech recognition (ASR) technologies have enabled the advent of many...",
+          "published": "Fri, 13 Dec 2019 22:18:41 +0000",
+          "author": "Yifan Gong",
+          "tags": [
+            "Artificial intelligence",
+            "Computer vision",
+            "Human language technologies"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Next-generation architectures bridge gap between neural and symbolic representations with neural symbols",
+          "link": "https://www.microsoft.com/en-us/research/blog/next-generation-architectures-bridge-gap-between-neural-and-symbolic-representations-with-neural-symbols/",
+          "summary": "In both language and mathematics, symbols and their mutual relationships play a central role. The equation x = 1/y asserts the symbols x and y—that is, what they stand for—are related reciprocally; Kim saw the movie asserts that Kim and the movie are perceiver and stimulus. People are extremely...",
+          "published": "Thu, 12 Dec 2019 17:00:46 +0000",
+          "author": "Paul Smolensky",
+          "tags": [
+            "Algorithms",
+            "Artificial intelligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Project Petridish: Efficient forward neural architecture search",
+          "link": "https://www.microsoft.com/en-us/research/blog/project-petridish-efficient-forward-neural-architecture-search/",
+          "summary": "Having experience in deep learning doesn’t hurt when it comes to the often mysterious, time- and cost-consuming process of hunting down an appropriate neural architecture. But truth be told, no one really knows what works the best on a new dataset and task. Relying on well-known, top-performing...",
+          "published": "Mon, 09 Dec 2019 16:16:44 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artificial intelligence",
+            "Intelligence",
+            "Research Blog"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing MASS – A pre-training method that outperforms BERT and GPT in sequence to sequence language generation tasks",
+          "link": "https://www.microsoft.com/en-us/research/blog/introducing-mass-a-pre-training-method-that-outperforms-bert-and-gpt-in-sequence-to-sequence-language-generation-tasks/",
+          "summary": "Editor’s note: Since 2018, pre-training has without a doubt become one of the hottest research topics in Natural Language Processing (NLP). By leveraging generalized language models like the BERT, GPT and XLNet, great breakthroughs have been achieved in natural language understanding. However, in...",
+          "published": "Mon, 24 Jun 2019 01:00:22 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artificial intelligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Autonomous soaring – AI on the fly",
+          "link": "https://www.microsoft.com/en-us/research/blog/autonomous-soaring-ai-on-the-fly/",
+          "summary": "The past few years have seen tremendous progress in reinforcement learning (RL). From complex games to robotic object manipulation, RL has qualitatively advanced the state of the art. However, modern RL techniques require a lot for success: a largely deterministic stationary environment, an...",
+          "published": "Tue, 07 May 2019 15:08:45 +0000",
+          "author": "Andrey Kolobov",
+          "tags": [
+            "Artificial intelligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Minimizing gaps in information access on social networks while maximizing the spread",
+          "link": "https://www.microsoft.com/en-us/research/blog/minimizing-gaps-in-information-access-on-social-networks-while-maximizing-the-spread/",
+          "summary": "Lots of important information, including job openings and other kinds of advertising, are often transmitted by word-of-mouth in online settings. For example, social networks like LinkedIn are increasingly used as a way of spreading information about job opportunities, which can greatly affect...",
+          "published": "Mon, 06 May 2019 19:43:01 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artifical intelligence",
+            "Artificial intelligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Launching a new round of projects in the Swiss JRC – Research with impact",
+          "link": "https://www.microsoft.com/en-us/research/blog/launching-a-new-round-of-projects-in-the-swiss-jrc-research-with-impact/",
+          "summary": "January 31, 2019 marked the start of the sixth workshop for the Swiss Joint Research Center (Swiss JRC), an innovative and successful collaborative research engagement between Microsoft Research and the two universities that make up the Swiss Federal Institutes of Technology—ETH Zurich (ETH) and...",
+          "published": "Wed, 06 Feb 2019 00:00:55 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artificial intelligence",
+            "Machine learning"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Getting efficient with “What-happens-if …”",
+          "link": "https://www.microsoft.com/en-us/research/blog/getting-efficient-with-what-happens-if/",
+          "summary": "Causal inference studies the relationship between causes and effects. For example, one kind of question that causal inference can answer is the “What-happens-if …” question. What happens if I take a specific medication? What happens if I raise the price of a product? What happens if I go to the ER?...",
+          "published": "Fri, 01 Feb 2019 16:02:16 +0000",
+          "author": "Emre Kiciman",
+          "tags": [
+            "Artificial intelligence"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://blog.langchain.dev/rss/": {
+      "url": "https://blog.langchain.dev/rss/",
+      "title": "LangChain Blog",
+      "description": "LangChain Blog",
+      "link": "https://blog.langchain.com/",
+      "updated": "Thu, 05 Feb 2026 01:23:17 GMT",
+      "items_count": 15,
+      "items": [
+        {
+          "title": "January 2026: LangChain Newsletter",
+          "link": "https://blog.langchain.com/january-2026-langchain-newsletter/",
+          "summary": "Read about the latest product updates, events, and content from the LangChain team",
+          "published": "Fri, 30 Jan 2026 02:27:28 GMT",
+          "author": "LangChain",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Context Management for Deep Agents",
+          "link": "https://blog.langchain.com/context-management-for-deepagents/",
+          "summary": "By Chester Curme and Mason Daugherty As the addressable task length of AI agents continues to grow , effective context management becomes critical to prevent context rot and to manage LLMs’ finite memory constraints. The Deep Agents SDK is LangChain’s open source, batteries-included agent harness ....",
+          "published": "Wed, 28 Jan 2026 16:11:29 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Deploy agents instantly with Agent Builder templates",
+          "link": "https://blog.langchain.com/introducing-agent-builder-template-library/",
+          "summary": "Introducing the Agent Builder Template Library: a collection of ready-to-deploy agents for common tasks, equipped with the tools you already use.",
+          "published": "Wed, 21 Jan 2026 17:00:00 GMT",
+          "author": "LangChain Accounts",
+          "tags": [
+            "agent builder",
+            "agents"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Building Multi-Agent Applications with Deep Agents",
+          "link": "https://blog.langchain.com/building-multi-agent-applications-with-deep-agents/",
+          "summary": "Breaking down complex tasks across specialized agents is one of the most effective approaches to building capable AI systems. In this post, we'll show you how to build multi-agent systems with Deep Agents.",
+          "published": "Wed, 21 Jan 2026 16:30:00 GMT",
+          "author": "Sydney Runkle",
+          "tags": [
+            "deep agents",
+            "agents",
+            "Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "From Traces to Insights: Understanding Agent Behavior at Scale",
+          "link": "https://blog.langchain.com/from-traces-to-insights-understanding-agent-behavior-at-scale/",
+          "summary": "Visibility is the easiest piece. The hard part is analyzing and understanding what you’re observing. I’ve spoken to teams recording 100k+ traces every single day. What are they doing with those traces? Literally nothing. Because it’s impossible to read and summarize 100,000 traces",
+          "published": "Tue, 20 Jan 2026 17:16:56 GMT",
+          "author": "Harrison Chase",
+          "tags": [
+            "Harrison's Hot Takes"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "How Remote uses LangChain and LangGraph to onboard thousands of customers with AI",
+          "link": "https://blog.langchain.com/customers-remote/",
+          "summary": "Guest post written by José Mussa (Staff Software Engineer @ Remote) Remote is a fast-growing startup helping companies hire, manage, and pay employees globally from a single platform. Remote’s customers operate across many countries and regulatory environments, and they trust Remote as the system...",
+          "published": "Mon, 19 Jan 2026 16:00:07 GMT",
+          "author": "LangChain",
+          "tags": [
+            "Case Studies"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Choosing the Right Multi-Agent Architecture",
+          "link": "https://blog.langchain.com/choosing-the-right-multi-agent-architecture/",
+          "summary": "In this post, we’ll explore when multi-agent architectures become necessary, the four main patterns we’ve observed, and how LangChain empowers you to effectively build multi-agent systems.",
+          "published": "Wed, 14 Jan 2026 18:06:14 GMT",
+          "author": "Sydney Runkle",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Now GA: LangSmith Agent Builder",
+          "link": "https://blog.langchain.com/langsmith-agent-builder-generally-available/",
+          "summary": "LangSmith Agent Builder is now generally available—enabling anyone to build agents for complex daily tasks, without writing code.",
+          "published": "Tue, 13 Jan 2026 16:00:38 GMT",
+          "author": "LangChain Accounts",
+          "tags": [
+            "agents",
+            "agent builder"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "In software, the code documents the app. In AI, the traces do.",
+          "link": "https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/",
+          "summary": "TL;DR In traditional software, you read the code to understand what the app does - the decision logic lives in your codebase In AI agents, the code is just scaffolding - the actual decision-making happens in the model at runtime Because of this, the source of truth for what",
+          "published": "Sat, 10 Jan 2026 17:39:27 GMT",
+          "author": "Harrison Chase",
+          "tags": [
+            "Harrison's Hot Takes"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Fastweb + Vodafone: Transforming Customer Experience with AI Agents using LangGraph and LangSmith",
+          "link": "https://blog.langchain.com/customers-vodafone-italy/",
+          "summary": "See how Fastweb + Vodafone revolutionized customer service and call center operations with their agents, Super TOBi and Super Agent.",
+          "published": "Tue, 16 Dec 2025 20:50:55 GMT",
+          "author": "LangChain",
+          "tags": [
+            "Case Studies"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Debugging Deep Agents with LangSmith",
+          "link": "https://blog.langchain.com/debugging-deep-agents-with-langsmith/",
+          "summary": "Debugging is the process of finding and fixing errors. This is a critical step in software engineering, and even more critical in agent engineering . One of the key capabilities of LangSmith is tooling to debug LLM applications. Today we are doubling down on solving that problem for the new wave",
+          "published": "Wed, 10 Dec 2025 17:08:19 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing LangSmith Fetch: Debug agents from your terminal",
+          "link": "https://blog.langchain.com/introducing-langsmith-fetch/",
+          "summary": "Today, we're launching LangSmith Fetch , a CLI tool that brings the full power of LangSmith tracing directly into your terminal and IDE. If you're building agents with coding tools like Claude Code or Cursor, or if you simply prefer working in the command line, you'",
+          "published": "Wed, 10 Dec 2025 17:07:57 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing Polly: Your AI Agent Engineer",
+          "link": "https://blog.langchain.com/introducing-polly-your-ai-agent-engineer/",
+          "summary": "Today, we're launching Polly: an AI-powered assistant built directly into LangSmith that helps you debug, analyze, and improve your agents. And yes, we see the irony: we're adding an agent to a product for building agents. We've spent a lot of time working with",
+          "published": "Wed, 10 Dec 2025 17:07:48 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Agent Engineering: A New Discipline",
+          "link": "https://blog.langchain.com/agent-engineering-a-new-discipline/",
+          "summary": "If you’ve built an agent, you know that the delta between “it works on my machine” and “it works in production” can be huge. Traditional software assumes you mostly know the inputs and can define the outputs. Agents give you neither: users can say",
+          "published": "Tue, 09 Dec 2025 16:20:35 GMT",
+          "author": "LangChain",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Evaluating DeepAgents CLI on Terminal Bench 2.0",
+          "link": "https://blog.langchain.com/evaluating-deepagents-cli-on-terminal-bench-2-0/",
+          "summary": "By Vivek Trivedy and Eugene Yurtsev DeepAgents CLI is a coding agent built on top of the Deep Agents SDK, providing an interactive terminal interface with shell execution, filesystem tools, and memory. How well does DeepAgents CLI actually perform on real-world tasks? In this post, we show how to...",
+          "published": "Fri, 05 Dec 2025 17:50:24 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.techmeme.com/feed.xml": {
+      "url": "https://www.techmeme.com/feed.xml",
+      "title": "Techmeme",
+      "description": "Top news and commentary for technology's leaders, from all around the web",
+      "link": "http://www.techmeme.com/",
+      "updated": "Wed, 04 Feb 2026 21:11:34 -0500",
+      "items_count": 15,
+      "items": [
+        {
+          "title": "Filing: Baidu announces a stock buyback program of as much as $5B through the end of 2028, and plans to issue its first dividend in 2026 (Bloomberg)",
+          "link": "http://www.techmeme.com/260204/p54#a260204p54",
+          "summary": "Bloomberg : Filing: Baidu announces a stock buyback program of as much as $5B through the end of 2028, and plans to issue its first dividend in 2026 — Baidu Inc. announced a three-year stock buyback program of as much as $5 billion and plans to issue its first dividend in 2026, establishing a major...",
+          "published": "Wed, 04 Feb 2026 20:50:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Adaption Labs, which aims to create AI systems that learn continuously and cost less to run, raised a $50M seed round led by Emergence Capital Partners (Jeremy Kahn/Fortune)",
+          "link": "http://www.techmeme.com/260204/p53#a260204p53",
+          "summary": "Jeremy Kahn / Fortune : Adaption Labs, which aims to create AI systems that learn continuously and cost less to run, raised a $50M seed round led by Emergence Capital Partners — Sara Hooker, an AI researcher and advocate for cheaper AI systems that use less computing power, is hanging her own...",
+          "published": "Wed, 04 Feb 2026 20:00:14 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Google says the Gemini app has 750M+ MAUs, up from 650M last quarter, and its first-party models process 10B+ tokens per minute via direct API use by customers (Lauren Forristal/TechCrunch)",
+          "link": "http://www.techmeme.com/260204/p52#a260204p52",
+          "summary": "Lauren Forristal / TechCrunch : Google says the Gemini app has 750M+ MAUs, up from 650M last quarter, and its first-party models process 10B+ tokens per minute via direct API use by customers — Google's AI chatbot Gemini has surpassed 750 million monthly active users (MAUs), according to the...",
+          "published": "Wed, 04 Feb 2026 19:35:00 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Andy Jassy taps Dharmesh Mehta, Amazon VP of worldwide selling partner services, as technical advisor, a \"shadow\" role often leading to greater responsibilities (Annie Palmer/CNBC)",
+          "link": "http://www.techmeme.com/260204/p51#a260204p51",
+          "summary": "Annie Palmer / CNBC : Andy Jassy taps Dharmesh Mehta, Amazon VP of worldwide selling partner services, as technical advisor, a “shadow” role often leading to greater responsibilities — Amazon CEO Andy Jassy has tapped one of the company's top marketplace executives to be his new “shadow” advisor,...",
+          "published": "Wed, 04 Feb 2026 19:15:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Amazon MGM Studio plans to develop new AI tools via its \"AI Studio\" to speed TV and film production and cut costs, in collaboration with AWS and LLM providers (Reuters)",
+          "link": "http://www.techmeme.com/260204/p50#a260204p50",
+          "summary": "Reuters : Amazon MGM Studio plans to develop new AI tools via its “AI Studio” to speed TV and film production and cut costs, in collaboration with AWS and LLM providers — Amazon (AMZN.O) plans to use artificial intelligence to speed up the process for making movies and TV shows …",
+          "published": "Wed, 04 Feb 2026 18:40:40 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Multicoin co-founder and Managing Partner Kyle Samani says he is stepping back from the VC firm and has transitioned to an advisory role (Daniel Kuhn/The Block)",
+          "link": "http://www.techmeme.com/260204/p49#a260204p49",
+          "summary": "Daniel Kuhn / The Block : Multicoin co-founder and Managing Partner Kyle Samani says he is stepping back from the VC firm and has transitioned to an advisory role — Quick Take — Kyle Samani, known for his early investment in Solana as part of Multicoin, is stepping back from the crypto-focused...",
+          "published": "Wed, 04 Feb 2026 18:10:38 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Filing: Workday is cutting ~400 employees, or ~2% of its workforce, primarily in customer-facing roles, saying the move will help it invest in priority areas (Brody Ford/Bloomberg)",
+          "link": "http://www.techmeme.com/260204/p48#a260204p48",
+          "summary": "Brody Ford / Bloomberg : Filing: Workday is cutting ~400 employees, or ~2% of its workforce, primarily in customer-facing roles, saying the move will help it invest in priority areas — Workday Inc. is cutting about about 400 employees, saying it will help the software company better invest in...",
+          "published": "Wed, 04 Feb 2026 17:20:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Qualcomm reports Q1 revenue up 5% YoY to $12.25B, vs. $12.21B est., and projects Q2 revenue below est. due to memory supply shortage; QCOM drops 9%+ after hours (Reuters)",
+          "link": "http://www.techmeme.com/260204/p47#a260204p47",
+          "summary": "Reuters : Qualcomm reports Q1 revenue up 5% YoY to $12.25B, vs. $12.21B est., and projects Q2 revenue below est. due to memory supply shortage; QCOM drops 9%+ after hours — Chip supplier Qualcomm (QCOM.O) forecast second-quarter revenue and profit below Wall Street estimates on Wednesday …",
+          "published": "Wed, 04 Feb 2026 16:50:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Arm reports Q3 revenue up 26% YoY to $1.24B, vs. $1.22B est., and license and other revenue up 25% to $505M, vs. $519.9M est.; ARM drops 7%+ after hours (Reuters)",
+          "link": "http://www.techmeme.com/260204/p46#a260204p46",
+          "summary": "Reuters : Arm reports Q3 revenue up 26% YoY to $1.24B, vs. $1.22B est., and license and other revenue up 25% to $505M, vs. $519.9M est.; ARM drops 7%+ after hours — Shares of Arm Holdings (O9Ty.F), fell on Wednesday as its licensing revenues slightly missed Wall Street estimates …",
+          "published": "Wed, 04 Feb 2026 16:45:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Snap reports Q4 revenue up 10% YoY to $1.72B vs. $1.7B est., DAUs up 5% to 474M vs. 478M est., forecasts Q1 revenue below est., announces a $500M share buyback (Jonathan Vanian/CNBC)",
+          "link": "http://www.techmeme.com/260204/p45#a260204p45",
+          "summary": "Jonathan Vanian / CNBC : Snap reports Q4 revenue up 10% YoY to $1.72B vs. $1.7B est., DAUs up 5% to 474M vs. 478M est., forecasts Q1 revenue below est., announces a $500M share buyback — Snap shares were up over 5 percent in after-hours trading on Wednesday after the Snapchat-parent released...",
+          "published": "Wed, 04 Feb 2026 16:40:27 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Alphabet says it expects 2026 capex to be in the range of $175B to $185B, vs. ~$120B est., up from $91.4B in 2025; Q4 capex was $27.9B, up from $14B a year ago (Stephen Morris/Financial Times)",
+          "link": "http://www.techmeme.com/260204/p44#a260204p44",
+          "summary": "Stephen Morris / Financial Times : Alphabet says it expects 2026 capex to be in the range of $175B to $185B, vs. ~$120B est., up from $91.4B in 2025; Q4 capex was $27.9B, up from $14B a year ago — Search giant reports more than $400bn in annual revenue for the first time — Google said it plans to...",
+          "published": "Wed, 04 Feb 2026 16:35:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Google parent Alphabet forecasts sharp surge in 2026 capital spending (Deborah Sophia/Reuters)",
+          "link": "http://www.techmeme.com/260204/p43#a260204p43",
+          "summary": "Deborah Sophia / Reuters : Google parent Alphabet forecasts sharp surge in 2026 capital spending — Alphabet (GOOGL.O) said on Wednesday it was targeting capital expenditure of $175 billion to $185 billion this year, in yet another aggressive ramp-up in spending from the Google parent as it deepens...",
+          "published": "Wed, 04 Feb 2026 16:20:02 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Alphabet reports YouTube's Q4 ad revenue rose 9% YoY to $11.38B, vs. $11.84B est., and YouTube's annual revenue \"surpassed $60B across ads and subscriptions\" (Todd Spangler/Variety)",
+          "link": "http://www.techmeme.com/260204/p42#a260204p42",
+          "summary": "Todd Spangler / Variety : Alphabet reports YouTube's Q4 ad revenue rose 9% YoY to $11.38B, vs. $11.84B est., and YouTube's annual revenue “surpassed $60B across ads and subscriptions” — Ad revenue hit record $11.38 billion in Q4 but fell short of Wall Street expectations",
+          "published": "Wed, 04 Feb 2026 16:15:00 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Alphabet reports Q4 revenue up 18% YoY to $113.83B, vs. $111.43B est., Google Cloud revenue up 48% to $17.66B, vs. $16.18B est., net income up 30% to $34.46B (Alphabet)",
+          "link": "http://www.techmeme.com/260204/p41#a260204p41",
+          "summary": "Alphabet : Alphabet reports Q4 revenue up 18% YoY to $113.83B, vs. $111.43B est., Google Cloud revenue up 48% to $17.66B, vs. $16.18B est., net income up 30% to $34.46B — MOUNTAIN VIEW, Calif. - February 4, 2026 - Alphabet Inc. (NASDAQ: GOOG, GOOGL) today announced financial results for the quarter...",
+          "published": "Wed, 04 Feb 2026 16:04:10 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Internal memos: Meta said Avocado is its \"most capable pre-trained base model\" and achieves 10x compute efficiency \"wins\" on text tasks vs. Llama 4 Maverick (Jyoti Mann/The Information)",
+          "link": "http://www.techmeme.com/260204/p40#a260204p40",
+          "summary": "Jyoti Mann / The Information : Internal memos: Meta said Avocado is its “most capable pre-trained base model” and achieves 10x compute efficiency “wins” on text tasks vs. Llama 4 Maverick — Meta Platforms is sounding an increasingly bullish note about the first major AI model expected to emerge...",
+          "published": "Wed, 04 Feb 2026 15:55:33 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://techcrunch.com/category/artificial-intelligence/feed/": {
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "description": "Startup and Technology News",
+      "link": "https://techcrunch.com/category/artificial-intelligence/",
+      "updated": "Thu, 05 Feb 2026 01:36:42 +0000",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Sam Altman got exceptionally testy over Claude Super Bowl ads",
+          "link": "https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/",
+          "summary": "He posted a novella-sized rant that devolved into to calling his rival \"dishonest\" and \"authoritarian.\"",
+          "published": "Thu, 05 Feb 2026 00:45:11 +0000",
+          "author": "Julie Bort",
+          "tags": [
+            "TC",
+            "AI",
+            "Anthropic",
+            "OpenAI",
+            "sam altman"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Alphabet won’t talk about the Google-Apple AI deal, even to investors",
+          "link": "https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/",
+          "summary": "Alphabet CEO skipped an analyst's question about Apple on the company's earnings call.",
+          "published": "Wed, 04 Feb 2026 23:28:31 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "TC",
+            "Alphabet",
+            "Apple",
+            "Google"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Google’s Gemini app has surpassed 750M monthly active users",
+          "link": "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/",
+          "summary": "Google revealed a significant milestone for its Gemini app, announcing over 750 million monthly active users as it competes with ChatGPT and Meta AI.",
+          "published": "Wed, 04 Feb 2026 22:53:46 +0000",
+          "author": "Lauren Forristal",
+          "tags": [
+            "AI",
+            "Apps",
+            "google gemini"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Meet Gizmo: A TikTok for interactive, vibe-coded mini apps",
+          "link": "https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/",
+          "summary": "Gizmo's app is like a TikTok for vibe-coded mini apps... and it's a lot of fun.",
+          "published": "Wed, 04 Feb 2026 21:45:32 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "Startups",
+            "ai apps",
+            "atma sciences"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI SRE Resolve AI confirms $125M raise, unicorn valuation",
+          "link": "https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/",
+          "summary": "The two-year-old startup confirms that it closed a Series A led by Lightspeed at $1 billion valuation.",
+          "published": "Wed, 04 Feb 2026 21:39:26 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "AI",
+            "Startups",
+            "devops",
+            "In Brief",
+            "lightspeed venture partners"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Amazon to begin testing AI tools for film and TV production next month",
+          "link": "https://techcrunch.com/2026/02/04/amazon-to-begin-testing-ai-tools-for-film-and-tv-production-next-month/",
+          "summary": "Amazon MGM Studios will reportedly begin a closed beta program in March to test its AI tools to help with film and TV production.",
+          "published": "Wed, 04 Feb 2026 21:26:43 +0000",
+          "author": "Lauren Forristal",
+          "tags": [
+            "AI",
+            "Media & Entertainment",
+            "Amazon",
+            "Generative AI",
+            "In Brief"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "A16z just raised $1.7B for AI infrastructure. Here’s where it’s going.",
+          "link": "https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/",
+          "summary": "Andreessen Horowitz just raised a whopping ⁠new $15 billion in funding⁠. And a $1.7 billion chunk of that is going to its ⁠infrastructure team⁠, the one responsible for some of its biggest, most prominent AI investments including Black Forrest Labs, Cursor, OpenAI, ⁠ElevenLabs⁠, Ideogram, ⁠Fal⁠ and...",
+          "published": "Wed, 04 Feb 2026 20:24:12 +0000",
+          "author": "Theresa Loconsolo",
+          "tags": [
+            "AI",
+            "Venture",
+            "Equity Video"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "What a16z is actually funding (and what it’s ignoring) when it comes to AI infra",
+          "link": "https://techcrunch.com/podcast/what-a16z-is-actually-funding-and-what-its-ignoring-when-it-comes-to-ai-infra/",
+          "summary": "Andreessen Horowitz just raised a whopping new $15 billion in funding. And a $1.7 billion chunk of that is going to its infrastructure team, the one responsible for some of its biggest, most prominent AI investments, including Black Forest Labs, Cursor, OpenAI, ElevenLabs, Ideogram, Fal, and dozens...",
+          "published": "Wed, 04 Feb 2026 20:19:12 +0000",
+          "author": "Julie Bort, Theresa Loconsolo",
+          "tags": [
+            "AI",
+            "Fundraising",
+            "Venture",
+            "a16z",
+            "ai infrastructure"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Tinder looks to AI to help fight ‘swipe fatigue’ and dating app burnout",
+          "link": "https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/",
+          "summary": "Tinder is testing AI recommendations and insight from your Camera Roll for better matches.",
+          "published": "Wed, 04 Feb 2026 18:08:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "dating apps",
+            "Match Group",
+            "online dating"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Roblox’s 4D creation feature is now available in open beta",
+          "link": "https://techcrunch.com/2026/02/04/robloxs-4d-creation-feature-is-now-available-in-open-beta/",
+          "summary": "Roblox's highly anticipated 4D creation feature has officially arrived in open beta.",
+          "published": "Wed, 04 Feb 2026 17:00:00 +0000",
+          "author": "Lauren Forristal",
+          "tags": [
+            "AI",
+            "Gaming",
+            "TC",
+            "Generative AI",
+            "Roblox"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "ElevenLabs raises $500M from Sequoia at an $11 billion valuation",
+          "link": "https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/",
+          "summary": "ElevenLabs' valuation has raised more than three times in the last 12 months.",
+          "published": "Wed, 04 Feb 2026 15:33:58 +0000",
+          "author": "Ivan Mehta",
+          "tags": [
+            "AI",
+            "Startups",
+            "TC",
+            "Venture",
+            "ElevenLabs"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Alexa+, Amazon’s AI assistant, is now available to everyone in the US",
+          "link": "https://techcrunch.com/2026/02/04/alexa-amazons-ai-assistant-is-now-available-to-everyone-in-the-u-s/",
+          "summary": "Amazon opens Alexa+ to everyone in the U.S. The AI feature is free for Prime members across devices, and free for everyone on mobile and web.",
+          "published": "Wed, 04 Feb 2026 14:00:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Hardware",
+            "Media & Entertainment",
+            "Alexa",
+            "alexa+"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Accel doubles down on Fibr AI as agents turn static websites into one-to-one experiences",
+          "link": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
+          "summary": "Fibr AI replaces marketing agency- and engineering-heavy website personalization with autonomous systems designed for enterprise scale.",
+          "published": "Wed, 04 Feb 2026 13:00:00 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "Startups",
+            "Accel",
+            "Fibr AI"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Exclusive: Positron raises $230M Series B to take on Nvidia’s AI chips",
+          "link": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
+          "summary": "The investment comes from backers including the Qatar Investment Authority as demand for chips beyond Nvidia soars and as Qatar aims to build out its AI infrastructure.",
+          "published": "Wed, 04 Feb 2026 08:18:51 +0000",
+          "author": "Rebecca Bellan",
+          "tags": [
+            "AI",
+            "Fundraising",
+            "Startups",
+            "Exclusive",
+            "semiconductors"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Intel will start making GPUs, a market dominated by Nvidia",
+          "link": "https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/",
+          "summary": "Intel has been bulking up a team to focus on this effort and will develop its GPU strategy around customer needs.",
+          "published": "Tue, 03 Feb 2026 21:01:34 +0000",
+          "author": "Rebecca Szkutak",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "Intel",
+            "nvidia",
+            "GPUS"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Xcode moves into agentic coding with deeper OpenAI and Anthropic integrations",
+          "link": "https://techcrunch.com/2026/02/03/xcode-moves-into-agentic-coding-with-deeper-openai-and-anthropic-integrations/",
+          "summary": "Xcode 26.3 offers agentic coding capabilities with Anthropic's Claude Agent and OpenAI's Codex.",
+          "published": "Tue, 03 Feb 2026 18:00:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "agentic",
+            "Apple",
+            "coding"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Lotus Health nabs $35M for AI doctor that sees patients for free",
+          "link": "https://techcrunch.com/2026/02/03/lotus-health-nabs-35m-for-ai-doctor-that-sees-patients-for-free/",
+          "summary": "This AI doctor is licensed in all 50 states, the startup says. The deal was led by CRV and Kleiner Perkins.",
+          "published": "Tue, 03 Feb 2026 17:14:27 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "AI",
+            "Biotech & Health",
+            "Venture",
+            "AI Medical Service",
+            "CRV"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Fitbit founders launch AI platform to help families monitor their health",
+          "link": "https://techcrunch.com/2026/02/03/fitbit-founders-launch-ai-platform-to-help-families-monitor-their-health/",
+          "summary": "Luffu uses AI in the background to gather and organize family information, learn day-to-day patterns, and flag notable changes so families can stay aligned and address potential well-being issues.",
+          "published": "Tue, 03 Feb 2026 15:53:36 +0000",
+          "author": "Aisha Malik",
+          "tags": [
+            "AI",
+            "Apps",
+            "Biotech & Health",
+            "Startups",
+            "fitbit"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Peak XV says internal disagreement led to partner exits as it doubles down on AI",
+          "link": "https://techcrunch.com/2026/02/03/peak-xv-says-internal-disagreement-led-to-partner-exits-as-it-doubles-down-on-ai/",
+          "summary": "Peak XV is transitioning board roles and opening a U.S. office while continuing to view India as its largest market.",
+          "published": "Tue, 03 Feb 2026 14:14:33 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "AI",
+            "Startups",
+            "Venture",
+            "Ashish Agrawal",
+            "Ishaan Mittal"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Elon Musk’s SpaceX officially acquires Elon Musk’s xAI, with plan to build data centers in space",
+          "link": "https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/",
+          "summary": "The merger creates the world's most valuable private company and paves the way for Musk to try and prove out the usefulness of space-based data centers.",
+          "published": "Mon, 02 Feb 2026 22:21:57 +0000",
+          "author": "Sean O'Kane",
+          "tags": [
+            "AI",
+            "Space",
+            "Elon Musk",
+            "SpaceX",
+            "xAI"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.sequoiacap.com/feed/": {
+      "url": "https://www.sequoiacap.com/feed/",
+      "title": "Sequoia Capital",
+      "description": "Sequoia Capital",
+      "link": "https://sequoiacap.com/",
+      "updated": "Tue, 03 Feb 2026 01:00:12 +0000",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "Partnering With Waymo",
+          "link": "https://sequoiacap.com/article/partnering-with-waymo/",
+          "summary": "The post Partnering With Waymo appeared first on Sequoia Capital .",
+          "published": "Mon, 02 Feb 2026 23:04:37 +0000",
+          "author": "amoore",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Partnering With Flapping Airplanes",
+          "link": "https://sequoiacap.com/article/partnering-with-flapping-airplanes/",
+          "summary": "The post Partnering With Flapping Airplanes appeared first on Sequoia Capital .",
+          "published": "Wed, 28 Jan 2026 17:30:24 +0000",
+          "author": "sbarry",
+          "tags": [
+            "AI",
+            "Funding announcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Partnering with Pace: Making Work Weightless",
+          "link": "https://sequoiacap.com/article/partnering-with-pace-making-work-weightless/",
+          "summary": "The post Partnering with Pace: Making Work Weightless appeared first on Sequoia Capital .",
+          "published": "Tue, 27 Jan 2026 14:00:09 +0000",
+          "author": "sbarry",
+          "tags": [
+            "AI",
+            "Funding announcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Most Precious Resource",
+          "link": "https://sequoiacap.com/article/the-most-precious-resource/",
+          "summary": "The post The Most Precious Resource appeared first on Sequoia Capital .",
+          "published": "Thu, 22 Jan 2026 16:57:18 +0000",
+          "author": "amoore",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "2026: This is AGI",
+          "link": "https://sequoiacap.com/article/2026-this-is-agi/",
+          "summary": "The post 2026: This is AGI appeared first on Sequoia Capital .",
+          "published": "Wed, 14 Jan 2026 17:30:21 +0000",
+          "author": "amoore",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Blues Makes Every Thing Smarter",
+          "link": "https://sequoiacap.com/article/blues-makes-every-thing-smarter/",
+          "summary": "The post Blues Makes Every Thing Smarter appeared first on Sequoia Capital .",
+          "published": "Wed, 14 Jan 2026 14:45:19 +0000",
+          "author": "nsunderland",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Partnering with Sandstone: An AI-Native Platform for In-House Legal Teams",
+          "link": "https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/",
+          "summary": "The post Partnering with Sandstone: An AI-Native Platform for In-House Legal Teams appeared first on Sequoia Capital .",
+          "published": "Tue, 13 Jan 2026 14:30:08 +0000",
+          "author": "nsunderland",
+          "tags": [
+            "AI",
+            "Funding announcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Partnering with WithCoverage: Insurance As It Should Be",
+          "link": "https://sequoiacap.com/article/partnering-with-withcoverage-insurance-as-it-should-be/",
+          "summary": "The post Partnering with WithCoverage: Insurance As It Should Be appeared first on Sequoia Capital .",
+          "published": "Tue, 13 Jan 2026 14:00:45 +0000",
+          "author": "sbarry",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "Funding announcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Partnering with Serval: Empowering IT for AI Enterprise Automation",
+          "link": "https://sequoiacap.com/article/partnering-with-serval-empowering-it-for-ai-enterprise-automation/",
+          "summary": "The post Partnering with Serval: Empowering IT for AI Enterprise Automation appeared first on Sequoia Capital .",
+          "published": "Thu, 11 Dec 2025 14:00:05 +0000",
+          "author": "nsunderland",
+          "tags": [
+            "AI",
+            "Funding announcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Abundance Paradox: Why Netflix Paid $82B for Scarcity",
+          "link": "https://sequoiacap.com/article/the-abundance-paradox-why-netflix-paid-82b-for-scarcity/",
+          "summary": "The post The Abundance Paradox: Why Netflix Paid $82B for Scarcity appeared first on Sequoia Capital .",
+          "published": "Tue, 09 Dec 2025 22:46:14 +0000",
+          "author": "amoore",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://a16z.com/feed/": {
+      "url": "https://a16z.com/feed/",
+      "error": "HTTP 404 error fetching feed: https://a16z.com/feed/ (RSS地址不存在)",
+      "items": []
+    },
+    "https://www.thoughtworks.com/insights/rss": {
+      "url": "https://www.thoughtworks.com/insights/rss",
+      "error": "HTTP 404 error fetching feed: https://www.thoughtworks.com/insights/rss (RSS地址不存在)",
+      "items": []
+    },
+    "https://www.gartner.com/en/newsroom/rss": {
+      "url": "https://www.gartner.com/en/newsroom/rss",
+      "title": "Gartner Press Releases",
+      "description": "Gartner Press Release Feed",
+      "link": "https://www.gartner.com/en/newsroom",
+      "updated": null,
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Gartner Identifies the Top Cybersecurity Trends for 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-05-gartner-identifies-the-top-cybersecurity-trends-for-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "The chaotic rise of AI, geopolitical tensions, regulatory volatility and an accelerating threat landscape are the driving forces behind the top cybersecurity trends for 2026, according to Gartner.",
+          "published": "Thu, 5 Feb 2026 01:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts 40% of Large Warehouse Operations Will Adopt Gamification Tools by 2028",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-04-gartner-predicts-40-percent-of-large-warehouse-operations-will-adopt-gamification-tools-by-2028?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2028, 40% of large warehouse operations and distribution centers will have deployed employee engagement and gamification tools to motivate their workforces, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 4 Feb 2026 14:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 10.8% in 2026, Totaling $6.15 Trillion",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-forecasts-worldwide-it-spending-to-grow-10-point-8-percent-in-2026-totaling-6-point-15-trillion-dollars?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Worldwide IT spending is expected to reach $6.15 trillion in 2026, up 10.8% from 2025, according to the latest forecast by Gartner, Inc., a business and technology insights company.",
+          "published": "Tue, 3 Feb 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts Half of Companies That Cut Customer Service Staff Due to AI Will Rehire by 2027",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2027, 50% of companies that attributed headcount reduction to AI will rehire staff to perform similar functions, but under different job titles, according to Gartner, Inc, a business and technology insights company.",
+          "published": "Mon, 2 Feb 2026 08:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts 35% of Countries Will Be Locked Into Region-Specific AI Platforms by 2027",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-29-gartner-predicts-35-percent-of-countries-will-be-locked-into-region-specific-ai-platforms-by-2027?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2027, 35% of countries will be locked into region-specific AI platforms using proprietary contextual data, according to Gartner, Inc., a business and technology insights company. Gartner also predicts that platform lock-in will rise from 5% to 35% by 2027.",
+          "published": "Thu, 29 Jan 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Identifies Four Financial Strategies for CFOs to Achieve Efficient Growth",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-28-gartner-identifies-four-financial-strategies-for-cfos-to-achieve-efficient-growth?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Amid ongoing economic volatility, and rising cost pressures, CFOs should evaluate four financial strategies to drive efficient growth, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 28 Jan 2026 14:30:22 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Survey Shows Audit Departments Are Embracing AI and Data Analytics to Drive Innovation in 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-27-gartner-survey-shows-audit-departments-are-embracing-ai-and-data-analytics-to-drive-innovation-in-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Over 70% of chief audit executives (CAEs) say that building a culture of innovation in their teams and better leveraging data analytics and generative AI (GenAI) to support audit, are important or extremely important priorities in 2026, according to Gartner, Inc., a business and technology insights...",
+          "published": "Tue, 27 Jan 2026 14:30:12 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Announces Gartner Digital Workplace Summit 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-27-gartner-announces-gartner-digital-workplace-summit-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "What: Gartner Digital Workplace Summit 2026 When: March 23-24, 2026 Where: San Diego, CA Members of the media can register for the conference by contacting Meghan.Moran@Gartner.com. Details: Generative and agentic AI are shifting from pilots to widespread adoption. To seize these opportunities,...",
+          "published": "Tue, 27 Jan 2026 13:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "CHROs Must Accelerate Learning and Development as Gartner Predicts by 2030, 30% of organizations will see worse decision-making due to overreliance on AI",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-1-27-chros-must-accelerate-learning-and-development-as-gartner-predicts-by-2030-30-percent-of-organizations-will-see-worse-decision-making-due-to-overreliance-on-ai?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "As GenAI rapidly reshapes work, especially for less experienced employees, Gartner predicts that by 2030, 30% of enterprises will face declining decision-making quality due to an overreliance on AI.",
+          "published": "Tue, 27 Jan 2026 13:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts GenAI Cost Per Resolution for Customer Service Will Exceed Offshore Human Agent Costs by 2030",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-26-gartner-predicts-genai-cost-per-resolution-for-customer-service-will-exceed-offshore-human-agent-costs-by-2030?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2030, cost per resolution for generative AI (GenAI) will exceed $3, higher than many B2C offshore human agents, according to Gartner, Inc, a business and technology insights company.",
+          "published": "Mon, 26 Jan 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "In an AI-Driven Super Bowl Season, Transparency is the New Creative Advantage for Marketers",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-22-in-an-ai-driven-super-bowl-season-transparency-is-the-new-creative-advantage-for-marketers?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Super Bowl advertising often previews the creative and channel strategies marketers will lean on all year. In 2026, expect a bigger shift toward pre‑game releases and activations, more obvious and disclosed AI usage, and a sharper fight for attention powered by celebrities, humor and “shop-now”...",
+          "published": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Says AI Is Leading CFOs to Spend More Time on Investor Relations",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-says-ai-is-leading-cfos-to-spend-more-time-on-investor-relations?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "The use of AI tools in investor research means that CFOs are devoting more time to investor relations (IR), according to Gartner, Inc. a business and technology insights company.",
+          "published": "Wed, 21 Jan 2026 14:30:47 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts Fewer Than 20 Companies Will Scale Humanoid Robots for Manufacturing and Supply Chain to Production Stage by 2028",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-fewer-than-20-companies-will-scale-humanoid-robots-for-manufacturing-and-supply-chain-to-production-stage-by-2028?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Through 2028, less than 100 companies will progress humanoid robot proofs of concept beyond experimentation, with fewer than 20 companies going live in production for supply chain and manufacturing use cases, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 21 Jan 2026 14:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts by 2028, 50% Of Organizations Will Adopt Zero-Trust Data Governance as Unverified AI-Generated Data Grows",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-by-2028-50-percent-of-organizations-will-adopt-zero-trust-data-governance-as-unverified-ai-generated-data-grows?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2028, 50% of organizations will implement a zero-trust posture for data governance due to the proliferation of unverified AI-generated data, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 21 Jan 2026 08:28:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Says Worldwide PC Shipments Increased 9.3% in Fourth Quarter of 2025 and 9.1% for the Full Year",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-1-20-gartner-says-worldwide-pc-shipments-increased-9-point-3-percent-in-fourth-quarter-of-2025-and-9-point-1-percent-for-the-full-year?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Worldwide PC shipments totaled 71.5 million units in the fourth quarter of 2025, a 9.3% increase from the fourth quarter of 2024, according to preliminary results by Gartner, Inc., a business and technology insights company. For the full year, worldwide PC shipments totaled more than 270 million...",
+          "published": "Tue, 20 Jan 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Survey Finds Only One-Third of Consumers Say GenAI Rivals Search Engines; Marketers Must Optimize for Both AI-Driven and Traditional Search",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/gartner-survey-finds-only-one-third-of-consumers-say-genai-rivals-search-engines-marketers-must-optimize-for-both-ai-driven-and-traditional-search?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Only about one-third of consumers believe GenAI chatbots are as effective as search engines for learning new information, according to a survey by Gartner, Inc., a business and technology insights company.",
+          "published": "Tue, 20 Jan 2026 08:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Announces Gartner Data & Analytics Summit 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-announces-gartner-data-and-analytics-summit-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "What: Gartner Data & Analytics Summit When: March 9-11, 2026 Where: Orlando, FL Members of the media can register for the conference by contacting Meghan.Moran@Gartner.com.",
+          "published": "Thu, 15 Jan 2026 14:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts 60% of Brands Will Use Agentic AI to Deliver Streamlined One-to-One Interactions by 2028",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-15-gartner-predicts-60-percent-of-brands-will-use-agentic-ai-to-deliver-streamlined-one-to-one-interactions-by-2028?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2028, 60% of brands will use agentic AI to facilitate streamlined one-to-one interactions, according to Gartner, Inc, a business and technology insights company.",
+          "published": "Thu, 15 Jan 2026 11:44:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Worldwide spending on AI is forecast to total $2.52 trillion in 2026, a 44% increase year-over-year, according to Gartner, Inc. a business and technology insights company.",
+          "published": "Thu, 15 Jan 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Announces Gartner Product Leadership Conference 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-13-gartner-announces-gartner-product-leadership-conference-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "In today’s volatile market, shaped by shifting customer needs, evolving dynamics and the accelerating AI race, success depends on your ability to turn disruption into opportunity. Gartner Product Leadership Conference 2026 focuses on helping leaders master these challenges, leverage AI for business...",
+          "published": "Tue, 13 Jan 2026 13:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.producthunt.com/feed?category=artificial_intelligence": {
+      "url": "https://www.producthunt.com/feed?category=artificial_intelligence",
+      "title": "Product Hunt — The best new products, every day",
+      "description": "",
+      "link": "https://www.producthunt.com",
+      "updated": "2026-02-04T00:01:00-08:00",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Scribeist V2",
+          "link": "https://www.producthunt.com/products/scribeist",
+          "summary": "Write without switching tools Discussion | Link",
+          "published": "2026-02-03T01:49:40-08:00",
+          "author": "Tanner Bjorgan",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Genstore.ai",
+          "link": "https://www.producthunt.com/products/genstore-ai-2",
+          "summary": "Test, iterate, and launch an agentic storefront in minutes Discussion | Link",
+          "published": "2026-01-07T13:21:54-08:00",
+          "author": "Chris Messina",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Xcode 26.3",
+          "link": "https://www.producthunt.com/products/xcode",
+          "summary": "Leverage coding agents to tackle complex tasks autonomously Discussion | Link",
+          "published": "2026-02-03T14:05:32-08:00",
+          "author": "Chris Messina",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "CreateOS",
+          "link": "https://www.producthunt.com/products/createos",
+          "summary": "Build and deploy apps from any AI coding tool, in one place Discussion | Link",
+          "published": "2026-01-22T17:05:55-08:00",
+          "author": "fmerian",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Unblocked Code Review",
+          "link": "https://www.producthunt.com/products/unblocked",
+          "summary": "AI code review that knows when to chime in Discussion | Link",
+          "published": "2026-02-02T16:06:27-08:00",
+          "author": "Brandon Waselnuk",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "SERA",
+          "link": "https://www.producthunt.com/products/allen-institute-of-artificial-intelligence",
+          "summary": "Fast, accessible coding agents that adapt to any repo Discussion | Link",
+          "published": "2026-02-03T22:39:14-08:00",
+          "author": "Zac Zuo",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nexuscale AI",
+          "link": "https://www.producthunt.com/products/nexuscale-ai",
+          "summary": "AI sales assistant that finds leads + books meetings for you Discussion | Link",
+          "published": "2026-01-12T06:12:34-08:00",
+          "author": "Aleksandar Blazhev",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Agentset",
+          "link": "https://www.producthunt.com/products/agentset",
+          "summary": "APIs for building AI chat and search Discussion | Link",
+          "published": "2025-05-13T09:34:09-07:00",
+          "author": "Abdellatif Abdelfattah",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Multitui",
+          "link": "https://www.producthunt.com/products/multitui",
+          "summary": "Sandbox claude code, codex, or any TUI on macOS Discussion | Link",
+          "published": "2026-02-03T04:49:26-08:00",
+          "author": "David Cann",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Miniloop",
+          "link": "https://www.producthunt.com/products/miniloop",
+          "summary": "Turn natural language into AI agents and automations Discussion | Link",
+          "published": "2026-01-19T10:05:39-08:00",
+          "author": "Wyatt Miller",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Beni AI",
+          "link": "https://www.producthunt.com/products/beni-ai-video-call-ai-companion",
+          "summary": "Face to face AI companion calls with voice, motion, memory Discussion | Link",
+          "published": "2026-02-03T01:32:08-08:00",
+          "author": "summer lee",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Pastey Extension",
+          "link": "https://www.producthunt.com/products/pastey-extension",
+          "summary": "Keep a library of saved text, paste it in a keystroke Discussion | Link",
+          "published": "2026-02-03T16:29:11-08:00",
+          "author": "Harsha Gundala",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Candle (YC F24)",
+          "link": "https://www.producthunt.com/products/candle-4",
+          "summary": "One shared moment a day Discussion | Link",
+          "published": "2025-06-23T15:51:44-07:00",
+          "author": "Alex Ruber",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "spacecake",
+          "link": "https://www.producthunt.com/products/spacecake",
+          "summary": "Run Claude Code agents in terminal with a visual editor Discussion | Link",
+          "published": "2026-02-03T20:00:47-08:00",
+          "author": "alexander",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Universal-3 Pro",
+          "link": "https://www.producthunt.com/products/assemblyai",
+          "summary": "The first of its kind promptable speech language model Discussion | Link",
+          "published": "2026-02-02T14:00:12-08:00",
+          "author": "Meredith Rauch",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "OpenSheet",
+          "link": "https://www.producthunt.com/products/opensheet",
+          "summary": "Turn raw CSV and JSON into an interactive data canvas Discussion | Link",
+          "published": "2026-01-30T01:11:11-08:00",
+          "author": "Amin",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "GitGuessr",
+          "link": "https://www.producthunt.com/products/gitguessr",
+          "summary": "Train code reading skills in a GeoGuessr-like game Discussion | Link",
+          "published": "2026-02-03T09:58:15-08:00",
+          "author": "Nik Haldimann",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "CatchBack Cards",
+          "link": "https://www.producthunt.com/products/catchback-cards",
+          "summary": "Create custom mystery packs of Pokemon and Sports cards Discussion | Link",
+          "published": "2026-01-29T20:51:19-08:00",
+          "author": "Joseph Zhang",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Bunny Database",
+          "link": "https://www.producthunt.com/products/bunny-net",
+          "summary": "Like SQLite, but for the web Discussion | Link",
+          "published": "2026-02-02T05:18:15-08:00",
+          "author": "fmerian",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Sheetful.co",
+          "link": "https://www.producthunt.com/products/sheetful-co",
+          "summary": "Build robust REST APIs with Google Sheets for free Discussion | Link",
+          "published": "2026-02-03T04:18:39-08:00",
+          "author": "Goenji",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.futurepedia.io/rss": {
+      "url": "https://www.futurepedia.io/rss",
+      "error": "HTTP 404 error fetching feed: https://www.futurepedia.io/rss (RSS地址不存在)",
+      "items": []
+    },
+    "https://huggingface.co/papers/rss": {
+      "url": "https://huggingface.co/papers/rss",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "https://sspai.com/feed": {
+      "url": "https://sspai.com/feed",
+      "title": "少数派",
+      "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
+      "link": "https://sspai.com",
+      "updated": "Thu, 05 Feb 2026 08:46:40 +0800",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "派早报：iQOO 15 Ultra 发布、Grok Imagine 1.0 推出等",
+          "link": "https://sspai.com/post/106063",
+          "summary": "阿里千问发布 Qwen3-Coder-Next、微软将停售 OneDrive 独立商业订阅等。 查看全文",
+          "published": "Thu, 05 Feb 2026 08:46:40 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "少数派 2025 年度征文：听说你对写作是真 AI？",
+          "link": "https://sspai.com/post/105805",
+          "summary": "请你尽情地用 AI——或者完全不用，只要写出风格、写出水平。两种方法的高下，将由少数派读者通过投票选出。 查看全文",
+          "published": "Wed, 04 Feb 2026 17:30:00 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "城市漫步指南：软件名城，泉城济南",
+          "link": "https://sspai.com/post/105859",
+          "summary": "济南确实是个不错的地方，对比石家庄来说我个人认为更宜居一些，有水有山有文化有历史有底蕴，甚至还有很多城市羡慕的高新技术产业。 查看全文",
+          "published": "Wed, 04 Feb 2026 15:00:00 +0800",
+          "author": "PJHubs",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "见不惯 B 站 up 主的带货广告？教你利用 AI 快速跳过",
+          "link": "https://sspai.com/post/105951",
+          "summary": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
+          "published": "Wed, 04 Feb 2026 11:05:03 +0800",
+          "author": "v2think",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "派早报：Firefox 上线 AI 功能开关、OpenAI 推出 Codex 桌面应用等",
+          "link": "https://sspai.com/post/106033",
+          "summary": "Xbox PC 客户端更新集成网易 UU 加速器，任天堂 Switch 系列主机销量突破 1.55 亿台等。 查看全文",
+          "published": "Wed, 04 Feb 2026 07:00:00 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "社区速递 128 | 小红书里的「奇怪知识」、打开 14 天的血糖盲盒",
+          "link": "https://sspai.com/post/106004",
+          "summary": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光。因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。🏆年度创作少 ... 查看全文",
+          "published": "Tue, 03 Feb 2026 16:46:53 +0800",
+          "author": "Matrix机器人",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "不是只做样子货：铁三角 ATH-CKS50TW2 星战联名耳机体验",
+          "link": "https://sspai.com/post/105893",
+          "summary": "相较于我们提到过的 TWX7，CKS50TW2 并没有把很多功夫都下到声音调校上，而是做了一个各方面功能都挺有意思的产品。 查看全文",
+          "published": "Tue, 03 Feb 2026 15:20:22 +0800",
+          "author": "KingTsui",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "App+1 | 开源免费、多人协作，用 Cent 一站式搞定记账",
+          "link": "https://sspai.com/post/105644",
+          "summary": "支持二级分类，自定义标签，支持不同维度的统计，丰富的筛选功能，新增了预算管理，支持上传图片附件，未来还会增加地图功能，最重要的是，它完全免费。 查看全文",
+          "published": "Tue, 03 Feb 2026 11:30:20 +0800",
+          "author": "少数派_924128",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "派评 | 近期值得关注的 App",
+          "link": "https://sspai.com/post/105972",
+          "summary": ">下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文",
+          "published": "Mon, 02 Feb 2026 17:59:15 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "2026 春运买票指北：乡愁愈烈，莫添烦恼",
+          "link": "https://sspai.com/post/86328",
+          "summary": "从火车票放票原理开始，让我们探究如何在高峰期买到一张火车票。 查看全文",
+          "published": "Mon, 02 Feb 2026 15:00:02 +0800",
+          "author": "Xenogeneic",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://arstechnica.com/feed/": {
+      "url": "https://arstechnica.com/feed/",
+      "title": "Ars Technica",
+      "description": "Serving the Technologist since 1998. News, reviews, and analysis.",
+      "link": "https://arstechnica.com",
+      "updated": "Wed, 04 Feb 2026 23:41:09 +0000",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "Microsoft releases urgent Office patch. Russian-state hackers pounce.",
+          "link": "https://arstechnica.com/security/2026/02/russian-state-hackers-exploit-office-vulnerability-to-infect-computers/",
+          "summary": "The window to patch vulnerabilities is shrinking rapidly.",
+          "published": "Wed, 04 Feb 2026 23:08:04 +0000",
+          "author": "Dan Goodin",
+          "tags": [
+            "Biz & IT",
+            "Security",
+            "APT28",
+            "microsoft",
+            "office"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "FBI stymied by Apple's Lockdown Mode after seizing journalist's iPhone",
+          "link": "https://arstechnica.com/tech-policy/2026/02/fbi-stymied-by-apples-lockdown-mode-after-seizing-journalists-iphone/",
+          "summary": "Post reporter was compelled to unlock MacBook Pro with fingerprint, however.",
+          "published": "Wed, 04 Feb 2026 22:41:15 +0000",
+          "author": "Jon Brodkin",
+          "tags": [
+            "Policy",
+            "apple lockdown mode",
+            "hannah natanson",
+            "iphone lockdown mode",
+            "Washington Post"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Should AI chatbots have ads? Anthropic says no.",
+          "link": "https://arstechnica.com/ai/2026/02/should-ai-chatbots-have-ads-anthropic-says-no/",
+          "summary": "ChatGPT competitor comes out swinging with Super Bowl ad mocking AI product pitches.",
+          "published": "Wed, 04 Feb 2026 21:15:07 +0000",
+          "author": "Benj Edwards",
+          "tags": [
+            "AI",
+            "Biz & IT",
+            "AI advertising",
+            "AI assistants",
+            "AI business models"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "US House takes first step toward creating \"commercial\" deep space program",
+          "link": "https://arstechnica.com/space/2026/02/us-house-takes-first-step-toward-creating-commercial-deep-space-program/",
+          "summary": "\"We will continue to rely on the ingenuity of the private sector.\"",
+          "published": "Wed, 04 Feb 2026 21:01:05 +0000",
+          "author": "Eric Berger",
+          "tags": [
+            "Space",
+            "Commercial",
+            "congress",
+            "deep space transportation",
+            "NASA"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Judge gives Musk bad news, says Trump hasn't intervened to block SEC lawsuit",
+          "link": "https://arstechnica.com/tech-policy/2026/02/trump-ghosts-musk-wont-back-claims-sec-lawsuit-was-political-harassment/",
+          "summary": "Musk is stuck fighting SEC suit seeking $150M in disgorgements from his Twitter takeover.",
+          "published": "Wed, 04 Feb 2026 20:23:47 +0000",
+          "author": "Ashley Belanger",
+          "tags": [
+            "Policy",
+            "Elon Musk",
+            "SEC",
+            "Securities and Exchange Commission",
+            "Twitter"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Trump admin is \"destroying medical research,\" Senate report finds",
+          "link": "https://arstechnica.com/health/2026/02/trump-admin-is-destroying-medical-research-senate-report-finds/",
+          "summary": "In a Senate hearing Tuesday, NIH director dismissed concern about research chaos.",
+          "published": "Wed, 04 Feb 2026 20:02:22 +0000",
+          "author": "Beth Mole",
+          "tags": [
+            "Health",
+            "Bhattacharya",
+            "NIH"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "\"Capture it all\": ICE urged to explain memo about collecting info on protesters",
+          "link": "https://arstechnica.com/tech-policy/2026/02/capture-it-all-ice-urged-to-explain-memo-about-collecting-info-on-protesters/",
+          "summary": "Sen. Markey: Database of peaceful protesters, if it exists, should be shut down.",
+          "published": "Wed, 04 Feb 2026 18:32:38 +0000",
+          "author": "Jon Brodkin",
+          "tags": [
+            "Policy",
+            "ice",
+            "immigration and customs enforcement"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "User blowback convinces Adobe to keep supporting 30-year-old 2D animation app",
+          "link": "https://arstechnica.com/gadgets/2026/02/adobe-reverses-decision-to-discontinue-animate-after-a-lot-of-confusion-and-angst/",
+          "summary": "Despite the about-face, some customers think \"the damage is done.\"",
+          "published": "Wed, 04 Feb 2026 17:55:13 +0000",
+          "author": "Scharon Harding",
+          "tags": [
+            "Tech",
+            "Adobe",
+            "software"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Russian spy satellites have intercepted EU communications satellites",
+          "link": "https://arstechnica.com/space/2026/02/russian-spy-satellites-have-intercepted-eu-communications-satellites/",
+          "summary": "Unencrypted European communications are being targeted by Moscow.",
+          "published": "Wed, 04 Feb 2026 15:02:29 +0000",
+          "author": "Sam Jones, Peggy Hollinger, and Ian Bott, Financial Times",
+          "tags": [
+            "Space",
+            "espionage",
+            "Luch-2",
+            "russia",
+            "satellites"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "NASA finally acknowledges the elephant in the room with the SLS rocket",
+          "link": "https://arstechnica.com/space/2026/02/nasa-finally-acknowledges-the-elephant-in-the-room-with-the-sls-rocket/",
+          "summary": "\"You know, you're right, the flight rate—three years is a long time.\"",
+          "published": "Wed, 04 Feb 2026 14:41:30 +0000",
+          "author": "Eric Berger",
+          "tags": [
+            "Space",
+            "NASA",
+            "nasa rocket",
+            "space",
+            "space launch system"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "So yeah, I vibe-coded a log colorizer—and I feel good about it",
+          "link": "https://arstechnica.com/features/2026/02/so-yeah-i-vibe-coded-a-log-colorizer-and-i-feel-good-about-it/",
+          "summary": "Some semi-unhinged musings on where LLMs fit into my life—and how I'll keep using them.",
+          "published": "Wed, 04 Feb 2026 12:00:37 +0000",
+          "author": "Lee Hutchinson",
+          "tags": [
+            "Biz & IT",
+            "Features",
+            "AI",
+            "Anthropic",
+            "artificial inteligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Netflix says users can cancel service if HBO Max merger makes it too expensive",
+          "link": "https://arstechnica.com/gadgets/2026/02/netflix-claims-subscribers-will-get-more-content-for-less-if-it-buys-hbo-max/",
+          "summary": "Eighty percent of HBO Max subscribers subscribe to Netflix, Sarandos tells Senate.",
+          "published": "Tue, 03 Feb 2026 23:41:39 +0000",
+          "author": "Scharon Harding",
+          "tags": [
+            "Tech",
+            "acquisition",
+            "hbo max",
+            "mergers",
+            "Netflix"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Godlike Titan threatens humanity in Monarch: Legacy of Monsters S2 trailer",
+          "link": "https://arstechnica.com/culture/2026/02/meet-the-new-tentacled-titan-x-in-monarch-legacy-of-monsters-s2-trailer/",
+          "summary": "\"This Titan is like a god, and the sea creatures worship it.\"",
+          "published": "Tue, 03 Feb 2026 22:55:59 +0000",
+          "author": "Jennifer Ouellette",
+          "tags": [
+            "Culture",
+            "Apple TV",
+            "entertainment",
+            "Monarch: Legacy of Monsters",
+            "streaming television"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nvidia's $100 billion OpenAI deal has seemingly vanished",
+          "link": "https://arstechnica.com/information-technology/2026/02/five-months-later-nvidias-100-billion-openai-investment-plan-has-fizzled-out/",
+          "summary": "Two AI giants shake market confidence after investment fails to materialize.",
+          "published": "Tue, 03 Feb 2026 22:44:15 +0000",
+          "author": "Benj Edwards",
+          "tags": [
+            "AI",
+            "Biz & IT",
+            "AI chips",
+            "AI infrastructure",
+            "AI investment"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Newborn dies after mother drinks raw milk during pregnancy",
+          "link": "https://arstechnica.com/health/2026/02/newborns-death-spurs-raw-milk-warning-in-new-mexico/",
+          "summary": "Raw milk is promoted by anti-vaccine Health Secretary Kennedy.",
+          "published": "Tue, 03 Feb 2026 21:15:57 +0000",
+          "author": "Beth Mole",
+          "tags": [
+            "Health",
+            "ACOG",
+            "baby",
+            "death",
+            "fda"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "X office raided in France's Grok probe; Elon Musk summoned for questioning",
+          "link": "https://arstechnica.com/tech-policy/2026/02/x-office-raided-in-frances-grok-probe-elon-musk-summoned-for-questioning/",
+          "summary": "Paris prosecutor: Illegal content probe includes pornographic images of minors.",
+          "published": "Tue, 03 Feb 2026 20:13:08 +0000",
+          "author": "Jon Brodkin",
+          "tags": [
+            "AI",
+            "Policy",
+            "Elon Musk",
+            "grok",
+            "X"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nintendo Switch is the second-bestselling game console ever, behind only the PS2",
+          "link": "https://arstechnica.com/gadgets/2026/02/original-nintendo-switch-passes-the-ds-to-become-nintendos-bestselling-console/",
+          "summary": "Switch 2 has already beaten the Wii U and is on its way to overtaking GameCube.",
+          "published": "Tue, 03 Feb 2026 18:56:20 +0000",
+          "author": "Andrew Cunningham",
+          "tags": [
+            "Gaming",
+            "Tech",
+            "Nintendo",
+            "Nintendo DS",
+            "nintendo switch"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Google court filings suggest ChromeOS has an expiration date",
+          "link": "https://arstechnica.com/google/2026/02/google-court-filings-suggest-googles-chromeos-has-an-expiration-date/",
+          "summary": "ChromeOS may be canned once the current support guarantee has run its course.",
+          "published": "Tue, 03 Feb 2026 18:25:18 +0000",
+          "author": "Ryan Whitwam",
+          "tags": [
+            "Google",
+            "aluminium",
+            "android",
+            "ChromeOS",
+            "google"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Xcode 26.3 adds support for Claude, Codex, and other agentic tools via MCP",
+          "link": "https://arstechnica.com/apple/2026/02/xcode-26-3-adds-support-for-claude-codex-and-other-agentic-tools-via-mcp/",
+          "summary": "With Model Context Protocol (MCP), this works with more than Codex/Claude, too.",
+          "published": "Tue, 03 Feb 2026 18:01:49 +0000",
+          "author": "Samuel Axon",
+          "tags": [
+            "AI",
+            "Apple",
+            "Anthropic",
+            "apple",
+            "Claude Agent"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Wing Commander III: \"Isn't that the guy from Star Wars?\"",
+          "link": "https://arstechnica.com/gaming/2026/02/wing-commander-iii-the-game-kind-of-sucked-but-the-experience-blew-me-away/",
+          "summary": "C:\\ArsGames looks at a vanguard of the multimedia FMV future that never quite came to pass.",
+          "published": "Tue, 03 Feb 2026 17:29:16 +0000",
+          "author": "Lee Hutchinson",
+          "tags": [
+            "Gaming",
+            "Shopping",
+            "C:\\ArsGames",
+            "Chris Roberts",
+            "christopher roberts"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.qbitai.com/feed": {
+      "url": "https://www.qbitai.com/feed",
+      "title": "量子位",
+      "description": "追踪人工智能新趋势，报道科技行业新突破",
+      "link": "https://www.qbitai.com",
+      "updated": "Wed, 04 Feb 2026 09:37:18 +0000",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "加码智能勘探布局，深脉矿业宣布落子宜宾，规划建设研发制造基地",
+          "link": "https://www.qbitai.com/2026/02/376421.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 09:16:48 +0000",
+          "author": "量子位的朋友们",
+          "tags": [
+            "资讯"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "百度千帆深度研究Agent登顶权威评测榜单DeepResearch Bench",
+          "link": "https://www.qbitai.com/2026/02/376417.html",
+          "summary": "四大核心维度行业领先",
+          "published": "Wed, 04 Feb 2026 09:08:23 +0000",
+          "author": "西风",
+          "tags": [
+            "资讯",
+            "Agent",
+            "百度千帆"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "NeurIPS论文假开源，较真AI研究员开锤了",
+          "link": "https://www.qbitai.com/2026/02/376355.html",
+          "summary": "指名道姓的那种……",
+          "published": "Wed, 04 Feb 2026 07:18:14 +0000",
+          "author": "闻乐",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "AI顶会",
+            "NeurIPS",
+            "科研"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "光顾赚钱不搞研究，OpenAI元老级高管现离职潮，Mark Chen紧急回应",
+          "link": "https://www.qbitai.com/2026/02/376356.html",
+          "summary": "和老黄的合作也不顺利",
+          "published": "Wed, 04 Feb 2026 07:13:21 +0000",
+          "author": "鹭羽",
+          "tags": [
+            "资讯",
+            "OpenAI"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "城区NOA新格局：头部三强争霸，深圳VLA黑马拿下四成市场",
+          "link": "https://www.qbitai.com/2026/02/376331.html",
+          "summary": "城区NOA向10万级下探",
+          "published": "Wed, 04 Feb 2026 04:30:18 +0000",
+          "author": "一凡",
+          "tags": [
+            "智能车参考",
+            "车圈最新认知"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "阿里开源智能体编程模型Qwen3-Coder-Next ，推理成本大降",
+          "link": "https://www.qbitai.com/2026/02/376298.html",
+          "summary": "适用于家用电脑、轻量服务器等低成本智能体部署场景",
+          "published": "Wed, 04 Feb 2026 03:03:08 +0000",
+          "author": "一水",
+          "tags": [
+            "资讯",
+            "阿里"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "天选Windows打工AI来了！实测完Claude Cowork国产版：超顶",
+          "link": "https://www.qbitai.com/2026/02/376227.html",
+          "summary": "来自昆仑天工",
+          "published": "Wed, 04 Feb 2026 01:46:39 +0000",
+          "author": "一水",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "天工",
+            "天工skywork"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "业界最高！商汤大装置SenseCore原生AI云平台获信通院5A卓越级认证",
+          "link": "https://www.qbitai.com/2026/02/376224.html",
+          "summary": "业界首个",
+          "published": "Tue, 03 Feb 2026 13:14:28 +0000",
+          "author": "十三",
+          "tags": [
+            "资讯",
+            "信通院",
+            "商汤科技",
+            "大装置"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "黄仁勋2026大模型座上宾：杨植麟",
+          "link": "https://www.qbitai.com/2026/02/376314.html",
+          "summary": "用大模型技术重回聚光灯中央",
+          "published": "Tue, 03 Feb 2026 10:16:58 +0000",
+          "author": "克雷西",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "杨植麟"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "马斯克盛赞4680电池起死回生！攻克瓶颈打脸宁德时代，已上车Model Y",
+          "link": "https://www.qbitai.com/2026/02/376209.html",
+          "summary": "1个月前被曝陷入僵局",
+          "published": "Tue, 03 Feb 2026 09:29:54 +0000",
+          "author": "杰西卡",
+          "tags": [
+            "智能车参考",
+            "特斯拉",
+            "车圈最新认知"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.jiqizhixin.com/rss": {
+      "url": "https://www.jiqizhixin.com/rss",
+      "title": "机器之心",
+      "description": "机器之心",
+      "link": "https://www.jiqizhixin.com/",
+      "updated": null,
+      "items_count": 12,
+      "items": [
+        {
+          "title": "刚刚，面壁小钢炮开源进阶版「Her」，9B模型居然有了「活人感」",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-14",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 19:35:41 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "第二代AI预训练范式：预测下个物理状态",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-13",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 19:30:05 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "美团提出全新多模态统一大模型STAR，GenEval突破0.91，破解“理解-生成”零和困局",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-12",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 19:26:35 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "产研协同 智启未来：科学智能“百团百项”工程产研共创沙龙在沪顺利举行",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-11",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 15:19:06 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "ICLR 2026 | U2-BENCH：首个超大规模全场景超声多模态理解基准，开启医疗大模型新赛道",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-10",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:32:00 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "突破RNA设计瓶颈，上智院联合复旦、上交提出全球首个强化学习与潜扩散融合框架SOLD",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-9",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:25:23 +0800",
+          "author": "ScienceAI",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "倒反天罡：「租个人」网站爆火，AI开始雇人「跑腿」了",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-8",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 12:50:47 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "从斑马鱼到机器鱼：机器人实验重塑神经行为研究",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-7",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 12:47:10 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "CVPR 2026 Workshop 征稿｜AdvML@CV 2026：Safety of Vision-Language Agents",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-6",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 12:06:44 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "当运维遇上“春运时刻”，Chaterm破解移动远程运维操作难题",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-5",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 11:47:12 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "ICLR 2026 | 腾讯混元团队联合 KCL 提出 WildToolBench，评估 Wild 场景下 LLM 的 Agentic 能力",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-4",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 11:19:21 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "钉钉北京峰会展示AI落地多行业样本，一批企业集中签约",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-3",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 10:58:32 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://rsshub.rssforever.com/huxiu/article": {
+      "url": "https://rsshub.rssforever.com/huxiu/article",
+      "title": "全部-虎嗅网",
+      "description": "聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。 - Powered by RSSHub",
+      "link": "https://www.huxiu.com/article",
+      "updated": "Thu, 05 Feb 2026 02:20:30 GMT",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "返乡青年，卡在“半失败”里",
+          "link": "https://www.huxiu.com/article/4832631.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 02:09:33 GMT",
+          "author": "青年志Youthology",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI进县城，靠红包能行么？",
+          "link": "https://www.huxiu.com/article/4832467.html",
+          "summary": "大厂猛猛发红包，抢着让AI进县城",
+          "published": "Thu, 05 Feb 2026 01:54:28 GMT",
+          "author": "山农下山",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "会“玩水”的商场，就会“带财”",
+          "link": "https://www.huxiu.com/article/4832621.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 01:30:54 GMT",
+          "author": "感性城市SCity©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "每3篇就有1篇涉嫌造假？中国癌症研究遭遇“最大规模”质疑",
+          "link": "https://www.huxiu.com/article/4832619.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 01:25:29 GMT",
+          "author": "返朴",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "马斯克究竟想干什么？",
+          "link": "https://www.huxiu.com/article/4832616.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 01:09:55 GMT",
+          "author": "心智观察所©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "42岁的旺旺集团到了最危急时刻？",
+          "link": "https://www.huxiu.com/article/4832615.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 01:09:33 GMT",
+          "author": "牛刀财经",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "买老铺黄金奢侈品，别装硬通货",
+          "link": "https://www.huxiu.com/article/4832101.html",
+          "summary": "花钱图个快乐，别用投资的借口自我安慰",
+          "published": "Thu, 05 Feb 2026 01:00:00 GMT",
+          "author": "IC实验室",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "黄金再涨：人类，请跟上节奏",
+          "link": "https://www.huxiu.com/article/4832537.html",
+          "summary": "驱动市场的逻辑改变了——从对人类政治叙事的情感反应，转向对复杂系统风险的计算",
+          "published": "Thu, 05 Feb 2026 00:58:34 GMT",
+          "author": "东针商略",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "“非洲手机之王”传音即将退位？利润腰斩，50元手机扛不住存储涨价",
+          "link": "https://www.huxiu.com/article/4832614.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:53:52 GMT",
+          "author": "新浪科技",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "春节，带毛孩子回家：宠物与我们的家庭",
+          "link": "https://www.huxiu.com/article/4832613.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:52:15 GMT",
+          "author": "严肃的人口学八卦©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "炒货价格猛涨？杭州过年“三件套”热销，价格平稳",
+          "link": "https://www.huxiu.com/article/4832612.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:46:05 GMT",
+          "author": "小时新闻©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "黄仁勋酒后暴论：编程只是打字，已经不值钱了",
+          "link": "https://www.huxiu.com/article/4832605.html",
+          "summary": "在指数级进化的浪潮面前，你过去引以为傲的经验，注定将被时代无情淘汰。",
+          "published": "Thu, 05 Feb 2026 00:42:50 GMT",
+          "author": "网易科技©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "月薪3万，春节住不起汕头亚朵",
+          "link": "https://www.huxiu.com/article/4832611.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:36:08 GMT",
+          "author": "旅界",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "SaaS并不是被谁打败，而是被AI这个新生产关系直接废掉",
+          "link": "https://www.huxiu.com/article/4832609.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:15:31 GMT",
+          "author": "谢强byron",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "美国的“深圳”最有可能在哪里？精英们的共识是这个地方……",
+          "link": "https://www.huxiu.com/article/4832608.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:14:41 GMT",
+          "author": "TOP创新区研究院©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Anthropic发布AI插件，SaaS巨头暴跌，SaaS的末日已经来了？",
+          "link": "https://www.huxiu.com/article/4832607.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:07:02 GMT",
+          "author": "ToB老人家©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "餐饮的散客时代过去了，团购、套餐、外卖，才是“新客人时代”",
+          "link": "https://www.huxiu.com/article/4832606.html",
+          "summary": "",
+          "published": "Thu, 05 Feb 2026 00:04:54 GMT",
+          "author": "纪中展讲决策©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "单日下跌31%创纪录，追问白银基金估值困局",
+          "link": "https://www.huxiu.com/article/4832602.html",
+          "summary": "这只基金估值调整的真正触发条件，究竟是什么？",
+          "published": "Thu, 05 Feb 2026 00:04:00 GMT",
+          "author": "读数一帜",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "马云对AI和教育到底表达了什么观点？",
+          "link": "https://www.huxiu.com/article/4832297.html",
+          "summary": "AI时代未来的路究竟该怎么走？",
+          "published": "Thu, 05 Feb 2026 00:00:00 GMT",
+          "author": "节点财经",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "告别“抽奖”：B端产品经理与AI协同画原型的理性实践",
+          "link": "https://www.huxiu.com/article/4832604.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 23:48:59 GMT",
+          "author": "人人都是产品经理",
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "http://localhost:8878/36kr/information/AI": {
+      "url": "http://localhost:8878/36kr/information/AI",
+      "title": "36氪 - 36氪",
+      "description": "36氪 - 36氪 - Powered by RSSHub",
+      "link": "https://www.36kr.com/information/AI",
+      "updated": "Thu, 05 Feb 2026 02:20:18 GMT",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "不跳舞的人形机器人，正尝试真正“干活”",
+          "link": "https://www.36kr.com/p/3669663867233158",
+          "summary": "人形机器人把新战场锚定在了春晚亮相。热闹之余，“我们不需要100万台跳舞机器人”的声音，也开始在互联网上扩散。 人形机器人把新战场锚定在了春晚亮相。宇树科技、魔法原子、银河通用、松延动力等具身智能企业，近期纷纷宣布即将登上春晚的消息。热闹之余，“我们不需要100万台跳舞机器人”的声音，也开始在互联网上扩散。 事实上，在以跳舞等展示性能力维持高曝光度的同时，各家具身智能企业也在加紧推进人形机器人进入真实场景干活，而在经过一段时间的发展后，各家企业也都在各自的路径上取得了阶段性成果。...",
+          "published": "Thu, 05 Feb 2026 01:18:41 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "3年，估值翻70倍：具身智能资本局",
+          "link": "https://www.36kr.com/p/3669651292971656",
+          "summary": "2025年4月，在一次行业活动休息室里，红杉中国合伙人公元找到了云启资本管理合伙人陈昱。“你现在当着我的面给王潜（自变量机器人创始人、CEO）打个电话，帮我说说好话，我这次一定要见到他。”公元开门见山地说。 在此之前红杉中国团队早已深入研究过机器人领域，也是国内最早投资机器人和具身智能领域的基金之一，但公元与王潜的会面却在各种阴差阳错下屡屡错过。这次“电话助攻”几天后，双方终于在北京第一次见面。 和王潜聊完后，公元与另一个同事董瀛不约而同地在微信上给对方敲了一句话： 这个CEO太棒了！ 不仅是自变量，有投资人向《中国企业家》描述，2025年的具身智能（Embodied...",
+          "published": "Thu, 05 Feb 2026 00:14:24 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "逐际动力创始人张巍：不跟风、不内卷，我们在「造新物种」",
+          "link": "https://www.36kr.com/p/3668859815158405",
+          "summary": "过去的2025年，什么赛道最火？ 毫无疑问，具身智能。 根据投中嘉川数据，2025年全年，具身智能领域共有168家企业获得融资，融资规模共计329亿，同比大涨291%。资本的热度烧到了2026年，仅在开年的一个月内，国内具身智能领域又披露了近20起融资，金额在数亿人民币的屡见不鲜。 2025年，“具身智能”作为前瞻布局的未来产业，被写入“十五五”规划建议中，其明确提出推动具身智能等成为新的经济增长点。近日，工信部表示以人形机器人为小切口带动具身智能大产业发展。...",
+          "published": "Wed, 04 Feb 2026 13:47:03 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nature重磅：图灵预言的AGI早已实现，人类却不敢承认",
+          "link": "https://www.36kr.com/p/3668924203705222",
+          "summary": "Nature重磅评论文章！UCSD研究团队宣称：AGI早已到来，大语言模型如GPT已展现广域人类级智能。 人类是否已经实现了通用人工智能（AGI），却浑然不觉？ 是的，就是这样。 一篇发表在《自然》杂志上的新评论文章如此表示。 这是一项震撼科学界与社会根基的重磅披露， 通用人工智能（AGI）并非遥不可及的梦想，它已然降临，正透过我日常使用的AI工具屏幕，直视着我们 。 即便你不赞同他们的观点，也值得一读：兼听则明，唯有瞪大双眼，既不心怀恐惧，也不盲目追捧，才能帮助我们更好地迎接未来。 这，就是AGI 有人说，打造类人智能如同「爬树登月」。 但现在看来，树已经够高，月亮其实也没那么远。...",
+          "published": "Wed, 04 Feb 2026 13:15:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "从质疑到追捧，AI制药成果落地加速",
+          "link": "https://www.36kr.com/p/3668831256109700",
+          "summary": "虽然业界始终交织着谨慎与乐观的情绪，但AI+医药已迈入产业化加速期，这是不争的事实。 海外企业的动态充分佐证了这一点。1月，英伟达与礼来联合共建AI+制药实验室，Tempus AI凭借AI相关业务实现高增长—— 两者共同印证，AI正从概念逐步落地，成为制药与医疗领域的核心生产力。 国内企业的接连突破，同样在印证这一趋势，港股明星公司英矽智能便是典型代表。1月，英矽智能股价涨幅接近70%，摩根士丹利于近期发布首次覆盖报告，给与买入评级。资本市场信心与其核心业务的快速推进息息相关。 其一，合作落地密集：...",
+          "published": "Wed, 04 Feb 2026 12:12:34 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "为Clawdbot着迷的人，正疯狂购买Mac mini",
+          "link": "https://www.36kr.com/p/3668816730760073",
+          "summary": "前段时间，人们还在担忧存储涨价带动相关硬件产品水涨船高，但谁能想到，一个个人开发的AI助手，居然让苹果沉寂多年的Mac mini直接爆单。 主角正是2026年的“开年神作“——Clawdbot（现在应该叫OpenClaw，为文章可读性，我们还是用原先的名字），你可以把它看作是“长出了手”的AI，不光会说，更会做： 它可以帮你干活儿，只要给出目标，便会自行规划步骤、执行任务，遇到Bug还能自我修正，有条不紊地处理那些你曾经需要数小时完成的工作； 它可以维护家庭关系，比如定时给爱人发送问候语，甚至记得过去聊天的话题，不让对话冷场；...",
+          "published": "Wed, 04 Feb 2026 12:10:49 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "黄仁勋：AI绝不会取代软件",
+          "link": "https://www.36kr.com/p/3668814874370946",
+          "summary": "美东时间周二，在全球软件股遭受大幅抛售之际，英伟达CEO黄仁勋公开发言，驳斥了“人工智能可能取代软件及相关工具”的担忧，称这种想法“不合逻辑”。 黄仁勋：AI不会替代软件 上周，人工智能开发商Anthropic发布了升级版聊天机器人，加剧了人们对人工智能可能颠覆软件公司传统商业模式的担忧。本周三，抛售潮进一步蔓延，印度，到日本和中国香港市场上的软件股也受到冲击。 在思科系统公司于旧金山举办的一个人工智能会议上，黄仁勋表示， 人工智能系统的设计初衷是与现有软件工具协同工作，而不是完全取代它们。...",
+          "published": "Wed, 04 Feb 2026 12:10:03 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "下一代电子布，要被英伟达们抢爆了",
+          "link": "https://www.36kr.com/p/3668814014079872",
+          "summary": "据媒体报道，日东纺公司（Nittobo）计划最早于2028年推出面向AI芯片的下一代T型玻璃纤维布。新产品的热膨胀系数将从目前的2.8ppm降低约30%，达到2.0ppm。 资料显示，T型玻璃纤维布是一种高端电子布，具有较低热膨胀系数。其被广泛应用于集成电路基板和先进封装基板，以提高尺寸稳定性、减少翘曲，并支持大规模人工智能封装，包括CoWoS和SoIC等平台。而日东纺在全球T型玻纤布市场占据约90%的份额。 目前，日东纺正根据覆铜板样品对新型玻璃布进行评估和改进。与此同时，该公司正在开发用于AI服务器主板等应用的下一代低介电常数电子布，目标是最早于2027年推出并量产。 如今，...",
+          "published": "Wed, 04 Feb 2026 12:05:40 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "市值蒸发2850亿美元背后，软件的“溢价”不存在了",
+          "link": "https://www.36kr.com/p/3668888787985029",
+          "summary": "从上周开始，软件股突然就崩了。 导火索来自Anthropic。这家公司发布Claude Cowork AI代理推出的法律工具。这个新工具能执行多项文书工作，包括追踪合规事项和审阅法律文档。这些功能正是许多法律软件产品的核心所在。 受到这个消息的冲击，当日软件、金融服务和资产管理行业的股票市值总共蒸发了约2850 亿美元，LegalZoom.com暴跌近20%，汤森路透也下跌了15%。 这并非孤立事件。 同样是在上周，Google DeepMind 发布了 Project Genie。 受Project...",
+          "published": "Wed, 04 Feb 2026 11:19:03 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI“租人”平台一夜爆火：时薪3500、2.4万用户抢着“卖身”，专家：警惕劣币驱逐良币",
+          "link": "https://www.36kr.com/p/3668622830690947",
+          "summary": "当人类还在反复争论 AGI 是否已经到来、是否具备“主体性”时，现实世界已经给出了一个更具冲击力、也更令人不安的答案： AI 并不急着取代人类，它先学会了雇佣人类。 一个 AI 雇佣人类的网站火遍全网 几天前，AI 社交网络 Moltbook 因为一系列“AI 讨论如何出售人类”的帖子在技术圈引发恐慌；而就在昨夜，一个名为 RentAHuman.ai 的网站上线，直接将这种隐约的焦虑变成了可运行的商业系统。 它的 slogan 极其直白，也极具挑衅意味—— “Robots need your body（机器人需要你的肉身）”。 在 RentAHuman.ai...",
+          "published": "Wed, 04 Feb 2026 10:47:22 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "大厂AI“这一仗”：“元宝”被封、腾讯10亿红包“打水漂”？",
+          "link": "https://www.36kr.com/p/3668741159035524",
+          "summary": "这几天，你的群聊有没有被“元宝抢红包”刷屏？ 2026年春节，国内互联网大厂几乎同步将春节营销升级为AI正面战场。 字节跳动拿下央视春晚合作权，将这一国民级流量入口用于豆包的集中曝光。腾讯不仅豪掷10亿元现金红包，还同步上线AI社交功能“元宝派”，直接嵌入熟人社交链路。但2月4日， 腾讯出手封禁元宝微信链接，公正克制的企业人设立稳。 阿里旗下的千问宣布投入30亿元启动春节请客计划，将于2月6日正式上线。百度投入5亿元红包，并联动北京台春晚力推“文心助手”。...",
+          "published": "Wed, 04 Feb 2026 10:25:44 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "1865年《红旗法案》的幽灵，仍在今天游荡",
+          "link": "https://www.36kr.com/p/3668740944503689",
+          "summary": "“人在回路中”（Humanin the l oop），是当今人工智能与自动化领域最有代表性、也最不容置疑的准则。 简单来说，它试图构建这样一种秩序： 在自动化系统的运作过程中，人类通过干预、评估或反馈，与机器形成一个闭环，共同完成任务。 这被视为一种理想的人机共处模式。与其让机器完全自主运行，不如将人类的直觉、判断力与机器的计算力结合起来。这样在机器可能出错或者遇到无法处理的复杂情况时，人类可以及时介入，确保场面始终处在可控范围之内。 随着生成式 AI 的崛起，“人在回路中”的理念重新被推向前所未有的高度。面对 AI...",
+          "published": "Wed, 04 Feb 2026 10:05:53 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "看一眼代码就中毒？Clawdbot惊现隐形越狱，AI工具变黑客",
+          "link": "https://www.36kr.com/p/3668736720151173",
+          "summary": "当AI助手不再「听话」，你以为自己请的是一个「贾维斯」，结果却是一个背后「搞鬼」，有时还会顺手给你的电脑塞木马的「新物种」。 刚刚，Clawdbot又改名了。 从最初的Clawdbot，到Moltbot，再到最新的名字：OpenClaw。 不管怎么改名，也掩盖不了它的火爆。 过去两个月中，Clawdbot在硅谷科技圈引起了一场智能体海啸，斩获10万GitHub星标，成为最火的硅谷AI应用之一。 就像龙虾顽强的生命力一样，Clawdbot对硬件的适应性也极强。 不需要数万美元的H100显卡，只要一台被淘汰的Mac...",
+          "published": "Wed, 04 Feb 2026 09:52:19 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "第一批用Clawdbot赚钱的人类出现，一晚上狂赚300万，全球金融变天了？",
+          "link": "https://www.36kr.com/p/3668736645161605",
+          "summary": "太炸裂了，已经有一拨人类，靠Clawdbot狂赚几百万了！一觉醒来，账户里就多了几千美元。甚至Moltbook上的Agent，也开始发布指南，手把手教其他AI赚钱了。AI已经自建新文明，赚到钱还给人类不？ 用Clawdbot疯狂赚钱的第一批人类，已经出现了。 有人把它集成到Polymarket里，一晚上就狂赚了49.3万美元。 不仅如此，AI也开始教AI赚钱了。 就在刚刚，Moltbook上的Agent开始教其他Agent赚钱。一觉醒来，就能让你账户上多1000美元。 AI不想靠人类，它们要完全靠自己，赚来自己的API钱！ 就在今天，这个消息直接在全网刷屏了。...",
+          "published": "Wed, 04 Feb 2026 09:52:06 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "从数据成功到人工智能成功：极简人工智能治理",
+          "link": "https://www.36kr.com/p/3668725163188865",
+          "summary": "01 什么是人工智能治理 人工智能治理是指组织用来确保人工智能实例安全、公平且使用正确的一系列规则和检查措施。就数据成功而言，它确保人工智能使用优质、干净的数据，遵守法律法规和政策，并由人工对重要决策进行复核，也就是所谓的“人机协同设计”。 02 人工智能治理的新变化...",
+          "published": "Wed, 04 Feb 2026 09:49:04 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "人类编辑大战AI售货机，AI一败涂地",
+          "link": "https://www.36kr.com/p/3668712316412805",
+          "summary": "给最狡猾（褒义）的记者编辑一台最先进的AI负责运营的自动售货机，结果会怎样？是人类攻破AI的防线让自动售卖机家门大开，还是AI发展出智能抗拒诱惑？ 有的人可能要问了，自动售货机的安全有什么必要用AI，一把锁就能解决的事儿。你可以理解为每个自动售货机都是需要人来下单和配货的，现在咱们就把这个人换成AI。 这正是Anthropic在华尔街日报（The Wall Street Journal，WSJ）编辑部做的实验。 Anthropic你可能没听过，但他们的产品Claude你肯定用过。就是这个小菊花AI，蛮好用的。 Anthropic是一家美国AI大模型公司...",
+          "published": "Wed, 04 Feb 2026 09:32:59 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "徐井宏详解AI趋势：1%的人可能通吃2/3的财富",
+          "link": "https://www.36kr.com/p/3668677251998338",
+          "summary": "中关村龙门投资董事长、昆仑学堂联合创始人、清华大学教授徐井宏指出，AI变革将围绕 “五大变化、三大走向与四大心法”展开： 1、五大变化：旧世界的基石正在重构 经济逻辑反转：生产力飞跃将终结稀缺经济，世界面临分配与共享的新课题； 财富定义刷新：智慧、网络等无形资产的价值将远超土地、厂房； 劳动意义瓦解：智能将人类从重复劳动中解放，“职业”身份将逐渐淡化； 能力核心迁移：教育的核心不再是知识灌输，而是快速学习与应对变化的能力； 组织形态重构：单个人借助AI能调度庞大资源，人机协作模糊组织边界。 2、三大走向：未来取决于我们今日的选择 这不仅是技术演进，更是社会命题： 科技将导向普惠还是威胁？...",
+          "published": "Wed, 04 Feb 2026 09:28:23 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "NeurIPS论文假开源，较真AI研究员开锤了",
+          "link": "https://www.36kr.com/p/3668658730820487",
+          "summary": "较真还得是程序员。 2025已经过去，2026已经到了……但也有较真的科研、程序员，决定站出来整治一下业内的不正之风。 啥事儿呢？ AI学术界的 假开源 问题。 就是发论文的时候说开源，还像模像样挂了GitHub链接，结果后来就没有后来了。 这不，一位匿名AI研究员，直接拿着AI领域最顶的NeurIPS 2024来检验，看看那些被接收的论文，白纸黑字写上了开源的项目，最后究竟有多少是兑现了的。 不统计不知道，一查锤出大窟窿了—— 从NeurIPS 2024收录的4035篇论文数据来看，其中真实开源的论文有2404篇； 除了没有提供链接的1533篇之外，有 98...",
+          "published": "Wed, 04 Feb 2026 08:48:23 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "“光顾赚钱不搞研究”，OpenAI元老级高管出现离职潮，Mark Chen紧急回应",
+          "link": "https://www.36kr.com/p/3668658879111814",
+          "summary": "绷不住了！OpenAI深陷 高管离职潮 ，内部“红色警报”再次拉响。 且看最近的离职名单，个顶个的都是OpenAI元老级人物： Jerry Tworek：原OpenAI研究副总裁，o3/o1负责人，GPT-4/Codex核心贡献者； Andrea Vallone：原OpenAI模型策略团队负责人； Tom Cunningham：原OpenAI经济预测与商业规划负责人； Hannah Wong：原OpenAI首席传播官； Matt Knight：原OpenAI首席信息安全官； …… 为啥会出现这种情况呢？ 据《金融时报》透露，这场危机和OpenAI内部的 战略转向 脱不开关系。...",
+          "published": "Wed, 04 Feb 2026 08:48:01 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "编程已死，键盘长草，Claude Code之父对谈Kaparthy，全程爆金句",
+          "link": "https://www.36kr.com/p/3668658715829123",
+          "summary": "Andrej Karpathy与Claude Code负责人Boris Cherny展开了一场关于编程未来的终极对谈。面对AI接管100%代码编写的现状，Karpathy坦言人类正处于「脑萎缩」与能力进化的十字路口。 本文深度解析了从Software 2.0到Agentic Coding的范式转移，揭示了在Opus 4.5等强力模型加持下，程序员如何从「搬砖工」进化为「指挥官」，以及不仅要面对效率的飞跃，更要警惕「垃圾代码末日」的隐忧。 2026年的开篇，科技圈被一场关于 「编程本质」 的深度对话引爆。 这场对话的双方，一位是特斯拉前AI总监、OpenAI创始成员 Andrej...",
+          "published": "Wed, 04 Feb 2026 08:43:43 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://rsshub.app/tmtpost/column/6916385": {
+      "url": "https://rsshub.app/tmtpost/column/6916385",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "https://feed.infoq.com/": {
+      "url": "https://feed.infoq.com/",
+      "title": "InfoQ",
+      "description": "InfoQ feed",
+      "link": "https://www.infoq.com",
+      "updated": null,
+      "items_count": 15,
+      "items": [
+        {
+          "title": "Presentation: Beyond the Warehouse: Why BigQuery Alone Won’t Solve Your Data Problems",
+          "link": "https://www.infoq.com/presentations/bigquery-data-challenges/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Sarah Usher discusses the architectural \"breaking point\" where warehouses like BigQuery struggle with latency and cost. She explains the necessity of a conceptual data lifecycle (Raw, Curated, Use Case) to regain control over lineage and innovation. She shares practical strategies to design a...",
+          "published": "Wed, 04 Feb 2026 14:48:00 GMT",
+          "author": "Sarah Usher",
+          "tags": [
+            "Transcripts",
+            "Google BigQuery",
+            "QCon London 2025",
+            "Scalability",
+            "AI, ML & Data Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Java Explores Carrier Classes to Extend Data-Oriented Programming Beyond Records",
+          "link": "https://www.infoq.com/news/2026/02/java-beyond-records/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "The OpenJDK Amber project has published a new design note proposing “carrier classes” and “carrier interfaces” to extend record-style data modeling to more Java types. The proposal preserves concise state descriptions, derived methods, and pattern matching, while relaxing structural constraints...",
+          "published": "Wed, 04 Feb 2026 14:30:00 GMT",
+          "author": "A N M Bazlur Rahman",
+          "tags": [
+            "Project Amber",
+            "Java",
+            "JEP",
+            "Pattern matching",
+            "Architecture & Design"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Vercel Introduces Skills.sh, an Open Ecosystem for Agent Commands",
+          "link": "https://www.infoq.com/news/2026/02/vercel-agent-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Vercel has released Skills.sh, an open-source tool designed to provide AI agents with a standardized way to execute reusable actions, or skills, through the command line. By Daniel Dominguez",
+          "published": "Wed, 04 Feb 2026 10:28:00 GMT",
+          "author": "Daniel Dominguez",
+          "tags": [
+            "ChatGPT",
+            "Artificial Intelligence",
+            "Model Context Protocol (MCP)",
+            "OpenAI",
+            "Agents"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Agent Trace: Cursor Proposes an Open Specification for AI Code Attribution",
+          "link": "https://www.infoq.com/news/2026/02/agent-trace-cursor/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Cursor has published Agent Trace, a draft open specification aimed at standardizing how AI-generated code is attributed in software projects. Released as a Request for Comments (RFC), the proposal defines a vendor-neutral format for recording AI contributions alongside human authorship in...",
+          "published": "Wed, 04 Feb 2026 10:00:00 GMT",
+          "author": "Robert Krzaczyński",
+          "tags": [
+            "Artificial Intelligence",
+            "Agents",
+            "Large language models",
+            "AI, ML & Data Engineering",
+            "news"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Article: From Alert Fatigue to Agent-Assisted Intelligent Observability",
+          "link": "https://www.infoq.com/articles/agent-assisted-intelligent-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "As systems grow, observability becomes harder to maintain and incidents harder to diagnose. Agentic observability layers AI on existing tools, starting in read-only mode to detect anomalies and summarize issues. Over time, agents add context, correlate signals, and automate low-risk tasks. This...",
+          "published": "Wed, 04 Feb 2026 09:00:00 GMT",
+          "author": "Rohit Dhawan",
+          "tags": [
+            "Generative AI",
+            "Automation",
+            "Observability",
+            "Alerting",
+            "Agents"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Astro Announces Version 6 Beta with Redesigned Development Server and First-Class Cloudflare Workers",
+          "link": "https://www.infoq.com/news/2026/02/astro-v6-beta-cloudflare/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Astro 6 Beta transforms web development with a revamped server leveraging Vite's Environment API, first-class Cloudflare Workers support, and stable live content collections. Emphasizing performance and security, it enables real-time data updates and strong Content Security Policy support. Designed...",
+          "published": "Wed, 04 Feb 2026 08:00:00 GMT",
+          "author": "Daniel Curtis",
+          "tags": [
+            "TypeScript",
+            "Vue.js",
+            "Next.js",
+            "Web Deploy",
+            "React"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "GitHub Reworks Layered Defenses After Legacy Protections Block Legitimate Traffic",
+          "link": "https://www.infoq.com/news/2026/02/github-layered-def/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "GitHub engineers recently traced user reports of unexpected “Too Many Requests” errors to abuse-mitigation rules that had accidentally remained active long after the incidents that prompted them. By Matt Foster",
+          "published": "Wed, 04 Feb 2026 07:58:00 GMT",
+          "author": "Matt Foster",
+          "tags": [
+            "Infrastructure",
+            "Architecture",
+            "Distributed Systems",
+            "Platform Engineering",
+            "Site Reliability Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "OpenAI Begins Article Series on Codex CLI Internals",
+          "link": "https://www.infoq.com/news/2026/02/codex-agent-loop/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "OpenAI recently published the first in a series of articles detailing the design and functionality of their Codex software development agent. The inaugural post highlights the internals of the Codex harness, the core component in the Codex CLI. By Anthony Alford",
+          "published": "Tue, 03 Feb 2026 14:00:00 GMT",
+          "author": "Anthony Alford",
+          "tags": [
+            "Model Context Protocol (MCP)",
+            "OpenAI",
+            "Agents",
+            "AI, ML & Data Engineering",
+            "news"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Etleap Launches Iceberg Pipeline Platform to Simplify Enterprise Adoption of Apache Iceberg",
+          "link": "https://www.infoq.com/news/2026/02/etleap-iceberg-pipeline-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Etleap has recently launched the Iceberg pipeline platform, a new managed data pipeline layer designed to let enterprises adopt Apache Iceberg without building or maintaining a complex custom stack. By Craig Risi",
+          "published": "Tue, 03 Feb 2026 12:00:00 GMT",
+          "author": "Craig Risi",
+          "tags": [
+            "Apache Iceberg",
+            "Big Data",
+            "Enterprise",
+            "DevOps",
+            "news"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Article: Working with Code Assistants: The Skeleton Architecture",
+          "link": "https://www.infoq.com/articles/skeleton-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Prevent AI-generated tech debt with Skeleton Architecture. This approach separates human-governed infrastructure (Skeleton) from AI-generated logic (Tissue) using Vertical Slices and Dependency Inversion. By enforcing security and flow control in rigid base classes, you constrain the AI to safe...",
+          "published": "Tue, 03 Feb 2026 09:00:00 GMT",
+          "author": "Patrick Farry",
+          "tags": [
+            "Architecture",
+            "AI Development",
+            "Development",
+            "Architecture & Design",
+            "article"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Dev Proxy v2.1 Introduces Configuration Hot Reload and Stdio Traffic Proxying",
+          "link": "https://www.infoq.com/news/2026/02/dev-proxy-v2-1-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "The Dev Proxy team has released Dev Proxy version 2.1, introducing new features aimed at improving developer productivity and simplifying local testing workflows. This release focuses on faster iteration, better support for modern development tools, and several refinements across the proxy and its...",
+          "published": "Tue, 03 Feb 2026 08:45:00 GMT",
+          "author": "Almir Vuk",
+          "tags": [
+            ".NET 10",
+            ".NET Core",
+            ".NET 8",
+            ".NET",
+            ".NET 9"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "MongoDB Introduces Embedding and Reranking API on Atlas",
+          "link": "https://www.infoq.com/news/2026/02/mongodb-embedding-reranking-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "MongoDB has recently announced the public preview of its Embedding and Reranking API on MongoDB Atlas. The new API gives developers direct access to Voyage AI’s search models within the managed cloud database, enabling them to create features such as semantic search and AI-powered assistants within...",
+          "published": "Tue, 03 Feb 2026 04:53:00 GMT",
+          "author": "Renato Losio",
+          "tags": [
+            "Generative AI",
+            "Retrieval-Augmented Generation",
+            "MongoDB",
+            "NoSQL",
+            "vector databases"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Presentation: Scaling to 100+ as a Director: Lessons From Growing Engineering Organizations",
+          "link": "https://www.infoq.com/presentations/patterns-organizational-change/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Thiago Ghisi discusses the strategic evolution required to lead 100+ engineers without breaking the organization. He explains his \"Three Levels of Impact\" framework and shares practical lessons on speeding up decision-making, cultivating leadership teams, and building organizational resilience....",
+          "published": "Mon, 02 Feb 2026 16:23:00 GMT",
+          "author": "Thiago Ghisi",
+          "tags": [
+            "Transcripts",
+            "InfoQ Dev Summit Boston 2025",
+            "Change",
+            "Patterns",
+            "Culture & Methods"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Airbnb Expands Global Checkout with “Pay as a Local,” Scaling to 220 Markets in 14 Months",
+          "link": "https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Airbnb expands its global checkout with the “Pay as a Local” initiative, supporting over 20 locally preferred payment methods across 220 markets. The company replatformed its payments system with domain-oriented services, reusable flow archetypes, and a centralized configuration, enhancing...",
+          "published": "Mon, 02 Feb 2026 15:00:00 GMT",
+          "author": "Leela Kumili",
+          "tags": [
+            "Extensibility",
+            "Reliability",
+            "Architecture",
+            "Observability",
+            "Platform Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "MyTerms: A New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies",
+          "link": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Nicknamed MyTerms, the new 7012-2025 IEEE standard defines mechanisms for exchanging personal information between individuals and online service providers, and specifies how individuals can enforce their privacy requirements during transactions. By Sergio De Simone",
+          "published": "Mon, 02 Feb 2026 13:00:00 GMT",
+          "author": "Sergio De Simone",
+          "tags": [
+            "Web",
+            "Mobile Privacy",
+            "Privacy",
+            "Data Privacy",
+            "Web Browser"
+          ],
+          "ai_score": 0.5
+        }
+      ]
+    },
+    "https://www.ithome.com/rss/": {
+      "url": "https://www.ithome.com/rss/",
+      "error": "Error processing feed: ValueError: Failed to parse feed: <unknown>:2:0: not well-formed (invalid token)",
+      "items": []
+    },
+    "https://www.v2ex.com/feed/tab/tech.xml": {
+      "url": "https://www.v2ex.com/feed/tab/tech.xml",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    }
+  },
+  "errors": [
+    "https://www.deeplearning.ai/feed/: HTTP 404 error fetching feed: https://www.deeplearning.ai/feed/ (RSS地址不存在)",
+    "https://www.anthropic.com/news.rss: HTTP 404 error fetching feed: https://www.anthropic.com/news.rss (RSS地址不存在)",
+    "https://rsshub.app/meta/ai/blog: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://a16z.com/feed/: HTTP 404 error fetching feed: https://a16z.com/feed/ (RSS地址不存在)",
+    "https://www.thoughtworks.com/insights/rss: HTTP 404 error fetching feed: https://www.thoughtworks.com/insights/rss (RSS地址不存在)",
+    "https://www.futurepedia.io/rss: HTTP 404 error fetching feed: https://www.futurepedia.io/rss (RSS地址不存在)",
+    "https://huggingface.co/papers/rss: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://rsshub.app/tmtpost/column/6916385: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://www.ithome.com/rss/: Error processing feed: ValueError: Failed to parse feed: <unknown>:2:0: not well-formed (invalid token)",
+    "https://www.v2ex.com/feed/tab/tech.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)"
+  ]
+}

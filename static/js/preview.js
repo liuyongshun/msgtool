@@ -7,6 +7,31 @@ class OutputPreview {
         this.init();
     }
 
+    // 时间字符串格式化为东八区时间
+    formatToBeijingTime(timeStr) {
+        if (!timeStr) return '未知时间';
+        
+        try {
+            let date = new Date(timeStr);
+            
+            if (isNaN(date.getTime())) return timeStr;
+            
+            // 后端已经处理了时区转换，直接格式化为本地时间
+            return date.toLocaleString('zh-CN', {
+                timeZone: 'Asia/Shanghai',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        } catch (error) {
+            console.warn('时间格式化错误:', error);
+            return timeStr;
+        }
+    }
+
     async init() {
         this.setupEventListeners();
         await this.loadDates();
@@ -63,7 +88,8 @@ class OutputPreview {
             const result = await response.json();
 
             if (result.success && result.types) {
-                this.availableTypes = result.types;
+                // GitHub数据库始终可用，不依赖日期
+                this.availableTypes = [...result.types, 'github-db'];
                 this.updateTabStates();
                 
                 // 自动选择第一个可用的数据类型
@@ -116,7 +142,8 @@ class OutputPreview {
     }
 
     async switchTab(type) {
-        if (!this.currentDate) {
+        // GitHub数据库不依赖于日期选择
+        if (type !== 'github-db' && !this.currentDate) {
             this.showStatus('warning', '请先选择日期');
             return;
         }
@@ -128,7 +155,10 @@ class OutputPreview {
 
         this.currentType = type;
         this.updateTabState(type);
-        await this.loadData(this.currentDate, type);
+        
+        // GitHub数据库使用时不需要日期参数
+        const dateForLoad = type === 'github-db' ? this.currentDate || 'current' : this.currentDate;
+        await this.loadData(dateForLoad, type);
     }
 
     async loadData(date, dataType) {
@@ -144,7 +174,15 @@ class OutputPreview {
         `;
 
         try {
-            const response = await fetch(`${this.apiBase}/data/${date}/${dataType}`);
+            // 特殊处理GitHub数据库类型
+            let apiUrl;
+            if (dataType === 'github-db') {
+                apiUrl = `${this.apiBase}/github/database`;
+            } else {
+                apiUrl = `${this.apiBase}/data/${date}/${dataType}`;
+            }
+
+            const response = await fetch(apiUrl);
             const result = await response.json();
 
             if (!result.success) {
@@ -153,9 +191,15 @@ class OutputPreview {
 
             this.renderData(result.data, dataType, result);
             
-            const fileInfo = result.total_files > 1 
-                ? `(合并了${result.total_files}个文件，共${result.merged_count}条数据)`
-                : ``;
+            // GitHub数据库显示特殊信息
+            let fileInfo = '';
+            if (dataType === 'github-db' && result.from_database) {
+                const dbInfo = result.data.database_info || {};
+                fileInfo = `(数据库: ${dbInfo.total_projects || 0}项目, AI: ${dbInfo.ai_projects || 0}条)`;
+            } else if (result.total_files > 1) {
+                fileInfo = `(合并了${result.total_files}个文件，共${result.merged_count}条数据)`;
+            }
+            
             this.showStatus('success', `${this.getTypeName(dataType)}数据加载成功 ${fileInfo}`);
 
         } catch (error) {
@@ -187,7 +231,8 @@ class OutputPreview {
             'arxiv': 'arXiv论文',
             'hackernews': 'HackerNews',
             'rss': 'RSS源',
-            'github': 'GitHub'
+            'github': 'GitHub(每日)',
+            'github-db': 'GitHub数据库'
         };
         return names[type] || type;
     }
@@ -221,6 +266,9 @@ class OutputPreview {
             case 'github':
                 this.renderGithubData(data, contentEl, fileInfoHtml);
                 break;
+            case 'github-db':
+                this.renderGithubDbData(data, contentEl, fileInfoHtml);
+                break;
             default:
                 contentEl.innerHTML = `<div class="text-center text-gray-500">未知数据类型: ${dataType}</div>`;
         }
@@ -235,7 +283,7 @@ class OutputPreview {
             ${fileInfoHtml}
             <div class="mb-4">
                 <h2 class="text-xl font-semibold text-gray-800">arXiv论文 (${data.count || papers.length}篇)</h2>
-                <p class="text-sm text-gray-600">分类: ${data.category_name || 'N/A'} | 抓取时间: ${new Date(data.fetched_at).toLocaleString()}</p>
+                <p class="text-sm text-gray-600">分类: ${data.category_name || 'N/A'} | 抓取时间: ${this.formatToBeijingTime(data.fetched_at)}</p>
             </div>
             ${papers.length > 0 ? `
                 <div class="space-y-4">
@@ -245,7 +293,7 @@ class OutputPreview {
                                 <a href="${paper.pdf_url}" target="_blank" class="hover:underline">${paper.title}</a>
                             </h3>
                             <p class="text-sm text-gray-600 mb-2">
-                                作者: ${paper.authors.join(', ')} | 发布时间: ${new Date(paper.published).toLocaleDateString()}
+                                作者: ${paper.authors.join(', ')} | 发布时间: ${this.formatToBeijingTime(paper.published)}
                             </p>
                             <p class="text-gray-700 text-sm leading-relaxed">${paper.summary}</p>
                             <div class="mt-3 flex gap-2">
@@ -265,7 +313,7 @@ class OutputPreview {
             ${fileInfoHtml}
             <div class="mb-4">
                 <h2 class="text-xl font-semibold text-gray-800">HackerNews (${data.total_count || items.length}条)</h2>
-                <p class="text-sm text-gray-600">抓取时间: ${new Date(data.fetched_at).toLocaleString()}</p>
+                <p class="text-sm text-gray-600">抓取时间: ${this.formatToBeijingTime(data.fetched_at)}</p>
             </div>
             ${items.length > 0 ? `
                 <div class="space-y-3">
@@ -278,7 +326,7 @@ class OutputPreview {
                             <div class="flex flex-wrap gap-4 text-xs text-gray-500">
                                 <span>👍 ${item.score || 0}</span>
                                 <span>💬 ${item.comments_count || 0}</span>
-                                <span>📅 ${item.published_date}</span>
+                                <span>📅 ${this.formatToBeijingTime(item.published_date)}</span>
                                 ${item.article_tag ? `<span>🏷️ ${item.article_tag}</span>` : ''}
                             </div>
                         </div>
@@ -296,7 +344,7 @@ class OutputPreview {
             ${fileInfoHtml}
             <div class="mb-4">
                 <h2 class="text-xl font-semibold text-gray-800">RSS源 (${data.total_items || 0}条)</h2>
-                <p class="text-sm text-gray-600">${data.feeds_count || 0}个源 | 抓取时间: ${new Date(data.fetched_at).toLocaleString()}</p>
+                <p class="text-sm text-gray-600">${data.feeds_count || 0}个源 | 抓取时间: ${this.formatToBeijingTime(data.fetched_at)}</p>
             </div>
             ${feedEntries.length > 0 ? `
                 <div class="space-y-6">
@@ -312,7 +360,7 @@ class OutputPreview {
                                             <h4 class="font-medium mb-1">
                                                 <a href="${item.link}" target="_blank" class="text-blue-600 hover:underline">${item.title}</a>
                                             </h4>
-                                            <p class="text-gray-600 text-sm mb-1">${item.published}</p>
+                                            <p class="text-gray-600 text-sm mb-1">${this.formatToBeijingTime(item.published)}</p>
                                             <p class="text-gray-700 text-sm">${item.summary}</p>
                                         </div>
                                     `).join('')}
@@ -331,7 +379,7 @@ class OutputPreview {
             ${fileInfoHtml}
             <div class="mb-4">
                 <h2 class="text-xl font-semibold text-gray-800">GitHub趋势项目 (${data.total_count || items.length}个)</h2>
-                <p class="text-sm text-gray-600">抓取时间: ${new Date(data.fetched_at).toLocaleString()}</p>
+                <p class="text-sm text-gray-600">抓取时间: ${this.formatToBeijingTime(data.fetched_at)}</p>
             </div>
             ${items.length > 0 ? `
                 <div class="space-y-4">
@@ -344,13 +392,58 @@ class OutputPreview {
                             <div class="flex flex-wrap gap-4 text-xs text-gray-500">
                                 ${item.tags && item.tags.length > 0 ? `<span>🏷️ ${item.tags.slice(0, 3).join(', ')}${item.tags.length > 3 ? '...' : ''}</span>` : ''}
                                 <span>⭐ ${item.score || 0}</span>
-                                <span>🕒 ${new Date(item.published_date).toLocaleDateString()}</span>
+                                <span>🕒 ${this.formatToBeijingTime(item.published_date)}</span>
                                 ${item.author ? `<span>👤 ${item.author}</span>` : ''}
                             </div>
                         </div>
                     `).join('')}
                 </div>
             ` : '<div class="text-center text-gray-500 py-8">没有GitHub数据</div>'}
+        `;
+    }
+
+    // GitHub数据库特殊渲染函数
+    renderGithubDbData(data, container, fileInfoHtml = '') {
+        const items = data.items || [];
+        const dbInfo = data.database_info || {};
+        
+        container.innerHTML = `
+            ${fileInfoHtml}
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">GitHub数据库 (${dbInfo.ai_projects || items.length}个AI项目)</h2>
+                <p class="text-sm text-gray-600">
+                    总项目数: ${dbInfo.total_projects || 0} | 
+                    AI项目: ${dbInfo.ai_projects || 0} | 
+                    白名单: ${dbInfo.whitelist_projects || 0} |
+                    数据库更新时间: ${this.formatToBeijingTime(data.fetched_at)}
+                </p>
+            </div>
+            ${items.length > 0 ? `
+                <div class="space-y-4">
+                    ${items.map(item => `
+                        <div class="border rounded-lg p-4 hover:shadow-md transition-shadow bg-white">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-lg font-medium flex-1">
+                                    <a href="${item.source_url}" target="_blank" class="text-blue-600 hover:underline">${item.title}</a>
+                                </h3>
+                                <div class="text-right text-sm text-gray-500">
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">AI评分: ${Math.round(item.ai_score * 100) / 100}</span>
+                                    ${item._from_database ? `<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs ml-1">数据库</span>` : ''}
+                                </div>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-3">${item.summary || '暂无描述'}</p>
+                            ${item.ai_reason ? `<div class="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded text-sm text-gray-700"><strong>AI推荐理由:</strong> ${item.ai_reason}</div>` : ''}
+                            <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                                ${item.language ? `<span>💻 ${item.language}</span>` : ''}
+                                <span>⭐ ${item.score || 0}</span>
+                                ${item.tags && item.tags.length > 0 ? `<span>🏷️ ${item.tags.join(', ')}</span>` : ''}
+                                <span>👤 ${item.author || 'Unknown'}</span>
+                                <span>🕒 ${this.formatToBeijingTime(item.published_date)}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : '<div class="text-center text-gray-500 py-8">GitHub数据库中没有AI项目数据</div>'}
         `;
     }
 

@@ -270,10 +270,14 @@ async def _fetch_hackernews(
                     original_summary = original_title
                     
                     # 翻译标题和摘要
-                    translated_title, translated_summary = await translate_article_item(
-                        original_title,
-                        original_summary
-                    )
+                    if source_config.translation_enabled:
+                        translated_title, translated_summary = await translate_article_item(
+                            original_title,
+                            original_summary
+                        )
+                    else:
+                        translated_title = original_title
+                        translated_summary = original_summary
                     
                     # 创建标准化的 ArticleItem
                     article = ArticleItem(

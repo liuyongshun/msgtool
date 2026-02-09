@@ -92,7 +92,9 @@ async def fetch_rss_feeds(
             # Use cached result
             tasks.append(asyncio.coroutine(lambda c=cached: c)())
         else:
-            tasks.append(_fetch_single_feed(url, limit, ai_filter_enabled))
+            # 获取翻译配置
+            translation_enabled = source_config.translation_enabled if source_config else True  # 默认启用
+            tasks.append(_fetch_single_feed(url, limit, ai_filter_enabled, translation_enabled))
         
         feed_names.append(name)
     
@@ -136,7 +138,7 @@ async def fetch_rss_feeds(
     }
 
 
-async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = True) -> dict[str, Any]:
+async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = True, translation_enabled: bool = True) -> dict[str, Any]:
     """
     Fetch a single RSS feed.
     
@@ -144,6 +146,7 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
         url: Feed URL
         limit: Maximum items to return
         ai_filter_enabled: Whether to enable AI filtering
+        translation_enabled: Whether to enable translation
         
     Returns:
         Dictionary with feed info and items
@@ -314,7 +317,7 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
             items = filtered_items
         
         # 翻译：对筛选后的文章进行翻译（标题和摘要）
-        if items:
+        if items and translation_enabled:
             logger.info(f"开始翻译 {len(items)} 篇文章...")
             translation_tasks = []
             for item in items:
@@ -336,6 +339,8 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
                 item["summary"] = translated_summary
             
             logger.info(f"翻译完成: {len(items)} 篇文章")
+        else:
+            logger.info(f"翻译已禁用或不需要翻译")
         
         return {
             **feed_info,

@@ -102,7 +102,10 @@ class ArticleItem(BaseModel):
 |---------|-----|------|
 | 数据缓存 | 5分钟 | 避免重复API调用 |
 | 翻译缓存 | 24小时 | arXiv论文翻译结果 |
-| GitHub白名单 | 30天 | 已筛选项目，跳过AI判断 |
+| GitHub数据库 | 持久化 | GitHub项目持久化存储和智能去重 |
+- `output/github/all_projects.json`：所有抓取过的GitHub项目
+- `output/github/ai_projects.json`：AI筛选的GitHub项目
+- `output/github/ai_whitelist.json`：AI项目白名单，30天过期 |
 
 ---
 
@@ -113,7 +116,6 @@ class ArticleItem(BaseModel):
 ```
 新增数据源工具：src/msgskill/tools/新工具_fetcher.py
 新增工具函数：src/msgskill/utils/新功能.py
-测试脚本：test/test_新功能.py
 输出文件：output/daily/YYYY-MM-DD/source_timestamp.json
 ```
 
@@ -451,53 +453,6 @@ def save_result_custom_format(
 ---
 
 ## 6. 测试指南
-
-### 6.1 测试单个数据源
-
-创建 `test/test_new_source.py`：
-
-```python
-"""测试新数据源"""
-import asyncio
-import sys
-from pathlib import Path
-
-# 添加项目路径
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from src.msgskill.tools.example_fetcher import fetch_example_data
-from src.msgskill.utils.logger import logger
-
-async def main():
-    """测试函数"""
-    logger.info("开始测试示例数据源...")
-    
-    # 测试获取数据
-    result = await fetch_example_data(limit=5)
-    
-    if result.success:
-        logger.info(f"✅ 测试通过")
-        logger.info(f"获取条目数: {result.total_count}")
-        
-        # 显示前3条
-        for i, item in enumerate(result.items[:3], 1):
-            logger.info(f"\n{i}. {item.title}")
-            logger.info(f"   URL: {item.source_url}")
-            logger.info(f"   AI评分: {item.ai_score}")
-    else:
-        logger.error(f"❌ 测试失败: {result.error}")
-
-if __name__ == "__main__":
-    asyncio.run(main())
-```
-
-运行测试：
-
-```bash
-python test/test_new_source.py
-```
-
-### 6.2 测试完整流程
 
 ```bash
 # 立即执行一次所有任务

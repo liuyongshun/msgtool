@@ -39,6 +39,8 @@ class NewsSourceConfig(SourceConfig):
     cache_ttl: int = 300
     keywords: list[str] = field(default_factory=list)
     selectors: dict[str, str] = field(default_factory=dict)
+    ai_filter_enabled: bool = True
+    translation_enabled: bool = True
 
 
 @dataclass
@@ -48,6 +50,7 @@ class RSSSourceConfig(SourceConfig):
     category: str = ""
     tags: list[str] = field(default_factory=list)
     ai_filter_enabled: bool = True  # 默认启用AI筛选
+    translation_enabled: bool = True
 
 
 @dataclass
@@ -55,6 +58,7 @@ class ArxivSourceConfig(SourceConfig):
     """arXiv分类配置"""
     category: str = ""  # cs.AI, cs.LG等
     tags: list[str] = field(default_factory=list)
+    translation_enabled: bool = True
 
 
 @dataclass
@@ -198,7 +202,9 @@ class ConfigManager:
                 fetch_limit=config.get("fetch_limit", {}),
                 cache_ttl=config.get("cache_ttl", 300),
                 keywords=config.get("keywords", []),
-                selectors=config.get("selectors", {})
+                selectors=config.get("selectors", {}),
+                ai_filter_enabled=config.get("ai_filter_enabled", True),
+                translation_enabled=config.get("translation_enabled", True)
             )
         
         return result
@@ -242,7 +248,8 @@ class ConfigManager:
                 url=config.get("url", ""),
                 category=config.get("category", ""),
                 tags=config.get("tags", []),
-                ai_filter_enabled=config.get("ai_filter_enabled", True)  # 默认启用
+                ai_filter_enabled=config.get("ai_filter_enabled", True),  # 默认启用
+                translation_enabled=config.get("translation_enabled", True)
             )
         
         return result
@@ -294,7 +301,8 @@ class ConfigManager:
                 name=config.get("name", key),
                 description=config.get("description", ""),
                 category=config.get("category", ""),
-                tags=config.get("tags", [])
+                tags=config.get("tags", []),
+                translation_enabled=config.get("translation_enabled", True)
             )
         
         return result
@@ -336,7 +344,9 @@ class ConfigManager:
                 api_base_url=config.get("api_base_url"),
                 fetch_limit=config.get("fetch_limit", {}),
                 cache_ttl=config.get("cache_ttl", 3600),
-                keywords=config.get("topics", []) if "topics" in config else []
+                keywords=config.get("topics", []) if "topics" in config else [],
+                ai_filter_enabled=config.get("ai_filter_enabled", True),
+                translation_enabled=config.get("translation_enabled", True)
             )
         
         return result
@@ -394,6 +404,36 @@ class ConfigManager:
         """
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(self._config, f, ensure_ascii=False, indent=2)
+    
+    def get_source_config(self, source_key: str) -> Optional[SourceConfig]:
+        """
+        通用方法：根据数据源键名获取配置
+        
+        Args:
+            source_key: 数据源键名，格式为 "category.source_name"
+                       (如 "news.hackernews", "rss.mit_tech_review")
+            
+        Returns:
+            数据源配置对象或None
+        """
+        parts = source_key.split('.')
+        if len(parts) != 2:
+            return None
+            
+        category, name = parts
+        
+        if category == "news":
+            return self.get_news_source(name)
+        elif category == "rss":
+            return self.get_rss_source(name)
+        elif category == "arxiv":
+            # 修正：直接获取arXiv分类配置
+            categories = self.get_arxiv_categories(enabled_only=False)
+            return categories.get(name)
+        elif category == "github":
+            return self.get_github_source(name)
+        else:
+            return None
 
 
 # 全局配置管理器实例

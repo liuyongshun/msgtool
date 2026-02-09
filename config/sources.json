@@ -40,7 +40,8 @@
           "new",
           "best"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       }
     },
     "rss": {
@@ -54,7 +55,8 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "openai_blog": {
         "enabled": true,
@@ -66,7 +68,8 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "google_ai": {
         "enabled": false,
@@ -80,7 +83,8 @@
         ],
         "status": "已禁用",
         "note": "RSS源不稳定，暂时禁用",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "huggingface": {
         "enabled": false,
@@ -94,7 +98,8 @@
         ],
         "status": "已禁用",
         "note": "RSS源不稳定，暂时禁用",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "deeplearning_ai": {
         "enabled": true,
@@ -105,7 +110,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "sebastian_raschka": {
         "enabled": true,
@@ -117,7 +123,8 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "anthropic_blog": {
         "enabled": true,
@@ -129,7 +136,8 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "meta_ai": {
         "enabled": true,
@@ -141,7 +149,8 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "microsoft_ai": {
         "enabled": true,
@@ -153,7 +162,8 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "langchain_blog": {
         "enabled": true,
@@ -165,7 +175,8 @@
           "AI工具",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "llamaindex_blog": {
         "enabled": false,
@@ -177,7 +188,8 @@
           "AI工具",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "techmeme": {
         "enabled": true,
@@ -188,7 +200,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "techcrunch": {
         "enabled": true,
@@ -199,7 +212,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "sequoia_blog": {
         "enabled": true,
@@ -211,7 +225,8 @@
           "AI资讯",
           "趋势分析"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "a16z_blog": {
         "enabled": true,
@@ -223,7 +238,8 @@
           "AI资讯",
           "趋势分析"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "thoughtworks": {
         "enabled": true,
@@ -235,7 +251,8 @@
           "AI资讯",
           "趋势分析"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "gartner": {
         "enabled": true,
@@ -247,7 +264,8 @@
           "AI资讯",
           "趋势分析"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "product_hunt": {
         "enabled": true,
@@ -258,7 +276,8 @@
         "tags": [
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "futurepedia": {
         "enabled": true,
@@ -269,7 +288,8 @@
         "tags": [
           "AI工具"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "huggingface_daily_papers": {
         "enabled": true,
@@ -280,7 +300,8 @@
         "tags": [
           "AI论文"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "sspai": {
         "enabled": true,
@@ -292,7 +313,8 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "arstechnica": {
         "enabled": true,
@@ -304,7 +326,8 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "theneuron": {
         "enabled": false,
@@ -318,7 +341,8 @@
         ],
         "status": "未完成",
         "note": "Newsletter类型，RSS feed需验证",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "qbitai": {
         "enabled": true,
@@ -329,7 +353,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "jiqizhixin": {
         "enabled": true,
@@ -340,7 +365,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "huxiu": {
         "enabled": true,
@@ -351,7 +377,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": false
       },
       "geekpark": {
         "enabled": false,
@@ -364,7 +391,8 @@
         ],
         "status": "未完成",
         "note": "RSS feed需验证",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "36kr_ai": {
         "enabled": true,
@@ -375,7 +403,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "tmtpost": {
         "enabled": true,
@@ -386,7 +415,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "juejin": {
         "enabled": false,
@@ -400,7 +430,8 @@
         ],
         "status": "未完成",
         "note": "需要通过官方API接口，非RSS",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "infoq": {
         "enabled": true,
@@ -412,7 +443,8 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "ithome": {
         "enabled": true,
@@ -423,7 +455,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "v2ex": {
         "enabled": true,
@@ -434,7 +467,8 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "coolapk": {
         "enabled": false,
@@ -447,7 +481,8 @@
         ],
         "status": "未完成",
         "note": "需要通过官方API接口，非RSS",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "tldr_tech": {
         "enabled": false,
@@ -460,7 +495,8 @@
         ],
         "status": "未完成",
         "note": "Newsletter类型，非RSS，需邮件流处理",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       },
       "therundown_ai": {
         "enabled": false,
@@ -473,7 +509,8 @@
         ],
         "status": "未完成",
         "note": "Newsletter类型，非RSS，需邮件流处理",
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       }
     },
     "github": {
@@ -507,7 +544,8 @@
           "created": 100,
           "stars": 500
         },
-        "ai_filter_enabled": true
+        "ai_filter_enabled": true,
+        "translation_enabled": true
       }
     },
     "arxiv": {
@@ -518,7 +556,8 @@
         "description": "人工智能领域论文",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_lg": {
         "enabled": true,
@@ -527,7 +566,8 @@
         "description": "机器学习领域论文",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_cl": {
         "enabled": true,
@@ -536,7 +576,8 @@
         "description": "自然语言处理领域论文",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_cv": {
         "enabled": true,
@@ -545,7 +586,8 @@
         "description": "计算机视觉领域论文",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_ne": {
         "enabled": true,
@@ -554,7 +596,8 @@
         "description": "神经网络与进化计算",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_ro": {
         "enabled": true,
@@ -563,7 +606,8 @@
         "description": "机器人领域论文",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "stat_ml": {
         "enabled": true,
@@ -572,7 +616,8 @@
         "description": "统计学中的机器学习",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_ir": {
         "enabled": true,
@@ -581,7 +626,8 @@
         "description": "信息检索（RAG、向量检索、检索增强生成）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_se": {
         "enabled": true,
@@ -590,7 +636,8 @@
         "description": "软件工程（AI辅助编程、代码大模型）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_ma": {
         "enabled": true,
@@ -599,7 +646,8 @@
         "description": "多智能体系统（Multi-Agent、协作AI）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_hc": {
         "enabled": true,
@@ -608,7 +656,8 @@
         "description": "人机交互（AI Agent界面、交互设计）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "cs_dc": {
         "enabled": true,
@@ -617,7 +666,8 @@
         "description": "分布式计算（大模型训练、推理优化）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       },
       "eess_as": {
         "enabled": true,
@@ -626,7 +676,8 @@
         "description": "音频与语音处理（语音大模型）",
         "tags": [
           "AI论文"
-        ]
+        ],
+        "translation_enabled": true
       }
     }
   },
@@ -675,7 +726,7 @@
           "note": "每个RSS源最多抓取的条目数，AI筛选后的所有结果都会保存。每天从06:00到21:00，每2小时同步一次（共9次）。"
         },
         "github": {
-          "enabled": false,
+          "enabled": true,
           "time": "11:00",
           "max_results": 100,
           "note": "控制每种查询类型的抓取上限，AI筛选后的所有结果都会保存"

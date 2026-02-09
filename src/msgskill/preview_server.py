@@ -7,6 +7,35 @@ import json
 from pathlib import Path
 from flask import Flask, render_template, jsonify, send_from_directory
 from flask_cors import CORS
+from datetime import datetime
+
+def parse_date_string(date_str):
+    """解析各种格式的日期字符串，返回毫秒时间戳用于排序（参考前端formatToBeijingTime逻辑）"""
+    if not date_str:
+        return 0  # 使用0作为最小时间戳
+    
+    try:
+        # 处理RSS格式时间 (Mon, 09 Feb 2026 02:28:48 GMT)
+        if date_str.endswith(' GMT'):
+            date_str_with_tz = date_str.replace(' GMT', ' +0000')
+            dt = datetime.strptime(date_str_with_tz, '%a, %d %b %Y %H:%M:%S %z')
+            # GMT时间转换为东八区：+8小时
+            return int((dt.timestamp() + 8 * 3600) * 1000)
+        
+        # 处理ISO格式时间 (2026-02-09T20:39:28)
+        elif 'T' in date_str:
+            # 如果后端已确保时间正确，直接解析
+            dt = datetime.fromisoformat(date_str.replace('Z', '+00:00') if date_str.endswith('Z') else date_str)
+            return int(dt.timestamp() * 1000)
+        
+        # 其他格式直接尝试解析
+        else:
+            dt = datetime.strptime(date_str, '%a, %d %b %Y %H:%M:%S')
+            return int(dt.timestamp() * 1000)
+            
+    except (ValueError, AttributeError):
+        # 如果解析失败，返回0作为最小时间戳
+        return 0
 
 # 获取项目根目录
 import sys
@@ -20,10 +49,80 @@ CORS(app)
 
 OUTPUT_DIR = BASE_DIR / 'output' / 'daily'
 
+# 导入GitHub数据库模块
+from src.msgskill.utils.github_db_new import get_github_db
+
 @app.route('/')
 def index():
     """主页面"""
     return send_from_directory(str(BASE_DIR / 'templates'), 'output_preview.html')
+
+@app.route('/api/github/database')
+def get_github_database():
+    """获取GitHub数据库中的所有AI项目数据"""
+    try:
+        # 获取GitHub数据库实例
+        github_db = get_github_db()
+        
+        # 获取数据库中所有项目（新架构是单一文件，所有项目都在同一个字典中）
+        all_projects = github_db.projects
+        
+        # 将数据库项目转换为前端需要的格式
+        items = []
+        for project_id, project_data in all_projects.items():
+            status = project_data.get('status', 'crawled')
+            # 只显示白名单和AI筛选过的项目
+            if status not in ['ai_screened', 'whitelisted']:
+                continue
+                
+            # 从GitHub数据库中提取项目信息
+            item = {
+                'id': project_id,
+                'title': f"{project_data.get('full_name', '')}: {project_data.get('name', '')}",
+                'summary': project_data.get('description', '') or f"GitHub项目: {project_data.get('name', '')}",
+                'summary_truncated': project_data.get('description', '')[:200] + '...' if project_data.get('description') and len(project_data.get('description', '')) > 200 else project_data.get('description', ''),
+                'source_url': project_data.get('html_url', ''),
+                'published_date': project_data.get('crawled_at', project_data.get('added_at', '')),
+                'source_type': 'github',
+                'article_tag': 'tools',
+                'author': project_data.get('owner', {}).get('login', '').split('/')[0] if '/' in project_data.get('owner', {}).get('login', '') else project_data.get('owner', {}).get('login', ''),
+                'score': project_data.get('stargazers_count', 0),
+                'tags': project_data.get('topics', []),
+                'story_type': 'database',  # 新版使用统一的数据库视图
+                'ai_score': project_data.get('ai_score', 0.0),
+                'ai_reason': project_data.get('ai_reason', ''),
+                'language': project_data.get('language', ''),
+                '_from_database': True  # 标记来自数据库
+            }
+            items.append(item)
+        
+        # 按AI评分和评分排序
+        items.sort(
+            key=lambda x: (x.get('ai_score', 0.0), x.get('score', 0)),
+            reverse=True
+        )
+        
+        return jsonify({
+            'success': True,
+            'data': {
+                'source_name': 'GitHub数据库（AI项目）',
+                'source_type': 'github',
+                'fetched_at': datetime.now().isoformat(),
+                'total_count': len(items),
+                'items': items,
+                'database_info': {
+                    'total_projects': len(github_db.projects),
+                    'ai_projects': len([p for p in github_db.projects.values() if p.get('status') == 'ai_screened']),
+                    'whitelist_projects': len([p for p in github_db.projects.values() if p.get('status') == 'whitelisted'])
+                }
+            },
+            'from_database': True,
+            'merged_count': len(items)
+        })
+        
+    except Exception as e:
+        print(f"加载GitHub数据库数据失败: {e}")
+        return jsonify({'error': f'加载GitHub数据库失败: {str(e)}'}), 500
 
 @app.route('/api/dates')
 def get_dates():
@@ -138,7 +237,7 @@ def get_data(date, data_type):
                     unique_items.append(item)
             
             # 按时间排序：最新的在最前
-            unique_items.sort(key=lambda x: x.get('published_date', ''), reverse=True)
+            unique_items.sort(key=lambda x: parse_date_string(x.get('published_date', '')), reverse=True)
             merged_data['items'] = unique_items
             merged_data['total_count'] = len(unique_items)
         
@@ -146,12 +245,12 @@ def get_data(date, data_type):
         elif data_type == 'rss' and merged_data['feeds']:
             for feed_url, feed_data in merged_data['feeds'].items():
                 items = feed_data.get('items', [])
-                items.sort(key=lambda x: x.get('published', ''), reverse=True)
+                items.sort(key=lambda x: parse_date_string(x.get('published', '')), reverse=True)
                 feed_data['items'] = items
         
         # 对arXiv数据按发布时间排序
         elif data_type == 'arxiv' and merged_data['papers']:
-            merged_data['papers'].sort(key=lambda x: x.get('published', ''), reverse=True)
+            merged_data['papers'].sort(key=lambda x: parse_date_string(x.get('published', '')), reverse=True)
         
         return jsonify({
             'success': True,

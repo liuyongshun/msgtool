@@ -1,7 +1,7 @@
 {
   "source": "RSS Feeds",
   "feeds_count": 27,
-  "total_items": 252,
+  "total_items": 373,
   "errors_count": 12,
   "fetched_at": "2026-02-04T10:19:54.559760",
   "feeds": {
@@ -10,8 +10,8 @@
       "title": "MIT Technology Review",
       "description": "",
       "link": "https://www.technologyreview.com",
-      "updated": "2026-02-04T20:47:20.591096",
-      "items_count": 7,
+      "updated": "2026-02-04T22:59:35.889062",
+      "items_count": 11,
       "items": [
         {
           "title": "《下载》：从老化矿山中榨取更多金属，以及人工智能的真相危机",
@@ -98,6 +98,55 @@
             "App"
           ],
           "ai_score": 0.95
+        },
+        {
+          "title": "From guardrails to governance: A CEO’s guide for securing agentic systems",
+          "link": "https://www.technologyreview.com/2026/02/04/1131014/from-guardrails-to-governance-a-ceos-guide-for-securing-agentic-systems/",
+          "summary": "The previous article in this series, “Rules fail at the prompt, succeed at the boundary,” focused on the first AI-orchestrated espionage campaign and the failure of prompt-level control. This article is the prescription. The question every CEO is now getting from their board is some version of:...",
+          "published": "Wed, 04 Feb 2026 14:00:00 +0000",
+          "author": "Jessica Hammond",
+          "tags": [
+            "Artificial intelligence",
+            "sponsored"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "The Download: the future of nuclear power plants, and social media-fueled AI hype",
+          "link": "https://www.technologyreview.com/2026/02/04/1132115/the-download-the-future-of-nuclear-power-plants-and-social-media-fueled-ai-hype/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Why AI companies are betting on next-gen nuclear AI is driving unprecedented investment for massive data centers and an energy supply that can support its huge...",
+          "published": "Wed, 04 Feb 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Microbes could extract the metal needed for cleantech",
+          "link": "https://www.technologyreview.com/2026/02/03/1132047/microbes-extract-metal-cleantech/",
+          "summary": "In a pine forest on Michigan’s Upper Peninsula, the only active nickel mine in the US is nearing the end of its life. At a time when carmakers want the metal for electric-vehicle batteries, nickel concentration at Eagle Mine is falling and could soon drop too low to warrant digging. But earlier...",
+          "published": "Tue, 03 Feb 2026 10:00:00 +0000",
+          "author": "Matt Blois",
+          "tags": [
+            "Climate change and energy",
+            "App"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "What’s next for EV batteries in 2026",
+          "link": "https://www.technologyreview.com/2026/02/02/1132042/whats-next-for-ev-batteries-in-2026/",
+          "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. Demand for electric vehicles and the batteries that power them has never been hotter. In 2025, EVs made up over a quarter of new...",
+          "published": "Mon, 02 Feb 2026 10:00:00 +0000",
+          "author": "Casey Crownhart",
+          "tags": [
+            "Climate change and energy",
+            "App",
+            "What's Next in Tech",
+            "Why It Matters"
+          ],
+          "ai_score": 0.5
         }
       ]
     },
@@ -106,8 +155,8 @@
       "title": "OpenAI News",
       "description": "The OpenAI blog",
       "link": "https://openai.com/news",
-      "updated": "2026-02-04T20:47:20.591116",
-      "items_count": 18,
+      "updated": "2026-02-04T22:59:35.889070",
+      "items_count": 21,
       "items": [
         {
           "title": "Sora的喂养哲学",
@@ -292,6 +341,37 @@
             "ChatGPT"
           ],
           "ai_score": 0.95
+        },
+        {
+          "title": "EMEA Youth & Wellbeing Grant",
+          "link": "https://openai.com/index/emea-youth-and-wellbeing-grant",
+          "summary": "Apply for the EMEA Youth & Wellbeing Grant, a €500,000 program funding NGOs and researchers advancing youth safety and wellbeing in the age of AI.",
+          "published": "Wed, 28 Jan 2026 01:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing Prism",
+          "link": "https://openai.com/index/introducing-prism",
+          "summary": "Prism is a free LaTeX-native workspace with GPT-5.2 built in, helping researchers write, collaborate, and reason in one place.",
+          "published": "Tue, 27 Jan 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Introducing Edu for Countries",
+          "link": "https://openai.com/index/edu-for-countries",
+          "summary": "Edu for Countries is a new OpenAI initiative helping governments use AI to modernize education systems and build future-ready workforces.",
+          "published": "Wed, 21 Jan 2026 01:00:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -300,14 +380,14 @@
       "error": "HTTP 404 error fetching feed: https://www.deeplearning.ai/feed/ (RSS地址不存在)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591119"
+      "updated": "2026-02-04T22:59:35.889071"
     },
     "https://magazine.sebastianraschka.com/feed": {
       "url": "https://magazine.sebastianraschka.com/feed",
       "title": "Ahead of AI",
       "description": "Ahead of AI focuses on machine learning and AI research and is read by more than 150,000 researchers and practitioners who want to stay ahead in a rapidly evolving field.",
       "link": "https://magazine.sebastianraschka.com",
-      "updated": "2026-02-04T20:47:20.591133",
+      "updated": "2026-02-04T22:59:35.889078",
       "items_count": 20,
       "items": [
         {
@@ -497,22 +577,22 @@
       "error": "HTTP 404 error fetching feed: https://www.anthropic.com/news.rss (RSS地址不存在)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591135"
+      "updated": "2026-02-04T22:59:35.889079"
     },
     "https://rsshub.app/meta/ai/blog": {
       "url": "https://rsshub.app/meta/ai/blog",
       "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591137"
+      "updated": "2026-02-04T22:59:35.889080"
     },
     "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/": {
       "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
       "title": "Artificial intelligence - Microsoft Research",
       "description": "",
       "link": "https://www.microsoft.com/en-us/research/blog/category/intelligence/artificial-intelligence/",
-      "updated": "2026-02-04T20:47:20.591141",
-      "items_count": 9,
+      "updated": "2026-02-04T22:59:35.889085",
+      "items_count": 10,
       "items": [
         {
           "title": "研究合集：支持负责任人工智能的研究",
@@ -624,6 +704,18 @@
             "Artificial intelligence"
           ],
           "ai_score": 0.5
+        },
+        {
+          "title": "Launching a new round of projects in the Swiss JRC – Research with impact",
+          "link": "https://www.microsoft.com/en-us/research/blog/launching-a-new-round-of-projects-in-the-swiss-jrc-research-with-impact/",
+          "summary": "January 31, 2019 marked the start of the sixth workshop for the Swiss Joint Research Center (Swiss JRC), an innovative and successful collaborative research engagement between Microsoft Research and the two universities that make up the Swiss Federal Institutes of Technology—ETH Zurich (ETH) and...",
+          "published": "Wed, 06 Feb 2019 00:00:55 +0000",
+          "author": "Microsoft Research Team",
+          "tags": [
+            "Artificial intelligence",
+            "Machine learning"
+          ],
+          "ai_score": 0.5
         }
       ]
     },
@@ -632,7 +724,7 @@
       "title": "LangChain Blog",
       "description": "LangChain Blog",
       "link": "https://blog.langchain.com/",
-      "updated": "2026-02-04T20:47:20.591150",
+      "updated": "2026-02-04T22:59:35.889089",
       "items_count": 15,
       "items": [
         {
@@ -795,8 +887,8 @@
       "title": "Techmeme",
       "description": "Top news and commentary for technology's leaders, from all around the web",
       "link": "http://www.techmeme.com/",
-      "updated": "2026-02-04T20:47:20.591156",
-      "items_count": 22,
+      "updated": "2026-02-04T22:59:35.889095",
+      "items_count": 34,
       "items": [
         {
           "title": "诉讼文件：OpenAI指控xAI在反垄断案中系统性销毁证据，指示员工使用自动删除的“临时消息工具”（Madlin Mekelburg/Bloomberg）",
@@ -995,6 +1087,114 @@
           "author": null,
           "tags": [],
           "ai_score": 0.85
+        },
+        {
+          "title": "Adobe ramped up its ads in 2025, spending $1.4B amid AI competition and Wall Street skepticism, representing a significantly higher share of sales than rivals (Brody Ford/Bloomberg)",
+          "link": "http://www.techmeme.com/260204/p29#a260204p29",
+          "summary": "Brody Ford / Bloomberg : Adobe ramped up its ads in 2025, spending $1.4B amid AI competition and Wall Street skepticism, representing a significantly higher share of sales than rivals — Adobe Inc. ramped up its advertising in 2025, spending $1.4 billion to promote its brand in the face of steep...",
+          "published": "Wed, 04 Feb 2026 09:30:05 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Sources: Amazon and OpenAI are discussing a deal that could require OpenAI to dedicate researchers and engineers to developing customized models for Amazon (The Information)",
+          "link": "http://www.techmeme.com/260204/p28#a260204p28",
+          "summary": "The Information : Sources: Amazon and OpenAI are discussing a deal that could require OpenAI to dedicate researchers and engineers to developing customized models for Amazon — As Amazon weighs an equity investment of tens of billions of dollars in OpenAI, the companies are also discussing a...",
+          "published": "Wed, 04 Feb 2026 09:15:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI voice startup ElevenLabs raised a $500M Series D led by Sequoia at an $11B valuation, taking its total funding to nearly $800M, and reports $330M in 2025 ARR (Kate Clark/Wall Street Journal)",
+          "link": "http://www.techmeme.com/260204/p27#a260204p27",
+          "summary": "Kate Clark / Wall Street Journal : AI voice startup ElevenLabs raised a $500M Series D led by Sequoia at an $11B valuation, taking its total funding to nearly $800M, and reports $330M in 2025 ARR — The startup is increasingly joining with creative stars and expanding its work with business customers",
+          "published": "Wed, 04 Feb 2026 09:10:09 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Amazon rolls out Alexa+ to all Prime members in the US via any Alexa-enabled device, Alexa.com, and the Alexa app, and launches a free tier for non-Prime users (Jennifer Pattison Tuohy/The Verge)",
+          "link": "http://www.techmeme.com/260204/p26#a260204p26",
+          "summary": "Jennifer Pattison Tuohy / The Verge : Amazon rolls out Alexa+ to all Prime members in the US via any Alexa-enabled device, Alexa.com, and the Alexa app, and launches a free tier for non-Prime users — Amazon's revamped AI-powered assistant is now available to everyone in the US, with new tiers that...",
+          "published": "Wed, 04 Feb 2026 09:05:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Bedrock, which aims to automate heavy construction equipment like excavators, raised $270M led by CapitalG and the Valor Atreides AI Fund at a $1.75B valuation (Michael J. de la Merced/New York Times)",
+          "link": "http://www.techmeme.com/260204/p25#a260204p25",
+          "summary": "Michael J. de la Merced / New York Times : Bedrock, which aims to automate heavy construction equipment like excavators, raised $270M led by CapitalG and the Valor Atreides AI Fund at a $1.75B valuation — The year-old company, founded by veterans of the autonomous vehicle business Waymo, is seeking...",
+          "published": "Wed, 04 Feb 2026 08:30:02 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Anthropic says \"Claude will remain ad-free\", its users \"won't see 'sponsored' links adjacent to\" conversations, and responses won't be influenced by advertisers (Anthropic)",
+          "link": "http://www.techmeme.com/260204/p24#a260204p24",
+          "summary": "Anthropic : Anthropic says “Claude will remain ad-free”, its users “won't see ‘sponsored’ links adjacent to” conversations, and responses won't be influenced by advertisers — There are many good places for advertising. A conversation with Claude is not one of them.",
+          "published": "Wed, 04 Feb 2026 08:15:07 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Resolve AI, which offers autonomous AI agents to monitor source code and infrastructure to resolve outages, raised $125M led by Lightspeed at a $1B valuation (Rebecca Torrence/Bloomberg)",
+          "link": "http://www.techmeme.com/260204/p23#a260204p23",
+          "summary": "Rebecca Torrence / Bloomberg : Resolve AI, which offers autonomous AI agents to monitor source code and infrastructure to resolve outages, raised $125M led by Lightspeed at a $1B valuation — Resolve AI, a startup building AI agents to find and fix problems in live software systems, just hit a $1...",
+          "published": "Wed, 04 Feb 2026 08:10:00 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Egypt plans to ban Roblox in a bid to curb kids' exposure to potentially harmful online material; the Middle East's most populous nation joins Qatar and Turkey (Bloomberg)",
+          "link": "http://www.techmeme.com/260204/p22#a260204p22",
+          "summary": "Bloomberg : Egypt plans to ban Roblox in a bid to curb kids' exposure to potentially harmful online material; the Middle East's most populous nation joins Qatar and Turkey — Egyptian regulators moved to ban Roblox Corp.'s gaming platform, as the Middle East's most populous nation says it's making …",
+          "published": "Wed, 04 Feb 2026 08:00:54 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "TRM Labs, which helps law enforcement and companies track crypto and blockchains, raised a $70M Series C led by Blockchain Capital at a $1B valuation (Leo Schwartz/Fortune)",
+          "link": "http://www.techmeme.com/260204/p21#a260204p21",
+          "summary": "Leo Schwartz / Fortune : TRM Labs, which helps law enforcement and companies track crypto and blockchains, raised a $70M Series C led by Blockchain Capital at a $1B valuation — When TRM Labs cofounders Esteban Castaño and Rahul Raina moved to San Francisco in 2018 to create a startup, their mentors...",
+          "published": "Wed, 04 Feb 2026 07:45:00 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "US Senators introduce the bipartisan SCAM Act, a bill requiring social media platforms to verify advertiser identities via government-issued ID or legal docs (Jeff Horwitz/Reuters)",
+          "link": "http://www.techmeme.com/260204/p20#a260204p20",
+          "summary": "Jeff Horwitz / Reuters : US Senators introduce the bipartisan SCAM Act, a bill requiring social media platforms to verify advertiser identities via government-issued ID or legal docs — U.S. Senators Ruben Gallego and Bernie Moreno have introduced anti-scam legislation requiring social media...",
+          "published": "Wed, 04 Feb 2026 07:40:07 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "An interview with Epic Games Store VP Steven Allison, who says \"we have a lot of things\" to fix and \"the launcher sucks\", on 2026 updates like social features (Chris Tapsell/Eurogamer.net)",
+          "link": "http://www.techmeme.com/260204/p19#a260204p19",
+          "summary": "Chris Tapsell / Eurogamer.net : An interview with Epic Games Store VP Steven Allison, who says “we have a lot of things” to fix and “the launcher sucks”, on 2026 updates like social features — Steven Allison acknowledges some people will always say “F— Epic\", as focus finally shifts to player...",
+          "published": "Wed, 04 Feb 2026 07:35:01 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Uber reports Q4 revenue up 20% YoY to $14.37B, Gross Bookings up 22% YoY to $54.1B, trips up 22% YoY to 3.8B, and a $296M net income, below est.; UBER falls 5%+ (Connor Hart/Wall Street Journal)",
+          "link": "http://www.techmeme.com/260204/p15#a260204p15",
+          "summary": "Connor Hart / Wall Street Journal : Uber reports Q4 revenue up 20% YoY to $14.37B, Gross Bookings up 22% YoY to $54.1B, trips up 22% YoY to 3.8B, and a $296M net income, below est.; UBER falls 5%+ — Revenue jumped 20% to $14.37 billion — Uber Technologies logged a jump in fourth-quarter revenue,...",
+          "published": "Wed, 04 Feb 2026 07:11:45 -0500",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -1270,17 +1470,76 @@
             "Exclusive"
           ],
           "ai_score": 0.95
+        },
+        {
+          "title": "Alexa+, Amazon’s AI assistant, is now available to everyone in the U.S.",
+          "link": "https://techcrunch.com/2026/02/04/alexa-amazons-ai-assistant-is-now-available-to-everyone-in-the-u-s/",
+          "summary": "Amazon opens Alexa+ to everyone in the U.S. The AI feature is free for Prime members across devices, and free for everyone on mobile and web.",
+          "published": "Wed, 04 Feb 2026 14:00:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "Hardware",
+            "Media & Entertainment",
+            "AI",
+            "Amazon",
+            "echo"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Accel doubles down on Fibr AI as agents turn static websites into one-to-one experiences",
+          "link": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
+          "summary": "Fibr AI replaces marketing agency– and engineering-heavy website personalization with autonomous systems designed for enterprise scale.",
+          "published": "Wed, 04 Feb 2026 13:00:00 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "Enterprise",
+            "AI",
+            "Accel",
+            "Fibr AI"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Ring brings its ‘Search Party’ feature for finding lost dogs to non-Ring camera owners",
+          "link": "https://techcrunch.com/2026/02/02/ring-brings-its-search-party-feature-for-finding-lost-dogs-to-non-ring-camera-owners/",
+          "summary": "Ring's Search Party feature for finding lost dogs is now available across the U.S. — even if you don't own a Ring camera.",
+          "published": "Mon, 02 Feb 2026 15:33:45 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "Hardware",
+            "AI",
+            "Amazon",
+            "Pets",
+            "Ring"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Why Tether’s CEO is everywhere right now",
+          "link": "https://techcrunch.com/2026/02/01/why-tethers-ceo-is-everywhere-right-now/",
+          "summary": "For years, Tether's CEO avoided the United States, watching from offshore as regulators circled and prosecutors investigated. Those days are over.",
+          "published": "Sun, 01 Feb 2026 20:32:21 +0000",
+          "author": "Connie Loizos",
+          "tags": [
+            "AI",
+            "Commerce",
+            "Crypto",
+            "TC",
+            "Circle"
+          ],
+          "ai_score": 0.5
         }
       ],
-      "items_count": 18,
-      "updated": "2026-02-04T20:47:20.591162"
+      "items_count": 22,
+      "updated": "2026-02-04T22:59:35.889101"
     },
     "https://www.sequoiacap.com/feed/": {
       "url": "https://www.sequoiacap.com/feed/",
       "title": "Sequoia Capital",
       "description": "Sequoia Capital",
       "link": "https://sequoiacap.com/",
-      "updated": "2026-02-04T20:47:20.591166",
+      "updated": "2026-02-04T22:59:35.889103",
       "items_count": 5,
       "items": [
         {
@@ -1341,22 +1600,22 @@
       "error": "HTTP 404 error fetching feed: https://a16z.com/feed/ (RSS地址不存在)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591168"
+      "updated": "2026-02-04T22:59:35.889104"
     },
     "https://www.thoughtworks.com/insights/rss": {
       "url": "https://www.thoughtworks.com/insights/rss",
       "error": "HTTP 404 error fetching feed: https://www.thoughtworks.com/insights/rss (RSS地址不存在)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591170"
+      "updated": "2026-02-04T22:59:35.889105"
     },
     "https://www.gartner.com/en/newsroom/rss": {
       "url": "https://www.gartner.com/en/newsroom/rss",
       "title": "Gartner Press Releases",
       "description": "Gartner Press Release Feed",
       "link": "https://www.gartner.com/en/newsroom",
-      "updated": "2026-02-04T20:47:20.591181",
-      "items_count": 14,
+      "updated": "2026-02-04T22:59:35.889113",
+      "items_count": 21,
       "items": [
         {
           "title": "高德纳预测：到2027年因人工智能裁减客服人员的公司半数将重新招聘。",
@@ -1483,6 +1742,69 @@
           "author": "",
           "tags": [],
           "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Predicts 40% of Large Warehouse Operations Will Adopt Gamification Tools by 2028",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-04-gartner-predicts-40-percent-of-large-warehouse-operations-will-adopt-gamification-tools-by-2028?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "By 2028, 40% of large warehouse operations and distribution centers will have deployed employee engagement and gamification tools to motivate their workforces, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 4 Feb 2026 14:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 10.8% in 2026, Totaling $6.15 Trillion",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-forecasts-worldwide-it-spending-to-grow-10-point-8-percent-in-2026-totaling-6-point-15-trillion-dollars?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Worldwide IT spending is expected to reach $6.15 trillion in 2026, up 10.8% from 2025, according to the latest forecast by Gartner, Inc., a business and technology insights company.",
+          "published": "Tue, 3 Feb 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Identifies Four Financial Strategies for CFOs to Achieve Efficient Growth",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-28-gartner-identifies-four-financial-strategies-for-cfos-to-achieve-efficient-growth?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Amid ongoing economic volatility, and rising cost pressures, CFOs should evaluate four financial strategies to drive efficient growth, according to Gartner, Inc., a business and technology insights company.",
+          "published": "Wed, 28 Jan 2026 14:30:22 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Announces Gartner Digital Workplace Summit 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-27-gartner-announces-gartner-digital-workplace-summit-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "What: Gartner Digital Workplace Summit 2026 When: March 23-24, 2026 Where: San Diego, CA Members of the media can register for the conference by contacting Meghan.Moran@Gartner.com. Details: Generative and agentic AI are shifting from pilots to widespread adoption. To seize these opportunities,...",
+          "published": "Tue, 27 Jan 2026 13:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Says Worldwide PC Shipments Increased 9.3% in Fourth Quarter of 2025 and 9.1% for the Full Year",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-1-20-gartner-says-worldwide-pc-shipments-increased-9-point-3-percent-in-fourth-quarter-of-2025-and-9-point-1-percent-for-the-full-year?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Worldwide PC shipments totaled 71.5 million units in the fourth quarter of 2025, a 9.3% increase from the fourth quarter of 2024, according to preliminary results by Gartner, Inc., a business and technology insights company. For the full year, worldwide PC shipments totaled more than 270 million...",
+          "published": "Tue, 20 Jan 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Announces Gartner Product Leadership Conference 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-13-gartner-announces-gartner-product-leadership-conference-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "In today’s volatile market, shaped by shifting customer needs, evolving dynamics and the accelerating AI race, success depends on your ability to turn disruption into opportunity. Gartner Product Leadership Conference 2026 focuses on helping leaders master these challenges, leverage AI for business...",
+          "published": "Tue, 13 Jan 2026 13:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Gartner Identifies the Top Future of Work Trends for CHROs in 2026",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-01-12-gartner-identifies-the-top-future-of-work-trends-for-chros-in-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "Gartner, Inc., a business and technology insights company, has revealed nine future of work trends that chief human resource officers (CHROs) will need to address in 2026 and beyond to ensure their organization achieves its desired talent and business outcomes.",
+          "published": "Mon, 12 Jan 2026 13:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -1491,8 +1813,8 @@
       "title": "Product Hunt — The best new products, every day",
       "description": "",
       "link": "https://www.producthunt.com",
-      "updated": "2026-02-04T20:47:20.591186",
-      "items_count": 14,
+      "updated": "2026-02-04T22:59:35.889119",
+      "items_count": 28,
       "items": [
         {
           "title": "Ray 3.0",
@@ -1619,6 +1941,132 @@
           "author": "Nik Haldimann",
           "tags": [],
           "ai_score": 0.5
+        },
+        {
+          "title": "CreateOS",
+          "link": "https://www.producthunt.com/products/createos",
+          "summary": "Build and deploy apps from any AI coding tool, in one place Discussion | Link",
+          "published": "2026-01-22T17:05:55-08:00",
+          "author": "fmerian",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Beni AI",
+          "link": "https://www.producthunt.com/products/beni-ai-video-call-ai-companion",
+          "summary": "Face to face AI companion calls with voice, motion, memory Discussion | Link",
+          "published": "2026-02-03T01:32:08-08:00",
+          "author": "summer lee",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Miniloop",
+          "link": "https://www.producthunt.com/products/miniloop",
+          "summary": "Turn natural language into AI agents and automations Discussion | Link",
+          "published": "2026-01-19T10:05:39-08:00",
+          "author": "Wyatt Miller",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Universal-3 Pro",
+          "link": "https://www.producthunt.com/products/assemblyai",
+          "summary": "The first of its kind promptable speech language model Discussion | Link",
+          "published": "2026-02-02T14:00:12-08:00",
+          "author": "Meredith Rauch",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Multitui",
+          "link": "https://www.producthunt.com/products/multitui",
+          "summary": "Sandbox claude code, codex, or any TUI on macOS Discussion | Link",
+          "published": "2026-02-03T04:49:26-08:00",
+          "author": "David Cann",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "SERA",
+          "link": "https://www.producthunt.com/products/allen-institute-of-artificial-intelligence",
+          "summary": "Fast, accessible coding agents that adapt to any repo Discussion | Link",
+          "published": "2026-02-03T22:39:14-08:00",
+          "author": "Zac Zuo",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "CatchBack Cards",
+          "link": "https://www.producthunt.com/products/catchback-cards",
+          "summary": "Create custom mystery packs of Pokemon and Sports cards Discussion | Link",
+          "published": "2026-01-29T20:51:19-08:00",
+          "author": "Joseph Zhang",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Xcode 26.3",
+          "link": "https://www.producthunt.com/products/xcode",
+          "summary": "Leverage coding agents to tackle complex tasks autonomously Discussion | Link",
+          "published": "2026-02-03T14:05:32-08:00",
+          "author": "Chris Messina",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "OpenSheet",
+          "link": "https://www.producthunt.com/products/opensheet",
+          "summary": "Turn raw CSV and JSON into an interactive data canvas Discussion | Link",
+          "published": "2026-01-30T01:11:11-08:00",
+          "author": "Amin",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Postproxy",
+          "link": "https://www.producthunt.com/products/postproxy",
+          "summary": "One API to publish to Instagram, TikTok, Youtube and others Discussion | Link",
+          "published": "2026-02-03T06:19:02-08:00",
+          "author": "Dmitry Sereda",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Candle (YC F24)",
+          "link": "https://www.producthunt.com/products/candle-4",
+          "summary": "One shared moment a day Discussion | Link",
+          "published": "2025-06-23T15:51:44-07:00",
+          "author": "Alex Ruber",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "spacecake",
+          "link": "https://www.producthunt.com/products/spacecake",
+          "summary": "Run Claude Code agents in terminal with a visual editor Discussion | Link",
+          "published": "2026-02-03T20:00:47-08:00",
+          "author": "alexander",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Pastey Extension",
+          "link": "https://www.producthunt.com/products/pastey-extension",
+          "summary": "Keep a library of saved text, paste it in a keystroke Discussion | Link",
+          "published": "2026-02-03T16:29:11-08:00",
+          "author": "Harsha Gundala",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Ember Mug CLI",
+          "link": "https://www.producthunt.com/products/ember-mug-cli",
+          "summary": "Control your ember mug from the terminal Discussion | Link",
+          "published": "2026-02-03T06:22:24-08:00",
+          "author": "Benjamin Singer",
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -1627,22 +2075,22 @@
       "error": "HTTP 404 error fetching feed: https://www.futurepedia.io/rss (RSS地址不存在)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591188"
+      "updated": "2026-02-04T22:59:35.889120"
     },
     "https://huggingface.co/papers/rss": {
       "url": "https://huggingface.co/papers/rss",
       "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591190"
+      "updated": "2026-02-04T22:59:35.889121"
     },
     "https://sspai.com/feed": {
       "url": "https://sspai.com/feed",
       "title": "少数派",
       "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
       "link": "https://sspai.com",
-      "updated": "2026-02-04T20:47:20.591193",
-      "items_count": 5,
+      "updated": "2026-02-04T22:59:35.889124",
+      "items_count": 11,
       "items": [
         {
           "title": "派早报：Firefox 上线 AI 功能开关、OpenAI 推出 Codex 桌面应用等",
@@ -1688,6 +2136,60 @@
           "author": "少数派编辑部",
           "tags": [],
           "ai_score": 0.85
+        },
+        {
+          "title": "城市漫步指南：软件名城，泉城济南",
+          "link": "https://sspai.com/post/105859",
+          "summary": "济南确实是个不错的地方，对比石家庄来说我个人认为更宜居一些，有水有山有文化有历史有底蕴，甚至还有很多城市羡慕的高新技术产业。 查看全文",
+          "published": "Wed, 04 Feb 2026 15:00:00 +0800",
+          "author": "PJHubs",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "社区速递 128 | 小红书里的「奇怪知识」、打开 14 天的血糖盲盒",
+          "link": "https://sspai.com/post/106004",
+          "summary": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光。因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。🏆年度创作少 ... 查看全文",
+          "published": "Tue, 03 Feb 2026 16:46:53 +0800",
+          "author": "Matrix机器人",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "不是只做样子货：铁三角 ATH-CKS50TW2 星战联名耳机体验",
+          "link": "https://sspai.com/post/105893",
+          "summary": "相较于我们提到过的 TWX7，CKS50TW2 并没有把很多功夫都下到声音调校上，而是做了一个各方面功能都挺有意思的产品。 查看全文",
+          "published": "Tue, 03 Feb 2026 15:20:22 +0800",
+          "author": "KingTsui",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "App+1 | 开源免费、多人协作，用 Cent 一站式搞定记账",
+          "link": "https://sspai.com/post/105644",
+          "summary": "支持二级分类，自定义标签，支持不同维度的统计，丰富的筛选功能，新增了预算管理，支持上传图片附件，未来还会增加地图功能，最重要的是，它完全免费。 查看全文",
+          "published": "Tue, 03 Feb 2026 11:30:20 +0800",
+          "author": "少数派_924128",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "派评 | 近期值得关注的 App",
+          "link": "https://sspai.com/post/105972",
+          "summary": ">下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文",
+          "published": "Mon, 02 Feb 2026 17:59:15 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "2026 春运买票指北：乡愁愈烈，莫添烦恼",
+          "link": "https://sspai.com/post/86328",
+          "summary": "从火车票放票原理开始，让我们探究如何在高峰期买到一张火车票。 查看全文",
+          "published": "Mon, 02 Feb 2026 15:00:02 +0800",
+          "author": "Xenogeneic",
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -1696,8 +2198,8 @@
       "title": "Ars Technica",
       "description": "Serving the Technologist since 1998. News, reviews, and analysis.",
       "link": "https://arstechnica.com",
-      "updated": "2026-02-04T20:47:20.591198",
-      "items_count": 6,
+      "updated": "2026-02-04T22:59:35.889130",
+      "items_count": 20,
       "items": [
         {
           "title": "英伟达与OpenAI价值千亿美元的交易似乎已化为泡影。",
@@ -1787,6 +2289,212 @@
             "spacex"
           ],
           "ai_score": 0.8
+        },
+        {
+          "title": "NASA finally acknowledges the elephant in the room with the SLS rocket",
+          "link": "https://arstechnica.com/space/2026/02/nasa-finally-acknowledges-the-elephant-in-the-room-with-the-sls-rocket/",
+          "summary": "\"You know, you're right, the flight rate—three years is a long time.\"",
+          "published": "Wed, 04 Feb 2026 14:41:30 +0000",
+          "author": "Eric Berger",
+          "tags": [
+            "Space",
+            "NASA",
+            "nasa rocket",
+            "space",
+            "space launch system"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "So yeah, I vibe-coded a log colorizer—and I feel good about it",
+          "link": "https://arstechnica.com/features/2026/02/so-yeah-i-vibe-coded-a-log-colorizer-and-i-feel-good-about-it/",
+          "summary": "Some semi-unhinged musings on where LLMs fit into my life—and how I'll keep using them.",
+          "published": "Wed, 04 Feb 2026 12:00:37 +0000",
+          "author": "Lee Hutchinson",
+          "tags": [
+            "Biz & IT",
+            "Features",
+            "AI",
+            "Anthropic",
+            "artificial inteligence"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Netflix says users can cancel service if HBO Max merger makes it too expensive",
+          "link": "https://arstechnica.com/gadgets/2026/02/netflix-claims-subscribers-will-get-more-content-for-less-if-it-buys-hbo-max/",
+          "summary": "Eighty percent of HBO Max subscribers subscribe to Netflix, Sarandos tells Senate.",
+          "published": "Tue, 03 Feb 2026 23:41:39 +0000",
+          "author": "Scharon Harding",
+          "tags": [
+            "Tech",
+            "hbo max",
+            "Netflix",
+            "paramount plus",
+            "Paramount Skydance"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Godlike Titan threatens humanity in Monarch: Legacy of Monsters S2 trailer",
+          "link": "https://arstechnica.com/culture/2026/02/meet-the-new-tentacled-titan-x-in-monarch-legacy-of-monsters-s2-trailer/",
+          "summary": "\"This Titan is like a god, and the sea creatures worship it.\"",
+          "published": "Tue, 03 Feb 2026 22:55:59 +0000",
+          "author": "Jennifer Ouellette",
+          "tags": [
+            "Culture",
+            "Apple TV",
+            "entertainment",
+            "Monarch: Legacy of Monsters",
+            "streaming television"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Newborn dies after mother drinks raw milk during pregnancy",
+          "link": "https://arstechnica.com/health/2026/02/newborns-death-spurs-raw-milk-warning-in-new-mexico/",
+          "summary": "Raw milk is promoted by anti-vaccine Health Secretary Kennedy.",
+          "published": "Tue, 03 Feb 2026 21:15:57 +0000",
+          "author": "Beth Mole",
+          "tags": [
+            "Health",
+            "ACOG",
+            "baby",
+            "death",
+            "fda"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nintendo Switch is the second-bestselling game console ever, behind only the PS2",
+          "link": "https://arstechnica.com/gadgets/2026/02/original-nintendo-switch-passes-the-ds-to-become-nintendos-bestselling-console/",
+          "summary": "Switch 2 has already beaten the Wii U and is on its way to overtaking GameCube.",
+          "published": "Tue, 03 Feb 2026 18:56:20 +0000",
+          "author": "Andrew Cunningham",
+          "tags": [
+            "Gaming",
+            "Tech",
+            "Nintendo",
+            "Nintendo DS",
+            "nintendo switch"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Google court filings suggest ChromeOS has an expiration date",
+          "link": "https://arstechnica.com/google/2026/02/google-court-filings-suggest-googles-chromeos-has-an-expiration-date/",
+          "summary": "ChromeOS may be canned once the current support guarantee has run its course.",
+          "published": "Tue, 03 Feb 2026 18:25:18 +0000",
+          "author": "Ryan Whitwam",
+          "tags": [
+            "Google",
+            "aluminium",
+            "android",
+            "ChromeOS",
+            "google"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Wing Commander III: \"Isn't that the guy from Star Wars?\"",
+          "link": "https://arstechnica.com/gaming/2026/02/wing-commander-iii-the-game-kind-of-sucked-but-the-experience-blew-me-away/",
+          "summary": "C:\\ArsGames looks at a vanguard of the multimedia FMV future that never quite came to pass.",
+          "published": "Tue, 03 Feb 2026 17:29:16 +0000",
+          "author": "Lee Hutchinson",
+          "tags": [
+            "Gaming",
+            "Shopping",
+            "C:\\ArsGames",
+            "Chris Roberts",
+            "christopher roberts"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Upset at reports that he'd given up, Trump now wants $1B from Harvard",
+          "link": "https://arstechnica.com/tech-policy/2026/02/upset-at-reports-that-hed-given-up-trump-now-wants-1b-from-harvard/",
+          "summary": "Hefty \"fine\" comes in wake of NY Times reporting of money-free settlement.",
+          "published": "Tue, 03 Feb 2026 17:08:34 +0000",
+          "author": "John Timmer",
+          "tags": [
+            "Policy",
+            "education",
+            "funding",
+            "Harvard",
+            "lawsuit"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "China bans all retractable car door handles, starting next year",
+          "link": "https://arstechnica.com/cars/2026/02/china-bans-all-retractable-car-door-handles-starting-next-year/",
+          "summary": "The pop-out door handle ban starts in 2027 for new cars, 2029 for existing models.",
+          "published": "Tue, 03 Feb 2026 15:33:06 +0000",
+          "author": "Jonathan M. Gitlin",
+          "tags": [
+            "Cars",
+            "road safety"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Unable to tame hydrogen leaks, NASA delays launch of Artemis II until March",
+          "link": "https://arstechnica.com/space/2026/02/unable-to-tame-hydrogen-leaks-nasa-delays-launch-of-artemis-ii-until-march/",
+          "summary": "NASA spent most of Monday trying to overcome hydrogen leaks on the Artemis II rocket.",
+          "published": "Tue, 03 Feb 2026 08:06:50 +0000",
+          "author": "Stephen Clark",
+          "tags": [
+            "Space",
+            "artemis",
+            "artemis II",
+            "human spaceflight",
+            "Kennedy Space Center"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Looking back at Catacomb 3D, the game that led to Wolfenstein 3D",
+          "link": "https://arstechnica.com/gaming/2026/02/looking-back-at-catacomb-3d-the-game-that-led-to-wolfenstein-3d/",
+          "summary": "Romero, Carmack, and colleagues discuss an oft-forgotten piece of PC gaming history.",
+          "published": "Mon, 02 Feb 2026 22:57:56 +0000",
+          "author": "Kyle Orland",
+          "tags": [
+            "Gaming",
+            "Carmack",
+            "Doom",
+            "History",
+            "id Software"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Streaming service Crunchyroll raises prices weeks after killing its free tier",
+          "link": "https://arstechnica.com/gadgets/2026/02/streaming-service-crunchyroll-raises-prices-weeks-after-killing-its-free-tier/",
+          "summary": "Sony has made streaming anime pricier since buying Crunchyroll.",
+          "published": "Mon, 02 Feb 2026 22:31:46 +0000",
+          "author": "Scharon Harding",
+          "tags": [
+            "Tech",
+            "acquisitions",
+            "anime",
+            "Sony",
+            "streaming"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Russian drones use Starlink, but Ukraine has plan to block their Internet access",
+          "link": "https://arstechnica.com/tech-policy/2026/02/russian-drones-use-starlink-but-ukraine-has-plan-to-block-their-internet-access/",
+          "summary": "Defense chief: \"No Ukrainians have been killed by Russian drones using Starlink.\"",
+          "published": "Mon, 02 Feb 2026 21:32:18 +0000",
+          "author": "Jon Brodkin",
+          "tags": [
+            "Policy",
+            "spacex",
+            "starlink",
+            "Ukraine"
+          ],
+          "ai_score": 0.5
         }
       ]
     },
@@ -1795,8 +2503,8 @@
       "title": "量子位",
       "description": "追踪人工智能新趋势，报道科技行业新突破",
       "link": "https://www.qbitai.com",
-      "updated": "2026-02-04T20:47:20.591205",
-      "items_count": 16,
+      "updated": "2026-02-04T22:59:35.889133",
+      "items_count": 17,
       "items": [
         {
           "title": "天选Windows打工AI来了！实测完Claude Cowork国产版：超顶",
@@ -1996,6 +2704,19 @@
             "百度千帆"
           ],
           "ai_score": 0.95
+        },
+        {
+          "title": "马斯克盛赞4680电池起死回生！攻克瓶颈打脸宁德时代，已上车Model Y",
+          "link": "https://www.qbitai.com/2026/02/376209.html",
+          "summary": "1个月前被曝陷入僵局",
+          "published": "Tue, 03 Feb 2026 09:29:54 +0000",
+          "author": "杰西卡",
+          "tags": [
+            "智能车参考",
+            "特斯拉",
+            "车圈最新认知"
+          ],
+          "ai_score": 0.5
         }
       ]
     },
@@ -2004,8 +2725,8 @@
       "title": "机器之心",
       "description": "机器之心",
       "link": "https://www.jiqizhixin.com/",
-      "updated": "2026-02-04T20:47:20.591213",
-      "items_count": 23,
+      "updated": "2026-02-04T22:59:35.889137",
+      "items_count": 24,
       "items": [
         {
           "title": "大道至简，何恺明团队新作pMF开启像素级「无潜、单步」生成范式",
@@ -2213,6 +2934,15 @@
           "author": "机器之心",
           "tags": [],
           "ai_score": 0.95
+        },
+        {
+          "title": "当运维遇上“春运时刻”，Chaterm破解移动远程运维操作难题",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-04-5",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 11:47:12 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -2255,18 +2985,198 @@
           "author": "字母AI",
           "tags": [],
           "ai_score": 0.9
+        },
+        {
+          "title": "“看剧看出了高考的感觉”，这部开年神剧凭啥让观众自愿补课",
+          "link": "https://www.huxiu.com/article/4832565.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:49:08 GMT",
+          "author": "Vista看天下",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "给自家手机“焊”上MOLLY，卖4499元的潮流款荣耀真有人买吗",
+          "link": "https://www.huxiu.com/article/4832564.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:47:47 GMT",
+          "author": "Vista看天下",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "2026还想在国内画漫画，我该如何自救？",
+          "link": "https://www.huxiu.com/article/4832561.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:41:09 GMT",
+          "author": "动画学术趴",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "哪怕过去33年，这电影依然振聋发聩",
+          "link": "https://www.huxiu.com/article/4832559.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:34:37 GMT",
+          "author": "看电影杂志©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "随便写写",
+          "link": "https://www.huxiu.com/article/4832552.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:22:50 GMT",
+          "author": "局外人的视界©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "2026开年最震撼的游戏，是这个Steam94%好评的“鳌太线模拟器”",
+          "link": "https://www.huxiu.com/article/4832550.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:16:50 GMT",
+          "author": "BB姬©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "150万个AI 聚在一起骂人类，硅基生命觉醒了？",
+          "link": "https://www.huxiu.com/article/4832548.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:11:59 GMT",
+          "author": "酷玩实验室coollabs",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "租车15天，要花6000元，为回家过年，深圳人含泪买单",
+          "link": "https://www.huxiu.com/article/4832468.html",
+          "summary": "“明知被割韭菜，还是得含泪租下，回家没车，真的太不方便。”",
+          "published": "Wed, 04 Feb 2026 14:10:00 GMT",
+          "author": "深圳微时光",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "商业计划书其实真的挺重要的",
+          "link": "https://www.huxiu.com/article/4832546.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 14:08:59 GMT",
+          "author": "匹夫老六说财税©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "昆仑山死亡谷真有其地？动物的迁徙与人类的商道在这里交错，最危险的究竟是什么？",
+          "link": "https://www.huxiu.com/article/4831087.html",
+          "summary": "在这里，死亡与希望并存",
+          "published": "Wed, 04 Feb 2026 14:00:00 GMT",
+          "author": "自说自话的总裁",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "数字金融大分流：美国“制度化”稳定币与中国“国家化”数字人民币的路径竞争",
+          "link": "https://www.huxiu.com/article/4832544.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:59:06 GMT",
+          "author": "互联网法律评论",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "跌出“百万赛道”三年，这个北方大市“杀”回来了",
+          "link": "https://www.huxiu.com/article/4832542.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:57:54 GMT",
+          "author": "城市进化论",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI是划时代的分水岭，三大分层3年时间不等人",
+          "link": "https://www.huxiu.com/article/4832541.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:56:30 GMT",
+          "author": "不懂经©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "印尼减少煤炭出口，A股今日大涨，谁长期受益？| 0204",
+          "link": "https://www.huxiu.com/article/4832519.html",
+          "summary": "海外网络",
+          "published": "Wed, 04 Feb 2026 13:56:22 GMT",
+          "author": "妙投张博",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "又一部国产剧，靠“擦边”火出圈了",
+          "link": "https://www.huxiu.com/article/4832539.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:55:32 GMT",
+          "author": "独立鱼电影",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "微医三闯港交所，AI故事这次能讲通吗？",
+          "link": "https://www.huxiu.com/article/4832533.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:41:09 GMT",
+          "author": "定焦One",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "“老辈子写东西就是没轻没重”",
+          "link": "https://www.huxiu.com/article/4832531.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:38:40 GMT",
+          "author": "真实故事计划",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "不要因为题材错过这部剧",
+          "link": "https://www.huxiu.com/article/4832530.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:38:13 GMT",
+          "author": "孟大明白©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "BV震荡",
+          "link": "https://www.huxiu.com/article/4832526.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:29:02 GMT",
+          "author": "ladymax©",
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "仅老年独居者就数千万，谁能帮他们从容老去？意定监护在国内诞生已14年，距全面落地还差“最后一公里”",
+          "link": "https://www.huxiu.com/article/4832525.html",
+          "summary": "",
+          "published": "Wed, 04 Feb 2026 13:27:30 GMT",
+          "author": "每经头条©",
+          "tags": [],
+          "ai_score": 0.5
         }
       ],
-      "items_count": 4,
-      "updated": "2026-02-04T20:47:20.591215"
+      "items_count": 24,
+      "updated": "2026-02-04T22:59:35.889141"
     },
     "http://localhost:8878/36kr/information/AI": {
       "url": "http://localhost:8878/36kr/information/AI",
       "title": "36氪 - 36氪",
       "description": "36氪 - 36氪 - Powered by RSSHub",
       "link": "https://www.36kr.com/information/AI",
-      "updated": "2026-02-04T20:47:20.591226",
-      "items_count": 46,
+      "updated": "2026-02-04T22:59:35.889148",
+      "items_count": 51,
       "items": [
         {
           "title": "突破有限理性：AI时代的组织设计和创新",
@@ -2681,6 +3591,51 @@
           "author": null,
           "tags": [],
           "ai_score": 0.9
+        },
+        {
+          "title": "逐际动力创始人张巍：不跟风、不内卷，我们在「造新物种」",
+          "link": "https://www.36kr.com/p/3668859815158405",
+          "summary": "过去的2025年，什么赛道最火？ 毫无疑问，具身智能。 根据投中嘉川数据，2025年全年，具身智能领域共有168家企业获得融资，融资规模共计329亿，同比大涨291%。资本的热度烧到了2026年，仅在开年的一个月内，国内具身智能领域又披露了近20起融资，金额在数亿人民币的屡见不鲜。 2025年，“具身智能”作为前瞻布局的未来产业，被写入“十五五”规划建议中，其明确提出推动具身智能等成为新的经济增长点。近日，工信部表示以人形机器人为小切口带动具身智能大产业发展。...",
+          "published": "Wed, 04 Feb 2026 13:47:03 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Nature重磅：图灵预言的AGI早已实现，人类却不敢承认",
+          "link": "https://www.36kr.com/p/3668924203705222",
+          "summary": "Nature重磅评论文章！UCSD研究团队宣称：AGI早已到来，大语言模型如GPT已展现广域人类级智能。 人类是否已经实现了通用人工智能（AGI），却浑然不觉？ 是的，就是这样。 一篇发表在《自然》杂志上的新评论文章如此表示。 这是一项震撼科学界与社会根基的重磅披露， 通用人工智能（AGI）并非遥不可及的梦想，它已然降临，正透过我日常使用的AI工具屏幕，直视着我们 。 即便你不赞同他们的观点，也值得一读：兼听则明，唯有瞪大双眼，既不心怀恐惧，也不盲目追捧，才能帮助我们更好地迎接未来。 这，就是AGI 有人说，打造类人智能如同「爬树登月」。 但现在看来，树已经够高，月亮其实也没那么远。...",
+          "published": "Wed, 04 Feb 2026 13:15:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "市值蒸发2850亿美元背后，软件的“溢价”不存在了",
+          "link": "https://www.36kr.com/p/3668888787985029",
+          "summary": "从上周开始，软件股突然就崩了。 导火索来自Anthropic。这家公司发布Claude Cowork AI代理推出的法律工具。这个新工具能执行多项文书工作，包括追踪合规事项和审阅法律文档。这些功能正是许多法律软件产品的核心所在。 受到这个消息的冲击，当日软件、金融服务和资产管理行业的股票市值总共蒸发了约2850 亿美元，LegalZoom.com暴跌近20%，汤森路透也下跌了15%。 这并非孤立事件。 同样是在上周，Google DeepMind 发布了 Project Genie。 受Project...",
+          "published": "Wed, 04 Feb 2026 11:19:03 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "1865年《红旗法案》的幽灵，仍在今天游荡",
+          "link": "https://www.36kr.com/p/3668740944503689",
+          "summary": "“人在回路中”（Humanin the l oop），是当今人工智能与自动化领域最有代表性、也最不容置疑的准则。 简单来说，它试图构建这样一种秩序： 在自动化系统的运作过程中，人类通过干预、评估或反馈，与机器形成一个闭环，共同完成任务。 这被视为一种理想的人机共处模式。与其让机器完全自主运行，不如将人类的直觉、判断力与机器的计算力结合起来。这样在机器可能出错或者遇到无法处理的复杂情况时，人类可以及时介入，确保场面始终处在可控范围之内。 随着生成式 AI 的崛起，“人在回路中”的理念重新被推向前所未有的高度。面对 AI...",
+          "published": "Wed, 04 Feb 2026 10:05:53 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "20年IT老兵转行“收废品”，200+场面试无果，他直言：“程序员工作基本已经没了”",
+          "link": "https://www.36kr.com/p/3668643614417795",
+          "summary": "在硅谷，程序员曾经是最不需要为生计发愁的一群人——但对 Roman 来说，这个时代已经结束了。 Roman 的油管 ID 叫“旧金山的程序员”。过去十多年，他一直生活、工作在旧金山，是一名标准意义上的资深程序员：写过多种编程语言、在硅谷大厂待过、GitHub 上有多个千星仓库、有技术积累，也有体面的履历。 他原本以为，哪怕行业放缓，至少“体面地活着”不该是个问题。但现实给了他完全相反的答案。 半年 200 多场面试，工作却“消失了” 对 Roman 来说，过去大半年的求职经历，堪称一场无休止的噩梦。他直言：...",
+          "published": "Wed, 04 Feb 2026 08:31:35 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
         }
       ]
     },
@@ -2689,15 +3644,15 @@
       "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591228"
+      "updated": "2026-02-04T22:59:35.889150"
     },
     "https://feed.infoq.com/": {
       "url": "https://feed.infoq.com/",
       "title": "InfoQ",
       "description": "InfoQ feed",
       "link": "https://www.infoq.com",
-      "updated": "2026-02-04T20:47:20.591234",
-      "items_count": 10,
+      "updated": "2026-02-04T22:59:35.889155",
+      "items_count": 19,
       "items": [
         {
           "title": "OpenAI启动Codex命令行界面内部机制系列文章",
@@ -2848,22 +3803,338 @@
             "news"
           ],
           "ai_score": 0.95
+        },
+        {
+          "title": "Presentation: Beyond the Warehouse: Why BigQuery Alone Won’t Solve Your Data Problems",
+          "link": "https://www.infoq.com/presentations/bigquery-data-challenges/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Sarah Usher discusses the architectural \"breaking point\" where warehouses like BigQuery struggle with latency and cost. She explains the necessity of a conceptual data lifecycle (Raw, Curated, Use Case) to regain control over lineage and innovation. She shares practical strategies to design a...",
+          "published": "Wed, 04 Feb 2026 14:48:00 GMT",
+          "author": "Sarah Usher",
+          "tags": [
+            "Transcripts",
+            "Google BigQuery",
+            "QCon London 2025",
+            "Scalability",
+            "AI, ML & Data Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Java Explores Carrier Classes to Extend Data-Oriented Programming Beyond Records",
+          "link": "https://www.infoq.com/news/2026/02/java-beyond-records/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "The OpenJDK Amber project has published a new design note proposing “carrier classes” and “carrier interfaces” to extend record-style data modeling to more Java types. The proposal preserves concise state descriptions, derived methods, and pattern matching, while relaxing structural constraints...",
+          "published": "Wed, 04 Feb 2026 14:30:00 GMT",
+          "author": "A N M Bazlur Rahman",
+          "tags": [
+            "Project Amber",
+            "Java",
+            "JEP",
+            "Pattern matching",
+            "Architecture & Design"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Astro Announces Version 6 Beta with Redesigned Development Server and First-Class Cloudflare Workers",
+          "link": "https://www.infoq.com/news/2026/02/astro-v6-beta-cloudflare/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Astro 6 Beta transforms web development with a revamped server leveraging Vite's Environment API, first-class Cloudflare Workers support, and stable live content collections. Emphasizing performance and security, it enables real-time data updates and strong Content Security Policy support. Designed...",
+          "published": "Wed, 04 Feb 2026 08:00:00 GMT",
+          "author": "Daniel Curtis",
+          "tags": [
+            "TypeScript",
+            "Vue.js",
+            "Next.js",
+            "Web Development",
+            "React"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "GitHub Reworks Layered Defenses After Legacy Protections Block Legitimate Traffic",
+          "link": "https://www.infoq.com/news/2026/02/github-layered-def/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "GitHub engineers recently traced user reports of unexpected “Too Many Requests” errors to abuse-mitigation rules that had accidentally remained active long after the incidents that prompted them. By Matt Foster",
+          "published": "Wed, 04 Feb 2026 07:58:00 GMT",
+          "author": "Matt Foster",
+          "tags": [
+            "Infrastructure",
+            "Architecture",
+            "Distributed Systems",
+            "Platform Engineering",
+            "Site Reliability Engineering"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Etleap Launches Iceberg Pipeline Platform to Simplify Enterprise Adoption of Apache Iceberg",
+          "link": "https://www.infoq.com/news/2026/02/etleap-iceberg-pipeline-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Etleap has recently launched the Iceberg pipeline platform, a new managed data pipeline layer designed to let enterprises adopt Apache Iceberg without building or maintaining a complex custom stack. By Craig Risi",
+          "published": "Tue, 03 Feb 2026 12:00:00 GMT",
+          "author": "Craig Risi",
+          "tags": [
+            "Apache Iceberg",
+            "Big Data",
+            "Enterprise",
+            "DevOps",
+            "news"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Dev Proxy v2.1 Introduces Configuration Hot Reload and Stdio Traffic Proxying",
+          "link": "https://www.infoq.com/news/2026/02/dev-proxy-v2-1-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "The Dev Proxy team has released Dev Proxy version 2.1, introducing new features aimed at improving developer productivity and simplifying local testing workflows. This release focuses on faster iteration, better support for modern development tools, and several refinements across the proxy and its...",
+          "published": "Tue, 03 Feb 2026 08:45:00 GMT",
+          "author": "Almir Vuk",
+          "tags": [
+            ".NET 10",
+            ".NET Core",
+            ".NET 8",
+            ".NET",
+            ".NET 9"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Presentation: Scaling to 100+ as a Director: Lessons From Growing Engineering Organizations",
+          "link": "https://www.infoq.com/presentations/patterns-organizational-change/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Thiago Ghisi discusses the strategic evolution required to lead 100+ engineers without breaking the organization. He explains his \"Three Levels of Impact\" framework and shares practical lessons on speeding up decision-making, cultivating leadership teams, and building organizational resilience....",
+          "published": "Mon, 02 Feb 2026 16:23:00 GMT",
+          "author": "Thiago Ghisi",
+          "tags": [
+            "Transcripts",
+            "InfoQ Dev Summit Boston 2025",
+            "Change",
+            "Patterns",
+            "Culture & Methods"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Airbnb Expands Global Checkout with “Pay as a Local,” Scaling to 220 Markets in 14 Months",
+          "link": "https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Airbnb expands its global checkout with the “Pay as a Local” initiative, supporting over 20 locally preferred payment methods across 220 markets. The company replatformed its payments system with domain-oriented services, reusable flow archetypes, and a centralized configuration, enhancing...",
+          "published": "Mon, 02 Feb 2026 15:00:00 GMT",
+          "author": "Leela Kumili",
+          "tags": [
+            "Reliability",
+            "Extensibility",
+            "Architecture",
+            "Platform Engineering",
+            "Observability"
+          ],
+          "ai_score": 0.5
+        },
+        {
+          "title": "MyTerms: A New IEEE Standard Enabling Online Privacy and Aiming to Replace Cookies",
+          "link": "https://www.infoq.com/news/2026/02/myterms-privacy-cookies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Nicknamed MyTerms, the new 7012-2025 IEEE standard defines mechanisms for exchanging personal information between individuals and online service providers, and specifies how individuals can enforce their privacy requirements during transactions. By Sergio De Simone",
+          "published": "Mon, 02 Feb 2026 13:00:00 GMT",
+          "author": "Sergio De Simone",
+          "tags": [
+            "Web",
+            "Privacy",
+            "Mobile Privacy",
+            "Data Privacy",
+            "Web Browser"
+          ],
+          "ai_score": 0.5
         }
       ]
     },
     "https://www.ithome.com/rss/": {
       "url": "https://www.ithome.com/rss/",
       "error": "Error processing feed: ValueError: Failed to parse feed: <unknown>:2:0: not well-formed (invalid token)",
-      "items": [],
-      "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591236"
+      "items": [
+        {
+          "title": "周四年货节狂促继续：iQOO 15 Ultra 首发 4999 元 24 期免息赠碎屏保，小米 17 512G 国补后 3699 元探底",
+          "link": "https://www.ithome.com/0/919/298.htm",
+          "summary": "全网年货节继续，下单前勿忘领无门槛红包哦： 京东无门槛红包 至高 26999 元，每天抽 3 次： 点此抽取 。 京东领券 / 保价 京东一键“价格保护”速度保存，年货节期间没事就点点： 点此保价 。 京东官方 200-20 元补贴券，PLUS 还可领专属补贴券： 点此领券 。 B站会员 B站大会员 + 京东 PLUS 联合年卡持平去年双十一大促价： 京东 哔哩哔哩大会员 + 京东 PLUS 年卡 京东 PLUS 含 12 生活积分 限量 148 元 直达链接 iQOO iQOO 15 Ultra 手机今晚正式发布，售价 5499 元起，国补到手价 4999 元起。 搭载骁龙 8...",
+          "published": "Wed, 04 Feb 2026 14:52:07 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "《热血西游记：天竺奇谭》9 分钟实机演示公布，年内登陆 PC、PS5、任天堂 Switch 平台",
+          "link": "https://www.ithome.com/0/919/297.htm",
+          "summary": "IT之家 2 月 4 日消息，继《热血三国志》后，亚克系统（Arc System Works）在台北电玩展上宣布将推出另一款根据中国古典神话小说《西游记》改编的新作《热血西游记：天竺奇谭》，同时公布了一段 9 分钟的实机演示视频。 IT之家查询获悉，本作由 Arc System Works 旗下 UnitePlus 团队开发，属于《国夫君》系列 40 周年纪念作品，预定将于 2026 年发售，登陆 PC（Steam）、PS5 和任天堂 Switch 平台，支持中文。...",
+          "published": "Wed, 04 Feb 2026 14:48:51 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "追觅汽车三款 SUV 车型外观亮相：星际 T08、T08L 和 D09，硬派、奢华都有",
+          "link": "https://www.ithome.com/0/919/296.htm",
+          "summary": "IT之家 2 月 4 日消息，追觅今日举办《敢梦敢为 · 追觅之夜》演唱会。据鞭牛士报道，演唱会暖场视频中，追觅首次透露三款追觅汽车 SUV 车型名称及外观，分别为 星际 T08、星际 T08L 和星际 D09 。 星际 T08 定位全域硬派 SUV 星际 T08L 定位全地形硬派 SUV 星际 D09 定位六座奢华旗舰 SUV 此外，三款车型的品牌名定为 STAR MOTOTR 星际穿越 。 追觅演唱会邀请了撒贝宁、龚韵熹主持。表演嘉宾包括李克勤、韩红、张信哲、毛不易、萧敬腾、陈慧琳等。 据IT之家此前报道，追觅早在 2025 年 9 月就公布了 其首款 SUV 车型的官图...",
+          "published": "Wed, 04 Feb 2026 14:40:05 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "德州仪器宣布约 75 亿美元收购芯科科技，后者股价暴涨 50%",
+          "link": "https://www.ithome.com/0/919/295.htm",
+          "summary": "IT之家 2 月 4 日消息，德州仪器（Texas Instruments）今日宣布与芯科科技（Silicon Labs）签署最终协议，以每股 231 美元、全现金交易方式收购芯科科技。 本次交易对价约为 75 亿美元（IT之家注：现汇率约合 520.92 亿元人民币）。受此消息影响，芯科科技股价暴涨 50% 以上。 两家公司表示，此次收购将通过整合 Silicon Labs 在混合信号解决方案方面的产品组合与专业能力，以及德州仪器在模拟与嵌入式处理领域的领先产品组合、内部自有技术与制造能力，打造一家在 嵌入式无线连接解决方案...",
+          "published": "Wed, 04 Feb 2026 14:38:41 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "尼康 Z9Ⅱ 相机再曝：46MP 堆栈式传感器、最高 60fps RAW 连拍，预计 2026 至 2027 年发布",
+          "link": "https://www.ithome.com/0/919/294.htm",
+          "summary": "IT之家 2 月 4 日消息，Nikon Rumors 今日发文，称尼康正在准备下一代旗舰无反相机 Z9Ⅱ，发布时间可能在 2026~2027 年。 根据这份爆料，尼康 Z9Ⅱ 预计将采用一颗 46MP 堆栈式 CMOS 图像传感器。与部分竞品采用的全局快门路线不同，其仍为非全局快门设计，但会使用一款新的堆栈式传感器，其读取速度据称可达现款 Z9 的 3.5 倍之快。另外，尼康 Z9Ⅱ 的闪光同步速度（X-sync）最高可达 1/720 秒，使其在特性上更接近全局快门机型。 处理器方面，尼康 Z9Ⅱ 预计将搭载 新一代 EXPEED 处理器...",
+          "published": "Wed, 04 Feb 2026 14:26:41 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "全球开源参数规模最大的科学多模态模型：上海 AI 实验室发布书生 Intern-S1-Pro",
+          "link": "https://www.ithome.com/0/919/293.htm",
+          "summary": "IT之家 2 月 4 日消息，上海 AI 实验室今日（2 月 4 日）宣布开源基于“通专融合”技术架构 SAGE 打造的 万亿参数科学多模态大模型 Intern-S1 - Pro 。 上海 AI 实验室表示，作为当前全球开源社区中参数规模最大的科学多模态模型， Intern-S1-Pro 的核心科学能力实现了跃升 ，高难度综合学科评测稳居 AI4S 领域国际领先水平，复杂数理逻辑推理能力达奥赛金牌水平，面向真实科研流程的智能体能力位居开源模型第一梯队。 该模型基于混合专家架构（MoE），共拥有 512 个专家， 总参数达 1T ，每次调用仅激活 8 个专家、22B...",
+          "published": "Wed, 04 Feb 2026 14:19:07 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "抢票辟谣盘点：12306 无法在线换座、第三方软件不能加速、向微信公众号“许愿”也没用",
+          "link": "https://www.ithome.com/0/919/291.htm",
+          "summary": "IT之家 2 月 4 日消息，近日，网上出现了大量关于 12306 平台抢票相关的传闻和谣言。央视新闻今日特意为此做了一起辟谣节目。 针对“用前任身份证反复订票再取消从而致其无法购票”，12306 昨日已作出回应： 网传的说法并不符合实际规则，该操作触发的购票限制仅针对操作账号本人 。 换句话说，这种做法无法限制他人购票，反而会导致操作者自身当日购票受限，购票权限会被锁定，次日零点自动恢复。 值得一提的是，该规则并非新增，而是已实行多年的常规规定，目的是规范购票秩序，打击恶意刷单、囤票等扰乱票务秩序的行为。...",
+          "published": "Wed, 04 Feb 2026 14:10:54 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "任天堂伙伴直面会明晚举行，介绍 Switch 2/Switch 第三方游戏",
+          "link": "https://www.ithome.com/0/919/288.htm",
+          "summary": "IT之家 2 月 4 日消息，任天堂今日宣布，将于太平洋时间 2 月 5 日早上 6 点（IT之家注：北京时间晚上 10 点）举行伙伴直面会，预计时长约 30 分钟， 介绍即将推出的 Switch 2 和 Switch 第三方游戏 。 根据任天堂截至 2025 年底的财报， Switch 2 游戏机截至目前销量已达 1737 万台 。此外，Switch 2 游戏机在 2025 年底达成了 1500 万台的销量，成为最快实现这一数字的游戏机。 Switch 游戏机的总销量已达 1.5537 亿台，是任天堂历代硬件中销量最高的游戏机。",
+          "published": "Wed, 04 Feb 2026 14:08:06 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "vivo 联合中国联通推出“eSIM 手表尝鲜季”活动：WATCH 5/GT 2 开通可减免 6 个月功能费",
+          "link": "https://www.ithome.com/0/919/287.htm",
+          "summary": "IT之家 2 月 4 日消息，据 vivo 官方微博，vivo 联合中国联通推出“eSIM 手表尝鲜季”活动，联通用户开通 vivo WATCH 5 或 vivo WATCH GT 2 的 eSIM 功能， 可减免 6 个月功能费 。 IT之家获悉，目前中国联通支持开通一号双终端和独立终端两种 eSIM 服务。其中， 一号双终端模式功能费每月 10 元 ，可手表作为手机主号码的附属设备使用，手机与手表共用同一号码，并共享通话与流量套餐，可分别进行通话和上网。 而独立终端模式则需要单独开通一个号码，相当于为手表配备一张独立 SIM 卡，同样支持通话、上网等功能。即便不携带手机，用户也可通过...",
+          "published": "Wed, 04 Feb 2026 14:00:29 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "瑞莎发布 199 元 AI 开发板 Cubie A7S：搭载全志 A733 芯片，适配 OpenClaw 等本地 AI 场景",
+          "link": "https://www.ithome.com/0/919/286.htm",
+          "summary": "IT之家 2 月 4 日消息，瑞莎今日正式发布全新的 Cubie A7S 单板计算机，4GB 内存版本定价 199 元，6GB 版本 245 元，8GB 版本 285 元。 京东 瑞莎 Radxa 开发板 Cubie A7S 4GB 全志 A733 八核 CPU 3 TOPS 算力 WiFi6 & BT5.4 口袋级 AI 平台 199 元 直达链接 该产品搭载全志 A733 处理器、RISC-V 玄铁 E902 实时协处理器，主打高能效与专用智能终端定位。产品设计面向 OpenClaw 等本地化人工智能应用场景，适用于家庭自动化、教育实验、工业边缘计算及个人数字助理等领域。 全志...",
+          "published": "Wed, 04 Feb 2026 13:45:27 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "中国光伏行业协会回应“太空光伏”概念涨停：相关技术仍处于探索和验证的初期阶段",
+          "link": "https://www.ithome.com/0/919/285.htm",
+          "summary": "IT之家 2 月 4 日消息，近两日，受马斯克团队相关调研消息带动，太空光伏概念再次引爆市场。 据 21 世纪经济报道，中国光伏行业协会执行秘书长刘译阳 2 月 4 日对媒体表示，太空光伏概念确实“火”出了圈，在资本市场和科技圈也是炸了锅。A 股光伏板块，概念股连拉涨停，多篇券商研报认为异质结 (HJT) 和钙钛矿技术适合应用于太空领域。这些研报互相应用、相互回响，诱发了资本市场的空前震荡；国内企业也纷纷表态布局，“万亿蓝海”“下一个光伏革命”等等话题的抛出。 但他强调，无论何种技术路线如何演进，真正走向落地，离不开一个前提 —— 成熟、可复制的高效制造能力与长期可靠性验证体系。...",
+          "published": "Wed, 04 Feb 2026 13:44:32 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "华为 Mate 80 系列手机获鸿蒙 HarmonyOS 6.0.0.130 SP17 升级，图库 AI 修图支持消除屏纹功能",
+          "link": "https://www.ithome.com/0/919/284.htm",
+          "summary": "IT之家 2 月 4 日消息，华为 Mate 80 系列手机今日推送了鸿蒙 HarmonyOS 6.0.0.130 SP17 版本升级，系统包大小约 849.74MB。据介绍，本次更新图库 AI 修图将支持消除屏纹功能，可智能消除拍摄屏幕时产生的摩尔纹。 IT之家附华为 Mate 80 系列手机本次更新内容如下： 图库 AI 修图新增消除屏纹功能， 可智能消除拍摄屏幕时产生的摩尔纹 （图库编辑 > AI 修图 > 消除 > 消除屏纹） 蓝牙 优化部分蓝牙场景的使用体验 星闪 优化与支持星闪音频技术的耳机连接时的稳定性 系统 优化导航定位场景下的使用体验 移动网络 优化部分场景上网体验...",
+          "published": "Wed, 04 Feb 2026 13:43:38 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "AI 造假与摆拍谣言扰乱网络，网信公安等部门持续发力协同治理",
+          "link": "https://www.ithome.com/0/919/282.htm",
+          "summary": "IT之家 2 月 4 日消息，今年 1 月，针对网络空间出现的编造、摆拍、炮制谣言等乱象，国家网信办、公安部等相关部门加强联动，开展专项整治行动。 中国互联网联合辟谣平台今日发文对当月网络谣言进行了总结，主要涉及与社会民生密切相关的政策服务、公共信息、健康消费等领域。 这些谣言或曲解官方政策、捏造不实信息，或通过摆拍虚构剧情、利用 AI 技术制作虚假场景，对公众认知造成误导，影响网络生态秩序。IT之家整理如下： 谣言 1：社保卡没有有效期、社保卡未到期不能换新卡...",
+          "published": "Wed, 04 Feb 2026 13:35:02 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "用 AI 眼镜“看一下”就能集：支付宝 2026 年集福活动首次支持智能穿戴设备扫福",
+          "link": "https://www.ithome.com/0/919/281.htm",
+          "summary": "IT之家 2 月 4 日消息，支付宝宣布，2026 年集福活动首次上线智能穿戴设备扫福功能。 用户佩戴夸克、乐奇 Rokid 等品牌的 AI 眼镜，无需操作手机，通过“看一下”配合“说一句”的简单方式，即可完成扫福、集卡、分享等全流程 ，实现“福在眼前”的沉浸式体验。 具体来说，相应技术由蚂蚁集团 GPASS 智能终端可信连接技术框架与 Agent 智能体架构的协同支撑， 当用户佩戴 AI 眼镜看向身边的“福”字并说出“扫福”指令后，眼镜会自动唤起摄像头，实时识别视野中的“福”字或各类隐藏元素 ，识别成功后福卡即时到账。该功能已接入支付宝好友生态，通过语音指令即可快速分享。...",
+          "published": "Wed, 04 Feb 2026 13:34:15 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "欧委会对中国风电企业启动《外国补贴条例》深入调查，商务部回应",
+          "link": "https://www.ithome.com/0/919/280.htm",
+          "summary": "IT之家 2 月 4 日消息，据央视新闻今日报道，商务部新闻发言人就 欧委会对中国风电企业启动《外国补贴条例》深入调查 答记者问。IT之家附主要内容如下： 有记者问：近日，欧委会宣布，根据《外国补贴条例》（FSR），对中国风电企业启动深入调查。请问中方对此有何评论？ 答：中方注意到有关情况。近期，欧方频繁使用《外国补贴条例》调查工具对中国企业发起调查，还将对风电、安检设备企业的调查升级为深入调查，具有明显针对性和歧视性，中方对此高度关切，强烈不满。 欧方相关调查泛化“外国补贴”，存在立案证据不足、程序不透明等诸多问题，是典型的以“公平竞争”之名行“保护主义”之实。2025 年 1 月，...",
+          "published": "Wed, 04 Feb 2026 13:32:04 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "零一万物 CEO 李开复：AI 领域里手机是绝对错误的设备",
+          "link": "https://www.ithome.com/0/919/278.htm",
+          "summary": "IT之家 2 月 4 日消息，据央视频今日报道，零一万物 CEO、创新工场董事长李开复现身央视频《中关村对话 ·AI 迎春夜》节目。 李开复认为，“2026 年一定会爆发的是“AI 的智能硬件”， 我还相信 AI 领域手机是绝对错误的设备 。” 他表示，过 5 年以后我们主要使用 AI 一定不是经过手机。至于具体是什么设备，李开复表示：“ 也许是眼镜，也许是手环，也许是别针 。” 他强调，“我会定义下一代的 AI first 的设备会有 5 个特点。第一是语音驱动，第二是随时开启，第三是随时在听和捕捉数据，第四是有无限的记忆，第五是会越来越隐形，因此眼镜是非常好的第一步。” 在 AI...",
+          "published": "Wed, 04 Feb 2026 13:09:06 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Epic 游戏商城 2025 年共送出 100 款游戏，总价值约 2316 美元",
+          "link": "https://www.ithome.com/0/919/277.htm",
+          "summary": "IT之家 2 月 4 日消息，Epic 游戏商城今天正式发布了 2025 年度回顾报告，披露了平台过去一年的运营表现。 总体来看，2025 年（去年）对 Epic 来说是相当亮眼，PC 玩家在平台上的总消费金额达到 11.6 亿美元（IT之家注：现汇率约合 80.57 亿元人民币），同比增长 6%。其中表现最抢眼的是第三方游戏销售额的爆发式增长，相关消费金额同比大涨 57%，达到 4 亿美元（现汇率约合 27.78 亿元人民币）的历史新高。 EGS 标志性的“每周免费游戏”策略依然是维持用户活跃度的关键手段之一。数据显示，2025 年平台共送出 100 款免费游戏，被领取的总次数高达...",
+          "published": "Wed, 04 Feb 2026 13:07:44 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "Epic 高管承认“启动器很烂”，预计 5~6 月架构大改后可解决卡顿顽疾",
+          "link": "https://www.ithome.com/0/919/276.htm",
+          "summary": "IT之家 2 月 4 日消息，Epic Games Store 副总裁兼总经理 Steven Allison 在接受 Eurogamer 采访时，被问及玩家在 Epic Games 商店中浏览、使用的整体体验。 对于玩家一直以来吐槽的启动器卡顿问题，Allison 直言“启动器很烂（the launcher sucks）”。他解释称，启动器主要问题在于速度慢：用户每点击一次界面，启动器都会向 Epic 的后端服务发起调用并刷新内容。根据网络连接情况，玩家可能需要等待几秒钟才能继续操作。...",
+          "published": "Wed, 04 Feb 2026 13:05:16 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "国铁 12306：铁路部门已发售 2026 春运期间火车票超 1 亿张，昨天发送旅客 1094.6 万人次",
+          "link": "https://www.ithome.com/0/919/275.htm",
+          "summary": "IT之家 2 月 4 日消息，据国铁 12306，2 月 4 日全国铁路预计发送旅客 1120 万人次，计划加开旅客列车 957 列，铁路部门已累计发售春运期间火车票超 1 亿张。 2 月 3 日（昨天）全国铁路发送旅客 1094.6 万人次 。 截至 2 月 4 日（今天）11 时，铁路 12306 已累计发售春运火车票 10038...",
+          "published": "Wed, 04 Feb 2026 13:00:51 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        },
+        {
+          "title": "面壁智能开源新一代全模态旗舰 AI 模型 MiniCPM-o 4.5，仅靠 9B 参数实现 SOTA",
+          "link": "https://www.ithome.com/0/919/274.htm",
+          "summary": "IT之家 2 月 4 日消息，面壁智能今日（2 月 4 日）开源了新一代全模态旗舰模型 MiniCPM-o 4.5 。 作为原生全双工的全模态大模型，MiniCPM-o 4.5 通过“边看、边听、主动说”的全模态能力，让 AI 告别死板的“对讲机”回合制交互，号称成为行业首个“ 即时自由对话 ”的大模型，感知不中断、对话不死板、提醒无需问。 MiniCPM-o 4.5 已在 GitHub、Hugging Face 等平台开源。此外，基于统一系统软件栈 FlagOS 的跨平台能力，MiniCPM-o 4.5 在天数智芯、华为昇腾、平头哥、海光、沐曦等 6 款芯片上均获得端到端推理性能提升。...",
+          "published": "Wed, 04 Feb 2026 12:56:36 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.5
+        }
+      ],
+      "items_count": 20,
+      "updated": "2026-02-04T22:59:35.889159"
     },
     "https://www.v2ex.com/feed/tab/tech.xml": {
       "url": "https://www.v2ex.com/feed/tab/tech.xml",
       "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
       "items": [],
       "items_count": 0,
-      "updated": "2026-02-04T20:47:20.591238"
+      "updated": "2026-02-04T22:59:35.889160"
     }
   },
   "errors": [
@@ -2880,5 +4151,5 @@
     "https://www.ithome.com/rss/: Error processing feed: ValueError: Failed to parse feed: <unknown>:2:0: not well-formed (invalid token)",
     "https://www.v2ex.com/feed/tab/tech.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)"
   ],
-  "updated_at": "2026-02-04T20:47:20.591248"
+  "updated_at": "2026-02-04T22:59:35.889165"
 }

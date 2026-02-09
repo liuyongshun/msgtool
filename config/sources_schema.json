@@ -41,6 +41,14 @@
                 "cache_ttl": {
                   "type": "integer",
                   "minimum": 0
+                },
+                "ai_filter_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用AI筛选，默认true"
+                },
+                "translation_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用文章翻译，默认true"
                 }
               }
             }
@@ -79,6 +87,10 @@
                 "ai_filter_enabled": {
                   "type": "boolean",
                   "description": "是否启用AI筛选，默认true"
+                },
+                "translation_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用文章翻译，默认true"
                 }
               }
             }
@@ -110,6 +122,47 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "translation_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用文章翻译，默认true"
+                }
+              }
+            }
+          }
+        },
+        "github": {
+          "type": "object",
+          "description": "GitHub趋势数据源",
+          "patternProperties": {
+            "^[a-z_]+$": {
+              "type": "object",
+              "required": ["enabled", "name", "type"],
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["api"]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "cache_ttl": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "ai_filter_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用AI筛选，默认true"
+                },
+                "translation_enabled": {
+                  "type": "boolean",
+                  "description": "是否启用文章翻译，默认true"
                 }
               }
             }

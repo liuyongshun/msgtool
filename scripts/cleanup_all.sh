@@ -1,30 +1,22 @@
 #!/bin/bash
 #
-# 统一清理脚本
-# 功能：同时清理日志和缓存
+# 日志清理脚本
+# 功能：清理过期日志文件
 # 使用：./scripts/cleanup_all.sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "================================================"
-echo "MsgSkill 数据清理工具"
+echo "MsgSkill 日志清理工具"
 echo "================================================"
 echo ""
 
 # 清理日志
-echo "【1/2】清理日志文件..."
+echo "清理日志文件..."
 echo ""
 bash "$SCRIPT_DIR/cleanup_logs.sh"
 
 echo ""
-echo ""
-
-# 清理缓存
-echo "【2/2】清理缓存文件..."
-echo ""
-bash "$SCRIPT_DIR/cleanup_cache.sh"
-
-echo ""
 echo "================================================"
-echo "✅ 全部清理完成"
+echo "✅ 日志清理完成"
 echo "================================================"

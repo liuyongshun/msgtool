@@ -27,6 +27,7 @@ from ..utils.translator import translate_article_item
 from ..utils.parser import clean_text
 from ..config import get_config
 from ..output import get_output_manager
+from ..utils.github_db_new import get_github_db
 
 
 async def fetch_github_trending(
@@ -70,6 +71,7 @@ async def fetch_github_trending(
     supported_languages = github_config.get("languages", ["python", "javascript", "typescript", "rust"])
     trending_types = github_config.get("trending_types", ["pushed", "created", "stars"])
     ai_filter_enabled = github_config.get("ai_filter_enabled", True)
+    translation_enabled = github_config.get("translation_enabled", True)
     
     # 获取 star 限制配置
     star_limits = github_config.get("star_limits", {
@@ -223,44 +225,51 @@ async def fetch_github_trending(
             
             logger.info(f"抓取到 {len(unique_repos)} 个唯一仓库")
             
-            # 【优化】第二步：利用白名单缓存，减少AI筛选
+            # 获取GitHub数据库实例
+            github_db = get_github_db()
+            
+            # 【优化】第二步：利用持久化数据库，减少AI筛选
             if ai_filter_enabled:
-                # 分离：白名单项目 vs 新项目
-                whitelisted_repos = []
-                new_repos = []
+                # 分离：数据库中的AI项目 vs 新项目
+                whitelisted_projects = []
+                need_ai_screening = []
                 
+                # 检测哪些项目已在白名单中（30天有效）
                 for repo in unique_repos:
-                    repo_id = str(repo.get("id"))
-                    whitelist_key = f"github_whitelist_{repo_id}"
-                    cached_classification = cache.get(whitelist_key)
-                    
-                    if cached_classification:
-                        # 白名单中的项目，直接保留并恢复AI评分
-                        repo["_ai_score"] = cached_classification.get("ai_score", 0.8)
-                        whitelisted_repos.append(repo)
+                    if github_db.is_whitelisted(repo):
+                        # 白名单中的项目，直接使用
+                        project_id = github_db._generate_project_id(repo)
+                        existing_project = github_db.get_project(project_id)
+                        repo["_ai_score"] = existing_project.get("ai_score", 0.8)
+                        whitelisted_projects.append(repo)
                     else:
-                        # 新项目，需要AI筛选
-                        new_repos.append(repo)
+                        # 新项目或白名单过期，需要AI筛选
+                        need_ai_screening.append(repo)
+                    
+                    # 将所有项目添加到数据库中（更新抓取时间）
+                    github_db.add_project(repo)
                 
                 logger.info(
-                    f"白名单命中: {len(whitelisted_repos)} 个 | "
-                    f"需要AI筛选: {len(new_repos)} 个"
+                    f"白名单命中: {len(whitelisted_projects)} 个 | "
+                    f"需要AI筛选: {len(need_ai_screening)} 个"
                 )
                 
-                filtered_repos = list(whitelisted_repos)  # 先加入白名单项目
+                filtered_repos = list(whitelisted_projects)  # 先加入白名单中的项目
             else:
                 # 不使用AI筛选时，所有项目都视为新项目
-                new_repos = unique_repos
+                for repo in unique_repos:
+                    github_db.add_project(repo)
+                need_ai_screening = unique_repos
                 filtered_repos = []
             
             # 第三步：对新项目进行AI筛选
-            if ai_filter_enabled and new_repos:
-                logger.info(f"开始AI筛选 {len(new_repos)} 个新项目...")
+            if ai_filter_enabled and need_ai_screening:
+                logger.info(f"开始AI筛选 {len(need_ai_screening)} 个新项目...")
                 # 准备标题列表：[(临时id, title), ...]
                 title_batch = []
                 repo_map = {}
                 
-                for repo in new_repos:
+                for repo in need_ai_screening:
                     repo_name = repo.get("name", "")
                     description = repo.get("description", "") or ""
                     # 构建标题：项目名 + 描述前50字符
@@ -274,7 +283,7 @@ async def fetch_github_trending(
                 classification_results = await classify_titles_batch(title_batch, batch_size=25)
                 result_map = {r["id"]: r for r in classification_results}
                 
-                # 根据AI筛选结果过滤，并更新白名单
+                # 根据AI筛选结果过滤，并更新数据库
                 for temp_id, _ in title_batch:
                     if temp_id not in result_map:
                         continue
@@ -288,19 +297,13 @@ async def fetch_github_trending(
                     repo["_ai_score"] = ai_score
                     filtered_repos.append(repo)
                     
-                    # 【关键优化】将通过筛选的项目加入白名单（缓存30天）
-                    whitelist_key = f"github_whitelist_{temp_id}"
-                    cache.set(whitelist_key, {
-                        "repo_id": temp_id,
-                        "full_name": repo.get("full_name", ""),
-                        "ai_score": ai_score,
-                        "reason": classification.get("reason", ""),
-                        "cached_at": datetime.now().isoformat()
-                    }, ttl=30*24*3600)  # 30天
+                    # 【关键优化】将通过筛选的项目添加到AI数据库（持久化）
+                    repo["_ai_reason"] = classification.get("reason", "")
+                    github_db.mark_as_ai_screened(repo, ai_score=classification["score"])
                 
                 logger.info(
                     f"AI筛选完成: {len(filtered_repos)} 个仓库 "
-                    f"(白名单 {len(whitelisted_repos)} + 新通过 {len(filtered_repos) - len(whitelisted_repos)})"
+                    f"(白名单命中 {len(whitelisted_projects)} + 新通过 {len(filtered_repos) - len(whitelisted_projects)})"
                 )
             else:
                 # 不使用AI筛选，使用关键词匹配（向后兼容）
@@ -352,9 +355,13 @@ async def fetch_github_trending(
                     title = f"{repo.get('full_name', '')}: {repo.get('name', '')}"
                     
                     # 翻译标题和摘要
-                    try:
-                        translated_title, translated_summary = await translate_article_item(title, summary)
-                    except Exception:
+                    if translation_enabled:
+                        try:
+                            translated_title, translated_summary = await translate_article_item(title, summary)
+                        except Exception:
+                            translated_title = title
+                            translated_summary = truncate_summary(summary, 300)
+                    else:
                         translated_title = title
                         translated_summary = truncate_summary(summary, 300)
                     
@@ -376,18 +383,30 @@ async def fetch_github_trending(
                     )
                     batch_items.append(article)
                 
-                # 【增量输出】立即保存这一批
+                # 【增量输出】保存GitHub数据到数据库
                 try:
-                    output_file = output_manager.append_items_batch(
-                        source_type="github",
-                        items=batch_items,
-                        batch_info={
-                            "batch": batch_idx + 1,
-                            "total_batches": total_batches,
-                            "batch_size": len(batch_items)
-                        }
-                    )
-                    logger.info(f"✅ 批次 {batch_idx + 1}/{total_batches} 已保存到: {output_file.name}")
+                    # 保存AI项目到数据库
+                    for repo in batch_repos:
+                        if repo.get("_ai_score"):
+                            github_db.mark_as_ai_screened(repo, ai_score=repo.get("_ai_score", 0.0))
+                    
+                    logger.info(f"✅ 批次 {batch_idx + 1}/{total_batches} 已保存到GitHub数据库")
+                    
+                    # 同时保存到daily文件保持兼容性（可选）
+                    try:
+                        output_file = output_manager.append_items_batch(
+                            source_type="github",
+                            items=batch_items,
+                            batch_info={
+                                "batch": batch_idx + 1,
+                                "total_batches": total_batches,
+                                "batch_size": len(batch_items)
+                            }
+                        )
+                        logger.info(f"📂 批次 {batch_idx + 1}/{total_batches} 同时保存到日期文件: {output_file.name}")
+                    except Exception as daily_save_error:
+                        logger.warning(f"⚠️ 日期文件保存失败: {daily_save_error}")
+                        
                 except Exception as save_error:
                     logger.error(f"⚠️ 批次 {batch_idx + 1} 保存失败: {save_error}，继续处理...")
                 

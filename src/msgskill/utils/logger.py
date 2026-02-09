@@ -13,6 +13,12 @@ class Logger:
     """简单的日志输出类"""
     
     @staticmethod
+    def debug(message: str):
+        """输出调试信息（静默模式，后台运行时减少输出）"""
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"[{timestamp}] 🔧 {message}", file=sys.stdout)
+    
+    @staticmethod
     def info(message: str):
         """输出信息"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
