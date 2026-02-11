@@ -11,33 +11,60 @@
 ```
 msgskill/
 ├── config/                    # 配置文件
-│   └── sources.json          # 数据源配置（核心）
+│   ├── sources.json          # 数据源配置（核心）
+│   └── sources_schema.json   # 配置JSON Schema
 ├── src/msgskill/             # 核心代码
 │   ├── tools/                # 数据获取工具
 │   │   ├── arxiv_fetcher.py      # arXiv论文
 │   │   ├── github_fetcher.py     # GitHub项目
 │   │   ├── news_scraper.py       # HackerNews
-│   │   └── rss_reader.py         # RSS订阅
+│   │   ├── rss_reader.py         # RSS订阅
+│   │   └── registry.py           # 工具注册表
 │   ├── utils/                # 工具模块
 │   │   ├── ai_filter.py          # AI筛选
-│   │   ├── translator.py         # 翻译
-│   │   ├── cache.py              # 缓存
-│   │   └── logger.py             # 日志
+│   │   ├── translator.py          # 翻译
+│   │   ├── cache.py               # 缓存
+│   │   ├── logger.py              # 日志
+│   │   ├── parser.py              # 文本解析
+│   │   ├── github_db_new.py       # GitHub数据库管理
+│   │   └── notion_sync.py         # Notion同步
 │   ├── config.py             # 配置管理
 │   ├── models.py             # 数据模型
 │   ├── output.py             # 输出管理
-│   └── multi_scheduler.py    # 调度器
-├── output/daily/             # 输出目录（按日期）
+│   ├── multi_scheduler.py    # 调度器
+│   └── preview_server.py     # 预览服务器
+├── output/                   # 输出目录
+│   ├── daily/                # 按日期存储（RSS/HackerNews/arXiv）
+│   └── github/               # GitHub项目数据库（持久化）
+│       └── github_projects.json
+├── templates/                # HTML模板
+│   └── output_preview.html   # 数据预览页面
+├── static/                   # 静态资源
+│   ├── css/
+│   └── js/
+├── scripts/                  # 工具脚本
+│   ├── cleanup_logs.sh       # 日志清理
+│   └── sync_to_notion.py     # Notion手动同步
+├── test/                     # 测试脚本
 └── docs/                     # 文档
 ```
 
 ### 1.2 数据流
 
 ```
-配置加载 → 数据获取 → AI筛选 → 翻译 → 输出保存
-   ↓          ↓         ↓        ↓        ↓
-sources.json  tools/  ai_filter  translator  output/
+配置加载 → 数据获取 → 时间过滤 → AI筛选 → 翻译 → 输出保存 → Notion同步（可选）
+   ↓          ↓         ↓          ↓        ↓        ↓            ↓
+sources.json  tools/  recent_days  ai_filter  translator  output/  notion_sync
 ```
+
+**关键流程说明**：
+1. **配置加载**: 从 `sources.json` 读取数据源配置
+2. **数据获取**: 各工具模块从API/RSS抓取原始数据
+3. **时间过滤**: 仅处理最近 N 天内的数据（`llm.recent_days`，默认7天）
+4. **AI筛选**: 使用LLM批量判断内容相关性（可选）
+5. **翻译**: 将标题/摘要翻译为中文（可选，各数据源独立控制）
+6. **输出保存**: 保存到 `output/daily/` 或 `output/github/`
+7. **Notion同步**: 自动或手动同步到Notion数据库（可选）
 
 ---
 
@@ -60,12 +87,19 @@ sources.json  tools/  ai_filter  translator  output/
 
 ```python
 class ArticleItem(BaseModel):
-    title: str                    # 标题
-    summary: str                  # 摘要（≤300字）
-    source_url: str              # 来源URL
-    published_date: str          # 发布日期（ISO 8601）
-    source_type: Literal[...]    # 来源类型
-    article_tag: Literal[...]    # 分类标签
+    title: str                    # 标题（必需）
+    summary: str                  # 摘要（≤300字，必需）
+    source_url: str              # 来源URL（必需）
+    published_date: Optional[str] # 发布日期（ISO 8601，可选）
+    source_type: Literal["hackernews", "techmeme", "arxiv", "rss", "github"]  # 来源类型
+    article_tag: Literal["AI资讯", "AI工具", "AI论文", "技术博客"]  # 分类标签
+    
+    # 可选字段
+    author: Optional[str]        # 作者
+    score: Optional[int]         # 评分/热度
+    comments_count: Optional[int] # 评论数
+    tags: list[str]             # 关键词标签
+    story_type: Optional[Literal["top", "new", "best", "pushed", "created", "stars"]]  # 数据源类型
     ai_score: Optional[float]    # AI相关性（0.0-1.0）
 ```
 
@@ -102,10 +136,14 @@ class ArticleItem(BaseModel):
 |---------|-----|------|
 | 数据缓存 | 5分钟 | 避免重复API调用 |
 | 翻译缓存 | 24小时 | arXiv论文翻译结果 |
-| GitHub数据库 | 持久化 | GitHub项目持久化存储和智能去重 |
-- `output/github/all_projects.json`：所有抓取过的GitHub项目
-- `output/github/ai_projects.json`：AI筛选的GitHub项目
-- `output/github/ai_whitelist.json`：AI项目白名单，30天过期 |
+| GitHub数据库 | 持久化 | GitHub项目全量存储和智能去重 |
+
+**GitHub数据库结构**：
+- `output/github/github_projects.json`：**单一权威文件**，存储所有GitHub项目
+  - 使用 `source_url` 作为主键
+  - 包含 `is_ai_project` 和 `ai_score` 标记
+  - 新项目进行LLM分析，已存在项目仅更新状态（stars、comments等）
+  - 支持增量AI筛选，批量保存防止数据丢失
 
 ---
 
@@ -116,15 +154,23 @@ class ArticleItem(BaseModel):
 ```
 新增数据源工具：src/msgskill/tools/新工具_fetcher.py
 新增工具函数：src/msgskill/utils/新功能.py
-输出文件：output/daily/YYYY-MM-DD/source_timestamp.json
+输出文件：
+  - RSS/HackerNews/arXiv: output/daily/YYYY-MM-DD/source_timestamp.json
+  - GitHub: output/github/github_projects.json（持久化全量数据库）
 ```
+
+### 3.1.1 测试脚本规范
+
+- **测试脚本位置**: `test/` 目录
+- **测试输出**: `output/` 目录，文件名格式：`标识_时间戳.json`
+- **命名规范**: `test_功能描述.py`
 
 ### 3.2 函数签名规范
 
 **数据获取函数**：
 
 ```python
-async def fetch_xxx_data(
+def fetch_xxx_data(
     limit: int = 10,
     **kwargs
 ) -> FetchResult:
@@ -133,24 +179,63 @@ async def fetch_xxx_data(
     
     Args:
         limit: 返回条目数量限制
-        **kwargs: 其他参数
+        **kwargs: 其他参数（如category、language等）
     
     Returns:
         FetchResult: 统一的抓取结果格式
     """
+    # 注意：当前实现为同步函数，如需异步请使用 asyncio
 ```
+
+**关键开发规范**：
+1. **时间过滤**: 在LLM处理前，先过滤掉超过 `llm.recent_days` 的旧数据
+2. **错误处理**: 所有网络请求必须包含 try-except，失败时返回 `FetchResult(success=False)`
+3. **日志记录**: 使用 `logger.info/warning/error` 记录关键操作
+4. **缓存使用**: 合理使用 `get_cache()` 避免重复API调用
 
 ### 3.3 错误处理
 
 ```python
 try:
-    result = await fetch_data()
+    result = fetch_data()
     if result.success:
         logger.info(f"✅ 获取成功: {result.total_count}条")
     else:
         logger.error(f"❌ 获取失败: {result.error}")
 except Exception as e:
     logger.error(f"❌ 异常: {str(e)}")
+    return FetchResult(
+        success=False,
+        source_name="数据源名称",
+        source_type="数据源类型",
+        total_count=0,
+        fetched_at=datetime.now().isoformat(),
+        items=[],
+        error=str(e)
+    )
+```
+
+### 3.4 时间过滤规范
+
+**所有数据源在LLM处理前必须进行时间过滤**：
+
+```python
+from datetime import datetime, timedelta
+
+# 获取配置的时间窗口
+config = get_config()
+llm_cfg = config.get_llm_config()
+recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
+cutoff_dt = datetime.utcnow() - timedelta(days=recent_days)
+
+# 过滤数据
+filtered_items = []
+for item in items:
+    pub_date = parse_date(item.published_date)
+    if pub_date and pub_date >= cutoff_dt:
+        filtered_items.append(item)
+    
+logger.info(f"时间过滤：最近 {recent_days} 天内 {len(filtered_items)} 条，跳过过期 {len(items) - len(filtered_items)} 条")
 ```
 
 ---
@@ -295,19 +380,29 @@ async def fetch_example_data(limit: int = 10) -> FetchResult:
 在 `multi_scheduler.py` 添加：
 
 ```python
-# 1. 添加同步方法
-async def sync_example(self, max_results: int = 10):
+# 1. 添加同步方法（同步函数，非异步）
+def sync_example(self, max_results: int = 10):
     """同步示例数据"""
     logger.info(f"📡 开始同步示例数据 - 最多{max_results}条")
     
     try:
-        result = await fetch_example_data(limit=max_results)
+        result = fetch_example_data(limit=max_results)
         
         if result.success:
             # 保存到文件
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             output_file = self.output_manager.get_daily_dir() / f"example_{timestamp}.json"
             self.output_manager._write_json(output_file, result.model_dump())
+            
+            # Notion自动同步（如果启用）
+            try:
+                config_manager = get_config()
+                notion_cfg = config_manager.get_notion_config() or {}
+                auto_sync_cfg = notion_cfg.get("auto_sync", {})
+                if bool(auto_sync_cfg.get("example", False)):
+                    self._sync_example_items_to_notion(result.items)
+            except Exception as notion_error:
+                logger.debug(f"Notion自动同步检查失败: {notion_error}")
             
             logger.info(f"✅ 同步完成: {result.total_count}条")
             self.sync_stats["success_count"] += 1
@@ -319,27 +414,21 @@ async def sync_example(self, max_results: int = 10):
         logger.error(f"❌ 同步异常: {str(e)}")
         self.sync_stats["failed_sources"].append("example")
 
-# 2. 在 run_all_sources_async 中添加
-async def run_all_sources_async(self):
-    tasks = []
-    
-    for source, config in self.sources_config.items():
-        if config.get("enabled", False):
-            max_results = config.get("max_results", 10)
-            
-            if source == "example":  # 新增
-                tasks.append(self.sync_example(max_results))
-            # ... 其他数据源
-    
-    if tasks:
-        await asyncio.gather(*tasks)
-
-# 3. 在 start 方法中添加调度
+# 2. 在 start 方法中添加调度
 def start(self):
-    for source, config in self.sources_config.items():
-        if source == "example":  # 新增
-            sync_func = lambda mr=max_results: self.sync_example(mr)
-            # 设置定时任务...
+    scheduler_config = self.config.global_settings.get("scheduler", {})
+    tasks_config = scheduler_config.get("tasks", {})
+    
+    example_config = tasks_config.get("example")
+    if example_config and example_config.get("enabled"):
+        time_str = example_config.get("time", "12:00")
+        max_results = example_config.get("max_results", 10)
+        
+        # 支持单个时间或时间数组
+        times = [time_str] if isinstance(time_str, str) else time_str
+        for time_str in times:
+            schedule.every().day.at(time_str).do(self.sync_example, max_results=max_results)
+            logger.info(f"📅 已注册示例数据同步任务: {time_str}, max_results={max_results}")
 ```
 
 ### 4.5 添加调度配置
@@ -584,24 +673,34 @@ translated = await translate_article_item(article)
 
 ### 9.1 Token 优化
 
-- ✅ 使用缓存避免重复API调用
-- ✅ 批量请求AI筛选（一次处理多个标题）
-- ✅ 选择性翻译（只翻译高质量内容）
-- ✅ 白名单机制（已筛选项目跳过AI判断）
+- ✅ **时间过滤**: 仅处理最近 N 天内的数据（`llm.recent_days`，默认7天），节省 30-50% Token
+- ✅ **缓存机制**: 使用缓存避免重复API调用
+- ✅ **批量处理**: 批量请求AI筛选（一次处理多个标题）
+- ✅ **选择性翻译**: arXiv 选择性翻译（只翻译多作者论文），节省 76% Token
+- ✅ **GitHub去重**: GitHub项目数据库智能去重，已筛选项目跳过AI判断，节省 70-85% Token
+- ✅ **增量保存**: LLM识别一批就更新一次，避免中断导致数据丢失
 
 ### 9.2 错误处理
 
 - ✅ 所有网络请求添加 try-except
-- ✅ 记录详细错误日志
-- ✅ 失败时返回空结果而非崩溃
-- ✅ 更新 sync_stats 记录失败来源
+- ✅ 记录详细错误日志（使用 `logger.error`）
+- ✅ 失败时返回 `FetchResult(success=False)` 而非崩溃
+- ✅ 更新 `sync_stats` 记录失败来源
+- ✅ 单个数据源失败不影响其他数据源
 
 ### 9.3 性能优化
 
-- ✅ 使用 asyncio 并发请求
-- ✅ 设置合理的 cache_ttl
+- ✅ 设置合理的 `cache_ttl`（API结果5分钟，翻译24小时）
 - ✅ 避免过快请求同一API（添加延迟）
-- ✅ 限制单次获取数量（max_results）
+- ✅ 限制单次获取数量（`max_results`）
+- ✅ 使用 `httpx` 进行HTTP请求（支持异步）
+
+### 9.4 数据存储规范
+
+- ✅ **RSS/HackerNews/arXiv**: 保存到 `output/daily/YYYY-MM-DD/`，按日期组织
+- ✅ **GitHub**: 保存到 `output/github/github_projects.json`，全量持久化存储
+- ✅ **文件命名**: `source_YYYYMMDD_HHMMSS.json`（带时间戳）
+- ✅ **数据格式**: 使用 `FetchResult` 或 `ArticleItem` 统一格式
 
 ---
 
@@ -611,22 +710,54 @@ translated = await translate_article_item(article)
 # 启动服务（前台运行，带日志）
 ./start.sh
 
-# 立即执行一次所有任务
-python -m src.msgskill.multi_scheduler --once
+# 立即执行一次所有任务（不启动定时调度）
+python3 src/msgskill/multi_scheduler.py --once
 
 # 查看今日输出
 ls -lh output/daily/$(date +%Y-%m-%d)/
 
+# 查看GitHub数据库
+cat output/github/github_projects.json | jq 'keys | length'  # 项目总数
+
 # 清理日志（7天前）
 ./scripts/cleanup_logs.sh
 
-# 清理缓存（30天前）
-./scripts/cleanup_cache.sh
+# Notion手动同步
+python3 scripts/sync_to_notion.py --date $(date +%Y-%m-%d)
 
 # 查看实时日志
 tail -f logs/scheduler.log
 ```
 
+## 11. Notion 同步开发规范
+
+### 11.1 自动同步
+
+在 `multi_scheduler.py` 的同步方法中添加：
+
+```python
+# 检查是否启用自动同步
+config_manager = get_config()
+notion_cfg = config_manager.get_notion_config() or {}
+auto_sync_cfg = notion_cfg.get("auto_sync", {})
+if bool(auto_sync_cfg.get("数据源名", False)):
+    self._sync_数据源_items_to_notion(result.items)
+```
+
+### 11.2 手动同步
+
+预览页提供单条同步按钮，通过 `/api/notion/sync` API实现。
+
+### 11.3 数据转换
+
+确保 `ArticleItem` 字段符合 Notion 数据库字段要求：
+- `title` → Title (title)
+- `source_url` → Source URL (url)
+- `summary` → Summary (rich_text)
+- `published_date` → Published Date (date)
+- `ai_score` → AI Score (number)
+
 ---
 
-**最后更新**: 2026-02-03
+**最后更新**: 2026-02-10
+**版本**: 3.3.0

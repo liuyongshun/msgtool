@@ -72,22 +72,21 @@
         "translation_enabled": true
       },
       "google_ai": {
-        "enabled": false,
+        "enabled": true,
         "name": "Google AI Blog",
-        "url": "https://ai.google/discover/rss.xml",
+        "url": "https://research.google/blog/rss/",
         "description": "Google AI官方博客",
         "category": "company_blog",
         "tags": [
           "AI资讯",
           "AI工具"
         ],
-        "status": "已禁用",
         "note": "RSS源不稳定，暂时禁用",
         "ai_filter_enabled": true,
         "translation_enabled": false
       },
       "huggingface": {
-        "enabled": false,
+        "enabled": true,
         "name": "Hugging Face Blog",
         "url": "https://rsshub.app/huggingface/daily-papers",
         "description": "Hugging Face官方博客",
@@ -96,22 +95,9 @@
           "AI工具",
           "技术博客"
         ],
-        "status": "已禁用",
         "note": "RSS源不稳定，暂时禁用",
         "ai_filter_enabled": true,
         "translation_enabled": false
-      },
-      "deeplearning_ai": {
-        "enabled": true,
-        "name": "The Batch (DeepLearning.AI)",
-        "url": "https://www.deeplearning.ai/feed/",
-        "description": "Andrew Ng的AI周报",
-        "category": "newsletter",
-        "tags": [
-          "AI资讯"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
       },
       "sebastian_raschka": {
         "enabled": true,
@@ -129,7 +115,7 @@
       "anthropic_blog": {
         "enabled": true,
         "name": "Anthropic Blog",
-        "url": "https://www.anthropic.com/news.rss",
+        "url": "http://localhost:8878/anthropic/engineering",
         "description": "Anthropic官方博客",
         "category": "company_blog",
         "tags": [
@@ -142,7 +128,7 @@
       "meta_ai": {
         "enabled": true,
         "name": "Meta AI Blog",
-        "url": "https://rsshub.app/meta/ai/blog",
+        "url": "http://localhost:8878/meta/ai/blog",
         "description": "Meta AI官方博客",
         "category": "company_blog",
         "tags": [
@@ -194,7 +180,7 @@
       "techmeme": {
         "enabled": true,
         "name": "Techmeme",
-        "url": "https://www.techmeme.com/feed.xml",
+        "url": "https://medium.com/feed/llamaindex-blog",
         "description": "科技新闻聚合网站",
         "category": "news",
         "tags": [
@@ -228,23 +214,10 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "a16z_blog": {
-        "enabled": true,
-        "name": "a16z Blog",
-        "url": "https://a16z.com/feed/",
-        "description": "a16z博客（关注AI趋势）",
-        "category": "trends",
-        "tags": [
-          "AI资讯",
-          "趋势分析"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "thoughtworks": {
         "enabled": true,
         "name": "Thoughtworks Insights",
-        "url": "https://www.thoughtworks.com/insights/rss",
+        "url": "https://www.thoughtworks.com/rss/insights.xml",
         "description": "Thoughtworks技术洞察",
         "category": "trends",
         "tags": [
@@ -279,22 +252,10 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "futurepedia": {
-        "enabled": true,
-        "name": "Futurepedia",
-        "url": "https://www.futurepedia.io/rss",
-        "description": "Futurepedia AI工具目录",
-        "category": "ai_tools",
-        "tags": [
-          "AI工具"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "huggingface_daily_papers": {
         "enabled": true,
         "name": "Hugging Face Daily Papers",
-        "url": "https://huggingface.co/papers/rss",
+        "url": "https://huggingface.co/blog/feed.xml",
         "description": "Hugging Face每日论文",
         "category": "papers",
         "tags": [
@@ -329,21 +290,6 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "theneuron": {
-        "enabled": false,
-        "name": "The Neuron",
-        "url": "https://theneuron.ai/feed",
-        "description": "The Neuron AI应用和工具（Newsletter，需验证RSS）",
-        "category": "newsletter",
-        "tags": [
-          "AI资讯",
-          "AI工具"
-        ],
-        "status": "未完成",
-        "note": "Newsletter类型，RSS feed需验证",
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "qbitai": {
         "enabled": true,
         "name": "量子位 (QbitAI)",
@@ -371,7 +317,7 @@
       "huxiu": {
         "enabled": true,
         "name": "虎嗅",
-        "url": "https://rsshub.rssforever.com/huxiu/article",
+        "url": "http://localhost:8878/huxiu/article",
         "description": "虎嗅商业科技评论（通过RSSHub）",
         "category": "news",
         "tags": [
@@ -381,15 +327,14 @@
         "translation_enabled": false
       },
       "geekpark": {
-        "enabled": false,
+        "enabled": true,
         "name": "极客公园",
-        "url": "https://incomplete.placeholder",
+        "url": "http://localhost:8878/geekpark/304",
         "description": "极客公园科技媒体（需验证RSS）",
         "category": "news",
         "tags": [
           "AI资讯"
         ],
-        "status": "未完成",
         "note": "RSS feed需验证",
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -419,16 +364,15 @@
         "translation_enabled": true
       },
       "juejin": {
-        "enabled": false,
+        "enabled": true,
         "name": "掘金",
-        "url": "https://incomplete.placeholder",
+        "url": "https://rsshub.app/juejin/aicoding",
         "description": "掘金技术社区（需官方API）",
         "category": "tech_community",
         "tags": [
           "AI资讯",
           "技术博客"
         ],
-        "status": "未完成",
         "note": "需要通过官方API接口，非RSS",
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -470,20 +414,6 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "coolapk": {
-        "enabled": false,
-        "name": "酷安",
-        "url": "https://incomplete.placeholder",
-        "description": "酷安应用社区（需官方API）",
-        "category": "tech_community",
-        "tags": [
-          "AI资讯"
-        ],
-        "status": "未完成",
-        "note": "需要通过官方API接口，非RSS",
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "tldr_tech": {
         "enabled": false,
         "name": "TLDR Tech",
@@ -493,7 +423,6 @@
         "tags": [
           "AI资讯"
         ],
-        "status": "未完成",
         "note": "Newsletter类型，非RSS，需邮件流处理",
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -507,7 +436,6 @@
         "tags": [
           "AI资讯"
         ],
-        "status": "未完成",
         "note": "Newsletter类型，非RSS，需邮件流处理",
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -545,7 +473,7 @@
           "stars": 500
         },
         "ai_filter_enabled": true,
-        "translation_enabled": true
+        "translation_enabled": false
       }
     },
     "arxiv": {
@@ -702,8 +630,8 @@
       "enabled": true,
       "tasks": {
         "arxiv": {
-          "enabled": false,
-          "time": "11:00",
+          "enabled": true,
+          "time": "21:52",
           "max_results": 20,
           "note": "每个分类最多抓取的论文数（优化token消耗：从50减少到20）",
           "translation_strategy": {
@@ -715,19 +643,19 @@
         },
         "hackernews": {
           "enabled": true,
-          "time": ["10:20", "14:05", "17:20", "20:40"],
+          "time": ["10:20", "14:05", "17:20", "21:52"],
           "max_results": 50,
           "note": "控制原始抓取数量，AI筛选后的所有结果都会保存"
         },
         "rss": {
           "enabled": true,
-          "time": ["10:20", "14:05", "17:20", "20:40"],
+          "time": ["10:20", "14:05", "17:20", "21:52"],
           "max_results": 20,
           "note": "每个RSS源最多抓取的条目数，AI筛选后的所有结果都会保存。每天从06:00到21:00，每2小时同步一次（共9次）。"
         },
         "github": {
           "enabled": true,
-          "time": "11:00",
+          "time": "21:52",
           "max_results": 100,
           "note": "控制每种查询类型的抓取上限，AI筛选后的所有结果都会保存"
         }
@@ -741,6 +669,37 @@
     "api_url": "https://api.deepseek.com/v1/chat/completions",
     "model_name": "deepseek-chat",
     "max_tokens": 1000,
-    "temperature": 0.3
+    "temperature": 0.3,
+    "recent_days": 7
+  },
+  "notion_sync": {
+    "enabled": true,
+    "api_token": "",
+    "description": "Notion同步配置 - 将output数据同步到Notion数据库",
+    "note": "1. 在Notion中创建集成获取api_token\n2. 为每个数据源创建独立的数据库并连接集成\n3. 数据库建议字段：Title(title), Summary(rich_text), Source URL(url), Source Type(select), Article Tag(select), Author(rich_text), Score(number), Published Date(date), Tags(multi_select), AI Score(number), Story Type(select)",
+    "auto_sync": {
+      "github": false,
+      "rss": false,
+      "hackernews": false,
+      "arxiv": false
+    },
+    "databases": {
+      "github": {
+        "database_id": "",
+        "description": "GitHub项目数据库"
+      },
+      "rss": {
+        "database_id": "",
+        "description": "RSS文章数据库（可选，为空则使用github数据库）"
+      },
+      "hackernews": {
+        "database_id": "",
+        "description": "HackerNews新闻数据库（可选，为空则使用github数据库）"
+      },
+      "arxiv": {
+        "database_id": "",
+        "description": "arXiv论文数据库（可选，为空则使用github数据库）"
+      }
+    }
   }
 }

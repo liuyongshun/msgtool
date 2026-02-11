@@ -16,7 +16,7 @@
 """
 
 import asyncio
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Optional
 
 import httpx
@@ -209,23 +209,53 @@ async def _fetch_hackernews(
                     error="无法获取故事详情"
                 )
             
-            # 第三步：使用AI批量筛选标题
+            # 第三步：按发布时间过滤，仅对最近 N 天内的文章进行 LLM 处理
+            config = get_config()
+            llm_cfg = config.get_llm_config()
+            recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
+            cutoff_dt = datetime.utcnow() - timedelta(days=recent_days)
+            cutoff_ts = cutoff_dt.timestamp()
+
             # 准备标题列表：[(临时id, title), ...]
             title_batch = []
             story_map = {}  # {临时id: story_info}
-            
-            for idx, story_info in enumerate(all_stories):
+            skipped_by_time = 0
+
+            for story_info in all_stories:
                 story = story_info["data"]
                 title = story.get("title", "").strip()
                 if not title:
                     continue
-                
+
+                story_time = story.get("time")
+                if isinstance(story_time, (int, float)):
+                    # HackerNews 时间戳为 Unix 秒
+                    if story_time < cutoff_ts:
+                        skipped_by_time += 1
+                        continue
+
                 temp_id = str(story_info["id"])
                 title_batch.append((temp_id, title))
                 story_map[temp_id] = story_info
-            
+
+            logger.info(
+                f"HackerNews 时间过滤：最近 {recent_days} 天内 {len(title_batch)} 条，"
+                f"跳过过期 {skipped_by_time} 条，总抓取 {len(all_stories)} 条"
+            )
+
+            if not title_batch:
+                return FetchResult(
+                    success=True,
+                    source_name="Hacker News",
+                    source_type="hackernews",
+                    total_count=0,
+                    fetched_at=datetime.now().isoformat(),
+                    items=[],
+                    error=None,
+                )
+
             # 调用AI筛选
-            logger.info(f"开始AI筛选 {len(title_batch)} 个标题...")
+            logger.info(f"开始AI筛选 {len(title_batch)} 个标题（仅最近 {recent_days} 天）...")
             classification_results = await classify_titles_batch(title_batch, batch_size=25)
             
             # 创建结果映射 {id: classification_result}

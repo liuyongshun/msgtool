@@ -29,7 +29,7 @@
     <div class="container mx-auto p-6 max-w-6xl">
         <!-- 控制面板 -->
         <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
                 <!-- 日期选择器 -->
                 <div class="flex-1">
                     <select id="date-selector" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -52,12 +52,8 @@
                         RSS源
                     </button>
                     <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
-                            data-type="github">
-                        GitHub(每日)
-                    </button>
-                    <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium transition-colors" 
                             data-type="github-db">
-                        GitHub数据库
+                        GitHub
                     </button>
                 </div>
             </div>

@@ -74,8 +74,13 @@ class GitHubProjectDB:
             logger.error(f"❌ 保存数据库失败 {self.projects_file}: {e}")
     
     def _generate_project_id(self, repo: Dict) -> str:
-        """为GitHub项目生成唯一标识符"""
-        # 使用项目ID作为主要标识
+        """为GitHub项目生成唯一标识符（统一使用source_url作为key）"""
+        # 优先使用html_url作为key（与_save_github_items_to_file保持一致）
+        html_url = repo.get("html_url", "")
+        if html_url:
+            return html_url
+        
+        # 备用：使用项目ID
         repo_id = str(repo.get("id", ""))
         if repo_id:
             return f"github_{repo_id}"
@@ -257,7 +262,8 @@ class GitHubProjectDB:
             new_priority = status_hierarchy.get(status, 0)
             
             if new_priority <= current_priority:
-                project_data["status"] = existing["status"]
+                # 旧数据里可能没有status字段，这里要做兼容处理
+                project_data["status"] = existing.get("status", project_data.get("status", "crawled"))
                 project_data["ai_score"] = existing.get("ai_score", ai_score)
                 project_data["ai_reason"] = existing.get("ai_reason", ai_reason)
                 if existing.get("whitelisted_until"):

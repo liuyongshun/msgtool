@@ -5,7 +5,7 @@ Output数据预览服务器
 import os
 import json
 from pathlib import Path
-from flask import Flask, render_template, jsonify, send_from_directory
+from flask import Flask, render_template, jsonify, send_from_directory, request
 from flask_cors import CORS
 from datetime import datetime
 
@@ -51,6 +51,12 @@ OUTPUT_DIR = BASE_DIR / 'output' / 'daily'
 
 # 导入GitHub数据库模块
 from src.msgskill.utils.github_db_new import get_github_db
+from src.msgskill.utils.notion_sync import get_notion_sync
+from src.msgskill.models import ArticleItem
+from pydantic import ValidationError
+
+# 允许的 story_type 枚举值（与 ArticleItem 定义保持一致）
+ALLOWED_STORY_TYPES = {"top", "new", "best", "pushed", "created", "stars"}
 
 @app.route('/')
 def index():
@@ -61,44 +67,97 @@ def index():
 def get_github_database():
     """获取GitHub数据库中的所有AI项目数据"""
     try:
-        # 获取GitHub数据库实例
-        github_db = get_github_db()
+        referer = request.headers.get('Referer', '直接访问')
+        user_agent = request.headers.get('User-Agent', 'Unknown')
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] [GitHub数据库API] 📊 收到请求")
+        print(f"  来源: {referer}")
+        print(f"  用户代理: {user_agent[:50]}...")
         
-        # 获取数据库中所有项目（新架构是单一文件，所有项目都在同一个字典中）
-        all_projects = github_db.projects
-        
-        # 将数据库项目转换为前端需要的格式
+        # 直接从 github_projects.json 文件读取数据（支持两种格式）
+        github_file = BASE_DIR / 'output' / 'github' / 'github_projects.json'
         items = []
-        for project_id, project_data in all_projects.items():
-            status = project_data.get('status', 'crawled')
-            # 只显示白名单和AI筛选过的项目
-            if status not in ['ai_screened', 'whitelisted']:
-                continue
-                
-            # 从GitHub数据库中提取项目信息
-            item = {
-                'id': project_id,
-                'title': f"{project_data.get('full_name', '')}: {project_data.get('name', '')}",
-                'summary': project_data.get('description', '') or f"GitHub项目: {project_data.get('name', '')}",
-                'summary_truncated': project_data.get('description', '')[:200] + '...' if project_data.get('description') and len(project_data.get('description', '')) > 200 else project_data.get('description', ''),
-                'source_url': project_data.get('html_url', ''),
-                'published_date': project_data.get('crawled_at', project_data.get('added_at', '')),
-                'source_type': 'github',
-                'article_tag': 'tools',
-                'author': project_data.get('owner', {}).get('login', '').split('/')[0] if '/' in project_data.get('owner', {}).get('login', '') else project_data.get('owner', {}).get('login', ''),
-                'score': project_data.get('stargazers_count', 0),
-                'tags': project_data.get('topics', []),
-                'story_type': 'database',  # 新版使用统一的数据库视图
-                'ai_score': project_data.get('ai_score', 0.0),
-                'ai_reason': project_data.get('ai_reason', ''),
-                'language': project_data.get('language', ''),
-                '_from_database': True  # 标记来自数据库
-            }
-            items.append(item)
+        total_projects = 0
+        ai_projects = 0
+        whitelist_projects = 0
         
-        # 按AI评分和评分排序
+        if github_file.exists():
+            with open(github_file, 'r', encoding='utf-8') as f:
+                all_projects = json.load(f)
+            
+            total_projects = len(all_projects)
+            
+            # 处理两种数据格式
+            for project_key, project_data in all_projects.items():
+                # 格式1：ArticleItem格式（由 _save_github_items_to_file 保存）
+                if 'source_url' in project_data and 'title' in project_data:
+                    # 这是 ArticleItem 格式，直接使用
+                    ai_score = project_data.get('ai_score', 0.0) or 0.0
+                    # 统一口径：仅当 ai_score > 0 时视为 AI 项目
+                    is_ai_project_flag = ai_score > 0.0
+                    if is_ai_project_flag:
+                        ai_projects += 1
+                    item = {
+                        'id': project_key,
+                        'title': project_data.get('title', ''),
+                        'summary': project_data.get('summary', ''),
+                        'source_url': project_data.get('source_url', ''),
+                        'published_date': project_data.get('published_date', ''),
+                        'source_type': project_data.get('source_type', 'github'),
+                        'article_tag': project_data.get('article_tag', ''),
+                        'author': project_data.get('author', ''),
+                        'score': project_data.get('score', 0),
+                        'tags': project_data.get('tags', []),
+                        'story_type': project_data.get('story_type', ''),
+                        'ai_score': ai_score,
+                        'ai_reason': project_data.get('ai_reason', ''),
+                        'language': '',  # ArticleItem格式可能没有language字段
+                        'is_ai_project': is_ai_project_flag,
+                        '_from_database': True
+                    }
+                    items.append(item)
+                
+                # 格式2：github_db_new格式（包含status字段）
+                elif 'status' in project_data:
+                    status = project_data.get('status', 'crawled')
+                    if status in ['ai_screened', 'whitelisted']:
+                        if status == 'ai_screened':
+                            ai_projects += 1
+                        elif status == 'whitelisted':
+                            whitelist_projects += 1
+                        
+                        item = {
+                            'id': project_key,
+                            'title': f"{project_data.get('full_name', '')}: {project_data.get('name', '')}",
+                            'summary': project_data.get('description', '') or f"GitHub项目: {project_data.get('name', '')}",
+                            'source_url': project_data.get('html_url', ''),
+                            'published_date': project_data.get('created_at', project_data.get('crawled_at', project_data.get('added_at', ''))),
+                            'source_type': 'github',
+                            'article_tag': 'tools',
+                            'author': project_data.get('owner', {}).get('login', '').split('/')[0] if '/' in project_data.get('owner', {}).get('login', '') else project_data.get('owner', {}).get('login', ''),
+                            'score': project_data.get('stargazers_count', 0),
+                            'tags': project_data.get('topics', []),
+                            'story_type': 'database',
+                            'ai_score': project_data.get('ai_score', 0.0),
+                            'ai_reason': project_data.get('ai_reason', ''),
+                            'language': project_data.get('language', ''),
+                            # 旧 github_db_new 格式：status 为 ai_screened / whitelisted 的项目视为 AI 项目
+                            'is_ai_project': True,
+                            '_from_database': True
+                        }
+                        items.append(item)
+        
+        # 排序规则：
+        # 1. AI 项目（is_ai_project=True 或 ai_score>0）在前
+        # 2. 同类内部按创建时间倒序
+        for item in items:
+            # 兼容：如果没带 is_ai_project，但 ai_score>0，则视为AI项目
+            if 'is_ai_project' not in item:
+                item['is_ai_project'] = (item.get('ai_score', 0.0) or 0.0) > 0.0
         items.sort(
-            key=lambda x: (x.get('ai_score', 0.0), x.get('score', 0)),
+            key=lambda x: (
+                1 if x.get('is_ai_project') else 0,
+                parse_date_string(x.get('published_date', ''))
+            ),
             reverse=True
         )
         
@@ -111,9 +170,9 @@ def get_github_database():
                 'total_count': len(items),
                 'items': items,
                 'database_info': {
-                    'total_projects': len(github_db.projects),
-                    'ai_projects': len([p for p in github_db.projects.values() if p.get('status') == 'ai_screened']),
-                    'whitelist_projects': len([p for p in github_db.projects.values() if p.get('status') == 'whitelisted'])
+                    'total_projects': total_projects,
+                    'ai_projects': ai_projects,
+                    'whitelist_projects': whitelist_projects
                 }
             },
             'from_database': True,
@@ -142,10 +201,101 @@ def get_dates():
     except Exception as e:
         return jsonify({'error': str(e), 'dates': []}), 500
 
+
+@app.route('/api/notion/sync', methods=['POST'])
+def sync_to_notion():
+    """同步单条数据到 Notion（手动触发，按 item 粒度）"""
+    try:
+        payload = request.get_json(force=True) or {}
+        data_type = payload.get('type')
+        item_data = payload.get('item') or {}
+
+        notion_sync = get_notion_sync()
+        if not notion_sync or not notion_sync.enabled:
+            return jsonify({'success': False, 'error': 'Notion 同步未启用，请检查 config/sources.json 中的 notion_sync 配置'}), 400
+
+        if data_type not in ['arxiv', 'hackernews', 'rss', 'github', 'github-db']:
+            return jsonify({'success': False, 'error': f'不支持的数据类型: {data_type}'}), 400
+
+        # 构造 ArticleItem
+        article: ArticleItem
+        try:
+            if data_type in ['github', 'hackernews', 'arxiv']:
+                # 这三类在预览数据中已经基本是 ArticleItem 结构
+                article = ArticleItem(
+                    title=item_data.get('title', ''),
+                    summary=(item_data.get('summary', '') or '')[:300],
+                    source_url=item_data.get('source_url', ''),
+                    published_date=item_data.get('published_date'),
+                    source_type=item_data.get('source_type', data_type),
+                    article_tag=item_data.get('article_tag', 'AI资讯'),
+                    author=item_data.get('author'),
+                    score=item_data.get('score'),
+                    comments_count=item_data.get('comments_count'),
+                    tags=item_data.get('tags', []),
+                    # story_type 只接受限定值，其它情况一律置为 None，避免校验错误
+                    story_type=item_data.get('story_type') if item_data.get('story_type') in ALLOWED_STORY_TYPES else None,
+                    ai_score=item_data.get('ai_score')
+                )
+            elif data_type == 'github-db':
+                # GitHub数据库视为github源
+                article = ArticleItem(
+                    title=item_data.get('title', ''),
+                    summary=(item_data.get('summary', '') or '')[:300],
+                    source_url=item_data.get('source_url', ''),
+                    published_date=item_data.get('published_date'),
+                    source_type='github',
+                    article_tag=item_data.get('article_tag', 'AI工具'),
+                    author=item_data.get('author'),
+                    score=item_data.get('score'),
+                    comments_count=None,
+                    tags=item_data.get('tags', []),
+                    # 数据库视图不区分 story_type，统一置为 None
+                    story_type=None,
+                    ai_score=item_data.get('ai_score')
+                )
+            elif data_type == 'rss':
+                # RSS项：来自 feed.items
+                article = ArticleItem(
+                    title=item_data.get('title', ''),
+                    summary=(item_data.get('summary', '') or '')[:300],
+                    source_url=item_data.get('link', ''),
+                    published_date=item_data.get('published'),
+                    source_type='rss',
+                    article_tag=item_data.get('article_tag', 'AI资讯'),
+                    author=item_data.get('author'),
+                    score=None,
+                    comments_count=None,
+                    tags=item_data.get('tags', []),
+                    story_type=None,
+                    ai_score=item_data.get('ai_score')
+                )
+        except ValidationError as e:
+            return jsonify({'success': False, 'error': f'数据格式不合法: {str(e)}'}), 400
+
+        # 执行单条同步
+        result = notion_sync.sync_items([article], skip_existing=True)
+        synced = result.get('synced', 0)
+
+        if synced == 0:
+            return jsonify({'success': True, 'message': '该条数据已存在于 Notion（未重复创建）'})
+
+        return jsonify({'success': True, 'message': '已同步 1 条数据到 Notion'})
+
+    except Exception as e:
+        print(f"Notion 手动同步失败: {e}")
+        return jsonify({'success': False, 'error': f'Notion 同步失败: {str(e)}'}), 500
+
 @app.route('/api/data/<date>/<data_type>')
 def get_data(date, data_type):
     """获取指定日期和类型的数据 - 合并所有同类型文件"""
     try:
+        referer = request.headers.get('Referer', '直接访问')
+        user_agent = request.headers.get('User-Agent', 'Unknown')
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] [数据API] 📄 收到请求")
+        print(f"  日期: {date}, 类型: {data_type}")
+        print(f"  来源: {referer}")
+        print(f"  用户代理: {user_agent[:50]}...")
         date_dir = OUTPUT_DIR / date
         if not date_dir.exists():
             return jsonify({'error': f'日期目录不存在: {date}'}), 404

@@ -32,6 +32,7 @@ echo "================================================"
 echo ""
 
 # 先执行一次所有任务（前台运行，显示进度）
+echo "执行首次同步..."
 # python3 src/msgskill/multi_scheduler.py --once
 
 echo ""
@@ -40,15 +41,29 @@ echo "✅ 首次同步完成"
 echo "================================================"
 echo ""
 
-# 启动定时任务（后台运行，日志写入文件）
+# 启动定时任务（后台运行，日志同时输出到控制台和文件）
 echo "▶ 启动后台定时调度器..."
-python3 src/msgskill/multi_scheduler.py > logs/scheduler.log 2>&1 &
+# 使用 tee 同时输出到终端和文件，-a 表示追加模式
+# 注意：后台进程的输出会同时显示在终端和写入文件
+python3 src/msgskill/multi_scheduler.py 2>&1 | tee -a logs/scheduler.log &
 SCHEDULER_PID=$!
 echo "  ✓ 调度器PID: $SCHEDULER_PID"
-echo "  ✓ 日志文件: logs/scheduler.log"
+echo "  ✓ 日志同时输出到控制台和文件: logs/scheduler.log"
 
 # 等待一下确保调度器启动
 sleep 2
+
+# 检查并杀掉占用5001端口的进程
+echo "▶ 检查端口5001..."
+PORT_PID=$(lsof -ti:5001 2>/dev/null)
+if [ -n "$PORT_PID" ]; then
+    echo "  ⚠ 发现端口5001被占用 (PID: $PORT_PID)，正在终止..."
+    kill -9 $PORT_PID 2>/dev/null
+    sleep 1
+    echo "  ✓ 端口5001已释放"
+else
+    echo "  ✓ 端口5001可用"
+fi
 
 # 启动预览服务（前台运行）
 echo ""

@@ -20,7 +20,7 @@ arXiv论文获取工具 (ArXiv Fetcher)
 """
 
 import asyncio
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Optional
 from concurrent.futures import ThreadPoolExecutor
 
@@ -121,6 +121,48 @@ async def fetch_arxiv_papers(
                 "arxiv_url": paper.entry_id,
                 "comment": paper.comment,
             })
+        
+        # 在进行任何 LLM 请求前，先按发布时间过滤，只保留最近 N 天内的论文
+        if paper_list:
+            cfg = get_config()
+            llm_cfg = cfg.get_llm_config()
+            recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
+            cutoff_dt = datetime.utcnow() - timedelta(days=recent_days)
+
+            filtered_by_time: list[dict[str, Any]] = []
+            skipped_by_time = 0
+
+            for paper in paper_list:
+                pub_str = paper.get("published")
+                if not pub_str:
+                    filtered_by_time.append(paper)
+                    continue
+
+                pub_dt: datetime | None = None
+                try:
+                    pub_dt = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
+                except Exception:
+                    pub_dt = None
+
+                if pub_dt is None:
+                    filtered_by_time.append(paper)
+                    continue
+
+                # 统一使用 UTC naive
+                if pub_dt.tzinfo is not None:
+                    pub_dt = pub_dt.astimezone(tz=None).replace(tzinfo=None)
+
+                if pub_dt < cutoff_dt:
+                    skipped_by_time += 1
+                    continue
+
+                filtered_by_time.append(paper)
+
+            logger.info(
+                f"arXiv 时间过滤：最近 {recent_days} 天内 {len(filtered_by_time)} 篇，"
+                f"跳过过期 {skipped_by_time} 篇，总抓取 {len(paper_list)} 篇"
+            )
+            paper_list = filtered_by_time
         
         # 【方案A+B+C】智能翻译策略：选择性翻译 + 缓存
         if paper_list:

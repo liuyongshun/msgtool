@@ -71,6 +71,8 @@ class LLMConfig:
     model_name: str = "deepseek-chat"
     max_tokens: int = 1000
     temperature: float = 0.3
+    # 控制对LLM请求时仅处理最近多少天内的数据（如 HackerNews / RSS / arXiv）
+    recent_days: int = 7
 
 
 @dataclass
@@ -170,7 +172,8 @@ class ConfigManager:
             api_url=llm_config.get("api_url", ""),
             model_name=llm_config.get("model_name", "deepseek-chat"),
             max_tokens=llm_config.get("max_tokens", 1000),
-            temperature=llm_config.get("temperature", 0.3)
+            temperature=llm_config.get("temperature", 0.3),
+            recent_days=int(llm_config.get("recent_days", 7) or 7),
         )
     
     # ===== 新闻源相关 =====
@@ -434,6 +437,18 @@ class ConfigManager:
             return self.get_github_source(name)
         else:
             return None
+    
+    def get_notion_config(self) -> Optional[dict[str, Any]]:
+        """
+        获取Notion同步配置
+        
+        Returns:
+            Notion配置字典，包含:
+            - enabled: 是否启用
+            - api_token: Notion Integration Token
+            - database_id: Notion数据库ID
+        """
+        return self._config.get("notion_sync")
 
 
 # 全局配置管理器实例

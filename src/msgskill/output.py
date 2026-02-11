@@ -90,6 +90,9 @@ class OutputManager:
         daily_file = daily_dir / f"{filename}.json"
         self._write_json(daily_file, json_data)
         
+        # 可选：自动同步到Notion
+        self._auto_sync_to_notion(result)
+        
         return daily_file
     
     def save_incremental(
@@ -132,6 +135,10 @@ class OutputManager:
         
         # 写入文件
         self._write_json(file_path, existing_data)
+        
+        # 可选：自动同步到Notion
+        if isinstance(result, FetchResult):
+            self._auto_sync_to_notion(result)
         
         return file_path
     
@@ -203,7 +210,45 @@ class OutputManager:
         # 写入文件
         self._write_json(file_path, existing_data)
         
+        # 可选：自动同步到Notion（仅同步新增的items）
+        if items:
+            from ..models import FetchResult
+            temp_result = FetchResult(
+                success=True,
+                source_name=source_type.title(),
+                source_type=source_type,
+                total_count=len(items),
+                fetched_at=datetime.now().isoformat(),
+                items=items
+            )
+            self._auto_sync_to_notion(temp_result)
+        
         return file_path
+    
+    def _auto_sync_to_notion(self, result: Union[FetchResult, 'SearchResult']) -> None:
+        """
+        自动同步到Notion（如果配置启用）
+        
+        Args:
+            result: FetchResult或SearchResult对象
+        """
+        try:
+            from ..utils.notion_sync import get_notion_sync
+            
+            notion_sync = get_notion_sync()
+            if not notion_sync or not notion_sync.enabled:
+                return
+            
+            # 只同步FetchResult
+            if isinstance(result, FetchResult) and result.items:
+                sync_result = notion_sync.sync_fetch_result(result, skip_existing=True)
+                if sync_result.get("success"):
+                    synced = sync_result.get("synced", 0)
+                    if synced > 0:
+                        logger.info(f"📝 自动同步到Notion: {synced} 条新内容")
+        except Exception as e:
+            # 静默失败，不影响主流程
+            logger.debug(f"Notion自动同步失败: {e}")
     
     def get_daily_summary(self, date: Optional[datetime] = None) -> dict:
         """

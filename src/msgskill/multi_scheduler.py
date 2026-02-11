@@ -12,7 +12,7 @@ import asyncio
 import json
 import schedule
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
 
 try:
@@ -83,6 +83,37 @@ class MultiSourceScheduler:
             total_papers = 0
             failed_categories = []
             
+            # === 输出：一天一个 arxiv 汇总文件，分类作为“批次”增量写回 ===
+            daily_dir = self.output_manager.get_daily_dir()
+            daily_dir.mkdir(parents=True, exist_ok=True)
+            date_str = datetime.now().strftime("%Y%m%d")
+            output_file = daily_dir / f"arxiv_{date_str}.json"
+
+            # 读取或初始化当日汇总结构
+            if output_file.exists():
+                try:
+                    with open(output_file, "r", encoding="utf-8") as f:
+                        aggregated_data = json.load(f)
+                except Exception:
+                    aggregated_data = {
+                        "source": "arXiv",
+                        "fetched_at": datetime.now().isoformat(),
+                        "total_categories": 0,
+                        "total_count": 0,
+                        "papers": [],
+                    }
+            else:
+                aggregated_data = {
+                    "source": "arXiv",
+                    "fetched_at": datetime.now().isoformat(),
+                    "total_categories": 0,
+                    "total_count": 0,
+                    "papers": [],
+                }
+
+            existing_papers = aggregated_data.get("papers", [])
+            existing_ids = {p.get("id") for p in existing_papers if p.get("id")}
+            
             for category_key, category_name in ARXIV_CATEGORIES.items():
                 # 将类别键转换为配置键（cs.AI -> cs_ai）
                 config_key = category_key.replace(".", "_").lower()
@@ -109,50 +140,31 @@ class MultiSourceScheduler:
                         logger.error(f"同步失败 {category_name}: {result['error']}")
                         failed_categories.append(category_key)
                     else:
-                        paper_count = result.get("count", 0)
+                        new_papers = result.get("papers", []) or []
+                        paper_count = len(new_papers)
                         total_papers += paper_count
-                        
-                # 保存每个分类的论文到文件（当天同一分类追加到同一个文件）
-                        try:
-                            safe_category = category_key.replace(".", "_")
-                            daily_dir = self.output_manager.get_daily_dir()
-                            
-                            # 查找当天是否已有该分类的文件
-                            existing_files = list(daily_dir.glob(f"arxiv_{safe_category}_*.json"))
-                            
-                            if existing_files:
-                                # 使用最新的文件
-                                existing_files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
-                                output_file = existing_files[0]
-                                
-                                # 读取并追加
-                                with open(output_file, 'r', encoding='utf-8') as f:
-                                    existing_data = json.load(f)
-                                
-                                # 合并papers
-                                existing_papers = existing_data.get("papers", [])
-                                new_papers = result.get("papers", [])
-                                
-                                # 去重（基于paper id）
-                                existing_ids = {p.get("id") for p in existing_papers}
-                                for paper in new_papers:
-                                    if paper.get("id") not in existing_ids:
-                                        existing_papers.append(paper)
-                                
-                                existing_data["papers"] = existing_papers
-                                existing_data["count"] = len(existing_papers)
-                                existing_data["updated_at"] = datetime.now().isoformat()
-                                
-                                self.output_manager._write_json(output_file, existing_data)
-                                logger.info(f"✅ {category_name}: 追加{paper_count}篇论文 (累计{len(existing_papers)}篇) | 输出: {output_file.name}")
-                            else:
-                                # 创建新文件
-                                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                                output_file = daily_dir / f"arxiv_{safe_category}_{timestamp}.json"
-                                self.output_manager._write_json(output_file, result)
-                                logger.info(f"✅ {category_name}: {paper_count}篇论文 | 输出: {output_file.name}")
-                        except Exception as save_error:
-                            logger.error(f"❌ 保存{category_name}结果失败: {save_error}")
+
+                        # 合并到当日汇总（按 id 去重）
+                        added = 0
+                        for paper in new_papers:
+                            pid = paper.get("id")
+                            if pid and pid in existing_ids:
+                                continue
+                            existing_papers.append(paper)
+                            if pid:
+                                existing_ids.add(pid)
+                            added += 1
+
+                        aggregated_data["papers"] = existing_papers
+                        aggregated_data["total_count"] = len(existing_papers)
+                        aggregated_data["total_categories"] = aggregated_data.get("total_categories", 0) + 1
+                        aggregated_data["fetched_at"] = datetime.now().isoformat()
+
+                        # 每处理完一个分类就写回文件，保证中途异常不会丢失已抓取的数据
+                        self.output_manager._write_json(output_file, aggregated_data)
+                        logger.info(
+                            f"✅ {category_name}: 本次获取{paper_count}篇，新增{added}篇 (当日累计{len(existing_papers)}篇) | 输出: {output_file.name}"
+                        )
                     
                     # 避免过快请求API
                     await asyncio.sleep(2)
@@ -167,7 +179,9 @@ class MultiSourceScheduler:
                 self.sync_stats["failed_sources"].extend(
                     [f"arxiv_{cat}" for cat in failed_categories])
             
-            logger.info(f"✅ arXiv同步完成: {total_papers}篇论文，失败{len(failed_categories)}个分类")
+            logger.info(
+                f"✅ arXiv同步完成: 本轮共抓取{total_papers}篇论文，当日文件累计{len(aggregated_data.get('papers', []))}篇，失败{len(failed_categories)}个分类 | 文件: {output_file.name}"
+            )
             
         except Exception as e:
             logger.error(f"arXiv同步总体失败: {str(e)}")
@@ -185,6 +199,19 @@ class MultiSourceScheduler:
             
             if result.success:
                 logger.info(f"✅ HackerNews同步完成: {result.total_count}条新闻")
+
+                # 可选：根据配置决定是否自动同步到Notion
+                try:
+                    config_manager = get_config()
+                    notion_cfg = config_manager.get_notion_config() or {}
+                    auto_sync_cfg = notion_cfg.get("auto_sync", {})
+                    hn_auto = bool(auto_sync_cfg.get("hackernews", False))
+                    
+                    if hn_auto:
+                        self._sync_hackernews_items_to_notion(result.items)
+                except Exception as notion_error:
+                    logger.debug(f"HackerNews Notion自动同步检查失败: {notion_error}")
+
                 self.sync_stats["success_count"] += 1
             else:
                 logger.error(f"❌ HackerNews同步失败: {result.error}")
@@ -281,6 +308,10 @@ class MultiSourceScheduler:
                         
                         self.output_manager._write_json(output_file, existing_data)
                         
+                        # 同步新增的items到Notion
+                        if new_items:
+                            self._sync_rss_items_to_notion(new_items)
+                        
                         if errors_count > 0:
                             logger.warning(f"⚠️ RSS同步部分失败: 追加{total_items}条 (累计{total_count}条)，{errors_count}个源失败 | 输出: {output_file.name}")
                         else:
@@ -290,6 +321,14 @@ class MultiSourceScheduler:
                         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                         output_file = daily_dir / f"rss_{timestamp}.json"
                         self.output_manager._write_json(output_file, result)
+                        
+                        # 同步所有items到Notion
+                        all_items = []
+                        for feed_name, feed_data in result.get("feeds", {}).items():
+                            if isinstance(feed_data, dict):
+                                all_items.extend(feed_data.get("items", []))
+                        if all_items:
+                            self._sync_rss_items_to_notion(all_items)
                         
                         if errors_count > 0:
                             logger.warning(f"⚠️ RSS同步部分失败: {total_items}条内容，来自{feeds_count}个源，{errors_count}个源失败 | 输出: {output_file.name}")
@@ -308,6 +347,122 @@ class MultiSourceScheduler:
             logger.error(f"❌ RSS同步异常: {str(e)}")
             self.sync_stats["failed_sources"].append("rss")
     
+    def _sync_rss_items_to_notion(self, items: list) -> None:
+        """
+        将RSS items同步到Notion
+        
+        Args:
+            items: RSS items列表（字典格式）
+        """
+        try:
+            # 根据配置判断是否开启 RSS 自动同步
+            config_manager = get_config()
+            notion_config = getattr(config_manager, "_config", {}).get("notion_sync", {})
+            auto_sync = notion_config.get("auto_sync", {})
+            # 默认保持兼容：如果未配置 auto_sync.rss，则视为 True（沿用之前的行为）
+            if not auto_sync.get("rss", True):
+                logger.info("RSS Notion自动同步已在配置中关闭，跳过同步")
+                return
+
+            from .utils.notion_sync import get_notion_sync
+            from .models import ArticleItem
+            
+            notion_sync = get_notion_sync()
+            if not notion_sync or not notion_sync.enabled:
+                return
+            
+            # 转换RSS items为ArticleItem
+            article_items = []
+            for item in items:
+                try:
+                    # RSS格式: {title, link, summary, published, author, tags, ai_score}
+                    article = ArticleItem(
+                        title=item.get("title", ""),
+                        summary=item.get("summary", "")[:300],  # 限制长度
+                        source_url=item.get("link", ""),
+                        published_date=item.get("published"),
+                        source_type="rss",
+                        article_tag=item.get("article_tag", "AI资讯"),
+                        author=item.get("author"),
+                        tags=item.get("tags", []),
+                        ai_score=item.get("ai_score")
+                    )
+                    article_items.append(article)
+                except Exception as e:
+                    logger.debug(f"跳过无效的RSS item: {e}")
+                    continue
+            
+            if article_items:
+                result = notion_sync.sync_items(article_items, skip_existing=True)
+                if result.get("synced", 0) > 0:
+                    logger.info(f"📝 已同步 {result['synced']} 条RSS内容到Notion")
+        except Exception as e:
+            logger.debug(f"RSS Notion同步失败: {e}")
+
+    def _sync_github_items_to_notion(self, items: list) -> None:
+        """
+        将GitHub items同步到Notion（受配置开关控制）
+        
+        items 可能是 ArticleItem 列表或 dict 列表
+        """
+        try:
+            from .utils.notion_sync import get_notion_sync
+            from .models import ArticleItem
+            
+            notion_sync = get_notion_sync()
+            if not notion_sync or not notion_sync.enabled:
+                return
+            
+            article_items = []
+            for item in items or []:
+                try:
+                    if isinstance(item, ArticleItem):
+                        article_items.append(item)
+                    elif isinstance(item, dict):
+                        article_items.append(ArticleItem(**item))
+                except Exception as e:
+                    logger.debug(f"跳过无效的GitHub item: {e}")
+                    continue
+            
+            if article_items:
+                result = notion_sync.sync_items(article_items, skip_existing=True)
+                if result.get("synced", 0) > 0:
+                    logger.info(f"📝 已同步 {result['synced']} 条GitHub项目到Notion")
+        except Exception as e:
+            logger.debug(f"GitHub Notion同步失败: {e}")
+
+    def _sync_hackernews_items_to_notion(self, items: list) -> None:
+        """
+        将HackerNews items同步到Notion（受配置开关控制）
+        
+        items 可能是 ArticleItem 列表或 dict 列表
+        """
+        try:
+            from .utils.notion_sync import get_notion_sync
+            from .models import ArticleItem
+
+            notion_sync = get_notion_sync()
+            if not notion_sync or not notion_sync.enabled:
+                return
+
+            article_items = []
+            for item in items or []:
+                try:
+                    if isinstance(item, ArticleItem):
+                        article_items.append(item)
+                    elif isinstance(item, dict):
+                        article_items.append(ArticleItem(**item))
+                except Exception as e:
+                    logger.debug(f"跳过无效的HackerNews item: {e}")
+                    continue
+
+            if article_items:
+                result = notion_sync.sync_items(article_items, skip_existing=True)
+                if result.get("synced", 0) > 0:
+                    logger.info(f"📝 已同步 {result['synced']} 条HackerNews内容到Notion")
+        except Exception as e:
+            logger.debug(f"HackerNews Notion同步失败: {e}")
+    
     async def sync_github(self, max_results: int = 20):
         """同步GitHub趋势项目"""
         logger.info(f"🐙 开始同步GitHub趋势 - 最多{max_results}个项目")
@@ -317,6 +472,19 @@ class MultiSourceScheduler:
             
             if result.success:
                 logger.info(f"✅ GitHub同步完成: {result.total_count}个趋势项目")
+                
+                # 可选：根据配置决定是否自动同步到Notion
+                try:
+                    config_manager = get_config()
+                    notion_cfg = config_manager.get_notion_config() or {}
+                    auto_sync_cfg = notion_cfg.get("auto_sync", {})
+                    github_auto = bool(auto_sync_cfg.get("github", False))
+                    
+                    if github_auto:
+                        self._sync_github_items_to_notion(result.items)
+                except Exception as notion_error:
+                    logger.debug(f"GitHub Notion自动同步检查失败: {notion_error}")
+                
                 self.sync_stats["success_count"] += 1
             else:
                 logger.error(f"❌ GitHub同步失败: {result.error}")
@@ -340,11 +508,7 @@ class MultiSourceScheduler:
             return
         
         logger.info("🚀 多源调度器启动")
-        
-        # 立即执行一次所有启用的任务
-        logger.info("⚡ 启动时立即执行一次所有任务...")
-        self.run_once()
-        logger.info("✅ 启动时任务执行完成，开始按计划定期执行")
+        logger.info("💡 提示: 如需启动时立即执行一次，请使用 --once 参数")
         
         # 设置定时任务
         scheduled_count = 0
@@ -381,12 +545,14 @@ class MultiSourceScheduler:
                 if sync_func:
                     # 为每个时间点创建一个任务
                     for time_str in time_list:
-                        schedule.every().day.at(time_str).do(self.create_sync_job(source, sync_func))
+                        job = schedule.every().day.at(time_str).do(self.create_sync_job(source, sync_func))
                         scheduled_count += 1
+                        next_run = job.next_run.strftime('%Y-%m-%d %H:%M:%S') if job.next_run else '未知'
+                        logger.info(f"⏰ 已安排{source}任务: {time_str} (下次执行: {next_run})")
                     
                     # 日志显示所有时间点
                     times_display = ", ".join(time_list)
-                    logger.info(f"⏰ 已安排{source}任务: {times_display}")
+                    logger.info(f"✅ {source}任务配置完成: {times_display}")
         
         if scheduled_count == 0:
             logger.warning("⚠️ 没有可执行的定时任务，请检查配置")
@@ -395,7 +561,35 @@ class MultiSourceScheduler:
         logger.info(f"⏰ 共安排{scheduled_count}个定时任务，等待执行...")
         
         # 运行调度循环
+        logger.info("🔄 开始调度循环，每分钟检查一次...")
+        current_time = datetime.now()
+        logger.info(f"📋 当前时间: {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        
+        # 显示所有已注册的任务
+        all_jobs = schedule.get_jobs()
+        if all_jobs:
+            logger.info(f"📋 已注册的任务列表（共 {len(all_jobs)} 个）:")
+            for job in all_jobs:
+                next_run = job.next_run.strftime('%Y-%m-%d %H:%M:%S') if job.next_run else '未知'
+                job_name = getattr(job.job_func, '__name__', 'unknown')
+                logger.info(f"   - {job_name}: 下次执行 {next_run}")
+        else:
+            logger.warning("⚠️ 没有已注册的定时任务！")
+        
+        check_count = 0
         while True:
+            now = datetime.now()
+            check_count += 1
+            
+            # 每10次检查（约10分钟）输出一次状态
+            if check_count % 10 == 0:
+                pending_jobs = schedule.get_jobs()
+                logger.info(f"⏰ [{now.strftime('%H:%M:%S')}] 调度器运行中，共 {len(pending_jobs)} 个任务")
+                for job in pending_jobs:
+                    next_run = job.next_run.strftime('%Y-%m-%d %H:%M:%S') if job.next_run else '未知'
+                    logger.info(f"   下次执行: {next_run}")
+            
+            # 执行到期的任务
             schedule.run_pending()
             time.sleep(60)  # 每分钟检查一次
     

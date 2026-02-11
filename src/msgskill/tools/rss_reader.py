@@ -16,10 +16,11 @@ RSS订阅聚合工具 (RSS Reader)
 """
 
 import asyncio
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Optional
 from concurrent.futures import ThreadPoolExecutor
 import html
+from email.utils import parsedate_to_datetime
 
 import feedparser
 import httpx
@@ -277,9 +278,58 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
                 "tags": [tag.term for tag in entry.get("tags", [])][:5],  # Limit tags
             })
         
-        # AI筛选：如果启用，使用AI判断文章是否与AI/科技相关
+        # 在进行任何 LLM 请求前，先按发布时间过滤，只保留最近 N 天内的文章
+        if items:
+            cfg = get_config()
+            llm_cfg = cfg.get_llm_config()
+            recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
+            cutoff_dt = datetime.utcnow() - timedelta(days=recent_days)
+
+            filtered_by_time: list[dict[str, Any]] = []
+            skipped_by_time = 0
+
+            for item in items:
+                pub_str = item.get("published")
+                if not pub_str:
+                    # 没有时间信息的先保留，避免误删
+                    filtered_by_time.append(item)
+                    continue
+
+                pub_dt: datetime | None = None
+                # 尝试多种解析方式
+                try:
+                    # RSS 常见为 RFC2822，如 "Tue, 10 Feb 2026 08:00:00 GMT"
+                    pub_dt = parsedate_to_datetime(pub_str)
+                except Exception:
+                    try:
+                        # 回退到 ISO8601
+                        pub_dt = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
+                    except Exception:
+                        pub_dt = None
+
+                if pub_dt is None:
+                    filtered_by_time.append(item)
+                    continue
+
+                # 统一到 naive UTC 再比较
+                if pub_dt.tzinfo is not None:
+                    pub_dt = pub_dt.astimezone(tz=None).replace(tzinfo=None)
+
+                if pub_dt < cutoff_dt:
+                    skipped_by_time += 1
+                    continue
+
+                filtered_by_time.append(item)
+
+            logger.info(
+                f"RSS 时间过滤：最近 {recent_days} 天内 {len(filtered_by_time)} 篇，"
+                f"跳过过期 {skipped_by_time} 篇，总抓取 {len(items)} 篇"
+            )
+            items = filtered_by_time
+        
+        # AI筛选：如果启用，使用AI判断文章是否与AI/科技相关（已按时间过滤）
         if ai_filter_enabled and items:
-            logger.info(f"开始AI筛选 {len(items)} 篇文章...")
+            logger.info(f"开始AI筛选 {len(items)} 篇文章（仅最近 {recent_days} 天）...")
             
             # 准备标题列表：[(临时id, title), ...]
             title_batch = []
@@ -316,9 +366,9 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
             logger.info(f"AI筛选完成: {len(items)} -> {len(filtered_items)} 篇文章")
             items = filtered_items
         
-        # 翻译：对筛选后的文章进行翻译（标题和摘要）
+        # 翻译：对筛选后的文章进行翻译（标题和摘要，已按时间过滤）
         if items and translation_enabled:
-            logger.info(f"开始翻译 {len(items)} 篇文章...")
+            logger.info(f"开始翻译 {len(items)} 篇文章（仅最近 {recent_days} 天）...")
             translation_tasks = []
             for item in items:
                 title = item.get("title", "")
