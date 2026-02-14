@@ -1,0 +1,453 @@
+{
+  "source": "arXiv",
+  "category": "eess.AS",
+  "category_name": "Audio and Speech Processing",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:36:36.596750",
+  "papers": [
+    {
+      "id": "2602.10058v1",
+      "title": "Evaluating Disentangled Representations for Controllable Music Generation",
+      "authors": [
+        "Laura Ibáñez-Martínez",
+        "Chukwuemeka Nkama",
+        "Andrea Poltronieri",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "author_count": 5,
+      "summary": "Recent approaches in music generation rely on disentangled representations, often labeled as structure and timbre or local and global, to enable controllable synthesis. Yet the underlying properties of these embeddings remain underexplored. In this work, we evaluate such disentangled...",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T18:25:04+00:00",
+      "updated": "2026-02-10T18:25:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10058v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10058v1",
+      "comment": "Accepted at ICASSP 2026"
+    },
+    {
+      "id": "2602.09970v1",
+      "title": "BioME：面向物联网应用的高效生物声学基础模型",
+      "authors": [
+        "Heitor R. Guimarães",
+        "Abhishek Tiwari",
+        "Mahsa Abdollahi",
+        "Anderson R. Avila",
+        "Tiago H. Falk"
+      ],
+      "author_count": 5,
+      "summary": "被动声学监测已成为生物多样性评估、保护和行为生态学的关键策略，尤其是在物联网设备能够实现大规模持续原位音频采集的背景下。尽管近期基于自监督学习的音频编码器（如BEATs和AVES）已在多项任务中展现出强大性能……",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T16:59:12+00:00",
+      "updated": "2026-02-10T16:59:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09970v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09970v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09823v1",
+      "title": "科沃音频技术报告",
+      "authors": [
+        "Wenfu Wang",
+        "Chenxing Li",
+        "Liqiang Zhang",
+        "Yiyang Zhao",
+        "Yuxiang Zou"
+      ],
+      "author_count": 26,
+      "summary": "在这项工作中，我们推出了Covo-Audio——一个拥有70亿参数、能直接处理连续音频输入并在单一统一架构内生成音频输出的端到端LALM模型。通过大规模精选预训练与针对性后训练，Covo-Audio在同等规模模型中实现了业界领先或具有竞争力的性能表现。",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T14:31:11+00:00",
+      "updated": "2026-02-10T14:31:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09823v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09823v1",
+      "comment": "Technical Report"
+    },
+    {
+      "id": "2602.09594v1",
+      "title": "矩形房间中具有一般表面阻抗壁的声学格林函数评估",
+      "authors": [
+        "Matteo Calafà",
+        "Yuanxin Xia",
+        "Jonas Brunskog",
+        "Cheol-Ho Jeong"
+      ],
+      "author_count": 4,
+      "summary": "声学房间模式及格林函数模式展开对于具有完美反射壁的矩形房间是众所周知的。对于近乎刚性的边界，也存在一阶近似；然而，当前的分析方法无法适应更一般的边界条件，例如当墙壁吸声显著时。在本研究中，我们...",
+      "categories": [
+        "eess.AS",
+        "cs.CE",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T09:47:35+00:00",
+      "updated": "2026-02-10T09:47:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09594v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09594v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09389v1",
+      "title": "TVTSyn：用于流式语音转换与匿名化的内容同步时变音色技术",
+      "authors": [
+        "Waris Quamer",
+        "Mu-Ruei Tseng",
+        "Ghady Nasrallah",
+        "Ricardo Gutierrez-Osuna"
+      ],
+      "author_count": 4,
+      "summary": "实时语音转换与说话人匿名化需要在不牺牲清晰度与自然度的前提下，实现因果性的低延迟合成。现有系统存在核心表征错配问题：语音内容随时间动态变化，而说话人身份却以静态全局嵌入的形式注入。我们提出一种可流式传输的语音合成器，通过将……",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T03:57:30+00:00",
+      "updated": "2026-02-10T03:57:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09389v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09389v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09321v1",
+      "title": "基于堆叠特征的CNN与AST模型在环境声音分类中的性能比较",
+      "authors": [
+        "Parinaz Binandeh Dehaghania",
+        "Danilo Penab",
+        "A. Pedro Aguiar"
+      ],
+      "author_count": 3,
+      "summary": "环境声音分类（ESC）因其在智慧城市监控、故障检测、声学监测和制造质量控制中的多样化应用而受到广泛关注。为提升卷积神经网络性能，特征堆叠技术被用于将互补的声学描述符聚合为更丰富的输入特征……",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T01:28:14+00:00",
+      "updated": "2026-02-10T01:28:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09321v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09321v1",
+      "comment": "7 pages, 1 figure"
+    },
+    {
+      "id": "2602.09233v1",
+      "title": "Gencho：通过扩散变换器从混响语音和文本生成房间脉冲响应",
+      "authors": [
+        "Jackie Lin",
+        "Jiaqi Su",
+        "Nishit Anand",
+        "Zeyu Jin",
+        "Minje Kim"
+      ],
+      "author_count": 6,
+      "summary": "盲房间脉冲响应（RIR）估计是捕捉与传递声学特性的核心任务，然而现有方法常受限于建模能力，并在未知条件下表现不佳。此外，新兴的生成式音频应用需要更灵活的脉冲响应生成方法。我们提出……",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-09T21:57:42+00:00",
+      "updated": "2026-02-09T21:57:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09233v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09233v1",
+      "comment": "In Proc. of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2026. Audio examples available at https://linjac.github.io/Gencho/"
+    },
+    {
+      "id": "2602.09210v1",
+      "title": "AI-Driven Cardiorespiratory Signal Processing: Separation, Clustering, and Anomaly Detection",
+      "authors": [
+        "Yasaman Torabi"
+      ],
+      "author_count": 1,
+      "summary": "This research applies artificial intelligence (AI) to separate, cluster, and analyze cardiorespiratory sounds. We recorded a new dataset (HLS-CMDS) and developed several AI models, including generative AI methods based on large language models (LLMs) for guided separation, explainable AI (XAI) techniques to interpret latent representations, variational autoencoders (VAEs) for waveform separation, a chemistry-inspired non-negative matrix factorization (NMF) algorithm for clustering, and a...",
+      "categories": [
+        "eess.SP",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "eess.SP",
+      "published": "2026-02-09T21:30:07+00:00",
+      "updated": "2026-02-09T21:30:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09210v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09210v1",
+      "comment": "PhD thesis"
+    },
+    {
+      "id": "2602.08671v1",
+      "title": "通过序列建模实现输入自适应频谱特征压缩以进行源分离",
+      "authors": [
+        "Kohei Saijo",
+        "Yoshiaki Bando"
+      ],
+      "author_count": 2,
+      "summary": "时频域双路径模型已展现出强大性能，在源分离领域得到广泛应用。由于这类模型的计算成本随频段数量增长，在音乐源分离与影视音频分离等高采样率任务中，它们常采用频带分割模块进行处理。",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-09T13:55:39+00:00",
+      "updated": "2026-02-09T13:55:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08671v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08671v1",
+      "comment": "Accepted by IEEE TASLP. \\c{opyright} 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses"
+    },
+    {
+      "id": "2602.08552v1",
+      "title": "Rho-Perfect: Correlation Ceiling For Subjective Evaluation Datasets",
+      "authors": [
+        "Fredrik Cumlin"
+      ],
+      "author_count": 1,
+      "summary": "Subjective ratings contain inherent noise that limits the model-human correlation, but this reliability issue is rarely quantified. In this paper, we present $ρ$-Perfect, a practical estimation of the highest achievable correlation of a model on subjectively rated datasets. We define $ρ$-Perfect to be the correlation between a perfect predictor and human ratings, and derive an estimate of the value based on heteroscedastic noise scenarios, a common occurrence in subjectively rated datasets. We...",
+      "categories": [
+        "cs.LG",
+        "eess.AS",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T11:52:09+00:00",
+      "updated": "2026-02-09T11:52:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08552v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08552v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08484v1",
+      "title": "物理引导的无监督声源追踪变分模型",
+      "authors": [
+        "Luan Vinícius Fiorio",
+        "Ivana Nikoloska",
+        "Bruno Defraene",
+        "Alex Young",
+        "Johan David"
+      ],
+      "author_count": 6,
+      "summary": "声源追踪通常采用经典的阵列处理算法进行。替代方法，如机器学习，依赖于真实位置标签，这些标签获取成本高昂。我们提出了一种变分模型，能够在潜在空间中执行单源无监督声源追踪，并辅以基于物理的解码器。",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-09T10:34:57+00:00",
+      "updated": "2026-02-09T10:34:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08484v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08484v1",
+      "comment": "This work has been submitted to the IEEE for possible publication"
+    },
+    {
+      "id": "2602.09070v1",
+      "title": "NarraScore：通过分层情感控制连接视觉叙事与音乐动态",
+      "authors": [
+        "Yufan Wen",
+        "Zhaocheng Liu",
+        "YeGuo Hua",
+        "Ziyi Guo",
+        "Lihua Zhang"
+      ],
+      "author_count": 7,
+      "summary": "为长篇视频合成连贯音轨仍是一项艰巨挑战，目前受限于三大关键障碍：计算可扩展性、时间连贯性，以及最关键的——对动态叙事逻辑普遍存在的语义盲区。为突破这些局限，我们提出NarraScore这一分层框架，其核心理念基于……",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-09T09:39:42+00:00",
+      "updated": "2026-02-09T09:39:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09070v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09070v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08293v1",
+      "title": "跨模态瓶颈融合用于噪声鲁棒性音视频语音识别",
+      "authors": [
+        "Seaone Ok",
+        "Min Jun Choi",
+        "Eungbeom Kim",
+        "Seungu Han",
+        "Kyogu Lee"
+      ],
+      "author_count": 5,
+      "summary": "视听语音识别（AVSR）通过结合声学和视觉线索，在嘈杂环境下提升语音识别性能。其核心问题在于如何设计一种融合机制，使模型在音频信号受损时能有效利用视觉信息，同时在清晰语音上保持强劲表现。我们...",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-09T05:58:00+00:00",
+      "updated": "2026-02-09T05:58:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08293v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08293v1",
+      "comment": "5 pages, 3 figures, ICASSP 2026 Accepted"
+    },
+    {
+      "id": "2602.08148v1",
+      "title": "SNC: A Stem-Native Codec for Efficient Lossless Audio Storage with Adaptive Playback Capabilities",
+      "authors": [
+        "Shaad Sufi"
+      ],
+      "author_count": 1,
+      "summary": "Current audio formats present a fundamental trade-off between file size and functionality: lossless formats like FLAC preserve quality but lack adaptability, while lossy formats reduce size at the cost of fidelity and offer no stem-level access.We introduce the Stem-Native Codec (SNC), a novel audio container format that stores music as independently encoded stems plus a low-energy mastering residual. By exploiting the lower information entropy of separated stems compared to mixed audio, SNC...",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-08T22:42:18+00:00",
+      "updated": "2026-02-08T22:42:18+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08148v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08148v1",
+      "comment": null
+    },
+    {
+      "id": "2602.07977v1",
+      "title": "侦测、聚焦与提取：关键词引导的目标说话人提取",
+      "authors": [
+        "Haoyu Li",
+        "Yu Xi",
+        "Yidi Jiang",
+        "Shuai Wang",
+        "Kate Knill"
+      ],
+      "author_count": 8,
+      "summary": "目标说话人提取（TSE）旨在从包含多个竞争说话人的混合语音中提取目标说话人的语音。传统的TSE系统主要依赖说话人线索（如预先录入的语音）来识别和分离目标说话人。然而，在许多实际场景中，干净的注册语音往往无法获取，……",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-08T14:06:11+00:00",
+      "updated": "2026-02-08T14:06:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07977v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07977v1",
+      "comment": "4 figures, 4 tables. Submitted to IJCAI-ECAI 2026"
+    },
+    {
+      "id": "2602.07803v1",
+      "title": "SoulX-Singer：迈向高质量零样本歌声合成",
+      "authors": [
+        "Jiale Qian",
+        "Hao Meng",
+        "Tian Zheng",
+        "Pengcheng Zhu",
+        "Haopeng Lin"
+      ],
+      "author_count": 20,
+      "summary": "尽管近年来语音合成技术取得了飞速进展，开源歌声合成系统在工业部署中仍面临重大障碍，尤其是在鲁棒性和零样本泛化能力方面。本报告推出的SoulX-Singer，是一款高质量开源歌声合成系统，专为实际应用场景设计……",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-08T03:51:23+00:00",
+      "updated": "2026-02-08T03:51:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07803v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07803v1",
+      "comment": "Technical Report"
+    },
+    {
+      "id": "2602.06937v1",
+      "title": "互惠潜在场用于预计算声传播",
+      "authors": [
+        "Hugo Seuté",
+        "Pranai Vasudev",
+        "Etienne Richan",
+        "Louis-Xavier Buffoni"
+      ],
+      "author_count": 4,
+      "summary": "真实的声音传播对于虚拟场景的沉浸感至关重要，然而基于物理精确的波动模拟在实时应用中仍受计算能力限制。波编码方法通过预计算并将给定场景的脉冲响应压缩为一组标量声学参数来应对这一局限，这些参数能够……",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-06T18:31:11+00:00",
+      "updated": "2026-02-06T18:31:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06937v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06937v1",
+      "comment": "Temporary pre-print, will be updated. In review at a conference"
+    },
+    {
+      "id": "2602.06921v2",
+      "title": "多种去相关方法结合以提升声学反馈消除效果",
+      "authors": [
+        "Klaus Linhard",
+        "Philipp Bulling"
+      ],
+      "author_count": 2,
+      "summary": "本文通过整合多种去相关方法，扩展了原有的声学反馈消除系统。基准系统基于在多延迟结构中实现的频域卡尔曼滤波器。所提出的扩展包括可变时间延迟线、预测模块、失真补偿机制以及简化的混响模型。",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-06T18:17:23+00:00",
+      "updated": "2026-02-09T07:27:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06921v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.06921v2",
+      "comment": null
+    },
+    {
+      "id": "2602.06917v1",
+      "title": "歌唱错误自动检测与分析在音乐教学中的应用",
+      "authors": [
+        "Sumit Kumar",
+        "Suraj Jaiswal",
+        "Parampreet Singh",
+        "Vipul Arora"
+      ],
+      "author_count": 4,
+      "summary": "机器学习在音频分析领域的进步为技术增强型音乐教育开辟了新的可能性。本文在全新构建的数据集支持下，提出了一种面向音乐教学场景的自动歌唱错误检测框架。该数据集包含同步录制的师生演唱音频，其中...",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-06T18:15:36+00:00",
+      "updated": "2026-02-06T18:15:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06917v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06917v1",
+      "comment": "Under Review at Transactions of Audio Speech and Language Processing"
+    },
+    {
+      "id": "2602.06823v1",
+      "title": "广播监控中的人工智能生成音乐检测",
+      "authors": [
+        "David Lopez-Ayala",
+        "Asier Cabello",
+        "Pablo Zinemanas",
+        "Emilio Molina",
+        "Martin Rocamora"
+      ],
+      "author_count": 5,
+      "summary": "AI音乐生成器已发展到其作品常与人类创作难以区分的程度。尽管检测手段已经出现，但它们通常是在音乐流媒体环境下针对完整无损曲目进行设计与验证的。然而广播音频带来了不同的挑战：音乐以片段形式呈现……",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-06T16:08:01+00:00",
+      "updated": "2026-02-06T16:08:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06823v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06823v1",
+      "comment": null
+    }
+  ]
+}

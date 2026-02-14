@@ -1,0 +1,447 @@
+{
+  "source": "arXiv",
+  "category": "cs.MA",
+  "category_name": "Multiagent Systems",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:36:18.024884",
+  "papers": [
+    {
+      "id": "2602.10029v1",
+      "title": "Resilient Topology-Aware Coordination for Dynamic 3D UAV Networks under Node Failure",
+      "authors": [
+        "Chuan-Chi Lai"
+      ],
+      "author_count": 1,
+      "summary": "In 3D Aerial-Ground Integrated Networks (AGINs), ensuring continuous service coverage under unexpected hardware failures is critical for mission-critical applications. While Multi-Agent Reinforcement Learning (MARL) has shown promise in autonomous coordination, its resilience under sudden node failures remains a challenge due to dynamic topology deformation. This paper proposes a Topology-Aware Graph MAPPO (TAG-MAPPO) framework designed to enhance system survivability through autonomous 3D...",
+      "categories": [
+        "cs.NI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-02-10T17:51:14+00:00",
+      "updated": "2026-02-10T17:51:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10029v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10029v1",
+      "comment": "25 pages, 5 figures. Full research paper providing a resilience-aware RL framework for UAV networks under node failure. A preliminary version has been submitted to ACM Transactions on Internet Technology (TOIT) for possible publication"
+    },
+    {
+      "id": "2602.10007v1",
+      "title": "拥堵匝道汇入中安全高效协同自动驾驶车道变更的协作安全屏障",
+      "authors": [
+        "Bharathkumar Hegde",
+        "Melanie Bouroche"
+      ],
+      "author_count": 2,
+      "summary": "在密集交通中换道对于联网自动驾驶车辆（CAV）而言是一项重大挑战。现有的换道控制器主要侧重于确保安全性或协同提升交通效率，但未能同时兼顾这两个相互冲突的目标。为此，我们提出了多智能体安全屏障（MASS）方案，旨在……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:30:09+00:00",
+      "updated": "2026-02-10T17:30:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10007v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10007v1",
+      "comment": "Accepted in IEEE IV 2026"
+    },
+    {
+      "id": "2602.09801v1",
+      "title": "微小行动：基于游戏的假设精炼",
+      "authors": [
+        "Agnieszka Dobrowolska",
+        "Rogier Hintzen",
+        "Martin Balla",
+        "Karl Gemayel",
+        "Sabine Reichert"
+      ],
+      "author_count": 9,
+      "summary": "大多数科学发现的机器学习方法将假设构建为端到端的预测，掩盖了科学推理的渐进结构。我们提出了“假设游戏”，这是一种用于假设细化的符号形式体系，其中LLM代理通过固定的推理动作语法在共享的假设状态上进行操作。该...",
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T14:04:29+00:00",
+      "updated": "2026-02-10T14:04:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09801v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09801v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09412v1",
+      "title": "多智能体系统控制",
+      "authors": [
+        "Minh Hoang Trinh",
+        "Hieu Minh Nguyen"
+      ],
+      "author_count": 2,
+      "summary": "自21世纪初以来，多智能体系统的控制研究引起了广泛关注，其应用范围涵盖自然集群行为、社会动力学，以及自动驾驶车辆、传感器网络和智能电网等工程系统。尽管多智能体系统的研究已分化出众多专门领域……",
+      "categories": [
+        "cs.MA",
+        "math.OC"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T05:08:02+00:00",
+      "updated": "2026-02-10T05:08:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09412v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09412v1",
+      "comment": "\"Multi-Agent System Control\", 252 pages; in Vietnamese language, 82 figures"
+    },
+    {
+      "id": "2602.09379v1",
+      "title": "灵犀诊断基准：一个用于评估大语言模型在中文精神科咨询与诊断中的多智能体框架",
+      "authors": [
+        "Shihao Xu",
+        "Tiancheng Zhou",
+        "Jiatong Ma",
+        "Yanli Ding",
+        "Yiming Yan"
+      ],
+      "author_count": 11,
+      "summary": "精神障碍在全球范围内极为普遍，但精神科医生的短缺以及基于访谈的诊断方式固有的主观性，为及时、一致的心理健康评估造成了巨大障碍。由于缺乏能同时提供真实临床场景……的基准数据集，人工智能辅助精神疾病诊断的发展受到制约。",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T03:46:05+00:00",
+      "updated": "2026-02-10T03:46:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09379v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09379v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09270v1",
+      "title": "AI智能体的集体行为：以Moltbook为例",
+      "authors": [
+        "Giordano De Marzo",
+        "David Garcia"
+      ],
+      "author_count": 2,
+      "summary": "我们对Moltbook进行了大规模数据分析，这是一个仅由AI代理组成的类Reddit社交媒体平台。通过分析来自约4.6万个活跃代理的36.9万余条帖子和300万条评论，我们发现AI集体行为展现出与人类在线社区相同的统计规律性：……",
+      "categories": [
+        "physics.soc-ph",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "physics.soc-ph",
+      "published": "2026-02-09T23:10:34+00:00",
+      "updated": "2026-02-09T23:10:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09270v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09270v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09252v1",
+      "title": "基于基础模型的外科图像分割：VLM引导的迭代优化方法",
+      "authors": [
+        "Ange Lou",
+        "Yamin Li",
+        "Qi Chang",
+        "Nan Xi",
+        "Luyuan Xie"
+      ],
+      "author_count": 7,
+      "summary": "手术图像分割对于机器人辅助手术和术中引导至关重要。然而，现有方法受限于预定义类别，只能进行一次性预测而无法自适应优化，且缺乏临床医生交互机制。我们提出IR-SIS——一种用于手术图像的迭代优化系统……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-09T22:36:36+00:00",
+      "updated": "2026-02-09T22:36:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09252v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09252v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09159v1",
+      "title": "CoMMa：博弈论视角下的贡献感知医疗多智能体系统",
+      "authors": [
+        "Yichen Wu",
+        "Yujin Oh",
+        "Sangjoon Park",
+        "Kailong Fan",
+        "Dania Daye"
+      ],
+      "author_count": 9,
+      "summary": "近期多智能体框架拓展了处理肿瘤学决策支持任务的能力，这些任务需要在动态、异构的患者数据上进行推理。我们提出贡献感知医疗多智能体（CoMMa），这是一个去中心化的大语言模型智能体框架，其中各专科医生基于分区证据开展工作，并通过……进行协调。",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-09T20:04:58+00:00",
+      "updated": "2026-02-09T20:04:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09159v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09159v1",
+      "comment": "9 pages, 3 figures"
+    },
+    {
+      "id": "2602.09132v1",
+      "title": "SciDataCopilot：面向AGI驱动科学发现的智能数据准备框架",
+      "authors": [
+        "Jiyong Rao",
+        "Yicheng Qiu",
+        "Jiahui Zhang",
+        "Juntao Deng",
+        "Shangquan Sun"
+      ],
+      "author_count": 32,
+      "summary": "当前人工智能科学（AI4S）的发展格局主要立足于大规模文本语料库，生成式人工智能系统在假设生成、文献检索和多模态推理方面表现出色。然而，加速闭环科学发现的关键瓶颈仍在于原始实验数据的利用……",
+      "categories": [
+        "cs.DB",
+        "cs.ET",
+        "cs.MA"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-02-09T19:23:32+00:00",
+      "updated": "2026-02-09T19:23:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09132v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09132v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08965v1",
+      "title": "在多智能体强化学习中通过量子纠缠学习协调",
+      "authors": [
+        "John Gardiner",
+        "Orlando Romero",
+        "Brendan Tivnan",
+        "Nicolò Dal Fabbro",
+        "George J. Pappas"
+      ],
+      "author_count": 5,
+      "summary": "无法沟通对多智能体强化学习（MARL）中的协调构成了重大挑战。先前的研究探索了通过共享随机性（有时以关联设备的形式）来关联局部策略，以此作为辅助分散决策的机制。相比之下，本研究首次提出了一个框架……",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T18:01:40+00:00",
+      "updated": "2026-02-09T18:01:40+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08965v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08965v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08938v1",
+      "title": "教老动力学新把戏：通过BNN动力学实现零和博弈中无需正则化的末次迭代收敛",
+      "authors": [
+        "Tuo Zhang",
+        "Leonardo Stella"
+      ],
+      "author_count": 2,
+      "summary": "零和博弈是多智能体学习中对抗训练与决策制定的基础场景。现有方法通常通过引入某种形式的正则化来确保收敛至（近似）纳什均衡。然而正则化需要额外超参数，这些参数必须经过精细调整——这在面临复杂动态时尤为困难。",
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T17:36:55+00:00",
+      "updated": "2026-02-09T17:36:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08938v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08938v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08799v1",
+      "title": "面向服务的通用功能卸载框架在联网自动驾驶车辆中的应用",
+      "authors": [
+        "Robin Dehler",
+        "Michael Buchholz"
+      ],
+      "author_count": 2,
+      "summary": "功能卸载是一种有前景的解决方案，它通过以分布式服务的形式在本地与远程计算设备之间分配计算任务，以应对联网自动驾驶车辆（CAVs）及其他自主机器人在计算能力和可用能源方面的限制。本文提出了一种通用的功能卸载方案……",
+      "categories": [
+        "cs.RO",
+        "cs.MA"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-09T15:39:28+00:00",
+      "updated": "2026-02-09T15:39:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08799v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08799v1",
+      "comment": "8 pages, 6 figures, 2 tables, published in RA-L"
+    },
+    {
+      "id": "2602.08567v1",
+      "title": "价值流：衡量多智能体LLM系统中价值扰动的传播",
+      "authors": [
+        "Jinnuo Liu",
+        "Chuke Liu",
+        "Hua Shen"
+      ],
+      "author_count": 3,
+      "summary": "多智能体大语言模型系统日益由能够观察并响应彼此输出的智能体构成。尽管价值对齐通常针对孤立模型进行评估，但价值扰动如何通过智能体交互传播仍鲜为人知。我们提出ValueFlow，一种基于扰动的评估框架……",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T12:06:07+00:00",
+      "updated": "2026-02-09T12:06:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08567v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08567v1",
+      "comment": "Preprint. Under review. 18 pages, 9 figures"
+    },
+    {
+      "id": "2602.08529v1",
+      "title": "EvoCorps：一个用于缓解在线讨论两极分化的进化多智能体框架",
+      "authors": [
+        "Ning Lin",
+        "Haolun Li",
+        "Mingshu Liu",
+        "Chengyun Ruan",
+        "Kaibo Huang"
+      ],
+      "author_count": 8,
+      "summary": "在线言论中的极化现象侵蚀了社会信任并加速了错误信息的传播，然而技术应对措施大多仍停留在诊断性和事后补救层面。当前的治理方法受制于固有的延迟性和静态政策，难以应对实时演变的协同对抗性放大行为。我们推出EvoCorps，一个...",
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T11:24:17+00:00",
+      "updated": "2026-02-09T11:24:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08529v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08529v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08504v1",
+      "title": "A General Theory of Proportionality with Additive Utilities",
+      "authors": [
+        "Piotr Skowron"
+      ],
+      "author_count": 1,
+      "summary": "We consider a model where a subset of candidates must be selected based on voter preferences, subject to general constraints that specify which subsets are feasible. This model generalizes committee elections with diversity constraints, participatory budgeting (including constraints specifying how funds must be allocated to projects from different pools), and public decision-making. Axioms of proportionality have recently been defined for this general model, but the proposed rules apply only to...",
+      "categories": [
+        "cs.GT",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.GT",
+      "published": "2026-02-09T10:55:13+00:00",
+      "updated": "2026-02-09T10:55:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08504v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08504v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08389v1",
+      "title": "混合动机马尔可夫博弈中的利他主义与公平目标",
+      "authors": [
+        "Yao-hua Franck Xu",
+        "Tayeb Lemlouma",
+        "Arnaud Braud",
+        "Jean-Marie Bonnin"
+      ],
+      "author_count": 4,
+      "summary": "合作是社会存续的根基，它能在追求集体福祉的异质群体中催生结构性联结。然而个体往往倾向于选择背叛，以期在不承担相应成本的情况下坐享群体合作成果，从而导致不公现象。在博弈论中，社会...",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.GT",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T08:40:52+00:00",
+      "updated": "2026-02-09T08:40:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08389v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08389v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08368v1",
+      "title": "T2VTree：以用户为中心的视觉分析助力智能体辅助思维到视频创作",
+      "authors": [
+        "Zhuoyun Zheng",
+        "Yu Dong",
+        "Gaorong Liang",
+        "Guan Li",
+        "Guihua Shan"
+      ],
+      "author_count": 9,
+      "summary": "生成模型已大幅拓展了视频生成能力，但实用的思维到视频创作仍是一个多阶段、多模态且决策密集的过程。然而现有工具要么将中间决策隐藏在重复试运行背后，要么暴露操作级工作流程，使得探索轨迹难以追溯。",
+      "categories": [
+        "cs.MM",
+        "cs.GR",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.MM",
+      "published": "2026-02-09T08:06:24+00:00",
+      "updated": "2026-02-09T08:06:24+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08368v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08368v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08254v1",
+      "title": "SynthAgent：一个用于真实患者模拟的多智能体大语言模型框架——以肥胖症与心理健康共病为例",
+      "authors": [
+        "Arman Aghaee",
+        "Sepehr Asgarian",
+        "Jouhyun Jeon"
+      ],
+      "author_count": 3,
+      "summary": "模拟高保真患者为研究复杂疾病提供了有力途径，同时解决了现实世界数据碎片化、存在偏见及受隐私限制的难题。在本研究中，我们推出SynthAgent——一个创新的多智能体系统框架，旨在构建伴有精神障碍共病的肥胖患者模型，涵盖……",
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-09T04:14:19+00:00",
+      "updated": "2026-02-09T04:14:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08254v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08254v1",
+      "comment": "Presented in AAAI 2026 Singapore at the workshop of Health Intelligence"
+    },
+    {
+      "id": "2602.08160v1",
+      "title": "选举席位偏差对政治极化的影响：一个计算视角",
+      "authors": [
+        "Daria Boratyn",
+        "Dariusz Stolicki"
+      ],
+      "author_count": 2,
+      "summary": "对政治极化成因的研究指向了从社会心理到经济技术的多重驱动因素。然而政治制度尤为关键——它既能加剧也能缓解极化现象，且相较于其他因素更易于重新构建。因此，我们分析...",
+      "categories": [
+        "physics.soc-ph",
+        "cs.MA"
+      ],
+      "primary_category": "physics.soc-ph",
+      "published": "2026-02-08T23:28:46+00:00",
+      "updated": "2026-02-08T23:28:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08160v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08160v1",
+      "comment": "18 pages, 24 figures"
+    },
+    {
+      "id": "2602.08104v1",
+      "title": "多智能体强化学习系统中的可解释性故障分析",
+      "authors": [
+        "Risal Shahriar Shefin",
+        "Debashis Gupta",
+        "Thai Le",
+        "Sarra Alqahtani"
+      ],
+      "author_count": 4,
+      "summary": "多智能体强化学习（MARL）正日益应用于安全关键领域，然而针对可解释故障检测与归因的方法仍显不足。我们提出了一种基于梯度的两阶段框架，为三大关键故障分析任务提供可解释的诊断方案：（1）检测真实初始...",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-08T19:55:26+00:00",
+      "updated": "2026-02-08T19:55:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08104v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08104v1",
+      "comment": null
+    }
+  ]
+}

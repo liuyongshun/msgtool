@@ -349,7 +349,7 @@ class MultiSourceScheduler:
     
     def _sync_rss_items_to_notion(self, items: list) -> None:
         """
-        将RSS items同步到Notion
+        将RSS items同步到Notion（受配置开关控制）
         
         Args:
             items: RSS items列表（字典格式）
@@ -357,15 +357,20 @@ class MultiSourceScheduler:
         try:
             # 根据配置判断是否开启 RSS 自动同步
             config_manager = get_config()
-            notion_config = getattr(config_manager, "_config", {}).get("notion_sync", {})
-            auto_sync = notion_config.get("auto_sync", {})
-            # 默认保持兼容：如果未配置 auto_sync.rss，则视为 True（沿用之前的行为）
-            if not auto_sync.get("rss", True):
-                logger.info("RSS Notion自动同步已在配置中关闭，跳过同步")
+            notion_cfg = config_manager.get_notion_config() or {}
+            auto_sync_cfg = notion_cfg.get("auto_sync", {})
+            rss_auto = bool(auto_sync_cfg.get("rss", False))
+            
+            if not rss_auto:
+                logger.debug("RSS Notion自动同步已在配置中关闭，跳过同步")
                 return
 
-            from .utils.notion_sync import get_notion_sync
-            from .models import ArticleItem
+            try:
+                from .utils.notion_sync import get_notion_sync
+                from .models import ArticleItem
+            except ImportError:
+                from src.msgskill.utils.notion_sync import get_notion_sync
+                from src.msgskill.models import ArticleItem
             
             notion_sync = get_notion_sync()
             if not notion_sync or not notion_sync.enabled:
@@ -406,8 +411,12 @@ class MultiSourceScheduler:
         items 可能是 ArticleItem 列表或 dict 列表
         """
         try:
-            from .utils.notion_sync import get_notion_sync
-            from .models import ArticleItem
+            try:
+                from .utils.notion_sync import get_notion_sync
+                from .models import ArticleItem
+            except ImportError:
+                from src.msgskill.utils.notion_sync import get_notion_sync
+                from src.msgskill.models import ArticleItem
             
             notion_sync = get_notion_sync()
             if not notion_sync or not notion_sync.enabled:
@@ -438,8 +447,12 @@ class MultiSourceScheduler:
         items 可能是 ArticleItem 列表或 dict 列表
         """
         try:
-            from .utils.notion_sync import get_notion_sync
-            from .models import ArticleItem
+            try:
+                from .utils.notion_sync import get_notion_sync
+                from .models import ArticleItem
+            except ImportError:
+                from src.msgskill.utils.notion_sync import get_notion_sync
+                from src.msgskill.models import ArticleItem
 
             notion_sync = get_notion_sync()
             if not notion_sync or not notion_sync.enabled:

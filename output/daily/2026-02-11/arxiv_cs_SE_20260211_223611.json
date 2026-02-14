@@ -1,0 +1,453 @@
+{
+  "source": "arXiv",
+  "category": "cs.SE",
+  "category_name": "Software Engineering",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:36:11.691244",
+  "papers": [
+    {
+      "id": "2602.10046v1",
+      "title": "工匠：能动性人工制品评估",
+      "authors": [
+        "Doehyun Baek",
+        "Michael Pradel"
+      ],
+      "author_count": 2,
+      "summary": "为确保研究结果的可复现性，软件工程领域已将成果评估确立为标准实践。然而，当前的人工评估流程耗时费力，因此仅能对所有论文中的部分样本进行一次性评估。为支持成果评估工作，我们推出了Artisan——一个基于大型语言模型的自动化评估系统……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T18:15:48+00:00",
+      "updated": "2026-02-10T18:15:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10046v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10046v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09944v1",
+      "title": "环境在循环中：基于LLM智能体的代码迁移新思考",
+      "authors": [
+        "Xiang Li",
+        "Zhiwei Fei",
+        "Ying Ma",
+        "Jerry Zhang",
+        "Sarro Federica"
+      ],
+      "author_count": 6,
+      "summary": "现代软件系统持续进行代码升级以增强功能、安全性和性能，而大型语言模型在代码迁移任务中展现出卓越能力。然而，尽管包含重构、API适配和依赖项更新的自动化代码迁移研究已取得进展……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T16:29:09+00:00",
+      "updated": "2026-02-10T16:29:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09944v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09944v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09942v1",
+      "title": "QEMI：一种基于输入等价性的量子软件栈测试框架",
+      "authors": [
+        "Junjie Luo",
+        "Shangzhou Xia",
+        "Fuyuan Zhang",
+        "Jianjun Zhao"
+      ],
+      "author_count": 4,
+      "summary": "随着量子算法和硬件的持续发展，确保量子软件栈的正确性变得日益重要。然而，由于预言机问题——即缺乏对预期程序行为的可靠基准真相——测试量子软件栈仍然充满挑战。现有的蜕变测试方法通常依赖于……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T16:26:34+00:00",
+      "updated": "2026-02-10T16:26:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09942v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09942v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09930v1",
+      "title": "JMigBench：评估大语言模型在源代码迁移（Java 8至Java 11）性能的基准测试",
+      "authors": [
+        "Nishil Amin",
+        "Zhiwei Fei",
+        "Xiang Li",
+        "Justyna Petke",
+        "He Ye"
+      ],
+      "author_count": 5,
+      "summary": "我们构建了一个基准来评估大型语言模型在源代码迁移任务中的表现，特别是将函数从Java 8升级到Java 11。我们首先从开源仓库收集了函数对数据集，但由于数据质量的限制，我们构建了一个涵盖八类已弃用API的精细数据集。",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T16:04:00+00:00",
+      "updated": "2026-02-10T16:04:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09930v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09930v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09921v1",
+      "title": "在伦理意识自主系统的需求工程过程中实现人类价值的操作化",
+      "authors": [
+        "Everaldo Silva Júnior",
+        "Lina Marsso",
+        "Ricardo Caldas",
+        "Marsha Chechik",
+        "Genaína Nunes Rodrigues"
+      ],
+      "author_count": 5,
+      "summary": "由于人类价值观具有模糊性、多元性和情境依赖性，将其与功能及适应性需求一同操作化仍然充满挑战。我们需要明确的表达方式，以支持在传统软件工程抽象之外，对价值冲突进行启发、分析和协商。在本研究中，我们...",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T15:54:25+00:00",
+      "updated": "2026-02-10T15:54:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09921v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09921v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09892v1",
+      "title": "沉浸于GitHub宇宙：将编码智能体提升至精通之境",
+      "authors": [
+        "Jiale Zhao",
+        "Guoxin Chen",
+        "Fanzhe Meng",
+        "Minghao Li",
+        "Jie Chen"
+      ],
+      "author_count": 14,
+      "summary": "在现实世界的软件工程任务中实现精通，根本上受制于大规模、高质量训练数据的稀缺。这类数据的扩展一直受到环境设置复杂性、单元测试生成以及问题陈述整理的制约。本文提出ScaleSWE，一种自动化的、沙盒化的多智能体...",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T15:30:19+00:00",
+      "updated": "2026-02-10T15:30:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09892v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09892v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09846v1",
+      "title": "能源公司采用生成式人工智能：探索挑战与应用案例",
+      "authors": [
+        "Malik Abdul Sami",
+        "Zeeshan Rasheed",
+        "Meri Olenius",
+        "Muhammad Waseem",
+        "Kai-Kristian Kemell"
+      ],
+      "author_count": 7,
+      "summary": "各组织正在探索生成式人工智能如何支持其运营工作与决策流程。本研究调查了一家能源公司的员工如何理解人工智能的采纳，并识别出人工智能及基于大语言模型的智能体工作流可协助日常工作的领域。研究通过十六场半结构化访谈在四周内收集数据...",
+      "categories": [
+        "cs.SE",
+        "cs.CY"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T14:50:26+00:00",
+      "updated": "2026-02-10T14:50:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09846v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09846v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09540v1",
+      "title": "SWE-Bench Mobile：大型语言模型代理能否开发出工业级移动应用？",
+      "authors": [
+        "Muxin Tian",
+        "Zhe Wang",
+        "Blair Yang",
+        "Zhenwei Tang",
+        "Kunlun Zhu"
+      ],
+      "author_count": 10,
+      "summary": "大型语言模型代理能否开发出工业级的移动应用？我们推出\\textbf{SWE-Bench Mobile}基准测试，通过源自实际iOS代码库的真实软件工程任务来评估编码代理能力。与现有专注于孤立问题或漏洞修复的基准不同，SWE-Bench Mobile全面捕捉了……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T08:51:11+00:00",
+      "updated": "2026-02-10T08:51:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09540v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09540v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09467v1",
+      "title": "探究被拒提案与源代码的关联：Go仓库的探索性研究",
+      "authors": [
+        "Sota Nakashima",
+        "Masanari Kondo",
+        "Mahmoud Alfadel",
+        "Aly Ahmad",
+        "Toshihiro Nakae"
+      ],
+      "author_count": 6,
+      "summary": "可追溯性链接是软件开发者的关键信息来源，它们连接着软件工件（例如将需求与相应的源代码联系起来）。在开源软件项目中，这类链接发挥着重要作用，尤其是在贡献内容（如GitHub议题）与对应源代码之间。通过这些链接……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T07:01:13+00:00",
+      "updated": "2026-02-10T07:01:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09467v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09467v1",
+      "comment": "11 pages, MSR2026 Technical Track"
+    },
+    {
+      "id": "2602.09464v1",
+      "title": "AlgoVeri：经典算法验证代码生成的基准对齐",
+      "authors": [
+        "Haoyu Zhao",
+        "Ziran Yang",
+        "Jiawei Li",
+        "Deyuan He",
+        "Zenan Li"
+      ],
+      "author_count": 9,
+      "summary": "验证编码指的是从严格规范中生成经过形式验证的代码。近期的人工智能模型在验证编码方面展现出潜力，但尚缺乏跨范式的统一评估方法。现有基准测试仅针对单一语言或工具（如Dafny、Verus和Lean），且各自涵盖差异显著的任务类型，因此其性能表现……",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T06:58:26+00:00",
+      "updated": "2026-02-10T06:58:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09464v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09464v1",
+      "comment": "32 pages"
+    },
+    {
+      "id": "2602.09447v1",
+      "title": "SWE-AGI：在自主智能体时代用MoonBit进行规范驱动软件构建的基准测试",
+      "authors": [
+        "Zhirui Zhang",
+        "Hongbo Zhang",
+        "Haoxiang Fei",
+        "Zhiyuan Bao",
+        "Yubin Chen"
+      ],
+      "author_count": 14,
+      "summary": "尽管大型语言模型（LLMs）已展现出卓越的编码能力，但其能否根据明确规范自主构建生产级软件仍是一个悬而未决的问题。我们推出SWE-AGI——一个用于评估端到端、基于规范构建软件系统的开源基准测试，该系统采用...语言编写。",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T06:31:47+00:00",
+      "updated": "2026-02-10T06:31:47+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09447v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09447v1",
+      "comment": "20 pages, 3 figures"
+    },
+    {
+      "id": "2602.09383v1",
+      "title": "BiasScope：迈向自动化检测LLM作为评判者评估中的偏见",
+      "authors": [
+        "Peng Lai",
+        "Zhihao Ou",
+        "Yong Wang",
+        "Longyue Wang",
+        "Jian Yang"
+      ],
+      "author_count": 7,
+      "summary": "LLM-as-a-Judge已在各类研究和实际应用中被广泛采纳，但其评估的稳健性与可靠性仍是关键问题。其面临的一个核心挑战在于偏见，目前研究主要聚焦于已知偏见及其对评估结果的影响，而对于自动化和系统化的探索仍待深入。",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T03:51:03+00:00",
+      "updated": "2026-02-10T03:51:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09383v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09383v1",
+      "comment": "Accepted to ICLR 2026"
+    },
+    {
+      "id": "2602.09311v1",
+      "title": "跨项目波动性：OpenStack生态系统的案例研究",
+      "authors": [
+        "Tao Xiao",
+        "Dong Wang",
+        "Shane McIntosh",
+        "Hideaki Hata",
+        "Yasutaka Kamei"
+      ],
+      "author_count": 5,
+      "summary": "自动化回归测试是现代软件开发的基石，常直接助力于代码审查与持续集成。然而部分测试存在不稳定性问题，其运行结果呈现非确定性波动。这种不稳定性会削弱开发者对测试结果的信任，浪费计算资源，并损害持续集成的可靠性。",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T01:03:28+00:00",
+      "updated": "2026-02-10T01:03:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09311v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09311v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09292v1",
+      "title": "面向软件工程受控实验的基于OSF的注册报告模板",
+      "authors": [
+        "Ana B. M. Bett",
+        "Thais S. Nepomuceno",
+        "Edson OliveiraJr",
+        "Maria Teresa Baldassarre",
+        "Valdemar V. Graciano Neto"
+      ],
+      "author_count": 6,
+      "summary": "多年来，经验软件工程（ESE）领域为改进实验方法做出了贡献。然而，在描述受控实验方面仍缺乏严谨性，这阻碍了研究的可重复性和透明度。为解决这些问题，经验软件工程界已开始探讨注册报告（RR）模式。注册报告通过预先登记……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T00:21:23+00:00",
+      "updated": "2026-02-10T00:21:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09292v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09292v1",
+      "comment": "Author version of paper accepted at the 3rd International Workshop on Methodological Issues with Empirical Studies in Software Engineering (WSESE@ICSE 2026)"
+    },
+    {
+      "id": "2602.09185v1",
+      "title": "AIDev：研究GitHub上的AI编码助手",
+      "authors": [
+        "Hao Li",
+        "Haoxiang Zhang",
+        "Ahmed E. Hassan"
+      ],
+      "author_count": 3,
+      "summary": "AI编程助手正通过执行功能开发、调试和测试等任务，迅速改变软件工程领域。尽管其影响力与日俱增，但研究界仍缺乏全面记录这些助手在实际项目中应用情况的数据集。为填补这一空白，我们推出了AIDev——一个专注于……的大规模数据集。",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-09T20:45:58+00:00",
+      "updated": "2026-02-09T20:45:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09185v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09185v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08949v1",
+      "title": "数字孪生与智能体人工智能在野火灾害管理中的应用：智能虚拟态势室",
+      "authors": [
+        "Mohammad Morsali",
+        "Siavash H. Khajavi"
+      ],
+      "author_count": 2,
+      "summary": "联合国指出，由于全球变暖，预计到2030年野火发生频率和强度将增加约14%，到2050年将增加30%，对生命、基础设施和生态系统构成严重威胁。传统的灾害管理框架依赖静态模拟和被动数据采集，限制了其应对能力……",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-09T17:44:52+00:00",
+      "updated": "2026-02-09T17:44:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08949v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08949v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08915v1",
+      "title": "人工智能编码助手对比：基于任务分层的拉取请求接受度分析",
+      "authors": [
+        "Giovanni Pinna",
+        "Jingzhi Gong",
+        "David Williams",
+        "Federica Sarro"
+      ],
+      "author_count": 4,
+      "summary": "人工智能编码助手的迅速普及正在改变软件开发实践，然而针对不同任务类型及长期效果的系统性比较研究仍然有限。本文通过实证研究对比了五种主流智能体（OpenAI Codex、GitHub Copilot、Devin、Cursor与Claude Code），重点分析了……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-09T17:14:46+00:00",
+      "updated": "2026-02-09T17:14:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08915v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08915v1",
+      "comment": "Accepted by MSR'26 Mining Challenge Track"
+    },
+    {
+      "id": "2602.08887v1",
+      "title": "DeepQuali：关于使用大型语言模型评估用户故事质量的初步研究结果",
+      "authors": [
+        "Adam Trendowicz",
+        "Daniel Seifert",
+        "Andreas Jedlitschka",
+        "Marcus Ciolkowski",
+        "Anton Strahilov"
+      ],
+      "author_count": 5,
+      "summary": "生成式人工智能（GAI），特别是大语言模型（LLMs），正越来越多地应用于软件工程领域，主要用于编码任务。然而，在需求工程——尤其是需求验证方面，GAI的应用仍较为有限。当前利用GAI处理需求的主要焦点集中在需求获取、转化等方面。",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-09T16:49:54+00:00",
+      "updated": "2026-02-09T16:49:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08887v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08887v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08866v1",
+      "title": "ArkEval：面向ArkTS的自动化代码修复基准测试与评估",
+      "authors": [
+        "Bang Xie",
+        "Senjian Zhang",
+        "Zhiyuan Peng",
+        "Wei Chen",
+        "Chenhao Ying"
+      ],
+      "author_count": 6,
+      "summary": "大型语言模型已经彻底改变了代码生成领域，为软件开发带来了前所未有的自动化水平。随着移动生态系统的演进，鸿蒙系统已成为需要强大开发工具支持的关键平台。鸿蒙生态系统的软件开发在很大程度上依赖于ArkTS——一种TypeScript的静态类型扩展语言。",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-09T16:28:29+00:00",
+      "updated": "2026-02-09T16:28:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08866v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08866v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08816v1",
+      "title": "开放人工智能供应链中的许可清洗：大规模许可证完整性审计",
+      "authors": [
+        "James Jewitt",
+        "Gopi Krishnan Rajbahadur",
+        "Hao Li",
+        "Bram Adams",
+        "Ahmed E. Hassan"
+      ],
+      "author_count": 5,
+      "summary": "MIT、Apache-2.0和BSD-3-Clause等宽松许可证在开源人工智能领域占据主导地位，这意味着模型、数据集和代码等成果可以自由使用、修改和重新分发。然而，这些许可证附带强制性要求：必须包含完整的许可证文本、提供版权声明，并保留上游署名信息，这些要求始终有效……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CY",
+        "cs.SE"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T15:51:36+00:00",
+      "updated": "2026-02-09T15:51:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08816v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08816v1",
+      "comment": "13 pages, 2 figures, 10 tables"
+    }
+  ]
+}

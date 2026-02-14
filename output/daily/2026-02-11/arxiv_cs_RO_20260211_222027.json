@@ -1,0 +1,447 @@
+{
+  "source": "arXiv",
+  "category": "cs.RO",
+  "category_name": "Robotics",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:27.435662",
+  "papers": [
+    {
+      "id": "2602.10116v1",
+      "title": "SAGE：面向具身AI的可扩展智能体三维场景生成",
+      "authors": [
+        "Hongchi Xia",
+        "Xuan Li",
+        "Zhaoshuo Li",
+        "Qianli Ma",
+        "Jiashu Xu"
+      ],
+      "author_count": 12,
+      "summary": "为具身智能体收集现实世界数据仍然成本高昂且不安全，这呼唤着可扩展、逼真且适配模拟器的三维环境。然而，现有的场景生成系统通常依赖基于规则或特定任务的流程，导致生成人工痕迹明显且物理无效的场景。我们推出SAGE——一个智能体框架，能够在给定...",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:59:55+00:00",
+      "updated": "2026-02-10T18:59:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10116v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10116v1",
+      "comment": "Project Page: https://nvlabs.github.io/sage"
+    },
+    {
+      "id": "2602.10114v1",
+      "title": "基于解耦MPPI的多臂运动规划",
+      "authors": [
+        "Dan Evron",
+        "Elias Goldsztejn",
+        "Ronen I. Brafman"
+      ],
+      "author_count": 3,
+      "summary": "针对高自由度机械臂的基于采样的运动规划算法近期取得进展，它们利用GPU实现了顶尖性能。这些算法可用于联合控制多个机械臂，但该方法的扩展性较差。为此，我们将基于采样的模型预测控制运动规划算法STORM进行扩展，使其能够处理多机械臂协同任务。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:59:51+00:00",
+      "updated": "2026-02-10T18:59:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10114v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10114v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10111v1",
+      "title": "在现实世界中学习敏捷四旋翼飞行",
+      "authors": [
+        "Yunfan Ren",
+        "Zhiyuan Zhu",
+        "Jiaxu Xing",
+        "Davide Scaramuzza"
+      ],
+      "author_count": 4,
+      "summary": "基于学习的控制器在敏捷四旋翼飞行中取得了令人瞩目的性能，但通常依赖于在仿真中进行大量训练，这需要精确的系统辨识以实现有效的仿真到现实迁移。然而，即使模型精确，固定策略在面对分布外场景时——从外部干扰到……——仍显得脆弱。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:59:28+00:00",
+      "updated": "2026-02-10T18:59:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10111v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10111v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10109v1",
+      "title": "ST4VLA：面向视觉-语言-动作模型的空间引导训练",
+      "authors": [
+        "Jinhui Ye",
+        "Fangjing Wang",
+        "Ning Gao",
+        "Junqiu Yu",
+        "Yangkun Zhu"
+      ],
+      "author_count": 12,
+      "summary": "大型视觉语言模型在多模态理解方面表现出色，但在扩展到具身任务时却存在不足——这类任务需要将指令转化为低层级的运动动作。我们推出ST4VLA，这是一个双系统视觉-语言-动作框架，通过空间引导训练将动作学习与视觉语言模型中的空间先验知识进行对齐。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:59:17+00:00",
+      "updated": "2026-02-10T18:59:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10109v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10109v1",
+      "comment": "Spatially Training for VLA, Accepted by ICLR 2026"
+    },
+    {
+      "id": "2602.10106v1",
+      "title": "EgoHumanoid：通过无机器人自我中心演示解锁野外移动操作能力",
+      "authors": [
+        "Modi Shi",
+        "Shijia Peng",
+        "Jin Chen",
+        "Haoran Jiang",
+        "Yinghui Li"
+      ],
+      "author_count": 9,
+      "summary": "人类演示提供了丰富的环境多样性并自然扩展规模，使其成为机器人遥操作的一个吸引人替代方案。尽管这一范式已推动了机械臂操控的发展，但其在更具挑战性、数据需求更高的人形机器人移动操控问题上的潜力，在很大程度上仍未得到探索。我们推出EgoHumanoid，这是首个……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:59:03+00:00",
+      "updated": "2026-02-10T18:59:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10106v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10106v1",
+      "comment": "Project page: https://opendrivelab.com/EgoHumanoid"
+    },
+    {
+      "id": "2602.10105v1",
+      "title": "DexImit：从单目人体视频中学习双手灵巧操作",
+      "authors": [
+        "Juncheng Mu",
+        "Sizhe Yang",
+        "Yiming Bao",
+        "Hojin Bae",
+        "Tianming Wei"
+      ],
+      "author_count": 9,
+      "summary": "数据稀缺从根本上限制了对灵巧双手操作的泛化能力，因为现实世界中灵巧手的数据收集既昂贵又劳动密集。人类操作视频作为操作知识的直接载体，为扩大机器人学习规模提供了巨大潜力。然而，巨大的形态差异……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:59:02+00:00",
+      "updated": "2026-02-10T18:59:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10105v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10105v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10101v1",
+      "title": "Robo3R：通过精准前馈三维重建增强机器人操控能力",
+      "authors": [
+        "Sizhe Yang",
+        "Linning Xu",
+        "Hao Li",
+        "Juncheng Mu",
+        "Jia Zeng"
+      ],
+      "author_count": 7,
+      "summary": "三维空间感知是通用机器人操作的基础，然而获取可靠、高质量的三维几何信息仍具挑战。深度传感器易受噪声和材料敏感性影响，而现有重建模型缺乏物理交互所需的精度与度量一致性。我们推出的Robo3R是一种……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:58:15+00:00",
+      "updated": "2026-02-10T18:58:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10101v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10101v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10098v1",
+      "title": "VLA-JEPA：通过潜在世界模型增强视觉-语言-动作模型",
+      "authors": [
+        "Jingwen Sun",
+        "Wenyao Zhang",
+        "Zekun Qi",
+        "Shaojie Ren",
+        "Zezhi Liu"
+      ],
+      "author_count": 9,
+      "summary": "在互联网规模的视频上预训练视觉-语言-动作（VLA）策略具有吸引力，但当前的潜在动作目标往往学偏了方向：它们仍固守于像素变化，而非与动作相关的状态转换，这使得它们容易受到外观偏差、干扰性运动和信息泄漏的影响。我们推出了VLA-JEPA，...",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:58:01+00:00",
+      "updated": "2026-02-10T18:58:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10098v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10098v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10093v1",
+      "title": "UniVTAC：视觉触觉操作数据生成、学习与基准测试的统一仿真平台",
+      "authors": [
+        "Baijun Chen",
+        "Weijie Wan",
+        "Tianxing Chen",
+        "Xianda Guo",
+        "Congsheng Xu"
+      ],
+      "author_count": 16,
+      "summary": "随着视觉-语言-动作（VLA）策略的发展，机器人操作技术取得了快速进步。然而，对于接触密集型的操作任务，视觉触觉感知至关重要，因为仅凭视觉难以稳健完成诸如插入等复杂操作。与此同时，在物理世界中获取大规模且可靠的触觉数据仍然面临挑战……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:57:00+00:00",
+      "updated": "2026-02-10T18:57:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10093v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10093v1",
+      "comment": "Website: https://univtac.github.io/"
+    },
+    {
+      "id": "2602.10069v1",
+      "title": "人形因素：人类世界中人工智能人形机器人的设计原则",
+      "authors": [
+        "Xinyuan Liu",
+        "Eren Sadikoglu",
+        "Ransalu Senanayake",
+        "Lixiao Huang"
+      ],
+      "author_count": 4,
+      "summary": "长期以来，人因研究一直致力于通过优化环境、工具和系统来适应人类的行为表现。然而，随着人形机器人开始进入我们的工作场所、家庭和公共空间，设计挑战也随之扩大。我们现在不仅要考虑人类因素，还必须考虑人形机器人因素，因为两者将共存并互动……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:34:43+00:00",
+      "updated": "2026-02-10T18:34:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10069v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10069v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10035v1",
+      "title": "一种用于安全反应式林业起重机导航的无碰撞防摇模型预测控制器",
+      "authors": [
+        "Marc-Philip Ecker",
+        "Christoph Fröhlich",
+        "Johannes Huemer",
+        "David Gruber",
+        "Bernhard Bischof"
+      ],
+      "author_count": 7,
+      "summary": "林业起重机在动态、非结构化的户外环境中作业，同时实现避障与负载摇摆控制对其安全运行至关重要。现有方法往往将这些问题割裂处理——要么沿预设的无碰撞路径专注于摇摆抑制，要么仅在全局层面进行避障操作……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:58:25+00:00",
+      "updated": "2026-02-10T17:58:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10035v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10035v1",
+      "comment": "Accepted at ICRA 2026"
+    },
+    {
+      "id": "2602.10032v1",
+      "title": "保证感知：通过可达性分析实现认证姿态估计",
+      "authors": [
+        "Tobias Ladner",
+        "Yasser Shoukry",
+        "Matthias Althoff"
+      ],
+      "author_count": 3,
+      "summary": "网络物理系统中的智能体正越来越多地被委以安全关键任务。确保这些智能体的安全通常需要为后续行动进行姿态定位。例如，可通过激光雷达传感器、摄像头以及GPS等外部服务的不同组合来获取姿态估计值。关键在于，在安全关键领域，姿态定位的准确性与可靠性直接关系到整个系统的安全运行。",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T17:55:49+00:00",
+      "updated": "2026-02-10T17:55:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10032v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10032v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10015v1",
+      "title": "RoboSubtaskNet：现实环境中人机技能传递的时序子任务分割",
+      "authors": [
+        "Dharmendra Sharma",
+        "Archit Sharma",
+        "John Reberio",
+        "Vaibhav Kesharwani",
+        "Peeyush Thakur"
+      ],
+      "author_count": 7,
+      "summary": "在长且未经剪辑的视频中，对细粒度子任务片段进行时序定位与分类，对于实现安全的人机协作至关重要。与通用活动识别不同，协作操作需要可直接由机器人执行的子任务标签。我们提出了RoboSubtaskNet——一种多阶段的人机子任务分割框架……",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:37:35+00:00",
+      "updated": "2026-02-10T17:37:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10015v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10015v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10013v1",
+      "title": "学习使用低成本触觉力控夹爪进行力调节操作",
+      "authors": [
+        "Xuhui Kang",
+        "Tongxuan Tian",
+        "Sung-Wook Lee",
+        "Binghao Huang",
+        "Yunzhu Li"
+      ],
+      "author_count": 6,
+      "summary": "成功操控许多日常物品，如薯片，需要精确的力度调节。若无法调控力度，可能导致任务失败或对物品造成不可逆的损伤。人类能够通过触觉反馈迅速调整力度，即使在短暂的物理接触中也能精准实现。我们的目标是让机器人也具备这种能力……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:36:33+00:00",
+      "updated": "2026-02-10T17:36:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10013v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10013v1",
+      "comment": "10 pages, 11 figures"
+    },
+    {
+      "id": "2602.10007v1",
+      "title": "拥堵匝道汇入中安全高效协同自动驾驶车道变更的协作安全屏障",
+      "authors": [
+        "Bharathkumar Hegde",
+        "Melanie Bouroche"
+      ],
+      "author_count": 2,
+      "summary": "在密集交通中换道对于联网自动驾驶车辆（CAV）而言是一项重大挑战。现有的换道控制器主要侧重于确保安全性或协同提升交通效率，但未能同时兼顾这两个相互冲突的目标。为此，我们提出了多智能体安全屏障（MASS）方案，旨在……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:30:09+00:00",
+      "updated": "2026-02-10T17:30:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10007v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10007v1",
+      "comment": "Accepted in IEEE IV 2026"
+    },
+    {
+      "id": "2602.09991v1",
+      "title": "声学无人机包裹投递检测",
+      "authors": [
+        "François Marcoux",
+        "François Grondin"
+      ],
+      "author_count": 2,
+      "summary": "近年来，无人机在监狱等管制区域被用于非法投递物品，已成为重大安全隐患。尽管大量研究集中于无人机探测与定位技术，但对投递事件的识别关注甚少。本研究首次提出基于声学特征的包裹投递识别方案……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:16:20+00:00",
+      "updated": "2026-02-10T17:16:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09991v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09991v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09973v1",
+      "title": "RoboInter：面向机器人操作的全方位中间表示套件",
+      "authors": [
+        "Hao Li",
+        "Ziqin Wang",
+        "Zi-han Ding",
+        "Shuai Yang",
+        "Yilun Chen"
+      ],
+      "author_count": 12,
+      "summary": "大型视觉语言模型（VLMs）的进展激发了人们对机器人操作中视觉-语言-动作（VLA）系统日益增长的兴趣。然而，现有的操作数据集仍存在构建成本高昂、高度依赖具体实体形态、覆盖范围与多样性不足等问题，从而制约了VLA模型的泛化能力。近期……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:01:54+00:00",
+      "updated": "2026-02-10T17:01:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09973v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09973v1",
+      "comment": "Published to ICLR 2026, 69 pages, 40 figures"
+    },
+    {
+      "id": "2602.09972v1",
+      "title": "Hydra-Nav：通过自适应双过程推理实现物体导航",
+      "authors": [
+        "Zixuan Wang",
+        "Huang Fang",
+        "Shaoan Wang",
+        "Yuanfei Luo",
+        "Heng Dong"
+      ],
+      "author_count": 7,
+      "summary": "尽管大型视觉语言模型在物体目标导航方面展现出潜力，但现有方法仍受限于较低的成功率与对未见物体的低效定位——这些缺陷主要源于时空推理能力的薄弱。与此同时，近期为基于视觉语言模型的智能体注入推理能力的尝试虽提升了成功率，却……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:00:16+00:00",
+      "updated": "2026-02-10T17:00:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09972v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09972v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09940v1",
+      "title": "指令转行动：通过机器人行动网络实现从人类指令到动作序列与执行的机器人操控",
+      "authors": [
+        "Archit Sharma",
+        "Dharmendra Sharma",
+        "John Rebeiro",
+        "Peeyush Thakur",
+        "Narendra Dhar"
+      ],
+      "author_count": 6,
+      "summary": "机器人由于计算和感知能力的限制，在现实环境中往往难以遵循自由形式的人类指令。我们通过一个轻量级、完全在设备上运行的流程来弥补这一差距，该流程能将自然语言指令转化为可靠的操作。我们的方法分为两个阶段：(i) 指令到动作模块（Instruct2Act），一个...",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T16:25:39+00:00",
+      "updated": "2026-02-10T16:25:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09940v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09940v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09893v1",
+      "title": "TaCo：异构触觉数据无损与有损编解码器基准测试",
+      "authors": [
+        "Zhengxue Cheng",
+        "Yan Zhao",
+        "Keyu Wang",
+        "Hengdi Zhang",
+        "Li Song"
+      ],
+      "author_count": 5,
+      "summary": "触觉传感对于具身智能至关重要，能在复杂环境中提供精细的感知与控制。然而，在严格带宽限制下对实时机器人应用至关重要的高效触觉数据压缩技术，目前仍未得到充分探索。其固有的异构性与时空复杂性……",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T15:30:44+00:00",
+      "updated": "2026-02-10T15:30:44+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09893v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09893v1",
+      "comment": "27 pages"
+    }
+  ]
+}

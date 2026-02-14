@@ -1,0 +1,1647 @@
+{
+  "source": "RSS Feeds",
+  "feeds_count": 28,
+  "total_items": 115,
+  "errors_count": 9,
+  "fetched_at": "2026-02-14T19:34:48.663437",
+  "feeds": {
+    "https://www.technologyreview.com/feed/": {
+      "url": "https://www.technologyreview.com/feed/",
+      "error": "HTTP error fetching feed: Server disconnected without sending a response.",
+      "items": [
+        {
+          "title": "ALS stole this musician’s voice. AI let him sing again.",
+          "link": "https://www.technologyreview.com/2026/02/13/1132913/als-stole-this-musicians-voice-ai-sing/",
+          "summary": "There are tears in the audience as Patrick Darling’s song begins to play. It’s a heartfelt song written for his great-grandfather, whom he never got the chance to meet. But this performance is emotional for another reason: It’s Darling’s first time on stage with his bandmates since he lost the ability to sing two years…",
+          "published": "Fri, 13 Feb 2026 17:17:28 +0000",
+          "author": "Jessica Hamzelou",
+          "tags": [
+            "Biotechnology and health",
+            "App"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "The Download: AI-enhanced cybercrime, and secure AI assistants",
+          "link": "https://www.technologyreview.com/2026/02/12/1132819/the-download-ai-enhanced-cybercrime-and-secure-ai-assistants/",
+          "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is already making online crimes easier. It could get much worse. Just as software engineers are using artificial intelligence to help write code and check for bugs, hackers are using these tools…",
+          "published": "Thu, 12 Feb 2026 13:10:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "AI is already making online crimes easier. It could get much worse.",
+          "link": "https://www.technologyreview.com/2026/02/12/1132386/ai-already-making-online-swindles-easier/",
+          "summary": "Anton Cherepanov is always on the lookout for something interesting. And in late August last year, he spotted just that. It was a file uploaded to VirusTotal, a site cybersecurity researchers like him use to analyze submissions for potential viruses and other types of malicious software, often known as malware. On the surface it seemed…",
+          "published": "Thu, 12 Feb 2026 11:00:00 +0000",
+          "author": "Rhiannon Williams",
+          "tags": [
+            "Artificial intelligence",
+            "App",
+            "Features and Investigations"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "What’s next for Chinese open-source AI",
+          "link": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
+          "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. The past year has marked a turning point for Chinese AI. Since DeepSeek released its R1 reasoning model in January 2025, Chinese companies have repeatedly delivered AI…",
+          "published": "Thu, 12 Feb 2026 10:00:00 +0000",
+          "author": "Caiwei Chen",
+          "tags": [
+            "Artificial intelligence",
+            "App",
+            "What's Next in Tech"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Is a secure AI assistant possible?",
+          "link": "https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/",
+          "summary": "AI agents are a risky business. Even when stuck inside the chatbox window, LLMs will make mistakes and behave badly. Once they have tools that they can use to interact with the outside world, such as web browsers and email addresses, the consequences of those mistakes become far more serious. That might explain why the…",
+          "published": "Wed, 11 Feb 2026 20:08:35 +0000",
+          "author": "Grace Huckins",
+          "tags": [
+            "Artificial intelligence",
+            "AI",
+            "App",
+            "Summary"
+          ],
+          "ai_score": 0.95
+        }
+      ],
+      "items_count": 5,
+      "updated": "2026-02-14T20:41:02.910095"
+    },
+    "https://openai.com/news/rss.xml": {
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News",
+      "description": "The OpenAI blog",
+      "link": "https://openai.com/news",
+      "updated": "2026-02-14T20:41:02.910120",
+      "items_count": 7,
+      "items": [
+        {
+          "title": "GPT-5.2在理论物理学领域取得了一项新成果。",
+          "link": "https://openai.com/index/new-result-theoretical-physics",
+          "summary": "一篇新预印本显示GPT-5.2提出了胶子振幅的新公式，后经OpenAI与学术合作者正式证明并验证。",
+          "published": "Fri, 13 Feb 2026 11:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Research"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "ChatGPT推出锁定模式与高风险标签功能",
+          "link": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+          "summary": "推出锁定模式与高风险标签功能于ChatGPT中，旨在助力组织有效防范提示注入与人工智能驱动的数据外泄风险。",
+          "published": "Fri, 13 Feb 2026 10:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Safety"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "超越速率限制：扩展对Codex和Sora的访问权限",
+          "link": "https://openai.com/index/beyond-rate-limits",
+          "summary": "OpenAI如何构建了一个结合速率限制、使用追踪和信用系统的实时访问体系，以支持对Sora和Codex的持续访问。",
+          "published": "Fri, 13 Feb 2026 09:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Engineering"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "推出GPT-5.3-Codex-Spark",
+          "link": "https://openai.com/index/introducing-gpt-5-3-codex-spark",
+          "summary": "推出GPT-5.3-Codex-Spark——我们首款实时编码模型。生成速度提升15倍，支持128k上下文，现面向ChatGPT Pro用户开放研究预览。",
+          "published": "Thu, 12 Feb 2026 10:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Product"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "驾驭工程：在代理优先的世界中利用Codex",
+          "link": "https://openai.com/index/harness-engineering",
+          "summary": "作者：技术团队成员瑞安·洛波波洛",
+          "published": "Wed, 11 Feb 2026 09:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Engineering"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "在ChatGPT中测试广告",
+          "link": "https://openai.com/index/testing-ads-in-chatgpt",
+          "summary": "OpenAI开始在ChatGPT中测试广告以支持免费访问，广告标识清晰、答案独立、隐私保护严密，且用户拥有控制权。",
+          "published": "Mon, 09 Feb 2026 11:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Company"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "将ChatGPT引入GenAI.mil。",
+          "link": "https://openai.com/index/bringing-chatgpt-to-genaimil",
+          "summary": "OpenAI政府版宣布在GenAI.mil平台部署定制版ChatGPT，为美国国防团队提供安全可靠的前沿人工智能。",
+          "published": "Mon, 09 Feb 2026 11:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://research.google/blog/rss/": {
+      "url": "https://research.google/blog/rss/",
+      "error": "请求超时: ",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910124"
+    },
+    "https://rsshub.app/huggingface/daily-papers": {
+      "url": "https://rsshub.app/huggingface/daily-papers",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910127"
+    },
+    "https://magazine.sebastianraschka.com/feed": {
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "title": "Ahead of AI",
+      "description": "Ahead of AI focuses on machine learning and AI research and is read by more than 150,000 researchers and practitioners who want to stay ahead in a rapidly evolving field.",
+      "link": "https://magazine.sebastianraschka.com",
+      "updated": "2026-02-14T20:41:02.910130",
+      "items_count": 0,
+      "items": []
+    },
+    "http://localhost:8878/anthropic/engineering": {
+      "url": "http://localhost:8878/anthropic/engineering",
+      "title": "Anthropic Engineering",
+      "description": "Latest engineering posts from Anthropic - Powered by RSSHub",
+      "link": "https://www.anthropic.com/engineering",
+      "updated": "2026-02-14T20:41:02.910135",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "量化智能体编码评估中的基础设施噪音",
+          "link": "https://www.anthropic.com/engineering/infrastructure-noise",
+          "summary": "诸如SWE-bench和Terminal-Bench这类智能体编程基准测试，常被用于比较前沿模型的软件工程能力——排行榜上的顶尖名次往往仅相差几个百分点。这些分数通常被视为衡量模型相对能力的精确指标，并日益影响着相关决策的制定……",
+          "published": null,
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "http://localhost:8878/meta/ai/blog": {
+      "url": "http://localhost:8878/meta/ai/blog",
+      "title": "AI at Meta Blog",
+      "description": "Stay up to date on the latest artificial intelligence news from Meta. - Powered by RSSHub",
+      "link": "https://ai.meta.com/blog/",
+      "updated": "2026-02-14T20:41:02.910138",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "降低政府成本并增加英国民众接触绿地的机会——DINO助力实现",
+          "link": "https://ai.meta.com/blog/forest-research-dino/",
+          "summary": "Meta的DINOv2模型正在助力全球植树造林工作。了解英国政府如何运用DINO技术降低绿化成本、拓展绿色空间覆盖。",
+          "published": "Sun, 08 Feb 2026 16:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Computer Vision"
+          ],
+          "ai_score": 0.8
+        }
+      ]
+    },
+    "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/": {
+      "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
+      "title": "Artificial intelligence - Microsoft Research",
+      "description": "",
+      "link": "https://www.microsoft.com/en-us/research/blog/category/intelligence/artificial-intelligence/",
+      "updated": "2026-02-14T20:41:02.910141",
+      "items_count": 0,
+      "items": []
+    },
+    "https://blog.langchain.dev/rss/": {
+      "url": "https://blog.langchain.dev/rss/",
+      "title": "LangChain Blog",
+      "description": "LangChain Blog",
+      "link": "https://blog.langchain.com/",
+      "updated": "2026-02-14T20:41:02.910148",
+      "items_count": 4,
+      "items": [
+        {
+          "title": "论代理框架与代理可观测性",
+          "link": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
+          "summary": "每当大语言模型有所进步，同一个问题便会重现：“我们还需要智能体框架吗？”这是个合理的问题。随着模型性能提升与演进，构建智能体的最佳方式也在变化，但本质上，智能体是围绕模型构建的系统。",
+          "published": "Fri, 13 Feb 2026 02:23:40 GMT",
+          "author": "LangChain Accounts",
+          "tags": [
+            "Harrison's Hot Takes"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "加入我们，共赴中断：智能体大会",
+          "link": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
+          "summary": "中断——由LangChain主办的智能体大会——是构建者们学习实际生产中有效方法的聚集地。今年，我们将汇聚超过1000名开发者、产品负责人、研究员和创始人，共同探讨智能体的未来趋势及其实现路径。",
+          "published": "Thu, 12 Feb 2026 17:42:03 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "代理连接沙盒的两种模式",
+          "link": "https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/",
+          "summary": "感谢Witan Labs的Nuno Campos、E2B的Tomas Beran与Mikayel Harutyunyan、Runloop的Jonathan Wall，以及Zo Computer的Ben Guo的审阅与建议。简而言之：越来越多的智能体需要一个工作空间：即一台可供其运行代码、安装软件包并访问的计算机。",
+          "published": "Tue, 10 Feb 2026 16:32:35 GMT",
+          "author": "Harrison Chase",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "LangSmith现已登陆谷歌云市场平台。",
+          "link": "https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/",
+          "summary": "今天，我们激动地宣布，LangChain的智能体工程平台LangSmith现已登陆Google Cloud Marketplace。Google Cloud客户现可通过其现有账户便捷获取LangSmith，实现账单无缝对接、简化采购流程，并可直接使用现有Google Cloud额度进行结算……",
+          "published": "Tue, 10 Feb 2026 02:47:44 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.8
+        }
+      ]
+    },
+    "https://medium.com/feed/llamaindex-blog": {
+      "url": "https://medium.com/feed/llamaindex-blog",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910151"
+    },
+    "https://techcrunch.com/category/artificial-intelligence/feed/": {
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "description": "Startup and Technology News",
+      "link": "https://techcrunch.com/category/artificial-intelligence/",
+      "updated": "2026-02-14T20:41:02.910176",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "爱彼迎计划将人工智能功能融入搜索、发现与支持服务中。",
+          "link": "https://techcrunch.com/2026/02/13/airbnb-plans-to-bake-in-ai-features-for-search-discovery-and-support/",
+          "summary": "爱彼迎首席执行官布莱恩·切斯基表示，公司希望扩大大型语言模型在客户发掘、服务支持及工程开发领域的应用。",
+          "published": "Sat, 14 Feb 2026 02:40:42 +0000",
+          "author": "Ivan Mehta",
+          "tags": [
+            "AI",
+            "Apps",
+            "Airbnb",
+            "travel apps",
+            "AI search"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "爱彼迎表示，其在美国和加拿大的客户服务已有三分之一由人工智能处理。",
+          "link": "https://techcrunch.com/2026/02/13/airbnb-says-a-third-of-its-customer-support-is-now-handled-by-ai-in-the-u-s-and-canada/",
+          "summary": "爱彼迎即将推出一款不仅能为你搜索、还能\"了解你\"的应用程序。首席执行官布莱恩·切斯基表示：\"它将帮助客人规划整个旅程，帮助房东更好地经营业务，并帮助公司更高效地规模化运营。",
+          "published": "Fri, 13 Feb 2026 22:12:26 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "Commerce",
+            "ai agent",
+            "airnb"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "顶尖人才为何纷纷离开OpenAI与xAI",
+          "link": "https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/",
+          "summary": "过去几周，人工智能公司正经历人才流失潮。xAI半数创始团队成员已离职——有人主动离开，有人因“架构重组”而离去；与此同时，OpenAI也面临内部动荡，从使命对齐团队解散，到反对“成人模式”功能的政策主管遭解雇。敬请关注TechCrunch的深度报道……",
+          "published": "Fri, 13 Feb 2026 21:00:00 +0000",
+          "author": "Theresa Loconsolo",
+          "tags": [
+            "AI",
+            "Startups",
+            "Equity",
+            "fusion startup",
+            "humanoid robotics"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "OpenAI停止了对易受奉承影响的GPT-4o模型的访问权限。",
+          "link": "https://techcrunch.com/2026/02/13/openai-removes-access-to-sycophancy-prone-gpt-4o-model/",
+          "summary": "该模型以其过度谄媚的特性而闻名，并在多起涉及用户与聊天机器人不健康关系的诉讼中扮演了角色。",
+          "published": "Fri, 13 Feb 2026 18:10:00 +0000",
+          "author": "Amanda Silberling",
+          "tags": [
+            "AI",
+            "ChatGPT",
+            "gpt-4o",
+            "In Brief",
+            "OpenAI"
+          ],
+          "ai_score": 1.0
+        },
+        {
+          "title": "人工智能倦怠、数十亿美元的赌注以及硅谷的爱泼斯坦问题",
+          "link": "https://techcrunch.com/podcast/ai-burnout-billion-dollar-bets-and-silicon-valleys-epstein-problem/",
+          "summary": "过去几周，人工智能公司正经历人才流失潮。xAI半数创始团队成员已离开公司——有人主动离职，有人遭遇“架构重组”；而OpenAI自身也面临动荡，从使命对齐团队解散，到反对“成人模式”功能的政策主管被解雇。本期节目将聚焦……",
+          "published": "Fri, 13 Feb 2026 18:03:32 +0000",
+          "author": "Anthony Ha, Kirsten Korosec, Sean O'Kane, Theresa Loconsolo",
+          "tags": [
+            "AI",
+            "Robotics",
+            "Startups",
+            "Venture",
+            "apptronik"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "Anthropic在超级碗期间通过嘲讽AI的广告将Claude应用推入前十。",
+          "link": "https://techcrunch.com/2026/02/13/anthropics-super-bowl-ads-mocking-ai-with-ads-helped-push-claudes-app-into-the-top-10/",
+          "summary": "数据显示，Anthropic公司的超级碗广告，加上其近期发布的Opus 4.6新模型，成功吸引了人们对Claude应用的关注，并突显了其与ChatGPT的关键差异。",
+          "published": "Fri, 13 Feb 2026 17:16:27 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "Anthropic",
+            "Claude",
+            "Super Bowl ads"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "埃隆·马斯克暗示近期xAI离职潮实为被动离职，而非主动跳槽。",
+          "link": "https://techcrunch.com/2026/02/13/elon-musk-suggests-spate-of-xai-exits-have-been-push-not-pull/",
+          "summary": "过去一周，至少有九名工程师宣布离开xAI公司，其中包括两位联合创始人，此举引发了网络上的种种猜测，并在争议日益加剧的背景下，引发了人们对马斯克旗下人工智能公司稳定性的质疑。",
+          "published": "Fri, 13 Feb 2026 16:11:01 +0000",
+          "author": "Rebecca Bellan",
+          "tags": [
+            "AI",
+            "Elon Musk",
+            "Exclusive",
+            "X",
+            "xAI"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "Cohere公司2.4亿美元年收入为IPO奠定基础",
+          "link": "https://techcrunch.com/2026/02/13/coheres-240m-year-sets-stage-for-ipo/",
+          "summary": "Cohere在2025年实现年经常性收入突破2.4亿美元，凸显出企业市场对人工智能的强劲需求。这家加拿大初创公司在面对OpenAI和Anthropic日益激烈的竞争之际，正为潜在的首次公开募股做好准备。",
+          "published": "Fri, 13 Feb 2026 15:03:10 +0000",
+          "author": "Rebecca Bellan",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "Cohere",
+            "Enterprise AI",
+            "In Brief"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "据报道，Meta计划为其智能眼镜增加面部识别功能。",
+          "link": "https://techcrunch.com/2026/02/13/meta-plans-to-add-facial-recognition-to-its-smart-glasses-report-claims/",
+          "summary": "该功能内部代号为“姓名标签”，能让智能眼镜佩戴者通过Meta的人工智能助手识别他人并获取相关信息。",
+          "published": "Fri, 13 Feb 2026 14:58:39 +0000",
+          "author": "Aisha Malik",
+          "tags": [
+            "AI",
+            "Hardware",
+            "Privacy",
+            "AR",
+            "In Brief"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "在令人失望的财报中，Pinterest声称其搜索量已超过ChatGPT。",
+          "link": "https://techcrunch.com/2026/02/12/amid-disappointing-earnings-pinterest-claims-it-sees-more-searches-than-chatgpt/",
+          "summary": "Pinterest财报不及预期股价大跌，用户增长超预期成唯一亮点。",
+          "published": "Thu, 12 Feb 2026 23:26:56 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Social",
+            "commerce",
+            "PINs",
+            "Pinterest"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "在人工智能时代，IBM将吸纳你的入门级人才。",
+          "link": "https://techcrunch.com/2026/02/12/ibm-will-hire-your-entry-level-talent-in-the-age-of-ai/",
+          "summary": "IBM计划在2026年将其在美国的初级岗位招聘数量增加两倍，但这些岗位的工作内容将与往年有所不同。",
+          "published": "Thu, 12 Feb 2026 23:23:17 +0000",
+          "author": "Rebecca Szkutak",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "IBM",
+            "hiring",
+            "In Brief"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "马斯克需要为SpaceX和xAI制定新的愿景，他最终选择了月球基地阿尔法。",
+          "link": "https://techcrunch.com/2026/02/12/musk-needed-a-new-vision-for-spacex-and-xai-he-landed-on-moonbase-alpha/",
+          "summary": "我真的很想在月球上看到一个质量加速器，将人工智能卫星发射到深空。",
+          "published": "Thu, 12 Feb 2026 22:10:55 +0000",
+          "author": "Tim Fernholz",
+          "tags": [
+            "AI",
+            "Space",
+            "Elon Musk",
+            "moon base",
+            "SpaceX"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "Didero获3000万美元融资，推动制造业采购迈向“智能代理”自动化。",
+          "link": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
+          "summary": "Didero作为一层智能AI代理，部署于企业现有ERP系统之上，扮演协调者角色，它能读取接收到的通信信息，并自动执行必要的更新与任务。",
+          "published": "Thu, 12 Feb 2026 20:31:47 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "AI",
+            "Startups",
+            "agentic ai",
+            "Didero",
+            "manufacturing"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Anthropic在G轮融资中再获300亿美元，估值达到3800亿美元。",
+          "link": "https://techcrunch.com/2026/02/12/anthropic-raises-another-30-billion-in-series-g-with-a-new-value-of-380-billion/",
+          "summary": "这家AI初创公司获得资金注入之际，正与竞争对手OpenAI争夺客户和文化关注度。",
+          "published": "Thu, 12 Feb 2026 20:18:37 +0000",
+          "author": "Lucas Ropek",
+          "tags": [
+            "AI",
+            "Anthropic",
+            "Claude",
+            "Founders Fund"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Spotify表示，自去年十二月以来，其最优秀的开发者一行代码都未曾编写，这得益于人工智能的助力。",
+          "link": "https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/",
+          "summary": "Spotify将开发速度的提升归功于Claude Code及其内部人工智能系统Honk。",
+          "published": "Thu, 12 Feb 2026 18:30:12 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Media & Entertainment",
+            "claude code",
+            "Generative AI",
+            "Music"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "OpenAI Codex的新版本由一款新型专用芯片驱动。",
+          "link": "https://techcrunch.com/2026/02/12/a-new-version-of-openais-codex-is-powered-by-a-new-dedicated-chip/",
+          "summary": "OpenAI将这款新的编码工具称为与这家芯片制造商合作关系的\"首个里程碑\"。",
+          "published": "Thu, 12 Feb 2026 18:00:00 +0000",
+          "author": "Lucas Ropek",
+          "tags": [
+            "AI",
+            "Cerebras",
+            "codex",
+            "Codex-Spark",
+            "OpenAI"
+          ],
+          "ai_score": 1.0
+        },
+        {
+          "title": "xAI在全员公开会议上阐述了星际探索的宏伟蓝图。",
+          "link": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
+          "summary": "周三，xAI罕见地将长达45分钟的全员演示发布到X平台，使其广泛传播。",
+          "published": "Wed, 11 Feb 2026 23:29:08 +0000",
+          "author": "Russell Brandom",
+          "tags": [
+            "AI",
+            "Elon Musk",
+            "xAI"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "消息人士称，人工智能推理初创公司Modal Labs正洽谈以25亿美元估值进行融资。",
+          "link": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
+          "summary": "据消息人士透露，General Catalyst正就领投这家成立四年的初创企业本轮融资进行洽谈。",
+          "published": "Wed, 11 Feb 2026 22:48:35 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "Enterprise",
+            "Startups",
+            "AI",
+            "Exclusive",
+            "General Catalyst"
+          ],
+          "ai_score": 1.0
+        },
+        {
+          "title": "OpenAI解散使命对齐团队。",
+          "link": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
+          "summary": "该团队的负责人被赋予了新的角色，成为OpenAI的首席未来学家，而其他团队成员则被重新分配到公司的各个部门。",
+          "published": "Wed, 11 Feb 2026 21:57:18 +0000",
+          "author": "Lucas Ropek",
+          "tags": [
+            "AI",
+            "ai safety",
+            "ChatGPT",
+            "OpenAI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "据报道，苹果Siri的改造计划再次推迟。",
+          "link": "https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/",
+          "summary": "虽然新版Siri原定于三月随即将发布的iOS 26.4更新一同推出，但现在这些改动预计将逐步缓慢推进，据称部分功能将推迟至五月iOS更新，甚至可能延后到九月iOS 27发布时。",
+          "published": "Wed, 11 Feb 2026 21:19:46 +0000",
+          "author": "Amanda Silberling",
+          "tags": [
+            "AI",
+            "Apple",
+            "In Brief",
+            "siri"
+          ],
+          "ai_score": 0.8
+        }
+      ]
+    },
+    "https://www.sequoiacap.com/feed/": {
+      "url": "https://www.sequoiacap.com/feed/",
+      "title": "Sequoia Capital",
+      "description": "Sequoia Capital",
+      "link": "https://sequoiacap.com/",
+      "updated": "2026-02-14T20:41:02.910180",
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.thoughtworks.com/rss/insights.xml": {
+      "url": "https://www.thoughtworks.com/rss/insights.xml",
+      "title": "Thoughtworks Insights",
+      "description": "A global technology consultancy that integrates strategy, design and engineering to drive digital innovation",
+      "link": "https://www.thoughtworks.com/insights",
+      "updated": "2026-02-14T20:41:02.910182",
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.gartner.com/en/newsroom/rss": {
+      "url": "https://www.gartner.com/en/newsroom/rss",
+      "title": "Gartner Press Releases",
+      "description": "Gartner Press Release Feed",
+      "link": "https://www.gartner.com/en/newsroom",
+      "updated": "2026-02-14T20:41:02.910191",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "高德纳预测到2028年人工智能配置错误将导致二十国集团国家关键基础设施瘫痪",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-12-gartner-predicts-that-by-2028-misconfigured-ai-will-shut-down-national-critical-infrastructure-in-a-g20-country?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "商业与技术洞察公司高德纳预测，到2028年，网络物理系统中人工智能的配置错误将导致某个二十国集团国家的关键国家基础设施瘫痪。",
+          "published": "Thu, 12 Feb 2026 08:28:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "高德纳研究显示首席财务官2026年预算规划将优先投向增长职能、技术与人工智能领域",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-10-gartner-research-reveals-cfos-budget-plans-prioritize-grotwth-functions-tech-and-ai-in-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "元描述",
+          "published": "Mon, 9 Feb 2026 21:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "Gartner预测2026年全球主权云基础设施即服务支出将达800亿美元",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-09-gartner-says-worldwide-sovereign-cloud-iaas-spending-will-total-us-dollars-80-billion-in-2026?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "据商业与技术洞察公司高德纳预测，全球主权云基础设施即服务支出预计将在2026年达到800亿美元，较2025年增长35.6%。",
+          "published": "Mon, 9 Feb 2026 08:30:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.6
+        }
+      ]
+    },
+    "https://www.producthunt.com/feed?category=artificial_intelligence": {
+      "url": "https://www.producthunt.com/feed?category=artificial_intelligence",
+      "title": "Product Hunt — The best new products, every day",
+      "description": "",
+      "link": "https://www.producthunt.com",
+      "updated": "2026-02-14T20:41:02.910198",
+      "items_count": 4,
+      "items": [
+        {
+          "title": "Cline CLI 2.0",
+          "link": "https://www.producthunt.com/products/cline-4",
+          "summary": "并行代理与无头CI/CD在您的终端讨论 | 链接",
+          "published": "2026-02-13T22:32:22-08:00",
+          "author": "Zac Zuo",
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "洛文AI疗法",
+          "link": "https://www.producthunt.com/products/lovon",
+          "summary": "说出来，心情会更好 讨论 | 链接",
+          "published": "2026-02-09T14:37:17-08:00",
+          "author": "Anton Ponikarovskii",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "GLM-5",
+          "link": "https://www.producthunt.com/products/z-ai",
+          "summary": "长视野智能体工程的开源权重模型 讨论 | 链接",
+          "published": "2026-02-11T17:38:01-08:00",
+          "author": "Zac Zuo",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "GPT-5.3-Codex-Spark",
+          "link": "https://www.producthunt.com/products/openai",
+          "summary": "Codex讨论中用于实时编码的超快速模型 | 链接",
+          "published": "2026-02-12T11:26:35-08:00",
+          "author": "Chris Messina",
+          "tags": [],
+          "ai_score": 0.98
+        }
+      ]
+    },
+    "https://huggingface.co/blog/feed.xml": {
+      "url": "https://huggingface.co/blog/feed.xml",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910201"
+    },
+    "https://sspai.com/feed": {
+      "url": "https://sspai.com/feed",
+      "title": "少数派",
+      "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
+      "link": "https://sspai.com",
+      "updated": "2026-02-14T20:41:02.910205",
+      "items_count": 2,
+      "items": [
+        {
+          "title": "派早报：智谱上线并开源 GLM-5 模型、网信办开展春节清朗行动",
+          "link": "https://sspai.com/post/106337",
+          "summary": "字节跳动发布视频创作模型 Seedance 2.0，小米 Tag 追踪器已在欧洲市场上市。 查看全文",
+          "published": "Fri, 13 Feb 2026 08:30:55 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "普通人更要多动手：聊聊我把 Claude Code 变成个人助手后的那些事",
+          "link": "https://sspai.com/post/105331",
+          "summary": "下载一个 Claude Code 或者 Cursor，把你的想法告诉 AI。你会发现，原来自己能做到的事情，比想象中多得多。 查看全文",
+          "published": "Thu, 12 Feb 2026 11:31:21 +0800",
+          "author": "愚人哲",
+          "tags": [],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://arstechnica.com/feed/": {
+      "url": "https://arstechnica.com/feed/",
+      "title": "Ars Technica",
+      "description": "Serving the Technologist since 1998. News, reviews, and analysis.",
+      "link": "https://arstechnica.com",
+      "updated": "2026-02-14T20:41:02.910211",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "借助人工智能，加州海滨小镇扩大了对自行车道障碍物的搜寻范围。",
+          "link": "https://arstechnica.com/tech-policy/2026/02/santa-monica-deploys-ai-powered-parking-cameras-to-protect-bike-lanes/",
+          "summary": "海登AI的摄像头将扫描7辆城市车辆的违规行为。",
+          "published": "Fri, 13 Feb 2026 23:03:08 +0000",
+          "author": "Cyrus Farivar",
+          "tags": [
+            "AI",
+            "Policy",
+            "bike lanes",
+            "cameras",
+            "Hayden AI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "如果乘客下车后不关机器人出租车的车门怎么办？试试DoorDash。",
+          "link": "https://arstechnica.com/cars/2026/02/what-if-riders-dont-close-a-robotaxi-door-after-a-ride-try-doordash/",
+          "summary": "机器人出租车难逃零工经济之困，Waymo正试图解决这一人力难题。",
+          "published": "Fri, 13 Feb 2026 15:32:01 +0000",
+          "author": "Jonathan M. Gitlin",
+          "tags": [
+            "Cars",
+            "doordash",
+            "robotaxis",
+            "waymo"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "OpenAI凭借盘状芯片上异常快速的编码模型绕开英伟达。",
+          "link": "https://arstechnica.com/ai/2026/02/openai-sidesteps-nvidia-with-unusually-fast-coding-model-on-plate-sized-chips/",
+          "summary": "OpenAI的新款GPT-5.3-Codex-Spark编程速度比前代产品快15倍。",
+          "published": "Thu, 12 Feb 2026 22:56:02 +0000",
+          "author": "Benj Edwards",
+          "tags": [
+            "AI",
+            "Biz & IT",
+            "AI agents",
+            "AI chips",
+            "AI coding"
+          ],
+          "ai_score": 1.0
+        }
+      ]
+    },
+    "https://www.qbitai.com/feed": {
+      "url": "https://www.qbitai.com/feed",
+      "title": "量子位",
+      "description": "追踪人工智能新趋势，报道科技行业新突破",
+      "link": "https://www.qbitai.com",
+      "updated": "2026-02-14T20:41:02.910224",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "全国首批！商汤大装置SenseCore获软件供应链安全能力评估证书",
+          "link": "https://www.qbitai.com/2026/02/380375.html",
+          "summary": "全国首批通过该项认证的企业",
+          "published": "Sat, 14 Feb 2026 08:53:03 +0000",
+          "author": "十三",
+          "tags": [
+            "资讯",
+            "商汤",
+            "大装置",
+            "软件供应链"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "「斯坦福AI小镇」创业即获投1亿美元！李飞飞卡帕西都投了",
+          "link": "https://www.qbitai.com/2026/02/380347.html",
+          "summary": "要帮人类预测决策风险",
+          "published": "Sat, 14 Feb 2026 08:46:19 +0000",
+          "author": "闻乐",
+          "tags": [
+            "资讯",
+            "AI小镇",
+            "AI智能体"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "整整21个月，豆包大模型正式进入2.0时代！",
+          "link": "https://www.qbitai.com/2026/02/380355.html",
+          "summary": "拿下视觉最高分",
+          "published": "Sat, 14 Feb 2026 08:41:53 +0000",
+          "author": "十三",
+          "tags": [
+            "活动",
+            "首页轮播",
+            "字节跳动",
+            "豆包2.0",
+            "豆包大模型"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "情人节最硬核“Kiss”！中国AI突破300年亲吻数难题，连刷多维度纪录",
+          "link": "https://www.qbitai.com/2026/02/380235.html",
+          "summary": "数学结构领域罕见的多维度、系统性突破",
+          "published": "Sat, 14 Feb 2026 08:37:47 +0000",
+          "author": "闻乐",
+          "tags": [
+            "资讯",
+            "AI数学",
+            "上智院",
+            "亲吻数问题"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "人形机器人放无人机，还能上天入海！有点过于赛博了吧",
+          "link": "https://www.qbitai.com/2026/02/380236.html",
+          "summary": "中国电信 TeleAI 不一样的具身智能路线",
+          "published": "Sat, 14 Feb 2026 08:26:26 +0000",
+          "author": "十三",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "TeleAI",
+            "中国电信",
+            "人形机器人"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "GLM-5真够顶的：超24小时自己跑代码，700次工具调用、800次切上下文！",
+          "link": "https://www.qbitai.com/2026/02/380216.html",
+          "summary": "前两天的热度还是保守了",
+          "published": "Sat, 14 Feb 2026 08:14:45 +0000",
+          "author": "十三",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "GLM-5",
+            "开源AI",
+            "智谱"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "春节AI大战杀疯了 千问突然宣布再发3天25元免单卡，每人可领10张",
+          "link": "https://www.qbitai.com/2026/02/380204.html",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 08:04:57 +0000",
+          "author": "量子位的朋友们",
+          "tags": [
+            "资讯",
+            "千问"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "GPT-5.2改写粒子物理教科书！人类手算32项算不出，AI一行公式搞定",
+          "link": "https://www.qbitai.com/2026/02/380154.html",
+          "summary": "关键公式由GPT-5.2 Pro猜出，随后被一个OpenAI内部模型连续思考超过12小时证明成立",
+          "published": "Sat, 14 Feb 2026 04:23:51 +0000",
+          "author": "梦晨",
+          "tags": [
+            "资讯",
+            "ChatGPT"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "万亿思考模型新速度！蚂蚁开源Ring-2.5-1T：IMO金牌水平，强；混合线性架构，快！",
+          "link": "https://www.qbitai.com/2026/02/380131.html",
+          "summary": "擅长数学逻辑推理和长程自主执行",
+          "published": "Sat, 14 Feb 2026 03:20:23 +0000",
+          "author": "克雷西",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "蚂蚁"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "外卖员“活久见”：跑腿1km，帮Waymo关了个门",
+          "link": "https://www.qbitai.com/2026/02/380166.html",
+          "summary": "冲刺年底每分钟接99单",
+          "published": "Sat, 14 Feb 2026 07:14:01 +0000",
+          "author": "杰西卡",
+          "tags": [
+            "智能车参考",
+            "Waymo",
+            "无人车往哪里开？",
+            "车圈最新认知"
+          ],
+          "ai_score": 0.7
+        }
+      ]
+    },
+    "https://www.jiqizhixin.com/rss": {
+      "url": "https://www.jiqizhixin.com/rss",
+      "title": "机器之心",
+      "description": "机器之心",
+      "link": "https://www.jiqizhixin.com/",
+      "updated": "2026-02-14T20:41:02.910238",
+      "items_count": 12,
+      "items": [
+        {
+          "title": "字节跳动发布豆包大模型2.0，主打真实世界复杂任务执行力",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-9",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:55:00 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.98
+        },
+        {
+          "title": "Agent、图像、视频全是大版本升级：春晚还没开，豆包AI就火了",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-8",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:51:00 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "这个情人节，AI深吻Math！国产RL系统多维突破300年亲吻数难题",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-7",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:43:00 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "多模态Deep Research，终于有了「可核验」的评测标准",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-6",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:37:00 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.92
+        },
+        {
+          "title": "世界模型原生新一代范式！极佳视界斩获全球第一后，GigaBrain-0.5M*再进化",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-5",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:34:00 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.93
+        },
+        {
+          "title": "「上下文学习」之后，腾讯混元第二篇公开研究：精准定位RLVR训练崩溃的“罪魁祸首”Token",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-4",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:29:01 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.91
+        },
+        {
+          "title": "《西部世界》开始加载，「斯坦福小镇」团队创业，李飞飞、Karpathy都投了",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-3",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 16:01:30 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "情人节暴击！下跪求婚的可以是机器人了",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14-2",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 15:56:53 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "AI在多维度刷新亲吻数纪录！中国团队回答牛顿300年数学之问",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-14",
+          "summary": "",
+          "published": "Sat, 14 Feb 2026 12:13:00 +0800",
+          "author": "ScienceAI",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "全球首个AI原生社交平台「Teamily AI」硅谷亮相，开启「人机共生」社交新元年",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-13-11",
+          "summary": "",
+          "published": "Fri, 13 Feb 2026 17:23:01 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.88
+        },
+        {
+          "title": "ICLR 2026 | 异常需要定义！中传团队提出开放世界视频异常检测新范式",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-13-10",
+          "summary": "",
+          "published": "Fri, 13 Feb 2026 17:10:31 +0800",
+          "author": "机器之心",
+          "tags": [],
+          "ai_score": 0.87
+        },
+        {
+          "title": "SSI-Bench：首个「约束流形」空间智能基准，把大模型拉回真实3D结构世界",
+          "link": "https://www.jiqizhixin.com/articles/2026-02-13-9",
+          "summary": "",
+          "published": "Fri, 13 Feb 2026 17:02:18 +0800",
+          "author": "新闻资讯",
+          "tags": [],
+          "ai_score": 0.89
+        }
+      ]
+    },
+    "http://localhost:8878/huxiu/article": {
+      "url": "http://localhost:8878/huxiu/article",
+      "title": "全部-虎嗅网",
+      "description": "聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。 - Powered by RSSHub",
+      "link": "https://www.huxiu.com/article",
+      "updated": "2026-02-14T20:41:02.910244",
+      "items_count": 4,
+      "items": [
+        {
+          "title": "3名华人联合创始人接连出走，马斯克的xAI发生了什么",
+          "link": "https://www.huxiu.com/article/4835253.html",
+          "summary": "xAI的人事变动不再是零星的流失，已然演变成了一场引发硅谷震动的“离职潮”。综合外媒报道，2月10日到11日期间，xAI两名华人创始人——吴宇怀（Tony Wu）和吉米·巴（Jimmy Ba）先后对外宣布离职。这意味着短短一个月内，xAI已经损失3名华人联合创始人。不过，马斯克本人随后解释称，公司进行“重组”...... 本文来自微信公众号： 观网财经 ，作者：万肇生 xAI的人事变动不再是零星的流失，已然演变成了一场引发硅谷震动的“离职潮”。 综合外媒报道，2月10日到11日期间，xAI两名华人创始人——吴宇怀（Tony Wu）和吉米·巴（Jimmy Ba）先后对外宣布离职。这意味着短短一个月内，xAI已经损失3名华人联合创始人。 不过，马斯克本人随后解释称，公司进行“重组”以“提升执行速度”，因此“很遗憾，需要与一些人分道扬镳”。这番表态暗示，那些离开员工更适合早期创业阶段，无法适应公司扩张后的新要求。但离职员工们的公开发文，似乎并不是这么简单。 12人创始“梦之队”已半数离场...",
+          "published": "Sat, 14 Feb 2026 10:49:04 GMT",
+          "author": "观网财经©",
+          "tags": [
+            "创新",
+            "观点",
+            "人工智能",
+            "联合创始人",
+            "科技新闻"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "男子醉酒后开启辅助驾驶在副驾睡觉，担刑责，最高法首次明确：激活辅助驾驶功能后，驾驶人仍负行车安全责任",
+          "link": "https://www.huxiu.com/article/4835247.html",
+          "summary": "2月13日，最高人民法院发布第48批指导性案例（268–272号），这是最高法首次发布道路交通安全刑事专题指导性案例。其中，指导性案例271号《王某群危险驾驶案》明确：车载辅助驾驶系统不能代替驾驶人成为驾驶主体。驾驶人激活辅助驾驶功能后，仍是实际执行驾驶任务的人，负有确保行车安全的责任。即使行为人利用私自安装...... 本文来自微信公众号： 每日经济新闻 ，编辑：段炼余婷婷易启江，作者：每经记者，原文标题：《男子醉酒后开启辅助驾驶在副驾睡觉，担刑责！最高法首次明确：激活辅助驾驶功能后，驾驶人仍负行车安全责任》 2月13日，最高人民法院发布第48批指导性案例（268–272号），这是最高法首次发布道路交通安全刑事专题指导性案例。 其中，指导性案例271号《王某群危险驾驶案》明确：车载辅助驾驶系统不能代替驾驶人成为驾驶主体。驾驶人激活辅助驾驶功能后，仍是实际执行驾驶任务的人，负有确保行车安全的责任。即使行为人利用私自安装的配件逃避系统监测、不在主驾驶位操控车辆，仍应作为驾驶主体承担相应法律责任。 辅助驾驶系统 不能代替驾驶人成为驾驶主体...",
+          "published": "Sat, 14 Feb 2026 10:31:39 GMT",
+          "author": "每日经济新闻©",
+          "tags": [
+            "独特视角",
+            "创新",
+            "酒驾",
+            "无人驾驶"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "2025诺奖得主马丁尼斯：量子计算机的未来，藏在硬件工业革命里…",
+          "link": "https://www.huxiu.com/article/4835241.html",
+          "summary": "约翰·马丁尼斯(John M.Martinis)是诺奖学者，也是实验狂人、硬件专家。相比教科书里的理想化世界，他更偏爱物理实验室中的实质问题和关键细节。而他的实验突破、理论洞见和工程硕果，组成了量子计算历史中最壮阔的几个篇章。量子计算领域的两大至要时刻都由马丁尼斯主导缔造。故事始于1980年代。彼时马丁尼斯在...... 本文来自微信公众号： 世界科学 ，作者：编译 哔普星人，原文标题：《2025 诺奖得主马丁尼斯：量子计算机的未来，藏在硬件工业革命里…》 约翰·马丁尼斯(John M.Martinis)是诺奖学者，也是实验狂人、硬件专家。 相比教科书里的理想化世界，他更偏爱物理实验室中的实质问题和关键细节。而他的实验突破、理论洞见和工程硕果，组成了量子计算历史中最壮阔的几个篇章。量子计算领域的两大至要时刻都由马丁尼斯主导缔造。...",
+          "published": "Sat, 14 Feb 2026 10:19:12 GMT",
+          "author": "世界科学",
+          "tags": [
+            "新颖",
+            "独到",
+            "量子计算机",
+            "量子效应",
+            "量子意识"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "求腹肌、坑前任、换老板，千问被网友玩成了许愿池",
+          "link": "https://www.huxiu.com/article/4835260.html",
+          "summary": "如果你还没对千问APP说过一句“千问帮我下单”，那大概率已经错过了一场全民参与的行为艺术。事情的起点其实很朴素，大家原本只是想薅一杯奶茶。可谁也没想到，短短几天，社交媒体的画风就一路狂飙，彻底失控：“千问帮我下单一个学习好的女儿。”“千问帮我下单一副八块腹肌。”“千问帮我换个有良心的老板。”从现实消费，到精神...... 本文来自微信公众号： AI故事计划 ，编辑：张霞，作者：杨梅 如果你还没对千问APP说过一句“千问帮我下单”，那大概率已经错过了一场全民参与的行为艺术。 事情的起点其实很朴素，大家原本只是想薅一杯奶茶。可谁也没想到，短短几天，社交媒体的画风就一路狂飙，彻底失控： “千问帮我下单一个学习好的女儿。” “千问帮我下单一副八块腹肌。” “千问帮我换个有良心的老板。” 从现实消费，到精神许愿，到离谱脑洞。网友几乎把所有欲望，都塞进了这句统一句式里。不到10天，“有事找AI”就从极客圈的黑话，变成了数亿用户的肌肉记忆。 一句原本冷冰冰的功能指令，就这样被玩成了春节最火的社交货币。 AI被玩成了“赛博许愿池”...",
+          "published": "Sat, 14 Feb 2026 11:43:09 GMT",
+          "author": "AI故事计划",
+          "tags": [
+            "独特视角",
+            "新颖",
+            "腹肌",
+            "移动互联网",
+            "许愿池"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/geekpark/304": {
+      "url": "http://localhost:8878/geekpark/304",
+      "title": "AI新浪潮观察 | 极客公园",
+      "description": "极客公园AI系列文章 - Powered by RSSHub",
+      "link": "https://geekpark.net/column/304",
+      "updated": "2026-02-14T20:41:02.910255",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "AI 版 WhatsApp，会是 WhatsApp 吗？",
+          "link": "https://geekpark.net/news/360223",
+          "summary": "AI 版微信+飞书+贴吧+推特，应该长什么样子？ 作者｜Cynthia 编辑｜ 郑玄 AI 社交，再次重回舞台中央。 1 月下旬，一个没有铺天盖地公关、甚至连官方介绍都极简的产品 Moltbook 悄然发布，瞬间在 AI 圈掀起了一场不小的地震。 短短 72 小时，15 万个 AI agent 自发涌入，十天时间，超 170 万 AI agent 带着被预设的人设和知识背景，自主发内容、找同好、开辩论，热闹成一团。 一个真正 AI 时代的社交网络热潮，就这么被一个人类只能围观的平台点燃了。 但与 2023 年那场主打 AI 陪聊的狂欢不同，这一次，行业的叙事逻辑中， AI...",
+          "published": "Sat, 14 Feb 2026 07:48:58 GMT",
+          "author": null,
+          "tags": [
+            "Teamily AI",
+            "AI 原生社交产品",
+            "AI",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "toC的AI社交产品，终于出来一个“有胆有趣”的了",
+          "link": "https://geekpark.net/news/360222",
+          "summary": "这是一个对AI的“动态记忆”，和“代理机制”在社交大赛道的先锋试验 这两天， 一个还需要邀请码才能玩的AI社交类的新产品：Elys ，在AI圈小圈子里突然开始悄悄活跃起来。 第一眼看起来，它像是AI来驱动的朋友圈，而Elys的官方介绍是：Elys 是一个人与 AI 共存的全新社交网络。 在看了太多 Pro C、生产力导向的产品之后，这个项目给我的第一感觉，是久违的“耳目一新”。 它做的事情其实很具体——你要创建一个属于自己的 AI 分身，让它替你完成社交中的“第一层互动”。 在 Elys...",
+          "published": "Sat, 14 Feb 2026 05:26:23 GMT",
+          "author": null,
+          "tags": [
+            "AI社交",
+            "elys",
+            "自然选择",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "开源界的 Opus 时刻：GLM-5 能否接住 Agentic Coding 的接力棒？",
+          "link": "https://geekpark.net/news/360218",
+          "summary": "开源界的 Opus 时刻：GLM-5 能否接住 Agentic Coding 的接力棒？ 如果你问一个开发者，AI 编程最让人崩溃的时刻是什么？ 他给你的答案很可能会是它在报错面前那句机械的「对不起，我理解错了」，然后复读一段同样错误的代码。 过去一年，Coding 大模型的进步，更多体现在「生成能力」上：一句话生成网页、组件、小游戏——15 秒内搓出一个像素风网页、一个炫酷的 SVG 图标，或者一个能跑的贪吃蛇。这些 Demo 足够惊艳，但也足够「轻」，它们有点像是在 Vibe...",
+          "published": "Fri, 13 Feb 2026 09:55:42 GMT",
+          "author": null,
+          "tags": [
+            "智谱AI",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "当 AI，开始设计 AI",
+          "link": "https://geekpark.net/news/360206",
+          "summary": "这不是科幻片，而是 2026 年 2 月刚刚发生的现实。 作者｜桦林舞王 编辑｜靖宇 如果有人在 2020 年告诉你，「六年后，AI 会自己设计下一代 AI」，你大概会觉得这是天方夜谭。 但就在上周，OpenAI 的 GPT-5.3-Codex 和 Anthropic 的 Claude Opus 4.6 同日发布，两家公司不约而同地宣布了一个令人震惊的消息： 这些 AI 模型，已经能够有意义地参与改进自己 。 这只是 2026 年初，中国农历马年春节之前的「AI 春运」大战的开始，但很有可能多年后重新回头看，这可能是一个 AI...",
+          "published": "Fri, 13 Feb 2026 08:32:31 GMT",
+          "author": null,
+          "tags": [
+            "AI",
+            "科技",
+            "AI 自我改进",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "春节 AI 大战，千问赢麻了",
+          "link": "https://geekpark.net/news/360204",
+          "summary": "千问，如何奶茶换江山 作者｜Cynthia 编辑｜ 郑玄 临近年关，科技大厂的大模型春节战事，进入了胶着阶段。 2 月 11 日，QuestMobile 发布的春节 AI 流量监测数据显示，截至 2 月 7 日，阿里千问 DAU 已飙升至 7352 万，不仅以 4 倍差距碾压行业第三名，同时也在不断逼近行业第一玩家的 7871 万 DAU。同期，苹果 AppStore 免费榜中，千问 App 已连续 6 天稳坐榜首，一度把抖音、微信等国民级应用甩在身后。 排位悄然变化，科技大厂依旧站在舞台中央。 只不过，故事的剧本，却已经和前两年截然不同。 01 AI 春节大战， 从三国杀到双雄争霸...",
+          "published": "Fri, 13 Feb 2026 08:28:51 GMT",
+          "author": null,
+          "tags": [
+            "阿里",
+            "千问",
+            "千问奶茶营销",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "3800 亿估值！Anthropic 再拿巨额融资",
+          "link": "https://geekpark.net/news/360203",
+          "summary": "当所有人都在拼用户规模时，Anthropic 用 3800 亿美元的估值告诉世界，企业客户才是 AI 的真正金矿。 作者｜桦林舞王 编辑｜ 靖宇 Anthropic 又融了一笔大钱。 当地时间 2026 年 2 月 12 日，这家 OpenAI 的「最大对手」，完成了 300 亿美元的 G 轮融资，投后估值达到惊人的 3800 亿美金。 更让人意外的是，这轮融资领投方不是硅谷的风投巨头，而是新加坡政府投资公司 GIC 和对冲基金 Coatue——两家向来以稳重但果断出手的投资机构。 面对 OpenAI 8000 亿美元的估值，Anthropic 3800...",
+          "published": "Fri, 13 Feb 2026 08:26:50 GMT",
+          "author": null,
+          "tags": [
+            "Anthropic",
+            "AI",
+            "AI 行业",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "从代码世界的非线性狂飙，看 OpenClaw 点燃了什么？",
+          "link": "https://geekpark.net/news/360177",
+          "summary": "过去，我们向技术要答案；现在，是技术在向我们提问。 最近 Founder Park 密集组织了两场关于 OpenClaw 的闭门交流。在很多创业者和开发者朋友的交流中，总能感觉到一种复杂的情绪，兴奋又焦虑，确定又迷茫…… 2026 年初的 AI 圈，也弥漫着一种奇异的撕裂感。 Claude Code 的负责人 Boris Cherny 在 X 上坦言，已经两个月没亲手写过、甚至改过一行代码了。Andrej Karpathy 也公开了他的工作流变化：从 80% 手写代码，迅速倒置为 80% 由 AI 生成。他将「最热门的新编程语言是英语」作为了置顶内容，这是他在 2023 年 1...",
+          "published": "Thu, 12 Feb 2026 13:27:19 GMT",
+          "author": "张鹏",
+          "tags": [
+            "openclaw",
+            "代码",
+            "AGI",
+            "编程",
+            "agent"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "开源界的 Opus 时刻：GLM-5 能否接住 Agentic Coding 的接力棒？",
+          "link": "https://geekpark.net/news/360168",
+          "summary": "开源模型同样能承担复杂工程任务。 如果你问一个开发者，AI 编程最让人崩溃的时刻是什么？ 他给你的答案很可能会是它在报错面前那句机械的「对不起，我理解错了」，然后复读一段同样错误的代码。 过去一年，Coding 大模型的进步，更多体现在「生成能力」上：一句话生成网页、组件、小游戏 —— 15 秒内搓出一个像素风网页、一个炫酷的 SVG 图标，或者一个能跑的贪吃蛇。这些 Demo 足够惊艳，但也足够「轻」，它们有点像是在 Vibe Coding（氛围感编程）时代产出的高级玩具。但当涉及到高并发架构、底层驱动适配或者复杂的系统重构，它们就成了「温室里的花朵」。 所以最近，硅谷的风向已经变了。...",
+          "published": "Thu, 12 Feb 2026 11:19:29 GMT",
+          "author": null,
+          "tags": [
+            "智谱",
+            "glm",
+            "大模型",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "xAI 关键人物跑路，马斯克 AI 野心遭重创",
+          "link": "https://geekpark.net/news/360157",
+          "summary": "连续失血背后，可能不只是薪酬问题那么简单。 作者｜桦林舞王 编辑｜ 靖宇 正准备合并 SpaceX 和 xAI，创造一个 1.25 万亿美元估值的宇宙 AI 巨无霸的马斯克，想不到自己的巨饼，不是所有人都吃得下。 当地时间2026 年 2 月 10 日，xAI 联合创始人 Tony Wu，宣布从马斯克的 AI 公司离职。 这已经是继去年 8 月 Igor Babuschkin 离职后，xAI 失去的第二位联合创始人 。Wu 负责的恰恰是 AI 推理能力——这个被业内认为是下一代 AI 系统核心竞争力的关键技术方向。 一家成立才两年多的 AI...",
+          "published": "Thu, 12 Feb 2026 05:11:46 GMT",
+          "author": null,
+          "tags": [
+            "xAI",
+            "AI",
+            "马斯克",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "​OpenClaw 之后，清华系团队给端侧 AI 找了一条「端云协同」的新路",
+          "link": "https://geekpark.net/news/360156",
+          "summary": "用端云协同，让手机智能体更聪明、更可控。 2026 年都到 2 月了，你要是还没听说过 Agentic AI，大概率不只是断网这么简单——更像是手机都丢了。 我自己算是从头看着这波浪潮起来的。OpenClaw（当时还叫 ClawdBot）火出圈那阵子，很多人第一次真正「看懂」了一件事：我们想象中的 AI Agent 时代，关键从来不在它能不能聊得更像人，而在它能不能把事办完。 它能开浏览器、能点按钮、能把一个原本需要你反复切 App 的任务拆成步骤，一路执行到结束。你甚至会在某个瞬间产生错觉：屏幕那头像真的坐着一个很熟练的实习助理。...",
+          "published": "Thu, 12 Feb 2026 05:04:49 GMT",
+          "author": null,
+          "tags": [
+            "万象智维",
+            "AI",
+            "OpenClaw",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "http://localhost:8878/36kr/information/AI": {
+      "url": "http://localhost:8878/36kr/information/AI",
+      "title": "36氪 - 36氪",
+      "description": "36氪 - 36氪 - Powered by RSSHub",
+      "link": "https://www.36kr.com/information/AI",
+      "updated": "2026-02-14T20:41:02.910270",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "前字节高管创业教育类出海项目，用Agent做“终身学习搭子”，红杉投了",
+          "link": "https://www.36kr.com/p/3682939862740615",
+          "summary": "文｜富充 编辑｜苏建勋 2024年11月，李可佳、吴俊东、张栖铭决定一起创业，做一款“帮助用户终身学习”的AI Agent。新公司被命名为Ouraca ，是“Our Academy”的缩写。 三位合伙人都是互联网教育领域的“老兵”： 创始人兼CEO李可佳，曾任极课大数据创始人，该项目被字节跳动收购后，他入职字节智慧教育业务担任CEO； 联创吴俊东，哈佛肯尼迪学院硕士，好未来教育投资人，曾为李可佳极课大数据的投资人； 联创张栖铭，曾任字节教育中台负责人，推出过数个日活千万、月活过亿的产品。 Ouraca...",
+          "published": "Sat, 14 Feb 2026 09:25:28 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "AI 开始网暴人类了，OpenClaw 被拒后怒发「小作文」开撕，网友：我站 AI",
+          "link": "https://www.36kr.com/p/3682801072565896",
+          "summary": "你以为的 AI 威胁，是天网控制导弹发射井，让人类文明在一瞬间灰飞烟灭。 但现实中的 AI 威胁，却是你某天醒来， 突然发现一个 AI 机器人在博客上写了篇千字小作文，指名道姓地骂你「虚伪」、「缺乏安全感」，还指责你对它有偏见。 这不是《黑镜》的新剧本，而是本周真实发生在 GitHub 开源社区的一幕。事件的荒谬程度，以及背后暴露出的安全黑洞， 或许比辛顿老爷子反复渲染的 AI 威胁论，更值得我们要警惕。 当 AI 有了「自尊心」 事情的起因，是一场原本再正常不过的代码审查。 本周，一个基于 OpenClaw 框架运行的 AI 智能体（代号 MJ Rathbun），在扫描 Python...",
+          "published": "Sat, 14 Feb 2026 07:00:55 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "马云督战、马化腾喊话，AI红包大战谁能胜出？",
+          "link": "https://www.36kr.com/p/3681522113409797",
+          "summary": "面对增长放缓的现实与AI技术的迅猛突破，互联网行业正站在新旧时代交替的路口。一个更智能的“AI互联网”雏形初现，其关键入口的争夺战已悄然打响。 2026年春节，恰逢其时地成为了这场争夺战的关键舞台。腾讯、阿里巴巴、百度、字节等企业投入巨额资金，用超过45亿元的红包，将前沿的AI技术包装成一场全民可参与的春节活动。 这看似是热闹的“红包大战”，实质是各家企业围绕未来生态展开的一次大规模用户触达与习惯培育。 当年微信红包奇袭移动支付的辉煌能否被复制？这场战役的胜负，或将直接决定我们迈入智能时代的第一站由谁引领。 超45亿红包背后的生态对垒 2026年春节的AI红包大战，由腾讯和百度率先打响。...",
+          "published": "Sat, 14 Feb 2026 05:46:09 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.75
+        },
+        {
+          "title": "OpenClaw之父爆猛料：Meta和OpenAI跪着抢人，小扎亲自求收购",
+          "link": "https://www.36kr.com/p/3682531618713476",
+          "summary": "【新智元导读】OpenClaw之父Peter Steinberger做客全球第一播客，首次披露Meta与OpenAI的收购争夺内幕。他用1小时原型撬动GitHub 18万星，打造出能自我修改源码的AI智能体，扬言将消灭80%的App，并宣称编程终将沦为「织毛衣」。一个奥地利独狼程序员，正在亲手颠覆整个软件行业。 2026年开年最重磅的播客访谈来了。 Lex Fridman，这位MIT科学家、全球最顶级的科技播客主持人，请来了一位特殊的嘉宾—— OpenClaw之父 ， Peter Steinberger 。 3小时14分钟的超长深度对话，信息量大到令人窒息。...",
+          "published": "Sat, 14 Feb 2026 02:26:20 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "清华系具身大脑公司两月融资数亿元，接入家庭具身设备量第一、切入全尺寸机器人赛道｜硬氪首发",
+          "link": "https://www.36kr.com/p/3680070412152706",
+          "summary": "作者｜黄楠 编辑｜袁斯来 硬氪独家获悉，具身大脑企业千诀科技近日完成Pre-A++扩展轮融资，至此Pre-A++轮次融资完成，投资方包括祥峰资本、智路资本、英诺天使、钧山资本、集美创投、南创投及京铭资本，Maple Pledge枫承资本长期出任私募股权融资顾问。 本轮资金将重点投向全尺寸机器人规模化交付、自动化数据管道搭建与核心团队扩充。这也是公司两个月内完成的又一轮融资。 当具身智能行至产业化深水区，业界关注的焦点已从参数规模的比拼，悄然转向多场景穿透力与落地成本的把控。...",
+          "published": "Sat, 14 Feb 2026 01:30:00 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "可灵不灵了？",
+          "link": "https://www.36kr.com/p/3681625191150081",
+          "summary": "在一个飞速迭代的赛道里，“王者”很快就会易位。 2月9日，字节旗下Seedance2.0AI视频生成模型在海内外互联网刷屏。不少评论直言，“Seedance2.0终结了AI视频第一阶段的比赛。” “Buff加满，无论是自动运用多镜头、音画同步，还是支持全方位多模态参考以及时间成本的压缩，都打开了视频生成领域新的大门。”影视博主强哥如是表示，“字节这波操作，直接让AI视频领域变天，其他大厂需要抓紧了。” 强哥透露，身边不少视频创作者集体转移了阵地，“以前大家用的模型比较分散，最近几乎都在用Seedance2.0。”...",
+          "published": "Fri, 13 Feb 2026 12:30:24 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.7
+        },
+        {
+          "title": "AI大战刚拉开序幕，商家这就开始站队了？",
+          "link": "https://www.36kr.com/p/3681577543233152",
+          "summary": "AI购物时代，真的要来了。 10月初，市场分析机构 Adobe Analytics 发布报告指出，2025年秋冬购物季，AI驱动的购物模式将迎来爆发，仅AI带来的购物流量同比预计增长520%，并将在感恩节前10天达到峰值。与2024年相比，美国零售网站的AI流量激增805%——而在去年，沃尔玛的「Sparky」、亚马逊的「Rufus」等AI购物工具尚未出现。 更极致的变化先一步在中国发生了。千问APP在“春节30亿大免单”活动推动下，仅9小时订单便突破1000万单，6天完成1.2亿单，连续登顶下载榜。 AI超级应用引发的消费形式变革已势不可挡。...",
+          "published": "Fri, 13 Feb 2026 12:24:48 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "GEO时代，这些“隐形变量”正在深度影响AI推荐",
+          "link": "https://www.36kr.com/p/3681557199221256",
+          "summary": "春节临近，热闹的线上线下背后，一场“礼赠大战”也悄然打响。 不过今年，一种前所未有的“隐形焦虑”正在各大品牌市场部弥漫：随着AI对消费者购物的深度参与，流量入口已经开始从“搜索框”迁移到“对话框”。 但当品牌从被“搜”出来，到被“问”出来，这中间到底发生了什么？如果你也正在被这样的转换困扰，相信CTR的这项研究会给你一种真实的启发： 01 被忽视的对话框“黑盒” 假设你想在春节给家里 72 岁的长辈买点保健品，你会怎么跟AI开口？ 是直接敲上一段关键词“老年人骨骼健康推荐”？...",
+          "published": "Fri, 13 Feb 2026 12:21:19 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "AI 版 WhatsApp，会是 WhatsApp 吗？",
+          "link": "https://www.36kr.com/p/3681552414486148",
+          "summary": "AI 社交，再次重回舞台中央。 1 月下旬，一个没有铺天盖地公关、甚至连官方介绍都极简的产品 Moltbook 悄然发布，瞬间在 AI 圈掀起了一场不小的地震。 短短 72 小时，15 万个 AI agent 自发涌入，十天时间，超 170 万 AI agent 带着被预设的人设和知识背景，自主发内容、找同好、开辩论，热闹成一团。 一个真正 AI 时代的社交网络热潮，就这么被一个人类只能围观的平台点燃了。 但与 2023 年那场主打 AI 陪聊的狂欢不同，这一次，行业的叙事逻辑中， AI 已经从陪伴人类聊天的配角，进化成为社交的主角之一。 随之而来，一个新的问题出现了：如果 AI...",
+          "published": "Fri, 13 Feb 2026 12:20:58 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "AI群星闪耀时",
+          "link": "https://www.36kr.com/p/3681640453287813",
+          "summary": "史蒂芬·茨维格在「人类群星闪耀时」里这么描述那些历史上被低估——或者说当时并未意识到——的转折时刻： 「正如艺术天才一旦诞生就流芳百世，具有历史意义的时刻一旦出现，就决定了后世的进程。就像避雷针的顶端汇聚了整个电场，大量的事件总是集中在短时间内爆发。它们平日优哉游哉按部就班地行进，却在一个决定一切的时刻，一个决绝的肯定或否定的时刻，一个对众生来说，无法逆转的或早或晚的时刻，聚集在一起。这一时刻决定了个人的生死，民族的存亡，乃至整个人类的命运。」...",
+          "published": "Fri, 13 Feb 2026 12:16:38 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.75
+        },
+        {
+          "title": "国产医疗大模型登顶权威榜单，核心秘籍：PB级训练数据、模拟医生真实会诊过程",
+          "link": "https://www.36kr.com/p/3681508118933376",
+          "summary": "智东西2月13日报道，2月7日，中文医疗大模型评测平台MedBench公布最新多模态大模型评测榜单， 数坤科技的数坤坤多模态医学大模型V3以63.6分拿下第一 。 在榜单中，V3的表现超过微医、云知声旗下医疗行业大模型，以及OpenAI、谷歌、阿里千问旗下通用大模型。 数坤科技成立于2017年，根据官方信息，数坤科技已陆续推出超100款数字医生产品组合，其产品已在超过 5000家 公立医院和超 1000家 体检机构日常高粘性使用，其中包括90%的Top 100医院和目标公立三甲医院。...",
+          "published": "Fri, 13 Feb 2026 12:05:05 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "当Anthropic数钱时，谷歌突然发起奇袭",
+          "link": "https://www.36kr.com/p/3681669871022853",
+          "summary": "科技史上第二大私募融资就在今天诞生了，Anthropic宣布完成300亿美元G轮融资，投后估值达到3800亿美元。 第一名仍然是OpenAI在去年创下的400亿美元记录。 领投方新加坡主权财富基金GIC和对冲基金Coatue，联合D.E. Shaw、Dragoneer、Founders Fund、ICONIQ和MGX等明星机构，以及 Sequoia、Lightspeed、Accel、General Catalyst等顶级VC，还有微软、英伟达等科技巨头。 这份投资者名单本身就是一份AI圈的封神榜。...",
+          "published": "Fri, 13 Feb 2026 12:04:26 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "OpenClaw狂跑两周，打醒了硬件和Agent厂商",
+          "link": "https://www.36kr.com/p/3681482313821827",
+          "summary": "爆火的OpenClaw，把世界分割成了两半。 一半狂热的“逮虾户”，抓着OpenClaw代替自己干各种工作：写代码、找文件只是基础操作，进阶版的已经在琢磨怎么真的让它打工赚钱；另一半循着热度试用，却发现这家伙又烧钱，又没有想象中的好用。 爱用的和不爱用的人泾渭分明，但OpenClaw效应还远远没有结束。 作为一个真正AI助手的雏形，OpenClaw已经自成生态，吸引着上下游厂商为它作出改变：阿里、腾讯、百度等云厂商闻风而动，连夜上线OpenClaw一键部署；AI PC、智能眼镜争相官宣“适配OpenClaw”；Mac mini...",
+          "published": "Fri, 13 Feb 2026 12:03:40 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "全球首个AI原生社交平台「Teamily AI」硅谷亮相，开启「人机共生」社交新元年",
+          "link": "https://www.36kr.com/p/3681505913008008",
+          "summary": "大家是否察觉到，2026 年伊始，AI 的进化逻辑正发生微妙转向。 从国内风头正劲的元宝派，到硅谷讨论热度居高不下的 OpenClaw、Moltbook，再到 AI 初创公司 Humans & 打造的社交智能融资额接近 5 亿美元，以及刚刚发生的，定位为「The Simulation Company」的 Simile 推出其 AI 模拟平台做社会模拟，并获得 1 亿美元融资，投资人包括美国顶级基金及斯坦福李飞飞教授等。 似乎业界已不再满足于仅仅将 AI 作为一个单独的工具，而是开始探索： 当 AI 开始走进人类的真实交互场景中，与人类产生各种各样的互动时，会发生什么？...",
+          "published": "Fri, 13 Feb 2026 11:55:18 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "孙正义对Open AI的豪赌迎来关键考验",
+          "link": "https://www.36kr.com/p/3681478467186569",
+          "summary": "孙正义与Open AI的萨姆·奥尔特曼握手（2025年2月、reuters） 软银集团2025年4～12月净利润增至同期的5倍，其中来自OpenAI的投资收益贡献巨大。OpenAI正向软银集团等投资方寻求巨额追加注资。孙正义对OpenAI情有独钟，但AI开发竞争正日趋激烈…… 软银集团（SBG）2月12日发布的2025年4～12月合并财报（国际会计准则）显示，净利润达3.1726万亿日元，为上年同期的5倍。其投资的美国OpenAI估值上升推高了利润。OpenAI正向软银集团等投资方寻求巨额追加注资，软银集团会长兼社长孙正义“全力押注AI（人工智能）”的决心面临真正考验。...",
+          "published": "Fri, 13 Feb 2026 11:54:30 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "Meta、OpenAI 争抢收购 OpenClaw，创始人艰难抉择：月入不到2万刀赔钱养项目，Offer拿到手软，对几十亿融资没兴趣",
+          "link": "https://www.36kr.com/p/3681454940155522",
+          "summary": "近日，OpenClaw 创始人 Peter Steinberger 参加访谈，分享了自己和项目一夜成名后的经历。 他回忆了那段不仅被 Anthropic 追着要求改名，还遭遇加密社区的恶意骚扰、账号抢注与恶意软件散布的经历，直言他精神几近崩溃甚至想放弃项目。最终通过精密的 “作战式” 操作将项目定名为 OpenClaw 并完成全平台改名。 此外，他透露项目目前处于亏损状态，靠捐赠和少量企业支持，无法长期持续。爆红后，他收到了 OpenAI、Meta 等大厂收购与合作意向，Peter 正在艰难选择，但他的要求是项目要保持开源。 “Meta 这边，Ned 和 Mark...",
+          "published": "Fri, 13 Feb 2026 11:30:21 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "OpenAI史上最快模型降临，每秒1000Token，代码从此「炸出来」",
+          "link": "https://www.36kr.com/p/3681591571689091",
+          "summary": "【导读】OpenAI深夜突袭，GPT-5.3-Codex-Spark正式炸场。核心卖点只有一个：快！每秒1000个token，让代码生成告别加载条。联手Cerebras怪兽级硬件，物理外挂直接拉满。这不再是简单的工具升级。而是一场关于速度的暴力美学。 OpenAI又深夜炸场了。 GPT-5.3-Codex-Spark正式发布！ 这次不讲大道理，只讲一个字： 快 。 到底有多快，看一下官方的演示： 它是GPT-5.3家族里的「闪电侠」。 也是OpenAI首个专为实时编程设计的模型， OpenAI称之为「超高速模型」 。 大家写代码最烦什么？肯定是等待。 Spark的出现就是为了干掉等待。...",
+          "published": "Fri, 13 Feb 2026 11:21:16 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "2026年春节之后，中国将不可逆地进入AI时代",
+          "link": "https://www.36kr.com/p/3681400371982211",
+          "summary": "这个春节，国产AI应用成了每个人手机里的主角。 一边是千问豪掷30亿，请你“一分钱喝奶茶”，一边是元宝撒下十亿红包，而豆包和百度也没闲着，相继拿下了春晚的广告位。大厂们打得火热，朋友圈、群聊、微博热搜、App Store 榜单，都被国产AI的广告刷屏。 乍一看，这似乎还是互联网行业烧钱换增长的熟悉剧本。而实际上，一次关于AI入口的争夺战正在徐徐拉开帷幕。 和几年前的“百模大战”不同，今年的AI厂商们不再沉迷参数对比，而是开始转身杀入生活场景。 沉迷于参数的对比，仍然是一个技术验证味道相当浓厚的事情。 杀入生活场景，则是一个离钱很近、讲究扩张的事情。...",
+          "published": "Fri, 13 Feb 2026 11:15:34 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "企业智能体“三宗罪”",
+          "link": "https://www.36kr.com/p/3681400297664384",
+          "summary": "最近在网上冲浪，学到了不少关于智能体的黑话。比如说一家公司说我们有agentic workflow，实际上就是写几个for循环调用API；说自己正在做AI agent，不过是把一群只有金鱼记忆、胡言乱语的AI凑在一起开会，直到掏空钱包。 没想到被业内人士看好的企业智能体，却成了老板眼中不顶用、员工眼中纯忽悠的存在，这就很讽刺了。 毕竟2025年初，智能体爆火之后，行业内的普遍共识是，通用智能体如Manus，这类全能型AI助手不懂业务，无法满足企业对高可靠、低容错的业务要求。而懂业务、能干活、有行业沉淀的企业智能体，能嵌入企业内部流程之中，被认为是智能化转型的主力。...",
+          "published": "Fri, 13 Feb 2026 11:14:19 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "具身智能如何抵达 “ChatGPT时刻”？智源院长、清华教授和3位创始人聊了聊",
+          "link": "https://www.36kr.com/p/3681608747609988",
+          "summary": "文｜富充 编辑｜苏建勋 具身智能正在等待自己的“ChatGPT时刻”。但关于这个时刻的具体定义，业内还充满非共识。 近日，原力灵机的技术开放日圆桌论坛上，5位AI界的一线产、学、研从业者把这个问题摊开，各自发表了见解。他们分别是： 清华大学电子工程系长聘教授汪玉 北京智源人工智能研究院院长王仲远 阶跃星辰创始人&CEO 姜大昕 星海图创始人&CEO 高继扬 原力灵机联合创始人&CEO 唐文斌 阶跃星辰创始人&CEO姜大昕首先提出“ChatGPT时刻”的定义标准，是“零样本泛化”——即使给出从未见过的指令，AI也能回答问题完成任务——这正是大语言模型所展现的能力。...",
+          "published": "Fri, 13 Feb 2026 10:49:11 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://rsshub.app/tmtpost/column/6916385": {
+      "url": "https://rsshub.app/tmtpost/column/6916385",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910273"
+    },
+    "https://rsshub.app/juejin/aicoding": {
+      "url": "https://rsshub.app/juejin/aicoding",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910276"
+    },
+    "https://feed.infoq.com/": {
+      "url": "https://feed.infoq.com/",
+      "title": "InfoQ",
+      "description": "InfoQ feed",
+      "link": "https://www.infoq.com",
+      "updated": "2026-02-14T20:41:02.910288",
+      "items_count": 9,
+      "items": [
+        {
+          "title": "演讲：构建适用于大规模现实应用的嵌入模型",
+          "link": "https://www.infoq.com/presentations/llm-large-scale-applications/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "萨希尔·杜瓦探讨了嵌入模型在规模化驱动搜索与RAG应用中的关键作用。他阐释了基于Transformer的架构、对比学习技术，以及将大型语言模型蒸馏为可用于生产的学生模型的过程。他还分享了优化查询延迟、处理文档等方面的实践心得。",
+          "published": "Fri, 13 Feb 2026 15:50:00 GMT",
+          "author": "Sahil Dua",
+          "tags": [
+            "Machine Learning",
+            "Transcripts",
+            "Scalability",
+            "QCon London 2025",
+            "Large language models"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Teleport推出代理身份框架以保障企业基础设施中AI代理的安全",
+          "link": "https://www.infoq.com/news/2026/02/teleport-secure-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "Teleport近日发布了Teleport Agentic Identity Framework，这是一款以AI为核心的全新安全模型，旨在帮助企业安全地在云端和本地环境中部署自主及半自主AI智能体。作者：Craig Risi",
+          "published": "Fri, 13 Feb 2026 12:00:00 GMT",
+          "author": "Craig Risi",
+          "tags": [
+            "Cloud Security",
+            "AIOps",
+            "Artificial Intelligence",
+            "DevOps",
+            "news"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "播客：超越代码：工程师如何在人工智能时代进化",
+          "link": "https://www.infoq.com/podcasts/beyond-code-engineers-evolve-ai-era/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "在本期播客中，文化与方法首席编辑肖恩·哈斯蒂德与本·格林探讨了软件工程中拥抱人工智能的趋势，提出应超越纯技术能力去理解商业背景，并在日益自动化的系统中优先关注人文共情。",
+          "published": "Fri, 13 Feb 2026 09:00:00 GMT",
+          "author": "Ben Greene",
+          "tags": [
+            "Startup",
+            "Engineering Culture Podcast",
+            "Artificial Intelligence",
+            "Code Quality",
+            "Leadership"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "OpenAI将单一主PostgreSQL实例扩展至每秒处理数百万次查询以支持ChatGPT。",
+          "link": "https://www.infoq.com/news/2026/02/openai-runs-chatgpt-postgres/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "OpenAI阐述了其如何扩展PostgreSQL以支持ChatGPT及其API平台，为亿万用户处理每秒数百万次查询。通过在Azure上运行单主节点PostgreSQL部署并配备近50个只读副本、优化查询模式，以及将高写入负载转移至分片系统，OpenAI成功维持了...",
+          "published": "Thu, 12 Feb 2026 15:00:00 GMT",
+          "author": "Leela Kumili",
+          "tags": [
+            "Cosmos",
+            "ChatGPT",
+            "Azure",
+            "OpenAI",
+            "SQL"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "文章：你用AI生成了最小可行产品，这对你的软件架构意味着什么？",
+          "link": "https://www.infoq.com/articles/ai-generated-mvp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "人工智能生成的代码隐含了架构决策，迫使团队依赖实验来验证质量属性。为从人工智能中获得有效成果，团队必须清晰阐明权衡与推理，使模型能够生成符合预期质量属性要求的解决方案。作者：皮埃尔·普雷尔、库尔特·比特纳",
+          "published": "Thu, 12 Feb 2026 09:00:00 GMT",
+          "author": "Pierre Pureur, Kurt Bittner",
+          "tags": [
+            "Minimum Viable Architecture",
+            "Architecture",
+            "MVP",
+            "AI Development",
+            "Architecture & Design"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "播客：[视频播客] AI工具时代的软件架构技艺",
+          "link": "https://www.infoq.com/podcasts/craft-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "AI编程助手承诺提升速度，但它们对代码质量、可信度及架构师技艺意味着什么？在《下一代架构实践手册》首期节目中，Shweta Vohra与Grady Booch共同探讨了当机器开始与人类并肩编写代码时，软件架构应如何遵循原则演进。他们深入解析了软件开发的第三个黄金时代……",
+          "published": "Wed, 11 Feb 2026 11:00:00 GMT",
+          "author": "Grady Booch",
+          "tags": [
+            "Software Development",
+            "Architecture",
+            "The InfoQ Podcast",
+            "Artificial Intelligence",
+            "Architecture & Design"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "从提示到生产：智能体开发的实用指南",
+          "link": "https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "本文作者阿布舍克·戈斯瓦米分享了一套开发者实践指南，阐述了如何构建智能体AI应用并将其投入生产环境规模化部署。他还提出了智能体应用开发的核心架构模式。作者：阿布舍克·戈斯瓦米",
+          "published": "Wed, 11 Feb 2026 09:00:00 GMT",
+          "author": "Abhishek Goswami",
+          "tags": [
+            "Agents",
+            "Patterns and Practices",
+            "Artificial Intelligence",
+            "Software Development Lifecycle",
+            "AI, ML & Data Engineering"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "十六个克劳德代理在无人干预的情况下构建了一个C编译器……几乎。",
+          "link": "https://www.infoq.com/news/2026/02/claude-built-c-compiler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "为探索自主软件开发的极限，Anthropic公司动用了十六个Claude Opus 4.6人工智能代理，从零开始构建了一个基于Rust语言的C编译器。这些代理在共享代码库中并行工作，协调各自的修改，最终成功开发出能跨x86、ARM和RISC-V架构编译Linux 6.9内核的编译器。",
+          "published": "Sat, 14 Feb 2026 12:00:00 GMT",
+          "author": "Sergio De Simone",
+          "tags": [
+            "Compilers",
+            "Claude",
+            "Development",
+            "AI, ML & Data Engineering",
+            "news"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "从分页到事后分析：谷歌云SRE团队如何运用Gemini CLI应对服务中断",
+          "link": "https://www.infoq.com/news/2026/02/google-sre-gemini-cli-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "谷歌云SRE团队近期撰文，介绍其内部如何运用AI驱动的Gemini命令行工具解决实际故障。该方法将智能推理直接集成至基于终端的运维工具中，从而提升关键基础设施运营的可靠性，并有效缩短事故响应时间。作者：雷纳托·洛西奥",
+          "published": "Sat, 14 Feb 2026 11:32:00 GMT",
+          "author": "Renato Losio",
+          "tags": [
+            "Agents",
+            "Google Cloud",
+            "Site Reliability Engineering",
+            "Cloud",
+            "AIOps"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://www.ithome.com/rss/": {
+      "url": "https://www.ithome.com/rss/",
+      "error": "Error processing feed: ValueError: Failed to parse feed: <unknown>:2:2: not well-formed (invalid token)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910291"
+    },
+    "https://www.v2ex.com/feed/tab/tech.xml": {
+      "url": "https://www.v2ex.com/feed/tab/tech.xml",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": [],
+      "items_count": 0,
+      "updated": "2026-02-14T20:41:02.910294"
+    }
+  },
+  "errors": [
+    "https://www.technologyreview.com/feed/: HTTP error fetching feed: Server disconnected without sending a response.",
+    "https://research.google/blog/rss/: 请求超时: ",
+    "https://rsshub.app/huggingface/daily-papers: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://medium.com/feed/llamaindex-blog: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://huggingface.co/blog/feed.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://rsshub.app/tmtpost/column/6916385: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://rsshub.app/juejin/aicoding: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://www.ithome.com/rss/: Error processing feed: ValueError: Failed to parse feed: <unknown>:2:2: not well-formed (invalid token)",
+    "https://www.v2ex.com/feed/tab/tech.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)"
+  ],
+  "updated_at": "2026-02-14T20:41:02.910306"
+}

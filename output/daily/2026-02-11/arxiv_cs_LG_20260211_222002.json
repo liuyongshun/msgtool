@@ -1,0 +1,459 @@
+{
+  "source": "arXiv",
+  "category": "cs.LG",
+  "category_name": "Machine Learning",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:02.532203",
+  "papers": [
+    {
+      "id": "2602.10117v1",
+      "title": "盲点中的偏见：探测大型语言模型未提及的内容",
+      "authors": [
+        "Iván Arcuschin",
+        "David Chanin",
+        "Adrià Garriga-Alonso",
+        "Oana-Maria Camburu"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型（LLM）常提供看似合理的思维链推理轨迹，却可能隐藏着内在偏见。我们称其为*未言明的偏见*。因此，仅通过模型声明的推理过程进行监控并不可靠，而现有的偏见评估通常需要预定义类别和人工构建的数据集。在此...",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:59:56+00:00",
+      "updated": "2026-02-10T18:59:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10117v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10117v1",
+      "comment": "10 pages, Under review at ICML 2026"
+    },
+    {
+      "id": "2602.10104v1",
+      "title": "奥拉夫世界：为视频世界建模定向潜在行动",
+      "authors": [
+        "Yuxin Jiang",
+        "Yuchao Gu",
+        "Ivor W. Tsang",
+        "Mike Zheng Shou"
+      ],
+      "author_count": 4,
+      "summary": "扩展动作可控世界模型受限于动作标签的稀缺性。虽然潜在动作学习有望从未标记视频中提取控制界面，但习得的潜在表征往往难以跨情境迁移：它们混杂了场景特定线索，且缺乏统一的坐标系。这种现象源于标准目标函数……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:58:41+00:00",
+      "updated": "2026-02-10T18:58:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10104v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10104v1",
+      "comment": "Project page: https://showlab.github.io/Olaf-World/ Code: https://github.com/showlab/Olaf-World"
+    },
+    {
+      "id": "2602.10100v1",
+      "title": "Towards Explainable Federated Learning: Understanding the Impact of Differential Privacy",
+      "authors": [
+        "Júlio Oliveira",
+        "Rodrigo Ferreira",
+        "André Riker",
+        "Glaucio H. S. Carvalho",
+        "Eirini Eleni Tsilopoulou"
+      ],
+      "author_count": 5,
+      "summary": "Data privacy and eXplainable Artificial Intelligence (XAI) are two important aspects for modern Machine Learning systems. To enhance data privacy, recent machine learning models have been designed as a Federated Learning (FL) system. On top of that, additional privacy layers can be added, via...",
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:58:11+00:00",
+      "updated": "2026-02-10T18:58:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10100v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10100v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10099v1",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "authors": [
+        "Amandeep Kumar",
+        "Vishal M. Patel"
+      ],
+      "author_count": 2,
+      "summary": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally...",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:58:04+00:00",
+      "updated": "2026-02-10T18:58:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10099v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10099v1",
+      "comment": "Technical Report"
+    },
+    {
+      "id": "2602.10097v1",
+      "title": "循环变压器步进解析数据归属",
+      "authors": [
+        "Georgios Kaissis",
+        "David Mildenberger",
+        "Juan Felipe Gomez",
+        "Martin J. Menten",
+        "Eleni Triantafillou"
+      ],
+      "author_count": 5,
+      "summary": "我们研究个体训练样本如何塑造循环变压器的内部计算，其中共享块被应用于$τ$次循环迭代以实现潜在推理。现有的训练数据影响力估计器（如TracIn）会生成一个单一标量分数，该分数聚合了所有循环迭代的结果，从而模糊了在...过程中的具体时机。",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:57:53+00:00",
+      "updated": "2026-02-10T18:57:53+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10097v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10097v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10095v1",
+      "title": "视频扩散中的因果关系与去噪过程可分离。",
+      "authors": [
+        "Xingjian Bai",
+        "Guande He",
+        "Zhengqi Li",
+        "Eli Shechtman",
+        "Xun Huang"
+      ],
+      "author_count": 6,
+      "summary": "因果关系——指代组件间时间性、单向的因果联系——构成了众多复杂生成过程的基础，包括视频、语言和机器人轨迹。当前的因果扩散模型将时序推理与迭代去噪过程相耦合，在每一层去噪操作中均施加因果注意力机制。",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:57:21+00:00",
+      "updated": "2026-02-10T18:57:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10095v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10095v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10090v1",
+      "title": "智能体世界模型：面向智能体强化学习的无限合成环境",
+      "authors": [
+        "Zhaoyang Wang",
+        "Canwen Xu",
+        "Boyi Liu",
+        "Yite Wang",
+        "Siwei Han"
+      ],
+      "author_count": 8,
+      "summary": "大型语言模型（LLM）的最新进展使自主智能体能够执行需要与工具和环境进行多轮交互的复杂任务。然而，由于缺乏多样且可靠的环境，此类智能体训练的扩展受到限制。在本文中，我们提出了智能体世界模型（AWM），这是一种完全合成的环境……",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T18:55:41+00:00",
+      "updated": "2026-02-10T18:55:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10090v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10090v1",
+      "comment": "41 pages"
+    },
+    {
+      "id": "2602.10067v1",
+      "title": "Features as Rewards: Scalable Supervision for Open-Ended Tasks via Interpretability",
+      "authors": [
+        "Aaditya Vikram Prasad",
+        "Connor Watts",
+        "Jack Merullo",
+        "Dhruvil Gala",
+        "Owen Lewis"
+      ],
+      "author_count": 7,
+      "summary": "Language models trained on large-scale datasets have been shown to learn features that encode abstract concepts such as factuality or intent. Such features are traditionally used for test-time monitoring or steering. We present an alternative affordance: features as scalable supervision for...",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:33:45+00:00",
+      "updated": "2026-02-10T18:33:45+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10067v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10067v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10062v1",
+      "title": "Vendi Novelty Scores for Out-of-Distribution Detection",
+      "authors": [
+        "Amey P. Pasarkar",
+        "Adji Bousso Dieng"
+      ],
+      "author_count": 2,
+      "summary": "Out-of-distribution (OOD) detection is critical for the safe deployment of machine learning systems. Existing post-hoc detectors typically rely on model confidence scores or likelihood estimates in feature space, often under restrictive distributional assumptions. In this work, we introduce a third...",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:30:29+00:00",
+      "updated": "2026-02-10T18:30:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10062v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10062v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10058v1",
+      "title": "Evaluating Disentangled Representations for Controllable Music Generation",
+      "authors": [
+        "Laura Ibáñez-Martínez",
+        "Chukwuemeka Nkama",
+        "Andrea Poltronieri",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "author_count": 5,
+      "summary": "Recent approaches in music generation rely on disentangled representations, often labeled as structure and timbre or local and global, to enable controllable synthesis. Yet the underlying properties of these embeddings remain underexplored. In this work, we evaluate such disentangled...",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T18:25:04+00:00",
+      "updated": "2026-02-10T18:25:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10058v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10058v1",
+      "comment": "Accepted at ICASSP 2026"
+    },
+    {
+      "id": "2602.10056v1",
+      "title": "WildCat: Near-Linear Attention in Theory and Practice",
+      "authors": [
+        "Tobias Schröder",
+        "Lester Mackey"
+      ],
+      "author_count": 2,
+      "summary": "We introduce WildCat, a high-accuracy, low-cost approach to compressing the attention mechanism in neural networks. While attention is a staple of modern network architectures, it is also notoriously expensive to deploy due to resource requirements that scale quadratically with the input sequence...",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:22:32+00:00",
+      "updated": "2026-02-10T18:22:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10056v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10056v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10048v1",
+      "title": "长链思维压缩通过细粒度组策略优化实现",
+      "authors": [
+        "Xinchen Han",
+        "Hossam Afifi",
+        "Michel Marot",
+        "Xilu Wang",
+        "Lu Yin"
+      ],
+      "author_count": 5,
+      "summary": "大型语言模型（LLM）常生成不必要的冗长思维链推理，这会增加计算成本与延迟，却未带来相应的性能提升。本文提出细粒度分组策略优化方法，这是一种强化学习算法，旨在优化……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:15:58+00:00",
+      "updated": "2026-02-10T18:15:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10048v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10048v1",
+      "comment": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026"
+    },
+    {
+      "id": "2602.10045v1",
+      "title": "Conformal Prediction Sets for Instance Segmentation",
+      "authors": [
+        "Kerri Lu",
+        "Dan M. Kluger",
+        "Stephen Bates",
+        "Sherrie Wang"
+      ],
+      "author_count": 4,
+      "summary": "Current instance segmentation models achieve high performance on average predictions, but lack principled uncertainty quantification: their outputs are not calibrated, and there is no guarantee that a predicted mask is close to the ground truth. To address this limitation, we introduce a conformal...",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "stat.ME",
+        "stat.ML"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:15:06+00:00",
+      "updated": "2026-02-10T18:15:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10045v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10045v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10044v1",
+      "title": "乐观世界模型：基于模型的深度强化学习中的高效探索",
+      "authors": [
+        "Akshay Mete",
+        "Shahid Aamir Sheikh",
+        "Tzu-Hsiang Lin",
+        "Dileep Kalathil",
+        "P. R. Kumar"
+      ],
+      "author_count": 5,
+      "summary": "高效探索仍然是强化学习（RL）领域的核心挑战，尤其是在稀疏奖励环境中。我们提出了乐观世界模型（OWMs），这是一个基于原则且可扩展的乐观探索框架，它将自适应控制中的经典奖励偏置最大似然估计（RBMLE）引入深度强化学习领域。",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:11:00+00:00",
+      "updated": "2026-02-10T18:11:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10044v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10044v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10037v1",
+      "title": "Effectiveness of Binary Autoencoders for QUBO-Based Optimization Problems",
+      "authors": [
+        "Tetsuro Abe",
+        "Masashi Yamashita",
+        "Shu Tanaka"
+      ],
+      "author_count": 3,
+      "summary": "In black-box combinatorial optimization, objective evaluations are often expensive, so high quality solutions must be found under a limited budget. Factorization machine with quantum annealing (FMQA) builds a quadratic surrogate model from evaluated samples and optimizes it on an Ising machine....",
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "quant-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:59:29+00:00",
+      "updated": "2026-02-10T17:59:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10037v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10037v1",
+      "comment": "14 pages, 5 figures"
+    },
+    {
+      "id": "2602.10031v1",
+      "title": "Position: Message-passing and spectral GNNs are two sides of the same coin",
+      "authors": [
+        "Antonis Vasileiou",
+        "Juan Cervino",
+        "Pascal Frossard",
+        "Charilaos I. Kanatsoulis",
+        "Christopher Morris"
+      ],
+      "author_count": 10,
+      "summary": "Graph neural networks (GNNs) are commonly divided into message-passing neural networks (MPNNs) and spectral graph neural networks, reflecting two largely separate research traditions in machine learning and signal processing. This paper argues that this divide is mostly artificial, hindering...",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:53:40+00:00",
+      "updated": "2026-02-10T17:53:40+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10031v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10031v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10019v1",
+      "title": "ADORA：基于强化学习的动态优势估计训练推理模型",
+      "authors": [
+        "Qingnan Ren",
+        "Shiting Huang",
+        "Zhen Fang",
+        "Zehui Chen",
+        "Lin Chen"
+      ],
+      "author_count": 7,
+      "summary": "强化学习已成为在复杂任务中开发推理模型的基石技术，从数学问题求解到虚构推理均有涉猎。这些模型的优化通常依赖于策略梯度方法，其有效性关键在于对优势函数的精确估计。然而，主流方法……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:40:39+00:00",
+      "updated": "2026-02-10T17:40:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10019v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10019v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10014v1",
+      "title": "A Task-Centric Theory for Iterative Self-Improvement with Easy-to-Hard Curricula",
+      "authors": [
+        "Chenruo Liu",
+        "Yijun Dong",
+        "Yiqiu Shen",
+        "Qi Lei"
+      ],
+      "author_count": 4,
+      "summary": "Iterative self-improvement fine-tunes an autoregressive large language model (LLM) on reward-verified outputs generated by the LLM itself. In contrast to the empirical success of self-improvement, the theoretical foundation of this generative, iterative procedure in a practical, finite-sample...",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:36:41+00:00",
+      "updated": "2026-02-10T17:36:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10014v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10014v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10006v1",
+      "title": "Answer First, Reason Later: Aligning Search Relevance via Mode-Balanced Reinforcement Learning",
+      "authors": [
+        "Shijie Zhang",
+        "Xiang Guo",
+        "Rujun Guo",
+        "Shaoyu Liu",
+        "Xiaozhao Wang"
+      ],
+      "author_count": 7,
+      "summary": "Building a search relevance model that achieves both low latency and high performance is a long-standing challenge in the search industry. To satisfy the millisecond-level response requirements of online systems while retaining the interpretable reasoning traces of Large Language Models (LLMs), we...",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:28:12+00:00",
+      "updated": "2026-02-10T17:28:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10006v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10006v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09988v1",
+      "title": "科尔莫戈罗夫-阿诺德网络在硬约束循环物理信息发现中的经验稳定性分析",
+      "authors": [
+        "Enzo Nicolas Spotorno",
+        "Josafat Leal Filho",
+        "Antonio Augusto Medeiros Frohlich"
+      ],
+      "author_count": 3,
+      "summary": "我们研究将柯尔莫哥洛夫-阿诺德网络（KANs）集成到硬约束循环物理信息架构（HRPINN）中，以评估振荡系统中学得残差流形的保真度。受柯尔莫哥洛夫-阿诺德表示定理及初步灰盒结果的启发，我们假设KANs能够实现……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:13:51+00:00",
+      "updated": "2026-02-10T17:13:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09988v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09988v1",
+      "comment": "5 pages"
+    }
+  ]
+}

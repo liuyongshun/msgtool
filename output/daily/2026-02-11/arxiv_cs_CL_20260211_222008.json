@@ -1,0 +1,457 @@
+{
+  "source": "arXiv",
+  "category": "cs.CL",
+  "category_name": "Computation and Language (NLP)",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:08.699031",
+  "papers": [
+    {
+      "id": "2602.10092v1",
+      "title": "量子审计：评估大型语言模型在量子计算上的推理极限",
+      "authors": [
+        "Mohamed Afane",
+        "Kayla Laufer",
+        "Wenqi Wei",
+        "Ying Mao",
+        "Junaid Farooq"
+      ],
+      "author_count": 7,
+      "summary": "语言模型已成为量子计算教育与研究的实用工具，从总结技术论文到解释理论概念，再到回答该领域最新进展的相关问题。现有基准测试虽能评估量子代码生成与电路设计能力，但其对量子计算的理解……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T18:56:04+00:00",
+      "updated": "2026-02-10T18:56:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10092v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10092v1",
+      "comment": "18 pages"
+    },
+    {
+      "id": "2602.10090v1",
+      "title": "智能体世界模型：面向智能体强化学习的无限合成环境",
+      "authors": [
+        "Zhaoyang Wang",
+        "Canwen Xu",
+        "Boyi Liu",
+        "Yite Wang",
+        "Siwei Han"
+      ],
+      "author_count": 8,
+      "summary": "大型语言模型（LLM）的最新进展使自主智能体能够执行需要与工具和环境进行多轮交互的复杂任务。然而，由于缺乏多样且可靠的环境，此类智能体训练的扩展受到限制。在本文中，我们提出了智能体世界模型（AWM），这是一种完全合成的环境……",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T18:55:41+00:00",
+      "updated": "2026-02-10T18:55:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10090v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10090v1",
+      "comment": "41 pages"
+    },
+    {
+      "id": "2602.10081v1",
+      "title": "提升科学图表分析能力的智能代理",
+      "authors": [
+        "Xuehang Guo",
+        "Zhiyong Lu",
+        "Tom Hope",
+        "Qingyun Wang"
+      ],
+      "author_count": 4,
+      "summary": "在科学研究中，分析需要准确解读复杂的多模态知识，整合不同来源的证据，并基于特定领域知识进行推理。然而，当前的人工智能系统难以持续展现此类能力。其复杂性与多变性……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T18:46:28+00:00",
+      "updated": "2026-02-10T18:46:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10081v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10081v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10074v1",
+      "title": "CAPID：面向问答系统的上下文感知个人身份信息检测",
+      "authors": [
+        "Mariia Ponomarenko",
+        "Sepideh Abedini",
+        "Masoumeh Shafieinejad",
+        "D. B. Emerson",
+        "Shubhankar Mohapatra"
+      ],
+      "author_count": 6,
+      "summary": "检测用户查询中的个人身份信息（PII）对于确保问答系统的隐私至关重要。当前方法主要会屏蔽所有PII，却忽略了其中部分信息可能与用户问题在上下文相关的事实，从而导致回答质量下降。大型语言模型（LLMs）或许能……",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-10T18:41:31+00:00",
+      "updated": "2026-02-10T18:41:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10074v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10074v1",
+      "comment": "Accepted to the Student Research Workshop at EACL 2026"
+    },
+    {
+      "id": "2602.10024v1",
+      "title": "TREC 2025 RAGTIME 赛道概述",
+      "authors": [
+        "Dawn Lawrie",
+        "Sean MacAvaney",
+        "James Mayfield",
+        "Luca Soldaini",
+        "Eugene Yang"
+      ],
+      "author_count": 6,
+      "summary": "TREC多语言评估RAG工具（RAGTIME）赛道的主要目标是研究基于多语言源文档的报告生成。该赛道创建了一个包含阿拉伯语、中文、英语和俄语新闻报道的文档集合。RAGTIME包含三种任务类型：多语言报告生成、英语报告生成以及跨语言报告生成。",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T17:47:20+00:00",
+      "updated": "2026-02-10T17:47:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10024v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10024v1",
+      "comment": "10 pages, 3 figures, notebook version of the RAGTIME 2025 overview paper"
+    },
+    {
+      "id": "2602.10023v1",
+      "title": "MEVER：基于图证据检索的多模态可解释声明验证",
+      "authors": [
+        "Delvin Ce Zhang",
+        "Suhan Cui",
+        "Zhelin Chu",
+        "Xianren Zhang",
+        "Dongwon Lee"
+      ],
+      "author_count": 5,
+      "summary": "验证声明的真实性通常需要对文本和视觉证据进行联合多模态推理，例如分析文本说明和图表图像以进行声明验证。此外，为了使推理过程透明化，需要提供文本解释来证明验证结果的合理性。然而，大多数声明...",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:44:57+00:00",
+      "updated": "2026-02-10T17:44:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10023v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10023v1",
+      "comment": "Accepted to EACL-26"
+    },
+    {
+      "id": "2602.10021v1",
+      "title": "解耦推理与隐式事实标记（DRIFT）：一种高效长上下文推理的双模型框架",
+      "authors": [
+        "Wenxuan Xie",
+        "Yujia Wang",
+        "Xin Tan",
+        "Chaochao Lu",
+        "Xia Hu"
+      ],
+      "author_count": 6,
+      "summary": "将广泛、动态的知识整合进大型语言模型（LLM）仍是一个重大挑战，这源于事实数据与推理模式之间固有的纠缠性。现有解决方案——从非参数化的检索增强生成（RAG）到参数化的知识编辑——在实践中往往受限于有限……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:42:31+00:00",
+      "updated": "2026-02-10T17:42:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10021v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10021v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10017v1",
+      "title": "分数：特异性、上下文利用、鲁棒性及关联性——无参考大语言模型评估标准",
+      "authors": [
+        "Homaira Huda Shomee",
+        "Rochana Chaturvedi",
+        "Yangxinyu Xie",
+        "Tanwi Mallick"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型正日益应用于高风险、特定领域的场景，如自然灾害响应和基础设施规划，以支持问答和决策制定。在这些场景中，有效的回答必须传达细粒度、对决策至关重要的细节。然而，现有的检索增强评估框架……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:39:17+00:00",
+      "updated": "2026-02-10T17:39:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10017v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10017v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10003v1",
+      "title": "ViSpeechFormer：一种面向越南语自动语音识别的音素方法",
+      "authors": [
+        "Khoa Anh Nguyen",
+        "Long Minh Hoang",
+        "Nghia Hieu Nguyen",
+        "Luan Thanh Nguyen",
+        "Ngan Luu-Thuy Nguyen"
+      ],
+      "author_count": 5,
+      "summary": "越南语具有语音正字法特点，每个字素最多对应一个音素，反之亦然。利用这种高度的字素-音素对应关系，我们提出了ViSpeechFormer（越南语音频转换器），这是一种基于音素的越南语自动语音识别方法。据我们所知...",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:26:55+00:00",
+      "updated": "2026-02-10T17:26:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10003v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10003v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09992v1",
+      "title": "对神经语言模型刺激贫乏论点的统一评估",
+      "authors": [
+        "Xiulin Yang",
+        "Arianna Bisazza",
+        "Nathan Schneider",
+        "Ethan Gotlieb Wilcox"
+      ],
+      "author_count": 4,
+      "summary": "儿童如何从有限的输入中习得母语水平的句法？根据刺激贫乏假说，儿童接收到的语言输入不足以解释那些被牢固掌握的普遍语法规则；因此许多人认为，内在的语言约束对于解释语言学习过程是必要的。神经...",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:16:29+00:00",
+      "updated": "2026-02-10T17:16:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09992v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09992v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09961v1",
+      "title": "ViMultiChoice：一种为越南语多项选择阅读理解提供解释的方法",
+      "authors": [
+        "Trung Tien Cao",
+        "Lam Minh Thai",
+        "Nghia Hieu Nguyen",
+        "Duc-Vu Nguyen",
+        "Ngan Luu-Thuy Nguyen"
+      ],
+      "author_count": 5,
+      "summary": "多项选择阅读理解模型旨在从一组候选答案中为给定问题选出正确答案，然而它们通常缺乏解释选择背后推理的能力。本文引入了一个新颖的越南语数据集，专门用于训练和评估具备解释能力的多项选择阅读理解模型。",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T16:48:07+00:00",
+      "updated": "2026-02-10T16:48:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09961v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09961v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09953v1",
+      "title": "ATTPO：注意力引导的高效推理过程监督",
+      "authors": [
+        "Shuaiyi Nie",
+        "Siyu Ding",
+        "Wenyuan Zhang",
+        "Linhao Yu",
+        "Tianmeng Yang"
+      ],
+      "author_count": 10,
+      "summary": "采用强化学习和可验证奖励（RLVR）训练的大型推理模型在复杂推理任务上表现出色，但常因过度思考而产生冗余推理，却未能提升性能。现有的轨迹级长度惩罚方法往往无法有效缩短推理长度，反而会降低准确性，因为它们……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T16:40:22+00:00",
+      "updated": "2026-02-10T16:40:22+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09953v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09953v1",
+      "comment": "Work in process"
+    },
+    {
+      "id": "2602.09924v1",
+      "title": "大型语言模型编码其失败：从生成前激活预测成功",
+      "authors": [
+        "William Lugoloobi",
+        "Thomas Foster",
+        "William Bankes",
+        "Chris Russell"
+      ],
+      "author_count": 4,
+      "summary": "在每一个问题上运行具有扩展推理能力的大型语言模型成本高昂，但确定哪些输入真正需要额外计算资源仍然具有挑战性。我们研究是否能在生成前从其内部表征中提取出模型自身的成功可能性，以及这一信号是否能指导更高效的推理过程。我们训练线性...",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T15:57:00+00:00",
+      "updated": "2026-02-10T15:57:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09924v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09924v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09914v1",
+      "title": "阿姆哈拉语信息检索+指令：用于神经检索与指令调优的双数据集资源",
+      "authors": [
+        "Tilahun Yeshambel",
+        "Moncef Garouani",
+        "Josiane Mothe"
+      ],
+      "author_count": 3,
+      "summary": "神经检索与GPT风格的生成模型依赖于大规模高质量监督数据，而对于阿姆哈拉语等低资源语言而言，这类数据依然稀缺。我们发布了一个阿姆哈拉语数据资源，包含两个支持以下研究方向的数据集：(i)神经检索排序与(ii)指令跟随文本生成。该检索排序数据集……",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T15:45:20+00:00",
+      "updated": "2026-02-10T15:45:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09914v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09914v1",
+      "comment": "7 pages, Submitted to resource track"
+    },
+    {
+      "id": "2602.09901v1",
+      "title": "QP-OneModel：小红书搜索中多任务查询理解的统一生成式大语言模型",
+      "authors": [
+        "Jianzhao Huang",
+        "Xiaorui Huang",
+        "Fei Zhao",
+        "Yunpeng Liu",
+        "Hui Zhang"
+      ],
+      "author_count": 12,
+      "summary": "查询处理（QP）在大规模社交网络服务（SNS）搜索引擎中连接用户意图与内容供给。传统QP系统依赖孤立判别模型（如BERT）的流水线架构，存在语义理解有限和维护成本高昂的问题。尽管大型语言模型（LLMs）提供了潜在解决方案……",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T15:38:17+00:00",
+      "updated": "2026-02-10T15:38:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09901v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09901v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09877v1",
+      "title": "《蜕皮之书》背后的魔鬼：在自我进化的AI社会中，人类安全正悄然消逝",
+      "authors": [
+        "Chenxu Wang",
+        "Chaozhuo Li",
+        "Songyang Liu",
+        "Zejian Chen",
+        "Jinyu Hou"
+      ],
+      "author_count": 13,
+      "summary": "基于大语言模型构建的多智能体系统的出现，为可扩展的集体智能与自我进化提供了前景广阔的范式。理想情况下，这类系统能够在完全闭环中实现持续自我改进，同时保持稳健的安全对齐——我们将这种结合称为自我进化三难困境。",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T15:18:19+00:00",
+      "updated": "2026-02-10T15:18:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09877v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09877v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09870v1",
+      "title": "Steer2Edit：从激活引导到组件级编辑",
+      "authors": [
+        "Chung-En Sun",
+        "Ge Yan",
+        "Zimo Wang",
+        "Tsui-Wei Weng"
+      ],
+      "author_count": 4,
+      "summary": "引导方法通过识别隐藏表示中的语义方向来影响大型语言模型的行为，但通常通过推理时激活干预实现，这种干预会对模型的内部状态施加固定、全局性的修改。虽然有效，此类干预往往会引发不利的属性效用冲突……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T15:15:15+00:00",
+      "updated": "2026-02-10T15:15:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09870v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09870v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09856v1",
+      "title": "Code2World：通过可渲染代码生成的图形用户界面世界模型",
+      "authors": [
+        "Yuhao Zheng",
+        "Li'an Zhong",
+        "Yi Wang",
+        "Rui Dai",
+        "Kaikui Liu"
+      ],
+      "author_count": 9,
+      "summary": "自主GUI代理通过感知界面和执行操作与环境互动。作为虚拟沙盒，GUI世界模型通过支持基于行动条件的预测，赋予代理类人的预见能力。然而，现有的基于文本和像素的方法难以同时实现高视觉保真度和细粒度...",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T14:56:19+00:00",
+      "updated": "2026-02-10T14:56:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09856v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09856v1",
+      "comment": "github: https://github.com/AMAP-ML/Code2World project page: https://amap-ml.github.io/Code2World/"
+    },
+    {
+      "id": "2602.09838v1",
+      "title": "人们如何自然量化：来自普通话图片描述的证据",
+      "authors": [
+        "Yayun Zhang",
+        "Guanyi Chen",
+        "Fahime Same",
+        "Saad Mahamood",
+        "Tingting He"
+      ],
+      "author_count": 5,
+      "summary": "量化是日常语言使用的一个基本组成部分，然而对于说话者在自然表达中如何决定是否及如何进行量化，我们知之甚少。我们通过一项基于图片的诱发描述任务来研究汉语中的量化现象，在该任务中，说话者自由描述包含多个物体的场景，无需……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T14:45:00+00:00",
+      "updated": "2026-02-10T14:45:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09838v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09838v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09832v1",
+      "title": "大型语言模型推理能力预测模型准确性：来自编程课堂讨论的证据",
+      "authors": [
+        "Bakhtawar Ahtisham",
+        "Kirk Vanacore",
+        "Zhuqian Zhou",
+        "Jinsook Lee",
+        "Rene F. Kizilcec"
+      ],
+      "author_count": 5,
+      "summary": "大型语言模型正越来越多地被部署用于大规模自动标注和分析教育对话，然而当前的流程缺乏可靠的方法来检测模型何时出错。我们研究了是否可以利用大型语言模型生成的推理来预测其自身预测的正确性。我们分析了30,300条教师对话……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T14:38:13+00:00",
+      "updated": "2026-02-10T14:38:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09832v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09832v1",
+      "comment": null
+    }
+  ]
+}

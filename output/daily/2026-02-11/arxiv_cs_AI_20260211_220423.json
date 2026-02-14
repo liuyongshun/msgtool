@@ -1,0 +1,460 @@
+{
+  "source": "arXiv",
+  "category": "cs.AI",
+  "category_name": "Artificial Intelligence",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:04:23.080650",
+  "papers": [
+    {
+      "id": "2602.10117v1",
+      "title": "盲点中的偏见：探测大型语言模型未提及的内容",
+      "authors": [
+        "Iván Arcuschin",
+        "David Chanin",
+        "Adrià Garriga-Alonso",
+        "Oana-Maria Camburu"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型（LLM）常提供看似合理的思维链推理轨迹，却可能隐藏着内在偏见。我们称其为*未言明的偏见*。因此，仅通过模型声明的推理过程进行监控并不可靠，而现有的偏见评估通常需要预定义类别和人工构建的数据集。在此...",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:59:56+00:00",
+      "updated": "2026-02-10T18:59:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10117v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10117v1",
+      "comment": "10 pages, Under review at ICML 2026"
+    },
+    {
+      "id": "2602.10104v1",
+      "title": "奥拉夫世界：为视频世界建模定向潜在行动",
+      "authors": [
+        "Yuxin Jiang",
+        "Yuchao Gu",
+        "Ivor W. Tsang",
+        "Mike Zheng Shou"
+      ],
+      "author_count": 4,
+      "summary": "扩展动作可控世界模型受限于动作标签的稀缺性。虽然潜在动作学习有望从未标记视频中提取控制界面，但习得的潜在表征往往难以跨情境迁移：它们混杂了场景特定线索，且缺乏统一的坐标系。这种现象源于标准目标函数……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:58:41+00:00",
+      "updated": "2026-02-10T18:58:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10104v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10104v1",
+      "comment": "Project page: https://showlab.github.io/Olaf-World/ Code: https://github.com/showlab/Olaf-World"
+    },
+    {
+      "id": "2602.10097v1",
+      "title": "循环变压器步进解析数据归属",
+      "authors": [
+        "Georgios Kaissis",
+        "David Mildenberger",
+        "Juan Felipe Gomez",
+        "Martin J. Menten",
+        "Eleni Triantafillou"
+      ],
+      "author_count": 5,
+      "summary": "我们研究个体训练样本如何塑造循环变压器的内部计算，其中共享块被应用于$τ$次循环迭代以实现潜在推理。现有的训练数据影响力估计器（如TracIn）会生成一个单一标量分数，该分数聚合了所有循环迭代的结果，从而模糊了在...过程中的具体时机。",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:57:53+00:00",
+      "updated": "2026-02-10T18:57:53+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10097v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10097v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10095v1",
+      "title": "视频扩散中的因果关系与去噪过程可分离。",
+      "authors": [
+        "Xingjian Bai",
+        "Guande He",
+        "Zhengqi Li",
+        "Eli Shechtman",
+        "Xun Huang"
+      ],
+      "author_count": 6,
+      "summary": "因果关系——指代组件间时间性、单向的因果联系——构成了众多复杂生成过程的基础，包括视频、语言和机器人轨迹。当前的因果扩散模型将时序推理与迭代去噪过程相耦合，在每一层去噪操作中均施加因果注意力机制。",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:57:21+00:00",
+      "updated": "2026-02-10T18:57:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10095v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10095v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10090v1",
+      "title": "智能体世界模型：面向智能体强化学习的无限合成环境",
+      "authors": [
+        "Zhaoyang Wang",
+        "Canwen Xu",
+        "Boyi Liu",
+        "Yite Wang",
+        "Siwei Han"
+      ],
+      "author_count": 8,
+      "summary": "大型语言模型（LLM）的最新进展使自主智能体能够执行需要与工具和环境进行多轮交互的复杂任务。然而，由于缺乏多样且可靠的环境，此类智能体训练的扩展受到限制。在本文中，我们提出了智能体世界模型（AWM），这是一种完全合成的环境……",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T18:55:41+00:00",
+      "updated": "2026-02-10T18:55:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10090v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10090v1",
+      "comment": "41 pages"
+    },
+    {
+      "id": "2602.10085v1",
+      "title": "CODE-SHARP：作为分层奖励程序的技能的持续开放式发现与进化",
+      "authors": [
+        "Richard Bornemann",
+        "Pierluigi Vito Amadori",
+        "Antoine Cully"
+      ],
+      "author_count": 3,
+      "summary": "开发能够开放式发现和学习新技能的智能体是人工智能领域的一项重大挑战。尽管强化学习为训练智能体掌握复杂技能提供了强大框架，但它通常依赖于人工设计的奖励函数。这对于开放式技能发现而言并不可行，因为……",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T18:51:39+00:00",
+      "updated": "2026-02-10T18:51:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10085v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10085v1",
+      "comment": "Preprint"
+    },
+    {
+      "id": "2602.10081v1",
+      "title": "提升科学图表分析能力的智能代理",
+      "authors": [
+        "Xuehang Guo",
+        "Zhiyong Lu",
+        "Tom Hope",
+        "Qingyun Wang"
+      ],
+      "author_count": 4,
+      "summary": "在科学研究中，分析需要准确解读复杂的多模态知识，整合不同来源的证据，并基于特定领域知识进行推理。然而，当前的人工智能系统难以持续展现此类能力。其复杂性与多变性……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T18:46:28+00:00",
+      "updated": "2026-02-10T18:46:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10081v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10081v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10063v1",
+      "title": "思维链：运用适应性认知模式进行推理",
+      "authors": [
+        "Tianyi Jiang",
+        "Arctanx An",
+        "Hengyi Feng",
+        "Naixin Zhai",
+        "Haodong Li"
+      ],
+      "author_count": 15,
+      "summary": "人类解决问题从不重复单一思维模式，即一种特定的认知处理方式。面对具体任务时，我们并非依赖单一思维，而是在解决过程中融合多种思维模式。然而现有的大语言模型推理方法却陷入了一个普遍误区：它们总是套用……",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T18:31:47+00:00",
+      "updated": "2026-02-10T18:31:47+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10063v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10063v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10048v1",
+      "title": "长链思维压缩通过细粒度组策略优化实现",
+      "authors": [
+        "Xinchen Han",
+        "Hossam Afifi",
+        "Michel Marot",
+        "Xilu Wang",
+        "Lu Yin"
+      ],
+      "author_count": 5,
+      "summary": "大型语言模型（LLM）常生成不必要的冗长思维链推理，这会增加计算成本与延迟，却未带来相应的性能提升。本文提出细粒度分组策略优化方法，这是一种强化学习算法，旨在优化……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:15:58+00:00",
+      "updated": "2026-02-10T18:15:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10048v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10048v1",
+      "comment": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026"
+    },
+    {
+      "id": "2602.10044v1",
+      "title": "乐观世界模型：基于模型的深度强化学习中的高效探索",
+      "authors": [
+        "Akshay Mete",
+        "Shahid Aamir Sheikh",
+        "Tzu-Hsiang Lin",
+        "Dileep Kalathil",
+        "P. R. Kumar"
+      ],
+      "author_count": 5,
+      "summary": "高效探索仍然是强化学习（RL）领域的核心挑战，尤其是在稀疏奖励环境中。我们提出了乐观世界模型（OWMs），这是一个基于原则且可扩展的乐观探索框架，它将自适应控制中的经典奖励偏置最大似然估计（RBMLE）引入深度强化学习领域。",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:11:00+00:00",
+      "updated": "2026-02-10T18:11:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10044v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10044v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10042v1",
+      "title": "假HR1：重新思考视觉语言模型在合成图像检测中的推理能力",
+      "authors": [
+        "Changjiang Jiang",
+        "Xinkuan Sha",
+        "Fengchang Yu",
+        "Jingjing Liu",
+        "Jian Liu"
+      ],
+      "author_count": 8,
+      "summary": "近期研究表明，将思维链推理融入检测过程能提升模型识别合成图像的能力。然而，过长的推理路径会带来显著的资源开销——包括令牌消耗与处理延迟，这在处理明显...",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:10:08+00:00",
+      "updated": "2026-02-10T18:10:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10042v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10042v1",
+      "comment": "Accepted by ICASSP 2026"
+    },
+    {
+      "id": "2602.10021v1",
+      "title": "解耦推理与隐式事实标记（DRIFT）：一种高效长上下文推理的双模型框架",
+      "authors": [
+        "Wenxuan Xie",
+        "Yujia Wang",
+        "Xin Tan",
+        "Chaochao Lu",
+        "Xia Hu"
+      ],
+      "author_count": 6,
+      "summary": "将广泛、动态的知识整合进大型语言模型（LLM）仍是一个重大挑战，这源于事实数据与推理模式之间固有的纠缠性。现有解决方案——从非参数化的检索增强生成（RAG）到参数化的知识编辑——在实践中往往受限于有限……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:42:31+00:00",
+      "updated": "2026-02-10T17:42:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10021v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10021v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10019v1",
+      "title": "ADORA：基于强化学习的动态优势估计训练推理模型",
+      "authors": [
+        "Qingnan Ren",
+        "Shiting Huang",
+        "Zhen Fang",
+        "Zehui Chen",
+        "Lin Chen"
+      ],
+      "author_count": 7,
+      "summary": "强化学习已成为在复杂任务中开发推理模型的基石技术，从数学问题求解到虚构推理均有涉猎。这些模型的优化通常依赖于策略梯度方法，其有效性关键在于对优势函数的精确估计。然而，主流方法……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:40:39+00:00",
+      "updated": "2026-02-10T17:40:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10019v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10019v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10016v1",
+      "title": "昆仑：通过统一架构设计建立大规模推荐系统的扩展定律",
+      "authors": [
+        "Bojian Hou",
+        "Xiaolong Liu",
+        "Xiaoyi Liu",
+        "Jiaqi Xu",
+        "Yasmine Badr"
+      ],
+      "author_count": 28,
+      "summary": "推导出可预测的扩展规律，以明确模型性能与计算投入之间的关系，对于大规模推荐系统的设计与资源配置至关重要。尽管此类规律已在大型语言模型中得到确立，但在推荐系统领域——尤其是处理海量数据的系统中——其确立仍面临挑战。",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T17:37:55+00:00",
+      "updated": "2026-02-10T17:37:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10016v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10016v1",
+      "comment": "10 pages, 4 figures"
+    },
+    {
+      "id": "2602.10015v1",
+      "title": "RoboSubtaskNet：现实环境中人机技能传递的时序子任务分割",
+      "authors": [
+        "Dharmendra Sharma",
+        "Archit Sharma",
+        "John Reberio",
+        "Vaibhav Kesharwani",
+        "Peeyush Thakur"
+      ],
+      "author_count": 7,
+      "summary": "在长且未经剪辑的视频中，对细粒度子任务片段进行时序定位与分类，对于实现安全的人机协作至关重要。与通用活动识别不同，协作操作需要可直接由机器人执行的子任务标签。我们提出了RoboSubtaskNet——一种多阶段的人机子任务分割框架……",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:37:35+00:00",
+      "updated": "2026-02-10T17:37:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10015v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10015v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10009v1",
+      "title": "从仿真轨迹中发现高级模式",
+      "authors": [
+        "Sean Memery",
+        "Kartic Subr"
+      ],
+      "author_count": 2,
+      "summary": "嵌入在基于物理交互环境中的智能体面临着诸多挑战，包括推理、规划、信息归纳与问题解答。当人类用户希望以自然语言引导或与智能体互动时，这一问题变得尤为突出。尽管语言模型的应用是……",
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T17:31:39+00:00",
+      "updated": "2026-02-10T17:31:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10009v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10009v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10007v1",
+      "title": "拥堵匝道汇入中安全高效协同自动驾驶车道变更的协作安全屏障",
+      "authors": [
+        "Bharathkumar Hegde",
+        "Melanie Bouroche"
+      ],
+      "author_count": 2,
+      "summary": "在密集交通中换道对于联网自动驾驶车辆（CAV）而言是一项重大挑战。现有的换道控制器主要侧重于确保安全性或协同提升交通效率，但未能同时兼顾这两个相互冲突的目标。为此，我们提出了多智能体安全屏障（MASS）方案，旨在……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:30:09+00:00",
+      "updated": "2026-02-10T17:30:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10007v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10007v1",
+      "comment": "Accepted in IEEE IV 2026"
+    },
+    {
+      "id": "2602.10004v1",
+      "title": "ESTAR：面向高效推理的早期停止令牌感知推理",
+      "authors": [
+        "Junda Wang",
+        "Zhichao Yang",
+        "Dongxu Zhang",
+        "Sanjit Singh Batra",
+        "Robert E. Tillman"
+      ],
+      "author_count": 5,
+      "summary": "大型推理模型（LRMs）通过生成长链思维达到最先进的性能，但往往在正确答案已得出后仍对冗余推理进行不必要的计算。我们引入了面向令牌感知推理的早期停止机制（ESTAR），该机制能检测并减少此类推理冗余，从而提升效率...",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T17:27:26+00:00",
+      "updated": "2026-02-10T17:27:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10004v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10004v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09992v1",
+      "title": "对神经语言模型刺激贫乏论点的统一评估",
+      "authors": [
+        "Xiulin Yang",
+        "Arianna Bisazza",
+        "Nathan Schneider",
+        "Ethan Gotlieb Wilcox"
+      ],
+      "author_count": 4,
+      "summary": "儿童如何从有限的输入中习得母语水平的句法？根据刺激贫乏假说，儿童接收到的语言输入不足以解释那些被牢固掌握的普遍语法规则；因此许多人认为，内在的语言约束对于解释语言学习过程是必要的。神经...",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T17:16:29+00:00",
+      "updated": "2026-02-10T17:16:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09992v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09992v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09988v1",
+      "title": "科尔莫戈罗夫-阿诺德网络在硬约束循环物理信息发现中的经验稳定性分析",
+      "authors": [
+        "Enzo Nicolas Spotorno",
+        "Josafat Leal Filho",
+        "Antonio Augusto Medeiros Frohlich"
+      ],
+      "author_count": 3,
+      "summary": "我们研究将柯尔莫哥洛夫-阿诺德网络（KANs）集成到硬约束循环物理信息架构（HRPINN）中，以评估振荡系统中学得残差流形的保真度。受柯尔莫哥洛夫-阿诺德表示定理及初步灰盒结果的启发，我们假设KANs能够实现……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:13:51+00:00",
+      "updated": "2026-02-10T17:13:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09988v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09988v1",
+      "comment": "5 pages"
+    }
+  ]
+}

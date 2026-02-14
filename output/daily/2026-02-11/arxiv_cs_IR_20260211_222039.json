@@ -1,0 +1,451 @@
+{
+  "source": "arXiv",
+  "category": "cs.IR",
+  "category_name": "Information Retrieval",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:39.640946",
+  "papers": [
+    {
+      "id": "2602.10024v1",
+      "title": "TREC 2025 RAGTIME 赛道概述",
+      "authors": [
+        "Dawn Lawrie",
+        "Sean MacAvaney",
+        "James Mayfield",
+        "Luca Soldaini",
+        "Eugene Yang"
+      ],
+      "author_count": 6,
+      "summary": "TREC多语言评估RAG工具（RAGTIME）赛道的主要目标是研究基于多语言源文档的报告生成。该赛道创建了一个包含阿拉伯语、中文、英语和俄语新闻报道的文档集合。RAGTIME包含三种任务类型：多语言报告生成、英语报告生成以及跨语言报告生成。",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T17:47:20+00:00",
+      "updated": "2026-02-10T17:47:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10024v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10024v1",
+      "comment": "10 pages, 3 figures, notebook version of the RAGTIME 2025 overview paper"
+    },
+    {
+      "id": "2602.10016v1",
+      "title": "昆仑：通过统一架构设计建立大规模推荐系统的扩展定律",
+      "authors": [
+        "Bojian Hou",
+        "Xiaolong Liu",
+        "Xiaoyi Liu",
+        "Jiaqi Xu",
+        "Yasmine Badr"
+      ],
+      "author_count": 28,
+      "summary": "推导出可预测的扩展规律，以明确模型性能与计算投入之间的关系，对于大规模推荐系统的设计与资源配置至关重要。尽管此类规律已在大型语言模型中得到确立，但在推荐系统领域——尤其是处理海量数据的系统中——其确立仍面临挑战。",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T17:37:55+00:00",
+      "updated": "2026-02-10T17:37:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10016v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10016v1",
+      "comment": "10 pages, 4 figures"
+    },
+    {
+      "id": "2602.09935v1",
+      "title": "从交互中高效学习稀疏表示",
+      "authors": [
+        "Vojtěch Vančura",
+        "Martin Spišák",
+        "Rodrigo Alves",
+        "Ladislav Peška"
+      ],
+      "author_count": 4,
+      "summary": "从交互数据中习得的嵌入所捕捉的行为模式，在生产推荐系统的各个阶段都至关重要。然而，在初始检索阶段，从业者面临着嵌入表达能力与服务组件的可扩展性及延迟之间的固有权衡，这导致了……的需求。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T16:09:58+00:00",
+      "updated": "2026-02-10T16:09:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09935v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09935v1",
+      "comment": "In the proceedings of the Web Conference (WWW) 2026 (4 pages)"
+    },
+    {
+      "id": "2602.09914v1",
+      "title": "阿姆哈拉语信息检索+指令：用于神经检索与指令调优的双数据集资源",
+      "authors": [
+        "Tilahun Yeshambel",
+        "Moncef Garouani",
+        "Josiane Mothe"
+      ],
+      "author_count": 3,
+      "summary": "神经检索与GPT风格的生成模型依赖于大规模高质量监督数据，而对于阿姆哈拉语等低资源语言而言，这类数据依然稀缺。我们发布了一个阿姆哈拉语数据资源，包含两个支持以下研究方向的数据集：(i)神经检索排序与(ii)指令跟随文本生成。该检索排序数据集……",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T15:45:20+00:00",
+      "updated": "2026-02-10T15:45:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09914v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09914v1",
+      "comment": "7 pages, Submitted to resource track"
+    },
+    {
+      "id": "2602.09901v1",
+      "title": "QP-OneModel：小红书搜索中多任务查询理解的统一生成式大语言模型",
+      "authors": [
+        "Jianzhao Huang",
+        "Xiaorui Huang",
+        "Fei Zhao",
+        "Yunpeng Liu",
+        "Hui Zhang"
+      ],
+      "author_count": 12,
+      "summary": "查询处理（QP）在大规模社交网络服务（SNS）搜索引擎中连接用户意图与内容供给。传统QP系统依赖孤立判别模型（如BERT）的流水线架构，存在语义理解有限和维护成本高昂的问题。尽管大型语言模型（LLMs）提供了潜在解决方案……",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T15:38:17+00:00",
+      "updated": "2026-02-10T15:38:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09901v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09901v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09829v1",
+      "title": "内化多智能体推理以实现精准高效的基于大语言模型的推荐。",
+      "authors": [
+        "Yang Wu",
+        "Haoze Wang",
+        "Qian Li",
+        "Jun Zhang",
+        "Huan Yu"
+      ],
+      "author_count": 6,
+      "summary": "大型语言模型（LLM）正通过运用广泛的世界知识与语义推理来解读用户意图，从而重塑推荐系统。然而，如何有效融合这些能力与协同信号，同时避免过高的推理延迟，仍是关键瓶颈。为此，我们提出了一种……",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T14:36:59+00:00",
+      "updated": "2026-02-10T14:36:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09829v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09829v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09764v1",
+      "title": "自监督学习作为离散通信",
+      "authors": [
+        "Kawtar Zaher",
+        "Ilyass Moummad",
+        "Olivier Buisson",
+        "Alexis Joly"
+      ],
+      "author_count": 4,
+      "summary": "大多数自监督学习方法通过对齐同一输入的不同视图来学习连续的视觉表征，但在控制信息如何在表征维度间结构化方面能力有限。本研究将视觉自监督学习构建为师生间的离散通信过程……",
+      "categories": [
+        "cs.CV",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T13:24:06+00:00",
+      "updated": "2026-02-10T13:24:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09764v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09764v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09744v1",
+      "title": "DiffuReason：连接潜在推理与生成优化以提升序列推荐效果",
+      "authors": [
+        "Jie Jiang",
+        "Yang Wu",
+        "Qian Li",
+        "Yuling Xiong",
+        "Yihang Su"
+      ],
+      "author_count": 9,
+      "summary": "潜在推理已成为序列推荐领域一种前景广阔的新范式，通过多步推演使模型能够捕捉复杂的用户意图。然而现有方法通常依赖确定性的潜在链条，这种链条容易累积噪声且忽视了用户意图固有的不确定性，并且它们通常采用分阶段训练方式...",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T12:55:30+00:00",
+      "updated": "2026-02-10T12:55:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09744v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09744v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09616v1",
+      "title": "以锐利之眼：通过不确定性评分评估检索差距，以检测并弥补检索盲点",
+      "authors": [
+        "Zeinab Sadat Taghavi",
+        "Ali Modarressi",
+        "Hinrich Schutze",
+        "Andreas Marfurt"
+      ],
+      "author_count": 4,
+      "summary": "可靠的检索增强生成（RAG）系统从根本上依赖于检索器查找相关信息的能力。我们发现，RAG系统中使用的神经检索器存在盲点——即无法检索到与查询相关但与查询嵌入相似度较低的实体。我们对此进行了深入研究……",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T10:04:55+00:00",
+      "updated": "2026-02-10T10:04:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09616v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09616v1",
+      "comment": "8 pages"
+    },
+    {
+      "id": "2602.09570v1",
+      "title": "LEMUR：用于稳健微调多语言法律嵌入检索模型的语料库",
+      "authors": [
+        "Narges Baba Ahmadi",
+        "Jan Strich",
+        "Martin Semmann",
+        "Chris Biemann"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型正越来越多地被用于获取法律信息。然而，它们在多语言法律环境中的应用受到不可靠的检索能力以及缺乏领域适配的开源嵌入模型的限制。特别是，现有的多语言法律语料库并非为语义检索而设计，且基于PDF的立法文件……",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T09:20:24+00:00",
+      "updated": "2026-02-10T09:20:24+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09570v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09570v1",
+      "comment": "Accepted at EACL SRW 26"
+    },
+    {
+      "id": "2602.09552v1",
+      "title": "多领域对话问答中RAG方法的全面比较",
+      "authors": [
+        "Klejda Alushi",
+        "Jan Strich",
+        "Chris Biemann",
+        "Martin Semmann"
+      ],
+      "author_count": 4,
+      "summary": "对话式问答日益依赖检索增强生成技术，将大型语言模型与外部知识相融合。然而，现有研究大多孤立评估检索增强生成方法，且主要集中于单轮对话场景。本文针对多轮对话中检索增强生成方法缺乏系统比较的问题展开研究……",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-10T08:59:23+00:00",
+      "updated": "2026-02-10T08:59:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09552v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09552v1",
+      "comment": "Accepted to EACL SRW 26"
+    },
+    {
+      "id": "2602.09448v1",
+      "title": "多查询之智：密集检索器训练的复杂度-多样性原则",
+      "authors": [
+        "Xincan Feng",
+        "Noriki Nishida",
+        "Yusuke Sakai",
+        "Yuji Matsumoto"
+      ],
+      "author_count": 4,
+      "summary": "先前的研究在稠密检索合成数据生成的查询多样性方面报告了相互矛盾的结果。我们识别了这一矛盾，并设计了Q-D指标来量化多样性的影响，使问题变得可衡量。通过对四种基准类型（31个数据集）的实验，我们发现查询多样性尤其有利于多跳检索。深度...",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T06:33:10+00:00",
+      "updated": "2026-02-10T06:33:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09448v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09448v1",
+      "comment": "Under review"
+    },
+    {
+      "id": "2602.09445v1",
+      "title": "基础模型在个性化参数高效微调下的多模态推荐应用",
+      "authors": [
+        "Sunwoo Kim",
+        "Hyunjin Hwang",
+        "Kijung Shin"
+      ],
+      "author_count": 3,
+      "summary": "近年来，大量研究通过使用预训练多模态基础模型对多模态项目元数据进行编码，将其整合到推荐系统中。由于这些模型最初并非为推荐任务而训练，近期研究通过参数高效微调方法对其进行高效适配。然而，即便...",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T06:30:03+00:00",
+      "updated": "2026-02-10T06:30:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09445v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09445v1",
+      "comment": "To be published at The Web Conference 2026 (WWW 2026)"
+    },
+    {
+      "id": "2602.09401v1",
+      "title": "SARM：面向端到端直播排名的LLM增强语义锚点",
+      "authors": [
+        "Ruochen Yang",
+        "Yueyang Liu",
+        "Zijie Zhuang",
+        "Changxin Lao",
+        "Yuhui Zhang"
+      ],
+      "author_count": 17,
+      "summary": "大规模直播推荐需要在严格的实时服务约束下，对非稳态内容语义进行精准建模。在工业部署中，两种常见方法存在根本性局限：离散语义抽象通过聚类牺牲了描述精度，而稠密多模态嵌入则...",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T04:15:53+00:00",
+      "updated": "2026-02-10T04:15:53+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09401v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09401v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09387v1",
+      "title": "查询混合兴趣提取与异构交互：面向工业推荐系统的可扩展点击率模型",
+      "authors": [
+        "Fangye Wang",
+        "Guowei Yang",
+        "Xiaojiang Zhou",
+        "Song Yang",
+        "Pengjie Wang"
+      ],
+      "author_count": 5,
+      "summary": "学习有效的特征交互是现代推荐系统的核心，但在工业环境中仍面临挑战，这源于稀疏的多字段输入和超长的用户行为序列。尽管近期的扩展努力提升了模型容量，但它们往往难以从...中构建出既具有上下文感知能力又独立于上下文的用户意图。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T03:56:14+00:00",
+      "updated": "2026-02-10T03:56:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09387v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09387v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09386v1",
+      "title": "SMES：通过专家稀疏性实现可扩展的多任务推荐",
+      "authors": [
+        "Yukun Zhang",
+        "Si Dong",
+        "Xu Wang",
+        "Bo Chen",
+        "Qinglin Jia"
+      ],
+      "author_count": 14,
+      "summary": "工业推荐系统通常依赖多任务学习来评估多样化的用户反馈信号，并将其整合以进行排序。模型规模化的最新进展在推荐领域展现出可观的增益。然而，单纯增加模型容量会导致线上推理成本急剧上升，且往往对……产生收益递减效应。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T03:56:12+00:00",
+      "updated": "2026-02-10T03:56:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09386v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09386v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09229v1",
+      "title": "超越单位超球面：对比学习中的嵌入幅度考量",
+      "authors": [
+        "Xincan Feng",
+        "Taro Watanabe"
+      ],
+      "author_count": 2,
+      "summary": "余弦相似度在对比学习中普遍应用，但它隐含了一个假设：嵌入向量的模长是噪声。先前的研究偶尔发现点积与余弦相似度效果相当，但未能解答模长携带何种信息、何时发挥作用以及如何有效利用这三个核心问题。我们通过一个2×2的实验框架展开系统性研究……",
+      "categories": [
+        "cs.LG",
+        "cs.IR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T21:53:23+00:00",
+      "updated": "2026-02-09T21:53:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09229v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09229v1",
+      "comment": "Preliminary work. Under review"
+    },
+    {
+      "id": "2602.09163v1",
+      "title": "FlyAOC：评估果蝇科学知识库的代理本体论管理",
+      "authors": [
+        "Xingjian Zhang",
+        "Sophia Moylan",
+        "Ziyang Xiong",
+        "Qiaozhu Mei",
+        "Yichen Luo"
+      ],
+      "author_count": 6,
+      "summary": "科学知识库通过将原始文献中的发现整理成结构化、可查询的格式，为人类研究者和新兴人工智能系统加速发现进程。维护这些资源需要专家策展人检索相关论文、整合跨文献证据并生成基于本体的标注——这一过程……",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-09T20:12:38+00:00",
+      "updated": "2026-02-09T20:12:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09163v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09163v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09126v1",
+      "title": "凯克天文台档案交互式指标仪表板",
+      "authors": [
+        "G. Bruce Berriman",
+        "Min Phone Myat Zaw"
+      ],
+      "author_count": 2,
+      "summary": "自2004年起，凯克天文台档案馆（KOA）作为美国国家航空航天局资助的合作项目，由NASA系外行星科学研究所与W.M.凯克天文台共同运营。该机构负责接收并提供夏威夷莫纳克亚山两座10米凯克望远镜采集的全部数据。过去三年间，KOA已启动现代化改造计划，旨在逐步替代……",
+      "categories": [
+        "astro-ph.IM",
+        "cs.IR"
+      ],
+      "primary_category": "astro-ph.IM",
+      "published": "2026-02-09T19:16:55+00:00",
+      "updated": "2026-02-09T19:16:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09126v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09126v1",
+      "comment": "4 pages, 2 figures, Submitted to Proc. ADASS 2025"
+    },
+    {
+      "id": "2602.08917v1",
+      "title": "自动构建领域内范例与基于大语言模型的多模型扩展查询扩展精炼",
+      "authors": [
+        "Minghan Li",
+        "Ercong Nie",
+        "Siqi Zhao",
+        "Tongna Chen",
+        "Huiping Huang"
+      ],
+      "author_count": 6,
+      "summary": "利用大型语言模型进行查询扩展前景广阔，但通常依赖于手工制作的提示、人工选择的示例或单一的大型语言模型，这使得其难以扩展且对领域迁移敏感。我们提出了一种自动化、领域自适应的查询扩展框架，该框架通过使用BM25-MonoT5收集伪相关段落来构建领域内示例池。",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-09T17:16:39+00:00",
+      "updated": "2026-02-09T17:16:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08917v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08917v1",
+      "comment": null
+    }
+  ]
+}

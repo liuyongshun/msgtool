@@ -1,0 +1,442 @@
+{
+  "source": "arXiv",
+  "category": "cs.HC",
+  "category_name": "Human-Computer Interaction",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:36:24.075459",
+  "papers": [
+    {
+      "id": "2602.10054v1",
+      "title": "辅助设计：利用人类经验数据增强室内设计，实现设计师与人工智能的协同创作",
+      "authors": [
+        "Yang Chen Lin",
+        "Chen-Ying Chen",
+        "Kai-Hsin Hou",
+        "Hung-Yu Chen",
+        "Po-Chih Kuo"
+      ],
+      "author_count": 5,
+      "summary": "室内设计往往难以捕捉客户体验的微妙之处，导致客户感受与设计师可操作信息之间存在脱节。我们推出AIDED——一种设计师与人工智能协同设计的工作流程，它将多模态客户数据整合到生成式人工智能（GAI）设计过程中。在一项针对十二位专业设计师的受试者内研究中，...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T18:21:16+00:00",
+      "updated": "2026-02-10T18:21:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10054v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10054v1",
+      "comment": "29 pages, 14 figures, Accepted to CHI 2026"
+    },
+    {
+      "id": "2602.10009v1",
+      "title": "从仿真轨迹中发现高级模式",
+      "authors": [
+        "Sean Memery",
+        "Kartic Subr"
+      ],
+      "author_count": 2,
+      "summary": "嵌入在基于物理交互环境中的智能体面临着诸多挑战，包括推理、规划、信息归纳与问题解答。当人类用户希望以自然语言引导或与智能体互动时，这一问题变得尤为突出。尽管语言模型的应用是……",
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T17:31:39+00:00",
+      "updated": "2026-02-10T17:31:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10009v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10009v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10001v1",
+      "title": "人机协同助力集体创意探索",
+      "authors": [
+        "Chenyi Li",
+        "Raja Marjieh",
+        "Haoyu Hu",
+        "Mark Steyvers",
+        "Katherine M. Collins"
+      ],
+      "author_count": 7,
+      "summary": "生成式人工智能正日益将创造力转变为一种人与机器混合的过程，但其对创意产出质量与多样性的影响尚不明确。我们通过一项受控猜词任务研究集体创造力，该任务在开放性与客观绩效衡量之间取得平衡。参与者尝试推断……",
+      "categories": [
+        "cs.SI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.SI",
+      "published": "2026-02-10T17:23:33+00:00",
+      "updated": "2026-02-10T17:23:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10001v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10001v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09907v1",
+      "title": "人工智能辅助下的自主阅读：一项为期八周的学生研究",
+      "authors": [
+        "Yue Fu",
+        "Joel Wester",
+        "Niels Van Berkel",
+        "Alexis Hiniker"
+      ],
+      "author_count": 4,
+      "summary": "大学生越来越多地使用人工智能聊天机器人辅助学术阅读，然而我们对于这些互动如何具体影响他们的阅读体验和认知投入仍缺乏细致理解。我们对15名本科生进行了为期八周的纵向研究，这些学生在课程中使用人工智能辅助完成指定阅读任务。我们共收集了838条交互提问记录……",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T15:41:15+00:00",
+      "updated": "2026-02-10T15:41:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09907v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09907v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09904v1",
+      "title": "保护隐私：利用联邦学习在在线教育中检测走神与脱离",
+      "authors": [
+        "Anna Bodonhelyi",
+        "Mengdi Wang",
+        "Efe Bozkir",
+        "Babette Bühler",
+        "Enkelejda Kasneci"
+      ],
+      "author_count": 5,
+      "summary": "自新冠疫情以来，在线课程拓宽了教育获取途径，但直接教学支持的缺失对学习者自我调节注意力与参与度的能力提出了挑战。走神与投入不足可能损害学习成效，这使得通过视频指标实现自动化检测成为一项前景广阔的技术……",
+      "categories": [
+        "cs.LG",
+        "cs.HC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T15:40:01+00:00",
+      "updated": "2026-02-10T15:40:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09904v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09904v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09872v1",
+      "title": "BabyMamba-HAR: Lightweight Selective State Space Models for Efficient Human Activity Recognition on Resource Constrained Devices",
+      "authors": [
+        "Mridankan Mandal"
+      ],
+      "author_count": 1,
+      "summary": "Human activity recognition (HAR) on wearable and mobile devices is constrained by memory footprint and computational budget, yet competitive accuracy must be maintained across heterogeneous sensor configurations. Selective state space models (SSMs) offer linear time sequence processing with input dependent gating, presenting a compelling alternative to quadratic complexity attention mechanisms. However, the design space for deploying SSMs in the TinyML regime remains largely unexplored. In this...",
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T15:16:32+00:00",
+      "updated": "2026-02-10T15:16:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09872v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09872v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09856v1",
+      "title": "Code2World：通过可渲染代码生成的图形用户界面世界模型",
+      "authors": [
+        "Yuhao Zheng",
+        "Li'an Zhong",
+        "Yi Wang",
+        "Rui Dai",
+        "Kaikui Liu"
+      ],
+      "author_count": 9,
+      "summary": "自主GUI代理通过感知界面和执行操作与环境互动。作为虚拟沙盒，GUI世界模型通过支持基于行动条件的预测，赋予代理类人的预见能力。然而，现有的基于文本和像素的方法难以同时实现高视觉保真度和细粒度...",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T14:56:19+00:00",
+      "updated": "2026-02-10T14:56:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09856v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09856v1",
+      "comment": "github: https://github.com/AMAP-ML/Code2World project page: https://amap-ml.github.io/Code2World/"
+    },
+    {
+      "id": "2602.09735v1",
+      "title": "一种使用Micromed、FieldTrip和PsychoPy实现闭环脑皮层电信号脑机接口的开源方案。",
+      "authors": [
+        "Bob Van Dyck",
+        "Arne Van Den Kerchove",
+        "Marc M. Van Hulle"
+      ],
+      "author_count": 3,
+      "summary": "我们展示了一种基于皮层脑电图记录的开源闭环脑机接口系统实现。该装置集成了用于连接Micromed采集系统的FieldTrip工具包以及用于实验实施的PsychoPy平台。我们开源了三个定制Python库（psychopylib、pymarkerlib以及...）",
+      "categories": [
+        "cs.HC",
+        "eess.SP"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T12:46:12+00:00",
+      "updated": "2026-02-10T12:46:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09735v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09735v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09631v1",
+      "title": "多模态互动可视化素养模型：定义、素养及未来研究方向",
+      "authors": [
+        "Gabriela Molina León",
+        "Benjamin Bach",
+        "Matheus Valentim",
+        "Niklas Elmqvist"
+      ],
+      "author_count": 4,
+      "summary": "本文提出了一种交互式可视化素养的理论模型，用以描述人们如何使用交互式数据可视化及其系统。在描述现代生活技能时，素养已成为一个重要概念，而可视化素养通常指数据可视化的使用与解读能力。然而，以往的研究...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T10:27:42+00:00",
+      "updated": "2026-02-10T10:27:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09631v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09631v1",
+      "comment": "Conditionally accepted to CHI 2026"
+    },
+    {
+      "id": "2602.09629v1",
+      "title": "停止测试攻击，开始诊断防御：四检查点框架揭示大模型安全何处失效",
+      "authors": [
+        "Hayfa Dhabhi",
+        "Kashyap Thimmaraju"
+      ],
+      "author_count": 2,
+      "summary": "大型语言模型（LLM）部署了安全机制以防止有害输出，但这些防御措施仍易受对抗性提示的攻击。尽管现有研究表明越狱攻击能够成功，却未能解释防御机制在\\textit{何处}失效或\\textit{为何}失效。为填补这一空白，我们提出LLM安全机制如同一个……",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CY",
+        "cs.ET",
+        "cs.HC"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-10T10:17:25+00:00",
+      "updated": "2026-02-10T10:17:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09629v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09629v1",
+      "comment": "17 pages, pre-print"
+    },
+    {
+      "id": "2602.09522v1",
+      "title": "耳际调节器：一款利用普通耳塞实现进食速度调控的闭环系统，提供即时干预功能。",
+      "authors": [
+        "Jun Fang",
+        "Ka I Chan",
+        "Xiyuxing Zhang",
+        "Yuntao Wang",
+        "Mingze Gao"
+      ],
+      "author_count": 10,
+      "summary": "快速进食现象普遍却难以现场调控，部分原因在于人们很少察觉进食速度变化，且持续自我监测颇为费力。我们推出Earinter系统——这套基于消费级耳塞的闭环系统整合了自然场景感知、实时推理与理论驱动的即时干预技术，用以调节进食节奏……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T08:26:56+00:00",
+      "updated": "2026-02-10T08:26:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09522v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09522v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09496v1",
+      "title": "笑易：探索主题笑话生成中的人机协作",
+      "authors": [
+        "Yate Ge",
+        "Lin Tian",
+        "Chiqian Xu",
+        "Luyao Xu",
+        "Meiying Li"
+      ],
+      "author_count": 7,
+      "summary": "主题笑话是单口喜剧、情景喜剧和公共演讲的核心，其情境与笑点依赖于能引发观众共鸣的新鲜素材——新闻、轶事和文化典故。大型语言模型（LLM）的最新进展已能通过对话界面实现互动式笑话生成。尽管LLMs……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T07:51:30+00:00",
+      "updated": "2026-02-10T07:51:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09496v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09496v1",
+      "comment": "Accepted at IASDR 2025. This is the author-accepted version. Correspondence to first author: geyate@gmail.com"
+    },
+    {
+      "id": "2602.09423v1",
+      "title": "超越输入输出：通过人机协作中的类比设计重新思考创造力",
+      "authors": [
+        "Xuechen Li",
+        "Shuai Zhang",
+        "Nan Cao",
+        "Qing Chen"
+      ],
+      "author_count": 4,
+      "summary": "虽然基础模型的普及显著提升了个人生产力，但它也带来了潜在挑战：创意内容的同质化。为此，我们重新审视了类比设计这一植根于认知科学的方法，它通过跨领域映射灵感来催生创新解决方案。然而，当前主流的……",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T05:37:05+00:00",
+      "updated": "2026-02-10T05:37:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09423v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09423v1",
+      "comment": "20 pages, 9 figures. Accepted to the 2026 CHI Conference on Human Factors in Computing Systems"
+    },
+    {
+      "id": "2602.09381v1",
+      "title": "利用生成式人工智能搭建元认知支架：探索支持大学生ADHD患者任务管理的设计机遇",
+      "authors": [
+        "Zihao Zhu",
+        "Junnan Yu",
+        "Yuhan Luo"
+      ],
+      "author_count": 3,
+      "summary": "对于正在适应独立灵活生活方式的大学生而言，注意力缺陷多动障碍（ADHD）给他们的学业任务管理带来了多重挑战，这些挑战与其元认知困境——即对自身思维过程的觉察与调控困难——密切相关。近期蓬勃发展的生成式人工智能技术，则展现出缓解这些问题的潜力……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T03:50:48+00:00",
+      "updated": "2026-02-10T03:50:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09381v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09381v1",
+      "comment": "17 pages excluding reference and appendix. To appear in the Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)"
+    },
+    {
+      "id": "2602.09353v1",
+      "title": "了解远程心理健康支持者在在线社区中的求助行为",
+      "authors": [
+        "Tuan-He Lee",
+        "Gilly Leshed"
+      ],
+      "author_count": 2,
+      "summary": "为身处异地的亲人提供心理健康支持给远程照顾者带来了独特的挑战，他们有时会转向在线社区寻求同伴支持。我们定性分析了522条Reddit论坛讨论串，以探究驱动远程照顾者在线求助行为的因素，以及他们从社区获得的回应……",
+      "categories": [
+        "cs.HC",
+        "cs.CY"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T02:57:05+00:00",
+      "updated": "2026-02-10T02:57:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09353v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09353v1",
+      "comment": "accepted to CHI'26"
+    },
+    {
+      "id": "2602.09310v1",
+      "title": "A11y-CUA数据集：揭示计算机使用代理中的无障碍鸿沟",
+      "authors": [
+        "Ananya Gubbi Mohanbabu",
+        "Rosiana Natalie",
+        "Brandon Kim",
+        "Anhong Guo",
+        "Amy Pavel"
+      ],
+      "author_count": 5,
+      "summary": "计算机使用代理（CUAs）通过指向、点击和键入操作界面——这模仿了视力正常用户（SUs）的交互方式，因此后者能够监控CUAs并共享控制权。CUAs并未体现使用辅助技术（AT）的盲人和低视力用户（BLVUs）的交互方式。因此，BLVUs难以与CUAs协作。为了描述这一特性……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T01:00:55+00:00",
+      "updated": "2026-02-10T01:00:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09310v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09310v1",
+      "comment": "25 pages, 10 figures. Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)"
+    },
+    {
+      "id": "2602.09296v1",
+      "title": "PointAloud：一套面向AI辅助指针式有声思考计算的交互套件",
+      "authors": [
+        "Frederic Gmeiner",
+        "John Thompson",
+        "George Fitzmaurice",
+        "Justin Matejka"
+      ],
+      "author_count": 4,
+      "summary": "有声思维计算，一种在软件任务中捕捉用户口头表达想法的方法，能够实时获取用户不断变化的意图、遇到的困难及决策过程的丰富情境洞察。然而，现有方法面临实际挑战：用户往往不清楚系统捕获了哪些信息，且……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T00:25:41+00:00",
+      "updated": "2026-02-10T00:25:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09296v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09296v1",
+      "comment": "Paper accepted to the 2026 CHI Conference on Human Factors in Computing Systems (CHI 2026)"
+    },
+    {
+      "id": "2602.09287v1",
+      "title": "辨别人机交互中拟人化与拟人模仿的区别",
+      "authors": [
+        "Minja Axelsson",
+        "Henry Shevlin"
+      ],
+      "author_count": 2,
+      "summary": "在这项初步研究中，我们对人机交互及社交机器人领域中的拟人化与拟人仿效理论概念进行了基础性辨析。我们将拟人化定义为用户感知机器人具有类人特质的过程，而拟人仿效则指机器人开发者将类人特征设计融入机器人的实践。这...",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T00:13:30+00:00",
+      "updated": "2026-02-10T00:13:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09287v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09287v1",
+      "comment": "6 pages, 0 figures. Accepted at Human-Robot Interaction (HRI) conference (ACM/IEEE) 2026, Late-Breaking Reports"
+    },
+    {
+      "id": "2602.09286v1",
+      "title": "人类控制是锚点，而非答案：代理人工智能社区监督机制的早期分野",
+      "authors": [
+        "Hanjing Shi",
+        "Dominic DiFranzo"
+      ],
+      "author_count": 2,
+      "summary": "对代理式人工智能的监管常被单一目标（“人类控制”）所讨论，然而早期应用可能催生角色特定的期望。我们对2026年1月至2月间两个新兴活跃的Reddit社区进行了比较分析，它们反映了不同的社会技术角色：r/OpenClaw（部署与运营）和r/Moltbook（以代理为中心...",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-10T00:10:20+00:00",
+      "updated": "2026-02-10T00:10:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09286v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09286v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09259v1",
+      "title": "以数据为中心的多任务模拟中基于学习的手术视线感知模型设计",
+      "authors": [
+        "Yizhou Li",
+        "Shuyuan Yang",
+        "Jiaji Su",
+        "Zonghe Chua"
+      ],
+      "author_count": 4,
+      "summary": "在机器人辅助微创手术（RMIS）中，触觉反馈与深度感知线索的减弱使得手术过程更加依赖专家的视觉判断，这推动了基于视线引导的训练及学习型手术感知模型的发展。然而，采集手术专家的视线数据成本高昂，且视线监督的来源——无论是专家经验还是其他途径——其具体影响尚不明确。",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-09T22:52:59+00:00",
+      "updated": "2026-02-09T22:52:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09259v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09259v1",
+      "comment": "8 pages, conference submission pre-print"
+    }
+  ]
+}

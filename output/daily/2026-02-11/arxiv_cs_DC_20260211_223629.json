@@ -1,0 +1,453 @@
+{
+  "source": "arXiv",
+  "category": "cs.DC",
+  "category_name": "Distributed Computing",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:36:29.801073",
+  "papers": [
+    {
+      "id": "2602.09725v1",
+      "title": "高效远程前缀获取与GPU原生媒体ASIC技术",
+      "authors": [
+        "Liang Mi",
+        "Weijun Wang",
+        "Jinghan Chen",
+        "Ting Cao",
+        "Haipeng Dai"
+      ],
+      "author_count": 6,
+      "summary": "远程KV缓存复用技术通过从远程存储获取相同上下文的KV缓存，避免了重复计算，从而加速了大语言模型的推理过程。尽管该技术在高速网络环境下表现卓越，但在带宽受限的场景中，其性能会显著下降。近期研究尝试通过传输压缩形式的KV缓存来解决这一问题，但随之而来的...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T12:29:02+00:00",
+      "updated": "2026-02-10T12:29:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09725v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09725v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09721v1",
+      "title": "揭示现代MoE模型与硬件系统中注意力-FFN分离的挑战",
+      "authors": [
+        "Guowei Liu",
+        "Hongming Li",
+        "Yaning Guo",
+        "Yongxi Lyu",
+        "Mo Zhou"
+      ],
+      "author_count": 8,
+      "summary": "部署大规模混合专家模型在专家激活的内存容量与带宽方面面临挑战。尽管注意力-前馈网络解耦架构已成为解耦计算与内存资源的潜在方案，但其相较于标准大规模专家并行架构的性能边界仍待深入探索。在此...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T12:24:52+00:00",
+      "updated": "2026-02-10T12:24:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09721v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09721v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09604v1",
+      "title": "ARM处理器上的高性能向量长度无关量子电路模拟",
+      "authors": [
+        "Ruimin Shi",
+        "Gabin Schieffer",
+        "Pei-Hung Lin",
+        "Maya Gokhale",
+        "Andreas Herten"
+      ],
+      "author_count": 6,
+      "summary": "ARM SVE与RISC-V RVV是高端处理器中新兴的向量架构，支持灵活向量长度的矢量化处理。本研究以量子计算的关键负载——量子态矢量模拟为切入点，探讨在向量长度无关（VLA）的设计中能否实现高性能的可移植性。",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T09:55:12+00:00",
+      "updated": "2026-02-10T09:55:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09604v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09604v1",
+      "comment": "To be published in IPDPS2026"
+    },
+    {
+      "id": "2602.09520v1",
+      "title": "联邦学习中的罗生门集合与模型多样性",
+      "authors": [
+        "Xenia Heilmann",
+        "Luca Corbucci",
+        "Mattia Cerrato"
+      ],
+      "author_count": 3,
+      "summary": "罗生门集合捕捉了那些在经验性能上几乎一致，但在决策边界上可能存在显著差异的模型集合。理解这些模型之间的差异，即它们的多重性，被认为是实现模型透明度、公平性和鲁棒性的关键一步，因为它揭示了决策...",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T08:25:35+00:00",
+      "updated": "2026-02-10T08:25:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09520v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09520v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09441v1",
+      "title": "未被发现便非谎言：通过脏日志简化SMR中的重新配置。",
+      "authors": [
+        "Allen Clement",
+        "Natacha Crooks",
+        "Neil Giridharan",
+        "Alex Shamis"
+      ],
+      "author_count": 4,
+      "summary": "生产级状态机复制（SMR）实现是复杂、多层级的架构，包含数据传播、排序、执行和重新配置等组件。现有研究中的共识协议很少讨论重新配置问题。即使涉及，也往往将成员变更与特定算法紧密耦合。这种做法阻碍了……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T06:14:55+00:00",
+      "updated": "2026-02-10T06:14:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09441v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09441v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09435v1",
+      "title": "The Coordination Criterion",
+      "authors": [
+        "Joseph M. Hellerstein"
+      ],
+      "author_count": 1,
+      "summary": "When is coordination intrinsically required by a distributed specification, rather than imposed by a particular protocol or implementation strategy? We give a general answer using minimal assumptions. In an asynchronous message-passing model, we show that a specification admits a coordination-free implementation if and only if it is monotone with respect to history extension under an appropriate order on observable outcomes. This Coordination Criterion is stated directly over Lamport histories...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T05:59:30+00:00",
+      "updated": "2026-02-10T05:59:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09435v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09435v1",
+      "comment": "10 body pages; 24 pages with appendices and references"
+    },
+    {
+      "id": "2602.09325v1",
+      "title": "量子高性能计算系统中的检查点与恢复架构基础",
+      "authors": [
+        "Qiang Guan",
+        "Qinglei Cao",
+        "Xiaoyi Lu",
+        "Siyuan Niu"
+      ],
+      "author_count": 4,
+      "summary": "在这项工作中，我们探索了量子高性能计算中检查点设置与恢复机制的设计，该设计利用动态电路技术实现可重启且具备容错能力的量子计算执行。与尝试对量子态进行直接检查点保存的传统思路不同，我们的方法将检查点机制重新定义为控制流与算法状态层面的问题。通过运用……",
+      "categories": [
+        "quant-ph",
+        "cs.DC"
+      ],
+      "primary_category": "quant-ph",
+      "published": "2026-02-10T01:37:58+00:00",
+      "updated": "2026-02-10T01:37:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09325v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09325v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09323v1",
+      "title": "LLM-CoOpt：面向异构平台高效大语言模型推理的协同设计与优化框架",
+      "authors": [
+        "Jie Kong",
+        "Wei Wang",
+        "Jiehan Zhou",
+        "Chen Yu"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型推理面临的主要挑战依然是频繁的内存带宽瓶颈、计算冗余以及长序列处理效率低下。为解决这些问题，我们提出了LLM-CoOpt——一个旨在提升大型语言模型推理吞吐量与延迟的算法硬件协同设计框架。LLM-CoOpt整合了三项关键技术……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T01:31:30+00:00",
+      "updated": "2026-02-10T01:31:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09323v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09323v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09188v1",
+      "title": "收获：面向扩展域中集体通信的自适应光子交换调度",
+      "authors": [
+        "Mahir Rahman",
+        "Samuel Joseph",
+        "Nihar Kodkani",
+        "Behnaz Arzani",
+        "Vamsi Addanki"
+      ],
+      "author_count": 5,
+      "summary": "随着芯片间硅光子技术因其带宽和能效优势而日益受到关注，其电路交换的本质为集体通信提出了一个根本性问题：应在何时以及如何重新配置互连架构以实现这些优势？建立直接光路虽能降低拥塞和传播延迟，但每一次……",
+      "categories": [
+        "cs.NI",
+        "cs.DC"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-02-09T20:49:26+00:00",
+      "updated": "2026-02-09T20:49:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09188v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09188v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09174v1",
+      "title": "ALPHA-PIM：基于真实内存处理系统的高性能图应用线性代数处理分析",
+      "authors": [
+        "Marzieh Barkhordar",
+        "Alireza Tabatabaeian",
+        "Mohammad Sadrosadati",
+        "Christina Giannoula",
+        "Juan Gomez Luna"
+      ],
+      "author_count": 8,
+      "summary": "处理大规模图数据集的计算强度高且耗时。以处理器为中心的CPU和GPU架构虽常用于图计算应用，却常因数据复用率低导致处理器与存储单元间频繁数据迁移，形成性能瓶颈。因此这类应用往往受限于内存带宽……",
+      "categories": [
+        "cs.DC",
+        "cs.AR"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-09T20:28:19+00:00",
+      "updated": "2026-02-09T20:28:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09174v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09174v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09109v1",
+      "title": "大型语言模型的分布式混合并行策略：比较研究与系统设计指南",
+      "authors": [
+        "Hossam Amer",
+        "Rezaul Karim",
+        "Ali Pourranjbar",
+        "Weiwei Zhang",
+        "Walid Ahmed"
+      ],
+      "author_count": 6,
+      "summary": "随着大型语言模型（LLMs）的快速发展，为实现在硬件设备间高效分配计算与内存以优化训练和推理过程，各类方法层出不穷。现有研究虽对这些技术进行了概括性综述，却缺乏对其优势与权衡的系统性分析，更未深入探讨这些见解如何……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T19:01:13+00:00",
+      "updated": "2026-02-09T19:01:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09109v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09109v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08923v1",
+      "title": "DynamiQ：利用压缩多跳全归约技术加速梯度同步",
+      "authors": [
+        "Wenchen Han",
+        "Shay Vargaftik",
+        "Michael Mitzenmacher",
+        "Ran Ben Basat"
+      ],
+      "author_count": 4,
+      "summary": "多跳全归约是大模型训练的实际骨干。随着训练规模的扩大，网络常常成为瓶颈，这促使人们减少传输数据量。因此，近期系统通过梯度量化实现了训练过程的显著加速。然而，这些系统并未……",
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.NI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T17:25:37+00:00",
+      "updated": "2026-02-09T17:25:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08923v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08923v1",
+      "comment": "18 pages, 18 figures"
+    },
+    {
+      "id": "2602.08800v1",
+      "title": "均衡：大规模公平的多租户CXL内存分层",
+      "authors": [
+        "Kaiyang Zhao",
+        "Neha Gholkar",
+        "Hasan Maruf",
+        "Abhishek Dhanotia",
+        "Johannes Weiner"
+      ],
+      "author_count": 10,
+      "summary": "内存主导着数据中心系统的成本与功耗。通过计算快速链接（CXL）进行内存扩展，是一种以更低成本和功耗提供额外内存的有效方式，但其高效利用需要针对超大规模工作负载进行软件层面的分层管理。现有的分层解决方案，包括当前Linux系统的支持，在...方面面临根本性限制。",
+      "categories": [
+        "cs.OS",
+        "cs.DC"
+      ],
+      "primary_category": "cs.OS",
+      "published": "2026-02-09T15:39:56+00:00",
+      "updated": "2026-02-09T15:39:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08800v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08800v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08747v1",
+      "title": "PARD：通过主动请求丢弃提升推理流水线的有效吞吐量",
+      "authors": [
+        "Zhixin Zhao",
+        "Yitao Hu",
+        "Simin Chen",
+        "Mingfang Ji",
+        "Wei Yang"
+      ],
+      "author_count": 11,
+      "summary": "现代深度神经网络应用将多个DNN模型整合到推理流水线中，针对定制化任务有着严格的延迟要求。为缓解因请求累积导致的大规模超时现象，推理流水线系统通常会丢弃部分请求，以确保剩余请求能够满足延迟约束。由于……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-09T14:50:09+00:00",
+      "updated": "2026-02-09T14:50:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08747v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08747v1",
+      "comment": "Accepted by EuroSys'26"
+    },
+    {
+      "id": "2602.08446v1",
+      "title": "RIFLE：基于鲁棒蒸馏的联邦学习，用于资源受限物联网网络中的深度模型部署",
+      "authors": [
+        "Pouria Arefijamal",
+        "Mahdi Ahmadlou",
+        "Bardia Safaei",
+        "Jörg Henkel"
+      ],
+      "author_count": 4,
+      "summary": "联邦学习（FL）是一种广泛应用于资源受限物联网（IoT）环境的去中心化学习范式。这些设备通常依赖微型机器学习模型，通过向中央服务器共享梯度来协同训练全局模型，同时保护数据隐私。然而，随着数据异构性和任务……",
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.DC",
+        "cs.NI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T09:57:59+00:00",
+      "updated": "2026-02-09T09:57:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08446v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08446v1",
+      "comment": "This paper has been accepted for publication in IEEE ICC 2026 and will be indexed in the IEEE Xplore Digital Library"
+    },
+    {
+      "id": "2602.08387v1",
+      "title": "模态，一个用于大规模语言模型训练与研究的PyTorch原生框架",
+      "authors": [
+        "Max Lübbering",
+        "Timm Ruland",
+        "Richard Rutmann",
+        "Felix Stollenwerk",
+        "David Fitzek"
+      ],
+      "author_count": 11,
+      "summary": "当前的LLM（预）训练与研究流程通常将大量计算资源用于大规模消融研究。尽管这些消融实验的计算成本高昂，现有的开源框架却为这类实验提供的工具支持有限，常常迫使研究人员自行编写封装脚本。我们提出……",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-09T08:39:41+00:00",
+      "updated": "2026-02-09T08:39:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08387v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08387v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08271v1",
+      "title": "迈向CXL对CPU故障的韧性",
+      "authors": [
+        "Antonis Psistakis",
+        "Burak Ocalan",
+        "Chloe Alverti",
+        "Fabien Chaix",
+        "Ramnatthan Alagappan"
+      ],
+      "author_count": 6,
+      "summary": "计算快速链接（CXL）3.0及更高版本允许集群的计算节点以硬件缓存一致性及缓存行粒度共享数据。这为分布式计算实现了共享内存语义，但也带来了新的弹性挑战：节点故障会导致其缓存中的脏数据丢失，从而破坏系统完整性……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-09T05:08:23+00:00",
+      "updated": "2026-02-09T05:08:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08271v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08271v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08257v1",
+      "title": "HEAL：跨持久性模型的无领导者分布式系统在线增量恢复",
+      "authors": [
+        "Antonis Psistakis",
+        "Burak Ocalan",
+        "Fabien Chaix",
+        "Ramnatthan Alagappan",
+        "Josep Torrellas"
+      ],
+      "author_count": 5,
+      "summary": "确保分布式系统的弹性已成为一个迫切关注的问题。在当今环境下，开发轻量级机制至关重要，这些机制能够使分布式系统快速从故障中恢复，同时对实时系统吞吐量的影响降至最低。为满足这一需求，本文提出了一种新的低开销通用恢复方案……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-09T04:25:11+00:00",
+      "updated": "2026-02-09T04:25:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08257v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08257v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08199v1",
+      "title": "分叉、探索、提交：面向智能体探索的操作系统原语",
+      "authors": [
+        "Cong Wang",
+        "Yusheng Zheng"
+      ],
+      "author_count": 2,
+      "summary": "AI代理越来越多地执行自主探索：并行追寻多条解决路径，并仅提交成功的那一条。由于每条探索路径都可能修改文件并生成进程，代理需要具备文件系统状态和进程状态的原子提交与回滚语义的隔离环境。我们引入了...",
+      "categories": [
+        "cs.OS",
+        "cs.DC"
+      ],
+      "primary_category": "cs.OS",
+      "published": "2026-02-09T01:46:52+00:00",
+      "updated": "2026-02-09T01:46:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08199v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08199v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08190v1",
+      "title": "ZipFlow：一款基于编译器的框架，旨在释放现代GPU的压缩数据传输潜能",
+      "authors": [
+        "Gwangoo Yeo",
+        "Zhiyang Shen",
+        "Wei Cui",
+        "Matteo Interlandi",
+        "Rathijit Sen"
+      ],
+      "author_count": 8,
+      "summary": "在GPU加速的数据分析中，当数据规模超过GPU内存容量时，由于PCIe带宽有限，从CPU到GPU的数据传输开销成为性能瓶颈。数据压缩技术应运而生，它能在利用GPU强大算力进行解压的同时，有效减少数据传输量。",
+      "categories": [
+        "cs.DB",
+        "cs.AR",
+        "cs.DC"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-02-09T01:17:40+00:00",
+      "updated": "2026-02-09T01:17:40+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08190v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08190v1",
+      "comment": null
+    }
+  ]
+}

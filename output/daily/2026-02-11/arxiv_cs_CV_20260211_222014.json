@@ -1,0 +1,450 @@
+{
+  "source": "arXiv",
+  "category": "cs.CV",
+  "category_name": "Computer Vision and Pattern Recognition",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:14.680586",
+  "papers": [
+    {
+      "id": "2602.10116v1",
+      "title": "SAGE：面向具身AI的可扩展智能体三维场景生成",
+      "authors": [
+        "Hongchi Xia",
+        "Xuan Li",
+        "Zhaoshuo Li",
+        "Qianli Ma",
+        "Jiashu Xu"
+      ],
+      "author_count": 12,
+      "summary": "为具身智能体收集现实世界数据仍然成本高昂且不安全，这呼唤着可扩展、逼真且适配模拟器的三维环境。然而，现有的场景生成系统通常依赖基于规则或特定任务的流程，导致生成人工痕迹明显且物理无效的场景。我们推出SAGE——一个智能体框架，能够在给定...",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:59:55+00:00",
+      "updated": "2026-02-10T18:59:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10116v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10116v1",
+      "comment": "Project Page: https://nvlabs.github.io/sage"
+    },
+    {
+      "id": "2602.10115v1",
+      "title": "量子多重旋转平均",
+      "authors": [
+        "Shuteng Wang",
+        "Natacha Kuete Meli",
+        "Michael Möller",
+        "Vladislav Golyanik"
+      ],
+      "author_count": 4,
+      "summary": "多旋转平均（MRA）是三维视觉与机器人学中的基础优化问题，其目标是从含噪声的相对测量中恢复全局一致性的绝对旋转。现有的经典方法（如L1-IRLS和Shonan）面临局部极小值敏感性和依赖凸松弛等局限性……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:59:54+00:00",
+      "updated": "2026-02-10T18:59:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10115v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10115v1",
+      "comment": "16 pages, 13 figures, 4 tables; project page: https://4dqv.mpi-inf.mpg.de/QMRA/"
+    },
+    {
+      "id": "2602.10113v1",
+      "title": "ConsID-Gen：视角一致且身份保持的图像到视频生成",
+      "authors": [
+        "Mingyang Wu",
+        "Ashirbad Mishra",
+        "Soumik Dey",
+        "Shuo Xing",
+        "Naveen Ravipati"
+      ],
+      "author_count": 8,
+      "summary": "图像转视频生成技术能够依据文本指令将静态图像动态化为时间上连贯的视频序列，然而在不断变化的视角下保持精细的对象身份一致性仍是持续存在的挑战。与文本转视频模型不同，现有的图像转视频流程常面临外观漂移与几何形变等问题……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:59:51+00:00",
+      "updated": "2026-02-10T18:59:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10113v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10113v1",
+      "comment": "Project page: https://myangwu.github.io/ConsID-Gen"
+    },
+    {
+      "id": "2602.10104v1",
+      "title": "奥拉夫世界：为视频世界建模定向潜在行动",
+      "authors": [
+        "Yuxin Jiang",
+        "Yuchao Gu",
+        "Ivor W. Tsang",
+        "Mike Zheng Shou"
+      ],
+      "author_count": 4,
+      "summary": "扩展动作可控世界模型受限于动作标签的稀缺性。虽然潜在动作学习有望从未标记视频中提取控制界面，但习得的潜在表征往往难以跨情境迁移：它们混杂了场景特定线索，且缺乏统一的坐标系。这种现象源于标准目标函数……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:58:41+00:00",
+      "updated": "2026-02-10T18:58:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10104v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10104v1",
+      "comment": "Project page: https://showlab.github.io/Olaf-World/ Code: https://github.com/showlab/Olaf-World"
+    },
+    {
+      "id": "2602.10102v1",
+      "title": "VideoWorld 2：从真实世界视频中学习可迁移知识",
+      "authors": [
+        "Zhongwei Ren",
+        "Yunchao Wei",
+        "Xiao Yu",
+        "Guixun Luo",
+        "Yao Zhao"
+      ],
+      "author_count": 8,
+      "summary": "从无标签视频数据中学习可迁移知识，并将其应用于新环境，是智能体的基本能力。本研究推出的VideoWorld 2在VideoWorld基础上进行扩展，首次探索了直接从原始现实世界视频中学习可迁移知识的方法。其核心在于VideoWorld 2引入了……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:58:19+00:00",
+      "updated": "2026-02-10T18:58:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10102v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10102v1",
+      "comment": "Code and models are released at: https://maverickren.github.io/VideoWorld2.github.io/"
+    },
+    {
+      "id": "2602.10099v1",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "authors": [
+        "Amandeep Kumar",
+        "Vishal M. Patel"
+      ],
+      "author_count": 2,
+      "summary": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally...",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:58:04+00:00",
+      "updated": "2026-02-10T18:58:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10099v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10099v1",
+      "comment": "Technical Report"
+    },
+    {
+      "id": "2602.10098v1",
+      "title": "VLA-JEPA：通过潜在世界模型增强视觉-语言-动作模型",
+      "authors": [
+        "Jingwen Sun",
+        "Wenyao Zhang",
+        "Zekun Qi",
+        "Shaojie Ren",
+        "Zezhi Liu"
+      ],
+      "author_count": 9,
+      "summary": "在互联网规模的视频上预训练视觉-语言-动作（VLA）策略具有吸引力，但当前的潜在动作目标往往学偏了方向：它们仍固守于像素变化，而非与动作相关的状态转换，这使得它们容易受到外观偏差、干扰性运动和信息泄漏的影响。我们推出了VLA-JEPA，...",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T18:58:01+00:00",
+      "updated": "2026-02-10T18:58:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10098v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10098v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10095v1",
+      "title": "视频扩散中的因果关系与去噪过程可分离。",
+      "authors": [
+        "Xingjian Bai",
+        "Guande He",
+        "Zhengqi Li",
+        "Eli Shechtman",
+        "Xun Huang"
+      ],
+      "author_count": 6,
+      "summary": "因果关系——指代组件间时间性、单向的因果联系——构成了众多复杂生成过程的基础，包括视频、语言和机器人轨迹。当前的因果扩散模型将时序推理与迭代去噪过程相耦合，在每一层去噪操作中均施加因果注意力机制。",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:57:21+00:00",
+      "updated": "2026-02-10T18:57:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10095v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10095v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10094v1",
+      "title": "4RC：随时随地通过条件查询实现4D重建",
+      "authors": [
+        "Yihang Luo",
+        "Shangchen Zhou",
+        "Yushi Lan",
+        "Xingang Pan",
+        "Chen Change Loy"
+      ],
+      "author_count": 5,
+      "summary": "我们提出了4RC，一个用于从单目视频进行4维重建的统一前馈框架。与现有方法通常将运动与几何解耦，或仅生成稀疏轨迹或双视角场景流等有限4维属性不同，4RC学习了一种整体性的4维表示，能够同时捕捉密集场景几何与运动信息。",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:57:04+00:00",
+      "updated": "2026-02-10T18:57:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10094v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10094v1",
+      "comment": "Project page: https://yihangluo.com/projects/4RC/"
+    },
+    {
+      "id": "2602.10079v1",
+      "title": "图像拼接与复制移动伪造能否被同一模型检测？Forensim：一种基于注意力的状态空间方法",
+      "authors": [
+        "Soumyaroop Nandi",
+        "Prem Natarajan"
+      ],
+      "author_count": 2,
+      "summary": "我们推出Forensim，这是一个基于注意力的状态空间框架，用于图像伪造检测，能够同时定位被篡改（目标）区域和源区域。与仅依赖伪影线索来检测拼接或伪造区域的传统方法不同，Forensim旨在捕捉对理解上下文至关重要的重复模式。",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:46:04+00:00",
+      "updated": "2026-02-10T18:46:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10079v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10079v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10062v1",
+      "title": "Vendi Novelty Scores for Out-of-Distribution Detection",
+      "authors": [
+        "Amey P. Pasarkar",
+        "Adji Bousso Dieng"
+      ],
+      "author_count": 2,
+      "summary": "Out-of-distribution (OOD) detection is critical for the safe deployment of machine learning systems. Existing post-hoc detectors typically rely on model confidence scores or likelihood estimates in feature space, often under restrictive distributional assumptions. In this work, we introduce a third...",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T18:30:29+00:00",
+      "updated": "2026-02-10T18:30:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10062v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10062v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10052v1",
+      "title": "时空注意力在自动驾驶中实现一致的视频语义分割",
+      "authors": [
+        "Serin Varghese",
+        "Kevin Ross",
+        "Fabian Hueger",
+        "Kira Maag"
+      ],
+      "author_count": 4,
+      "summary": "深度神经网络，特别是基于Transformer的架构，已在环境感知的语义分割任务中取得显著成功。然而，现有模型独立处理视频帧，未能利用时序一致性，而这将显著提升动态场景下的准确性与稳定性。在...",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:18:37+00:00",
+      "updated": "2026-02-10T18:18:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10052v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10052v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10045v1",
+      "title": "Conformal Prediction Sets for Instance Segmentation",
+      "authors": [
+        "Kerri Lu",
+        "Dan M. Kluger",
+        "Stephen Bates",
+        "Sherrie Wang"
+      ],
+      "author_count": 4,
+      "summary": "Current instance segmentation models achieve high performance on average predictions, but lack principled uncertainty quantification: their outputs are not calibrated, and there is no guarantee that a predicted mask is close to the ground truth. To address this limitation, we introduce a conformal...",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "stat.ME",
+        "stat.ML"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:15:06+00:00",
+      "updated": "2026-02-10T18:15:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10045v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10045v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10043v1",
+      "title": "简单的图像处理与相似性度量可通过脑部MRI实现跨数据库数据样本的关联。",
+      "authors": [
+        "Gaurang Sharma",
+        "Harri Polonen",
+        "Juha Pajula",
+        "Jutta Suksi",
+        "Jussi Tohka"
+      ],
+      "author_count": 5,
+      "summary": "头部磁共振成像（MRI）在严格的监管框架下被常规收集并共享用于研究。这些框架要求在共享前移除潜在的识别信息。然而，即使经过颅骨剥离处理，脑实质仍包含独特的特征，能够跨数据库匹配同一参与者的其他MRI图像，……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:10:12+00:00",
+      "updated": "2026-02-10T18:10:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10043v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10043v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10042v1",
+      "title": "假HR1：重新思考视觉语言模型在合成图像检测中的推理能力",
+      "authors": [
+        "Changjiang Jiang",
+        "Xinkuan Sha",
+        "Fengchang Yu",
+        "Jingjing Liu",
+        "Jian Liu"
+      ],
+      "author_count": 8,
+      "summary": "近期研究表明，将思维链推理融入检测过程能提升模型识别合成图像的能力。然而，过长的推理路径会带来显著的资源开销——包括令牌消耗与处理延迟，这在处理明显...",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T18:10:08+00:00",
+      "updated": "2026-02-10T18:10:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10042v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10042v1",
+      "comment": "Accepted by ICASSP 2026"
+    },
+    {
+      "id": "2602.10032v1",
+      "title": "保证感知：通过可达性分析实现认证姿态估计",
+      "authors": [
+        "Tobias Ladner",
+        "Yasser Shoukry",
+        "Matthias Althoff"
+      ],
+      "author_count": 3,
+      "summary": "网络物理系统中的智能体正越来越多地被委以安全关键任务。确保这些智能体的安全通常需要为后续行动进行姿态定位。例如，可通过激光雷达传感器、摄像头以及GPS等外部服务的不同组合来获取姿态估计值。关键在于，在安全关键领域，姿态定位的准确性与可靠性直接关系到整个系统的安全运行。",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T17:55:49+00:00",
+      "updated": "2026-02-10T17:55:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10032v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10032v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09999v1",
+      "title": "Faster-GS：分析与改进高斯溅射优化技术",
+      "authors": [
+        "Florian Hahlbohm",
+        "Linus Franke",
+        "Martin Eisemann",
+        "Marcus Magnor"
+      ],
+      "author_count": 4,
+      "summary": "三维高斯泼溅（3DGS）的最新进展聚焦于在保持重建质量的同时加速优化过程。然而，许多现有方法将实现层面的改进与基础算法修改相混淆，或为追求性能而牺牲精度，导致研究领域呈现碎片化状态，使得公平比较变得复杂……",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T17:22:59+00:00",
+      "updated": "2026-02-10T17:22:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09999v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09999v1",
+      "comment": "Project page: https://fhahlbohm.github.io/faster-gaussian-splatting"
+    },
+    {
+      "id": "2602.09989v1",
+      "title": "高效特殊染色分类",
+      "authors": [
+        "Oskar Thaeter",
+        "Christian Grashei",
+        "Anette Haas",
+        "Elisa Schmoeckel",
+        "Han Li"
+      ],
+      "author_count": 6,
+      "summary": "在组织病理学中，染色对于观察特定组织特征至关重要，其中苏木精和伊红（H&E）染色是临床诊断的金标准。然而，病理学家在诊断特定形态结构时，常需借助多种特殊染色技术。确保这些玻片元数据的准确性，对于质量控制至关重要……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T17:15:13+00:00",
+      "updated": "2026-02-10T17:15:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09989v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09989v1",
+      "comment": "14 pages, 7 figures, 2 tables"
+    },
+    {
+      "id": "2602.09985v1",
+      "title": "基于JEPA嵌入的汽车时序数据在线监测框架",
+      "authors": [
+        "Alexander Fertig",
+        "Karthikeyan Chandra Sekaran",
+        "Lakshman Balasubramanian",
+        "Michael Botsch"
+      ],
+      "author_count": 4,
+      "summary": "随着自动驾驶汽车的推出，必须采取措施确保其安全运行。为了监督已投入使用的系统，监控框架被频繁采用。这些框架在后台持续在线运行，监控系统状态并记录异常情况。本研究提出了一种在线监控……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T17:10:29+00:00",
+      "updated": "2026-02-10T17:10:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09985v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09985v1",
+      "comment": "Accepted at the 2026 IEEE Intelligent Vehicles Symposium. Copyright 2026 IEEE. Permission from IEEE must be obtained for use in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works"
+    },
+    {
+      "id": "2602.09983v1",
+      "title": "扩散模型中的耦合推理用于语义分解",
+      "authors": [
+        "Calvin Yeung",
+        "Ali Zakeri",
+        "Zhuowen Zou",
+        "Mohsen Imani"
+      ],
+      "author_count": 4,
+      "summary": "许多视觉场景可以被描述为潜在因素的组合。有效的识别、推理和编辑不仅需要形成这种组合表示，还需要解决分解问题。构建这些表示的一种常用方法是通过绑定操作。谐振子网络能够...",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T17:10:05+00:00",
+      "updated": "2026-02-10T17:10:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09983v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09983v1",
+      "comment": "15 pages"
+    }
+  ]
+}

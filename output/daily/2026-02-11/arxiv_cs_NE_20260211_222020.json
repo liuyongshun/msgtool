@@ -1,0 +1,443 @@
+{
+  "source": "arXiv",
+  "category": "cs.NE",
+  "category_name": "Neural and Evolutionary Computing",
+  "query": null,
+  "count": 20,
+  "fetched_at": "2026-02-11T22:20:20.822923",
+  "papers": [
+    {
+      "id": "2602.09746v1",
+      "title": "稀疏轴突与树突延迟赋能竞争性脉冲神经网络实现关键词分类。",
+      "authors": [
+        "Younes Bouhadjar",
+        "Emre Neftci"
+      ],
+      "author_count": 2,
+      "summary": "训练脉冲神经网络（SNN）中的传输延迟已被证明能显著提升其在复杂时序任务上的表现。本研究中，我们证明通过学习轴突或树突延迟，由泄漏积分发放（LIF）神经元构成的前馈深度SNN能够达到与现有突触...相当的准确度。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-10T12:57:02+00:00",
+      "updated": "2026-02-10T12:57:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09746v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09746v1",
+      "comment": "7 pages, 3 figures, and 4 tables"
+    },
+    {
+      "id": "2602.09717v1",
+      "title": "从轻量级卷积神经网络到脉冲网络：通过剪枝脉冲SqueezeNet评估精度与能耗的权衡",
+      "authors": [
+        "Radib Bin Kabir",
+        "Tawsif Tashwar Dipto",
+        "Mehedi Ahamed",
+        "Sabbir Ahmed",
+        "Md Hasanul Kabir"
+      ],
+      "author_count": 5,
+      "summary": "脉冲神经网络（SNNs）作为卷积神经网络（CNNs）的高效能替代方案正日益受到研究关注，尤其在边缘智能领域。然而，先前的研究大多侧重于大规模模型，对于轻量级CNN到SNN转换流程的设计与评估则探索不足。本文首次提出了……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.ET",
+        "cs.NE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T12:20:11+00:00",
+      "updated": "2026-02-10T12:20:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09717v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09717v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08933v1",
+      "title": "使用$β$-散度可证明稳健地学习回归神经网络",
+      "authors": [
+        "Abhik Ghosh",
+        "Suryasis Jana"
+      ],
+      "author_count": 2,
+      "summary": "回归神经网络通常通过最小化均方预测误差来训练，这种方法对异常值和数据污染极为敏感。现有的回归神经网络鲁棒训练方法往往适用范围有限，且主要依赖经验验证，仅少数方法能提供部分理论保证。",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "stat.ME"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-09T17:32:43+00:00",
+      "updated": "2026-02-09T17:32:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08933v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08933v1",
+      "comment": "Pre-print, under review"
+    },
+    {
+      "id": "2602.08825v1",
+      "title": "复杂优化中有效代理学习方法论",
+      "authors": [
+        "Tomohiro Harada",
+        "Enrique Alba",
+        "Gabriel Luque"
+      ],
+      "author_count": 3,
+      "summary": "解决复杂问题需要在理论与实践上持续努力，以应对更大、更困难的场景。通过代理模型将问题真实地模拟到计算机中是常规做法。因此，如何最佳地定义和描述此类代理模型至关重要……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T15:57:50+00:00",
+      "updated": "2026-02-09T15:57:50+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08825v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08825v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08619v1",
+      "title": "利用图神经网络增强遗传算法：一份课程表编排案例研究",
+      "authors": [
+        "Laura-Maria Cornei",
+        "Mihaela-Elena Breabăn"
+      ],
+      "author_count": 2,
+      "summary": "本文研究了将多模态遗传算法与图神经网络相结合对时间表优化产生的影响。图神经网络旨在封装通用领域知识以提升排程质量，而遗传算法则负责探索搜索空间的不同区域并整合深度学习模型。",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T13:10:16+00:00",
+      "updated": "2026-02-09T13:10:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08619v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08619v1",
+      "comment": "Paper accepted to the International Conference on Applications of Evolutionary Computation (EvoApplications) 2026"
+    },
+    {
+      "id": "2602.08515v1",
+      "title": "物理信息神经网络（PINNs）是否需要深度？使用Levenberg-Marquardt算法的浅层PINNs",
+      "authors": [
+        "Muhammad Luthfi Shahab",
+        "Imam Mukhlash",
+        "Hadi Susanto"
+      ],
+      "author_count": 3,
+      "summary": "本研究探讨了利用浅层物理信息神经网络（PINNs）求解非线性偏微分方程（PDE）正反问题的方法。通过将PINNs重构为非线性系统，采用列文伯格-马夸尔特（LM）算法高效优化网络参数，并推导出...的解析表达式。",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "cs.NE",
+        "math.OC"
+      ],
+      "primary_category": "math.NA",
+      "published": "2026-02-09T11:05:57+00:00",
+      "updated": "2026-02-09T11:05:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08515v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08515v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08513v1",
+      "title": "基于双种群均匀采样的多目标进化算法在神经架构搜索中的应用",
+      "authors": [
+        "Yu Xue",
+        "Pengcheng Jiang",
+        "Chenchen Zhu",
+        "Yong Zhang",
+        "Ran Cheng"
+      ],
+      "author_count": 7,
+      "summary": "神经架构搜索（NAS）通过自动化神经网络设计，相比人工方法提升了效率。然而，在NAS领域，如何高效发现同时优化多个目标的高性能神经网络架构，仍然是一个重大挑战。现有方法常受限于种群多样性不足……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T11:04:07+00:00",
+      "updated": "2026-02-09T11:04:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08513v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08513v1",
+      "comment": "Accepted by IEEE Transactions on Neural Networks and Learning Systems. Published on this https URL: https://doi.org/10.1109/TNNLS.2026.3659508"
+    },
+    {
+      "id": "2602.07800v1",
+      "title": "用深度神经网络和Transformer近似矩阵函数",
+      "authors": [
+        "Rahul Padmanabhan",
+        "Simone Brugiapaglia"
+      ],
+      "author_count": 2,
+      "summary": "Transformer模型已经彻底改变了自然语言处理领域，但其在数值计算方面的应用却较少受到关注。我们研究了包括Transformer在内的神经网络对矩阵函数（即将标量函数映射到矩阵的函数）的逼近能力，重点关注将方阵映射为同维度方阵的函数。",
+      "categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-08T03:45:25+00:00",
+      "updated": "2026-02-08T03:45:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07800v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07800v1",
+      "comment": null
+    },
+    {
+      "id": "2602.07709v1",
+      "title": "从质谱数据中生成结构解析作为一个迭代优化问题",
+      "authors": [
+        "Mrunali Manjrekar",
+        "Runzhong Wang",
+        "Samuel Goldman",
+        "Jenna C. Fromer",
+        "Connor W. Coley"
+      ],
+      "author_count": 5,
+      "summary": "液相色谱串联质谱（LC-MS/MS）是代谢组学、环境化学和化学取证领域分子鉴定的关键分析技术。目前已有多种计算方法用于对目标质谱特征进行结构注释，但其中许多特征仍难以获得确证……",
+      "categories": [
+        "q-bio.QM",
+        "cs.NE"
+      ],
+      "primary_category": "q-bio.QM",
+      "published": "2026-02-07T21:34:38+00:00",
+      "updated": "2026-02-07T21:34:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07709v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07709v1",
+      "comment": null
+    },
+    {
+      "id": "2602.07697v1",
+      "title": "关于预测编码网络的无限宽度与深度极限",
+      "authors": [
+        "Francesco Innocenti",
+        "El Mehdi Achour",
+        "Rafal Bogacz"
+      ],
+      "author_count": 3,
+      "summary": "预测编码（PC）是标准反向传播（BP）的一种生物学上合理的替代方案，它在更新权重前先最小化网络活动相关的能量函数。近期研究通过借鉴部分受BP启发的重参数化方法，提升了深度PC网络（PCNs）的训练稳定性。然而，其完整的可扩展性……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-07T20:47:32+00:00",
+      "updated": "2026-02-07T20:47:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07697v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07697v1",
+      "comment": "31 pages, 27 figures"
+    },
+    {
+      "id": "2602.07299v1",
+      "title": "通过代理辅助神经进化优化供水系统中的氯化处理",
+      "authors": [
+        "Rivaaj Monsia",
+        "Daniel Young",
+        "Olivier Francon",
+        "Risto Miikkulainen"
+      ],
+      "author_count": 4,
+      "summary": "确保大型、异质供水系统（WDS）的微生物安全通常需要管理适当的消毒剂残留水平，包括氯。供水系统包含非线性且嘈杂的复杂流体相互作用，这使得传统控制算法难以应对此类维护问题。本文...",
+      "categories": [
+        "cs.NE",
+        "eess.SY"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-07T01:16:46+00:00",
+      "updated": "2026-02-07T01:16:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07299v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07299v1",
+      "comment": "14 pages, 9 figures, GECCO '26 in-review"
+    },
+    {
+      "id": "2602.07275v1",
+      "title": "演化基于大语言模型的住宅电动汽车充电与车网互动能源优化控制策略",
+      "authors": [
+        "Vishesh Purnananda",
+        "Benjamin John Wruck",
+        "Mingyu Guo"
+      ],
+      "author_count": 3,
+      "summary": "本研究提出了一种进化计算在住宅电动汽车能源管理领域的新颖应用。尽管强化学习在车辆到电网优化中表现出色，但其通常生成不透明的“黑箱”神经网络，使得消费者和监管机构难以理解其决策过程。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T23:59:33+00:00",
+      "updated": "2026-02-06T23:59:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07275v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07275v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06900v1",
+      "title": "加速基于模拟的贝叶斯最优实验设计推理",
+      "authors": [
+        "Samuel Klein",
+        "Willie Neiswanger",
+        "Daniel Ratner",
+        "Michael Kagan",
+        "Sean Gasiorowski"
+      ],
+      "author_count": 5,
+      "summary": "贝叶斯最优实验设计（BOED）旨在最大化实验的预期信息增益（EIG），这需要似然估计，而在许多情况下该估计难以处理。基于模拟的推断（SBI）为此提供了强大工具，然而目前明确结合SBI与BOED的研究仅限于单一……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IT",
+        "cs.NE",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-06T17:50:00+00:00",
+      "updated": "2026-02-06T17:50:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06900v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06900v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06766v1",
+      "title": "通道响应的稀疏尖峰编码用于高效能耗的人体活动识别",
+      "authors": [
+        "Eleonora Cicciarella",
+        "Riccardo Mazzieri",
+        "Jacopo Pegoraro",
+        "Michele Rossi"
+      ],
+      "author_count": 4,
+      "summary": "ISAC实现了泛在感知，但现代传感算法对于能量受限的边缘设备而言往往过于复杂。这推动了在精度性能与能效之间寻求平衡的学习技术的发展。脉冲神经网络（SNNs）作为一种前景广阔的替代方案，通过稀疏的二进制脉冲序列处理信息……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T15:20:21+00:00",
+      "updated": "2026-02-06T15:20:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06766v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06766v1",
+      "comment": "6 pages, 3 figures. Accepted for publication in IEEE International Conference on Communications (ICC) 2026"
+    },
+    {
+      "id": "2602.06742v1",
+      "title": "多目标优化中的结构偏差",
+      "authors": [
+        "Jakub Kudela",
+        "Niki van Stein",
+        "Thomas Bäck",
+        "Anna V. Kononova"
+      ],
+      "author_count": 4,
+      "summary": "结构偏差（SB）指的是优化算法独立于目标函数而对搜索空间中特定区域产生的系统性偏好。尽管在单目标优化中SB已得到广泛研究，但其在多目标优化中的作用在很大程度上仍未得到探索。这带来了问题，因为……",
+      "categories": [
+        "cs.NE",
+        "math.OC"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T14:43:28+00:00",
+      "updated": "2026-02-06T14:43:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06742v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06742v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06610v2",
+      "title": "绿色优化：通过机器学习代理实现能源感知的元启发式设计以应对实际问题",
+      "authors": [
+        "Tomohiro Harada",
+        "Enrique Alba",
+        "Gabriel Luque"
+      ],
+      "author_count": 3,
+      "summary": "解决现实世界的优化挑战不仅需要先进的元启发式算法，还需持续完善其内部机制。本文通过一个新兴视角——能耗问题，探讨了以神经代理模型形式存在的机器学习如何与元启发式算法相融合。尽管代理模型被广泛用于降低计算成本……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T11:12:54+00:00",
+      "updated": "2026-02-09T15:52:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06610v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.06610v2",
+      "comment": "This manuscript corresponds to the first submitted version and may be revised in future updates"
+    },
+    {
+      "id": "2602.06595v2",
+      "title": "能量感知元启发式算法",
+      "authors": [
+        "Tomohiro Harada",
+        "Enrique Alba",
+        "Gabriel Luque"
+      ],
+      "author_count": 3,
+      "summary": "本文提出了一种在固定能量预算下设计能量感知元启发式算法的原则性框架。我们引入了一个统一的算子级模型，该模型量化了数值增益与能量消耗，并定义了稳健的\"每焦耳预期改进\"指标，用于在算法运行过程中自适应地指导不同算子变体的选择。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T10:47:02+00:00",
+      "updated": "2026-02-09T15:49:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06595v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.06595v2",
+      "comment": null
+    },
+    {
+      "id": "2602.06405v1",
+      "title": "昆虫视觉系统的神经形态模型用于自然图像处理",
+      "authors": [
+        "Adam D. Hines",
+        "Karin Nordström",
+        "Andrew B. Barron"
+      ],
+      "author_count": 3,
+      "summary": "昆虫视觉支持着包括联想学习、导航和物体检测在内的复杂行为，并长期激励着理解生物视觉处理的计算模型的发展。然而，许多当代模型优先考虑任务性能，却忽视了基于生物学的处理路径。在此，我们提出一种...",
+      "categories": [
+        "cs.CV",
+        "cs.NE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-06T05:54:28+00:00",
+      "updated": "2026-02-06T05:54:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06405v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06405v1",
+      "comment": "21 pages, 7 figures, under review"
+    },
+    {
+      "id": "2602.05848v1",
+      "title": "DARWIN: Dynamic Agentically Rewriting Self-Improving Network",
+      "authors": [
+        "Henry Jiang"
+      ],
+      "author_count": 1,
+      "summary": "DARWIN is an evolutionary GPT model, utilizing a genetic-algorithm like optimization structure with several independent GPT agents being trained individually using unique training code. Each iteration, the GPT models are prompted to modify the training code of one another in an attempt to improve their performance in a mutation-like manner, and the best GPT agents are then benchmarked and selected for the next iteration by genetic algorithm. For demonstration purposes and due to budget and time...",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-05T16:35:46+00:00",
+      "updated": "2026-02-05T16:35:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.05848v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.05848v1",
+      "comment": "6 pages, 3 figures, 2 tables"
+    },
+    {
+      "id": "2602.05737v1",
+      "title": "神经启发式视觉模式识别通过生物储备计算实现",
+      "authors": [
+        "Luca Ciampi",
+        "Ludovico Iannello",
+        "Fabrizio Tonelli",
+        "Gabriele Lagani",
+        "Angelo Di Garbo"
+      ],
+      "author_count": 7,
+      "summary": "本文提出一种神经启发的储备池计算方法，将体外培养的皮层神经元网络作为物理储备池。不同于依赖人工循环模型来近似神经动力学，我们的生物储备池计算系统利用自发性与刺激诱发性的神经活动特性……",
+      "categories": [
+        "cs.CV",
+        "cs.NE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-05T15:02:07+00:00",
+      "updated": "2026-02-05T15:02:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.05737v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.05737v1",
+      "comment": null
+    }
+  ]
+}

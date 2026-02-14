@@ -1,0 +1,4744 @@
+{
+  "source": "arXiv",
+  "fetched_at": "2026-02-12T22:36:50.846203",
+  "total_categories": 13,
+  "total_count": 216,
+  "papers": [
+    {
+      "id": "2602.11146v1",
+      "title": "超越视觉语言模型奖励：扩散原生潜在奖励建模",
+      "authors": [
+        "Gongye Liu",
+        "Bo Yang",
+        "Yida Zhi",
+        "Zhizhou Zhong",
+        "Lei Ke"
+      ],
+      "author_count": 11,
+      "summary": "扩散模型与流匹配模型的偏好优化依赖于判别鲁棒且计算高效的奖励函数。视觉语言模型凭借其丰富的多模态先验知识成为主要的奖励提供者，能够有效引导模型对齐。然而，其计算与内存成本可能相当高昂……",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T18:57:29+00:00",
+      "updated": "2026-02-11T18:57:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11146v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11146v1",
+      "comment": "Code: https://github.com/HKUST-C4G/diffusion-rm"
+    },
+    {
+      "id": "2602.11144v1",
+      "title": "天才：生成式流体智能评估套件",
+      "authors": [
+        "Ruichuan An",
+        "Sihan Yang",
+        "Ziyu Guo",
+        "Wei Dai",
+        "Zijun Shen"
+      ],
+      "author_count": 11,
+      "summary": "统一多模态模型在视觉生成领域已展现出显著进步。然而，现有基准主要评估依赖累积知识与习得模式的“晶体智能”，这种侧重忽略了“生成性流体智能”——即归纳规律、进行推理的能力……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:55:54+00:00",
+      "updated": "2026-02-11T18:55:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11144v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11144v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11142v1",
+      "title": "数据高效的分层目标条件强化学习：基于归一化流的方法",
+      "authors": [
+        "Shaswat Garg",
+        "Matin Moezzi",
+        "Brandon Da Silva"
+      ],
+      "author_count": 3,
+      "summary": "分层目标条件强化学习（H-GCRL）通过将复杂的长周期任务分解为结构化子目标，为解决此类问题提供了强大框架。然而，其实际应用常受限于数据效率低下与策略表达能力不足，尤其在离线或数据稀缺的场景中更为明显。本研究旨在……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T18:54:48+00:00",
+      "updated": "2026-02-11T18:54:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11142v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11142v1",
+      "comment": "9 pages, 3 figures, IEEE International Conference on Robotics and Automation 2026"
+    },
+    {
+      "id": "2602.11137v1",
+      "title": "权重衰减提升语言模型的可塑性",
+      "authors": [
+        "Tessa Han",
+        "Sebastian Bordt",
+        "Hanlin Zhang",
+        "Sham Kakade"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型（LLM）开发的主流范式是先预训练一个基础模型，随后通过进一步训练来提升其性能与模型行为。然而，超参数优化与缩放定律的研究主要基于基础模型验证损失的角度，往往忽略了下游任务的适应性。在此背景下……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:49:26+00:00",
+      "updated": "2026-02-11T18:49:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11137v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11137v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11136v1",
+      "title": "正式裁判：一种用于智能体监督的神经符号范式",
+      "authors": [
+        "Jiayi Zhou",
+        "Yang Sheng",
+        "Hantao Lou",
+        "Yaodong Yang",
+        "Jie Fu"
+      ],
+      "author_count": 5,
+      "summary": "随着基于大语言模型的智能体日益深入具有现实影响的高风险领域，确保其行为安全性变得至关重要。当前主流的监督范式\"大语言模型即裁判\"面临根本性困境：概率性系统如何在不继承同类系统缺陷的前提下，可靠地监督其他概率性系统？我们认为……",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-11T18:48:11+00:00",
+      "updated": "2026-02-11T18:48:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11136v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11136v1",
+      "comment": "27 pages"
+    },
+    {
+      "id": "2602.11114v1",
+      "title": "学习为跨领域智能工作流生成进行创作",
+      "authors": [
+        "Jialiang Wang",
+        "Shengxiang Xu",
+        "Hanmo Liu",
+        "Jiachuan Wang",
+        "Yuyu Luo"
+      ],
+      "author_count": 8,
+      "summary": "自动生成代理工作流——即可执行的算子图或代码，用于协调推理、验证与修复——已成为解决复杂任务的实际方法，这些任务超出了单次大语言模型生成能可靠处理的范围。然而，优秀工作流的构成在很大程度上取决于任务分布和可用资源……",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-11T18:27:22+00:00",
+      "updated": "2026-02-11T18:27:22+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11114v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11114v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11103v1",
+      "title": "GameDevBench：通过游戏开发评估智能体能力",
+      "authors": [
+        "Wayne Chi",
+        "Yixiong Fang",
+        "Arnav Yayavaram",
+        "Siddharth Yayavaram",
+        "Seth Karten"
+      ],
+      "author_count": 11,
+      "summary": "尽管编码智能体进展迅速，但其多模态对应体的发展却相对滞后。一个关键挑战在于，能够同时兼顾软件开发复杂性与深度多模态理解需求的评估测试平台极为稀缺。游戏开发恰好提供了这样的测试平台——智能体必须驾驭庞大而密集的代码库……",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-11T18:15:11+00:00",
+      "updated": "2026-02-11T18:15:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11103v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11103v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11096v1",
+      "title": "推理模型的安全恢复仅需几步早期引导即可实现。",
+      "authors": [
+        "Soumya Suvra Ghosal",
+        "Souradip Chakraborty",
+        "Vaibhav Singh",
+        "Furong Huang",
+        "Dinesh Manocha"
+      ],
+      "author_count": 6,
+      "summary": "基于强化学习（RL）的显式思维链后训练（例如GRPO）提升了多模态大规模推理模型（MLRMs）的推理能力。但近期研究表明，这种方法可能同时削弱安全对齐性并提高越狱成功率。我们提出SafeThink，一种轻量级的推理时防御方案……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T18:09:17+00:00",
+      "updated": "2026-02-11T18:09:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11096v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11096v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11090v1",
+      "title": "Direct Learning of Calibration-Aware Uncertainty for Neural PDE Surrogates",
+      "authors": [
+        "Carlos Stein Brito"
+      ],
+      "author_count": 1,
+      "summary": "Neural PDE surrogates are often deployed in data-limited or partially observed regimes where downstream decisions depend on calibrated uncertainty in addition to low prediction error. Existing approaches obtain uncertainty through ensemble replication, fixed stochastic noise such as dropout, or post hoc calibration. Cross-regularized uncertainty learns uncertainty parameters during training using gradients routed through a held-out regularization split. The predictor is optimized on the...",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE",
+        "stat.CO"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:57:20+00:00",
+      "updated": "2026-02-11T17:57:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11090v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11090v1",
+      "comment": "13 pages, 11 figures"
+    },
+    {
+      "id": "2602.11089v1",
+      "title": "DataChef：通过强化学习为大型语言模型适应烹饪出最优数据配方",
+      "authors": [
+        "Yicheng Chen",
+        "Zerun Ma",
+        "Xinchen Xie",
+        "Yining Li",
+        "Kai Chen"
+      ],
+      "author_count": 5,
+      "summary": "在当前大型语言模型（LLM）的发展格局中，大规模、高质量训练数据的筛选是推动模型性能提升的主要动力。其中的关键调控手段在于\\emph{数据配方}——即通过数据处理流程将原始资料转化为训练语料库的完整方案。尽管利用LLM自动化处理单一数据环节的做法日益普及……",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:56:15+00:00",
+      "updated": "2026-02-11T17:56:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11089v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11089v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11087v1",
+      "title": "通用灵活$f$-散度应对低随机性与多样化行为策略的挑战性离线强化学习数据集",
+      "authors": [
+        "Jianxun Wang",
+        "Grant C. Forbes",
+        "Leonardo Villalobos-Arias",
+        "David L. Roberts"
+      ],
+      "author_count": 4,
+      "summary": "离线强化学习算法的目标在于改进产生收集数据的行为策略，同时将学习到的策略约束在数据集的支持范围内。然而，实际离线数据集常包含多样性不足或环境探索有限的样本，且这些数据往往源自具有多样性的多个行为策略……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:53:49+00:00",
+      "updated": "2026-02-11T17:53:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11087v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11087v1",
+      "comment": "Extended version of the full paper with the appendix accepted at AAMAS 2026"
+    },
+    {
+      "id": "2602.11084v1",
+      "title": "GRASP：面向患者的群体Shapley特征选择方法",
+      "authors": [
+        "Yuheng Luo",
+        "Shuyan Li",
+        "Zhong Cao"
+      ],
+      "author_count": 3,
+      "summary": "特征选择在医学预测中仍是一个重大挑战，现有方法如LASSO往往缺乏稳健性和可解释性。我们提出GRASP这一创新框架，它将沙普利值驱动的归因与组$L_{21}$正则化相结合，以提取紧凑且非冗余的特征集。GRASP首先通过组别蒸馏...",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:50:57+00:00",
+      "updated": "2026-02-11T17:50:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11084v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11084v1",
+      "comment": "5 pages, 4 figures, 2 tables"
+    },
+    {
+      "id": "2602.11081v1",
+      "title": "SteuerLLM：专为德国税法分析打造的本地化大型语言模型",
+      "authors": [
+        "Sebastian Wind",
+        "Jeta Sopa",
+        "Laurin Schmid",
+        "Quirin Jackl",
+        "Sebastian Kiefer"
+      ],
+      "author_count": 11,
+      "summary": "大型语言模型展现出强大的通用推理与语言理解能力，但在受严格形式规则、精确术语及法律约束性结构主导的领域中，其表现往往有所欠缺。税法领域正是这类挑战的典型体现——获得正确答案需要精确的法条引用、结构化的法律论证，以及……",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:46:01+00:00",
+      "updated": "2026-02-11T17:46:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11081v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11081v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11079v1",
+      "title": "野外模型生物：通过数据归因减轻生产后训练中大型语言模型的不良涌现行为",
+      "authors": [
+        "Frank Xiao",
+        "Santiago Aranguri"
+      ],
+      "author_count": 2,
+      "summary": "我们提出基于激活的数据归因方法，该方法通过计算测试提示与偏好对的激活差异向量，并依据余弦相似度进行排序，从而将后训练语言模型中的行为变化追溯至相应的训练数据点。这一方法不仅能识别引发特定行为的数据点，还能对这些归因结果进行验证。",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:45:31+00:00",
+      "updated": "2026-02-11T17:45:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11079v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11079v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11076v1",
+      "title": "基于可解释注意力的多智能体PPO算法在6G无线接入网切片中的延迟尖峰解决方案",
+      "authors": [
+        "Kavan Fatehi",
+        "Mostafa Rahmani Ghourtani",
+        "Amir Sonee",
+        "Poonam Yadav",
+        "Alessandra M Russo"
+      ],
+      "author_count": 7,
+      "summary": "第六代无线接入网络必须为异构切片执行严格的服务水平协议，然而突发性延迟激增问题仍难以通过传统的深度强化学习或可解释强化学习进行诊断与解决。我们提出《注意力增强型多智能体近端策略优化...》",
+      "categories": [
+        "eess.SY",
+        "cs.AI",
+        "eess.SP"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-02-11T17:44:03+00:00",
+      "updated": "2026-02-11T17:44:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11076v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11076v1",
+      "comment": "This work has been accepted to appear in the IEEE International Conference on Communications (ICC)"
+    },
+    {
+      "id": "2602.11073v1",
+      "title": "与图像对话，开启内省式视觉思考之旅。",
+      "authors": [
+        "Junfei Wu",
+        "Jian Guan",
+        "Qiang Liu",
+        "Shu Wu",
+        "Liang Wang"
+      ],
+      "author_count": 7,
+      "summary": "当前的大型视觉语言模型通常依赖于基于单次视觉编码的纯文本推理，这往往导致细粒度视觉信息的丢失。近期提出的“图像思维”尝试通过外部工具或代码处理图像来缓解这一局限，然而其结果……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T17:42:37+00:00",
+      "updated": "2026-02-11T17:42:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11073v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11073v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11065v1",
+      "title": "多级感知对话行为建模基础模型",
+      "authors": [
+        "Dingkun Zhou",
+        "Shuchang Pan",
+        "Jiachen Lian",
+        "Siddharth Banerjee",
+        "Sarika Pasumarthy"
+      ],
+      "author_count": 14,
+      "summary": "人类对话由一条隐含的思维链组织而成，表现为定时的言语行为。捕捉这种感知路径是构建自然全双工交互系统的关键。我们引入了一个框架，将这一过程建模为多层次感知，并通过思维图谱对会话行为进行推理。",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:32:52+00:00",
+      "updated": "2026-02-11T17:32:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11065v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11065v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11052v1",
+      "title": "GraphSeek：基于大语言模型的新一代图分析技术",
+      "authors": [
+        "Maciej Besta",
+        "Łukasz Jarmocik",
+        "Orest Hrycyna",
+        "Shachar Klaiman",
+        "Konrad Mączka"
+      ],
+      "author_count": 10,
+      "summary": "图表在各领域具有基础性地位，但若缺乏深厚专业知识仍难以运用。大型语言模型有望实现便捷的自然语言图分析，然而它们无法高效处理工业级属性图：这类数据集规模庞大、高度异构、结构复杂且动态演变。为此，我们……",
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-02-11T17:20:06+00:00",
+      "updated": "2026-02-11T17:20:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11052v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11052v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11044v1",
+      "title": "语言模型通过端到端微分实现逆向工程",
+      "authors": [
+        "Kevin Yandoka Denamganaï",
+        "Kartic Subr"
+      ],
+      "author_count": 2,
+      "summary": "尽管关于语言模型（LM）的研究不断涌现，但鲜有方法深入分析其可逆性。具体而言，给定一个语言模型和一个理想的目标输出词元序列，如何确定能产生该目标输出的输入提示仍是一个悬而未决的问题。我们将此问题构建为经典的基于梯度的优化问题。首先，我们提出了一种...",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:14:41+00:00",
+      "updated": "2026-02-11T17:14:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11044v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11044v1",
+      "comment": "24 pages, 5 figures, under review"
+    },
+    {
+      "id": "2602.11028v1",
+      "title": "痴呆症银行匹茨堡语料库中早期认知衰退的语言学指标：一项统计与机器学习研究",
+      "authors": [
+        "Artsvik Avetisyan",
+        "Sachin Kumar"
+      ],
+      "author_count": 2,
+      "summary": "背景：自发性语言表达的微妙变化是认知衰退的最早迹象之一。识别具有语言学可解释性的痴呆症标志物，有助于建立透明且基于临床依据的筛查方法。方法：本研究利用...分析了来自DementiaBank匹茨堡语料库的自发性言语转录文本。",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T16:53:57+00:00",
+      "updated": "2026-02-11T16:53:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11028v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11028v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11151v1",
+      "title": "扩散预训练的密集与上下文嵌入",
+      "authors": [
+        "Sedigheh Eslami",
+        "Maksim Gaiduk",
+        "Markus Krimmel",
+        "Louis Milliken",
+        "Bo Wang"
+      ],
+      "author_count": 6,
+      "summary": "在本报告中，我们推出pplx-embed系列多语言嵌入模型，该系列模型基于扩散预训练语言模型架构，采用多阶段对比学习方法，专为网络级检索任务设计。通过扩散预训练实现的双向注意力机制，我们的模型能够捕捉文本段落中完整的双向语境……",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:59:08+00:00",
+      "updated": "2026-02-11T18:59:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11151v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11151v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11150v1",
+      "title": "YOR：您的通用机器人移动操作平台",
+      "authors": [
+        "Manan H Anjaria",
+        "Mehmet Enes Erciyes",
+        "Vedant Ghatnekar",
+        "Neha Navarkar",
+        "Haritheja Etukuru"
+      ],
+      "author_count": 14,
+      "summary": "机器人学习的最新进展引发了人们对可能最终接近人类能力水平的强大平台的浓厚兴趣。这一兴趣与执行器的商品化相结合，推动了低成本机器人平台的发展。然而，移动操控的最佳形态，尤其是在预算有限的情况下，仍然是一个待解之谜。",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T18:59:00+00:00",
+      "updated": "2026-02-11T18:59:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11150v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11150v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11145v1",
+      "title": "SCRAPL：用于机器学习的随机路径散射变换",
+      "authors": [
+        "Christopher Mitcheltree",
+        "Vincent Lostanlen",
+        "Emmanouil Benetos",
+        "Mathieu Lagrange"
+      ],
+      "author_count": 4,
+      "summary": "小波散射变换系数（即路径）间的欧几里得距离为计算机视觉、语音及音频处理领域中的深度逆问题感知质量评估提供了信息丰富的梯度。然而，当这些变换作为随机...的可微分损失函数时，其计算成本高昂。",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-11T18:57:08+00:00",
+      "updated": "2026-02-11T18:57:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11145v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11145v1",
+      "comment": "Accepted to ICLR 2026. Code, audio samples, and Python package provided at https://christhetree.github.io/scrapl/"
+    },
+    {
+      "id": "2602.11141v1",
+      "title": "LCIP：高维图像数据的损失控制逆投影",
+      "authors": [
+        "Yu Wang",
+        "Frederik L. Dennig",
+        "Michael Behrisch",
+        "Alexandru Telea"
+      ],
+      "author_count": 4,
+      "summary": "投影（或降维）方法$P$旨在将高维数据映射到通常为二维的散点图以进行视觉探索。逆投影方法$P^{-1}$则旨在将这一二维空间映射回数据空间，以支持数据增强、分类器分析和数据填补等任务。当前的$P^{-1}$方法存在一个...",
+      "categories": [
+        "cs.HC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T18:52:46+00:00",
+      "updated": "2026-02-11T18:52:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11141v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11141v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11139v1",
+      "title": "TabICLv2：更优、更快、可扩展且开源的表格基础模型",
+      "authors": [
+        "Jingang Qu",
+        "David Holzmüller",
+        "Gaël Varoquaux",
+        "Marine Le Morvan"
+      ],
+      "author_count": 4,
+      "summary": "表格基础模型，如TabPFNv2和TabICL，最近在预测基准测试中取代梯度提升树登顶，展示了上下文学习在表格数据中的价值。我们推出TabICLv2——一个基于三大支柱构建的全新回归与分类基础模型，其性能达到业界顶尖水平：（1）一种创新的合成数据生成方法……",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:51:02+00:00",
+      "updated": "2026-02-11T18:51:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11139v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11139v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11133v1",
+      "title": "准时：扩散语言模型的令牌级早期停止",
+      "authors": [
+        "Zahar Kohut",
+        "Severyn Shykula",
+        "Dmytro Khamula",
+        "Mykola Vysotskyi",
+        "Taras Rumezhak"
+      ],
+      "author_count": 6,
+      "summary": "扩散语言模型通过迭代优化生成文本，这一过程通常计算效率较低，因为许多词元在最终去噪步骤之前早已达到稳定状态。我们提出了一种无需训练的词元级早停方法，能在每个位置独立识别收敛状态。该方法利用……",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:44:04+00:00",
+      "updated": "2026-02-11T18:44:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11133v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11133v1",
+      "comment": "Under review"
+    },
+    {
+      "id": "2602.11130v1",
+      "title": "从电路到动力学：理解并稳定三维扩散变换器中的故障",
+      "authors": [
+        "Maximilian Plattner",
+        "Fabian Paischer",
+        "Johannes Brandstetter",
+        "Arturs Berzins"
+      ],
+      "author_count": 4,
+      "summary": "从稀疏点云实现可靠的表面重建是支撑内容创作与机器人技术等众多应用的基础。尽管三维扩散变换器在此任务上取得了最先进的成果，但我们发现其存在一种灾难性的失效模式：对输入点云施加任意微小的表面扰动，都可能导致重建结果出现断裂……",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:42:05+00:00",
+      "updated": "2026-02-11T18:42:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11130v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11130v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11128v1",
+      "title": "可验证奖励强化学习中的非对称提示加权",
+      "authors": [
+        "Reinhard Heckel",
+        "Mahdi Soltanolkotabi",
+        "Christos Thramboulidis"
+      ],
+      "author_count": 3,
+      "summary": "带有可验证奖励的强化学习推动了大型语言模型后训练的最新进展，尤其是在推理方面。策略优化算法为给定提示生成多个响应，然后根据奖励有效加权相应的梯度。最流行的算法包括GRPO、DAPO和RLOO等。",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:39:42+00:00",
+      "updated": "2026-02-11T18:39:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11128v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11128v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11126v1",
+      "title": "离线前沿偏移：诊断生成式多目标优化中的分布限制",
+      "authors": [
+        "Stephanie Holly",
+        "Alexandru-Ciprian Zăvoianu",
+        "Siegfried Silber",
+        "Sepp Hochreiter",
+        "Werner Zellinger"
+      ],
+      "author_count": 5,
+      "summary": "离线多目标优化（MOO）旨在通过有限的静态数据集恢复帕累托最优设计。包括扩散模型在内的近期生成方法在超体积指标下表现出色，但它们在其它成熟MOO指标下的行为尚不明确。我们发现生成方法系统性地表现欠佳……",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:38:40+00:00",
+      "updated": "2026-02-11T18:38:40+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11126v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11126v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11123v1",
+      "title": "从自然语言到材料发现：材料知识导航智能体",
+      "authors": [
+        "Genmao Zhuang",
+        "Amir Barati Farimani"
+      ],
+      "author_count": 2,
+      "summary": "加速高性能材料的发现仍然是能源、电子和航空航天技术领域的核心挑战，传统工作流程在很大程度上依赖专家直觉和计算成本高昂的模拟。在此，我们推出材料知识导航智能体（MKNA），这是一个语言驱动的系统……",
+      "categories": [
+        "cs.LG",
+        "cond-mat.mtrl-sci"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:34:24+00:00",
+      "updated": "2026-02-11T18:34:24+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11123v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11123v1",
+      "comment": "22 pages,5 figures"
+    },
+    {
+      "id": "2602.11107v1",
+      "title": "Renet: Principled and Efficient Relaxation for the Elastic Net via Dynamic Objective Selection",
+      "authors": [
+        "Albert Dorador"
+      ],
+      "author_count": 1,
+      "summary": "We introduce Renet, a principled generalization of the Relaxed Lasso to the Elastic Net family of estimators. While, on the one hand, $\\ell_1$-regularization is a standard tool for variable selection in high-dimensional regimes and, on the other hand, the $\\ell_2$ penalty provides stability and solution uniqueness through strict convexity, the standard Elastic Net nevertheless suffers from shrinkage bias that frequently yields suboptimal prediction accuracy. We propose to address this...",
+      "categories": [
+        "stat.ME",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "stat.ME",
+      "published": "2026-02-11T18:22:59+00:00",
+      "updated": "2026-02-11T18:22:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11107v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11107v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11097v1",
+      "title": "Statistical Learning Analysis of Physics-Informed Neural Networks",
+      "authors": [
+        "David A. Barajas-Solano"
+      ],
+      "author_count": 1,
+      "summary": "We study the training and performance of physics-informed learning for initial and boundary value problems (IBVP) with physics-informed neural networks (PINNs) from a statistical learning perspective. Specifically, we restrict ourselves to parameterizations with hard initial and boundary condition constraints and reformulate the problem of estimating PINN parameters as a statistical learning problem. From this perspective, the physics penalty on the IBVP residuals can be better understood not...",
+      "categories": [
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:09:29+00:00",
+      "updated": "2026-02-11T18:09:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11097v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11097v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11092v1",
+      "title": "MerLin：光子与混合量子机器学习发现引擎",
+      "authors": [
+        "Cassandre Notton",
+        "Benjamin Stott",
+        "Philippe Schoeb",
+        "Anthony Walsh",
+        "Grégoire Leboucher"
+      ],
+      "author_count": 10,
+      "summary": "识别量子模型在近期量子机器学习（QML）中可能提供实际优势的领域，需要超越孤立的算法提案，转向跨模型、数据集和硬件约束的系统化实证探索。我们推出MerLin，这是一个开源框架，旨在作为光子及...领域的探索引擎。",
+      "categories": [
+        "cs.LG",
+        "cs.PL",
+        "quant-ph"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T18:00:01+00:00",
+      "updated": "2026-02-11T18:00:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11092v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11092v1",
+      "comment": "This work has been submitted to the 2026 IEEE World Congress on Computational Intelligence"
+    },
+    {
+      "id": "2602.11086v1",
+      "title": "首届国际生物特征步态识别StepUP竞赛：方法、成果与现存挑战",
+      "authors": [
+        "Robyn Larracy",
+        "Eve MacDonald",
+        "Angkoon Phinyomark",
+        "Saeid Rezaei",
+        "Mahdi Laghaei"
+      ],
+      "author_count": 8,
+      "summary": "基于个人行走时脚下独特压力模式的生物特征步态识别，是一个新兴领域，在安全与保障方面的应用日益广泛。然而，该领域的发展一直受限于缺乏大规模、多样化的数据集，这些数据对于解决诸如新用户泛化等关键挑战至关重要。",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T17:53:46+00:00",
+      "updated": "2026-02-11T17:53:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11086v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11086v1",
+      "comment": "to be published in 2025 IEEE International Joint Conference on Biometrics (IJCB)"
+    },
+    {
+      "id": "2602.11149v1",
+      "title": "数据重复胜过数据扩展在长链思维监督微调中。",
+      "authors": [
+        "Dawid J. Kopiczko",
+        "Sagar Vaze",
+        "Tijmen Blankevoort",
+        "Yuki M. Asano"
+      ],
+      "author_count": 4,
+      "summary": "监督式思维链数据微调是推理语言模型训练后不可或缺的一步。标准的机器学习直觉认为，使用更多独特的训练样本进行训练能带来更好的泛化能力。然而反直觉的是，我们发现微调过程会从重复训练中获益：在固定的更新预算下，训练……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T18:58:54+00:00",
+      "updated": "2026-02-11T18:58:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11149v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11149v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11106v1",
+      "title": "TEGRA：融合图结构与检索增强的文本编码用于虚假信息检测",
+      "authors": [
+        "Géraud Faye",
+        "Wassila Ouerdane",
+        "Guillaume Gadek",
+        "Céline Hudelot"
+      ],
+      "author_count": 4,
+      "summary": "错误信息检测是一项关键任务，通过整合外部知识可显著提升其效能，这与人工事实核查的工作方式相似。本研究提出了一种创新的文本表征方法，该方法能有效融合知识库中的信息。我们提出的图结构文本编码方法通过构建文本与知识实体间的关联图...",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T18:21:17+00:00",
+      "updated": "2026-02-11T18:21:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11106v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11106v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11091v1",
+      "title": "大型语言模型能让每个人都满意吗？",
+      "authors": [
+        "Usman Naseem",
+        "Gautam Siddharth Kashyap",
+        "Ebad Shabbir",
+        "Sushant Kumar Ray",
+        "Abdullah Mohammad"
+      ],
+      "author_count": 6,
+      "summary": "大型语言模型（LLMs）中的错位问题，指的是模型无法同时满足安全性、价值观与文化维度的要求，导致在现实场景中这些维度必须共存时，其行为偏离人类预期。现有基准测试如SAFETUNEBED（侧重安全）、VALUEBENCH（侧重价值观）等……",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:57:23+00:00",
+      "updated": "2026-02-11T17:57:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11091v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11091v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11072v1",
+      "title": "无需对齐数据的同步语音到语音翻译",
+      "authors": [
+        "Tom Labiausse",
+        "Romain Fabre",
+        "Yannick Estève",
+        "Alexandre Défossez",
+        "Neil Zeghidour"
+      ],
+      "author_count": 5,
+      "summary": "同步语音翻译需要在实时处理非单调词汇依赖的同时，将源语音翻译成目标语言。传统方法依赖于词汇级对齐数据的监督训练，这类数据难以大规模收集，因此需借助针对特定语言设计的启发式方法生成合成对齐数据。",
+      "categories": [
+        "cs.CL",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:41:01+00:00",
+      "updated": "2026-02-11T17:41:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11072v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11072v1",
+      "comment": "See inference code at: https://github.com/kyutai-labs/hibiki-zero"
+    },
+    {
+      "id": "2602.11047v1",
+      "title": "Embedding Inversion via Conditional Masked Diffusion Language Models",
+      "authors": [
+        "Han Xiao"
+      ],
+      "author_count": 1,
+      "summary": "We frame embedding inversion as conditional masked diffusion, recovering all tokens in parallel through iterative denoising rather than sequential autoregressive generation. A masked diffusion language model is conditioned on the target embedding via adaptive layer normalization, requiring only 8 forward passes through a 78M parameter model with no access to the target encoder. On 32-token sequences across three embedding models, the method achieves 81.3% token accuracy and 0.87 cosine...",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T17:17:13+00:00",
+      "updated": "2026-02-11T17:17:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11047v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11047v1",
+      "comment": "9 pages, 3 figures, 7 tables. Code and demo: https://github.com/hanxiao/embedding-inversion-demo"
+    },
+    {
+      "id": "2602.11040v1",
+      "title": "学习乱序WOO发布中的页面排序",
+      "authors": [
+        "Efe Kahraman",
+        "Giulio Tosato"
+      ],
+      "author_count": 2,
+      "summary": "我们利用页面嵌入技术对5,461份经过打乱的荷兰信息公开文件（WOO文档）进行了页面排序研究。这些文件是包含电子邮件、法律文本和电子表格等异构文档集合的PDF文件，其语义排序信号并不可靠。我们比较了五种方法，其中包括指针网络……",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:11:27+00:00",
+      "updated": "2026-02-11T17:11:27+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11040v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11040v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11008v1",
+      "title": "ROCKET：通过校准引导的背包增强截断实现快速优化，用于高效模型压缩",
+      "authors": [
+        "Ammar Ali",
+        "Baher Mohammad",
+        "Denis Makhov",
+        "Dmitriy Shopkhoev",
+        "Magauiya Zhussip"
+      ],
+      "author_count": 6,
+      "summary": "我们推出ROCKET，这是一种无需训练的模型压缩方法，在与因子分解、结构化稀疏化和动态压缩基线比较中实现了最先进的性能。在全局压缩预算下，ROCKET包含两项关键创新：首先，它将逐层压缩分配问题构建为……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T16:34:52+00:00",
+      "updated": "2026-02-11T16:34:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11008v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11008v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10996v1",
+      "title": "通信人工智能代理中数值表征的出现",
+      "authors": [
+        "Daniela Mihai",
+        "Lucas Weber",
+        "Francesca Franzon"
+      ],
+      "author_count": 3,
+      "summary": "人类语言提供了表达数量的高效系统，但纯粹的交流压力是否足以使人工代理产生数字表征，以及这些自发产生的代码是否与人类数字系统存在相似性，仍是一个悬而未决的问题。我们研究了两个基于神经网络的代理，它们必须通过交流……",
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-11T16:21:43+00:00",
+      "updated": "2026-02-11T16:21:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10996v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10996v1",
+      "comment": "In the Sixteenth International Conference on the Evolution of Language"
+    },
+    {
+      "id": "2602.11154v1",
+      "title": "冲浪相位：基于稀疏视频的两相流三维界面动力学",
+      "authors": [
+        "Yue Gao",
+        "Hong-Xing Yu",
+        "Sanghyeon Chang",
+        "Qianxi Fu",
+        "Bo Zhu"
+      ],
+      "author_count": 8,
+      "summary": "两相流中的界面动力学控制着动量、热和质量的传递，但在实验测量上仍面临困难。经典技术在移动界面附近存在固有局限，而现有的神经渲染方法主要针对具有扩散边界的单相流，无法处理尖锐且可形变的液-汽界面。",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T18:59:55+00:00",
+      "updated": "2026-02-11T18:59:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11154v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11154v1",
+      "comment": "The first two authors contributed equally. Project website: https://yuegao.me/SurfPhase"
+    },
+    {
+      "id": "2602.11124v1",
+      "title": "物理评论家：面向物理人工智能的多模态评论模型",
+      "authors": [
+        "Tianyi Xiong",
+        "Shihao Wang",
+        "Guilin Liu",
+        "Yi Dong",
+        "Ming Li"
+      ],
+      "author_count": 8,
+      "summary": "随着大型多模态模型的快速发展，可靠的评判与批评模型已成为开放式评估和偏好对齐的关键工具，它们能为模型生成的回答提供成对偏好判断、数值化评分及解释性论证。然而现有批评模型主要基于通用视觉领域训练……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T18:35:39+00:00",
+      "updated": "2026-02-11T18:35:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11124v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11124v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11117v1",
+      "title": "HairWeaver：基于仿真到现实引导视频扩散的少样本逼真头发运动合成",
+      "authors": [
+        "Di Chang",
+        "Ji Hou",
+        "Aljaz Bozic",
+        "Assaf Neuberger",
+        "Felix Juefei-Xu"
+      ],
+      "author_count": 11,
+      "summary": "我们推出HairWeaver，这是一个基于扩散模型的流程，能够为单张人物图像赋予逼真且富有表现力的头发动态效果。现有方法虽能成功控制身体姿态，却缺乏对头发的精细调控，因而难以捕捉复杂的头发运动，导致动画效果僵硬且不真实。HairWeaver……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T18:31:47+00:00",
+      "updated": "2026-02-11T18:31:47+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11117v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11117v1",
+      "comment": "Website: https://boese0601.github.io/hairweaver/"
+    },
+    {
+      "id": "2602.11105v1",
+      "title": "FastFlow：通过强盗推理加速生成流匹配模型",
+      "authors": [
+        "Divya Jyoti Bajpai",
+        "Dhruv Bhardwaj",
+        "Soumya Roy",
+        "Tejas Duseja",
+        "Harsh Agarwal"
+      ],
+      "author_count": 7,
+      "summary": "流匹配模型在图像和视频生成中实现了最先进的保真度，但其固有的顺序去噪过程导致生成速度较慢。现有的加速方法如蒸馏、轨迹截断和一致性方法都是静态的，需要重新训练，并且往往难以跨任务泛化。我们提出了FastFlow，一种……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T18:21:11+00:00",
+      "updated": "2026-02-11T18:21:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11105v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11105v1",
+      "comment": "Accepted at International Conference on Learning Representations (ICLR) 2026"
+    },
+    {
+      "id": "2602.11066v1",
+      "title": "PuriLight：一种用于单目深度估计的轻量级混洗与净化框架",
+      "authors": [
+        "Yujie Chen",
+        "Li Zhang",
+        "Xiaomeng Chu",
+        "Tian Zhang"
+      ],
+      "author_count": 4,
+      "summary": "我们提出PuriLight，一个轻量高效的自监督单目深度估计框架，以应对计算效率与细节保留的双重挑战。尽管自监督深度估计的最新进展减少了对真实标签监督的依赖，现有方法仍受限于……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T17:35:21+00:00",
+      "updated": "2026-02-11T17:35:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11066v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11066v1",
+      "comment": "8 pages, 6figures, accepted by European Conference on Artificial Intelligence (ECAI2025)"
+    },
+    {
+      "id": "2602.11024v1",
+      "title": "链式观察空间推理用于密集手术器械计数",
+      "authors": [
+        "Rishikesh Bhyri",
+        "Brian R Quaranto",
+        "Philip J Seger",
+        "Kaity Tung",
+        "Brendan Fox"
+      ],
+      "author_count": 10,
+      "summary": "手术室（OR）中手术器械的精确计数是确保手术期间患者安全的关键前提。尽管大型视觉语言模型和智能体人工智能近期取得了进展，但准确计数此类器械仍然极具挑战性，尤其是在器械紧密堆积的密集场景中。为了……",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:49:37+00:00",
+      "updated": "2026-02-11T16:49:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11024v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11024v1",
+      "comment": "Accepted to WACV 2026. This version includes additional authors who contributed during the rebuttal phase"
+    },
+    {
+      "id": "2602.11021v1",
+      "title": "接触高斯世界模型-WM：从视频中学习物理基础的世界模型",
+      "authors": [
+        "Meizhong Wang",
+        "Wanxin Jin",
+        "Kun Cao",
+        "Lihua Xie",
+        "Yiguang Hong"
+      ],
+      "author_count": 5,
+      "summary": "开发能够理解复杂物理交互的世界模型，对于推进机器人规划与仿真至关重要。然而，现有方法在数据稀缺和接触密集型复杂动态运动条件下，往往难以准确建模环境。为应对这些挑战，我们提出了ContactGaussian-WM模型……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T16:48:13+00:00",
+      "updated": "2026-02-11T16:48:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11021v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11021v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11007v1",
+      "title": "LaSSM：通过局部聚合与状态空间模型实现高效语义空间查询解码，用于三维实例分割",
+      "authors": [
+        "Lei Yao",
+        "Yi Wang",
+        "Yawen Cui",
+        "Moyun Liu",
+        "Lap-Pui Chau"
+      ],
+      "author_count": 5,
+      "summary": "基于查询的点云三维场景实例分割已取得显著性能。然而，现有方法因点云的稀疏特性而面临查询初始化困境，并依赖查询解码器中计算密集的注意力机制。为此我们提出LaSSM框架，以简洁性为核心导向……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:34:12+00:00",
+      "updated": "2026-02-11T16:34:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11007v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11007v1",
+      "comment": "Accepted at IEEE-TCSVT"
+    },
+    {
+      "id": "2602.11005v1",
+      "title": "可解释视觉变换器在单目深度估计中的应用通过SVDA实现。",
+      "authors": [
+        "Vasileios Arampatzakis",
+        "George Pavlidis",
+        "Nikolaos Mitianoudis",
+        "Nikos Papamarkos"
+      ],
+      "author_count": 4,
+      "summary": "单目深度估计是计算机视觉中的一个核心问题，应用于机器人、增强现实和自动驾驶等领域，然而驱动现代Transformer架构的自注意力机制仍不透明。我们将受奇异值分解启发的注意力机制引入密集预测Transformer，首次提供了光谱结构化的...",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:27:15+00:00",
+      "updated": "2026-02-11T16:27:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11005v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11005v1",
+      "comment": "8 pages, 2 figures, submitted to CVPR Conference 2026"
+    },
+    {
+      "id": "2602.11004v1",
+      "title": "提升自动驾驶汽车感知中多租户深度神经网络推理的可预测性",
+      "authors": [
+        "Liangkai Liu",
+        "Kang G. Shin",
+        "Jinkyu Lee",
+        "Chengmo Yang",
+        "Weisong Shi"
+      ],
+      "author_count": 5,
+      "summary": "自动驾驶车辆依赖传感器与深度神经网络实时感知周边环境并做出行驶决策。然而，由于计算需求与车辆有限资源之间存在巨大差距，在感知系统中实现深度神经网络的实时推理仍面临挑战。即便不是全部……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:25:10+00:00",
+      "updated": "2026-02-11T16:25:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11004v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11004v1",
+      "comment": "13 pages, 12 figures"
+    },
+    {
+      "id": "2602.10994v1",
+      "title": "图像分类中通过SVDA实现可解释视觉变换器。",
+      "authors": [
+        "Vasileios Arampatzakis",
+        "George Pavlidis",
+        "Nikolaos Mitianoudis",
+        "Nikos Papamarkos"
+      ],
+      "author_count": 4,
+      "summary": "视觉变换器（ViTs）在图像分类任务中已达到顶尖性能，但其注意力机制往往缺乏透明度，并表现出密集、非结构化的行为。本研究将先前提出的奇异值分解启发注意力机制（SVDA）适配至ViT架构，引入一种基于几何原理的...",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:20:32+00:00",
+      "updated": "2026-02-11T16:20:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10994v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10994v1",
+      "comment": "10 pages, 4 figures, submitted to IEEE Access"
+    },
+    {
+      "id": "2602.10985v1",
+      "title": "DFIC：迈向用于自动ICAO合规性验证的平衡面部图像数据集",
+      "authors": [
+        "Nuno Gonçalves",
+        "Diogo Nunes",
+        "Carla Guerra",
+        "João Marcos"
+      ],
+      "author_count": 4,
+      "summary": "确保机器可读旅行证件（MRTDs）中人脸图像符合ISO/IEC和ICAO标准对于可靠的身份验证至关重要，但当前的人工检查方法在高需求环境中效率低下。本文介绍了DFIC数据集，这是一个新颖且全面的面部图像数据集，包含约...",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:13:17+00:00",
+      "updated": "2026-02-11T16:13:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10985v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10985v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10978v1",
+      "title": "VFGS-Net：面向拓扑保持视网膜血管分割的频率引导状态空间学习网络",
+      "authors": [
+        "Ruiqi Song",
+        "Lei Liu",
+        "Ya-Nan Zhang",
+        "Chao Wang",
+        "Xiaoning Li"
+      ],
+      "author_count": 6,
+      "summary": "精确的视网膜血管分割是进行视网膜图像定量分析以及糖尿病视网膜病变等血管疾病计算机辅助诊断的关键前提。然而，视网膜血管的细长形态、尺度差异大以及对比度低等特点，给现有方法带来了巨大挑战，使其难以……",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T16:07:29+00:00",
+      "updated": "2026-02-11T16:07:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10978v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10978v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10967v1",
+      "title": "健康收获：利用InceptionV3模型进行番石榴病害分类的比较研究",
+      "authors": [
+        "Samanta Ghosh",
+        "Shaila Afroz Anika",
+        "Umma Habiba Ahmed",
+        "B. M. Shahria Alam",
+        "Mohammad Tahmid Noor"
+      ],
+      "author_count": 6,
+      "summary": "番石榴果实常遭受多种病害侵袭，这不仅会影响果实品质，还会降低水果作物产量。早期识别对于减少损害、保障果实健康至关重要。本研究主要针对三类病害进行分类，分别是炭疽病、果蝇侵害及健康果实。本研究所用数据集采集自...",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T15:59:49+00:00",
+      "updated": "2026-02-11T15:59:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10967v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10967v1",
+      "comment": "6 pages, 13 figures, his is the author's accepted manuscript of a paper accepted for publication in the Proceedings of the 16th International IEEE Conference on Computing, Communication and Networking Technologies (ICCCNT 2025). The final published version will be available via IEEE Xplore"
+    },
+    {
+      "id": "2602.10943v1",
+      "title": "迈向从二维观察中学习可泛化的三维场景表示",
+      "authors": [
+        "Martin Gromniak",
+        "Jan-Gerrit Habekost",
+        "Sebastian Kamp",
+        "Sven Magg",
+        "Stefan Wermter"
+      ],
+      "author_count": 5,
+      "summary": "我们提出了一种可泛化的神经辐射场方法，用于通过机器人第一视角观测预测三维工作空间占用情况。与先前以相机坐标系为核心的方法不同，我们的模型在全局工作空间框架中构建占用表征，使其能直接应用于机器人操控任务。该模型整合了...",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T15:22:41+00:00",
+      "updated": "2026-02-11T15:22:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10943v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10943v1",
+      "comment": "Paper accepted at ESANN 2026"
+    },
+    {
+      "id": "2602.10891v1",
+      "title": "交互式大语言模型辅助的多任务进化策略搜索课程学习",
+      "authors": [
+        "Berfin Sakallioglu",
+        "Giorgia Nadizar",
+        "Eric Medvet"
+      ],
+      "author_count": 3,
+      "summary": "多任务策略搜索是一个具有挑战性的问题，因为策略需要泛化到训练案例之外。课程学习已被证明在此情境下是有效的，因为它能逐步引入复杂性。然而，设计有效的课程既费力又需要深厚的领域专业知识。基于大型语言模型的课程……",
+      "categories": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-11T14:21:52+00:00",
+      "updated": "2026-02-11T14:21:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10891v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10891v1",
+      "comment": "8 pages, 7 figures, with Appendix"
+    },
+    {
+      "id": "2602.10763v1",
+      "title": "模拟神经形态硬件上神经元参数的摊销推断",
+      "authors": [
+        "Jakob Kaiser",
+        "Eric Müller",
+        "Johannes Schemmel"
+      ],
+      "author_count": 3,
+      "summary": "我们的工作采用了一种非序列的基于模拟的推理算法，以提供一个摊销的神经密度估计器，该估计器近似模拟神经形态BrainScaleS-2基底的自适应指数积分发放神经元模型中七个参数的后验分布。我们通过...约束了庞大的参数空间。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-11T11:49:02+00:00",
+      "updated": "2026-02-11T11:49:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10763v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10763v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10552v1",
+      "title": "MindPilot：基于脑电图引导扩散的闭环视觉刺激优化用于大脑调控",
+      "authors": [
+        "Dongyang Li",
+        "Kunpeng Xie",
+        "Mingyang Wu",
+        "Yiwei Kong",
+        "Jiahua Tang"
+      ],
+      "author_count": 8,
+      "summary": "尽管大多数脑机接口研究专注于将神经信号解码为行为或意图，但反向挑战——利用受控刺激引导大脑活动——仍远未被充分理解，尤其在视觉领域。然而，设计能持续引发预期神经反应的图像十分困难：主观性……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-11T05:51:31+00:00",
+      "updated": "2026-02-11T05:51:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10552v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10552v1",
+      "comment": "10 pages"
+    },
+    {
+      "id": "2602.10233v1",
+      "title": "ImprovEvolve：请AlphaEvolve改进输入方案并即兴发挥",
+      "authors": [
+        "Alexey Kravatskiy",
+        "Valentin Khrulkov",
+        "Ivan Oseledets"
+      ],
+      "author_count": 3,
+      "summary": "LLM引导进化计算的最新进展，尤其是AlphaEvolve，在发现新颖数学结构和解决复杂优化问题方面取得了显著成功。本文提出ImprovEvolve——一种用于增强基于LLM的进化方法的简洁高效技术，例如……",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "math.CA",
+        "math.MG",
+        "math.OC"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-10T19:23:13+00:00",
+      "updated": "2026-02-10T19:23:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10233v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10233v1",
+      "comment": "18 pages, 23 figures, submitted to KDD '26"
+    },
+    {
+      "id": "2602.09746v1",
+      "title": "稀疏轴突与树突延迟赋能竞争性脉冲神经网络实现关键词分类。",
+      "authors": [
+        "Younes Bouhadjar",
+        "Emre Neftci"
+      ],
+      "author_count": 2,
+      "summary": "在脉冲神经网络（SNNs）中训练传输延迟已被证明能显著提升其在复杂时序任务上的表现。本研究中，我们证明了通过学习轴突或树突延迟，由漏电积分发放（LIF）神经元构成的前馈深度SNNs能够达到与现有突触可塑性模型相当的准确度。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-10T12:57:02+00:00",
+      "updated": "2026-02-10T12:57:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09746v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09746v1",
+      "comment": "7 pages, 3 figures, and 4 tables"
+    },
+    {
+      "id": "2602.09717v1",
+      "title": "从轻量级卷积神经网络到脉冲神经网络：通过剪枝脉冲SqueezeNet评估精度与能耗的权衡",
+      "authors": [
+        "Radib Bin Kabir",
+        "Tawsif Tashwar Dipto",
+        "Mehedi Ahamed",
+        "Sabbir Ahmed",
+        "Md Hasanul Kabir"
+      ],
+      "author_count": 5,
+      "summary": "脉冲神经网络（SNNs）作为卷积神经网络（CNNs）的高效能替代方案正日益受到研究关注，尤其在边缘智能领域。然而，先前的研究大多侧重于大规模模型，对于轻量级CNN到SNN转换流程的设计与评估则探索不足。本文首次提出了……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.ET",
+        "cs.NE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-10T12:20:11+00:00",
+      "updated": "2026-02-10T12:20:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09717v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09717v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08933v1",
+      "title": "使用$β$-散度可证明稳健地学习回归神经网络",
+      "authors": [
+        "Abhik Ghosh",
+        "Suryasis Jana"
+      ],
+      "author_count": 2,
+      "summary": "回归神经网络通常通过最小化均方预测误差进行训练，这种方法对异常值和数据污染极为敏感。现有的稳健训练方法往往适用范围有限，主要依赖经验验证，仅少数方法能提供部分理论保证。",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "stat.ME"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-09T17:32:43+00:00",
+      "updated": "2026-02-09T17:32:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08933v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08933v1",
+      "comment": "Pre-print, under review"
+    },
+    {
+      "id": "2602.08825v1",
+      "title": "复杂优化中有效代理学习方法论",
+      "authors": [
+        "Tomohiro Harada",
+        "Enrique Alba",
+        "Gabriel Luque"
+      ],
+      "author_count": 3,
+      "summary": "解决复杂问题需要在理论与实践上持续努力，以应对更庞大、更棘手的场景。通过构建代理模型，将问题真实地映射到计算机中进行模拟是常规做法。因此，如何最优地定义和描述此类代理模型，便成为至关重要的课题。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T15:57:50+00:00",
+      "updated": "2026-02-09T15:57:50+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08825v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08825v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08619v1",
+      "title": "利用图神经网络增强遗传算法：一份课程表编制的案例研究",
+      "authors": [
+        "Laura-Maria Cornei",
+        "Mihaela-Elena Breabăn"
+      ],
+      "author_count": 2,
+      "summary": "本文研究了将多模态遗传算法与图神经网络相结合对时间表优化产生的影响。图神经网络旨在封装通用领域知识以提升排程质量，而遗传算法则负责探索搜索空间的不同区域并整合深度学习模型。",
+      "categories": [
+        "cs.NE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T13:10:16+00:00",
+      "updated": "2026-02-09T13:10:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08619v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08619v1",
+      "comment": "Paper accepted to the International Conference on Applications of Evolutionary Computation (EvoApplications) 2026"
+    },
+    {
+      "id": "2602.08515v2",
+      "title": "物理信息神经网络（PINNs）是否需要深度？使用Levenberg-Marquardt算法的浅层PINNs",
+      "authors": [
+        "Muhammad Luthfi Shahab",
+        "Imam Mukhlash",
+        "Hadi Susanto"
+      ],
+      "author_count": 3,
+      "summary": "本研究探讨了利用浅层物理信息神经网络（PINNs）求解非线性偏微分方程（PDE）正反问题的方法。通过将PINNs重构为非线性系统，采用列文伯格-马夸尔特（LM）算法高效优化网络参数，并推导出...的解析表达式。",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "cs.NE",
+        "math.OC"
+      ],
+      "primary_category": "math.NA",
+      "published": "2026-02-09T11:05:57+00:00",
+      "updated": "2026-02-11T10:16:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08515v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.08515v2",
+      "comment": null
+    },
+    {
+      "id": "2602.08513v1",
+      "title": "基于双种群均匀采样的多目标进化算法在神经架构搜索中的应用",
+      "authors": [
+        "Yu Xue",
+        "Pengcheng Jiang",
+        "Chenchen Zhu",
+        "Yong Zhang",
+        "Ran Cheng"
+      ],
+      "author_count": 7,
+      "summary": "神经架构搜索（NAS）实现了神经网络设计的自动化，相比人工方法提升了效率。然而，如何在NAS中高效发现同时优化多个目标的高性能神经网络架构，仍然是一个重大挑战。现有方法常受限于种群多样性不足……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-09T11:04:07+00:00",
+      "updated": "2026-02-09T11:04:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08513v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08513v1",
+      "comment": "Accepted by IEEE Transactions on Neural Networks and Learning Systems. Published on this https URL: https://doi.org/10.1109/TNNLS.2026.3659508"
+    },
+    {
+      "id": "2602.07800v1",
+      "title": "用深度神经网络和Transformer近似矩阵函数",
+      "authors": [
+        "Rahul Padmanabhan",
+        "Simone Brugiapaglia"
+      ],
+      "author_count": 2,
+      "summary": "Transformer模型已经彻底改变了自然语言处理领域，但其在数值计算方面的应用却较少受到关注。我们研究了包括Transformer在内的神经网络对矩阵函数（即将标量函数映射到矩阵的函数）的逼近能力。我们重点关注将方阵映射为同维度方阵的函数...",
+      "categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-08T03:45:25+00:00",
+      "updated": "2026-02-08T03:45:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07800v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07800v1",
+      "comment": null
+    },
+    {
+      "id": "2602.07709v1",
+      "title": "从质谱中生成结构解析作为一个迭代优化问题",
+      "authors": [
+        "Mrunali Manjrekar",
+        "Runzhong Wang",
+        "Samuel Goldman",
+        "Jenna C. Fromer",
+        "Connor W. Coley"
+      ],
+      "author_count": 5,
+      "summary": "液相色谱串联质谱（LC-MS/MS）是代谢组学、环境化学及化学取证等领域进行分子鉴定的关键分析技术。尽管已有多种计算方法用于对目标质谱特征进行结构注释，但其中许多特征仍难以获得确证……",
+      "categories": [
+        "q-bio.QM",
+        "cs.NE"
+      ],
+      "primary_category": "q-bio.QM",
+      "published": "2026-02-07T21:34:38+00:00",
+      "updated": "2026-02-07T21:34:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07709v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07709v1",
+      "comment": null
+    },
+    {
+      "id": "2602.07697v1",
+      "title": "关于预测编码网络的无限宽度与深度极限",
+      "authors": [
+        "Francesco Innocenti",
+        "El Mehdi Achour",
+        "Rafal Bogacz"
+      ],
+      "author_count": 3,
+      "summary": "预测编码（PC）是一种在生物学上更合理的替代方案，用于取代标准的反向传播（BP），它会在更新权重前最小化网络活动的能量函数。最近的研究通过借鉴一些受BP启发的重新参数化方法，提升了深度PC网络（PCNs）的训练稳定性。然而，其完全的可扩展性……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-07T20:47:32+00:00",
+      "updated": "2026-02-07T20:47:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07697v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07697v1",
+      "comment": "31 pages, 27 figures"
+    },
+    {
+      "id": "2602.07299v1",
+      "title": "通过代理辅助神经进化优化供水系统中的氯化处理",
+      "authors": [
+        "Rivaaj Monsia",
+        "Daniel Young",
+        "Olivier Francon",
+        "Risto Miikkulainen"
+      ],
+      "author_count": 4,
+      "summary": "确保大型、异质供水系统（WDS）的微生物安全通常需要管理适当的消毒剂残留水平，包括氯。供水系统包含非线性且嘈杂的复杂流体相互作用，这使得传统控制算法在此类维护上面临挑战。本文...",
+      "categories": [
+        "cs.NE",
+        "eess.SY"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-07T01:16:46+00:00",
+      "updated": "2026-02-07T01:16:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07299v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07299v1",
+      "comment": "14 pages, 9 figures, GECCO '26 in-review"
+    },
+    {
+      "id": "2602.07275v1",
+      "title": "演化基于大型语言模型的住宅电动汽车充电与车辆到电网能源优化控制策略",
+      "authors": [
+        "Vishesh Purnananda",
+        "Benjamin John Wruck",
+        "Mingyu Guo"
+      ],
+      "author_count": 3,
+      "summary": "本研究提出了一种进化计算在住宅电动汽车能源管理领域的新颖应用。尽管强化学习在车网互动优化中表现出色，但其通常生成不透明的“黑箱”神经网络模型，使得消费者和监管机构难以理解其决策机制。",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T23:59:33+00:00",
+      "updated": "2026-02-06T23:59:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.07275v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.07275v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06900v1",
+      "title": "强化基于模拟的贝叶斯最优实验设计推理",
+      "authors": [
+        "Samuel Klein",
+        "Willie Neiswanger",
+        "Daniel Ratner",
+        "Michael Kagan",
+        "Sean Gasiorowski"
+      ],
+      "author_count": 5,
+      "summary": "贝叶斯最优实验设计（BOED）旨在最大化实验的期望信息增益（EIG），这需要似然估计，而在许多场景中该估计难以处理。基于模拟的推断（SBI）为此提供了强大工具，但当前明确连接SBI与BOED的研究仅限于单一……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IT",
+        "cs.NE",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-06T17:50:00+00:00",
+      "updated": "2026-02-06T17:50:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06900v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06900v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06766v1",
+      "title": "通道响应的稀疏尖峰编码用于高效能耗人体活动识别",
+      "authors": [
+        "Eleonora Cicciarella",
+        "Riccardo Mazzieri",
+        "Jacopo Pegoraro",
+        "Michele Rossi"
+      ],
+      "author_count": 4,
+      "summary": "ISAC实现了泛在感知，但现代传感算法对于能量受限的边缘设备而言往往过于复杂。这推动了在精度性能与能效之间寻求平衡的学习技术的发展。脉冲神经网络（SNNs）作为一种前景广阔的替代方案，通过稀疏的二进制脉冲序列处理信息……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T15:20:21+00:00",
+      "updated": "2026-02-06T15:20:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06766v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06766v1",
+      "comment": "6 pages, 3 figures. Accepted for publication in IEEE International Conference on Communications (ICC) 2026"
+    },
+    {
+      "id": "2602.06742v1",
+      "title": "多目标优化中的结构偏差",
+      "authors": [
+        "Jakub Kudela",
+        "Niki van Stein",
+        "Thomas Bäck",
+        "Anna V. Kononova"
+      ],
+      "author_count": 4,
+      "summary": "结构偏差（SB）指的是优化算法独立于目标函数而对搜索空间特定区域产生的系统性偏好。尽管在单目标优化中SB已得到广泛研究，但其在多目标优化中的作用在很大程度上仍未得到探索。这带来了问题，因为……",
+      "categories": [
+        "cs.NE",
+        "math.OC"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T14:43:28+00:00",
+      "updated": "2026-02-06T14:43:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06742v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.06742v1",
+      "comment": null
+    },
+    {
+      "id": "2602.06610v2",
+      "title": "绿色优化：通过机器学习代理实现能源感知的元启发式设计以应对实际问题",
+      "authors": [
+        "Tomohiro Harada",
+        "Enrique Alba",
+        "Gabriel Luque"
+      ],
+      "author_count": 3,
+      "summary": "解决现实世界的优化挑战不仅需要先进的元启发式算法，还需持续完善其内部机制。本文通过一个新兴视角——能耗问题，探讨了以神经代理模型形式存在的机器学习如何与元启发式算法相融合。尽管代理模型被广泛用于降低计算成本……",
+      "categories": [
+        "cs.NE"
+      ],
+      "primary_category": "cs.NE",
+      "published": "2026-02-06T11:12:54+00:00",
+      "updated": "2026-02-09T15:52:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.06610v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.06610v2",
+      "comment": "This manuscript corresponds to the first submitted version and may be revised in future updates"
+    },
+    {
+      "id": "2602.11143v1",
+      "title": "APEX：学习人形机器人的自适应高平台穿越",
+      "authors": [
+        "Yikai Wang",
+        "Tingxuan Leng",
+        "Changyi Lin",
+        "Shiqi Liu",
+        "Shir Simon"
+      ],
+      "author_count": 8,
+      "summary": "随着深度强化学习（DRL）的发展，类人机器人的运动能力迅速提升，已能稳健地以双足在不平坦地形上行走。然而，对于超出腿长的平台，现有技术仍难以企及，因为当前的强化学习训练模式往往收敛于类似跳跃的解决方案——这些方案冲击力大、受扭矩限制，且在现实世界中存在安全隐患。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T18:55:11+00:00",
+      "updated": "2026-02-11T18:55:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11143v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11143v1",
+      "comment": "Project Website: https://apex-humanoid.github.io/"
+    },
+    {
+      "id": "2602.11125v1",
+      "title": "最小和均匀覆盖问题：自主移动机器人的视角",
+      "authors": [
+        "Animesh Maiti",
+        "Abhinav Chakraborty",
+        "Bibhuti Das",
+        "Subhash Bhagat",
+        "Krishnendu Mukhopadhyaya"
+      ],
+      "author_count": 5,
+      "summary": "我们研究了一群$n$个移动机器人在给定有限线段及具有有限正半径的圆上的\\textit{最小和均匀覆盖}问题，其中圆作为输入给出。机器人必须协调它们的移动，以达到均匀间隔的配置，从而最小化所有机器人移动的总距离。",
+      "categories": [
+        "cs.DC",
+        "cs.RO"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-11T18:38:24+00:00",
+      "updated": "2026-02-11T18:38:24+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11125v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11125v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11116v1",
+      "title": "多无人机轨迹优化用于GPS拒止环境下的纯方位定位",
+      "authors": [
+        "Alfonso Sciacchitano",
+        "Liraz Mudrik",
+        "Sean Kragelund",
+        "Isaac Kaminer"
+      ],
+      "author_count": 4,
+      "summary": "在GPS拒止环境中，无人机对海上目标的精确定位仍具挑战性。配备云台光电传感器的无人机通常用于目标定位，然而依赖此类传感器会增加机械复杂性、成本及单点故障风险，从而限制其应用。",
+      "categories": [
+        "eess.SY",
+        "cs.RO",
+        "math.OC"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-02-11T18:29:05+00:00",
+      "updated": "2026-02-11T18:29:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11116v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11116v1",
+      "comment": "38 pages, 7 figure, and 6 tables"
+    },
+    {
+      "id": "2602.11113v1",
+      "title": "在挑战性环境中用于腿式机器人的后退视野多接触运动规划器",
+      "authors": [
+        "Daniel S. J. Derwent",
+        "Simon Watson",
+        "Bruno V. Adorno"
+      ],
+      "author_count": 3,
+      "summary": "我们提出了一种新颖的腿式机器人后退视野多接触运动规划器，适用于具有挑战性的场景，能够规划如烟囱攀爬、穿越狭窄通道或跨越大型间隙等动作。我们的方法为现有技术增添了新能力，包括能够根据新信息进行反应性重新规划等。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T18:25:29+00:00",
+      "updated": "2026-02-11T18:25:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11113v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11113v1",
+      "comment": "Submitted to Robotics and Autonomous Systems For supplementary video, see https://www.youtube.com/watch?v=RJp8DCmhDa4"
+    },
+    {
+      "id": "2602.11082v1",
+      "title": "挖掘数据：仅凭本体感知传感在挖掘中进行石堆特性实验",
+      "authors": [
+        "Unal Artan",
+        "Martin Magnusson",
+        "Joshua A. Marshall"
+      ],
+      "author_count": 3,
+      "summary": "在采矿和采石行业中，岩石经爆破破碎后由轮式装载机运输并送往进一步加工，因此对破碎岩堆的特性分析是一项基础任务。本现场报告研究了一种仅通过本体感知来估算破碎岩堆相对颗粒大小的新方法。",
+      "categories": [
+        "cs.RO",
+        "eess.SP"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T17:47:34+00:00",
+      "updated": "2026-02-11T17:47:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11082v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11082v1",
+      "comment": "Accepted for publication in the IEEE Transactions on Field Robotics"
+    },
+    {
+      "id": "2602.11075v1",
+      "title": "崛起：基于组合世界模型的自我改进机器人策略",
+      "authors": [
+        "Jiazhi Yang",
+        "Kunyang Lin",
+        "Jinwei Li",
+        "Wencong Zhang",
+        "Tianwei Lin"
+      ],
+      "author_count": 13,
+      "summary": "尽管模型能力和数据获取持续扩展，视觉-语言-动作模型在接触密集型和动态操作任务中依然脆弱，微小的执行偏差都可能累积成致命失误。虽然强化学习为鲁棒性提供了理论路径，但在物理世界中进行同策略强化学习仍面临挑战。",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T17:43:36+00:00",
+      "updated": "2026-02-11T17:43:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11075v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11075v1",
+      "comment": "Project page: https://opendrivelab.com/kai0-rl/"
+    },
+    {
+      "id": "2602.11049v1",
+      "title": "SQ-CBF：基于超二次曲面的数值稳定安全滤波的符号距离函数",
+      "authors": [
+        "Haocheng Zhao",
+        "Lukas Brunke",
+        "Oliver Lagerquist",
+        "Siqi Zhou",
+        "Angela P. Schoellig"
+      ],
+      "author_count": 5,
+      "summary": "确保机器人在杂乱动态环境中的安全运行仍是一项根本性挑战。尽管控制屏障函数为实时安全过滤提供了有效框架，但其性能关键取决于底层的几何表征——这种表征常被简化处理，导致要么过于保守……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T17:19:43+00:00",
+      "updated": "2026-02-11T17:19:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11049v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11049v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10997v1",
+      "title": "通过利用几何对称性实现无人机特技飞行的多任务强化学习",
+      "authors": [
+        "Zhanyu Guo",
+        "Zikang Yin",
+        "Guobin Zhu",
+        "Shiliang Guo",
+        "Shiyu Zhao"
+      ],
+      "author_count": 5,
+      "summary": "自主微型飞行器（MAV）的飞行控制正从平衡点附近的稳定飞行，向更具挑战性的特技机动（如翻转、横滚和动力回环）演进。尽管强化学习（RL）在这些任务中展现出巨大潜力，但传统强化学习方法常受限于数据效率低下与能力不足……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T16:21:48+00:00",
+      "updated": "2026-02-11T16:21:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10997v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10997v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10983v1",
+      "title": "扩展世界模型以支持分层操作策略",
+      "authors": [
+        "Qian Long",
+        "Yueze Wang",
+        "Jiaxi Song",
+        "Junbo Zhang",
+        "Peiyan Li"
+      ],
+      "author_count": 16,
+      "summary": "视觉-语言-动作（VLA）模型在通用机器人操作领域前景广阔，但在分布外（OOD）场景中仍显脆弱，尤其是在真实机器人数据有限的情况下。为突破泛化瓶颈，我们提出了分层视觉-语言-动作框架\\our{}，该框架通过大规模泛化能力……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T16:12:33+00:00",
+      "updated": "2026-02-11T16:12:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10983v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10983v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10980v1",
+      "title": "雷达：通过真实世界动态、空间物理智能与自主评估来基准化视觉-语言-动作的泛化能力",
+      "authors": [
+        "Yuhao Chen",
+        "Zhihao Zhan",
+        "Xiaoxin Lin",
+        "Zijian Song",
+        "Hao Liu"
+      ],
+      "author_count": 14,
+      "summary": "VLA模型在具身智能领域取得了显著进展，但其评估仍主要局限于仿真或高度受限的现实场景。这种错配造成了巨大的现实鸿沟——优异的基准测试表现往往掩盖了其在多样化物理环境中泛化能力的不足。我们发现了三个...",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T16:08:30+00:00",
+      "updated": "2026-02-11T16:08:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10980v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10980v1",
+      "comment": "12 pages, 11 figures, 3 tables"
+    },
+    {
+      "id": "2602.10963v1",
+      "title": "具有圆形横截面并考虑横截面变形的几何精确杆的李群变分积分器",
+      "authors": [
+        "Srishti Siddharth",
+        "Vivek Natarajan",
+        "Ravi N. Banavar"
+      ],
+      "author_count": 3,
+      "summary": "本文推导了包含平面截面变形的三维几何精确杆（即科瑟拉杆）的连续时空运动方程。随后，我们采用李群变分积分器技术，建立了同时考虑旋转运动与截面变形的离散杆模型。",
+      "categories": [
+        "eess.SY",
+        "cs.RO",
+        "math.NA"
+      ],
+      "primary_category": "eess.SY",
+      "published": "2026-02-11T15:54:59+00:00",
+      "updated": "2026-02-11T15:54:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10963v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10963v1",
+      "comment": "Submitted to: Computers and Mathematics with Applications"
+    },
+    {
+      "id": "2602.10961v1",
+      "title": "具有伪力的典型欠驱动飞行器几何控制稳定性分析",
+      "authors": [
+        "Simone Orelli",
+        "Mirko Mizzoni",
+        "Antonio Franchi"
+      ],
+      "author_count": 3,
+      "summary": "标准几何控制依赖于力-矩解耦假设，然而该假设在许多飞行平台中并不成立，因为控制力矩会自然诱发寄生力。尽管针对此类耦合系统的控制策略已通过实验验证，但目前仍缺乏对其稳定性的严格理论证明。本研究...",
+      "categories": [
+        "cs.RO",
+        "math.OC"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T15:51:21+00:00",
+      "updated": "2026-02-11T15:51:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10961v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10961v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10946v1",
+      "title": "开发基于神经网络的社交机器人视线控制系统",
+      "authors": [
+        "Ramtin Tabatabaei",
+        "Alireza Taheri"
+      ],
+      "author_count": 2,
+      "summary": "在多参与者互动中，视线方向是兴趣与意图的关键指标，这要求社交机器人必须恰当地引导自身注意力。理解社交情境对于机器人有效参与互动、预测人类意图并流畅应对交流至关重要。本研究旨在通过实证方法...",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T15:30:39+00:00",
+      "updated": "2026-02-11T15:30:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10946v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10946v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10942v1",
+      "title": "玛雅机器人作为癌症儿童治疗/教育辅助工具的设计、开发与应用：一项试点研究",
+      "authors": [
+        "Alireza Taheri",
+        "Minoo Alemi",
+        "Elham Ranjkar",
+        "Raman Rafatnejad",
+        "Ali F. Meghdari"
+      ],
+      "author_count": 5,
+      "summary": "本研究聚焦于玛雅机器人的设计与实现，这是一款便携式大象造型社交机器人，旨在与接受癌症治疗的儿童进行互动。初期工作致力于提升机器人面部表情识别准确率，通过深度神经网络实现了98%的识别精度。后续两项研究...",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T15:20:41+00:00",
+      "updated": "2026-02-11T15:20:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10942v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10942v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10910v1",
+      "title": "基于人群映射与视觉语言模型避障路径规划的移动安全支持系统",
+      "authors": [
+        "Sena Saito",
+        "Kenta Tabata",
+        "Renato Miyagusuku",
+        "Koichi Ozaki"
+      ],
+      "author_count": 4,
+      "summary": "自主移动机器人为劳动力短缺和提升运营效率提供了前景广阔的解决方案。然而，在动态环境特别是拥挤区域中实现安全高效的导航仍具挑战性。本文提出了一种集成视觉语言模型与高斯过程回归的创新框架，旨在……",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T14:47:51+00:00",
+      "updated": "2026-02-11T14:47:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10910v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10910v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11118v1",
+      "title": "双重稳健机器学习方法：解析功能结果中的治疗效果异质性",
+      "authors": [
+        "Filippo Salmaso",
+        "Lorenzo Testa",
+        "Francesca Chiaromonte"
+      ],
+      "author_count": 3,
+      "summary": "因果推断对于理解干预效果至关重要，然而从日益复杂的数据中提取个性化洞察，仍然是现代机器学习面临的重大挑战。特别是在考虑连续域（如时间或空间）中观测到的函数结果时，这种挑战尤为突出。对……的估计",
+      "categories": [
+        "stat.ME",
+        "stat.ML"
+      ],
+      "primary_category": "stat.ME",
+      "published": "2026-02-11T18:31:59+00:00",
+      "updated": "2026-02-11T18:31:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11118v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11118v1",
+      "comment": "20 pages, 4 figures"
+    },
+    {
+      "id": "2602.11059v1",
+      "title": "A Gibbs posterior sampler for inverse problem based on prior diffusion model",
+      "authors": [
+        "Jean-François Giovannelli"
+      ],
+      "author_count": 1,
+      "summary": "This paper addresses the issue of inversion in cases where (1) the observation system is modeled by a linear transformation and additive noise, (2) the problem is ill-posed and regularization is introduced in a Bayesian framework by an a prior density, and (3) the latter is modeled by a diffusion process adjusted on an available large set of examples. In this context, it is known that the issue of posterior sampling is a thorny one. This paper introduces a Gibbs algorithm. It appears that this...",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T17:28:11+00:00",
+      "updated": "2026-02-11T17:28:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11059v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11059v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11018v1",
+      "title": "OSIL：通过非优选轨迹推断安全性，学习离线安全模仿策略",
+      "authors": [
+        "Returaj Burnwal",
+        "Nirav Pravinbhai Bhatt",
+        "Balaraman Ravindran"
+      ],
+      "author_count": 3,
+      "summary": "本研究探讨了离线安全模仿学习的问题，其目标是从缺乏逐时间步安全成本或奖励信息的演示中，学习既安全又能最大化奖励的策略。在许多现实场景中，环境中的在线学习可能具有风险，而精确指定安全成本则可能面临挑战。",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T16:41:16+00:00",
+      "updated": "2026-02-11T16:41:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11018v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11018v1",
+      "comment": "21 pages, Accepted at AAMAS 2026"
+    },
+    {
+      "id": "2602.10989v1",
+      "title": "生成扩散中弗尔默过程的变分最优性",
+      "authors": [
+        "Yifan Chen",
+        "Eric Vanden-Eijnden"
+      ],
+      "author_count": 2,
+      "summary": "我们基于随机插值框架，构建并分析了在有限时间范围内将点质量传输至预设目标分布的生成扩散过程。该过程的漂移项被表达为条件期望，无需模拟随机过程即可通过独立样本进行估计。研究表明，该扩散过程...",
+      "categories": [
+        "math.ST",
+        "cs.IT",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "primary_category": "math.ST",
+      "published": "2026-02-11T16:15:19+00:00",
+      "updated": "2026-02-11T16:15:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10989v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10989v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10971v1",
+      "title": "联合高效且最优算法：针对具有对抗性扰动的异方差广义线性老虎机问题",
+      "authors": [
+        "Sanghwa Kim",
+        "Junghyun Lee",
+        "Se-Young Yun"
+      ],
+      "author_count": 3,
+      "summary": "我们考虑具有对抗性扰动的异方差广义线性赌博机问题，该问题涵盖了多种随机上下文赌博机设定，包括异方差线性赌博机和逻辑/泊松赌博机。我们提出HCW-GLB-OMD方法，该方法包含两个组成部分：基于在线镜像下降的估计器以及……",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T16:01:06+00:00",
+      "updated": "2026-02-11T16:01:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10971v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10971v1",
+      "comment": "49 pages, 1 table"
+    },
+    {
+      "id": "2602.10969v1",
+      "title": "基于权重的图形化缺失数据模型识别与估计",
+      "authors": [
+        "Anna Guo",
+        "Razieh Nabi"
+      ],
+      "author_count": 2,
+      "summary": "我们提出了一种构造性算法，用于识别缺失数据图模型中的完整数据分布。该算法对完整数据分布不作限制，同时假设缺失机制可依据条件有向无环图进行因子分解。我们的方法遵循干预主义视角，其中缺失性机制……",
+      "categories": [
+        "stat.ME",
+        "stat.ML"
+      ],
+      "primary_category": "stat.ME",
+      "published": "2026-02-11T16:00:26+00:00",
+      "updated": "2026-02-11T16:00:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10969v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10969v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10949v1",
+      "title": "深度最优初始化：深度泄漏ReLU网络的李雅普诺夫初始化与极限定理",
+      "authors": [
+        "Constantin Kogler",
+        "Tassilo Schwarz",
+        "Samuel Kittle"
+      ],
+      "author_count": 3,
+      "summary": "有效初始化方法的开发需要理解随机神经网络。在本研究中，我们对深度无偏Leaky ReLU网络进行了严格的概率分析。通过证明网络激活值对数范数的大数定律和中心极限定理，我们确立了当网络层数增加时...",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.DS",
+        "math.PR"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T15:36:13+00:00",
+      "updated": "2026-02-11T15:36:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10949v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10949v1",
+      "comment": "45 pages"
+    },
+    {
+      "id": "2602.10908v1",
+      "title": "SoftMatcha 2：面向万亿级语料库的快速柔性模式匹配器",
+      "authors": [
+        "Masataka Yoneda",
+        "Yusuke Matsushita",
+        "Go Kamoda",
+        "Kohei Suenaga",
+        "Takuya Akiba"
+      ],
+      "author_count": 7,
+      "summary": "我们提出了一种超快速且灵活的搜索算法，能在0.3秒内完成对万亿规模自然语言语料库的检索，同时能处理语义变异（替换、插入和删除）。该方法采用基于后缀数组的字符串匹配技术，其扩展性随语料库规模增长表现优异。为缓解组合爆炸问题……",
+      "categories": [
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-11T14:40:15+00:00",
+      "updated": "2026-02-11T14:40:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10908v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10908v1",
+      "comment": "Project Page & Web Interface: https://softmatcha.github.io/v2/, Source Code: https://github.com/softmatcha/softmatcha2"
+    },
+    {
+      "id": "2602.10905v1",
+      "title": "自然超梯度下降：算法设计、收敛性分析与并行实现",
+      "authors": [
+        "Deyi Kong",
+        "Zaiwei Chen",
+        "Shuzhong Zhang",
+        "Shancong Mou"
+      ],
+      "author_count": 4,
+      "summary": "在这项工作中，我们提出了自然超梯度下降法（NHGD），这是一种解决双层优化问题的新方法。针对超梯度估计中的计算瓶颈——即需要计算或近似海森逆矩阵的问题——我们利用内部优化问题的统计结构，并采用经验费希尔信息矩阵...",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T14:31:33+00:00",
+      "updated": "2026-02-11T14:31:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10905v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10905v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10867v1",
+      "title": "层次谱方法下的组合目标深度学习",
+      "authors": [
+        "Hugo Tabanelli",
+        "Yatin Dandi",
+        "Luca Pesce",
+        "Florent Krzakala"
+      ],
+      "author_count": 4,
+      "summary": "深度方法为何能在计算上真正优于浅层方法，这仍然是学习理论中的一个核心开放性问题。我们在受控的高斯高维环境中研究这个问题，重点关注组合目标函数。我们通过逐层谱训练的三层显式拟合模型来分析它们的可学习性...",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T13:54:20+00:00",
+      "updated": "2026-02-11T13:54:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10867v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10867v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10754v1",
+      "title": "探索自适应重连在图神经网络中的影响",
+      "authors": [
+        "Charlotte Cambier van Nooten",
+        "Christos Aronis",
+        "Yuliya Shapovalova",
+        "Lucia Cavallaro"
+      ],
+      "author_count": 4,
+      "summary": "本文探讨了将稀疏化方法作为图神经网络（GNN）中的一种正则化形式，以解决大规模图应用中的高内存占用和计算成本问题。通过运用网络科学与机器学习中的技术，包括利用埃尔德什-雷尼模型进行模型稀疏化，我们提升了图神经网络在现实应用中的效率……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SY",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T11:34:43+00:00",
+      "updated": "2026-02-11T11:34:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10754v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10754v1",
+      "comment": "This work has been submitted to the IEEE for possible publication"
+    },
+    {
+      "id": "2602.10714v1",
+      "title": "非渐近分析：在马尔可夫链蒙特卡洛方法中学习与应用预条件器的研究",
+      "authors": [
+        "Max Hird",
+        "Florian Maire",
+        "Jeffrey Negrea"
+      ],
+      "author_count": 3,
+      "summary": "预调节是一种常用于改进马尔可夫链蒙特卡洛算法的方法，旨在提升其效率。在实践中，即使预调节器是从链中学习得到的，该方法通常也极为有效。我们分析并比较了基于……学习预调节器的方案在有限时间内的计算成本。",
+      "categories": [
+        "stat.CO",
+        "stat.ML"
+      ],
+      "primary_category": "stat.CO",
+      "published": "2026-02-11T10:19:56+00:00",
+      "updated": "2026-02-11T10:19:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10714v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10714v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10697v1",
+      "title": "Fast and Large-Scale Unbalanced Optimal Transport via its Semi-Dual and Adaptive Gradient Methods",
+      "authors": [
+        "Ferdinand Genans"
+      ],
+      "author_count": 1,
+      "summary": "Unbalanced Optimal Transport (UOT) has emerged as a robust relaxation of standard Optimal Transport, particularly effective for handling outliers and mass variations. However, scalable algorithms for UOT, specifically those based on Gradient Descent (SGD), remain largely underexplored. In this work, we address this gap by analyzing the semi-dual formulation of Entropic UOT and demonstrating its suitability for adaptive gradient methods. While the semi-dual is a standard tool for large-scale...",
+      "categories": [
+        "math.OC",
+        "stat.ML"
+      ],
+      "primary_category": "math.OC",
+      "published": "2026-02-11T09:57:30+00:00",
+      "updated": "2026-02-11T09:57:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10697v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10697v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10696v1",
+      "title": "基于观测数据的稳健分类优化",
+      "authors": [
+        "Miao Lu",
+        "Yuxuan Han",
+        "Han Zhong",
+        "Zhengyuan Zhou",
+        "Jose Blanchet"
+      ],
+      "author_count": 5,
+      "summary": "品类优化是现代零售和推荐系统中的核心挑战，其目标是在复杂的顾客选择行为下，选出能最大化预期收益的产品子集。尽管数据驱动方法的最新进展已能利用历史数据来学习并优化品类选择，但这些方法……",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.OC",
+        "math.ST"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T09:57:16+00:00",
+      "updated": "2026-02-11T09:57:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10696v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10696v1",
+      "comment": "65 pages, 9 figures"
+    },
+    {
+      "id": "2602.10691v1",
+      "title": "切片最优传输在分布匹配中的收敛率",
+      "authors": [
+        "Gauthier Thurin",
+        "Claire Boyer",
+        "Kimia Nadjahi"
+      ],
+      "author_count": 3,
+      "summary": "我们研究了切片匹配方案——一种基于切片最优传输的高效迭代分布匹配方法。通过探究其向目标分布的收敛特性，我们推导出定量的非渐近收敛速率。为此，我们建立了切片瓦瑟斯坦目标的__奥雅维奇型不等式。其中关键挑战在于……",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T09:47:52+00:00",
+      "updated": "2026-02-11T09:47:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10691v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10691v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10680v1",
+      "title": "一个可解的高维模型：非线性自编码器学习主成分分析无法捕捉的结构，而测试损失与泛化能力脱节",
+      "authors": [
+        "Vicente Conde Mendes",
+        "Lorenzo Bardone",
+        "Cédric Koller",
+        "Jorge Medina Moreira",
+        "Vittorio Erba"
+      ],
+      "author_count": 7,
+      "summary": "许多现实世界的数据集蕴含着隐藏的结构，这些结构无法通过输入特征间的简单线性相关性来检测。例如，潜在因素可能以协调的方式影响数据，尽管基于协方差的方法（如主成分分析）无法察觉其作用。在实践中，非线性神经网络往往能成功提取……",
+      "categories": [
+        "stat.ML",
+        "cond-mat.dis-nn",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T09:31:29+00:00",
+      "updated": "2026-02-11T09:31:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10680v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10680v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10640v1",
+      "title": "超越凯梅尼中位数：共识排名分布的定义、特性与统计学习",
+      "authors": [
+        "Stephan Clémençon",
+        "Ekhine Irurozki"
+      ],
+      "author_count": 2,
+      "summary": "本文提出了一种总结排名分布的新方法，即对称群$\\mathfrak{S}_n$上的概率分布，该方法超越了传统共识理论与凯梅尼中位数理论。基于局部排名中位数的概念，我们引入了共识排名分布这一新理念...",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T08:41:14+00:00",
+      "updated": "2026-02-11T08:41:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10640v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10640v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10637v1",
+      "title": "粗粒度玻尔兹曼生成器",
+      "authors": [
+        "Weilong Chen",
+        "Bojun Zhao",
+        "Jan Eckwert",
+        "Julija Zavadlav"
+      ],
+      "author_count": 4,
+      "summary": "从玻尔兹曼分布中采样平衡分子构型是一个长期存在的挑战。玻尔兹曼生成器通过将精确似然生成模型与重要性采样相结合来解决这一问题，但其实际可扩展性有限。与此同时，粗粒度替代模型通过……使得更大系统的建模成为可能。",
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "physics.chem-ph",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T08:37:13+00:00",
+      "updated": "2026-02-11T08:37:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10637v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10637v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10613v1",
+      "title": "高度自适应主成分回归",
+      "authors": [
+        "Mingxun Wang",
+        "Alejandro Schuler",
+        "Mark van der Laan",
+        "Carlos García Meixide"
+      ],
+      "author_count": 4,
+      "summary": "高度自适应套索（HAL）是一种非参数回归方法，在最小平滑度假设下实现了几乎无维度的收敛速率，但由于所需的基础矩阵规模庞大，其在高维场景下的计算实现可能面临巨大挑战。为此，研究者提出了高度自适应岭回归（HAR）作为一种可扩展的替代方案……",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-11T08:03:17+00:00",
+      "updated": "2026-02-11T08:03:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10613v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10613v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11062v1",
+      "title": "MoToRec：面向冷启动推荐的稀疏正则化多模态标记化",
+      "authors": [
+        "Jialin Liu",
+        "Zhaorui Zhang",
+        "Ray C. C. Cheung"
+      ],
+      "author_count": 3,
+      "summary": "图神经网络通过有效建模复杂的用户-物品交互彻底革新了推荐系统，然而数据稀疏性和物品冷启动问题严重影响了性能，尤其对于交互历史有限或缺失的新物品。虽然多模态内容提供了有前景的解决方案，但现有方法...",
+      "categories": [
+        "cs.LG",
+        "cs.IR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T17:31:14+00:00",
+      "updated": "2026-02-11T17:31:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11062v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11062v1",
+      "comment": "Accepted to AAAI 2026 (Main Track)"
+    },
+    {
+      "id": "2602.10833v1",
+      "title": "训练诱导的密集检索对LLM生成内容的偏向",
+      "authors": [
+        "William Xion",
+        "Wolfgang Nejdl"
+      ],
+      "author_count": 2,
+      "summary": "密集检索是一种在开放领域自然语言处理任务中获取相关语境或世界知识的前沿方法，现已在信息检索应用中广泛使用。然而近期研究指出，当前普遍存在对大型语言模型生成文本的偏好倾向。这种偏差被称为“来源偏见”，它已...",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T13:20:25+00:00",
+      "updated": "2026-02-11T13:20:25+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10833v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10833v1",
+      "comment": "Accepted at ECIR 2026"
+    },
+    {
+      "id": "2602.10811v1",
+      "title": "EST：通过统一建模实现点击率预测中的高效扩展法则",
+      "authors": [
+        "Mingyang Liu",
+        "Yong Bai",
+        "Zhangming Chan",
+        "Sishuo Chen",
+        "Xiang-Rong Sheng"
+      ],
+      "author_count": 8,
+      "summary": "高效扩展工业点击率预测近来吸引了显著的研究关注。现有方法通常采用用户行为的早期聚合以保持效率。然而，这种非统一或部分统一的建模方式因丢弃细粒度的令牌级信息而形成了信息瓶颈。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T12:51:54+00:00",
+      "updated": "2026-02-11T12:51:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10811v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10811v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10809v1",
+      "title": "DeepImageSearch：在视觉历史中评估上下文感知图像检索的多模态代理",
+      "authors": [
+        "Chenlong Deng",
+        "Mengjie Deng",
+        "Junjie Wu",
+        "Dun Zeng",
+        "Teng Wang"
+      ],
+      "author_count": 13,
+      "summary": "现有的多模态检索系统擅长语义匹配，却默认查询与图像的相关性可独立衡量。这一范式忽视了现实视觉流中固有的丰富关联性——信息分布于时间序列中，而非局限于单一快照。为弥补这一不足，……",
+      "categories": [
+        "cs.CV",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-11T12:51:10+00:00",
+      "updated": "2026-02-11T12:51:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10809v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10809v1",
+      "comment": "17 pages, 5 figures"
+    },
+    {
+      "id": "2602.10787v1",
+      "title": "VulReaD：知识图谱引导的软件漏洞推理与检测",
+      "authors": [
+        "Samal Mukhtar",
+        "Yinghua Yao",
+        "Zhu Sun",
+        "Mustafa Mustafa",
+        "Yew Soon Ong"
+      ],
+      "author_count": 6,
+      "summary": "软件漏洞检测（SVD）是现代系统面临的一项关键挑战。大型语言模型（LLM）能在提供预测的同时给出自然语言解释，但现有研究多集中于二元评估，且其解释常与通用缺陷枚举（CWE）类别缺乏语义一致性。我们提出的VulReaD方法……",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR",
+        "cs.IR"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T12:24:51+00:00",
+      "updated": "2026-02-11T12:24:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10787v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10787v1",
+      "comment": "22 pages, 3 figures"
+    },
+    {
+      "id": "2602.10739v1",
+      "title": "设计中的公平性：异构双边市场中的公平驱动推荐",
+      "authors": [
+        "Dominykas Seputis",
+        "Rajeev Verma",
+        "Alexander Timans"
+      ],
+      "author_count": 3,
+      "summary": "双边市场体现了激励机制的异质性：生产者追求曝光度，而消费者追求相关性，通过约束优化来平衡这些相互竞争的目标已成为标准做法。然而，现实中的平台面临着更精细的复杂性：消费者的偏好和参与模式各不相同，生产者的产品目录也千差万别……",
+      "categories": [
+        "cs.GT",
+        "cs.IR"
+      ],
+      "primary_category": "cs.GT",
+      "published": "2026-02-11T10:59:32+00:00",
+      "updated": "2026-02-11T10:59:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10739v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10739v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10633v1",
+      "title": "推荐系统黑盒攻击的认知分布与行为一致性框架",
+      "authors": [
+        "Hongyue Zhan",
+        "Mingming Li",
+        "Dongqin Liu",
+        "Hui Wang",
+        "Yaning Zhang"
+      ],
+      "author_count": 9,
+      "summary": "随着序列推荐系统在电子商务等领域的广泛应用，其黑盒接口引发了安全隐忧：模型易受信息提取及后续对抗性操纵的威胁。现有黑盒提取攻击主要依赖硬标签或成对学习，往往忽视了……的重要性。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T08:26:07+00:00",
+      "updated": "2026-02-11T08:26:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10633v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10633v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10606v1",
+      "title": "S-GRec：基于非对称优势的个性化语义感知生成推荐",
+      "authors": [
+        "Jie Jiang",
+        "Hongbo Tang",
+        "Wenjie Wu",
+        "Yangru Huang",
+        "Zhenmao Li"
+      ],
+      "author_count": 9,
+      "summary": "生成式推荐模型通过序列生成端到端地产生推荐项目，但仅依据行为日志训练往往难以准确把握用户潜在意图。尽管大型语言模型能提供丰富的语义先验来弥补这一缺陷，但其在工业推荐系统中的直接应用仍面临双重阻碍……",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T07:54:26+00:00",
+      "updated": "2026-02-11T07:54:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10606v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10606v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10577v1",
+      "title": "Campaign-2-PT-RAG：基于大语言模型引导的语义产品类型归因，实现可扩展的营销活动排名",
+      "authors": [
+        "Yiming Che",
+        "Mansi Mane",
+        "Keerthi Gopalakrishnan",
+        "Parisa Kaghazgaran",
+        "Murali Mohana Krishna Dandu"
+      ],
+      "author_count": 11,
+      "summary": "电商活动排名模型需要大规模的训练标签，以标明哪些用户因活动影响而产生购买行为。然而，生成这些标签具有挑战性，因为活动使用富有创意和主题性的语言，并不直接对应产品购买。缺乏明确的产品层面归因，使得监督学习难以……",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T07:03:08+00:00",
+      "updated": "2026-02-11T07:03:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10577v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10577v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10493v1",
+      "title": "边界感知多行为动态图变换器在序列推荐中的应用",
+      "authors": [
+        "Jingsong Su",
+        "Xuetao Ma",
+        "Mingming Li",
+        "Qiannan Zhu",
+        "Yu Guo"
+      ],
+      "author_count": 5,
+      "summary": "在当代推荐系统的版图中，用户与物品的互动本质上是动态且连续的，往往呈现出多元行为特征。先前的研究已通过序列化交互建模与用户-物品关系图谱，运用图神经网络等先进技术，深入探索了用户偏好的表征机制。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T03:53:08+00:00",
+      "updated": "2026-02-11T03:53:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10493v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10493v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10490v1",
+      "title": "链式推荐：一种智能推荐系统，通过工具链路由学习适应多样且动态变化的用户兴趣",
+      "authors": [
+        "Fuchun Li",
+        "Qian Li",
+        "Xingyu Gao",
+        "Bocheng Pan",
+        "Yang Wu"
+      ],
+      "author_count": 10,
+      "summary": "大型语言模型正日益融入推荐系统，这激发了业界对基于智能体与推理的推荐技术的新兴关注。然而，现有方法大多仍依赖固定工作流程，在不同推荐场景中套用相同的推理模式。实际上，用户情境千差万别……",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T03:50:36+00:00",
+      "updated": "2026-02-11T03:50:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10490v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10490v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10455v1",
+      "title": "一次计算：UG分离助力高效大型推荐模型",
+      "authors": [
+        "Hui Lu",
+        "Zheng Chai",
+        "Shipeng Bai",
+        "Hao Zhang",
+        "Zhifang Fan"
+      ],
+      "author_count": 17,
+      "summary": "受规模定律驱动，推荐系统日益依赖大规模模型来捕捉复杂的特征交互与用户行为，但这一趋势也导致训练与推理成本变得难以承受。虽然长序列模型（如LONGER）可通过KV缓存复用用户端计算，但在密集特征场景中此类复用却难以实现。",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T02:53:59+00:00",
+      "updated": "2026-02-11T02:53:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10455v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10455v1",
+      "comment": "Large Recommender Model, Industrial Recommenders, Scaling Law"
+    },
+    {
+      "id": "2602.10445v1",
+      "title": "端到端生成式广告推荐语义ID生成",
+      "authors": [
+        "Jie Jiang",
+        "Xinxun Zhang",
+        "Enming Zhang",
+        "Yuling Xiong",
+        "Jun Zhang"
+      ],
+      "author_count": 11,
+      "summary": "生成式推荐（GR）通过将推荐任务构建为下一个标记预测而表现出色。这一范式依赖于语义标识符（SIDs）将大规模项目标记化为离散序列。现有的生成式推荐方法主要通过残差量化（RQ）生成语义标识符，即将项目编码为嵌入向量，随后量化至离散空间……",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T02:38:26+00:00",
+      "updated": "2026-02-11T02:38:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10445v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10445v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10444v1",
+      "title": "用于层次凝聚聚类的倒角链接",
+      "authors": [
+        "Kishen N Gowda",
+        "Willem Fletcher",
+        "MohammadHossein Bateni",
+        "Laxman Dhulipala",
+        "D Ellis Hershkowitz"
+      ],
+      "author_count": 7,
+      "summary": "层次凝聚聚类（HAC）是一种广泛应用的聚类方法，其基于反复合并最接近的簇对，而簇间距离由连接函数确定。与许多聚类方法不同，HAC并不优化单一明确的全局目标；因此聚类质量主要通过...",
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.DS",
+        "cs.IR"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-11T02:36:14+00:00",
+      "updated": "2026-02-11T02:36:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10444v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10444v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10411v1",
+      "title": "GeoGR：一种面向时空感知兴趣点推荐的生成式检索框架",
+      "authors": [
+        "Fangye Wang",
+        "Haowen Lin",
+        "Yifang Yuan",
+        "Siyuan Wang",
+        "Xiaojiang Zhou"
+      ],
+      "author_count": 7,
+      "summary": "下一个兴趣点（POI）预测是基于位置服务中的一项基础任务，对于像AMAP这样服务于数十亿用户、覆盖多样化生活场景的大规模导航平台尤为关键。尽管近期基于SIDs的兴趣点推荐方法已取得显著成效，但在复杂且稀疏的现实场景中仍面临挑战……",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-11T01:48:27+00:00",
+      "updated": "2026-02-11T01:48:27+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10411v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10411v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10321v1",
+      "title": "单轮大语言模型重构驱动的多阶段混合重排序用于舌尖已知项检索",
+      "authors": [
+        "Debayan Mukhopadhyay",
+        "Utshab Kumar Ghosh",
+        "Shubham Chatterjee"
+      ],
+      "author_count": 3,
+      "summary": "从模糊描述中检索已知项目，即“舌尖现象”检索，仍是一项重大挑战。我们提出通过单次调用通用80亿参数大语言模型进行查询重构，以弥合非结构化“舌尖现象”查询与具体信息需求之间的差距。该方法在标准方法效果有限的场景中尤为有效。",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T21:59:10+00:00",
+      "updated": "2026-02-10T21:59:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10321v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10321v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10295v1",
+      "title": "ECHO：一个用于评估聊天、人类行为及结果的开放研究平台",
+      "authors": [
+        "Jiqun Liu",
+        "Nischal Dinesh",
+        "Ran Yu"
+      ],
+      "author_count": 3,
+      "summary": "ECHO（对话、人类行为与结果评估）是一个开放研究平台，旨在支持对人与对话式人工智能系统及网络搜索引擎交互的可重复混合方法研究。该平台支持跨学科研究者构建端到端的实验工作流程，整合知情同意等环节……",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-10T21:10:38+00:00",
+      "updated": "2026-02-10T21:10:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10295v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10295v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10271v1",
+      "title": "MLDocRAG：多模态长上下文文档检索增强生成",
+      "authors": [
+        "Yongyue Zhang",
+        "Yaxiong Wu"
+      ],
+      "author_count": 2,
+      "summary": "理解包含段落、图表等多模态块的长篇幅多模态文档颇具挑战，这主要源于两方面：(1) 跨模态异质性导致难以定位不同模态间的相关信息；(2) 跨页面推理要求整合分散在多页的证据。为应对这些挑战，我们考虑采用……",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-02-10T20:29:10+00:00",
+      "updated": "2026-02-10T20:29:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10271v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10271v1",
+      "comment": "15 pages"
+    },
+    {
+      "id": "2602.10975v1",
+      "title": "FeatureBench：面向复杂功能开发的智能体编码基准测试",
+      "authors": [
+        "Qixing Zhou",
+        "Jiacheng Zhang",
+        "Haiyang Wang",
+        "Rui Hao",
+        "Jiahe Wang"
+      ],
+      "author_count": 12,
+      "summary": "由大型语言模型驱动的智能体正越来越多地被软件行业采纳，它们以协作者甚至自主开发者的身份贡献代码。随着其应用日益广泛，评估当前智能体编码能力的边界变得至关重要。然而，现有的智能编码基准测试覆盖的任务范围有限，例如……",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T16:06:32+00:00",
+      "updated": "2026-02-11T16:06:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10975v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10975v1",
+      "comment": "Accepted by ICLR 2026"
+    },
+    {
+      "id": "2602.10972v1",
+      "title": "推导与验证大规模敏捷开发中的需求工程原则：一项工业纵向研究",
+      "authors": [
+        "Hina Saeeda",
+        "Mijin Kim",
+        "Eric Knauss",
+        "Jesper Thyssen",
+        "Jesper Ørting"
+      ],
+      "author_count": 7,
+      "summary": "在大型敏捷系统开发中，缺乏统一的需求工程流程是一项重大挑战，而有效需求管理高层指导原则的缺失更使问题加剧。为应对这一挑战，我们与格兰富公司合作开展了为期五年的纵向案例研究……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T16:01:10+00:00",
+      "updated": "2026-02-11T16:01:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10972v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10972v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10808v1",
+      "title": "PELLI：高效集成大型语言模型以生成高质量软件的框架",
+      "authors": [
+        "Rasmus Krebs",
+        "Somnath Mazumdar"
+      ],
+      "author_count": 2,
+      "summary": "近期研究显示，当大型语言模型经过恰当的提示与配置调整后，其表现呈现出复杂的结果。这些结果往往达到甚至超越了基准性能。然而，此类比较主要存在两个问题：其一，多数研究仅将可靠性作为衡量标准，且仅选取了少数大型语言模型（如Codex等）进行对比。",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T12:51:08+00:00",
+      "updated": "2026-02-11T12:51:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10808v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10808v1",
+      "comment": "15 pages"
+    },
+    {
+      "id": "2602.10758v1",
+      "title": "LLMware生态系统中的隐性许可风险",
+      "authors": [
+        "Bo Wang",
+        "Yueyang Chen",
+        "Jieke Shi",
+        "Minghui Li",
+        "Yunbo Lyu"
+      ],
+      "author_count": 8,
+      "summary": "大型语言模型（LLM）正日益融入软件系统，催生出一类被称为“LLMware”的新型系统。除了传统的源代码组件，LLMware还嵌入或依赖于其他模型与数据集的LLM进行交互，从而在开源软件（OSS）、模型及其他领域构建起复杂的供应链体系。",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T11:41:13+00:00",
+      "updated": "2026-02-11T11:41:13+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10758v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10758v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10702v1",
+      "title": "信息路径规划统一实验架构：从模拟到部署的瓜达尔规划器",
+      "authors": [
+        "Alejandro Mendoza Barrionuevo",
+        "Dame Seck Diop",
+        "Alejandro Casado Pérez",
+        "Daniel Gutiérrez Reina",
+        "Sergio L. Toral Marín"
+      ],
+      "author_count": 6,
+      "summary": "对自动驾驶车辆信息路径规划算法的评估常因执行流程的碎片化以及仿真与真实部署间有限的可迁移性而受阻。本文提出一种解耦高层决策与车辆特定控制的统一架构，使算法能够...",
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-11T10:02:31+00:00",
+      "updated": "2026-02-11T10:02:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10702v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10702v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10655v1",
+      "title": "评估自主水下机器人软件中的视觉语言模型感知能力",
+      "authors": [
+        "Muhammad Yousaf",
+        "Aitor Arrieta",
+        "Shaukat Ali",
+        "Paolo Arcaini",
+        "Shuai Wang"
+      ],
+      "author_count": 5,
+      "summary": "自主水下机器人（AURs）在具有挑战性的水下环境中运行，包括低能见度和恶劣的水况。这些条件为开发AUR软件感知模块的软件工程师带来了挑战。为了成功执行这些任务，深度学习已被整合到AUR软件中，以……",
+      "categories": [
+        "cs.SE",
+        "cs.RO"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T08:59:44+00:00",
+      "updated": "2026-02-11T08:59:44+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10655v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10655v1",
+      "comment": "10 pages, 5 figures, submitted to ICST 2026"
+    },
+    {
+      "id": "2602.10620v1",
+      "title": "ISD-Agent-Bench：一个用于评估基于大型语言模型的教学设计代理的综合基准",
+      "authors": [
+        "YoungHoon Jeon",
+        "Suwan Kim",
+        "Haein Son",
+        "Sookbun Lee",
+        "Yeil Jeong"
+      ],
+      "author_count": 6,
+      "summary": "大型语言模型（LLM）智能体在自动化教学系统设计（ISD）——这一系统化开发教育项目的方法中展现出巨大潜力。然而，由于缺乏标准化基准以及LLM作为评估者可能产生的偏见风险，对这些智能体的评估仍面临挑战。我们推出了ISD-Agent-Bench，这是一个综合性……",
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T08:11:31+00:00",
+      "updated": "2026-02-11T08:11:31+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10620v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10620v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10605v1",
+      "title": "Evaluating Numerical Accuracy in Mixed-Precision Computing by Dual-Delta Testing",
+      "authors": [
+        "Peichen Xie"
+      ],
+      "author_count": 1,
+      "summary": "Mixed-precision computing has become increasingly important in modern high-performance computing and machine learning applications. When implementing custom mixed-precision functions -- such as fused operators, optimized GPU kernels, or quantized inference paths -- it is critical to verify their numerical accuracy. Traditional approaches typically compare the custom implementation against a reference using a single error metric. However, this single-delta approach provides limited insight into...",
+      "categories": [
+        "math.NA",
+        "cs.SE"
+      ],
+      "primary_category": "math.NA",
+      "published": "2026-02-11T07:54:04+00:00",
+      "updated": "2026-02-11T07:54:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10605v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10605v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10540v1",
+      "title": "故障排除理论：开发者克服困惑的认知体验",
+      "authors": [
+        "Arty Starr",
+        "Margaret-Anne Storey"
+      ],
+      "author_count": 2,
+      "summary": "本文提出了一种植根于认知科学的故障排除理论。该理论帮助软件开发人员解释他们所面临的挑战，以及当故障排除变得困难时出现的项目风险。我们将故障排除定义为识别、理解并构建解决方案的认知性解题过程。",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T05:27:48+00:00",
+      "updated": "2026-02-11T05:27:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10540v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10540v1",
+      "comment": "42 pages + 16 pages of appendix, 13 figures, 2 tables"
+    },
+    {
+      "id": "2602.10522v1",
+      "title": "一致性与验证相遇：无需真实解决方案提升大型语言模型测试生成质量",
+      "authors": [
+        "Hamed Taherkhani",
+        "Alireza DaghighFarsoodeh",
+        "Mohammad Chowdhury",
+        "Hung Viet Pham",
+        "Hadi Hemmati"
+      ],
+      "author_count": 5,
+      "summary": "大型语言模型（LLMs）在自动化测试生成方面取得了显著进展，然而现有方法通常依赖真实代码进行验证，存在缺陷传播的风险，并限制了在测试驱动开发中的适用性。我们提出了ConVerTest，这是一种新颖的两阶段流程，用于合成可靠的测试，无需预先存在的代码……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T04:40:38+00:00",
+      "updated": "2026-02-11T04:40:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10522v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10522v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10487v1",
+      "title": "追随巨龙：代码审查引导的模糊测试",
+      "authors": [
+        "Viet Hoang Luu",
+        "Amirmohammad Pasdar",
+        "Wachiraphan Charoenwet",
+        "Toby Murray",
+        "Shaanan Cohney"
+      ],
+      "author_count": 6,
+      "summary": "现代模糊测试工具能够扩展到大型的实际软件，但往往难以触及开发者认为最脆弱或安全最关键的程序状态。这些状态通常深藏于执行空间之中，受前置条件制约，或被消耗有限模糊测试预算的低价值路径所掩盖。与此同时，开发者们正不断揭示……",
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-11T03:46:57+00:00",
+      "updated": "2026-02-11T03:46:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10487v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10487v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10479v1",
+      "title": "From Prompt-Response to Goal-Directed Systems: The Evolution of Agentic AI Software Architecture",
+      "authors": [
+        "Mamdouh Alenezi"
+      ],
+      "author_count": 1,
+      "summary": "Agentic AI denotes an architectural transition from stateless, prompt-driven generative models toward goal-directed systems capable of autonomous perception, planning, action, and adaptation through iterative control loops. This paper examines this transition by connecting foundational intelligent agent theories, including reactive, deliberative, and Belief-Desire-Intention models, with contemporary LLM-centric approaches such as tool invocation, memory-augmented reasoning, and multi-agent...",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T03:34:48+00:00",
+      "updated": "2026-02-11T03:34:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10479v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10479v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10471v1",
+      "title": "TestExplora：通过仓库级测试生成对大型语言模型进行主动错误发现的基准测试",
+      "authors": [
+        "Steven Liu",
+        "Jane Luo",
+        "Xin Zhang",
+        "Aofan Liu",
+        "Hao Liu"
+      ],
+      "author_count": 10,
+      "summary": "鉴于大型语言模型（LLMs）正日益应用于自动化软件开发，全面的软件保障涵盖三个不同目标：回归预防、反应式复现和主动发现。当前的评估方法系统性地忽视了第三个目标。具体而言，它们要么将现有代码视为基准……",
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-11T03:22:51+00:00",
+      "updated": "2026-02-11T03:22:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10471v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10471v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10418v1",
+      "title": "SecCodePRM：面向代码安全的过程奖励模型",
+      "authors": [
+        "Weichen Yu",
+        "Ravi Mangal",
+        "Yinyi Luo",
+        "Kai Hu",
+        "Jingxuan He"
+      ],
+      "author_count": 7,
+      "summary": "大型语言模型正迅速成为现代软件开发工作流程的核心组成部分，然而确保代码安全性仍具挑战。现有的漏洞检测流程要么依赖静态分析器，要么使用基于LLM/GNN、通过粗粒度程序级监督训练的检测器。这两类方法通常都需要完整上下文……",
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-11T02:00:19+00:00",
+      "updated": "2026-02-11T02:00:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10418v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10418v1",
+      "comment": "20 pages"
+    },
+    {
+      "id": "2602.10046v1",
+      "title": "工匠：能动性人工制品评估",
+      "authors": [
+        "Doehyun Baek",
+        "Michael Pradel"
+      ],
+      "author_count": 2,
+      "summary": "为确保研究结果的可复现性，软件工程领域已将成果评估确立为标准实践。然而，当前的人工评估流程耗时费力，因此仅能对所有论文中的部分样本进行一次性评估。为支持成果评估工作，我们推出了Artisan——一个基于大型语言模型的自动化评估系统……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T18:15:48+00:00",
+      "updated": "2026-02-10T18:15:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10046v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10046v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09944v1",
+      "title": "环境在循环：基于LLM智能体重新思考代码迁移",
+      "authors": [
+        "Xiang Li",
+        "Zhiwei Fei",
+        "Ying Ma",
+        "Jerry Zhang",
+        "Sarro Federica"
+      ],
+      "author_count": 6,
+      "summary": "现代软件系统持续进行代码升级以增强功能、安全性和性能，而大型语言模型在代码迁移任务中展现出卓越能力。然而，尽管包含重构、API适配和依赖更新的自动化代码迁移研究已取得进展……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T16:29:09+00:00",
+      "updated": "2026-02-10T16:29:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09944v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09944v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09942v1",
+      "title": "QEMI：一种基于输入等价性的量子软件栈测试框架",
+      "authors": [
+        "Junjie Luo",
+        "Shangzhou Xia",
+        "Fuyuan Zhang",
+        "Jianjun Zhao"
+      ],
+      "author_count": 4,
+      "summary": "随着量子算法和硬件的持续发展，确保量子软件栈（QSS）的正确性变得日益重要。然而，由于预言机问题——即缺乏对预期程序行为的可靠基准真相——测试QSS仍然具有挑战性。现有的蜕变测试方法通常依赖于……",
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-02-10T16:26:34+00:00",
+      "updated": "2026-02-10T16:26:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09942v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09942v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11037v1",
+      "title": "广义朗之万模型在基于线性代理系统中的应用：通过环境耦合实现战略影响",
+      "authors": [
+        "Semra Gunduc",
+        "David J. Butts",
+        "Michael S. Murillo"
+      ],
+      "author_count": 3,
+      "summary": "基于代理的模型通常将系统视为孤立体系，将环境耦合视为计算上不可行或动态无关的因素而予以忽略。我们证明这种忽视遗漏了本质物理规律：环境自由度会产生记忆效应，从根本上改变系统动力学。通过系统性地转化线性...",
+      "categories": [
+        "physics.soc-ph",
+        "cs.MA"
+      ],
+      "primary_category": "physics.soc-ph",
+      "published": "2026-02-11T17:08:23+00:00",
+      "updated": "2026-02-11T17:08:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11037v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11037v1",
+      "comment": "7 pages, 3 figures"
+    },
+    {
+      "id": "2602.10824v1",
+      "title": "迈向概率性战略时序计算树逻辑",
+      "authors": [
+        "Wojciech Jamroga",
+        "Marta Kwiatkowska",
+        "Wojciech Penczek",
+        "Laure Petrucci",
+        "Teofil Sidoruk"
+      ],
+      "author_count": 5,
+      "summary": "We define PSTCTL, a probabilistic variant of Strategic Timed CTL (STCTL), interpreted over stochastic multi-agent systems with continuous time and asynchronous execution semantics. STCTL extends TCTL with strategic operators in the style of ATL. Moreover, we demonstrate the feasibility of...",
+      "categories": [
+        "cs.LO",
+        "cs.MA"
+      ],
+      "primary_category": "cs.LO",
+      "published": "2026-02-11T13:06:38+00:00",
+      "updated": "2026-02-11T13:06:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10824v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10824v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10810v1",
+      "title": "模仿者4AMAS：针对STCTL的策略综合",
+      "authors": [
+        "Davide Catta",
+        "Adrien Lacroix",
+        "Wojciech Penczek",
+        "Laure Petrucci",
+        "Teofil Sidoruk"
+      ],
+      "author_count": 5,
+      "summary": "IMITATOR4AMAS supports model checking and synthesis of memoryless imperfect information strategies for STCTL, interpreted over networks of parametric timed automata with asynchronous execution. While extending the verifier IMITATOR, IMITATOR4AMAS is the first tool for strategy synthesis in this...",
+      "categories": [
+        "cs.LO",
+        "cs.MA"
+      ],
+      "primary_category": "cs.LO",
+      "published": "2026-02-11T12:51:52+00:00",
+      "updated": "2026-02-11T12:51:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10810v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10810v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10685v1",
+      "title": "超越任务表现：异构多智能体破坏性觅食中序列合作的度量分析",
+      "authors": [
+        "Alejandro Mendoza Barrionuevo",
+        "Samuel Yanes Luis",
+        "Daniel Gutiérrez Reina",
+        "Sergio L. Toral Marín"
+      ],
+      "author_count": 4,
+      "summary": "This work addresses the problem of analyzing cooperation in heterogeneous multi-agent systems which operate under partial observability and temporal role dependency, framed within a destructive multi-agent foraging setting. Unlike most previous studies, which focus primarily on algorithmic...",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-11T09:39:24+00:00",
+      "updated": "2026-02-11T09:39:24+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10685v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10685v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10555v1",
+      "title": "无人驾驶地面车辆的动态知识本体库",
+      "authors": [
+        "Hsan Sandar Win",
+        "Andrew Walters",
+        "Cheng-Chew Lim",
+        "Daniel Webber",
+        "Seth Leslie"
+      ],
+      "author_count": 6,
+      "summary": "本文引入动态情境任务数据概念，旨在为战术边缘无人地面车辆构建本体驱动的动态知识库。该动态知识库的植入将助力无人地面车辆实现三大目标：强化态势感知能力、优化自主决策机制、并推动……",
+      "categories": [
+        "cs.MA",
+        "cs.DB",
+        "cs.RO"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-11T06:06:18+00:00",
+      "updated": "2026-02-11T06:06:18+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10555v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10555v1",
+      "comment": "10 pages, 11 figures, 2025 Australasian Conference on Robotics and Automation (ACRA 2025)"
+    },
+    {
+      "id": "2602.10481v1",
+      "title": "保护上下文与提示：为非确定性人工智能提供确定性安全",
+      "authors": [
+        "Mohan Rajagopalan",
+        "Vinay Rao"
+      ],
+      "author_count": 2,
+      "summary": "大型语言模型（LLM）应用易受传统安全模型无法防范的提示注入和上下文操纵攻击。我们引入了两种新型原语——认证提示与认证上下文——它们能在LLM工作流程中提供可加密验证的来源追溯。认证提示能够...",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-11T03:38:59+00:00",
+      "updated": "2026-02-11T03:38:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10481v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10481v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10465v1",
+      "title": "认证工作流：一种保护代理式人工智能的系统方法",
+      "authors": [
+        "Mohan Rajagopalan",
+        "Vinay Rao"
+      ],
+      "author_count": 2,
+      "summary": "Agentic AI systems automate enterprise workflows but existing defenses--guardrails, semantic filters--are probabilistic and routinely bypassed. We introduce authenticated workflows, the first complete trust layer for enterprise agentic AI. Security reduces to protecting four fundamental boundaries:...",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-11T03:04:50+00:00",
+      "updated": "2026-02-11T03:04:50+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10465v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10465v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10429v1",
+      "title": "AIvilization v0：迈向大规模人工社会模拟——统一智能体架构与自适应智能体配置",
+      "authors": [
+        "Wenkai Fan",
+        "Shurui Zhang",
+        "Xiaolong Wang",
+        "Haowei Yang",
+        "Tsz Wai Chan"
+      ],
+      "author_count": 10,
+      "summary": "AIvilization v0是一个公开部署的大规模人工社会，它将资源受限的沙盒经济与统一的LLM智能体架构相结合，旨在维持长期自主性的同时，确保在快速变化的环境中仍可执行。为缓解目标稳定性与反应准确性之间的张力，我们引入了……",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-11T02:18:15+00:00",
+      "updated": "2026-02-11T02:18:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10429v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10429v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10029v1",
+      "title": "Resilient Topology-Aware Coordination for Dynamic 3D UAV Networks under Node Failure",
+      "authors": [
+        "Chuan-Chi Lai"
+      ],
+      "author_count": 1,
+      "summary": "In 3D Aerial-Ground Integrated Networks (AGINs), ensuring continuous service coverage under unexpected hardware failures is critical for mission-critical applications. While Multi-Agent Reinforcement Learning (MARL) has shown promise in autonomous coordination, its resilience under sudden node failures remains a challenge due to dynamic topology deformation. This paper proposes a Topology-Aware Graph MAPPO (TAG-MAPPO) framework designed to enhance system survivability through autonomous 3D...",
+      "categories": [
+        "cs.NI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-02-10T17:51:14+00:00",
+      "updated": "2026-02-10T17:51:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10029v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10029v1",
+      "comment": "25 pages, 5 figures. Full research paper providing a resilience-aware RL framework for UAV networks under node failure. A preliminary version has been submitted to ACM Transactions on Internet Technology (TOIT) for possible publication"
+    },
+    {
+      "id": "2602.10007v1",
+      "title": "拥堵匝道汇入中安全高效协同自动驾驶车道变更的协作安全屏障",
+      "authors": [
+        "Bharathkumar Hegde",
+        "Melanie Bouroche"
+      ],
+      "author_count": 2,
+      "summary": "在密集交通中换道对于联网自动驾驶汽车（CAV）而言是一项重大挑战。现有的换道控制器主要侧重于确保安全性或协作提升交通效率，但未能同时兼顾这些相互冲突的目标。为解决这一问题，我们提出了多智能体安全屏障（MASS）方案，其设计旨在……",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-10T17:30:09+00:00",
+      "updated": "2026-02-10T17:30:09+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10007v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10007v1",
+      "comment": "Accepted in IEEE IV 2026"
+    },
+    {
+      "id": "2602.09801v1",
+      "title": "微小行动：基于游戏的假设精炼",
+      "authors": [
+        "Agnieszka Dobrowolska",
+        "Rogier Hintzen",
+        "Martin Balla",
+        "Karl Gemayel",
+        "Sabine Reichert"
+      ],
+      "author_count": 9,
+      "summary": "大多数科学发现的机器学习方法将假设框定为端到端的预测，模糊了科学推理的渐进结构。我们提出了“假设游戏”，一种用于假设细化的符号形式体系，其中LLM代理通过固定的推理动作语法在共享的假设状态上进行操作。该...",
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T14:04:29+00:00",
+      "updated": "2026-02-10T14:04:29+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09801v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09801v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09412v1",
+      "title": "多智能体系统控制",
+      "authors": [
+        "Minh Hoang Trinh",
+        "Hieu Minh Nguyen"
+      ],
+      "author_count": 2,
+      "summary": "自21世纪初以来，多智能体系统的控制研究引起了广泛关注，其应用范围涵盖自然群体行为、社会动力学，以及自动驾驶车辆、传感器网络和智能电网等工程系统。尽管多智能体系统的研究已分化出众多专门领域……",
+      "categories": [
+        "cs.MA",
+        "math.OC"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T05:08:02+00:00",
+      "updated": "2026-02-10T05:08:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09412v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09412v1",
+      "comment": "\"Multi-Agent System Control\", 252 pages; in Vietnamese language, 82 figures"
+    },
+    {
+      "id": "2602.09379v2",
+      "title": "灵犀诊断基准：一个用于评估大语言模型在中文精神科咨询与诊断中的多智能体框架",
+      "authors": [
+        "Shihao Xu",
+        "Tiancheng Zhou",
+        "Jiatong Ma",
+        "Yanli Ding",
+        "Yiming Yan"
+      ],
+      "author_count": 11,
+      "summary": "精神障碍在全球范围内极为普遍，但精神科医生的短缺以及基于访谈诊断固有的主观性，为及时、一致的心理健康评估造成了巨大障碍。由于缺乏能同时提供真实临床场景……的基准数据，人工智能辅助精神疾病诊断的发展受到制约。",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-10T03:46:05+00:00",
+      "updated": "2026-02-11T02:31:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09379v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.09379v2",
+      "comment": null
+    },
+    {
+      "id": "2602.09270v1",
+      "title": "人工智能代理的集体行为：以Moltbook为例",
+      "authors": [
+        "Giordano De Marzo",
+        "David Garcia"
+      ],
+      "author_count": 2,
+      "summary": "我们对Moltbook进行了大规模数据分析，这是一个仅由AI代理组成的类Reddit社交媒体平台。通过分析来自约4.6万个活跃代理的36.9万余条帖子和300万条评论，我们发现AI集体行为展现出与人类在线社区相同的统计规律性：……",
+      "categories": [
+        "physics.soc-ph",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "physics.soc-ph",
+      "published": "2026-02-09T23:10:34+00:00",
+      "updated": "2026-02-09T23:10:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09270v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09270v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09252v1",
+      "title": "基于基础模型的外科图像分割：VLM引导的迭代优化方法",
+      "authors": [
+        "Ange Lou",
+        "Yamin Li",
+        "Qi Chang",
+        "Nan Xi",
+        "Luyuan Xie"
+      ],
+      "author_count": 7,
+      "summary": "手术图像分割对于机器人辅助手术和术中引导至关重要。然而，现有方法受限于预定义类别，只能进行一次性预测而无法自适应优化，且缺乏与临床医生交互的机制。我们提出IR-SIS——一种用于手术图像的迭代优化系统……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-09T22:36:36+00:00",
+      "updated": "2026-02-09T22:36:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09252v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09252v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09159v1",
+      "title": "CoMMa：博弈论视角下的贡献感知医疗多智能体系统",
+      "authors": [
+        "Yichen Wu",
+        "Yujin Oh",
+        "Sangjoon Park",
+        "Kailong Fan",
+        "Dania Daye"
+      ],
+      "author_count": 9,
+      "summary": "Recent multi-agent frameworks have broadened the ability to tackle oncology decision support tasks that require reasoning over dynamic, heterogeneous patient data. We propose Contribution-Aware Medical Multi-Agents (CoMMa), a decentralized LLM-agent framework in which specialists operate on...",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-09T20:04:58+00:00",
+      "updated": "2026-02-09T20:04:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09159v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09159v1",
+      "comment": "9 pages, 3 figures"
+    },
+    {
+      "id": "2602.09132v1",
+      "title": "SciDataCopilot：面向AGI驱动科学发现的智能数据准备框架",
+      "authors": [
+        "Jiyong Rao",
+        "Yicheng Qiu",
+        "Jiahui Zhang",
+        "Juntao Deng",
+        "Shangquan Sun"
+      ],
+      "author_count": 32,
+      "summary": "当前人工智能科学（AI4S）的发展格局主要立足于大规模文本语料库，生成式人工智能系统在假设生成、文献检索和多模态推理方面表现出色。然而，加速闭环科学发现的关键瓶颈仍在于原始实验数据的利用……",
+      "categories": [
+        "cs.DB",
+        "cs.ET",
+        "cs.MA"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-02-09T19:23:32+00:00",
+      "updated": "2026-02-09T19:23:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09132v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09132v1",
+      "comment": null
+    },
+    {
+      "id": "2602.08965v2",
+      "title": "在多智能体强化学习中通过量子纠缠学习协调",
+      "authors": [
+        "John Gardiner",
+        "Orlando Romero",
+        "Brendan Tivnan",
+        "Nicolò Dal Fabbro",
+        "George J. Pappas"
+      ],
+      "author_count": 5,
+      "summary": "无法沟通对多智能体强化学习（MARL）中的协调构成了重大挑战。先前的研究探索了通过共享随机性（有时以关联设备的形式）来关联局部策略，以此作为辅助分散决策的机制。相比之下，本研究首次提出了一个框架……",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-02-09T18:01:40+00:00",
+      "updated": "2026-02-11T13:26:34+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08965v2",
+      "arxiv_url": "http://arxiv.org/abs/2602.08965v2",
+      "comment": null
+    },
+    {
+      "id": "2602.11074v1",
+      "title": "高等教育中的人工智能感知与干预：学生对学习影响、情感反应及伦理优先事项的看法",
+      "authors": [
+        "Bingyi Han",
+        "Ying Ma",
+        "Simon Coghlan",
+        "Dana McKay",
+        "George Buchanan"
+      ],
+      "author_count": 6,
+      "summary": "能够感知学生注意力与情绪、从而实现更个性化教学干预的人工智能技术正日益受到推崇，但同时也引发了关于学生学习、身心健康及伦理道德的紧迫问题。尤其值得注意的是，学生在学习过程中对AI感知干预的视角常被忽视。我们开展了一项在线...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T17:43:33+00:00",
+      "updated": "2026-02-11T17:43:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11074v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11074v1",
+      "comment": "Accepted to CHI 2026. This is the accepted author version"
+    },
+    {
+      "id": "2602.11055v1",
+      "title": "GenFaceUI：智能体生成式个性化面部表情界面的元设计",
+      "authors": [
+        "Yate Ge",
+        "Lin Tian",
+        "Yi Dai",
+        "Shuhan Pan",
+        "Yiwen Zhang"
+      ],
+      "author_count": 8,
+      "summary": "本研究从元设计的视角探讨智能体生成式面部表情接口。我们提出生成式个性化面部表情接口框架，通过整合规则边界空间、角色身份与情境—表情映射机制，以应对控制性、连贯性等方面的挑战。",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T17:20:41+00:00",
+      "updated": "2026-02-11T17:20:41+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11055v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11055v1",
+      "comment": "To appear at ACM CHI '26"
+    },
+    {
+      "id": "2602.11026v1",
+      "title": "数据化汽车中的常态化监控：自动驾驶用户如何合理化隐私权衡",
+      "authors": [
+        "Yehuda Perry",
+        "Tawfiq Ammari"
+      ],
+      "author_count": 2,
+      "summary": "自动驾驶汽车（AVs）通过车内摄像头、激光雷达和GPS等传感器，呈现出普遍数据化与监控化的特征。本研究基于建构主义扎根理论，对16名自动驾驶汽车驾驶员进行半结构化访谈分析，探讨了用户如何在日常数据化环境中理解车辆监控现象。",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T16:52:06+00:00",
+      "updated": "2026-02-11T16:52:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11026v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11026v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11025v1",
+      "title": "现实副驾驶：利用大型多模态模型在混合现实中实现语音优先的人机协作",
+      "authors": [
+        "Liuchuan Yu",
+        "Yongqi Zhang",
+        "Lap-Fai Yu"
+      ],
+      "author_count": 3,
+      "summary": "大型多模态模型（LMMs）在辅助用户完成编程、内容创作和信息获取等任务方面展现出巨大潜力，但其交互方式仍主要局限于桌面设备和智能手机等传统界面。与此同时，混合现实（MR）硬件的进步使得能够扩展应用场景成为可能……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T16:51:54+00:00",
+      "updated": "2026-02-11T16:51:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11025v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11025v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10935v1",
+      "title": "人们想要核实什么事实？",
+      "authors": [
+        "Bijean Ghafouri",
+        "Dorsaf Sallami",
+        "Luca Luceri",
+        "Taylor Lynn Curtis",
+        "Jean-Francois Godbout"
+      ],
+      "author_count": 7,
+      "summary": "关于虚假信息的研究几乎完全集中在供给端，询问哪些虚假信息在传播、由谁制造以及纠正措施是否有效。一个基本的需求端问题仍未得到解答：当普通人可以核查任何他们想了解的信息时，他们究竟会提出哪些疑问？我们首次为这个问题提供了大规模证据……",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T15:14:54+00:00",
+      "updated": "2026-02-11T15:14:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10935v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10935v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10871v1",
+      "title": "通过交互成本建模实现点云标注的视角推荐",
+      "authors": [
+        "Yu Zhang",
+        "Xinyi Zhao",
+        "Chongke Bi",
+        "Siming Chen"
+      ],
+      "author_count": 4,
+      "summary": "三维点云的语义分割对于自动驾驶等众多应用至关重要。训练语义分割模型需要已标注的点云分割数据集，而点云标注过程对标注者而言极为耗时，通常涉及调整摄像机视角并通过点选方式进行标注。",
+      "categories": [
+        "cs.HC",
+        "cs.CV"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T13:59:42+00:00",
+      "updated": "2026-02-11T13:59:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10871v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10871v1",
+      "comment": "Accepted to IEEE TVCG"
+    },
+    {
+      "id": "2602.10827v1",
+      "title": "设计思维对创意与创新过程的影响：一项跨不同设计经验水平的实证研究",
+      "authors": [
+        "Yuxin Zhang",
+        "Fan Zhang"
+      ],
+      "author_count": 2,
+      "summary": "本研究采用线性回归与结构方程模型，探讨思维技能、设计思维、创造性自我效能感与集体创造效能感如何驱动设计创造力与创新，并分析模型在不同经验水平下的结构稳定性。路径分析结果表明……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T13:13:30+00:00",
+      "updated": "2026-02-11T13:13:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10827v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10827v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10701v1",
+      "title": "别怪我：智能支持如何影响人类监督中的道德责任",
+      "authors": [
+        "Cedric Faas",
+        "Richard Uth",
+        "Sarah Sterz",
+        "Markus Langer",
+        "Anna Maria Feit"
+      ],
+      "author_count": 5,
+      "summary": "基于人工智能的系统正日益能够自主执行工作任务。在安全关键任务中，需要人类对这些系统进行监督以降低风险，并确保在出现问题时明确责任归属。由于人们往往难以保持专注并实施有效监督，智能辅助系统被用来协助他们，提供……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T09:59:44+00:00",
+      "updated": "2026-02-11T09:59:44+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10701v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10701v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10684v1",
+      "title": "对话式大型语言模型平台的隐私控制：一项走查研究",
+      "authors": [
+        "Zhuoyang Li",
+        "Yanlai Wu",
+        "Yao Li",
+        "Xinning Gui",
+        "Yuhan Luo"
+      ],
+      "author_count": 5,
+      "summary": "大型语言模型正通过对话界面日益融入日常生活，它们通过自然语言输入处理用户数据，并展现出高级推理能力，这引发了用户对隐私控制权的新担忧。尽管大量研究聚焦于潜在隐私风险，但较少关注...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T09:39:19+00:00",
+      "updated": "2026-02-11T09:39:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10684v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10684v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10618v1",
+      "title": "从互动到虚拟现实中的演示质量：互动方式与视觉呈现对日常任务的影响",
+      "authors": [
+        "Robin Beierling",
+        "Manuel Scheibl",
+        "Jonas Dech",
+        "Abhijit Vyas",
+        "Anna-Lisa Vollmer"
+      ],
+      "author_count": 5,
+      "summary": "虚拟现实（VR）正日益广泛地应用于培训与演示领域，其应用范围涵盖从机器人学习到康复训练等多种场景。然而，输入设备的选择及其视觉呈现方式可能会影响用户的工作负荷，进而影响用户表现，导致演示效果欠佳或训练成效降低。这...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T08:10:01+00:00",
+      "updated": "2026-02-11T08:10:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10618v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10618v1",
+      "comment": "26 pages, 6 figures, 7 tables (including appendix)"
+    },
+    {
+      "id": "2602.10548v1",
+      "title": "劳动、资本与机器：迈向人机交互的劳动过程理论",
+      "authors": [
+        "Yigang Qin",
+        "EunJeong Cheon"
+      ],
+      "author_count": 2,
+      "summary": "人机交互学界呼吁重新关注劳动问题与计算政治经济学。然而在运用劳动理论以深入理解现代工作与劳动者方面，仍有大量研究亟待开展。本文追溯了劳动过程理论的发展脉络——从卡尔·马克思与哈里·布雷弗曼，到迈克尔·布若威及其后的理论演进——并……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T05:40:30+00:00",
+      "updated": "2026-02-11T05:40:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10548v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10548v1",
+      "comment": "20 pages, 2 figures. Accepted to CHI'26"
+    },
+    {
+      "id": "2602.10535v1",
+      "title": "探索人机交互中声音、个性与性别之间的相互作用",
+      "authors": [
+        "Kai Alexander Hackney",
+        "Lucas Guarenti Zangari",
+        "Jhonathan Sora-Cardenas",
+        "Emmanuel Munoz",
+        "Sterling R. Kalogeras"
+      ],
+      "author_count": 7,
+      "summary": "为促进有效的人机互动，设计者需识别可能影响智能体感知度与接受度的特征要素，并探究这些要素在多大程度上影响信任关系的建立。为探索用户与智能体同步性的作用，我们通过对388名参与者的评估，研究其能否从智能体中感知人格特质...",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T05:09:07+00:00",
+      "updated": "2026-02-11T05:09:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10535v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10535v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10501v1",
+      "title": "家庭教育中父母的分工与协作",
+      "authors": [
+        "Ziyi Wang",
+        "Congrong Zhang",
+        "Jingying Deng",
+        "Xiaofan Hu",
+        "Jie Cai"
+      ],
+      "author_count": 8,
+      "summary": "辅导孩子作业是家庭生活中一项要求高且易引发冲突的事务，而家长在应对其认知与情感负担方面往往缺乏针对性支持。通过对18位一至三年级学生家长的访谈，我们研究了家庭作业相关的劳动如何在父母间分配协调，以及人工智能可能在哪些环节发挥作用……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T04:01:16+00:00",
+      "updated": "2026-02-11T04:01:16+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10501v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10501v1",
+      "comment": "16 pages. To appear in Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI 2026), Barcelona, Spain, April 13-17, 2026"
+    },
+    {
+      "id": "2602.10473v1",
+      "title": "为何人类引导在协同氛围编码中至关重要",
+      "authors": [
+        "Haoyu Hu",
+        "Raja Marjieh",
+        "Katherine M Collins",
+        "Chenyi Li",
+        "Thomas L. Griffiths"
+      ],
+      "author_count": 7,
+      "summary": "编写代码一直是人类社会将抽象想法转化为具体技术最具变革性的方式之一。现代人工智能正在改变这一过程，它让专家和非专家都能在不实际编写代码的情况下生成代码，而是通过自然语言指令或“氛围编码”来实现。尽管……",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.SI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T03:24:57+00:00",
+      "updated": "2026-02-11T03:24:57+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10473v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10473v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10442v1",
+      "title": "探索利用鞋垫压力传感器实现全身肌肉激活感测的可行性",
+      "authors": [
+        "Hao Zhou",
+        "Mahanth Gowda"
+      ],
+      "author_count": 2,
+      "summary": "肌肉激活驱动人体运动的收缩，理解它能为损伤预防与康复提供宝贵洞见。然而在快速增长的移动健康市场中，肌肉激活传感技术却鲜有探索。传统的肌肉激活传感方法依赖于专业电极，例如……",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T02:33:38+00:00",
+      "updated": "2026-02-11T02:33:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10442v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10442v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10407v1",
+      "title": "迈向利用可穿戴传感器信号实现经济实惠、无创实时低血糖检测",
+      "authors": [
+        "Lawrence Obiuwevwi",
+        "Krzysztof J. Rechowicz",
+        "Vikas Ashok",
+        "Sampath Jayarathna"
+      ],
+      "author_count": 4,
+      "summary": "在糖尿病管理中，无创精准检测低血糖仍是一项关键挑战，这在连续血糖监测系统价格过高或临床条件受限的地区尤为突出。这项拓展研究提出了一种综合性的多模态生理学框架，旨在实现无创监测……",
+      "categories": [
+        "cs.HC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T01:31:06+00:00",
+      "updated": "2026-02-11T01:31:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10407v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10407v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10403v1",
+      "title": "残疾优先的人工智能数据集标注：与口吃者共同设计口吃语音标注指南",
+      "authors": [
+        "Xinru Tang",
+        "Jingjin Li",
+        "Shaomei Wu"
+      ],
+      "author_count": 3,
+      "summary": "尽管已努力提升人工智能数据集中残障人士的代表性，无障碍数据集却常由缺乏残障专业知识的众包工作者标注，导致标签不一致或不准确。本文通过对口吃者语音数据标注的案例研究，深入探讨了这些标注难题。",
+      "categories": [
+        "cs.HC"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-11T01:16:33+00:00",
+      "updated": "2026-02-11T01:16:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10403v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10403v1",
+      "comment": null
+    },
+    {
+      "id": "2602.11000v1",
+      "title": "微调GPT-5用于GPU内核生成",
+      "authors": [
+        "Ali Tehrani",
+        "Yahya Emara",
+        "Essam Wissam",
+        "Wojciech Paluch",
+        "Waleed Atallah"
+      ],
+      "author_count": 7,
+      "summary": "开发高效的GPU内核对于扩展现代人工智能系统至关重要，但由于复杂的硬件架构和需要专门的优化专业知识，这仍然是一项复杂的任务。尽管大型语言模型在通用顺序代码生成方面表现出强大的能力，但在GPU优化方面仍面临重大挑战。",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-11T16:22:54+00:00",
+      "updated": "2026-02-11T16:22:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.11000v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.11000v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10729v1",
+      "title": "BOute：通过多目标贝叶斯优化实现异构大语言模型与GPU的高性价比服务",
+      "authors": [
+        "Youhe Jiang",
+        "Fangcheng Fu",
+        "Eiko Yoneki"
+      ],
+      "author_count": 3,
+      "summary": "大型语言模型（LLM）部署的快速增长使得高性价比的服务系统变得至关重要。近期提升系统成本效益的努力主要从两个角度展开：（i）算法角度，利用异构模型能力将简单查询路由至低成本模型，复杂查询则导向高成本模型……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-11T10:44:12+00:00",
+      "updated": "2026-02-11T10:44:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10729v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10729v1",
+      "comment": "MLSys 2026"
+    },
+    {
+      "id": "2602.10486v1",
+      "title": "并行与分布式系统中基于覆盖语义的最小不动点计算",
+      "authors": [
+        "Vijay K. Garg",
+        "Rohan Garg"
+      ],
+      "author_count": 2,
+      "summary": "我们提出了在并行与分布式环境下计算多个单调递增函数最小不动点的方法。经典克纳斯特-塔斯基定理针对的是单函数顺序迭代场景，而现代计算系统需要支持覆盖语义、非原子更新及过期读取的并行执行。我们...",
+      "categories": [
+        "cs.DC",
+        "cs.DS"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-11T03:45:04+00:00",
+      "updated": "2026-02-11T03:45:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10486v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10486v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10378v1",
+      "title": "Flash-SD-KDE：利用张量核心加速SD-KDE",
+      "authors": [
+        "Elliot L. Epstein",
+        "Rajat Vadiraj Dwaraknath",
+        "John Winnicki"
+      ],
+      "author_count": 3,
+      "summary": "分数去偏核密度估计（SD-KDE）相比经典KDE实现了更优的渐近收敛速率，但其对经验分数的使用导致实际计算速度显著下降。我们通过重构SD-KDE的计算顺序以暴露矩阵乘法结构，使得张量核心能够用于加速GPU计算...",
+      "categories": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T23:56:03+00:00",
+      "updated": "2026-02-10T23:56:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10378v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10378v1",
+      "comment": "11 pages"
+    },
+    {
+      "id": "2602.10320v1",
+      "title": "全球分布式协议在网络架构下的可实施性",
+      "authors": [
+        "Elaine Li",
+        "Thomas Wies"
+      ],
+      "author_count": 2,
+      "summary": "全局协议从宏观视角规定了分布式、消息传递的协议，并作为合成本地实现的规范。可实施性探讨的是给定全局协议是否允许分布式实现。我们首次对基于网络...的全局协议可实施性进行了全面研究。",
+      "categories": [
+        "cs.FL",
+        "cs.DC",
+        "cs.PL"
+      ],
+      "primary_category": "cs.FL",
+      "published": "2026-02-10T21:58:45+00:00",
+      "updated": "2026-02-10T21:58:45+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10320v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10320v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10262v1",
+      "title": "AMD MI300A上的FP8矩阵核心、异步执行与结构化稀疏性的执行中心特性分析",
+      "authors": [
+        "Aaron Jarmusch",
+        "Connor Vitz",
+        "Sunita Chandrasekaran"
+      ],
+      "author_count": 3,
+      "summary": "AMD MI300A APU集成了CDNA3 GPU与高带宽内存及先进加速器特性：FP8矩阵核心、异步计算引擎（ACE）以及2:4结构化稀疏支持。这些功能正日益成为现代高性能计算及AI融合工作负载的重要依托，然而其执行特性与系统级影响仍待深入探究……",
+      "categories": [
+        "cs.DC",
+        "cs.AR"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T20:12:02+00:00",
+      "updated": "2026-02-10T20:12:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10262v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10262v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10246v1",
+      "title": "KORAL：知识图谱引导的LLM推理在SSD运行分析中的应用",
+      "authors": [
+        "Mayur Akewar",
+        "Sandeep Madireddy",
+        "Dongsheng Luo",
+        "Janki Bhimani"
+      ],
+      "author_count": 4,
+      "summary": "固态硬盘（SSD）对数据中心、消费级平台及关键任务系统至关重要。然而，由于数据碎片化且时间不连续，诊断其性能与可靠性十分困难。现有方法不仅需要大量数据集和专家介入，且仅能提供有限的洞察。性能退化不仅源于……",
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T19:40:36+00:00",
+      "updated": "2026-02-10T19:40:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10246v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10246v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09725v1",
+      "title": "高效远程前缀获取与GPU原生媒体ASIC技术",
+      "authors": [
+        "Liang Mi",
+        "Weijun Wang",
+        "Jinghan Chen",
+        "Ting Cao",
+        "Haipeng Dai"
+      ],
+      "author_count": 6,
+      "summary": "远程KV缓存复用技术通过从远程存储获取相同上下文的KV缓存，避免了重复计算，从而加速了大语言模型的推理过程。尽管该技术在高速网络环境下表现卓越，但在带宽受限的场景中其性能会显著下降。近期的研究通过传输压缩形式的KV缓存来解决这一问题，但随之而来的...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T12:29:02+00:00",
+      "updated": "2026-02-10T12:29:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09725v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09725v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09721v1",
+      "title": "揭示现代MoE模型与硬件系统中注意力-FFN解耦的挑战",
+      "authors": [
+        "Guowei Liu",
+        "Hongming Li",
+        "Yaning Guo",
+        "Yongxi Lyu",
+        "Mo Zhou"
+      ],
+      "author_count": 8,
+      "summary": "部署大规模混合专家模型在专家激活的内存容量与带宽方面面临挑战。尽管注意力-前馈网络解耦架构已成为解耦计算与内存资源的潜在方案，但其相较于标准大规模专家并行架构的性能边界仍待深入探索。在此...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T12:24:52+00:00",
+      "updated": "2026-02-10T12:24:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09721v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09721v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09604v1",
+      "title": "ARM处理器上的高性能向量长度无关量子电路模拟",
+      "authors": [
+        "Ruimin Shi",
+        "Gabin Schieffer",
+        "Pei-Hung Lin",
+        "Maya Gokhale",
+        "Andreas Herten"
+      ],
+      "author_count": 6,
+      "summary": "ARM SVE与RISC-V RVV是高端处理器中新兴的向量架构，支持灵活向量长度的矢量化处理。本研究以量子计算的关键负载——量子态矢量模拟为切入点，探讨在向量长度无关（VLA）的设计范式下能否实现高性能的可移植性。",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T09:55:12+00:00",
+      "updated": "2026-02-10T09:55:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09604v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09604v1",
+      "comment": "To be published in IPDPS2026"
+    },
+    {
+      "id": "2602.09520v1",
+      "title": "联邦学习中的罗生门集与模型多样性",
+      "authors": [
+        "Xenia Heilmann",
+        "Luca Corbucci",
+        "Mattia Cerrato"
+      ],
+      "author_count": 3,
+      "summary": "罗生门集合捕捉了那些在经验性能上近乎一致，但在决策边界上可能存在显著差异的模型集合。理解这些模型之间的差异，即它们的多重性，被认为是实现模型透明度、公平性和鲁棒性的关键一步，因为它揭示了决策...",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T08:25:35+00:00",
+      "updated": "2026-02-10T08:25:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09520v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09520v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09441v1",
+      "title": "未被发现便非谎言：通过脏日志简化SMR中的重新配置",
+      "authors": [
+        "Allen Clement",
+        "Natacha Crooks",
+        "Neil Giridharan",
+        "Alex Shamis"
+      ],
+      "author_count": 4,
+      "summary": "生产级状态机复制（SMR）实现是复杂、多层级的架构，包含数据传播、排序、执行和重新配置组件。现有研究中的共识协议很少讨论重新配置问题。即使涉及该问题的协议，也将成员变更与特定算法紧密耦合。这种做法阻碍了……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T06:14:55+00:00",
+      "updated": "2026-02-10T06:14:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09441v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09441v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09435v1",
+      "title": "The Coordination Criterion",
+      "authors": [
+        "Joseph M. Hellerstein"
+      ],
+      "author_count": 1,
+      "summary": "When is coordination intrinsically required by a distributed specification, rather than imposed by a particular protocol or implementation strategy? We give a general answer using minimal assumptions. In an asynchronous message-passing model, we show that a specification admits a coordination-free implementation if and only if it is monotone with respect to history extension under an appropriate order on observable outcomes. This Coordination Criterion is stated directly over Lamport histories...",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T05:59:30+00:00",
+      "updated": "2026-02-10T05:59:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09435v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09435v1",
+      "comment": "10 body pages; 24 pages with appendices and references"
+    },
+    {
+      "id": "2602.09325v1",
+      "title": "量子高性能计算系统中的检查点与恢复架构基础",
+      "authors": [
+        "Qiang Guan",
+        "Qinglei Cao",
+        "Xiaoyi Lu",
+        "Siyuan Niu"
+      ],
+      "author_count": 4,
+      "summary": "在这项工作中，我们探索了量子高性能计算中检查点设置与恢复机制的设计，该设计利用动态电路技术实现可重启且具备容错能力的量子计算执行。与尝试对量子态进行直接检查点保存不同，我们的方法将检查点机制重新定义为控制流与算法状态层面的问题。通过运用……",
+      "categories": [
+        "quant-ph",
+        "cs.DC"
+      ],
+      "primary_category": "quant-ph",
+      "published": "2026-02-10T01:37:58+00:00",
+      "updated": "2026-02-10T01:37:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09325v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09325v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09323v1",
+      "title": "LLM-CoOpt：面向异构平台高效大语言模型推理的协同设计与优化框架",
+      "authors": [
+        "Jie Kong",
+        "Wei Wang",
+        "Jiehan Zhou",
+        "Chen Yu"
+      ],
+      "author_count": 4,
+      "summary": "大型语言模型推理中的主要挑战仍在于频繁出现的内存带宽瓶颈、计算冗余以及长序列处理效率低下。为解决这些问题，我们提出了LLM-CoOpt——一个旨在提升大型语言模型推理吞吐量与延迟的算法硬件协同设计框架。LLM-CoOpt整合了三项关键技术……",
+      "categories": [
+        "cs.DC"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-10T01:31:30+00:00",
+      "updated": "2026-02-10T01:31:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09323v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09323v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09188v1",
+      "title": "收获：面向扩展域中集体通信的自适应光子交换调度",
+      "authors": [
+        "Mahir Rahman",
+        "Samuel Joseph",
+        "Nihar Kodkani",
+        "Behnaz Arzani",
+        "Vamsi Addanki"
+      ],
+      "author_count": 5,
+      "summary": "随着芯片间硅光子技术因其带宽和能效优势而日益受到关注，其电路交换的本质为集体通信提出了一个根本性问题：应在何时以及如何重新配置互连架构以实现这些优势？建立直接光路虽能降低拥塞和传播延迟，但每一次……",
+      "categories": [
+        "cs.NI",
+        "cs.DC"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-02-09T20:49:26+00:00",
+      "updated": "2026-02-09T20:49:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09188v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09188v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09174v1",
+      "title": "ALPHA-PIM：基于真实内存处理系统的高性能图应用线性代数处理分析",
+      "authors": [
+        "Marzieh Barkhordar",
+        "Alireza Tabatabaeian",
+        "Mohammad Sadrosadati",
+        "Christina Giannoula",
+        "Juan Gomez Luna"
+      ],
+      "author_count": 8,
+      "summary": "处理大规模图数据集在计算上既密集又耗时。以处理器为中心的CPU和GPU架构虽常用于图计算应用，却常因数据复用率低而面临处理器与存储单元间大量数据迁移造成的瓶颈。因此，这类应用往往受限于内存带宽……",
+      "categories": [
+        "cs.DC",
+        "cs.AR"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-09T20:28:19+00:00",
+      "updated": "2026-02-09T20:28:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09174v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09174v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10934v1",
+      "title": "MOSS音频分词器：为未来音频基础模型扩展音频分词器",
+      "authors": [
+        "Yitian Gong",
+        "Kuangwei Chen",
+        "Zhaoye Fei",
+        "Xiaogui Yang",
+        "Ke Chen"
+      ],
+      "author_count": 12,
+      "summary": "离散音频分词器是赋予大型语言模型原生音频处理与生成能力的基础。尽管近期取得进展，现有方法仍常依赖预训练编码器、语义蒸馏或异构的基于CNN的架构。这些设计引入了固定的归纳偏置，从而限制了……",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-11T15:13:27+00:00",
+      "updated": "2026-02-11T15:13:27+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10934v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10934v1",
+      "comment": "27 pages, 8 figures"
+    },
+    {
+      "id": "2602.10829v1",
+      "title": "自监督学习在说话人识别中的应用：一项研究与综述",
+      "authors": [
+        "Theo Lepage",
+        "Reda Dehak"
+      ],
+      "author_count": 2,
+      "summary": "在监督环境下训练的深度学习模型彻底改变了音频和语音处理领域。然而，其性能本质上依赖于人工标注数据的数量，导致扩展成本高昂，且在未知条件下泛化能力较弱。为应对这些挑战，自监督学习应运而生……",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-11T13:16:07+00:00",
+      "updated": "2026-02-11T13:16:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10829v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10829v1",
+      "comment": "accepted for publication in Speech Communication"
+    },
+    {
+      "id": "2602.10716v1",
+      "title": "RE-LLM：通过融合情感细微差别优化共情语音大语言模型响应",
+      "authors": [
+        "Jing-Han Chen",
+        "Bo-Hao Su",
+        "Ya-Tse Wu",
+        "Chi-Chun Lee"
+      ],
+      "author_count": 4,
+      "summary": "随着生成式人工智能的进步，人机交互中的共情能力至关重要。尽管先前的研究主要聚焦于情感反射，但作为深化互动关键的情感探索领域仍被忽视。现有大型语言模型依赖文本载体，其捕捉的情感细微差别有限。为解决这一问题，我们提出RE-LLM模型——一种融合维度情感特征的语音增强型语言模型。",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-11T10:23:44+00:00",
+      "updated": "2026-02-11T10:23:44+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10716v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10716v1",
+      "comment": "5 pages, 1 figure, 2 tables. Accepted at IEEE ASRU 2025"
+    },
+    {
+      "id": "2602.10666v1",
+      "title": "从节食到免费午餐：利用语音增强网络中的动态剪枝掩码估计辅助信号特性",
+      "authors": [
+        "Riccardo Miccini",
+        "Clément Laroche",
+        "Tobias Piechowiak",
+        "Xenofon Fafoutis",
+        "Luca Pezzarossa"
+      ],
+      "author_count": 5,
+      "summary": "音频设备中的语音增强功能常由语音活动检测、信噪比估计或声学场景分类等辅助模块支持，以确保稳健的情境感知行为和流畅的用户体验。与语音增强类似，这些任务通常采用深度学习技术；然而，在设备端部署额外模型却面临挑战……",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-11T09:09:20+00:00",
+      "updated": "2026-02-11T09:09:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10666v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10666v1",
+      "comment": "Accepted for publication at the 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+    },
+    {
+      "id": "2602.10656v1",
+      "title": "AudioRAG：音频推理与信息检索的挑战性基准",
+      "authors": [
+        "Jingru Lin",
+        "Chen Zhang",
+        "Tianrui Wang",
+        "Haizhou Li"
+      ],
+      "author_count": 4,
+      "summary": "由于大型音频语言模型（LALMs）近期在各类声音、语音及音乐相关任务中展现出卓越性能，人们对于建立评估这些模型的基准测试日益关注。现有基准通常仅聚焦于内部知识的推理，而忽视了现实世界……",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-11T09:00:02+00:00",
+      "updated": "2026-02-11T09:00:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10656v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10656v1",
+      "comment": "Accepted by Audio-AAAI"
+    },
+    {
+      "id": "2602.10439v1",
+      "title": "音频路由器：通过基于强化学习的双重推理实现数据高效音频理解",
+      "authors": [
+        "Liyang Chen",
+        "Hongkai Chen",
+        "Yujun Cai",
+        "Sifan Li",
+        "Qingwen Ye"
+      ],
+      "author_count": 6,
+      "summary": "大型音频语言模型（LALMs）在音频理解和推理方面展现出强大能力，但其在细粒度听觉感知上的表现仍不稳定，现有方法主要依赖数据密集型训练来内化感知能力。我们提出AudioRouter，一种强化学习方法……",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-11T02:30:48+00:00",
+      "updated": "2026-02-11T02:30:48+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10439v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10439v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10230v1",
+      "title": "音频语言模型中用于时间定位的帧级内部工具使用",
+      "authors": [
+        "Joesph An",
+        "Phillip Keung",
+        "Jiaqi Wang",
+        "Orevaoghene Ahia",
+        "Noah A. Smith"
+      ],
+      "author_count": 5,
+      "summary": "大型音频语言模型越来越多地应用于复杂的音频理解任务，但在需要精确时间定位的任务上表现不佳，例如词语对齐和说话人分离。标准方法将时间戳生成为文本标记序列，不仅计算成本高昂，且容易产生误差。",
+      "categories": [
+        "cs.LG",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-10T19:19:52+00:00",
+      "updated": "2026-02-10T19:19:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10230v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10230v1",
+      "comment": "Under review. See https://github.com/inkitori/taudio/"
+    },
+    {
+      "id": "2602.10058v1",
+      "title": "评估可控音乐生成中的解耦表示",
+      "authors": [
+        "Laura Ibáñez-Martínez",
+        "Chukwuemeka Nkama",
+        "Andrea Poltronieri",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "author_count": 5,
+      "summary": "近期音乐生成方法依赖于解耦表征，通常标记为结构与音色或局部与全局，以实现可控合成。然而这些嵌入表示的内在特性仍未得到充分探索。在本研究中，我们通过一系列可控音乐音频模型评估此类解耦表征……",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T18:25:04+00:00",
+      "updated": "2026-02-10T18:25:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10058v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10058v1",
+      "comment": "Accepted at ICASSP 2026"
+    },
+    {
+      "id": "2602.09970v1",
+      "title": "BioME：面向物联网应用的高效生物声学基础模型",
+      "authors": [
+        "Heitor R. Guimarães",
+        "Abhishek Tiwari",
+        "Mahsa Abdollahi",
+        "Anderson R. Avila",
+        "Tiago H. Falk"
+      ],
+      "author_count": 5,
+      "summary": "被动声学监测已成为生物多样性评估、保护和行为生态学的关键策略，尤其是在物联网设备能够实现大规模持续原位音频采集的背景下。尽管近期基于自监督学习的音频编码器（如BEATs和AVES）已展现出卓越性能……",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T16:59:12+00:00",
+      "updated": "2026-02-10T16:59:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09970v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09970v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09823v1",
+      "title": "科沃音频技术报告",
+      "authors": [
+        "Wenfu Wang",
+        "Chenxing Li",
+        "Liqiang Zhang",
+        "Yiyang Zhao",
+        "Yuxiang Zou"
+      ],
+      "author_count": 26,
+      "summary": "在这项工作中，我们推出了Covo-Audio——一个拥有70亿参数、能直接处理连续音频输入并在单一统一架构内生成音频输出的端到端LALM模型。通过大规模精选预训练与针对性后训练，Covo-Audio在同等规模模型中实现了业界领先或具有竞争力的性能表现。",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T14:31:11+00:00",
+      "updated": "2026-02-10T14:31:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09823v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09823v1",
+      "comment": "Technical Report"
+    },
+    {
+      "id": "2602.10166v1",
+      "title": "MerkleSpeech: Public-Key Verifiable, Chunk-Localised Speech Provenance via Perceptual Fingerprints and Merkle Commitments",
+      "authors": [
+        "Tatsunori Ono"
+      ],
+      "author_count": 1,
+      "summary": "Speech provenance goes beyond detecting whether a watermark is present. Real workflows involve splicing, quoting, trimming, and platform-level transforms that may preserve some regions while altering others. Neural watermarking systems have made strides in robustness and localised detection, but most deployments produce outputs with no third-party verifiable cryptographic proof tying a time segment to an issuer-signed original. Provenance standards like C2PA adopt signed manifests and...",
+      "categories": [
+        "cs.CR",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-02-10T11:58:19+00:00",
+      "updated": "2026-02-10T11:58:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10166v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10166v1",
+      "comment": "16 pages, 4 figures, 3 tables"
+    },
+    {
+      "id": "2602.09594v1",
+      "title": "矩形房间中具有一般表面阻抗壁的声学格林函数评估",
+      "authors": [
+        "Matteo Calafà",
+        "Yuanxin Xia",
+        "Jonas Brunskog",
+        "Cheol-Ho Jeong"
+      ],
+      "author_count": 4,
+      "summary": "声学房间模式及格林函数模式展开对于具有完美反射壁的矩形房间是众所周知的。对于近乎刚性的边界，也存在一阶近似；然而，当前的分析方法无法适应更一般的边界条件，例如当墙壁吸声显著时。在本研究中，我们...",
+      "categories": [
+        "eess.AS",
+        "cs.CE",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T09:47:35+00:00",
+      "updated": "2026-02-10T09:47:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09594v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09594v1",
+      "comment": null
+    },
+    {
+      "id": "2602.10164v1",
+      "title": "Emotion-Coherent Speech Data Augmentation and Self-Supervised Contrastive Style Training for Enhancing Kids's Story Speech Synthesis",
+      "authors": [
+        "Raymond Chung"
+      ],
+      "author_count": 1,
+      "summary": "Expressive speech synthesis requires vibrant prosody and well-timed pauses. We propose an effective strategy to augment a small dataset to train an expressive end-to-end Text-to-Speech model. We merge audios of emotionally congruent text using a text emotion recognizer, creating augmented expressive speech data. By training with two-sentence audio, our model learns natural breaks between lines. We further apply self-supervised contrastive training to improve the speaking style embedding...",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-10T09:39:36+00:00",
+      "updated": "2026-02-10T09:39:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.10164v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.10164v1",
+      "comment": "Accepted at IEEE Spoken Language Technology Workshop 2024"
+    },
+    {
+      "id": "2602.09389v1",
+      "title": "TVTSyn：用于流式语音转换与匿名化的内容同步时变音色技术",
+      "authors": [
+        "Waris Quamer",
+        "Mu-Ruei Tseng",
+        "Ghady Nasrallah",
+        "Ricardo Gutierrez-Osuna"
+      ],
+      "author_count": 4,
+      "summary": "实时语音转换与说话人匿名化需要在不牺牲清晰度与自然度的前提下，实现因果性的低延迟合成。现有系统存在核心表征错配问题：语音内容随时间动态变化，而说话人身份却以静态全局嵌入的形式注入。我们提出一种可流式传输的语音合成器，通过将……",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T03:57:30+00:00",
+      "updated": "2026-02-10T03:57:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09389v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09389v1",
+      "comment": null
+    },
+    {
+      "id": "2602.09321v1",
+      "title": "基于堆叠特征的CNN与AST模型在环境声音分类中的性能比较",
+      "authors": [
+        "Parinaz Binandeh Dehaghania",
+        "Danilo Penab",
+        "A. Pedro Aguiar"
+      ],
+      "author_count": 3,
+      "summary": "环境声音分类（ESC）因其在智慧城市监控、故障检测、声学监测和制造质量控制中的多样化应用而受到广泛关注。为提升卷积神经网络性能，特征堆叠技术被用于将互补的声学描述符聚合为更丰富的输入特征……",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-10T01:28:14+00:00",
+      "updated": "2026-02-10T01:28:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09321v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09321v1",
+      "comment": "7 pages, 1 figure"
+    },
+    {
+      "id": "2602.09233v1",
+      "title": "Gencho：通过扩散变换器从混响语音和文本生成房间脉冲响应",
+      "authors": [
+        "Jackie Lin",
+        "Jiaqi Su",
+        "Nishit Anand",
+        "Zeyu Jin",
+        "Minje Kim"
+      ],
+      "author_count": 6,
+      "summary": "盲房间脉冲响应（RIR）估计是捕捉与传递声学特性的核心任务，然而现有方法常受限于建模能力，并在未知条件下表现欠佳。此外，新兴的生成式音频应用需要更灵活的脉冲响应生成方法。我们提出……",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "cs.SD",
+      "published": "2026-02-09T21:57:42+00:00",
+      "updated": "2026-02-09T21:57:42+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09233v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09233v1",
+      "comment": "In Proc. of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2026. Audio examples available at https://linjac.github.io/Gencho/"
+    },
+    {
+      "id": "2602.09210v1",
+      "title": "AI-Driven Cardiorespiratory Signal Processing: Separation, Clustering, and Anomaly Detection",
+      "authors": [
+        "Yasaman Torabi"
+      ],
+      "author_count": 1,
+      "summary": "This research applies artificial intelligence (AI) to separate, cluster, and analyze cardiorespiratory sounds. We recorded a new dataset (HLS-CMDS) and developed several AI models, including generative AI methods based on large language models (LLMs) for guided separation, explainable AI (XAI) techniques to interpret latent representations, variational autoencoders (VAEs) for waveform separation, a chemistry-inspired non-negative matrix factorization (NMF) algorithm for clustering, and a...",
+      "categories": [
+        "eess.SP",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "primary_category": "eess.SP",
+      "published": "2026-02-09T21:30:07+00:00",
+      "updated": "2026-02-09T21:30:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.09210v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.09210v1",
+      "comment": "PhD thesis"
+    },
+    {
+      "id": "2602.08671v1",
+      "title": "输入自适应频谱特征压缩通过序列建模实现源分离",
+      "authors": [
+        "Kohei Saijo",
+        "Yoshiaki Bando"
+      ],
+      "author_count": 2,
+      "summary": "时频域双路径模型已展现出强大的性能，并广泛应用于源分离领域。由于计算成本随频段数量增长，这类模型在处理高采样率任务（如音乐源分离和影视音频源分离）时常采用频带分割模块。",
+      "categories": [
+        "eess.AS"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-02-09T13:55:39+00:00",
+      "updated": "2026-02-09T13:55:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.08671v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.08671v1",
+      "comment": "Accepted by IEEE TASLP. \\c{opyright} 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses"
+    }
+  ]
+}
