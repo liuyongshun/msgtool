@@ -2,7 +2,7 @@
 
 ### 1. 功能概览
 
-- **数据来源**：GitHub 搜索 API（按语言 + 趋势类型 + 关键词 `ai`）。
+- **数据来源**：GitHub 搜索 API（按语言 + 趋势类型 + star数 + 创建时间过滤，不依赖关键词）。
 - **核心目标**：
   - 只对**本地不存在的新项目**做 LLM 筛选和（可选）翻译；
   - 已存在的项目只更新 star / topics 等状态，不改标题和摘要。
@@ -24,32 +24,34 @@
     "enabled": true,
     "api_base_url": "https://api.github.com",
     "languages": ["python", "javascript", "typescript", "rust"],
-    "topics": ["ai"],
-    "trending_types": ["pushed", "created", "stars"],
+    "trending_types": ["created"],
+    "created_days": 15,
     "star_limits": {
       "pushed": 500,
-      "created": 100,
+      "created": 300,
       "stars": 500
     },
     "ai_filter_enabled": true,
-    "translation_enabled": false
+    "translation_enabled": true
   }
 }
 ```
 
 - **字段含义**：
   - **`languages`**：要抓取的编程语言列表。
-  - **`trending_types`**：
+  - **`trending_types`**：查询类型（可同时启用多个）：
     - `pushed`：最近一段时间有推送的项目；
-    - `created`：最近创建的项目；
+    - `created`：最近 N 天内创建的项目（推荐，配合 `created_days` 使用）；
     - `stars`：高 star 项目。
-  - **`star_limits`**：每种类型的最小 star 数（用于过滤噪音）。
+  - **`created_days`**：`created` 类型查询最近多少天内创建的项目（默认 15 天）。
+  - **`star_limits`**：每种类型的最小 star 数（用于过滤低质量仓库）。
   - **`ai_filter_enabled`**：是否启用 LLM 筛选（只保留 AI 相关项目）。
-  - **`translation_enabled`**：是否对标题/摘要做翻译（GitHub 一般可以设为 `false`，节省 Token）。
+  - **`translation_enabled`**：是否对标题/摘要做翻译（建议 `true`，中文描述方便阅读）。
 
 > **调优建议：**
-> - 想多抓一些项目：降低 `star_limits` 或增加 `languages`。
+> - 想多抓一些项目：降低 `star_limits`、增加 `languages` 或调大 `created_days`。
 > - 想结果更干净：保持 `ai_filter_enabled=true`，适当调高 `star_limits`。
+> - 不用关键词过滤：查询策略已改为纯按 star/语言/时间 过滤，AI相关性由 LLM 判断。
 
 #### 2.2 调度器配置
 
@@ -197,5 +199,5 @@ python3 src/msgskill/multi_scheduler.py --once
   - 合理调高 `star_limits`，过滤低质量仓库。
 - **暂时关闭 LLM 筛选**：
   - 将 `sources.github.trending_daily.ai_filter_enabled` 设为 `false`；
-  - 系统会改用简单的关键词匹配（名称/描述/topics 中包含 `ai` 等）替代 LLM。
+  - 系统会直接返回所有按 star/语言/时间 过滤后的仓库，不做 AI 相关性判断。
 

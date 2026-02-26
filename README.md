@@ -4,7 +4,7 @@
 
 ## ✨ 特色功能
 
-- **📚 学术追踪**: 自动同步arXiv 13个AI分类最新论文（含中文翻译）
+- **📚 学术追踪**: 自动同步arXiv 13个AI分类最新论文（11个默认启用，含中文翻译）
 - **📰 资讯精选**: HackerNews热门技术新闻AI筛选
 - **📺 媒体监控**: 31个AI相关RSS源内容聚合（28个启用）
 - **🐙 项目发现**: GitHub AI趋势项目实时跟踪 + 智能数据库管理
@@ -177,7 +177,7 @@ python src\msgskill\preview_server.py
     "enabled": true,
     "provider": "deepseek",
     "api_key": "your-api-key",
-    "recent_days": 7
+    "recent_days": 1
   },
   "notion_sync": {
     "enabled": true,
@@ -252,7 +252,7 @@ python src\msgskill\preview_server.py
 - **GitHub**：每天 21:52 执行
 
 **Token优化配置**：
-- **时间过滤**：`llm.recent_days` 仅处理最近N天内的数据（默认7天），节省30-50% Token
+- **时间过滤**：`llm.recent_days` 仅处理最近N天内的数据（定时任务默认1天，按需触发建议7天），节省30-50% Token
 - **选择性翻译**：arXiv仅翻译多作者论文，节省76% Token
 - **GitHub去重**：智能数据库避免重复筛选，节省70-85% Token
 ```
@@ -278,8 +278,13 @@ msgskill/
 │   ├── __init__.py
 │   └── msgskill_server.py    # 原MCP服务器代码
 │
-├── agent_skill/              # Agent技能模块（未来扩展）
-│   └── __init__.py
+├── getaimsg/                 # Agent技能模块（独立技能，按需触发）
+│   ├── config.yaml           # 技能专用配置
+│   ├── config.py             # 配置管理
+│   ├── tools/                # 数据抓取工具（独立版）
+│   ├── utils/                # 工具函数（独立版）
+│   ├── scripts/              # 独立运行脚本
+│   └── output/               # 技能输出目录
 │
 ├── templates/                # HTML模板文件
 │   └── output_preview.html   # 数据预览页面
@@ -343,17 +348,36 @@ msgskill/
 - 使用htmx实现动态交互
 - 支持桌面和移动端
 
+### getaimsg 技能模块
+
+**getaimsg** (`getaimsg/`) - 独立的按需触发技能版本，与主项目定时任务并行存在：
+
+| 对比项 | 主项目（定时任务） | getaimsg（技能） |
+|--------|-----------------|----------------|
+| 触发方式 | 定时自动执行 | 用户按需触发 |
+| 时间窗口 | `recent_days: 1`（仅当天） | `recent_days: 7`（近7天） |
+| 输出位置 | `output/daily/` | `getaimsg/output/` |
+| 缓存 | 持久化文件缓存 | 内存缓存，无文件依赖 |
+| GitHub过滤 | 关键词 + AI筛选 | 按 star/语言/时间筛选 |
+| arXiv分类 | 13个（11个启用） | 13个（5个启用，减少耗时） |
+
+**独立运行技能脚本**：
+```bash
+cd getaimsg
+
+# 单独测试各数据源
+python scripts/fetch_github.py      # GitHub趋势项目
+python scripts/fetch_hackernews.py  # HackerNews热点
+python scripts/fetch_rss.py         # RSS聚合
+python scripts/fetch_arxiv.py       # arXiv论文
+```
+
 ### 未来扩展模块
 
 **MCP Server** (`mcp_server/`)
 - 与Claude等AI助手集成
 - 提供结构化的AI信息查询接口
 - 支持多种MCP工具
-
-**Agent Skill** (`agent_skill/`)
-- 自定义AI Agent能力
-- 智能信息分析和推荐
-- 自动化工作流
 
 ### 数据流转
 
@@ -550,8 +574,12 @@ Remove-Item -Path .cache -Recurse -Force
 - [Notion同步使用指南](./docs/Notion同步使用指南.md) - Notion集成配置和使用
 - [AI开发指南](./__docAI__/AI开发指南.md) - 开发者快速上手指南
 
-## 🆕 最新更新 (v3.3.0)
+## 🆕 最新更新 (v3.4.0)
 
+- ✅ **getaimsg技能模块**: 独立的按需触发技能，支持4个数据源独立运行（已从 `agent_skill` 重命名）
+- ✅ **GitHub查询优化**: 移除关键词限制，改为按 star数/语言/时间 过滤，扩大有效数据量
+- ✅ **时间策略优化**: 定时任务 `recent_days=1`（仅当天），技能模式 `recent_days=7`（近7天），策略更合理
+- ✅ **RSS缓存修复**: 修复翻译缓存key未区分 `translation_enabled` 导致的脏缓存问题
 - ✅ **时间过滤优化**: 新增 `llm.recent_days` 配置，仅处理最近N天内的数据，节省30-50% Token
 - ✅ **Notion集成**: 支持自动/手动同步到Notion数据库，各数据源独立控制
 - ✅ **GitHub数据库重构**: 单一文件架构，智能去重，增量AI筛选
@@ -560,5 +588,5 @@ Remove-Item -Path .cache -Recurse -Force
 
 ---
 
-**版本**: 3.3.0  
-**最后更新**: 2026-02-10
+**版本**: 3.4.0  
+**最后更新**: 2026-02-26
