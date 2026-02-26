@@ -76,39 +76,45 @@ async def fetch_rss_feeds(
             url_to_config[source_config.url] = source_config
     
     cache = get_cache()
-    
+
     # Fetch feeds in parallel
     tasks = []
     feed_names = []
-    
+    # 记录每个URL对应的翻译状态，用于构建正确的cache_key
+    url_translation_status: dict = {}
+
     for name, url in feeds_to_fetch.items():
-        cache_key = f"rss_{url}_{limit}"
-        cached = cache.get(cache_key)
-        
-        # 获取该源的AI筛选配置
+        # 获取该源的AI筛选和翻译配置
         source_config = url_to_config.get(url)
         ai_filter_enabled = source_config.ai_filter_enabled if source_config else True  # 默认启用
-        
+        translation_enabled = source_config.translation_enabled if source_config else True  # 默认启用
+
+        url_translation_status[url] = translation_enabled  # 记录翻译状态
+
+        # cache_key 包含 translation_enabled，避免缓存污染（翻译/非翻译版本分开缓存）
+        cache_key = f"rss_{url}_{limit}_t{1 if translation_enabled else 0}"
+        cached = cache.get(cache_key)
+
         if cached:
-            # Use cached result
-            tasks.append(asyncio.coroutine(lambda c=cached: c)())
+            # 使用 asyncio.sleep(0) 替代已废弃的 asyncio.coroutine，Python 3.11+ 兼容
+            async def _return_cached(c=cached):
+                return c
+            tasks.append(_return_cached())
         else:
-            # 获取翻译配置
-            translation_enabled = source_config.translation_enabled if source_config else True  # 默认启用
             tasks.append(_fetch_single_feed(url, limit, ai_filter_enabled, translation_enabled))
-        
+
         feed_names.append(name)
-    
+
     results = await asyncio.gather(*tasks, return_exceptions=True)
-    
+
     # Organize results
     feeds_result = {}
     total_items = 0
     errors = []
-    
+
     for name, result in zip(feed_names, results):
         url = feeds_to_fetch[name]
-        
+
         if isinstance(result, Exception):
             error_msg = str(result)
             feeds_result[name] = {
@@ -119,10 +125,11 @@ async def fetch_rss_feeds(
             errors.append(f"{name}: {error_msg}")
             logger.source_error(name, error_msg)
         else:
-            # Cache successful results
-            cache_key = f"rss_{url}_{limit}"
+            # 写缓存时同样包含 translation_enabled
+            translation_enabled_for_url = url_translation_status.get(url, True)
+            cache_key = f"rss_{url}_{limit}_t{1 if translation_enabled_for_url else 0}"
             cache.set(cache_key, result, ttl=600)  # 10 minutes
-            
+
             feeds_result[name] = result
             item_count = len(result.get("items", []))
             total_items += item_count

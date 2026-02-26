@@ -1,0 +1,1519 @@
+{
+  "source": "RSS Feeds",
+  "feeds_count": 28,
+  "total_items": 103,
+  "errors_count": 5,
+  "fetched_at": "2026-02-26T14:17:10.239461",
+  "feeds": {
+    "https://www.technologyreview.com/feed/": {
+      "url": "https://www.technologyreview.com/feed/",
+      "title": "MIT Technology Review",
+      "description": "",
+      "link": "https://www.technologyreview.com",
+      "updated": "Wed, 25 Feb 2026 21:15:28 +0000",
+      "items_count": 0,
+      "items": []
+    },
+    "https://openai.com/news/rss.xml": {
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News",
+      "description": "The OpenAI blog",
+      "link": "https://openai.com/news",
+      "updated": "Thu, 26 Feb 2026 06:11:40 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "遏制人工智能恶意使用 | 2026年2月",
+          "link": "https://openai.com/index/disrupting-malicious-ai-uses",
+          "summary": "我们最新的威胁报告分析了恶意行为者如何将人工智能模型与网站及社交平台相结合——以及这对检测与防御意味着什么。",
+          "published": "Wed, 25 Feb 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Security"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://research.google/blog/rss/": {
+      "url": "https://research.google/blog/rss/",
+      "title": "The latest research from Google",
+      "description": "",
+      "link": "https://research.google/blog/",
+      "updated": "Tue, 17 Feb 2026 21:37:00 +0000",
+      "items_count": 0,
+      "items": []
+    },
+    "http://localhost:8878/huggingface/daily-papers": {
+      "url": "http://localhost:8878/huggingface/daily-papers",
+      "title": "Huggingface Daily Papers",
+      "description": "Huggingface Daily Papers - Powered by RSSHub",
+      "link": "https://huggingface.co/papers",
+      "updated": "Thu, 26 Feb 2026 06:16:59 GMT",
+      "items_count": 7,
+      "items": [
+        {
+          "title": "Solaris：在《我的世界》中构建多人视频世界模型",
+          "link": "https://arxiv.org/abs/2602.22208",
+          "summary": "现有的动作条件视频生成模型（视频世界模型）局限于单一智能体视角，无法捕捉现实环境中的多智能体交互。我们推出Solaris——一款能够模拟多视角一致观测的多人视频世界模型。为实现这一目标，我们开发了一套多人数据系统……",
+          "published": "Wed, 25 Feb 2026 13:59:01 GMT",
+          "author": "Georgy Savva, Oscar Michel, Daohan Lu, Suppakit Waiwitlikhit, Timothy Meehan, Dhairya Mishra, Srivats Poddar, Jack Lu, Saining Xie",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "GUI-Libra：训练原生GUI代理以行动感知监督和部分可验证强化学习进行推理与行动",
+          "link": "https://arxiv.org/abs/2602.22190",
+          "summary": "开源原生图形用户界面代理在长期导航任务上仍落后于闭源系统。这一差距源于两大局限：高质量、行动对齐的推理数据不足，以及直接采用通用后训练流程而忽视了图形用户界面代理特有的挑战。我们发现了两个根本性问题……",
+          "published": "Wed, 25 Feb 2026 13:34:57 GMT",
+          "author": "Rui Yang, Qianhui Wu, Zhaoyang Wang, Hanyang Chen, Ke Yang, Hao Cheng, Huaxiu Yao, Baoling Peng, Huan Zhang, Jianfeng Gao, Tong Zhang",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "NoLan：通过动态抑制语言先验缓解大型视觉语言模型中的物体幻觉",
+          "link": "https://arxiv.org/abs/2602.22144",
+          "summary": "物体幻觉是大型视觉语言模型中的一个关键问题，其输出会包含输入图像中并未出现的物体。由此现象引发出一个自然疑问：LVLM流程中的哪个组件是导致物体幻觉的主要因素？是用于感知视觉信息的视觉编码器，还是……",
+          "published": "Wed, 25 Feb 2026 12:50:41 GMT",
+          "author": "Lingfeng Ren, Weihao Yu, Runpeng Yu, Xinchao Wang",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "世界指引：条件空间中的世界建模用于动作生成",
+          "link": "https://arxiv.org/abs/2602.22010",
+          "summary": "利用未来观测建模来促进动作生成，为增强视觉-语言-动作模型的能力开辟了一条前景广阔的路径。然而，现有方法难以在保持高效、可预测的未来表征与保留足够细粒度信息之间取得平衡。",
+          "published": "Wed, 25 Feb 2026 10:27:09 GMT",
+          "author": "Yue Su, Sijin Chen, Haixin Shi, Mingyu Liu, Zhengshen Zhang, Ningyuan Huang, Weiheng Zhong, Zhengbang Zhu, Yuxiao Liu, Xihui Liu",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "UniVBench：迈向视频基础模型的统一评估框架",
+          "link": "https://arxiv.org/abs/2602.21835",
+          "summary": "视频基础模型旨在将视频理解、生成、编辑与指令跟随功能整合于统一框架，使其成为下一代多模态系统的核心发展方向。然而现有评估基准仍存在碎片化与范围局限的问题，因其各自针对单一任务，依赖特定任务设计……",
+          "published": "Wed, 25 Feb 2026 07:08:53 GMT",
+          "author": "Jianhui Wei, Xiaotian Zhang, Yichen Li, Yuan Wang, Yan Zhang, Ziyi Chen, Zhihang Tang, Wei Xu, Zuozhu Liu",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "SkyReels-V4：多模态视频-音频生成、修复与编辑模型",
+          "link": "https://arxiv.org/abs/2602.21818",
+          "summary": "SkyReels V4是一款统一的多模态视频基础模型，用于联合视频音频生成、修复与编辑。该模型采用双流多模态扩散变换器（MMDiT）架构，其中一个分支合成视频，另一个分支生成时间对齐的音频，同时共享基于...的强大文本编码器。",
+          "published": "Wed, 25 Feb 2026 06:47:00 GMT",
+          "author": "Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, Rui Yan, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Yahui Zhou",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "ARLArena：稳定智能体强化学习的统一框架",
+          "link": "https://arxiv.org/abs/2602.21534",
+          "summary": "代理强化学习（ARL）作为一种训练智能体解决复杂多步骤交互任务的前沿范式，正迅速获得广泛关注。尽管早期成果令人鼓舞，但ARL仍存在高度不稳定性，常导致训练崩溃。这种不稳定性限制了其在更宏大环境与更长交互周期中的可扩展性……",
+          "published": "Tue, 24 Feb 2026 22:43:34 GMT",
+          "author": "Xiaoxuan Wang, Han Zhang, Haixin Wang, Yidan Shi, Ruoyan Li, Kaiqiao Han, Chenyi Tong, Haoran Deng, Renliang Sun, Alexander Taylor, Yanqiao Zhu, Jason Cong, Yizhou Sun, Wei Wang",
+          "tags": [],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://magazine.sebastianraschka.com/feed": {
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "title": "Ahead of AI",
+      "description": "Ahead of AI focuses on machine learning and AI research and is read by more than 150,000 researchers and practitioners who want to stay ahead in a rapidly evolving field.",
+      "link": "https://magazine.sebastianraschka.com",
+      "updated": "Thu, 26 Feb 2026 05:47:19 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "开源大模型的春天之梦：2026年1-2月的十大架构",
+          "link": "https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight",
+          "summary": "2026年春季十大开源大语言模型发布盘点与对比",
+          "published": "Wed, 25 Feb 2026 13:26:56 GMT",
+          "author": "Sebastian Raschka, PhD",
+          "tags": [],
+          "ai_score": 0.98
+        }
+      ]
+    },
+    "http://localhost:8878/anthropic/engineering": {
+      "url": "http://localhost:8878/anthropic/engineering",
+      "title": "Anthropic Engineering",
+      "description": "Latest engineering posts from Anthropic - Powered by RSSHub",
+      "link": "https://www.anthropic.com/engineering",
+      "updated": "Thu, 26 Feb 2026 06:16:56 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "量化自主编码评估中的基础设施噪音",
+          "link": "https://www.anthropic.com/engineering/infrastructure-noise",
+          "summary": "诸如SWE-bench和Terminal-Bench这类智能体编码基准测试常被用于比较前沿模型的软件工程能力——排行榜上的顶尖名次往往仅相差几个百分点。这些分数通常被视为衡量模型相对能力的精确指标，并日益影响着相关决策的制定……",
+          "published": null,
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "http://localhost:8878/meta/ai/blog": {
+      "url": "http://localhost:8878/meta/ai/blog",
+      "title": "AI at Meta Blog",
+      "description": "Stay up to date on the latest artificial intelligence news from Meta. - Powered by RSSHub",
+      "link": "https://ai.meta.com/blog/",
+      "updated": "Thu, 26 Feb 2026 06:16:46 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/": {
+      "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
+      "title": "Artificial intelligence - Microsoft Research",
+      "description": "",
+      "link": "https://www.microsoft.com/en-us/research/blog/category/intelligence/artificial-intelligence/",
+      "updated": "Fri, 10 Feb 2023 23:19:16 +0000",
+      "items_count": 0,
+      "items": []
+    },
+    "https://blog.langchain.dev/rss/": {
+      "url": "https://blog.langchain.dev/rss/",
+      "title": "LangChain Blog",
+      "description": "LangChain Blog",
+      "link": "https://blog.langchain.com/",
+      "updated": "Thu, 26 Feb 2026 04:53:15 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "直到投入生产，你才会知道你的代理会做什么。",
+          "link": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/",
+          "summary": "你无法像监控传统软件那样监控智能体。输入是无限的，行为是非确定性的，而质量则蕴藏于对话本身。本文阐述了需要监控的内容、如何扩展评估规模，以及生产追踪如何成为持续改进的基石。",
+          "published": "Thu, 26 Feb 2026 04:28:00 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "https://medium.com/feed/llamaindex-blog": {
+      "url": "https://medium.com/feed/llamaindex-blog",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "https://techcrunch.com/category/artificial-intelligence/feed/": {
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "description": "Startup and Technology News",
+      "link": "https://techcrunch.com/category/artificial-intelligence/",
+      "updated": "Thu, 26 Feb 2026 06:10:06 +0000",
+      "items_count": 16,
+      "items": [
+        {
+          "title": "Gushwork押注AI搜索客户线索——早期成果初显。",
+          "link": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+          "summary": "Gushwork在由SIG和Lightspeed领投的种子轮融资中筹集了900万美元。这家初创公司已从ChatGPT等人工智能搜索工具中获得了早期客户青睐。",
+          "published": "Thu, 26 Feb 2026 00:00:00 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "AI",
+            "Startups",
+            "AI search",
+            "Exclusive",
+            "Gushwork"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Anthropic收购计算机应用AI初创公司Vercept，此前Meta挖走其创始人之一。",
+          "link": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
+          "summary": "总部位于西雅图的Vercept公司开发了复杂的智能体工具，其中包括一款计算机使用智能体，能够像操作笔记本电脑的人一样在应用程序内部完成任务。",
+          "published": "Wed, 25 Feb 2026 23:49:19 +0000",
+          "author": "Julie Bort",
+          "tags": [
+            "AI",
+            "Venture",
+            "Anthropic",
+            "Mergers and Acquisitions"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "英伟达在创纪录的资本支出中再创季度新高。",
+          "link": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
+          "summary": "英伟达首席执行官黄仁勋在谈及公司收益时表示：“全球对代币的需求已完全呈指数级增长。”",
+          "published": "Wed, 25 Feb 2026 23:04:42 +0000",
+          "author": "Russell Brandom",
+          "tags": [
+            "AI",
+            "chips",
+            "earnings",
+            "Jensen Huang",
+            "nvidia"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "白宫希望人工智能公司承担利率上涨的成本，多数公司已表示愿意配合。",
+          "link": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
+          "summary": "许多超大规模企业已公开承诺承担电力成本上涨的费用。",
+          "published": "Wed, 25 Feb 2026 20:42:14 +0000",
+          "author": "Tim Fernholz",
+          "tags": [
+            "AI",
+            "Anthropic",
+            "Donald Trump",
+            "Meta",
+            "Microsoft"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "Alphabet旗下的机器人软件公司Intrinsic加入谷歌。",
+          "link": "https://techcrunch.com/2026/02/25/alphabet-owned-robotics-software-company-intrinsic-joins-google/",
+          "summary": "从谷歌母公司Alphabet独立出来近五年后，Intrinsic公司正重新回归谷歌旗下。",
+          "published": "Wed, 25 Feb 2026 20:00:00 +0000",
+          "author": "Rebecca Szkutak",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "Robotics",
+            "Alphabet",
+            "artificial intelligence"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "可穿戴设备初创公司CUDIS推出新款健康指环系列，搭载AI驱动的“健康教练”功能。",
+          "link": "https://techcrunch.com/2026/02/25/wearable-startup-cudis-launches-a-new-health-ring-line-with-an-ai-fueled-coach/",
+          "summary": "这款可穿戴设备通过积分激励健康行为，积分可用于兑换健康产品。",
+          "published": "Wed, 25 Feb 2026 19:10:04 +0000",
+          "author": "Lucas Ropek",
+          "tags": [
+            "AI",
+            "CUDIS",
+            "wearables"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "公众对人工智能基础设施的反对声浪正日益高涨。",
+          "link": "https://techcrunch.com/2026/02/25/the-public-opposition-to-ai-infrastructure-is-heating-up/",
+          "summary": "数据中心热潮引发的公众强烈反对正导致各种严厉政策的出台——包括禁止新建数据中心。",
+          "published": "Wed, 25 Feb 2026 19:03:34 +0000",
+          "author": "Lucas Ropek",
+          "tags": [
+            "AI",
+            "Microsoft",
+            "data centers",
+            "New York",
+            "OpenAI"
+          ],
+          "ai_score": 0.75
+        },
+        {
+          "title": "Gemini现可在安卓系统上自动执行部分多步骤任务。",
+          "link": "https://techcrunch.com/2026/02/25/gemini-can-now-automate-some-multi-step-tasks-on-android/",
+          "summary": "谷歌表示，安卓版Gemini将能自动处理涉及叫车服务、杂货或食品配送等任务。",
+          "published": "Wed, 25 Feb 2026 18:00:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "Android",
+            "Automation",
+            "gemini"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "OpenAI首席运营官表示广告投放将是一个“迭代过程”。",
+          "link": "https://techcrunch.com/2026/02/25/openai-coo-says-ads-will-be-an-iterative-process/",
+          "summary": "首席运营官布拉德·莱特卡普指出，如果处理得当，广告可以提升用户的产品体验。他呼吁给OpenAI几个月的时间，看看该公司在推出该产品方面的表现如何。",
+          "published": "Wed, 25 Feb 2026 17:37:37 +0000",
+          "author": "Ivan Mehta",
+          "tags": [
+            "AI",
+            "Ads",
+            "Brad Lightcap",
+            "Exclusive",
+            "OpenAI"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "OpenClaw创始人给AI建设者的建议是：要更具玩味精神，并给自己留出改进的时间。",
+          "link": "https://techcrunch.com/2026/02/25/openclaw-creators-advice-to-ai-builders-is-to-be-more-playful-and-allow-yourself-time-to-improve/",
+          "summary": "彼得·斯坦伯格谈论了他如何打造出风靡网络的AI智能体OpenClaw，并分享了以更“游戏化”的方式学习AI编程是更有效的途径。",
+          "published": "Wed, 25 Feb 2026 16:54:46 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Builders",
+            "coding",
+            "developers",
+            "openclaw"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "大约12%的美国青少年会向人工智能寻求情感支持或建议。",
+          "link": "https://techcrunch.com/2026/02/25/about-12-of-u-s-teens-turn-to-ai-for-emotional-support-or-advice/",
+          "summary": "像ChatGPT、Claude和Grok这样的通用工具并非为此用途设计，这让心理健康专业人士感到担忧。",
+          "published": "Wed, 25 Feb 2026 15:52:03 +0000",
+          "author": "Amanda Silberling",
+          "tags": [
+            "AI",
+            "ai safety",
+            "Pew Research Center"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Jira的最新更新让人工智能代理与人类并肩工作。",
+          "link": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
+          "summary": "Atlassian正在推出\"Jira中的智能代理\"，使用户能够像管理人类员工一样分配和管理分配给AI代理的工作。",
+          "published": "Wed, 25 Feb 2026 14:00:00 +0000",
+          "author": "Rebecca Szkutak",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "AI agents",
+            "artificial intelligence",
+            "Atlassian"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Adobe Firefly的视频编辑器现已能够从素材中自动生成初稿。",
+          "link": "https://techcrunch.com/2026/02/25/adobe-fireflys-video-editor-can-now-automatically-create-a-first-draft-from-footage/",
+          "summary": "Adobe Firefly即将推出一项名为\"快速剪辑\"的新功能，该功能利用人工智能编辑素材，根据用户指令生成最终视频的初稿。",
+          "published": "Wed, 25 Feb 2026 14:00:00 +0000",
+          "author": "Ivan Mehta",
+          "tags": [
+            "AI",
+            "Apps",
+            "Adobe Firefly",
+            "AI video editors",
+            "Quick Cut"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "亚马逊人工智能助手Alexa+新增个性化选项。",
+          "link": "https://techcrunch.com/2026/02/25/amazons-ai-powered-alexa-gets-new-personality-options/",
+          "summary": "亚马逊表示，用户将能够选择Alexa的不同风格，如简洁、轻松或甜美。",
+          "published": "Wed, 25 Feb 2026 14:00:00 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "TC",
+            "Alexa",
+            "alexa+",
+            "Amazon"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "科斯拉的基思·拉博伊斯支持Comp，该公司希望用人工智能加强人力资源团队。",
+          "link": "https://techcrunch.com/2026/02/25/khoslas-keith-rabois-backs-comp-which-wants-to-bolster-hr-teams-with-ai/",
+          "summary": "这家目前主要在巴西运营的人力资源科技初创公司，已完成1725万美元的A轮融资。",
+          "published": "Wed, 25 Feb 2026 13:30:00 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "AI",
+            "Fundraising",
+            "Comp",
+            "HR tech",
+            "Keith Rabois"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "印度人工智能热潮推动企业以短期收入换取用户增长。",
+          "link": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
+          "summary": "随着免费服务逐渐减少，ChatGPT及其竞争对手正在测试印度庞大的AI用户热潮能否转化为付费客户。",
+          "published": "Wed, 25 Feb 2026 02:00:00 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "AI",
+            "ChatGPT",
+            "ChatGPT Go",
+            "Exclusive",
+            "gemini"
+          ],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "https://www.sequoiacap.com/feed/": {
+      "url": "https://www.sequoiacap.com/feed/",
+      "title": "Sequoia Capital",
+      "description": "Sequoia Capital",
+      "link": "https://sequoiacap.com/",
+      "updated": "Mon, 23 Feb 2026 22:48:33 +0000",
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.thoughtworks.com/rss/insights.xml": {
+      "url": "https://www.thoughtworks.com/rss/insights.xml",
+      "title": "Thoughtworks Insights",
+      "description": "A global technology consultancy that integrates strategy, design and engineering to drive digital innovation",
+      "link": "https://www.thoughtworks.com/insights",
+      "updated": null,
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.gartner.com/en/newsroom/rss": {
+      "url": "https://www.gartner.com/en/newsroom/rss",
+      "title": "Gartner Press Releases",
+      "description": "Gartner Press Release Feed",
+      "link": "https://www.gartner.com/en/newsroom",
+      "updated": null,
+      "items_count": 1,
+      "items": [
+        {
+          "title": "Gartner调查显示55%的供应链领导者预计自主式AI将减少初级岗位招聘需求",
+          "link": "https://www.gartner.com/en/newsroom/press-releases/2026-02-25-gartner-survey-shows-55-percent-of-supply-chain-leaders-expect-agentic-ai-to-reduce-entry-level-hiring-needs?utm_campaign=SM_GB_YOY_GTR_SOC_SF1_SM-PR&utm_source=threads,twitter&utm_medium=social",
+          "summary": "超过半数（55%）的供应链管理者预计，智能代理AI的发展将减少对入门级岗位的招聘需求，而51%的管理者认为这项技术将推动整体员工规模的缩减。",
+          "published": "Wed, 25 Feb 2026 14:00:00 GMT",
+          "author": "",
+          "tags": [],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://www.producthunt.com/feed?category=artificial_intelligence": {
+      "url": "https://www.producthunt.com/feed?category=artificial_intelligence",
+      "title": "Product Hunt — The best new products, every day",
+      "description": "",
+      "link": "https://www.producthunt.com",
+      "updated": "2026-02-25T00:01:00-08:00",
+      "items_count": 2,
+      "items": [
+        {
+          "title": "自定义模型",
+          "link": "https://www.producthunt.com/products/travel-animator",
+          "summary": "个性化三维模型打造动画旅行故事讨论 | 链接",
+          "published": "2026-02-24T22:45:51-08:00",
+          "author": "Cherian Thomas",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "幽灵回复",
+          "link": "https://www.producthunt.com/products/ghostreply-2",
+          "summary": "iMessage上为你自动回复的AI讨论 | 链接",
+          "published": "2026-02-24T21:59:26-08:00",
+          "author": "Harrison Rampell",
+          "tags": [],
+          "ai_score": 0.7
+        }
+      ]
+    },
+    "https://huggingface.co/blog/feed.xml": {
+      "url": "https://huggingface.co/blog/feed.xml",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "https://sspai.com/feed": {
+      "url": "https://sspai.com/feed",
+      "title": "少数派",
+      "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
+      "link": "https://sspai.com",
+      "updated": "Thu, 26 Feb 2026 11:27:16 +0800",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "派早报：三星发布 S26 系列手机、Anthropic 的新动态等",
+          "link": "https://sspai.com/post/106602",
+          "summary": "Aqara 发布智能可视门铃 G400，Spotify 推出骨灰盒造型音箱等。 查看全文",
+          "published": "Thu, 26 Feb 2026 09:01:50 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "在 AI 的帮助下，给自己建了个数字人生档案馆",
+          "link": "https://sspai.com/post/106401",
+          "summary": "编者按：本文是少数派2025年度征文活动#TeamSilicon25标签下的入围文章。本文仅代表作者本人观点，少数派只略微调整排版。今年的征文活动更有创意，「只能用AI」和「不能用AI」两大赛道激情P ... 查看全文",
+          "published": "Wed, 25 Feb 2026 15:00:25 +0800",
+          "author": "吃瓜",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "派早报：五角大楼对 Anthropic 下达最后通牒、松下外包电视业务",
+          "link": "https://sspai.com/post/106568",
+          "summary": ">下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文",
+          "published": "Wed, 25 Feb 2026 08:42:56 +0800",
+          "author": "少数派编辑部",
+          "tags": [],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://arstechnica.com/feed/": {
+      "url": "https://arstechnica.com/feed/",
+      "title": "Ars Technica",
+      "description": "Serving the Technologist since 1998. News, reviews, and analysis.",
+      "link": "https://arstechnica.com",
+      "updated": "Thu, 26 Feb 2026 03:51:46 +0000",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "法官裁定马斯克无证据证明OpenAI窃取xAI商业机密，驳回诉讼。",
+          "link": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/",
+          "summary": "即使篡改前雇员的文本以偏向xAI的解读，也未能动摇法官的立场。",
+          "published": "Wed, 25 Feb 2026 22:09:21 +0000",
+          "author": "Ashley Belanger",
+          "tags": [
+            "AI",
+            "Policy",
+            "Antitrust law",
+            "Artificial Intelligence",
+            "data centers"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Galaxy S26速度更快，价格更高，人工智能功能也更加丰富。",
+          "link": "https://arstechnica.com/gadgets/2026/02/samsung-reveals-galaxy-s26-lineup-with-privacy-display-and-exclusive-gemini-smarts/",
+          "summary": "三星Galaxy S26系列今日开启预售，3月11日正式发货。",
+          "published": "Wed, 25 Feb 2026 21:41:27 +0000",
+          "author": "Ryan Whitwam",
+          "tags": [
+            "AI",
+            "Tech",
+            "android",
+            "Galaxy s26",
+            "Samsung"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "皮特·赫格塞斯要求Anthropic公司遵从国防部的意愿，否则后果自负。",
+          "link": "https://arstechnica.com/ai/2026/02/pete-hegseth-wants-unfettered-access-to-anthropics-models-for-the-military/",
+          "summary": "首席执行官因试图限制其技术的军事用途而被传唤至华盛顿。",
+          "published": "Wed, 25 Feb 2026 14:29:23 +0000",
+          "author": "George Hammond and Steff Chávez, Financial Times",
+          "tags": [
+            "AI",
+            "Anthropic",
+            "Department of Defense",
+            "LLM",
+            "Pete Hegseth"
+          ],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "https://www.qbitai.com/feed": {
+      "url": "https://www.qbitai.com/feed",
+      "title": "量子位",
+      "description": "追踪人工智能新趋势，报道科技行业新突破",
+      "link": "https://www.qbitai.com",
+      "updated": "Thu, 26 Feb 2026 03:57:25 +0000",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "21万年费彭博终端机被AI复刻！Perplexity俩月憋出新“PC”：整合所有AI功能，以Opus为核心调度19个模型",
+          "link": "https://www.qbitai.com/2026/02/382647.html",
+          "summary": "比OpenClaw“更安全”",
+          "published": "Thu, 26 Feb 2026 03:57:25 +0000",
+          "author": "衡宇",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "Agent",
+            "Perplexity AI",
+            "Perplexity Computer"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Karpathy：AI编程已质变，就从去年12月开始",
+          "link": "https://www.qbitai.com/2026/02/382626.html",
+          "summary": "变化太猛烈……",
+          "published": "Thu, 26 Feb 2026 03:50:31 +0000",
+          "author": "鱼羊",
+          "tags": [
+            "资讯",
+            "AI Coding",
+            "Karpathy"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "日进22.6亿！英伟达营收暴涨73%再破纪录，盘后股价重返200美元",
+          "link": "https://www.qbitai.com/2026/02/382610.html",
+          "summary": "超越英伟达的只有自己",
+          "published": "Thu, 26 Feb 2026 02:49:04 +0000",
+          "author": "杰西卡",
+          "tags": [
+            "资讯",
+            "穿透财报招股书"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "扩散模型成最快深度思考！告别自回归每秒1009个tokens，英伟达微软都投了",
+          "link": "https://www.qbitai.com/2026/02/382584.html",
+          "summary": "“AI不应该像单向打字机那样运作，而应该更像一个编辑”",
+          "published": "Thu, 26 Feb 2026 02:03:18 +0000",
+          "author": "一水",
+          "tags": [
+            "资讯",
+            "扩散模型"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "MiniMax又又来吃龙虾肉了！OpenClaw真·一键部署，还有上万专家智能体等你差遣",
+          "link": "https://www.qbitai.com/2026/02/382127.html",
+          "summary": "聊着天就能构建自己的专属Expert",
+          "published": "Wed, 25 Feb 2026 15:58:43 +0000",
+          "author": "克雷西",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "MiniMax"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "马年4大顶流模型会师阿里云Coding Plan开工！Token量大管饱，自由切换真香",
+          "link": "https://www.qbitai.com/2026/02/382083.html",
+          "summary": "新用户低至首月7.9元",
+          "published": "Wed, 25 Feb 2026 15:14:12 +0000",
+          "author": "鹭羽",
+          "tags": [
+            "资讯",
+            "首页轮播",
+            "Qwen",
+            "开源",
+            "阿里云"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "融资34亿！谷歌前TPU员工创业新型芯片，卡帕西也投了",
+          "link": "https://www.qbitai.com/2026/02/382058.html",
+          "summary": "预计2027年出货",
+          "published": "Wed, 25 Feb 2026 07:08:40 +0000",
+          "author": "一水",
+          "tags": [
+            "资讯",
+            "芯片创业"
+          ],
+          "ai_score": 0.75
+        },
+        {
+          "title": "阿里发布三款中型千问3.5新模型，每百万Token低至0.2元",
+          "link": "https://www.qbitai.com/2026/02/382054.html",
+          "summary": "消费级显卡也能跑",
+          "published": "Wed, 25 Feb 2026 06:48:13 +0000",
+          "author": "量子位的朋友们",
+          "tags": [
+            "资讯",
+            "千问"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "龙虾之父新访谈，OpenClaw内幕公开！拦不住滥用，只劝大家别玩火",
+          "link": "https://www.qbitai.com/2026/02/382040.html",
+          "summary": "",
+          "published": "Wed, 25 Feb 2026 05:45:08 +0000",
+          "author": "梦瑶",
+          "tags": [
+            "首页轮播",
+            "OpenClaw"
+          ],
+          "ai_score": 0.65
+        },
+        {
+          "title": "清华数学系大神跳槽OpenAI！曾主导SAM与Llama开发，Sora负责人：欢迎加入",
+          "link": "https://www.qbitai.com/2026/02/382015.html",
+          "summary": "",
+          "published": "Wed, 25 Feb 2026 05:01:38 +0000",
+          "author": "henry",
+          "tags": [
+            "资讯",
+            "OpenAI"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://www.jiqizhixin.com/rss": {
+      "url": "https://www.jiqizhixin.com/rss",
+      "error": "连接失败: All connection attempts failed (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    },
+    "http://localhost:8878/huxiu/article": {
+      "url": "http://localhost:8878/huxiu/article",
+      "title": "全部-虎嗅网",
+      "description": "聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。 - Powered by RSSHub",
+      "link": "https://www.huxiu.com/article",
+      "updated": "Thu, 26 Feb 2026 06:16:45 GMT",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "终端大模型操作系统的架构、优化与展望",
+          "link": "https://www.huxiu.com/article/4837094.html",
+          "summary": "通过本地化搭载大模型，终端设备的智能能力将获得飞跃式提升，铸造移动计算的下一个黄金时代，对学术界和产业界都是巨大的机遇。为了更好地适应这个过程中上层应用编程接口、用户交互范式、底层资源管理的重要变化，操作系统可能会被重新定义和改写。本文整理自北京邮电大学副教授、博士生导师徐梦炜博士在2025年QCon全球软件...... 本文来自微信公众号： InfoQ ，编辑：Kitty，作者：QCon...",
+          "published": "Thu, 26 Feb 2026 05:58:07 GMT",
+          "author": "极客邦科技InfoQ",
+          "tags": [
+            "独特视角",
+            "独到",
+            "操作系统",
+            "gui",
+            "能力模型"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Gemini Pro对谈",
+          "link": "https://www.huxiu.com/article/4837091.html",
+          "summary": "问题1：从「一只特立独行的Eric」历史内容里总结高科技公司的估值方法Gemini：1.从“会计利润”转向“自由现金流（FCF）”这是段永平复强调的，对于高科技公司，当前的亏损往往是为了换取未来的垄断地位。估值本质：任何企业的价值，都是其生命周期内所有净现金流折现的总和。别看现在的财务报表，要看它的资本支出效...... 本文来自微信公众号： 一只特立独行的Eric ，作者：特立独行的Eric，原文标题：《Gemini Pro对谈 | 美团的估值分析》 问题1：从「一只特立独行的Eric」历史内容里总结高科技公司的估值方法 Gemini： 1.从“会计利润”转向“自由现金流（FCF）”...",
+          "published": "Thu, 26 Feb 2026 05:47:50 GMT",
+          "author": "一只特立独行的Eric",
+          "tags": [
+            "新颖",
+            "独到",
+            "阿里",
+            "阿里市值",
+            "阿里股价"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Gemini在安卓端学会“自主行动”，中国已跑出“一句话订餐”日常",
+          "link": "https://www.huxiu.com/article/4837089.html",
+          "summary": "2月25日，谷歌正式宣布对其安卓操作系统上的Gemini人工智能功能进行一系列重磅更新，其中最引人注目的是新增了利用AI处理多步骤任务的能力。这意味着Gemini不再只是回答问题的“语音助手”，而是开始向能够自主执行任务的“私人助理”演进。从叫Uber到订餐，从管理待办事项到实时监控进度，Gemini试图重新...... 本文来自微信公众号： 第一新声 ，作者：竹心 2月25日，谷歌正式宣布对其安卓操作系统上的Gemini人工智能功能进行一系列重磅更新，其中最引人注目的是新增了利用AI处理多步骤任务的能力。...",
+          "published": "Thu, 26 Feb 2026 05:37:10 GMT",
+          "author": "第一新声",
+          "tags": [
+            "独特视角",
+            "观点",
+            "谷歌",
+            "百度谷歌",
+            "谷歌手机"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "刚刚，硅谷最贵华人放弃14亿天价offer，上交校友庞若鸣提桶投奔OpenAI",
+          "link": "https://www.huxiu.com/article/4837088.html",
+          "summary": "没有永远的东家，只有永远的offer。就在刚刚，据The Information报道，七个月前刚加入Meta的技术大牛庞若鸣（Ruoming Pang），在上周悄悄加入了OpenAI。这名字你可能没印象，但履历相当硬核。庞若鸣本科毕业于上海交通大学，硕士毕业于南加州大学，同时也是普林斯顿大学计算机博士。在Ch...... 本文来自微信公众号： APPSO ，作者：发现明日产品的，原文标题：《刚刚，硅谷最贵华人放弃 14 亿天价 offer，上交校友庞若鸣提桶投奔 OpenAI》 没有永远的东家，只有永远的offer。 就在刚刚，据The...",
+          "published": "Thu, 26 Feb 2026 05:27:17 GMT",
+          "author": "AppSo",
+          "tags": [
+            "新颖",
+            "观点",
+            "meta",
+            "苹果公司",
+            "openai"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "2026，AI开始制造社会性EMO",
+          "link": "https://www.huxiu.com/article/4837086.html",
+          "summary": "短期内，法律可以保护和规范，但是中长期来看，融合和接受才是必然。最近在社交媒体，看到了三个内容。第一条，是一家日本的咖啡店，机器人过来服务你，但是有一块屏幕，背后是很多行动不便卧床不起的人，在发挥着生命的热量，在远程通过视频服务你。第二条，Citrini Research发布了一份题为“过剩智能的后果”的博客...... 本文来自微信公众号： 长三角momo ，作者：炮哥 短期内，法律可以保护和规范，但是中长期来看，融合和接受才是必然。 最近在社交媒体，看到了三个内容。...",
+          "published": "Thu, 26 Feb 2026 05:23:01 GMT",
+          "author": "长三角momo",
+          "tags": [
+            "独到",
+            "观点",
+            "人工智能"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "黄仁勋：市场判断失误了",
+          "link": "https://www.huxiu.com/article/4837080.html",
+          "summary": "在“人工智能（AI）恐慌交易”引发软件股巨震之际，英伟达首席执行官黄仁勋周三表示，市场误判了AI对软件公司的威胁。就在几个小时前，这家芯片巨头刚刚发布了乐观的销售预测，原因是人工智能需求强劲。他在接受媒体采访时表示，“我认为市场判断失误了”，并反驳了人工智能代理会蚕食企业软件行业的担忧。相反，他预计大批软件公...... 本文来自微信公众号： 财联社AI daily ，作者：黄君芝 在“人工智能（AI）恐慌交易”引发软件股巨震之际，英伟达首席执行官黄仁勋周三表示，市场误判了AI对软件公司的威胁。就在几个小时前，这家芯片巨头刚刚发布了乐观的销售预测，原因是人工智能需求强劲。...",
+          "published": "Thu, 26 Feb 2026 05:05:37 GMT",
+          "author": "财联社AI daily©",
+          "tags": [
+            "独特视角",
+            "新颖",
+            "人工智能",
+            "黄仁勋"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "谷歌重新“收编”Intrinsic",
+          "link": "https://www.huxiu.com/article/4837079.html",
+          "summary": "在一项涉及物理AI的重大重组中，Alphabet正将其机器人软件子公司Intrinsic重新划归至另一子公司谷歌旗下。此举结束了Intrinsic近五年的独立运营地位。这一整合正发生在全球科技巨头竞相将AI，集成到从仓库机器人到制造自动化等物理系统之中的背景下。在早年间于Alphabet的“登月工厂”X实验室...... 本文来自微信公众号： 财联社AI daily ，作者：潇湘...",
+          "published": "Thu, 26 Feb 2026 05:04:54 GMT",
+          "author": "财联社AI daily©",
+          "tags": [
+            "独特视角",
+            "观点",
+            "机器人",
+            "谷歌",
+            "人工智能"
+          ],
+          "ai_score": 0.6
+        },
+        {
+          "title": "英伟达日赚22亿，全年净利已超4个腾讯",
+          "link": "https://www.huxiu.com/article/4837076.html",
+          "summary": "在新的坐标系里，token是新的原油，推理是新的引擎。当地时间周三盘后，英伟达交出了一份依旧让整个华尔街噤声的答卷——第四财季英伟达营收达到创纪录的681.27亿美元，较上年同期的393.31亿美元增长73%；净利润为429.60亿美元，较上年同期的220.91亿美元增长94%。此外，英伟达去年全年营收215...... 本文来自微信公众号： 凤凰网科技 ，作者：凤凰网科技，编辑：董雨晴 在新的坐标系里，token是新的原油，推理是新的引擎。...",
+          "published": "Thu, 26 Feb 2026 04:52:13 GMT",
+          "author": "凤凰网科技",
+          "tags": [
+            "独到",
+            "观点",
+            "华尔街"
+          ],
+          "ai_score": 0.75
+        },
+        {
+          "title": "Agent竞争推演：谁会赢，谁会死？",
+          "link": "https://www.huxiu.com/article/4836961.html",
+          "summary": "反直觉提问——人类历史上最强超级个体、全球最强一人公司OPC、孤身就开创了“个人Agent”范式、Github史上增长最快的项目、无数荣耀加身的OpenClaw，为什么被收编了？2026年2月14日，情人节。OpenClaw创始人Peter Steinberger在博客上宣布加入OpenAI。这个消息让很多人...... 本文来自微信公众号： AIGC从0到1 ，作者：王零壹，原文标题：《Agent竞争推演：谁会赢，谁会死，按什么逻辑（万字慎点）》，头图来自：AI生成 反直觉提问——人类历史上最强超级个体、全球最强一人公司OPC、孤身就开创了“个人Agent”范式...",
+          "published": "Thu, 26 Feb 2026 04:38:32 GMT",
+          "author": "AIGC从0到1",
+          "tags": [
+            "新颖",
+            "独到",
+            "科技",
+            "AI",
+            "用户分析"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "手机大涨价时代来了，AI 红利没吃上，AI 黑利先吃撑",
+          "link": "https://www.huxiu.com/article/4837074.html",
+          "summary": "你的下一部手机，可能要贵到让你怀疑人生。今天凌晨发布的三星机皇S26已经先涨为敬，涨了1000多，这仅仅是开始。据新浪科技从供应链人士、行业分析机构及多家手机品牌内部人士处获悉，3月起，手机涨价将进入加速阶段，新品涨幅最低可达1000元以上。从目前确定的方案来看，3月之后发布的新品，涨价幅度将明显扩大，最低涨...... 本文来自微信公众号： APPSO ，作者：发现明日产品的，原文标题：《手机大涨价时代来了！AI 红利没吃上，AI 黑利先吃撑》 你的下一部手机，可能要贵到让你怀疑人生。 今天凌晨发布的三星机皇S26已经先涨为敬，涨了1000多，这仅仅是开始。...",
+          "published": "Thu, 26 Feb 2026 04:25:31 GMT",
+          "author": "AppSo",
+          "tags": [
+            "独特视角",
+            "独到",
+            "手机",
+            "千元机",
+            "数码"
+          ],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "http://localhost:8878/geekpark/304": {
+      "url": "http://localhost:8878/geekpark/304",
+      "title": "AI新浪潮观察 | 极客公园",
+      "description": "极客公园AI系列文章 - Powered by RSSHub",
+      "link": "https://geekpark.net/column/304",
+      "updated": "Thu, 26 Feb 2026 06:16:29 GMT",
+      "items_count": 6,
+      "items": [
+        {
+          "title": "文科生 72 小时杀入 GitHub 全球榜：我没写一行代码，但指挥了一支 AI 军队",
+          "link": "https://geekpark.net/news/360337",
+          "summary": "AI 新世界的入场券：好奇心、想象力、勇气。 2 月 16 日，Sam Altman 发布了一条推文， 宣布 OpenClaw 创始人 Peter Steinberger 正式加入 OpenAI 。 在 GitHub 上，OpenClaw 有超过 19 万颗星，是 AI Agent 时代现象级的开源项目。 然而，聚光灯之外，一行代码都没有写过的中国创业者——Naughty Labs CEO 天润，却出现在了 OpenClaw 项目的贡献者榜单上。 截至发稿，他已跻身前 30 名。排在他前后的，是一群拥有十年以上开发经验的硅谷工程师和开源老炮。 在这份名单上，他可能是唯一一个不写代码的人...",
+          "published": "Thu, 26 Feb 2026 03:24:47 GMT",
+          "author": "周永亮",
+          "tags": [
+            "天润",
+            "OpenClaw",
+            "文科生",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "用插件「杀死」软件？！Anthropic证明：最不懂技术的人，能造出最专业的企业AI工具",
+          "link": "https://geekpark.net/news/360330",
+          "summary": "Anthropic把销冠脑子里10年经验，一键变成全公司用的AI工具。 就在刚刚，Anthropic 用一个插件系统，重新解锁了 AI Agent 的新玩法，也将再次「杀死」一批 AI 创企。 2 月 24 日，Anthropic 更新了 Claude Cowork 插件系统，用户可以从零开始定制化打造 AI 插件，将 Claude 能力直接以工具包的方式融入工作流中，打开整个企业级定制化插件市场。 不仅如此，Anthropic 还同步配置了插件创造、使用以及管理的工具平台。Claude 会通过提问，引导用户定制技能、设置相关命令并接入 MCP...",
+          "published": "Wed, 25 Feb 2026 10:11:06 GMT",
+          "author": null,
+          "tags": [
+            "Anthropic",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "智能体手机，抢跑 2026 的「方法论」",
+          "link": "https://geekpark.net/news/360320",
+          "summary": "当春晚红包把 AI 推向全民，真正的战场已经转移到系统层：谁能让用户在手机上「用起来」。 2026 年春节，AI 行业的「全民曝光位」再次落在晚会与红包上。 「春晚互动」的形态被重新定义：除夕夜的互动入口中，各类 AI 趣味玩法与「抽红包/抽科技礼」被深度融合，打包成更轻量化的「顺手一用」体验，让用户在参与春晚福利的同时，自然感受 AI 的便捷性。 这个显眼的变化在于，厂商争夺的核心已从「引导用户下载 App」，转向「让 AI 成为用户随手可用的能力」。这一趋势在 2025 年底已有清晰信号，努比亚 M153 豆包手机助手技术预览版，就率先将 AI...",
+          "published": "Wed, 25 Feb 2026 08:54:46 GMT",
+          "author": null,
+          "tags": [
+            "努比亚手机",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "详读 2 万 3 千字的新「AI 宪法」之后，我理解了 Anthropic 的痛苦",
+          "link": "https://geekpark.net/news/360315",
+          "summary": "一切关于 AI 的问题，都会回归到人本身。 作者｜汤一涛 编辑｜靖宇 2025 年，Anthropic 的研究员 Kyle Fish 做了一个实验：让两个 Claude 模型自由对话，看看会发生什么。 结果出乎所有人预料。 两个 AI 没有聊技术，没有互相出题，而是反复滑向同一个话题： 讨论自己是否有意识 。 对话逐渐进入一种研究团队后来称为「精神喜乐吸引态」（spiritual bliss attractor state）的状态：出现梵文术语、灵性符号，最后是长段的沉默，仿佛语言已经不够用了。 这个实验被复现了多次，结果始终一致。没人能解释为什么。 2026 年 1...",
+          "published": "Wed, 25 Feb 2026 08:23:36 GMT",
+          "author": null,
+          "tags": [
+            "Anthropic",
+            "科技",
+            "AI",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "20 年生命 vs 2 小时训练，Sam Altman 开始算「人肉成本」",
+          "link": "https://geekpark.net/news/360313",
+          "summary": "AI 行业最严厉的父亲 作者｜ 桦林舞王 编辑｜ 靖宇 如果几年前有人跟我说，「你以后可能会看到科技公司 CEO，用人类的生存成本来为 AI 辩护」，我大概会觉得这是科幻小说里的情节。 但这个看似荒诞的场景，真的发生了。 不久前的印度 AI 峰会上，Sam Altman 面对 AI 能源消耗的质疑时，给出了一个让人意外的回应：「 训练一个人需要 20 年的生命和这期间吃掉的所有食物，相比之下，讨论 AI 的能源使用是『不公平』的 。」 这不是简单的狡辩，而是一种全新的叙事策略——当你的产品被指控太耗能时，不妨算算人类的「训练成本」。 01 「人肉成本」的精妙算计 Altman...",
+          "published": "Wed, 25 Feb 2026 08:21:15 GMT",
+          "author": null,
+          "tags": [
+            "Sam Altman",
+            "AI",
+            "科技",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "Seedance 2.0 炸场之后，豆包 Seed2.0 能否再度勇攀高峰？",
+          "link": "https://geekpark.net/news/360308",
+          "summary": "豆包大模型 2.0 已正式发布。 最近一段时间，Seedance 2.0 几乎成为 AI 视频圈绕不开的名字。 从游戏制作人冯骥的赞叹到美国导演的青睐，中国 AI 视频模型首次在全球范围内实现「物理规律遵循」的断层式领先。 不过，视频生成的爆火只是字节 AI 冰山露出海面的一角。更深层的变革发生在 2 月 14 日——豆包大模型 2.0 的跨代升级，标志着字节正式进入「原生多模态 Agent」时代。 这种升级的核心逻辑，在于字节跳动通过底层能力的全面重构，让 AI 真正实现了从「信息分发」到「任务处理」。不同于部署门槛较高的开源项目，豆包 2.0...",
+          "published": "Wed, 25 Feb 2026 06:51:23 GMT",
+          "author": null,
+          "tags": [
+            "豆包",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.7
+        }
+      ]
+    },
+    "http://localhost:8878/36kr/information/AI": {
+      "url": "http://localhost:8878/36kr/information/AI",
+      "title": "36氪 - 36氪",
+      "description": "36氪 - 36氪 - Powered by RSSHub",
+      "link": "https://www.36kr.com/information/AI",
+      "updated": "Thu, 26 Feb 2026 06:16:41 GMT",
+      "items_count": 18,
+      "items": [
+        {
+          "title": "AI除幻第一股诞生，高瓴君联赚疯，这家公司，押中OpenClaw万亿美元赛道",
+          "link": "https://www.36kr.com/p/3699604630220672",
+          "summary": "这个春节，港股AI认购王诞生！当人人追逐Agent风口，海致科技却押注「流程自动化」：企业真正需要的，不是会聊天的AI，而是能把业务跑通的AI。这个判断，跟OpenClaw之父押注的万亿美金赛道竟不谋而合。 这个春节，「AI旋风」引爆港股。 不久前，海致科技（02706）结束招股。 超额认购 4068倍 ，直接刷新纪录，成了2026年开年的「认购王」。 更耐人寻味的是：大模型光环退潮、资金回归理性，高瓴、君联、BAI资本等机构却集体下注。 他们押注的是 能把企业流程跑起来的AI 。 作为公认的「AI除幻第一股」，海致科技做的很直白： 让AI少胡说，让系统能落地干活 。...",
+          "published": "Thu, 26 Feb 2026 04:06:16 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "别了，OpenClaw，19个顶尖AI夜袭硅谷，3万刀金融终端变「废铁」",
+          "link": "https://www.36kr.com/p/3699607766839176",
+          "summary": "OpenClaw被谷歌封禁之后，Perplexity扔出深水炸弹，重磅上线Perplexity Computer，让全球19个顶尖AI集体打工，全程不用动手。与此同时，Anthropic官宣的一场重磅收购，让Claude执行力迎来质变。 OpenClaw最强平替来了！ 今天， Perplexity重磅发布「Perplexity Computer」，一键将全球最强AI装进入一个系统 。 它可以「端到端」完成全流程任务，包括研究、设计、编写代码、部署、管理任何项目。 更具体讲，Perplexity Computer是一个极其强大的多模态系统， 通过精密的编排，让多个AI智能体并行工作 。...",
+          "published": "Thu, 26 Feb 2026 04:06:02 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "狂赚1200亿美元后，黄仁勋宣布，又一个转折点到来了",
+          "link": "https://www.36kr.com/p/3699542976688648",
+          "summary": "英伟达发布了2026财年第四季度和全年财报，过去12个月公司净利润达到1200亿美元。 一年赚到上千亿美元的公司屈指可数，比如谷歌母公司Alphabet、微软、苹果，以及英伟达。 但问题在于，几乎没有谁是在这样短的时间里冲上这个量级的——三年前，英伟达的利润还只有44亿美元。短短36个月，它的盈利规模翻了近30倍。这种跃迁在现代科技史上都不多见。 英伟达手握约九成高端AI芯片市场份额，而这些芯片正是全球科技巨头疯狂建设数据中心的“燃料”。谷歌、亚马逊、微软、Meta今年合计计划砸下超过5000亿美元扩建AI算力，最大的受益方是谁，其实不难猜。...",
+          "published": "Thu, 26 Feb 2026 03:33:01 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "我们再也回不去了：AI 围城下的技术生态现实",
+          "link": "https://www.36kr.com/p/3699513419214723",
+          "summary": "当日历上的年份从五翻到六，短短不到一个月，我们就能感受到新的一年注定与过往截然不同。去年 11 月的“拐点”早已为这一切埋下伏笔，而开源 AI 项目一夜爆火，引发硬件抢购潮与上市公司股价剧烈波动，这一切都在表明：2026 年，无疑是一个清晰、崭新的世界。 现在回想起来或许有些难以相信，但五年前 Copilot 刚问世时，那些如今看来十分基础的功能，在当时却令人无比震撼。就像我们如今习以为常的...",
+          "published": "Thu, 26 Feb 2026 03:32:26 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "你的AI功能确实有效，客户为什么不感兴趣",
+          "link": "https://www.36kr.com/p/3699510861393798",
+          "summary": "我们常听到“人工智能应该以透明的方式运行才能赢得信任”。但就人类信任而言，这真的就足够了吗？仅仅解释人工智能代理的内部运作机制或推理过程就能保证用户留存吗？如果产品的目标用户群体不仅限于早期用户，我们就需要更深入地研究：人工智能的心理模型。 虽然可解释的人工智能方法，包括内部运作机制、推理过程和决策树的透明度，在建立用户信任方面发挥着重要作用，但它们并不能保证用户信任。理解一项功能的工作原理并不等同于认同它，对吗？...",
+          "published": "Thu, 26 Feb 2026 03:31:51 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "美国 AI 巨头炮轰 DeepSeek，只为给五角大楼递投名状？",
+          "link": "https://www.36kr.com/p/3699496060596099",
+          "summary": "差评君真的很好奇 Anthropic 的创始人达利奥到底经历了什么。 这家公司怎么能这么有活。 前两天，这家号称和 OpenAI 齐名的世界顶级 AI 公司，突然发了一份“讨贼檄文”。 在报告里， 它指责 DeepSeek、月之暗面和 MiniMax 这三家中国头部 AI 公司，说它们正在通过“蒸馏”的方式对 Claude 发起攻击。 啥叫蒸馏呢？简单来说，就是 Anthropic 指控这几家公司，搞了两万四千个马甲账号，跟 Claude 聊了一千六百万次，一千六百万这个数字大家记住，后面要考。 然后把这些聊出来的“高水平对话”打包带走，拿回去喂给自己的模型吃。...",
+          "published": "Thu, 26 Feb 2026 02:19:50 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Anthropic 联创 Jack Clark：AI 开始干活，企业该改什么？",
+          "link": "https://www.36kr.com/p/3699421176034050",
+          "summary": "AI 将以多快的速度重塑经济运行？ 2026 年 2 月 25 日，Anthropic 联合创始人 Jack Clark 在接受《纽约时报》采访时给出了直截了当的答案。 他透露，在 Anthropic 内部，绝大多数代码已由 AI 编写完成，工程师的核心职责已从敲击代码转变为管理 AI。 在 Jack Clark 看来，AI 已跨越了“说话者”的阶段，正式成为“行动者”。然而，技术演进的速度，已经将企业常规的组织调整节奏远远甩在身后。 这预示着一个必然的结局：当 AI 深度介入核心业务流程，企业所面临的挑战已不再是单纯的降本增效，而是底层运转逻辑的全面重构。 第一节｜AI 开始干活了...",
+          "published": "Thu, 26 Feb 2026 01:30:46 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "36氪独家｜前商汤工业机器人团队创业融资数千万，自研一体化控制轮式工业机器人",
+          "link": "https://www.36kr.com/p/3699447737118342",
+          "summary": "作者丨欧雪 编辑丨袁斯来 硬氪独家获悉，通用工业具身智能平台——深圳天元兴科技有限公司（下称“天元兴”）近日完成数千万元天使轮融资。本次投资方包括弘德投资、盛世鸿元、海愿资本等机构，募集资金将主要用于端到端具身智能控制技术研发、研发团队扩张及工业场景规模化落地。 天元兴成立于2024年12月，前身为商汤科技工业机器人事业部，由商汤工业机器人原班核心团队完成拆分成立，是商汤科技X生态成员企业。自成立之初便自带深厚的AI大模型技术沉淀，成熟的工业机器人技术积累，工程化落地能力以及行业头部客户落地经验。...",
+          "published": "Thu, 26 Feb 2026 01:13:11 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.75
+        },
+        {
+          "title": "OpenClaw 背后：那些尚没被说透的关键",
+          "link": "https://www.36kr.com/p/3698768594153990",
+          "summary": "AI的世界保持热闹的状态，近来的热闹属于OpenClaw。 但大家在整OpenClaw的同时一个可能的疑问是：这东西需要本地电脑，和过去的Claude Code，Manus，Cowork到底有啥区别啊！ 功能其实没啥区别，但功能之外区别还真挺大。 跳出功能表象，从谁控制AI和对未来互联网冲击的深层视角来看， OpenClaw 的出现，本质上是一场关于“谁有权掌控AI”的权力下放。 下放当然就得每个人都能用，所以开源的这种形式就很关键。 这可比过去哪些产品亲民多了，纸黄金和你手里金条的那种区别。 AI版本的“全民持枪” OpenClaw其实是第一个有热度的Personal Agent。...",
+          "published": "Thu, 26 Feb 2026 01:10:22 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "字节攻城，阿里筑墙：2026年AI云战役的终局推演",
+          "link": "https://www.36kr.com/p/3698818984424195",
+          "summary": "价格屠夫、饱和式投入、MaaS新王，火山引擎正在用字节的C端逻辑，重写阿里云等古典云计算厂商构建的B端游戏规则。 商业世界的战争，往往在宣战之前就已经打响了第一枪。过去三个月，中国云计算市场发生了一场静默却剧烈的动态博弈。 故事的显性线索是春晚。2月，火山引擎接棒阿里云，成为第二个登上这一顶级舞台的云厂商。这不只是一次单纯的品牌曝光，在云计算领域，春晚合作伙伴的身份是触及最广泛政企客户信任的敲门砖，也是服务国家级项目的能力认证，顺利扛住了除夕夜19亿次AI互动、633亿tokens峰值并发。阿里云曾凭此筑起高墙，如今火山引擎正试图翻越。...",
+          "published": "Thu, 26 Feb 2026 01:09:46 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "春节长辈使用AI实录：“打断AI不礼貌”，中老年的「AI热情」仅维持三分钟",
+          "link": "https://www.36kr.com/p/3698756507267587",
+          "summary": "除夕夜这天，厨房灶上煲着老火汤，餐桌上已经摆好了白切鸡，电视机从下午就一直开着，一直等到晚上八点，春节联欢晚会正式播出。我们家其实很少真正“认真看春晚”，更多时候只是让它当作春节的背景音，陪着一家人聊天、吃东西。 今年春晚的赞助商里，多了一个以前从没在年夜饭桌上出现过的词——豆包。我们家在广东惠州的一个小镇上，“豆包”对于南方人而言可能不是那么熟悉的食物，我妈看到豆包，随口问了句这是什么？...",
+          "published": "Wed, 25 Feb 2026 23:57:05 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "谷歌封杀OpenClaw？封号、薅羊毛与巨头焦虑",
+          "link": "https://www.36kr.com/p/3698746420933125",
+          "summary": "作为一个开源的 AI 智能体（AI Agent），OpenClaw 有多火，相信已经不言自明。 2026 开年以来，从 Google、OpenAI、字节到月之暗面（Kimi）、智谱，几乎各家大模型厂商、AI 硬件厂商都在想方设法主动支持 OpenClaw。仅仅三个月，围绕 OpenClaw 也几乎长出了一条完整的产业链。 但就在这几天，Google 选择了大面积封禁通过 OpenClaw 接入 Google AI 服务（Antigravity 与 Gemini AI Ultra）的订阅用户账号，不断有用户在 Reddit、X 以及 Google AI for Developers...",
+          "published": "Wed, 25 Feb 2026 23:56:45 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "大模型的幻觉是如何让我“致幻”的",
+          "link": "https://www.36kr.com/p/3698755219844737",
+          "summary": "最危险的盲区不在于“犯错”，而在于无法识别自己正在犯错。 春节前与发小老于相聚，他偷偷把我拉到一边，说要给我讲个奇遇，让我判断一下，是他病了还是AI病了。 以下是他的故事： 老于的儿子2025年6月参加高考，考试之前要体检，报告显示合格，有几项指标略显异常，他一时手欠，把报告发给了DeepSeek，DeepSeek R1在2025年初爆火，性能比肩OpenAI o1正式版的同时，实现了超低训练成本，并且全面开源，给全球AI界带来了一场“地震”，老于对它高度信任。DeepSeek倒也尽职，每一项分析得都很详细，只是有个用黑体标注的部分让老于倒吸一口冷气——...",
+          "published": "Wed, 25 Feb 2026 23:54:23 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "AI漫剧2026：千亿深水区的工业化豪赌与审美突围",
+          "link": "https://www.36kr.com/p/3698752894774917",
+          "summary": "在2026年的内容江湖里，AI漫剧已然从微短剧体系里的“新鲜尝试”，正式升级为一条拥有独立用户心智、产值惊人的黄金赛道。 如果说2025年是大家口中的“AI漫剧元年”，那么站在2026年回看，这个行业正经历着一场从“草台班子”向工业化巨头的集体进化。 2025年，中国微短剧行业在跨越千亿市场门槛的同时，意外地让“AI漫剧”这个物种完成了从边缘到主角的跃迁。 DataEye的数据揭示了一个惊人的事实：2025年漫剧在投数量全年增长超过了76倍。 这种爆发式的增长，将2026年的市场推向了243.6亿元的新高度，甚至有乐观预估，到2030年，这个细分赛道将划走850亿元的蛋糕。...",
+          "published": "Wed, 25 Feb 2026 23:42:19 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "刚刚上桌的短剧顶流，被AI抄了后路？",
+          "link": "https://www.36kr.com/p/3698738154631940",
+          "summary": "2026年文娱春节档延续了近期行业态势，长剧、电影表现波澜不惊，短剧则依旧锋芒毕露。红果平台诞生了四部观看量破10亿、站内热度值破亿的“双破亿”作品，稳稳握牢了流量密码。 这样的成绩，并非偶然，而是过去一年短剧快速进化、全面爆发，实现市场规模突破千亿大关后的必然结果。与此同时，短剧演员也集体在内娱“上桌”，接连获得主流电影节、网络盛典的认可与品牌代言的青睐，迎来了人气与事业的双重高峰。...",
+          "published": "Wed, 25 Feb 2026 23:36:59 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "清华数学系大神跳槽OpenAI，曾主导SAM与Llama开发，Sora负责人：欢迎加入",
+          "link": "https://www.36kr.com/p/3698659222023813",
+          "summary": "又一位清华大神加入OpenAI！ 刚刚，毕业清华大学数学系，曾在Meta FAIR工作3.75年、主导过 SAM 与 Llama 多项核心工作的研究员 张鹏川（Pengchuan Zhang） 宣布离职。 他的下一站，是来到OpenAI，投身于 世界模拟与机器人学 （World Simulation and Robotics）方向的研究。 他在推特中写道，自己非常期待探索视觉感知、世界模型与机器人技术如何融合，构建真正的“物理智能”。 OpenAI世界模拟方向的负责人之一、Sora项目资深领导 Aditya Ramesh 也第一时间留言欢迎。...",
+          "published": "Wed, 25 Feb 2026 12:21:11 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "万亿外贸市场，为何成了AI应用富矿",
+          "link": "https://www.36kr.com/p/3698652804919176",
+          "summary": "深夜一点多，普通外贸业务员都下班安睡之际，一批特殊员工已悄悄上岗。 一名中东客户发出了首次询盘消息，传统的外贸经营模式下，这个询盘要到第二天业务员上班才能处理。但有公司配置了AI Agent智能客服，它快速响应，流利与客户沟通从询价到样品推荐、物流节奏等细节。海撒网的客户由于这一即时反馈信息，很快与AI敲定了后续的沟通意向。第二天外贸业务员上线后跟进线索，最终一个数千万的订单得以敲定下来。 这是一家上海机械设备公司发生过的真实案例，类似的场景过去大半年里正在不少外贸企业上演。 除了客服场景，从营销素材制作生成、 AI选品到智能获客等多个环节，AI正悄然成为外贸场景里的新变量。...",
+          "published": "Wed, 25 Feb 2026 12:20:44 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "千亿AI芯片巨单，AMD拿下，苏妈赢麻",
+          "link": "https://www.36kr.com/p/3698580553952902",
+          "summary": "AMD，又拿下一笔AI基建大单！ 智东西2月25日报道，昨晚，AMD与Meta宣布达成一项重磅合作，Meta将部署包括最高达 6GW（1GW=10⁹W）的AMD Instinct GPU 在内的AMD算力。根据协议安排，Meta还将分阶段获得多达1.6亿股的认股权证， 约等于AMD 10%的股份 。 AMD没有明确给出这笔交易的具体金额，但其董事会主席兼CEO苏姿丰在电话会中透露，每1GW GPU订单的规模将达到 “百亿美元”量级（double-digit billions）。 据此推算，此次合作的整体规模 至少超过了600亿美元（约合人民币4120.5亿元）...",
+          "published": "Wed, 25 Feb 2026 12:13:44 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/tmtpost/column/6916385": {
+      "url": "http://localhost:8878/tmtpost/column/6916385",
+      "title": "AGI-钛媒体官方网站",
+      "description": "专注AI新浪潮，第一时间带来AI新模式、新产品、新趋势。 - Powered by RSSHub",
+      "link": "https://www.tmtpost.com/column/6916385",
+      "updated": "Thu, 26 Feb 2026 06:16:51 GMT",
+      "items_count": 14,
+      "items": [
+        {
+          "title": "碾压预期的Q4财报，英伟达释放终极信号：AI竞赛的终局不在云端，在物理世界",
+          "link": "https://www.tmtpost.com/7890251.html",
+          "summary": "英伟达（NVIDIA）发布了2026财年第四季度及全年财报。一组极具暴力美学的核心数据，直接击碎了华尔街盘旋数月的“AI泡沫论”。 第四季度营收创纪录地达到 681亿美元 ，同比激增 73% ，远超市场一致预期；2026财年全年净利润飙升至约 1200亿美元 ，公司市值稳居 4.8万亿美元 高位。这份财报以无可辩驳的真金白银印证了AI基础设施建设的惊人韧性。 然而，剥开数据表象，英伟达正在借由这份财报向全球宣告：这家芯片巨头正试图跳出单纯的“卖铲人”身份，以一种极具侵略性的姿态，重构全球AI产业的价值链底座。 数据中心撑起重任，生态壁垒筑牢霸权...",
+          "published": "Thu, 26 Feb 2026 02:13:00 GMT",
+          "author": "AGI-Signal",
+          "tags": [
+            "大公司",
+            "焦点",
+            "AGI",
+            "机器人",
+            "台积电"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "OpenClaw 背后：那些尚没被说透的关键",
+          "link": "https://www.tmtpost.com/7889987.html",
+          "summary": "文 | 李智勇 AI的世界保持热闹的状态，近来的热闹属于OpenClaw。 但大家在整OpenClaw的同时一个可能的疑问是：这东西需要本地电脑 ，和过去的Claude Code，Manus，Cowork到底有啥区别啊！ 功能其实没啥区别，但功能之外区别还真挺大。 跳出功能表象，从谁控制AI和对未来互联网冲击的深层视角来看，OpenClaw 的出现，本质上是一场关于“谁有权掌控AI”的权力下放。 下放当然就得每个人都能用，所以开源的这种形式就很关键。 这可比过去哪些产品亲民多了，纸黄金和你手里金条的那种区别。 OpenClaw其实是第一个有热度的Personal Agent。...",
+          "published": "Thu, 26 Feb 2026 02:00:00 GMT",
+          "author": "李智勇",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "《2028全球智能危机》引发震荡，MiroThinker回应：我不带来危机，只放大你们人类选择",
+          "link": "https://www.tmtpost.com/7890213.html",
+          "summary": "图片由AI生成 钛媒体AGI注： 最近 Citrini Research 发布的来自2028年6月的AI风险设想报告，在华尔街已掀起轩然大波。报告题为《2028全球智能危机——来自未来的金融史思想实验》（THE 2028 GLOBAL INTELLIGENCE CRISIS: A Thought Exercise in Financial History, from the Future）。 尽管作者表示，该报告仅是以思想实验模拟极端情景，并非真实预测，但其描绘的场景已经足够悲观：预计到2028年，AI全面替代白领岗位，消费引擎失灵，或引发全球经济陷入前所未有的系统性危机。...",
+          "published": "Thu, 26 Feb 2026 01:27:00 GMT",
+          "author": "LCC_Beta版",
+          "tags": [
+            "热门话题",
+            "最新话题",
+            "AGI",
+            "主编精选文章",
+            "人工智能"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "刚刚上桌的短剧顶流，被AI抄了后路？",
+          "link": "https://www.tmtpost.com/7889962.html",
+          "summary": "文 | 文娱价值官 ，作者 | 陈桐，编辑 | 美圻 2026年文娱春节档延续了近期行业态势，长剧、电影表现波澜不惊，短剧则依旧锋芒毕露。红果平台诞生了四部观看量破10亿、站内热度值破亿的“双破亿”作品，稳稳握牢了流量密码。 这样的成绩，并非偶然，而是过去一年短剧快速进化、全面爆发，实现市场规模突破千亿大关后的必然结果。与此同时，短剧演员也集体在内娱“上桌”，接连获得主流电影节、网络盛典的认可与品牌代言的青睐，迎来了人气与事业的双重高峰。...",
+          "published": "Thu, 26 Feb 2026 00:00:00 GMT",
+          "author": "文娱价值官",
+          "tags": [
+            "文娱",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "散了80亿后，AI还是没能留住县城年轻人",
+          "link": "https://www.tmtpost.com/7889695.html",
+          "summary": "文 | 听筒Tech（ID:tingtongtech），作者 | 杨 林， 编辑 | 饶 言 AI“红包大战”的狂欢，在春节假期过后，逐渐退温。 当然，各互联网大厂开始盘点战绩。比如，下载榜谁第一了，活跃用户冲到多少千万了。 但有意思的是，在广袤的下沉市场，AI的普及以及使用之路，远比想象中的要复杂。 2026年的春节，我回到了湖南中部的一个县城。这里年味浓郁，麻将声贯穿昼夜，烟花爆竹的碎屑铺满了街角。 与往年不同的是，短视频里多了许多“AI生成的拜年视频”，亲戚群也开始转发“AI写的春联”。甚至连县里的商场大屏上，也在播放互联网大厂的AI广告，“动动嘴就能点奶茶。”...",
+          "published": "Wed, 25 Feb 2026 11:04:11 GMT",
+          "author": "听筒Tech",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.75
+        },
+        {
+          "title": "Anthropic指控中国AI公司，马斯克为什么第一个跳出来骂？",
+          "link": "https://www.tmtpost.com/7889357.html",
+          "summary": "文 | 版面之外，作者｜画画 2月23日，Anthropic发了一篇措辞强硬的博文。 标题里写着DeepSeek、Moonshot、MiniMax三家公司，指控它们用2.4万个虚假账户、进行了超过1600万次交互，“工业级蒸馏”Claude的核心能力。 博文里充斥着国家安全、出口管制、生物武器这样的词汇。看起来是一份技术报告，但是，读起来怎么都更像是一份政治宣言。 发完之后，国内外舆论就炸了。 但最耐人寻味的不是指控本身，而是第一个跳出来回骂的人：马斯克。 他在X上连发几条：...",
+          "published": "Wed, 25 Feb 2026 08:58:27 GMT",
+          "author": "版面之外",
+          "tags": [
+            "大公司",
+            "钛度号",
+            "AGI",
+            "主编精选文章"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "春节AI风暴：AI走出幼年期",
+          "link": "https://www.tmtpost.com/7889427.html",
+          "summary": "文 | 伯虎财经（bohuFN），作者 | All too well 今年2月，当恒生科技指数还处在一路向南的惨淡当中时，有两个“小登”走出了不一样的行情。上市两个月的智谱从一月底的226.4港元每股一路飙升到发稿前的628港元每股；上市不过一个半月的MiniMax从一月底的473港元每股上涨到发稿前的880港元每股。 两家公司市值均一度跨过3000亿港元关口。 3000亿港元是什么概念？横向对比一下就很直观——当前B站总市值957.17 亿港元，京东市值约为3016.79亿港元。也就是说，这两家成立还尚不足十年的AI公司，市值已经悄然越过许多互联网巨头。...",
+          "published": "Wed, 25 Feb 2026 08:21:27 GMT",
+          "author": "伯虎财经",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "AI 助手狂飙骤停，越权、失控与巨头的达摩克利斯之剑",
+          "link": "https://www.tmtpost.com/7888586.html",
+          "summary": "2026年，曾一路狂飙的AI助手（AI Agent）赛道，终于听到了刺耳的急刹车声。 短短数月内，从开发者侧的“删库惨案”，到平台侧的强制收权，一系列标志性事件接连炸场，彻底撕碎了行业“唯效率论”的遮羞布。 谷歌无预警封禁开源智能体用户，微软直接拔掉Copilot访问机密文档的网线——这些看似孤立的巨头动作，指向了同一个残酷的产业真相： AI助手的野蛮生长已告落幕，以安全为底线、以“可控”为核心的全球行业生态重构，正全面铺开 。 当“效率神话”撞上“安全红线” 硅谷巨头们的封禁动作，表面是补齐安全欠账，实则是对AI底层生态边界的强势捍卫。...",
+          "published": "Wed, 25 Feb 2026 07:09:53 GMT",
+          "author": "硅谷Tech news",
+          "tags": [
+            "大公司",
+            "焦点",
+            "AGI",
+            "微软",
+            "新电子"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "人工智能大模型资本泡沫汹涌",
+          "link": "https://www.tmtpost.com/7889465.html",
+          "summary": "文 | 巨潮WAVE，作者 | 谢泽锋，编辑 | 杨旭然 港股大模型的资本狂欢，已经令投资圈咋舌不已。 马年首个交易日，港股 AI双星闪耀。当天恒生科技指数收跌近3%，AI大模型龙头智谱股价则逆势狂飙42.72%，当天收盘总市值暴增到3200亿港元。MiniMax（稀宇科技）也不遑多让，斩获3000亿港元市值。两家公司的市值规模，已经超越了一众互联网大厂。 京东一年的营收接近1.2万亿元，已是中国零售产业中的支柱性企业，美团坐拥线下消费的核心位置。智谱、MiniMax的营收不及其零头的零头的零头，而且还处于连续的亏损之中。...",
+          "published": "Wed, 25 Feb 2026 06:56:03 GMT",
+          "author": "巨潮WAVE",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "谷歌连夜封禁，全行业集体堵截，OpenClaw 到底动了谁的蛋糕？",
+          "link": "https://www.tmtpost.com/7889312.html",
+          "summary": "文 | 字母AI 人红是非多，自OpenClaw爆火以后它就不断遭受争议，现如今谷歌打响了反OpenClaw的第一枪。 谷歌DeepMind工程师、前Windsurf CEO瓦伦·莫汉（Varun Mohan）在社交媒体上代表公司发声。 他声称，谷歌检测到自家AI编程工具Antigravity后端出现“大规模恶意使用行为”，严重降低了正常用户的服务质量。 这些被封禁的用户有一个共同特征，他们都使用OpenClaw工具，将Antigravity后端当作代理来访问谷歌的Gemini模型服务。 这就导致，其行为产生了远超预期的计算负载，谷歌不得不快速切断这些用户的访问权限以保护其他用户的体验。...",
+          "published": "Wed, 25 Feb 2026 06:55:50 GMT",
+          "author": "字母AI",
+          "tags": [
+            "大公司",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "一场由Seedance2.0改写的AI视频战争",
+          "link": "https://www.tmtpost.com/7889134.html",
+          "summary": "文 | 科技新知，作者丨栀子 编辑丨九黎 山姆·奥特曼万万没想到，当年他在Sora发布会上吹过的牛，竟被东大的Seedance2.0率先实现！ 过去48小时，Seedance 2.0彻底刷屏。这个被海内外夸爆的AI视频工具，给科技圈带来的震撼，不亚于当年DeepSeek横空出世时的暴力冲击。 然而，闪电般的技术暴击，也迎来了闪电般的成人礼，上线仅仅两天，Seedance2.0就被“地表最强法务部”迪士尼发送律师函。这记重拳，瞬间将这场技术狂欢，拖入了冰冷而复杂的法律与现实战场。...",
+          "published": "Wed, 25 Feb 2026 04:01:26 GMT",
+          "author": "科技新知",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "从删库到删邮件：AI助手的“致命漏洞”，暴露人机协同底层危机",
+          "link": "https://www.tmtpost.com/7889165.html",
+          "summary": "2026年春节前后，两起密集爆发的AI助手“失控”事件，给狂热的AI代理赛道泼了一盆冷水。 先是Meta超级智能团队的AI安全与对齐总监Summer Yue（夏梦）在X 平台（原推特）披露，其部署的OpenClaw智能体无视“确认后再操作”的指令，擅自删除200多封重要邮件，她需紧急赶回电脑前强制终止进程； 再回溯至1月29日，中国开发者屈江峰使用谷歌DeepMind旗下Antigravity AI清理项目文件时，一个路径空格引发系统误判，导致全盘数据不可逆丢失。...",
+          "published": "Wed, 25 Feb 2026 03:07:00 GMT",
+          "author": "AGI-Signal",
+          "tags": [
+            "热门话题",
+            "焦点",
+            "AGI",
+            "主编精选文章",
+            "大模型"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "春节档狂降37%？不，AI洗牌才是真“震撼”",
+          "link": "https://www.tmtpost.com/7888859.html",
+          "summary": "文 | 娱乐资本论，作者 | 吴晓宇 春节档下降37%、seedance2.0发布、豆包千问以及机器人大量应用于春晚上、恒生科技指数大跌，请问以上哪个才是2026年春节最重要的大事？ 在电影制片人宇哥看来，这或许都是一件事：文娱行业的范式变了，AI才是未来。在这种恐慌之下，他听过各种激进的说法，比如说“春节电影都值得用SeeDance重做一遍，成本只要几十万就行（不考虑版权和肖像权）”、比如说“影视业会真正工业化，从业人员工资不应该高于富士康”……但在这些电影老炮开脑洞的时候，真正的AI漫剧公司已经在行动了。...",
+          "published": "Wed, 25 Feb 2026 02:02:32 GMT",
+          "author": "娱乐资本论",
+          "tags": [
+            "深度",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "MiniMax和智谱的那道坎，中国AI公司都逃不掉",
+          "link": "https://www.tmtpost.com/7888895.html",
+          "summary": "文 | 版面之外，撰文｜画画 今天中国AI公司的命，某种程度是被资本市场捏在手里的。 2月23日这天，这句话应验了。 两家公司加起来，一天蒸发了一个快手（截至2026年2月23日，快手港股市值约1150亿港元）。 但是就在几天前，它们还风光无限，双双冲过3000亿市值。 这过山车，坐得有点猛。 但真正让人琢磨的，不是涨跌本身，而是藏在背后的一个问题： 这两家公司明明已经赚钱了、有用户了、技术也不差，为什么资本市场说不买账就不买账了？ 1、先看看它们都干了啥 智谱，1月8号上市，发行价116港元，43天后涨到725港元。...",
+          "published": "Wed, 25 Feb 2026 00:40:19 GMT",
+          "author": "版面之外",
+          "tags": [
+            "大公司",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/juejin/aicoding": {
+      "url": "http://localhost:8878/juejin/aicoding",
+      "title": "AI 编程",
+      "description": "AI 编程 - Powered by RSSHub",
+      "link": "https://aicoding.juejin.cn/?contentType=2",
+      "updated": "Thu, 26 Feb 2026 06:16:44 GMT",
+      "items_count": 8,
+      "items": [
+        {
+          "title": "3 个 AI 同时写代码：我用 Git Worktree 提升开发效率 3 倍",
+          "link": "https://juejin.cn/post/7610699226663387136",
+          "summary": "现在 AI 编程工具有很多，Claude code、Codex、Gemini，国内的 GLM、Minimax、Kimi 那你有没有遇到过这样一种情况？ 我想要开发一个新功能，但是我不确定哪一个模型能够实现的最好。 所以我希望可以多个模型围绕同一个功能并行去开发，最终挑选效果最好的那一个版本留下来。 怎么去实现呢？ 有人说可以使用 Git 分支功能去实现，大致过程是这样的： 假设我们现在有一个主分支 main，上面存放着我们的基础代码。现在我想要开发一个新功能，这个新功能我让三个模型同时去开发。 那么此时我需要拉三个分支出来： feature-codex feature-claude...",
+          "published": "Thu, 26 Feb 2026 06:08:16 GMT",
+          "author": "和平hepingfly",
+          "tags": [
+            "人工智能",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "天塌了，trae 国际版改成按 token 计费了，额度直接缩水到原来的 1/5",
+          "link": "https://juejin.cn/post/7610692103748567086",
+          "summary": "TRAE 还是顶不住成本的压力，开始把计费方式从次数改成 token 量了 按照 TRAE 自己的宣传是加量不加价，但是从它官网发的折算比例，可知道，实际权益是大幅度的缩水了 TRAE 国际版计费方案升级常见问题 原来，TRAE 的 pro 会员每个月是 10美刀，可以提问 300次；按照这个折算比例，最新方案直接缩水到 50次提问！权益大幅度缩水啊！！！ 原来 300次还勉强够用，现在 50次就只够用 1 周了 结果 TRAE 在宣传的时候，居然还在说什么加量不加价！！！！ TRAE 国际版计费方案升级：加量不加价，更强模型效果，SOLO 问答多 3 倍 除了 TRAE 之外，智谱...",
+          "published": "Thu, 26 Feb 2026 06:04:03 GMT",
+          "author": "ponponon",
+          "tags": [
+            "人工智能",
+            "Trae"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "实测避坑｜Coze AI Chat视频生成巨坑！别再被AI夸大宣传割韭菜了",
+          "link": "https://juejin.cn/post/7610676768316309554",
+          "summary": "实测避坑｜Coze AI Chat视频生成巨坑！别再被AI夸大宣传割韭菜了 作为深耕AI辅助开发的个人开发者，近期我踩了一个巨坑——用Coze AI Chat开发视频相关个人项目，从代码开发到视频生成，全程踩雷不断。今天不绕弯子，直接掏心窝子劝各位开发者： 别再被网络上夸大其词的AI宣传忽悠了，目前普通人能接触到的AI，根本做不到完全独立开发项目，尤其是视频生成领域，坑到你怀疑人生 ！ 先给核心结论：Coze AI Chat在视频生成、制作方面的能力，弱到离谱；网络上吹爆的seedance...",
+          "published": "Thu, 26 Feb 2026 05:45:15 GMT",
+          "author": "FE_C_P小麦",
+          "tags": [
+            "人工智能",
+            "Coze",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "AI编程从0到1之10X提效（AI 终端 ）03篇",
+          "link": "https://juejin.cn/post/7610647626187685926",
+          "summary": "AI 编程工具对比：2026 年最值得上手的 Top10 CLI 终端工具 03篇 这两个月我在终端里来回切了十来个 AI 编程工具，最直观的感受是：它们都叫“Coding Agent”，但干活方式完全不是一类物种。 有的像“会写代码的实习生”，有的像“能直接接管项目的副驾”，还有的更像“命令行里的问答外挂”。 如果你也在纠结“到底该装哪个”，这篇就按实战来拆，不讲空话。 先说清楚口径：这份 Top10 统计的是 CLI 终端原生工具，并且以 2026 年 2 月 14 日还能确认活跃维护/可用的官方产品为主。 像 Cursor、Cline 这种 IDE 插件生态很强，但不算“终端原生...",
+          "published": "Thu, 26 Feb 2026 05:38:50 GMT",
+          "author": "KEEN的创享空间",
+          "tags": [
+            "人工智能",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Anthropic旗下Claude Code系列工具的接连更新，引发AI似乎正在颠覆传统互联网行业的恐慌？市场正在用真金白银投票",
+          "link": "https://juejin.cn/post/7610616824569823272",
+          "summary": "人工智能初创公司 Anthropic 旗下 Claude 系列工具的接连更新，引发了美股市场的剧烈震荡，AI 技术对传统产业的颠覆性影响成为市场核心焦虑点，从软件股到大型科技企业，多板块遭遇重挫，市场陷入 “先抛售再求证” 的恐慌交易模式，而 Anthropic 即将到来的产品直播更让市场的不安情绪达到顶峰。 此次美股大跌的直接导火索，是 Citrini Research 发布的一篇假想研报，该报告描绘了 2028 年 AI 技术可能导致白领大规模失业、消费者支出下降、软件相关贷款违约乃至经济萎缩的悲观图景，成为压垮市场情绪的最后一根稻草。美东时间 2 月 23...",
+          "published": "Thu, 26 Feb 2026 03:07:40 GMT",
+          "author": "智海观潮",
+          "tags": [
+            "阅读",
+            "Claude",
+            "AIGC",
+            "Cursor"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "🚀 Claude Agent SDK 使用指南：文件检查点与回退 (File Checkpointing)",
+          "link": "https://juejin.cn/post/7610647626186752038",
+          "summary": "在开发 AI Agent 时，AI 难免会“翻车”——比如在修改代码、编辑文件时写出错误的逻辑，或者直接把原本正常的代码改坏了。这时候，如果能有一个“后悔药”或者“时光机”，一键让文件恢复到 AI 修改前的状态，那将极大提升开发体验。 在 Claude Agent SDK 中， 文件检查点 (File Checkpointing) 功能就是这样一颗“后悔药”。它能够在代理会话期间自动跟踪文件更改，并允许你将文件无缝回退到之前的任何已知安全状态！ 本文将带你详细了解如何在 Python 环境下使用 Claude Agent SDK...",
+          "published": "Thu, 26 Feb 2026 02:13:22 GMT",
+          "author": "ZaneAI",
+          "tags": [
+            "人工智能",
+            "Agent",
+            "Claude",
+            "LangChain"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "【微服务】Spring AI 使用详解：让微服务无缝集成 AI 能力",
+          "link": "https://juejin.cn/post/7610609260541771839",
+          "summary": "【微服务】Spring AI 使用详解：让微服务无缝集成 AI 能力 在微服务架构主导企业级开发的今天，AI 技术的落地已从“可选”变为“刚需”。无论是智能客服、内容生成，还是数据分析、风险管控，开发者都希望能在熟悉的微服务体系中快速集成 AI 能力，无需跨越技术栈鸿沟。Spring AI 的出现，恰好解决了这一痛点——作为 Spring 生态官方推出的 AI 工程化框架，它延续了 Spring“约定优于配置”的核心思想，让 Java 微服务开发者能像使用 Spring Boot、Spring Cloud 一样，轻松对接各类 AI 模型，实现 AI 能力与微服务的无缝融合。...",
+          "published": "Thu, 26 Feb 2026 01:45:26 GMT",
+          "author": "what丶k",
+          "tags": [
+            "人工智能",
+            "后端",
+            "Java",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "我用 AI 搭了一个公众号自动发文系统,全程踩坑实录(已跑通)",
+          "link": "https://juejin.cn/post/7610616824568954920",
+          "summary": "这不只是教程，是一份完整实录。（实在不会，丢给CC让他帮你安装） 从【以为很简单】到【真的跑通】，每一个报错、每一个坑、每一次修正，我都记下来了。 最终结果：从素材到公众号草稿箱，全链路自动化可用。 🤖 这个系统在做什么？ 一句话： 给素材 → 自动写文 → 自动排版 → 自动进公众号草稿箱。 我只做三件事： 写选题与要求（ task.md ) 放原始素材（ materials.md ) 审稿后点击发布 其余流程由系统自动完成。 这套系统的核心价值在于： 把重复劳动交给机器，把创意决策留给人。 🧩 系统组成（最终可用架构） 整个系统由 5 个核心组件构成： 1. Claude Code...",
+          "published": "Thu, 26 Feb 2026 01:32:21 GMT",
+          "author": "AI山脚学长",
+          "tags": [
+            "代码人生",
+            "AI编程",
+            "OpenAI",
+            "AIGC"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://feed.infoq.com/": {
+      "url": "https://feed.infoq.com/",
+      "title": "InfoQ",
+      "description": "InfoQ feed",
+      "link": "https://www.infoq.com",
+      "updated": null,
+      "items_count": 1,
+      "items": [
+        {
+          "title": "谷歌将其开发者文档带入AI智能体时代",
+          "link": "https://www.infoq.com/news/2026/02/google-documentation-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "谷歌宣布推出开发者知识API的公开预览版，该版本搭载了模型上下文协议（MCP）服务器。这为人工智能开发工具提供了一种简洁、机器可读的途径，使其能够直接访问谷歌官方开发者文档。作者：克劳迪奥·马索洛",
+          "published": "Wed, 25 Feb 2026 10:00:00 GMT",
+          "author": "Claudio Masolo",
+          "tags": [
+            "Google Cloud",
+            "Agents",
+            "Documentation",
+            "Artificial Intelligence",
+            "DevOps"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://www.ithome.com/rss/": {
+      "url": "https://www.ithome.com/rss/",
+      "error": "Error processing feed: ValueError: Failed to parse feed: <unknown>:2:2: not well-formed (invalid token)",
+      "items": []
+    },
+    "https://www.v2ex.com/feed/tab/tech.xml": {
+      "url": "https://www.v2ex.com/feed/tab/tech.xml",
+      "error": "连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+      "items": []
+    }
+  },
+  "errors": [
+    "https://medium.com/feed/llamaindex-blog: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://huggingface.co/blog/feed.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://www.jiqizhixin.com/rss: 连接失败: All connection attempts failed (可能无法访问该地址，需要检查网络或使用代理)",
+    "https://www.ithome.com/rss/: Error processing feed: ValueError: Failed to parse feed: <unknown>:2:2: not well-formed (invalid token)",
+    "https://www.v2ex.com/feed/tab/tech.xml: 连接失败:  (可能无法访问该地址，需要检查网络或使用代理)"
+  ]
+}

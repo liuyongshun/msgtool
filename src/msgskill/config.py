@@ -38,9 +38,11 @@ class NewsSourceConfig(SourceConfig):
     fetch_limit: dict[str, int] = field(default_factory=dict)
     cache_ttl: int = 300
     keywords: list[str] = field(default_factory=list)
+    story_types: list[str] = field(default_factory=lambda: ["top", "new"])  # HackerNews故事类型
     selectors: dict[str, str] = field(default_factory=dict)
     ai_filter_enabled: bool = True
     translation_enabled: bool = True
+    recent_days: Optional[int] = None  # 只处理最近N天内的数据（如果未设置，则使用 llm.recent_days）
 
 
 @dataclass
@@ -205,9 +207,11 @@ class ConfigManager:
                 fetch_limit=config.get("fetch_limit", {}),
                 cache_ttl=config.get("cache_ttl", 300),
                 keywords=config.get("keywords", []),
+                story_types=config.get("story_types", ["top", "new"]),
                 selectors=config.get("selectors", {}),
                 ai_filter_enabled=config.get("ai_filter_enabled", True),
-                translation_enabled=config.get("translation_enabled", True)
+                translation_enabled=config.get("translation_enabled", True),
+                recent_days=config.get("recent_days")
             )
         
         return result

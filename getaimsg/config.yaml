@@ -150,7 +150,7 @@ rss:
     
     # AI 工具与框架
     - name: "Hugging Face Blog"
-      url: "https://rsshub.app/huggingface/daily-papers"
+      url: "http://localhost:8878/huggingface/daily-papers"
       enabled: true
       category: "company_blog"
       tags: ["AI工具", "技术博客"]
@@ -241,7 +241,7 @@ rss:
       ai_filter_enabled: true
       translation_enabled: true
     - name: "钛媒体"
-      url: "https://rsshub.app/tmtpost/column/6916385"
+      url: "http://localhost:8878/tmtpost/column/6916385"
       enabled: true
       category: "news"
       tags: ["AI资讯"]
@@ -257,7 +257,7 @@ rss:
     
     # 技术社区
     - name: "掘金"
-      url: "https://rsshub.app/juejin/aicoding"
+      url: "http://localhost:8878/juejin/aicoding"
       enabled: true
       category: "tech_community"
       tags: ["AI资讯", "技术博客"]

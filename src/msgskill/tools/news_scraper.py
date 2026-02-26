@@ -126,24 +126,27 @@ async def _fetch_hackernews(
     
     # 从配置获取 API URL
     base_url = source_config.api_base_url
-    
-    # 定义三类故事类型
+
+    # 从配置读取需要抓取的故事类型（读取 sources.json 中的 story_types，默认 top+new）
+    configured_types = getattr(source_config, 'story_types', None) or ["top", "new"]
+    type_map = {"top": "topstories", "new": "newstories", "best": "beststories"}
     story_types = [
-        ("topstories", "top"),
-        ("newstories", "new"),
-        ("beststories", "best")
-    ]
-    
+        (type_map[t], t) for t in configured_types if t in type_map
+    ] or [("topstories", "top")]
+
+    # 从配置读取每类最多抓取数量（fetch_limit.max，默认50）
+    fetch_per_type = source_config.fetch_limit.get("max", 50) if source_config.fetch_limit else 50
+
     async with httpx.AsyncClient(timeout=30.0) as client:
         try:
-            # 第一步：抓取三类列表的ID
+            # 第一步：抓取各类列表的ID
             all_story_data = []  # [(story_id, story_type), ...]
             
             for endpoint, story_type in story_types:
                 try:
                     response = await client.get(f"{base_url}/{endpoint}.json")
                     response.raise_for_status()
-                    story_ids = response.json()[:100]  # 每类取前100条
+                    story_ids = response.json()[:fetch_per_type]  # 按配置取条目数
                     
                     for sid in story_ids:
                         all_story_data.append((sid, story_type))
