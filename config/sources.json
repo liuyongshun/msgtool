@@ -37,8 +37,7 @@
         ],
         "story_types": [
           "top",
-          "new",
-          "best"
+          "new"
         ],
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -56,7 +55,7 @@
           "技术博客"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "openai_blog": {
         "enabled": true,
@@ -83,12 +82,12 @@
         ],
         "note": "RSS源不稳定，暂时禁用",
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "huggingface": {
         "enabled": true,
         "name": "Hugging Face Blog",
-        "url": "https://rsshub.app/huggingface/daily-papers",
+        "url": "http://localhost:8878/huggingface/daily-papers",
         "description": "Hugging Face官方博客",
         "category": "company_blog",
         "tags": [
@@ -97,7 +96,7 @@
         ],
         "note": "RSS源不稳定，暂时禁用",
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "sebastian_raschka": {
         "enabled": true,
@@ -110,7 +109,7 @@
           "技术博客"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "anthropic_blog": {
         "enabled": true,
@@ -201,45 +200,6 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "sequoia_blog": {
-        "enabled": true,
-        "name": "Sequoia Capital Blog",
-        "url": "https://www.sequoiacap.com/feed/",
-        "description": "红杉资本博客（关注AI趋势）",
-        "category": "trends",
-        "tags": [
-          "AI资讯",
-          "趋势分析"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
-      "thoughtworks": {
-        "enabled": true,
-        "name": "Thoughtworks Insights",
-        "url": "https://www.thoughtworks.com/rss/insights.xml",
-        "description": "Thoughtworks技术洞察",
-        "category": "trends",
-        "tags": [
-          "AI资讯",
-          "趋势分析"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
-      "gartner": {
-        "enabled": true,
-        "name": "Gartner Blog",
-        "url": "https://www.gartner.com/en/newsroom/rss",
-        "description": "Gartner技术趋势分析",
-        "category": "trends",
-        "tags": [
-          "AI资讯",
-          "趋势分析"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "product_hunt": {
         "enabled": true,
         "name": "Product Hunt AI Tools",
@@ -275,7 +235,7 @@
           "技术博客"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "arstechnica": {
         "enabled": true,
@@ -312,7 +272,7 @@
           "AI资讯"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "huxiu": {
         "enabled": true,
@@ -324,7 +284,7 @@
           "AI资讯"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       },
       "geekpark": {
         "enabled": true,
@@ -354,7 +314,7 @@
       "tmtpost": {
         "enabled": true,
         "name": "钛媒体",
-        "url": "https://rsshub.app/tmtpost/column/6916385",
+        "url": "http://localhost:8878/tmtpost/column/6916385",
         "description": "钛媒体科技媒体（通过RSSHub）",
         "category": "news",
         "tags": [
@@ -366,7 +326,7 @@
       "juejin": {
         "enabled": true,
         "name": "掘金",
-        "url": "https://rsshub.app/juejin/aicoding",
+        "url": "http://localhost:8878/juejin/aicoding",
         "description": "掘金技术社区（需官方API）",
         "category": "tech_community",
         "tags": [
@@ -463,17 +423,16 @@
           "ai"
         ],
         "trending_types": [
-          "pushed",
-          "created",
-          "stars"
+          "created"
         ],
+        "created_days": 15,
         "star_limits": {
           "pushed": 500,
-          "created": 100,
+          "created": 300,
           "stars": 500
         },
         "ai_filter_enabled": true,
-        "translation_enabled": false
+        "translation_enabled": true
       }
     },
     "arxiv": {
@@ -528,7 +487,7 @@
         "translation_enabled": true
       },
       "cs_ro": {
-        "enabled": true,
+        "enabled": false,
         "name": "Robotics",
         "category": "cs.RO",
         "description": "机器人领域论文",
@@ -538,7 +497,7 @@
         "translation_enabled": true
       },
       "stat_ml": {
-        "enabled": true,
+        "enabled": false,
         "name": "Machine Learning (Statistics)",
         "category": "stat.ML",
         "description": "统计学中的机器学习",
@@ -630,7 +589,7 @@
       "enabled": true,
       "tasks": {
         "arxiv": {
-          "enabled": true,
+          "enabled": false,
           "time": "21:52",
           "max_results": 20,
           "note": "每个分类最多抓取的论文数（优化token消耗：从50减少到20）",
@@ -670,7 +629,7 @@
     "model_name": "deepseek-chat",
     "max_tokens": 1000,
     "temperature": 0.3,
-    "recent_days": 7
+    "recent_days": 1
   },
   "notion_sync": {
     "enabled": true,
@@ -678,9 +637,9 @@
     "description": "Notion同步配置 - 将output数据同步到Notion数据库",
     "note": "1. 在Notion中创建集成获取api_token\n2. 为每个数据源创建独立的数据库并连接集成\n3. 数据库建议字段：Title(title), Summary(rich_text), Source URL(url), Source Type(select), Article Tag(select), Author(rich_text), Score(number), Published Date(date), Tags(multi_select), AI Score(number), Story Type(select)",
     "auto_sync": {
-      "github": false,
-      "rss": false,
-      "hackernews": false,
+      "github": true,
+      "rss": true,
+      "hackernews": true,
       "arxiv": false
     },
     "databases": {

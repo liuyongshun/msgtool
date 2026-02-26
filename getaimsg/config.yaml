@@ -1,0 +1,340 @@
+# Agent Skill 独立配置文件
+# 包含四种数据源的配置：arXiv、HackerNews、RSS、GitHub
+
+# arXiv 配置
+arxiv:
+  enabled: true
+  max_results: 5  # 每个分类最多获取的论文数（5 × 5核心分类 = 最多25篇，控制翻译耗时）
+  categories:
+    # ── 核心分类（默认启用，覆盖主流 AI/ML 方向）──
+    - key: "cs.AI"
+      name: "Artificial Intelligence"
+      enabled: true
+      translation_enabled: true
+    - key: "cs.LG"
+      name: "Machine Learning"
+      enabled: true
+      translation_enabled: true
+    - key: "cs.CL"
+      name: "Computation and Language (NLP)"
+      enabled: true
+      translation_enabled: true
+    - key: "cs.CV"
+      name: "Computer Vision"
+      enabled: true
+      translation_enabled: true
+    - key: "cs.NE"
+      name: "Neural and Evolutionary Computing"
+      enabled: true
+      translation_enabled: true
+    # ── 扩展分类（按需启用，将 enabled 改为 true 即可）──
+    - key: "cs.RO"
+      name: "Robotics"
+      enabled: false
+      translation_enabled: true
+    - key: "stat.ML"
+      name: "Machine Learning (Statistics)"
+      enabled: false
+      translation_enabled: true
+    - key: "cs.IR"
+      name: "Information Retrieval"
+      enabled: false
+      translation_enabled: true
+    - key: "cs.SE"
+      name: "Software Engineering"
+      enabled: false
+      translation_enabled: true
+    - key: "cs.MA"
+      name: "Multiagent Systems"
+      enabled: false
+      translation_enabled: true
+    - key: "cs.HC"
+      name: "Human-Computer Interaction"
+      enabled: false
+      translation_enabled: true
+    - key: "cs.DC"
+      name: "Distributed Computing"
+      enabled: false
+      translation_enabled: true
+    - key: "eess.AS"
+      name: "Audio and Speech Processing"
+      enabled: false
+      translation_enabled: true
+
+# HackerNews 配置
+hackernews:
+  enabled: true
+  api_base_url: "https://hacker-news.firebaseio.com/v0"
+  max_results: 15
+  story_types:
+    - "top"
+    - "new"
+    - "best"       
+  ai_filter_enabled: true  # 建议启用：内容混杂，需要智能筛选
+  translation_enabled: true  # 建议启用：英文内容需要翻译
+  recent_days: 7  # 只处理最近N天内的数据（如果未设置，则使用 llm.recent_days）
+
+# RSS 配置
+rss:
+  enabled: true
+  max_results: 20  # 每个RSS源最多获取的条目数
+  ai_filter_enabled: true  # 建议启用：来源多样，需要智能筛选
+  translation_enabled: true  # 建议启用：多语言内容需要翻译
+  feeds:
+    # 国际科技媒体
+    - name: "MIT Technology Review AI"
+      url: "https://www.technologyreview.com/feed/"
+      enabled: true
+      category: "technology_news"
+      tags: ["AI资讯", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "Ars Technica"
+      url: "https://arstechnica.com/feed/"
+      enabled: true
+      category: "technology_news"
+      tags: ["AI资讯", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "TechCrunch AI"
+      url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "Techmeme"
+      url: "https://medium.com/feed/llamaindex-blog"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    
+    # AI 公司官方博客
+    - name: "OpenAI News"
+      url: "https://openai.com/news/rss.xml"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI资讯", "AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "Anthropic Blog"
+      url: "http://localhost:8878/anthropic/engineering"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI资讯", "AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "Google AI Blog"
+      url: "https://research.google/blog/rss/"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI资讯", "AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "Meta AI Blog"
+      url: "http://localhost:8878/meta/ai/blog"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI资讯", "AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "Microsoft AI Blog"
+      url: "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI资讯", "AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    
+    # AI 工具与框架
+    - name: "Hugging Face Blog"
+      url: "https://rsshub.app/huggingface/daily-papers"
+      enabled: true
+      category: "company_blog"
+      tags: ["AI工具", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "LangChain Blog"
+      url: "https://blog.langchain.dev/rss/"
+      enabled: true
+      category: "engineering"
+      tags: ["AI工具", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "LlamaIndex Blog"
+      url: "https://blog.llamaindex.ai/feed"
+      enabled: false
+      category: "engineering"
+      tags: ["AI工具", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "Product Hunt AI Tools"
+      url: "https://www.producthunt.com/feed?category=artificial_intelligence"
+      enabled: true
+      category: "ai_tools"
+      tags: ["AI工具"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    
+    # 个人博客与社区
+    - name: "AI News (Sebastian Raschka)"
+      url: "https://magazine.sebastianraschka.com/feed"
+      enabled: true
+      category: "personal_blog"
+      tags: ["AI资讯", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    
+    # 学术论文聚合
+    - name: "Hugging Face Daily Papers"
+      url: "https://huggingface.co/blog/feed.xml"
+      enabled: true
+      category: "papers"
+      tags: ["AI论文"]
+      ai_filter_enabled: true
+      translation_enabled: true
+
+    # 中文科技媒体
+    - name: "少数派"
+      url: "https://sspai.com/feed"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "量子位 (QbitAI)"
+      url: "https://www.qbitai.com/feed"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "机器之心"
+      url: "https://www.jiqizhixin.com/rss"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "虎嗅"
+      url: "http://localhost:8878/huxiu/article"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: false
+    - name: "极客公园"
+      url: "http://localhost:8878/geekpark/304"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      note: "RSS feed需验证"
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "36氪AI"
+      url: "http://localhost:8878/36kr/information/AI"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "钛媒体"
+      url: "https://rsshub.app/tmtpost/column/6916385"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "IT之家"
+      url: "https://www.ithome.com/rss/"
+      enabled: true
+      category: "news"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    
+    # 技术社区
+    - name: "掘金"
+      url: "https://rsshub.app/juejin/aicoding"
+      enabled: true
+      category: "tech_community"
+      tags: ["AI资讯", "技术博客"]
+      note: "需要通过官方API接口，非RSS"
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "InfoQ"
+      url: "https://feed.infoq.com/"
+      enabled: true
+      category: "tech_community"
+      tags: ["AI资讯", "技术博客"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "V2EX"
+      url: "https://www.v2ex.com/feed/tab/tech.xml"
+      enabled: true
+      category: "tech_community"
+      tags: ["AI资讯"]
+      ai_filter_enabled: true
+      translation_enabled: true
+    
+    # Newsletter (可选，需要邮件处理)
+    - name: "TLDR Tech"
+      url: "https://incomplete.placeholder"
+      enabled: false
+      category: "newsletter"
+      tags: ["AI资讯"]
+      note: "Newsletter类型，非RSS，需邮件流处理"
+      ai_filter_enabled: true
+      translation_enabled: true
+    - name: "The Rundown AI"
+      url: "https://incomplete.placeholder"
+      enabled: false
+      category: "newsletter"
+      tags: ["AI资讯"]
+      note: "Newsletter类型，非RSS，需邮件流处理"
+      ai_filter_enabled: true
+      translation_enabled: true
+
+# GitHub 配置
+github:
+  enabled: true
+  api_base_url: "https://api.github.com"
+  max_results: 20
+  languages:
+    - "python"
+    - "javascript"
+    - "typescript"
+    - "rust"
+  trending_types:
+    - "created"  # 只查询最近创建的项目
+  star_limits:
+    pushed: 500
+    created: 300  # 近半个月创建的项目，star > 300
+    stars: 300  # star > 300
+  created_days: 15  # 只获取近半个月（15天）创建的项目
+  # query_keywords 已弃用，不用于 API 查询，也不用于本地匹配
+  # API 层只通过 language + created + stars 过滤代码库
+  # ai_filter_enabled=false 时的关键词匹配逻辑写在 tools/github_fetcher.py 中
+  ai_filter_enabled: false  # 可以禁用：有白名单机制，分类相对明确
+  translation_enabled: true   # 启用翻译：对项目描述进行中文翻译
+
+# LLM 配置（用于AI筛选和翻译）
+# 注意：HackerNews 和 RSS 需要启用 LLM 进行智能筛选
+# arXiv 和 GitHub 可以禁用 LLM（分类明确/有白名单机制）
+llm:
+  enabled: true  # 需要启用：HackerNews 和 RSS 需要智能筛选
+  provider: "deepseek"
+  api_key: ""  # 需要配置API密钥
+  api_url: "https://api.deepseek.com/v1/chat/completions"
+  model_name: "deepseek-chat"
+  max_tokens: 1000
+  temperature: 0.3
+  recent_days: 7  # 只处理最近N天内的数据
+
+# 全局设置
+global:
+  request_timeout: 30
+  user_agent: "Mozilla/5.0 (compatible; MsgSkill/1.0; +https://github.com/msgskill)"
+  default_cache_ttl: 300

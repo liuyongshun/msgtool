@@ -21,172 +21,25 @@ from typing import Any, Optional, Dict, List
 
 import httpx
 
-from ..utils.cache import get_cache
-from ..utils.logger import logger
-from ..utils.ai_filter import classify_titles_batch
-from ..models import ArticleItem, FetchResult, truncate_summary, classify_article_tag
-from ..utils.translator import translate_article_item
-from ..utils.parser import clean_text
-from ..config import get_config
-from ..utils.github_db_new import get_github_db
+from utils.cache import get_cache
+from utils.logger import logger
+from utils.ai_filter import classify_titles_batch
+from models import ArticleItem, FetchResult, truncate_summary, classify_article_tag
+from utils.translator import translate_article_item
+from utils.parser import clean_text
+from config import get_config
+from utils.github_db_new import get_github_db
 
 
-def _load_existing_github_items() -> Dict[str, ArticleItem]:
-    """
-    从output/github/目录加载已存在的GitHub项目数据
-    
-    Returns:
-        Dict[str, ArticleItem]: 以source_url为key的已存在项目字典
-    """
-    # 获取output/github目录
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
-    github_output_dir.mkdir(parents=True, exist_ok=True)
-    
-    existing_items: Dict[str, ArticleItem] = {}
-    
-    # 查找所有JSON文件（可能是github_projects.json或其他格式）
-    json_files = list(github_output_dir.glob("*.json"))
-    
-    for json_file in json_files:
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            # 处理不同的数据格式
-            items = []
-            if isinstance(data, dict):
-                # 如果是FetchResult格式
-                if "items" in data:
-                    items = data["items"]
-                # 如果是项目数据库格式（github_projects.json）
-                else:
-                    # 检查格式：可能是ArticleItem格式（有source_url）或项目元数据格式（有html_url和status）
-                    for project_data in data.values():
-                        if not isinstance(project_data, dict):
-                            continue
-                        
-                        # 判断格式：ArticleItem格式有source_url，项目元数据格式有html_url和status
-                        source_url = project_data.get("source_url") or project_data.get("html_url", "")
-                        if not source_url:
-                            continue
-                        
-                        # 如果是ArticleItem格式（已有title和summary），直接使用
-                        if project_data.get("title") and project_data.get("summary"):
-                            try:
-                                # 修正可能不合法的 article_tag（保证符合 ArticleItem 的 Literal 限制）
-                                valid_tags = {"AI资讯", "AI工具", "AI论文", "技术博客"}
-                                tag = project_data.get("article_tag") or "AI工具"
-                                if tag not in valid_tags:
-                                    project_data["article_tag"] = "AI工具"
-                                if project_data.get("summary"):
-                                    project_data["summary"] = truncate_summary(project_data["summary"], 300)
-                                item = ArticleItem(**project_data)
-                                items.append(item)
-                            except Exception as e:
-                                logger.debug(f"跳过无效ArticleItem数据: {e}")
-                                continue
-                        # 如果是项目元数据格式（有html_url和status），需要转换为ArticleItem
-                        elif project_data.get("html_url") and "status" in project_data:
-                            try:
-                                item = ArticleItem(
-                                    title=project_data.get("title", project_data.get("full_name", "")),
-                                    summary=truncate_summary(project_data.get("summary") or project_data.get("description", ""), 300),
-                                    source_url=source_url,
-                                    published_date=project_data.get("published_date") or (project_data.get("created_at", "").replace("Z", "+00:00") if project_data.get("created_at") else None),
-                                    source_type="github",
-                                    article_tag=project_data.get("article_tag", "AI工具"),
-                                    author=project_data.get("author") or (project_data.get("owner", {}).get("login") if isinstance(project_data.get("owner"), dict) else None),
-                                    score=project_data.get("score") or project_data.get("stargazers_count", 0),
-                                    comments_count=project_data.get("comments_count"),
-                                    tags=project_data.get("tags") or project_data.get("topics", []),
-                                    story_type=project_data.get("story_type") or project_data.get("trend_type"),
-                                    ai_score=project_data.get("ai_score")
-                                )
-                                items.append(item)
-                            except Exception as e:
-                                logger.debug(f"跳过无效项目元数据: {e}")
-                                continue
-                        # 如果是“简化的项目元数据格式”（只有 html_url / topics / ai_score 等），也需要转换
-                        # 该格式常见于历史版本/清理脚本之后：没有 status/title/source_url 字段
-                        elif project_data.get("html_url"):
-                            try:
-                                full_name = project_data.get("full_name", "")
-                                name = project_data.get("name", "")
-                                title = project_data.get("title") or (f"{full_name}: {name}" if full_name or name else source_url)
-                                summary = project_data.get("summary") or project_data.get("description", "") or f"GitHub项目: {name}"
-                                ai_score = project_data.get("ai_score", 0.0) or 0.0
-                                item = ArticleItem(
-                                    title=title,
-                                    summary=truncate_summary(clean_text(summary, max_length=300), 300),
-                                    source_url=source_url,
-                                    published_date=project_data.get("published_date") or (project_data.get("created_at", "").replace("Z", "+00:00") if project_data.get("created_at") else None),
-                                    source_type="github",
-                                    # 归一化 article_tag，避免非法枚举值导致后续加载失败
-                                    article_tag=project_data.get("article_tag", "AI工具") if project_data.get("article_tag") in {"AI资讯", "AI工具", "AI论文", "技术博客"} else "AI工具",
-                                    author=project_data.get("author"),
-                                    score=project_data.get("score") or project_data.get("stargazers_count", 0),
-                                    tags=project_data.get("tags") or project_data.get("topics", []),
-                                    story_type=project_data.get("story_type") or project_data.get("trend_type"),
-                                    ai_score=ai_score
-                                )
-                                items.append(item)
-                            except Exception as e:
-                                logger.debug(f"跳过无效简化项目元数据: {e}")
-                                continue
-            elif isinstance(data, list):
-                items = data
-            
-            # 将items转换为字典，以source_url为key（兼容dict和ArticleItem）
-            for item_data in items:
-                try:
-                    item: Optional[ArticleItem] = None
-                    source_url: str = ""
-                    
-                    if isinstance(item_data, ArticleItem):
-                        # 已经是ArticleItem对象
-                        item = item_data
-                        source_url = item.source_url
-                    elif isinstance(item_data, dict):
-                        # 还未转换的dict数据
-                        source_url = item_data.get("source_url") or item_data.get("html_url", "")
-                        if not source_url:
-                            continue
-                        if item_data.get("summary"):
-                            item_data["summary"] = truncate_summary(item_data["summary"], 300)
-                        item = ArticleItem(**item_data)
-                    else:
-                        # 其他类型直接跳过
-                        continue
-                    
-                    if source_url and source_url not in existing_items:
-                        existing_items[source_url] = item
-                except Exception as e:
-                    logger.debug(f"跳过无效item: {e}")
-                    continue
-                    
-        except Exception as e:
-            logger.warning(f"加载文件 {json_file} 失败: {e}")
-            continue
-    
-    logger.info(f"📂 从output/github/加载了 {len(existing_items)} 个已存在的项目")
-    return existing_items
+# Skill 不需要文件缓存，已移除 _load_existing_github_items 和 _save_github_repos_to_file 函数
 
 
 def _save_github_repos_to_file(repos: List[Dict], is_ai_project_map: Optional[Dict[str, bool]] = None) -> Path:
     """
-    保存GitHub项目数据到output/github/目录（全量数据）
-    
-    Args:
-        repos: GitHub项目原始数据列表
-        is_ai_project_map: 项目URL到是否为AI项目的映射 {url: is_ai}
-        
-    Returns:
-        Path: 保存的文件路径
+    Skill 不需要文件缓存，此函数已禁用
     """
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
-    github_output_dir.mkdir(parents=True, exist_ok=True)
-    
-    output_file = github_output_dir / "github_projects.json"
+    # Skill 不需要文件缓存，直接返回
+    return Path("/dev/null")
     
     # 加载已有数据
     existing_data = {}
@@ -355,20 +208,10 @@ def _save_github_repos_to_file(repos: List[Dict], is_ai_project_map: Optional[Di
 
 def _save_github_items_to_file(items: List[ArticleItem], all_repos: Optional[List[Dict]] = None) -> Path:
     """
-    保存GitHub项目数据到output/github/目录（兼容旧接口）
-    
-    Args:
-        items: ArticleItem列表
-        all_repos: 所有原始项目数据（用于全量保存）
-        
-    Returns:
-        Path: 保存的文件路径
+    Skill 不需要文件缓存，此函数已禁用
     """
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
-    github_output_dir.mkdir(parents=True, exist_ok=True)
-    
-    # 使用统一的文件名：github_projects.json
-    output_file = github_output_dir / "github_projects.json"
+    # Skill 不需要文件缓存，直接返回
+    return Path("/dev/null")
     
     # 加载已有数据（如果存在）
     existing_data = {}
@@ -491,16 +334,23 @@ async def fetch_github_trending(
     trending_types = github_config.get("trending_types", ["pushed", "created", "stars"])
     ai_filter_enabled = github_config.get("ai_filter_enabled", True)
     translation_enabled = github_config.get("translation_enabled", True)
+    created_days = github_config.get("created_days", 15)  # 从配置读取创建时间限制（默认15天）
+    
+    # 获取查询关键词列表（支持多个关键词，使用 OR 连接）
+    query_keywords = github_config.get("query_keywords", ["ai"])
+    if isinstance(query_keywords, list) and len(query_keywords) > 1:
+        # 多个关键词使用 OR 连接，带引号的短语保持原样
+        keyword_query = " OR ".join([f'"{kw}"' if " " in kw else kw for kw in query_keywords])
+    else:
+        # 单个关键词或默认值
+        keyword_query = query_keywords[0] if isinstance(query_keywords, list) and query_keywords else "ai"
     
     # 获取 star 限制配置
     star_limits = github_config.get("star_limits", {
         "pushed": 500,
         "created": 300,
-        "stars": 500
+        "stars": 300
     })
-    
-    # 获取 created 时间范围（天数），默认15天
-    created_days = github_config.get("created_days", 15)
     
     # 如果指定了语言，使用指定语言；否则使用配置的语言列表
     if language:
@@ -538,27 +388,27 @@ async def fetch_github_trending(
                         # 语言过滤
                         query_parts.append(f"language:{lang}")
                         
-                        # 不使用关键词过滤，改为通过 language + created_days + stars 控制范围
-                        # AI 相关性通过后续 AI 筛选或本地关键词匹配完成
+                        # 不通过关键词限制，只通过 star、时间、语言来限制代码库
+                        # AI 相关筛选在后续通过关键词匹配或 AI 筛选完成
                         
                         # 根据类型构建不同的查询
                         if trend_type == "pushed":
-                            # 最近7天有推送的项目
+                            # 最近7天有推送的项目（保持原逻辑）
                             pushed_date = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
                             query_parts.append(f"pushed:>={pushed_date}")
-                            query_parts.append(f"stars:>{star_limits.get('pushed', 500)}")
+                            query_parts.append(f"stars:>{star_limits.get('pushed', 500)}")  # 从配置读取star限制
                             sort_by = "updated"
                         elif trend_type == "created":
-                            # 使用配置的 created_days（默认15天）
+                            # 使用从配置读取的创建时间限制（默认15天）
                             created_date = (datetime.now() - timedelta(days=created_days)).strftime("%Y-%m-%d")
                             query_parts.append(f"created:>={created_date}")
-                            query_parts.append(f"stars:>{star_limits.get('created', 300)}")
+                            query_parts.append(f"stars:>{star_limits.get('created', 300)}")  # 从配置读取star限制
                             sort_by = "stars"
                         else:  # stars
-                            # 高热度项目
+                            # 高热度项目（使用从配置读取的创建时间限制）
                             date_limit = (datetime.now() - timedelta(days=created_days)).strftime("%Y-%m-%d")
                             query_parts.append(f"created:>={date_limit}")
-                            query_parts.append(f"stars:>{star_limits.get('stars', 500)}")
+                            query_parts.append(f"stars:>{star_limits.get('stars', 300)}")  # 从配置读取star限制
                             sort_by = "stars"
                         
                         # GitHub API 查询使用空格分隔
@@ -646,73 +496,25 @@ async def fetch_github_trending(
             
             logger.info(f"🔍 抓取到 {len(unique_repos)} 个唯一仓库")
             
-            # 【核心功能】第一步：加载本地已存在的项目数据
-            existing_items = _load_existing_github_items()
+            # Skill 不需要文件缓存，简化逻辑：所有项目都当作新项目处理
+            all_repos = unique_repos
             
-            # 获取GitHub数据库实例（用于状态管理）
+            # 获取GitHub数据库实例（用于状态管理，但只使用内存缓存）
             github_db = get_github_db()
             
-            # 【核心功能】第二步：分离新项目和已存在项目
-            new_repos = []  # 需要AI筛选和翻译的新项目
-            existing_repos = []  # 已存在，只需更新状态的项目
-            
-            for repo in unique_repos:
-                repo_url = repo.get("html_url", "")
-                if repo_url in existing_items:
-                    # 已存在的项目，只更新状态信息
-                    existing_repos.append(repo)
-                else:
-                    # 新项目，需要AI筛选和翻译
-                    new_repos.append(repo)
-            
-            logger.info(
-                f"📋 项目分类: 新项目 {len(new_repos)} 个 | "
-                f"已存在项目 {len(existing_repos)} 个"
-            )
-            
-            # 【核心功能】第三步：处理已存在项目 - 只更新状态，保留原有标题
-            updated_existing_items = []
-            for repo in existing_repos:
-                repo_url = repo.get("html_url", "")
-                existing_item = existing_items[repo_url]
-                
-                # 只更新状态字段，保留原有标题和摘要
-                existing_item.score = repo.get("stargazers_count", existing_item.score or 0)
-                existing_item.comments_count = repo.get("comments_count", existing_item.comments_count)
-                # 更新tags（如果有新tags）
-                if repo.get("topics"):
-                    existing_item.tags = repo.get("topics", [])[:5]
-                # 更新story_type（如果有）
-                if repo.get("_trend_type"):
-                    existing_item.story_type = repo.get("_trend_type")
-                
-                updated_existing_items.append(existing_item)
-                
-                # 更新数据库状态（使用add_project会自动保存）
-                project_id = github_db._generate_project_id(repo)
-                existing_project = github_db.get_project(project_id)
-                if existing_project:
-                    # 保留原有状态和AI评分
-                    status = existing_project.get("status", "crawled")
-                    ai_score = existing_project.get("ai_score", 0.0)
-                    ai_reason = existing_project.get("ai_reason", "")
-                    # 使用add_project更新，会自动保存数据库
-                    github_db.add_project(repo, status=status, ai_score=ai_score, ai_reason=ai_reason)
-                    logger.debug(f"📊 更新已存在项目状态: {repo.get('full_name')} (stars: {repo.get('stargazers_count', 0)})")
-            
-            # 【核心功能】第四步：处理新项目 - 进行AI筛选和翻译
+            # 【核心功能】处理所有项目 - 进行AI筛选和翻译
             filtered_repos = []
             whitelisted_projects = []  # 在外层定义，确保所有分支都能访问
             need_ai_screening = []
             
-            logger.info(f"🔧 AI筛选配置: enabled={ai_filter_enabled}, 新项目数={len(new_repos)}")
+            logger.info(f"🔧 AI筛选配置: enabled={ai_filter_enabled}, 项目数={len(all_repos)}")
             
-            if ai_filter_enabled and new_repos:
-                # 分离：数据库中的AI项目 vs 新项目
+            if ai_filter_enabled and all_repos:
+                # 分离：数据库中的AI项目 vs 需要筛选的项目
                 reused_ai_screened = 0  # 复用历史AI结果的项目数
                 
-                # 检测每个新项目的状态
-                for repo in new_repos:
+                # 检测每个项目的状态（使用内存数据库，不依赖文件）
+                for repo in all_repos:
                     project_id = github_db._generate_project_id(repo)
                     existing_project = github_db.get_project(project_id)
                     
@@ -759,22 +561,11 @@ async def fetch_github_trending(
                 
                 filtered_repos = list(whitelisted_projects)  # 加入白名单项目
             else:
-                # 不使用AI筛选时，所有新项目都需要处理
-                need_ai_screening = new_repos
+                # 不使用AI筛选时，所有项目都需要处理
+                need_ai_screening = all_repos
                 filtered_repos = []
             
-            # 【核心功能】第五步：先保存所有新项目到文件（标记为非AI），避免数据丢失
-            # 这样即使后续AI筛选中断，新项目也已经保存了
-            if new_repos:
-                logger.info(f"💾 先保存 {len(new_repos)} 个新项目到文件（标记为非AI）...")
-                try:
-                    # 先保存所有新项目，标记为非AI（is_ai_project=False）
-                    _save_github_repos_to_file(new_repos, is_ai_project_map={})
-                    logger.info(f"✅ 已保存 {len(new_repos)} 个新项目到文件（待AI筛选）")
-                except Exception as save_error:
-                    logger.error(f"⚠️ 保存新项目失败: {save_error}")
-            
-            # 第六步：对新项目进行AI筛选（批量处理，每批完成后立即保存）
+            # 【核心功能】第五步：对项目进行AI筛选（批量处理）
             # 全局的is_ai_project_map，用于记录所有项目的AI标记
             is_ai_project_map = {}
             
@@ -839,44 +630,47 @@ async def fetch_github_trending(
                             is_ai_project_map[repo_url] = False
                             repo["_ai_score"] = 0.0
                     
-                    # 【关键】每批AI筛选完成后立即保存，避免数据丢失
+                    # Skill 不需要文件保存，只记录日志
                     if batch_repos:
-                        try:
-                            _save_github_repos_to_file(batch_repos, is_ai_project_map)
-                            logger.info(f"💾 已保存批次 {ai_batch_idx + 1} 的 {len(batch_repos)} 个项目（AI项目: {len(batch_ai_repos)} 个）")
-                        except Exception as save_error:
-                            logger.error(f"⚠️ 保存批次 {ai_batch_idx + 1} 失败: {save_error}")
+                        logger.info(f"✅ 批次 {ai_batch_idx + 1} 处理完成: {len(batch_repos)} 个项目（AI项目: {len(batch_ai_repos)} 个）")
                 
                 logger.info(
                     f"✅ AI筛选完成: {len(filtered_repos)} 个AI仓库 "
                     f"(白名单命中 {len(whitelisted_projects)} + 新通过 {len(filtered_repos) - len(whitelisted_projects)})"
                 )
             elif not ai_filter_enabled:
+                # AI筛选已禁用，使用关键词匹配
                 logger.warning(f"⚠️ AI筛选已禁用，将使用关键词匹配（配置: ai_filter_enabled=False）")
-            elif not need_ai_screening:
-                logger.warning(f"⚠️ 没有需要AI筛选的项目（所有新项目可能都在白名单中）")
-            else:
-                # 不使用AI筛选，使用关键词匹配（向后兼容）- 只处理新项目
                 filtered_repos = []
                 ai_keywords = [
                     "ai", "artificial intelligence", "machine learning", "ml",
                     "llm", "gpt", "claude", "transformer", "neural", "deep learning"
                 ]
                 
-                for repo in new_repos:
-                    repo_name = repo.get("name", "").lower()
-                    description = repo.get("description", "").lower()
-                    topics = [t.lower() for t in repo.get("topics", [])]
+                # API 查询仅通过 language + created + stars 过滤，此处用内置关键词做 AI 相关性匹配
+                # 注意：config.yaml 中的 query_keywords 已弃用，不影响此逻辑
+                for repo in all_repos:
+                    # 安全处理 None 值
+                    repo_name = (repo.get("name") or "").lower()
+                    description = (repo.get("description") or "").lower()
+                    topics_list = repo.get("topics") or []
+                    topics = [str(t).lower() for t in topics_list if t]  # 确保 topics 不为 None
                     
+                    # 关键词匹配
                     is_ai_related = any(
-                        kw in repo_name or kw in description or any(kw in t for t in topics)
+                        kw in repo_name or kw in description or any(kw in str(t).lower() for t in topics)
                         for kw in ai_keywords
                     )
                     
                     if is_ai_related:
                         filtered_repos.append(repo)
+                
+                logger.info(f"✅ 关键词匹配完成: {len(filtered_repos)}/{len(all_repos)} 个项目通过匹配")
+            elif not need_ai_screening:
+                logger.warning(f"⚠️ 没有需要AI筛选的项目（所有新项目可能都在白名单中）")
+                filtered_repos = []
             
-            # 【核心功能】第六步：对新项目进行翻译和创建ArticleItem
+            # 【核心功能】第六步：对项目进行翻译和创建ArticleItem
             # 每翻译一批就立即保存，避免中途异常导致全部丢失
             BATCH_SIZE = 20  # 每批处理20个项目
             total_repos = len(filtered_repos)
@@ -932,29 +726,8 @@ async def fetch_github_trending(
                 
                 new_items.extend(batch_items)
             
-            # 【核心功能】第七步：最终保存所有项目到output/github/（全量数据）
-            # 合并所有项目（新项目+已存在项目），统一保存
-            all_repos_to_save = existing_repos + new_repos
-            
-            # 从已有数据中加载已存在项目的AI标记（保留历史标记）
-            for repo_url, item in existing_items.items():
-                if repo_url not in is_ai_project_map:
-                    # 如果已有数据中标记为AI项目，保留标记
-                    if item.ai_score and item.ai_score > 0:
-                        is_ai_project_map[repo_url] = True
-                    else:
-                        is_ai_project_map[repo_url] = False
-            
-            # 最终保存所有项目（全量数据，包括已存在项目的更新）
-            try:
-                _save_github_repos_to_file(all_repos_to_save, is_ai_project_map)
-                ai_count = sum(1 for is_ai in is_ai_project_map.values() if is_ai)
-                logger.info(f"💾 最终保存 {len(all_repos_to_save)} 个项目到output/github/ (AI项目: {ai_count} 个)")
-            except Exception as save_error:
-                logger.error(f"⚠️ 最终保存到output/github/失败: {save_error}")
-            
-            # 为了返回FetchResult，只返回AI项目（用于预览显示）
-            items = updated_existing_items + new_items
+            # Skill 不需要文件保存，直接返回结果
+            items = new_items
             
             result = FetchResult(
                 success=True,
@@ -970,10 +743,9 @@ async def fetch_github_trending(
             logger.info("✅ GitHub趋势项目获取完成!")
             logger.info(
                 f"📊 最终结果: {len(items)} 个AI相关项目 "
-                f"(新项目: {len(new_items)} 个, 已存在项目: {len(updated_existing_items)} 个, "
-                f"从 {len(unique_repos)} 个仓库中筛选)"
+                f"(从 {len(unique_repos)} 个仓库中筛选)"
             )
-            logger.source_success("GitHub Trending", f"{len(items)}/{len(unique_repos)} (新:{len(new_items)},已存在:{len(updated_existing_items)})")
+            logger.source_success("GitHub Trending", f"{len(items)}/{len(unique_repos)}")
             return result
             
     except httpx.HTTPError as e:

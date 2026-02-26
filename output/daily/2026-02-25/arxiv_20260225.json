@@ -1,0 +1,762 @@
+{
+  "source": "arXiv",
+  "fetched_at": "2026-02-25T19:48:29.588840",
+  "total_categories": 2,
+  "total_count": 34,
+  "papers": [
+    {
+      "id": "2602.21204v1",
+      "title": "测试时训练与键值绑定实为线性注意力的秘密",
+      "authors": [
+        "Junchen Liu",
+        "Sven Elflein",
+        "Or Litany",
+        "Zan Gojcic",
+        "Ruilong Li"
+      ],
+      "author_count": 5,
+      "summary": "将键值绑定作为序列建模层的测试时训练通常被解释为一种在线元学习形式，它在测试时记忆键值映射。然而，我们的分析揭示了多个与这种基于记忆的解释相矛盾的现象。受这些发现的启发，我们重新审视了测试时训练的表述并……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:59:30+00:00",
+      "updated": "2026-02-24T18:59:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21204v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21204v1",
+      "comment": "Webpage: https://research.nvidia.com/labs/sil/projects/tttla/"
+    },
+    {
+      "id": "2602.21201v1",
+      "title": "阿莱西亚自主攻克了第一证明。",
+      "authors": [
+        "Tony Feng",
+        "Junehyuk Jung",
+        "Sang-hyun Kim",
+        "Carlo Pagano",
+        "Sergei Gukov"
+      ],
+      "author_count": 17,
+      "summary": "我们报告了由Gemini 3 Deep Think驱动的数学研究智能体Aletheia（Feng等人，2026b）在首届FirstProof挑战赛中的表现。在挑战赛规定的时间内，根据多数专家评估，Aletheia自主解决了10个问题中的6个（第2、5、7、8、9、10题）；需要说明的是，专家并未...",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T18:56:10+00:00",
+      "updated": "2026-02-24T18:56:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21201v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21201v1",
+      "comment": "34 pages. Project page: https://github.com/google-deepmind/superhuman/tree/main/aletheia"
+    },
+    {
+      "id": "2602.21198v1",
+      "title": "从试错中学习：具身大语言模型的反思性测试时间规划",
+      "authors": [
+        "Yining Hong",
+        "Huang Huang",
+        "Manling Li",
+        "Li Fei-Fei",
+        "Jiajun Wu"
+      ],
+      "author_count": 6,
+      "summary": "具身大语言模型赋予机器人高层次的任务推理能力，但它们无法反思错误根源，这使得实际部署演变为一系列独立试错过程——错误不断重复而非沉淀为经验。借鉴人类反思实践者的智慧，我们提出反射式测试时规划方法，该方法融合了两种模式……",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:55:18+00:00",
+      "updated": "2026-02-24T18:55:18+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21198v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21198v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21189v1",
+      "title": "为何Pass@k优化可能降低Pass@1：大语言模型后训练中的提示干扰",
+      "authors": [
+        "Anas Barakat",
+        "Souradip Chakraborty",
+        "Khushbu Pahwa",
+        "Amrit Singh Bedi"
+      ],
+      "author_count": 4,
+      "summary": "Pass@k是一种广泛用于可验证大型语言模型任务的性能指标，涵盖数学推理、代码生成和简答推理等领域。该指标的定义是：若在独立采样的k个解决方案中，任一方案通过验证器检验即视为成功。这种多样本推理指标推动了以推理感知为核心的微调方法发展，这些方法直接……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:43:08+00:00",
+      "updated": "2026-02-24T18:43:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21189v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21189v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21178v1",
+      "title": "XMorph：通过LLM辅助混合深度智能实现可解释的脑肿瘤分析",
+      "authors": [
+        "Sepehr Salem Ghahfarokhi",
+        "M. Moein Esfahani",
+        "Raj Sunderraman",
+        "Vince Calhoun",
+        "Mohammed Alser"
+      ],
+      "author_count": 5,
+      "summary": "深度学习已显著推进了脑肿瘤自动诊断的发展，然而其临床应用仍因可解释性与计算限制而受限。传统模型常如不透明的“黑箱”运作，且难以量化恶性肿瘤生长所特有的复杂、不规则肿瘤边界。为应对这些挑战，我们……",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-24T18:28:08+00:00",
+      "updated": "2026-02-24T18:28:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21178v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21178v1",
+      "comment": "Accepted in ICCABS 2026: The 14th International Conference on Computational Advances in Bio and Medical Sciences"
+    },
+    {
+      "id": "2602.21174v1",
+      "title": "高效的多分辨率三维网格层次任意角度路径规划",
+      "authors": [
+        "Victor Reijgwart",
+        "Cesar Cadena",
+        "Roland Siegwart",
+        "Lionel Ott"
+      ],
+      "author_count": 4,
+      "summary": "分层、多分辨率体积映射方法被广泛用于表示大型复杂环境，因为它们能高效捕捉环境的占用与连通性信息。然而广泛使用的路径规划方法（如采样法和轨迹优化法）并未利用这种显式的连通性信息，且……",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-24T18:18:36+00:00",
+      "updated": "2026-02-24T18:18:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21174v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21174v1",
+      "comment": "12 pages, 9 figures, 4 tables, accepted to RSS 2025, code is open-source: https://github.com/ethz-asl/wavestar"
+    },
+    {
+      "id": "2602.21172v1",
+      "title": "NoRD：无需推理即可驾驶的高效数据视觉语言行动模型",
+      "authors": [
+        "Ishaan Rawal",
+        "Shubh Gupta",
+        "Yihan Hu",
+        "Wei Zhan"
+      ],
+      "author_count": 4,
+      "summary": "视觉-语言-动作（VLA）模型正通过以统一的端到端架构取代模块化流程，推动自动驾驶技术的发展。然而，当前的VLA模型面临两项成本高昂的要求：（1）海量数据集的收集，以及（2）密集的推理标注。在本研究中，我们通过\\modelname（\\textbf{无...}）同时应对这两大挑战。",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T18:17:21+00:00",
+      "updated": "2026-02-24T18:17:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21172v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21172v1",
+      "comment": "Accepted to CVPR 2026"
+    },
+    {
+      "id": "2602.21165v1",
+      "title": "PVminer：一款用于检测患者生成数据中患者声音的领域专用工具",
+      "authors": [
+        "Samah Fodeh",
+        "Linhai Ma",
+        "Yan Wang",
+        "Srivani Talakokkul",
+        "Ganesh Puthiaraju"
+      ],
+      "author_count": 9,
+      "summary": "患者生成的文本，如安全消息、调查和访谈，包含了患者声音（PV）的丰富表达，反映了沟通行为和健康的社会决定因素（SDoH）。传统的定性编码框架劳动密集，难以扩展到整个医疗系统中大量患者撰写的消息。",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-02-24T18:10:00+00:00",
+      "updated": "2026-02-24T18:10:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21165v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21165v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21154v1",
+      "title": "CG-DMER：用于解耦多模态心电图表征学习的混合对比生成框架",
+      "authors": [
+        "Ziwei Niu",
+        "Hao Sun",
+        "Shujun Bian",
+        "Xihong Yang",
+        "Lanfen Lin"
+      ],
+      "author_count": 7,
+      "summary": "心电图（ECG）信号的准确解读对诊断心血管疾病至关重要。近期将心电图与临床报告相结合的多模态方法展现出巨大潜力，但从模态视角看仍面临两大核心问题：（1）模态内：现有模型处理心电图时存在...",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T17:59:21+00:00",
+      "updated": "2026-02-24T17:59:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21154v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21154v1",
+      "comment": "Accepted by ICASSP 2026"
+    },
+    {
+      "id": "2602.21143v1",
+      "title": "深度信息合成基准",
+      "authors": [
+        "Debjit Paul",
+        "Daniel Murphy",
+        "Milan Gritta",
+        "Ronald Cardenas",
+        "Victor Prokhorov"
+      ],
+      "author_count": 17,
+      "summary": "基于大型语言模型（LLM）的智能体正日益广泛地应用于解决涉及工具使用的复杂任务，例如网页浏览、代码执行和数据分析。然而，当前的评估基准未能充分衡量其解决现实世界任务的能力，这些任务往往需要综合多源信息并推断深层见解。",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T17:43:32+00:00",
+      "updated": "2026-02-24T17:43:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21143v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21143v1",
+      "comment": "Accepted at ICLR 2026"
+    },
+    {
+      "id": "2602.21136v1",
+      "title": "SparkMe：用于定性洞察发现的自适应半结构化访谈",
+      "authors": [
+        "David Anugraha",
+        "Vishakh Padmakumar",
+        "Diyi Yang"
+      ],
+      "author_count": 3,
+      "summary": "用户体验的定性洞察对于指导产品和政策决策至关重要，但大规模收集此类数据受限于专家进行半结构化访谈的时间和可用性。最近的研究探索了使用大型语言模型（LLMs）来自动化访谈过程，然而现有系统仍存在不足……",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-24T17:33:02+00:00",
+      "updated": "2026-02-24T17:33:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21136v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21136v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21127v1",
+      "title": "“你确定吗？”：大型语言模型驱动代理系统中人类感知脆弱性的实证研究",
+      "authors": [
+        "Xinfeng Li",
+        "Shenyu Dai",
+        "Kelong Zheng",
+        "Yue Xiao",
+        "Gelei Deng"
+      ],
+      "author_count": 7,
+      "summary": "大型语言模型（LLM）智能体正迅速成为软件开发、医疗等高风险领域中备受信赖的协同助手。然而，这种日益加深的信任关系也催生了新的攻击面：智能体媒介欺骗（AMD）——即被操控的智能体被武器化，转而攻击其人类使用者。尽管现有大量研究集中于……",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CR",
+        "cs.SI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-02-24T17:23:11+00:00",
+      "updated": "2026-02-24T17:23:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21127v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21127v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21119v1",
+      "title": "现实世界工艺机器人的合作竞争团队协作",
+      "authors": [
+        "Rui Zhao",
+        "Xihui Li",
+        "Yizheng Zhang",
+        "Yuzhen Liu",
+        "Zhong Zhang"
+      ],
+      "author_count": 9,
+      "summary": "近年来，多智能体深度强化学习在开发智能游戏代理方面取得了显著进展。然而，如何利用多智能体强化学习高效训练机器人集群，并将习得的策略迁移至实际应用，仍是待解决的研究课题。本研究首先构建了一个...",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-24T17:15:37+00:00",
+      "updated": "2026-02-24T17:15:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21119v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21119v1",
+      "comment": "Accepted by 2026 IEEE International Conference on Robotics and Automation (ICRA 2026), Vienna, Austria"
+    },
+    {
+      "id": "2602.21116v1",
+      "title": "基于注意力的用户中心非地面网络信干噪比估计",
+      "authors": [
+        "Bruno De Filippo",
+        "Alessandro Guidotti",
+        "Alessandro Vanelli-Coralli"
+      ],
+      "author_count": 3,
+      "summary": "信号干扰加噪声比（SINR）是以用户为中心的星载非地面网络波束成形性能优化的核心。其评估既需要传输专用导频信号，也依赖于通过基于最小均方误差（MMSE）的公式计算波束成形矩阵。",
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "primary_category": "eess.SP",
+      "published": "2026-02-24T17:12:36+00:00",
+      "updated": "2026-02-24T17:12:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21116v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21116v1",
+      "comment": "Paper accepted for presentation at IEEE International Conference on Machine Learning in Communications and Networking (ICMLCN) 2026"
+    },
+    {
+      "id": "2602.21092v1",
+      "title": "探究图神经网络激活模式与图拓扑结构的关系",
+      "authors": [
+        "Floriano Tori",
+        "Lorenzo Bini",
+        "Marco Sorbi",
+        "Stéphane Marchand-Maillet",
+        "Vincent Ginis"
+      ],
+      "author_count": 5,
+      "summary": "图上的曲率概念为图拓扑提供了理论描述，突出了瓶颈和更密集的连接区域。图神经网络中消息传递范式的伪影，如过度平滑和过度挤压，已被归因于这些区域。然而，图的拓扑结构如何相互作用仍不清楚……",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T16:52:36+00:00",
+      "updated": "2026-02-24T16:52:36+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21092v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21092v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21072v1",
+      "title": "局部动态感知域适应：面向非动态非在线强化学习",
+      "authors": [
+        "Zhangjie Xia",
+        "Yu Yang",
+        "Pan Xu"
+      ],
+      "author_count": 3,
+      "summary": "离动态离线强化学习旨在利用有限的目标数据和在不同转移动态下收集的丰富源数据，为目标域学习策略。现有方法通常通过全局覆盖状态空间或逐点数据过滤来解决动态不匹配问题；这些方法可能会忽略局部化问题。",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T16:32:50+00:00",
+      "updated": "2026-02-24T16:32:50+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21072v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21072v1",
+      "comment": "33 pages, 9 figures, 11 tables"
+    },
+    {
+      "id": "2602.21066v1",
+      "title": "知识图谱探索中的初始探索问题",
+      "authors": [
+        "Claire McNamara",
+        "Lucy Hederman",
+        "Declan O'Sullivan"
+      ],
+      "author_count": 3,
+      "summary": "知识图谱（KGs）能够实现跨领域复杂信息的整合与表征，但其语义的丰富性和结构的复杂性，为不熟悉语义网技术的普通用户设置了巨大障碍。面对陌生的知识图谱时，这类用户会遭遇明显的认知定向挑战：他们无法……",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T16:27:40+00:00",
+      "updated": "2026-02-24T16:27:40+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21066v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21066v1",
+      "comment": "13 pages"
+    },
+    {
+      "id": "2602.21064v1",
+      "title": "动力是你需要的东西",
+      "authors": [
+        "Mehdi Acheli",
+        "Walid Gaaloul"
+      ],
+      "author_count": 2,
+      "summary": "本研究借鉴情感神经科学，提出了一种创新的训练范式。受人类大脑中情绪与认知相互作用——特别是“寻求”动机状态——的启发，我们设计了一个双模型框架：其中较小的基础模型持续接受训练，而较大的动机模型则在特定状态下被激活……",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T16:26:52+00:00",
+      "updated": "2026-02-24T16:26:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21064v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21064v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21061v1",
+      "title": "工具构建：通往“超级智能”之路",
+      "authors": [
+        "David Koplow",
+        "Tomer Galanti",
+        "Tomaso Poggio"
+      ],
+      "author_count": 3,
+      "summary": "勤奋学习者框架提出，只要具备足够的步骤成功概率γ，大型语言模型便可通过测试时搜索实现超智能。在本研究中，我们设计了一个基准来衡量逻辑分布外推理中的γ值。我们构建了一系列涉及GF(2)电路重构的任务类别，这些任务会随着每个步骤的推进而逐渐增加难度……",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-02-24T16:22:10+00:00",
+      "updated": "2026-02-24T16:22:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21061v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21061v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21054v1",
+      "title": "VAUQ：面向LVLM自评估的视觉感知不确定性量化",
+      "authors": [
+        "Seongheon Park",
+        "Changdae Oh",
+        "Hyeong Kyu Choi",
+        "Xuefeng Du",
+        "Sharon Li"
+      ],
+      "author_count": 5,
+      "summary": "大型视觉语言模型（LVLMs）常出现幻觉现象，这限制了它们在实际应用中的安全部署。现有的大型语言模型自我评估方法依赖于模型评估自身输出正确性的能力，这虽能提升部署可靠性，却严重受制于语言先验，因而并不适用于……",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-24T16:11:14+00:00",
+      "updated": "2026-02-24T16:11:14+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21054v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21054v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21203v1",
+      "title": "Squint：面向仿真到现实机器人的快速视觉强化学习",
+      "authors": [
+        "Abdulaziz Almuzairee",
+        "Henrik I. Christensen"
+      ],
+      "author_count": 2,
+      "summary": "视觉强化学习在机器人领域颇具吸引力，但成本高昂——离策略方法样本效率高但速度缓慢；同策略方法并行性良好却浪费样本。近期研究表明，在基于状态的控制任务中，离策略方法的实际训练速度已能超越同策略方法。然而将这一优势延伸至视觉领域仍面临挑战……",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-24T18:58:11+00:00",
+      "updated": "2026-02-24T18:58:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21203v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21203v1",
+      "comment": "For website and code, see https://aalmuzairee.github.io/squint"
+    },
+    {
+      "id": "2602.21196v1",
+      "title": "解绑的尤利西斯：通过逐头分块实现内存高效的上下文并行",
+      "authors": [
+        "Ravi Ghadia",
+        "Maksim Abraham",
+        "Sergei Vorobyov",
+        "Max Ryabinin"
+      ],
+      "author_count": 4,
+      "summary": "高效处理长序列的Transformer模型通常需要通过上下文并行将计算分散到多个加速器上。这类方法中的主流方案，如环形注意力或DeepSpeed Ulysses，虽能实现上下文维度的扩展，却未着重优化内存效率，这限制了其……",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:54:39+00:00",
+      "updated": "2026-02-24T18:54:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21196v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21196v1",
+      "comment": "14 pages, 6 figures"
+    },
+    {
+      "id": "2602.21191v1",
+      "title": "统计查询下界在平滑不可知学习中的应用",
+      "authors": [
+        "Ilias Diakonikolas",
+        "Daniel M. Kane"
+      ],
+      "author_count": 2,
+      "summary": "我们研究了平滑不可知学习的复杂性，该概念由~\\cite{CKKMS24}最近提出，在此框架下，学习者需在输入数据经过轻微高斯扰动的情况下，与目标类别中的最佳分类器进行竞争。具体而言，我们聚焦于在次高斯分布下平滑不可知学习半空间的典型任务。",
+      "categories": [
+        "cs.LG",
+        "cs.DS",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:46:46+00:00",
+      "updated": "2026-02-24T18:46:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21191v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21191v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21185v1",
+      "title": "扩散对偶，第二章：$Ψ$-采样器与高效课程",
+      "authors": [
+        "Justin Deschenaux",
+        "Caglar Gulcehre",
+        "Subham Sekhar Sahoo"
+      ],
+      "author_count": 3,
+      "summary": "均匀状态离散扩散模型因其自我校正能力，在少步生成与引导任务中表现卓越，使其在这些场景下优于自回归或掩码扩散模型。然而，随着步数增加，其采样质量在使用祖先采样器时会趋于停滞。我们提出了一系列……",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:35:22+00:00",
+      "updated": "2026-02-24T18:35:22+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21185v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21185v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21168v1",
+      "title": "时序临床数据的序列反事实推理：应对时间旅行者困境",
+      "authors": [
+        "Jingya Cheng",
+        "Alaleh Azhir",
+        "Jiazi Tian",
+        "Hossein Estiri"
+      ],
+      "author_count": 4,
+      "summary": "反事实推理使临床医生能够对患者结果提出“如果”假设，但标准方法假设特征独立且可同时修改——这些假设与纵向临床数据相悖。我们提出的序列反事实框架，尊重电子健康记录中的时间依赖性……",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:11:23+00:00",
+      "updated": "2026-02-24T18:11:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21168v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21168v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21160v1",
+      "title": "不仅是总量，更是分布：将认知不确定性分解为各类别的贡献",
+      "authors": [
+        "Mame Diarra Toure",
+        "David A. Stephens"
+      ],
+      "author_count": 2,
+      "summary": "在安全关键分类中，失败的代价往往是不对称的，然而贝叶斯深度学习仅用单一标量——互信息（MI）来概括认知不确定性，这无法区分模型的未知性涉及的是良性类别还是安全关键类别。我们将MI分解为每个类别的向量$C_k(x)=σ_k^{2}/(2μ_k)$，其中...",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.AP",
+        "stat.ME"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-24T18:05:51+00:00",
+      "updated": "2026-02-24T18:05:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21160v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21160v1",
+      "comment": "8 pages, 17 figures"
+    },
+    {
+      "id": "2602.21158v1",
+      "title": "SELAUR：基于不确定性感知奖励的自进化大语言模型代理",
+      "authors": [
+        "Dengjia Zhang",
+        "Xiaoou Liu",
+        "Lu Cheng",
+        "Yaqing Wang",
+        "Kenton Murray"
+      ],
+      "author_count": 6,
+      "summary": "大型语言模型（LLM）正越来越多地被部署为多步骤决策智能体，其中有效的奖励设计对于引导学习至关重要。尽管近期研究探索了多种形式的奖励塑形和步骤级信用分配，但一个关键信号在很大程度上仍被忽视：即大型语言模型的内在不确定性。不确定性……",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T18:04:54+00:00",
+      "updated": "2026-02-24T18:04:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21158v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21158v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21144v1",
+      "title": "在多GPU上利用张量并行技术扩展状态空间模型",
+      "authors": [
+        "Anurag Dutt",
+        "Nimit Shah",
+        "Hazem Masarani",
+        "Anshul Gandhi"
+      ],
+      "author_count": 4,
+      "summary": "选择性状态空间模型（SSMs）已迅速成为大型语言模型的重要支柱，尤其适用于长上下文工作负载。然而在实际部署中，其推理性能常受限于单个GPU的内存容量、带宽和延迟，使得多GPU执行变得日益必要。尽管张量...",
+      "categories": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2026-02-24T17:47:54+00:00",
+      "updated": "2026-02-24T17:47:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21144v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21144v1",
+      "comment": "Submitted to 46th IEEE International Conference on Distributed Computing Systems (ICDCS 2026)"
+    },
+    {
+      "id": "2602.21142v1",
+      "title": "LUMEN：用于预后与诊断的纵向多模态放射学模型",
+      "authors": [
+        "Zhifan Jiang",
+        "Dong Yang",
+        "Vishwesh Nath",
+        "Abhijeet Parida",
+        "Nishad P. Kulkarni"
+      ],
+      "author_count": 10,
+      "summary": "大型视觉语言模型（VLMs）已从通用应用发展到临床等专业领域，展现出在放射学决策支持方面的潜力。其中一个前景广阔的应用是通过分析胸部X光片等放射影像数据，协助放射科医生进行诊断决策。",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-02-24T17:42:46+00:00",
+      "updated": "2026-02-24T17:42:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21142v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21142v1",
+      "comment": "Accepted to IEEE International Symposium on Biomedical Imaging (ISBI) 2026"
+    },
+    {
+      "id": "2602.21138v1",
+      "title": "经典加速方法在$\\ell_1$正则化PageRank中的复杂性",
+      "authors": [
+        "Kimon Fountoulakis",
+        "David Martínez-Rubio"
+      ],
+      "author_count": 2,
+      "summary": "我们研究了使用每次迭代单梯度的标准加速近端梯度法（FISTA）计算$\\ell_1$正则化PageRank所需的度加权工作量。对于非加速局部方法，已知最坏情况下的工作量规模为$\\widetilde{O} ((αρ)^{-1})$，其中$α$是传送参数，$ρ$是...",
+      "categories": [
+        "math.OC",
+        "cs.DS",
+        "cs.LG"
+      ],
+      "primary_category": "math.OC",
+      "published": "2026-02-24T17:35:46+00:00",
+      "updated": "2026-02-24T17:35:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21138v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21138v1",
+      "comment": "23 pages, 8 Figures"
+    },
+    {
+      "id": "2602.21133v1",
+      "title": "SOM-VQ：面向交互式生成模型的拓扑感知分词技术",
+      "authors": [
+        "Alessandro Londei",
+        "Denise Lanzieri",
+        "Matteo Benati"
+      ],
+      "author_count": 3,
+      "summary": "矢量量化表示能够实现强大的离散生成模型，但其标记空间缺乏语义结构，限制了人类可解释的控制能力。我们提出SOM-VQ标记化方法，将矢量量化与自组织映射相结合，以学习具有明确低维拓扑结构的离散码本。与标准方法不同……",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T17:29:04+00:00",
+      "updated": "2026-02-24T17:29:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21133v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21133v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21130v1",
+      "title": "增强型投影寻踪树分类器：运用视觉方法评估算法改进",
+      "authors": [
+        "Natalia da Silva",
+        "Dianne Cook",
+        "Eun-Kyung Lee"
+      ],
+      "author_count": 3,
+      "summary": "本文对投影寻踪树分类器及其视觉诊断方法进行了改进，以评估其在高维空间中的影响。原始算法在树结构中使用变量的线性组合，其深度被限制为小于类别数量——这一限制在处理复杂问题时显得过于僵化。",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "primary_category": "stat.ML",
+      "published": "2026-02-24T17:27:17+00:00",
+      "updated": "2026-02-24T17:27:17+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21130v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21130v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21104v1",
+      "title": "基于未知质量分布预测的滑雪板租赁",
+      "authors": [
+        "Qiming Cui",
+        "Michael Dinitz"
+      ],
+      "author_count": 2,
+      "summary": "我们从分布预测的角度重新审视了“带预测算法”框架中的滑雪租赁这一核心在线问题。滑雪租赁是最早通过预测进行研究的问题之一，其中一种自然的预测方式就是滑雪天数。但更为自然且可能更具影响力的做法是……",
+      "categories": [
+        "cs.LG",
+        "cs.DS"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T17:03:35+00:00",
+      "updated": "2026-02-24T17:03:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21104v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21104v1",
+      "comment": null
+    },
+    {
+      "id": "2602.21081v1",
+      "title": "扩展视觉变换器：评估DeepSpeed在图像中心工作负载中的表现",
+      "authors": [
+        "Huy Trinh",
+        "Rebecca Ma",
+        "Zeqi Yu",
+        "Tahsin Reza"
+      ],
+      "author_count": 4,
+      "summary": "视觉变换器（ViTs）通过利用自注意力机制捕捉数据中的全局关联，已在图像处理任务中展现出卓越潜力。然而，其可扩展性受到显著计算和内存需求的制约，尤其对于参数量庞大的大规模模型而言。本研究旨在利用……",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-02-24T16:45:12+00:00",
+      "updated": "2026-02-24T16:45:12+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2602.21081v1",
+      "arxiv_url": "http://arxiv.org/abs/2602.21081v1",
+      "comment": null
+    }
+  ]
+}

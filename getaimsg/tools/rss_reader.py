@@ -25,12 +25,12 @@ from email.utils import parsedate_to_datetime
 import feedparser
 import httpx
 
-from ..utils.cache import get_cache
-from ..utils.parser import clean_text
-from ..utils.logger import logger
-from ..utils.ai_filter import classify_titles_batch
-from ..utils.translator import translate_article_item
-from ..config import get_config
+from utils.cache import get_cache
+from utils.parser import clean_text
+from utils.logger import logger
+from utils.ai_filter import classify_titles_batch
+from utils.translator import translate_article_item
+from config import get_config
 
 
 # Default AI-related RSS feeds
@@ -80,23 +80,21 @@ async def fetch_rss_feeds(
     # Fetch feeds in parallel
     tasks = []
     feed_names = []
-    url_translation_map = {}  # 记录每个 url 的 translation_enabled，供写缓存时使用
     
     for name, url in feeds_to_fetch.items():
-        # 获取该源的配置
+        cache_key = f"rss_{url}_{limit}"
+        cached = cache.get(cache_key)
+        
+        # 获取该源的AI筛选配置
         source_config = url_to_config.get(url)
         ai_filter_enabled = source_config.ai_filter_enabled if source_config else True  # 默认启用
-        translation_enabled = source_config.translation_enabled if source_config else True  # 默认启用
-        url_translation_map[url] = translation_enabled
-
-        # 将 translation_enabled 加入缓存 key，避免"未翻译缓存"污染"需翻译"的请求
-        cache_key = f"rss_{url}_{limit}_t{int(translation_enabled)}"
-        cached = cache.get(cache_key)
         
         if cached:
             # Use cached result
             tasks.append(asyncio.coroutine(lambda c=cached: c)())
         else:
+            # 获取翻译配置
+            translation_enabled = source_config.translation_enabled if source_config else True  # 默认启用
             tasks.append(_fetch_single_feed(url, limit, ai_filter_enabled, translation_enabled))
         
         feed_names.append(name)
@@ -121,9 +119,8 @@ async def fetch_rss_feeds(
             errors.append(f"{name}: {error_msg}")
             logger.source_error(name, error_msg)
         else:
-            # Cache successful results（key 与读取时保持一致，含 translation_enabled）
-            t_flag = int(url_translation_map.get(url, True))
-            cache_key = f"rss_{url}_{limit}_t{t_flag}"
+            # Cache successful results
+            cache_key = f"rss_{url}_{limit}"
             cache.set(cache_key, result, ttl=600)  # 10 minutes
             
             feeds_result[name] = result

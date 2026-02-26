@@ -212,7 +212,7 @@ class OutputManager:
         
         # 可选：自动同步到Notion（仅同步新增的items）
         if items:
-            from ..models import FetchResult
+            from .models import FetchResult
             temp_result = FetchResult(
                 success=True,
                 source_name=source_type.title(),
