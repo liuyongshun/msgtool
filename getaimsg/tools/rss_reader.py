@@ -211,7 +211,7 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
             
             # Parse feed in thread pool (feedparser is synchronous)
             # feedparser.parse 可以接受字节、字符串或URL
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             with ThreadPoolExecutor() as executor:
                 feed = await loop.run_in_executor(
                     executor,

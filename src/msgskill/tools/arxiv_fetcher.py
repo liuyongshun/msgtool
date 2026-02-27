@@ -97,7 +97,7 @@ async def fetch_arxiv_papers(
         )
         
         # Run the synchronous arxiv API in a thread pool
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         with ThreadPoolExecutor() as executor:
             papers = await loop.run_in_executor(
                 executor,
