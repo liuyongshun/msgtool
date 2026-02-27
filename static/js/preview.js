@@ -1,6 +1,6 @@
 class OutputPreview {
     constructor() {
-        this.apiBase = 'http://localhost:5001/api';  // 改用5001端口
+        this.apiBase = '/api';  // 改用5001端口
         this.currentDate = null;
         this.currentType = null;
         this.availableTypes = [];
