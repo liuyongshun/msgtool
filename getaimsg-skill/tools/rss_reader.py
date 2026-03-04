@@ -161,7 +161,9 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
     """
     try:
         # 为有反爬机制的网站提供更好的浏览器模拟
-        anti_crawler_domains = ['qbitai.com', 'jiqizhixin.com', 'ithome.com']
+        # 注意：ithome.com 已移除，因为其 RSS 使用普通请求头即可正常访问
+        # 如果加入反爬列表会触发 Brotli 压缩，而 httpx 默认不支持 br 解压
+        anti_crawler_domains = ['qbitai.com', 'jiqizhixin.com']
         needs_advanced_headers = any(domain in url for domain in anti_crawler_domains)
         
         # Fetch feed content

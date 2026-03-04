@@ -16,6 +16,8 @@
 """
 
 import asyncio
+import html
+import re
 from datetime import datetime, timedelta
 from typing import Any, Optional
 
@@ -96,6 +98,31 @@ async def fetch_ai_news(
             items=[],
             error=f"Source '{source}' not implemented. Note: Techmeme and TechCrunch have been moved to RSS sources."
         )
+
+
+def _clean_html(text: str) -> str:
+    """
+    清理 HTML 标签和实体，转换为纯文本
+    
+    Args:
+        text: 包含 HTML 的文本
+        
+    Returns:
+        清理后的纯文本
+    """
+    if not text:
+        return ""
+    
+    # 解码 HTML 实体（如 &#x27; -> '）
+    text = html.unescape(text)
+    
+    # 移除 HTML 标签
+    text = re.sub(r'<[^>]+>', ' ', text)
+    
+    # 规范化空白字符
+    text = ' '.join(text.split())
+    
+    return text
 
 
 async def _fetch_hackernews(
@@ -300,7 +327,16 @@ async def _fetch_hackernews(
                     story_type = story_info["story_type"]
                     
                     original_title = story.get("title", "")
-                    original_summary = original_title
+                    # 优先使用 text 字段（自提交文本），否则使用 title 作为摘要
+                    raw_text = story.get("text", "") or ""
+                    if raw_text:
+                        # 清理 HTML 标签和实体
+                        original_summary = _clean_html(raw_text)
+                        # 如果 text 太长，截断到 500 字符
+                        if len(original_summary) > 500:
+                            original_summary = original_summary[:497] + "..."
+                    else:
+                        original_summary = original_title
                     
                     # 翻译标题和摘要
                     if source_config.translation_enabled:

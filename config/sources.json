@@ -263,7 +263,7 @@
         "translation_enabled": true
       },
       "jiqizhixin": {
-        "enabled": true,
+        "enabled": false,
         "name": "机器之心",
         "url": "https://www.jiqizhixin.com/rss",
         "description": "机器之心AI专业媒体（官方RSS）",
@@ -602,13 +602,13 @@
         },
         "hackernews": {
           "enabled": true,
-          "time": ["10:20", "14:05", "17:20", "21:52"],
+          "time": ["10:20", "14:05", "18:20", "21:52"],
           "max_results": 50,
           "note": "控制原始抓取数量，AI筛选后的所有结果都会保存"
         },
         "rss": {
           "enabled": true,
-          "time": ["10:20", "14:05", "17:20", "21:52"],
+          "time": ["07:00", "11:45", "15:20", "20:10"],
           "max_results": 20,
           "note": "每个RSS源最多抓取的条目数，AI筛选后的所有结果都会保存。每天从06:00到21:00，每2小时同步一次（共9次）。"
         },

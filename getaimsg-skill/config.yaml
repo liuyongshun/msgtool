@@ -4,7 +4,7 @@
 # arXiv 配置
 arxiv:
   enabled: true
-  max_results: 5  # 每个分类最多获取的论文数（5 × 5核心分类 = 最多25篇，控制翻译耗时）
+  max_results: 20  # 每个分类最多获取的论文数（20 × 5核心分类 = 最多100篇，覆盖近7天内容）
   categories:
     # ── 核心分类（默认启用，覆盖主流 AI/ML 方向）──
     - key: "cs.AI"
@@ -65,11 +65,10 @@ arxiv:
 hackernews:
   enabled: true
   api_base_url: "https://hacker-news.firebaseio.com/v0"
-  max_results: 15
+  max_results: 50
   story_types:
     - "top"
-    - "new"
-    - "best"       
+    - "new"  
   ai_filter_enabled: true  # 建议启用：内容混杂，需要智能筛选
   translation_enabled: true  # 建议启用：英文内容需要翻译
   recent_days: 7  # 只处理最近N天内的数据（如果未设置，则使用 llm.recent_days）

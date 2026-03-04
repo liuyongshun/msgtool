@@ -16,6 +16,8 @@
 """
 
 import asyncio
+import html
+import re
 from datetime import datetime, timedelta
 from typing import Any, Optional
 
@@ -98,6 +100,31 @@ async def fetch_ai_news(
         )
 
 
+def _clean_html(text: str) -> str:
+    """
+    清理 HTML 标签和实体，转换为纯文本
+    
+    Args:
+        text: 包含 HTML 的文本
+        
+    Returns:
+        清理后的纯文本
+    """
+    if not text:
+        return ""
+    
+    # 解码 HTML 实体（如 &#x27; -> '）
+    text = html.unescape(text)
+    
+    # 移除 HTML 标签
+    text = re.sub(r'<[^>]+>', ' ', text)
+    
+    # 规范化空白字符
+    text = ' '.join(text.split())
+    
+    return text
+
+
 async def _fetch_hackernews(
     source_config: Any,  # NewsSourceConfig
     limit: int,
@@ -143,7 +170,7 @@ async def _fetch_hackernews(
                 try:
                     response = await client.get(f"{base_url}/{endpoint}.json")
                     response.raise_for_status()
-                    story_ids = response.json()[:50]  # 每类取前50条（减少请求量）
+                    story_ids = response.json()[:limit]  # 每类取前 limit 条（由 max_results 控制）
                     
                     for sid in story_ids:
                         all_story_data.append((sid, story_type))
@@ -294,44 +321,75 @@ async def _fetch_hackernews(
                 
                 logger.info(f"处理批次 {batch_idx + 1}/{total_batches} ({len(batch_data)} 条新闻)...")
                 
-                batch_items = []
+                # 第一步：准备所有需要翻译的数据
+                translation_tasks = []
+                story_data_list = []
+                
                 for temp_id, story_info, classification in batch_data:
                     story = story_info["data"]
                     story_type = story_info["story_type"]
                     
                     original_title = story.get("title", "")
-                    original_summary = original_title
-                    
-                    # 翻译标题和摘要
-                    if source_config.translation_enabled:
-                        translated_title, translated_summary = await translate_article_item(
-                            original_title,
-                            original_summary
-                        )
+                    # 优先使用 text 字段（自提交文本），否则使用 title 作为摘要
+                    raw_text = story.get("text", "") or ""
+                    if raw_text:
+                        # 清理 HTML 标签和实体
+                        original_summary = _clean_html(raw_text)
+                        # 如果 text 太长，截断到 500 字符
+                        if len(original_summary) > 500:
+                            original_summary = original_summary[:497] + "..."
                     else:
-                        translated_title = original_title
-                        translated_summary = original_summary
+                        original_summary = original_title
                     
-                    # 创建标准化的 ArticleItem
+                    # 准备翻译任务（并发执行）
+                    if source_config.translation_enabled:
+                        translation_tasks.append(translate_article_item(original_title, original_summary))
+                    
+                    # 保存 story 数据，用于后续构建 ArticleItem
+                    story_data_list.append({
+                        "story": story,
+                        "story_type": story_type,
+                        "original_title": original_title,
+                        "original_summary": original_summary,
+                        "classification": classification
+                    })
+                
+                # 第二步：并发执行所有翻译任务
+                if source_config.translation_enabled and translation_tasks:
+                    translation_results = await asyncio.gather(*translation_tasks)
+                    # 将结果映射回对应的 story
+                    for i, (title, summary) in enumerate(translation_results):
+                        story_data_list[i]["translated_title"] = title
+                        story_data_list[i]["translated_summary"] = summary
+                else:
+                    # 不需要翻译，直接使用原文
+                    for data in story_data_list:
+                        data["translated_title"] = data["original_title"]
+                        data["translated_summary"] = data["original_summary"]
+                
+                # 第三步：构建 ArticleItem 列表
+                batch_items = []
+                for data in story_data_list:
+                    story = data["story"]
                     article = ArticleItem(
-                        title=translated_title,
-                        summary=translated_summary,
+                        title=data["translated_title"],
+                        summary=data["translated_summary"],
                         source_url=story.get("url") or f"https://news.ycombinator.com/item?id={story.get('id')}",
                         published_date=datetime.fromtimestamp(
                             story.get("time", 0)
                         ).isoformat() if story.get("time") else None,
                         source_type="hackernews",
                         article_tag=classify_article_tag(
-                            title=original_title,
-                            summary=original_summary,
+                            title=data["original_title"],
+                            summary=data["original_summary"],
                             source_type="hackernews"
                         ),
                         author=story.get("by"),
                         score=story.get("score", 0),
                         comments_count=story.get("descendants", 0),
                         tags=[],
-                        story_type=story_type,
-                        ai_score=classification["score"]
+                        story_type=data["story_type"],
+                        ai_score=data["classification"]["score"]
                     )
                     batch_items.append(article)
                 

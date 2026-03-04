@@ -278,7 +278,7 @@ msgskill/
 │   ├── __init__.py
 │   └── msgskill_server.py    # 原MCP服务器代码
 │
-├── getaimsg/                 # Agent技能模块（独立技能，按需触发）
+├── getaimsg-skill/           # Agent技能模块（独立技能，按需触发）
 │   ├── config.yaml           # 技能专用配置
 │   ├── config.py             # 配置管理
 │   ├── tools/                # 数据抓取工具（独立版）
@@ -348,22 +348,22 @@ msgskill/
 - 使用htmx实现动态交互
 - 支持桌面和移动端
 
-### getaimsg 技能模块
+### getaimsg-skill 技能模块
 
-**getaimsg** (`getaimsg/`) - 独立的按需触发技能版本，与主项目定时任务并行存在：
+**getaimsg-skill** (`getaimsg-skill/`) - 独立的按需触发技能版本，与主项目定时任务并行存在：
 
-| 对比项 | 主项目（定时任务） | getaimsg（技能） |
+| 对比项 | 主项目（定时任务） | getaimsg-skill（技能） |
 |--------|-----------------|----------------|
 | 触发方式 | 定时自动执行 | 用户按需触发 |
 | 时间窗口 | `recent_days: 1`（仅当天） | `recent_days: 7`（近7天） |
-| 输出位置 | `output/daily/` | `getaimsg/output/` |
+| 输出位置 | `output/daily/` | `getaimsg-skill/output/` |
 | 缓存 | 持久化文件缓存 | 内存缓存，无文件依赖 |
 | GitHub过滤 | 关键词 + AI筛选 | 按 star/语言/时间筛选 |
 | arXiv分类 | 13个（11个启用） | 13个（5个启用，减少耗时） |
 
 **独立运行技能脚本**：
 ```bash
-cd getaimsg
+cd getaimsg-skill
 
 # 单独测试各数据源
 python scripts/fetch_github.py      # GitHub趋势项目
@@ -576,7 +576,7 @@ Remove-Item -Path .cache -Recurse -Force
 
 ## 🆕 最新更新 (v3.4.0)
 
-- ✅ **getaimsg技能模块**: 独立的按需触发技能，支持4个数据源独立运行（已从 `agent_skill` 重命名）
+- ✅ **getaimsg-skill技能模块**: 独立的按需触发技能，支持4个数据源独立运行（已从 `agent_skill` 重命名为 `getaimsg-skill`）
 - ✅ **GitHub查询优化**: 移除关键词限制，改为按 star数/语言/时间 过滤，扩大有效数据量
 - ✅ **时间策略优化**: 定时任务 `recent_days=1`（仅当天），技能模式 `recent_days=7`（近7天），策略更合理
 - ✅ **RSS缓存修复**: 修复翻译缓存key未区分 `translation_enabled` 导致的脏缓存问题

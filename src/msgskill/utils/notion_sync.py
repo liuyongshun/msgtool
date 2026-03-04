@@ -57,6 +57,25 @@ class NotionSync:
         
         # 如果没有配置特定数据源的数据库，使用默认数据库（github）
         self.default_database_id = self.databases.get("github")
+
+        # 简单截流控制：限制 Notion API 请求频率（约 3 次/秒）
+        import time
+        self._last_request_ts: float = 0.0
+        self._min_interval: float = 0.5  # 秒，约 2 req/s
+
+    def _throttle(self) -> None:
+        """
+        Notion API 截流控制，避免触发官方频率限制。
+
+        - 使用简单的「上次请求时间 + 最小间隔」控制
+        - 仅在单进程/单线程场景下使用
+        """
+        import time
+        now = time.time()
+        delta = now - self._last_request_ts
+        if delta < self._min_interval:
+            time.sleep(self._min_interval - delta)
+        self._last_request_ts = time.time()
     
     def get_database_id(self, source_type: str) -> Optional[str]:
         """
@@ -227,7 +246,10 @@ class NotionSync:
             url_field = self._get_field_name("source_url", source_type)
             if not url_field:
                 return None
-            
+
+            # 截流控制：避免在大量去重查询时触发 Notion 频率限制
+            self._throttle()
+
             response = httpx.post(
                 f"{self.api_base_url}/databases/{database_id}/query",
                 headers=self.headers,
@@ -246,9 +268,13 @@ class NotionSync:
             if results:
                 return results[0]["id"]
             return None
+        except httpx.HTTPError as e:
+            # 网络/HTTP 异常时视为「未知状态」，而不是「不存在」，抛给上层计为失败，避免错误地新建重复页面
+            logger.error(f"检查Notion页面是否存在失败 (HTTP错误): {e}")
+            raise
         except Exception as e:
-            logger.debug(f"检查Notion页面是否存在时出错: {e}")
-            return None
+            logger.error(f"检查Notion页面是否存在时出错: {e}")
+            raise
     
     def sync_item(self, item: ArticleItem, skip_existing: bool = True) -> bool:
         """
@@ -282,6 +308,9 @@ class NotionSync:
             properties = self._convert_article_to_notion_properties(item)
             
             # 创建页面
+            # 截流控制：批量创建页面时，控制请求频率
+            self._throttle()
+
             response = httpx.post(
                 f"{self.api_base_url}/pages",
                 headers=self.headers,
@@ -334,15 +363,24 @@ class NotionSync:
             if not database_id:
                 failed += 1
                 continue
-            
+
             existing_page_id = None
             if skip_existing:
-                existing_page_id = self._check_page_exists(item.source_url, database_id, item.source_type)
-            
+                try:
+                    existing_page_id = self._check_page_exists(
+                        item.source_url,
+                        database_id,
+                        item.source_type,
+                    )
+                except Exception:
+                    # 查询是否已存在失败时，将该条记录标记为失败，避免在未知状态下继续创建导致重复
+                    failed += 1
+                    continue
+
             if existing_page_id:
                 skipped += 1
                 continue
-            
+
             if self.sync_item(item, skip_existing=False):
                 synced += 1
             else:

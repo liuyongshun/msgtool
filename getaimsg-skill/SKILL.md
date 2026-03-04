@@ -35,7 +35,7 @@ dependencies: python>=3.10, pyyaml, feedparser, arxiv, httpx
 
 ```bash
 # 切换到 skill 目录（所有脚本均在此目录下执行）
-cd getaimsg
+cd getaimsg-skill
 
 # 📚 论文
 python scripts/fetch_arxiv.py --max-results 10
@@ -189,7 +189,7 @@ python scripts/fetch_github.py --max-results 20 --output-format json
 
 ## 配置说明
 
-配置文件：`getaimsg/config.yaml`
+配置文件：`getaimsg-skill/config.yaml`
 
 | 数据源 | AI筛选 | 翻译 | 关键说明 |
 |--------|--------|------|----------|
@@ -269,7 +269,7 @@ python scripts/json_to_markdown.py github.json -o projects.md
 ## 技术架构
 
 ```
-getaimsg/
+getaimsg-skill/
 ├── config.yaml              # 独立配置，不依赖主项目
 ├── scripts/
 │   ├── fetch_arxiv.py       # arXiv 入口脚本
