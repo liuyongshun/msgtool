@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-03-04T14:32:15.175434",
+  "source_date": "2026-03-04",
+  "total_evaluated": 22,
+  "selected_count": 9,
+  "topics": [
+    {
+      "id": "df5d5f9d-949d-40fa-9a85-ef87f7a31cc8",
+      "suggested_title": "GPT-5.3即时版发布？",
+      "source_title": "GPT‑5.3 即时版",
+      "source_url": "https://openai.com/index/gpt-5-3-instant/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "GPT‑5.3 即时版",
+      "reason": "涉及大模型最新进展，时效性强，读者关注度高",
+      "writing_angle": "大模型进展与评测",
+      "wechat_score": 0.9
+    },
+    {
+      "id": "06a30c51-5db1-4e62-a8b8-9cad729cd535",
+      "suggested_title": "AI代理测试平台Cekura发布",
+      "source_title": "发布HN：Cekura（YC F24）——语音与聊天AI代理的测试与监控平台",
+      "source_url": "https://news.ycombinator.com/item?id=47232903",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "嘿 HN——我们是来自 Cekura（https://www.cekura.ai）的 Tarush、Sidhant 和 Shashij。我们运行语音代理模拟已有一年半时间，最近将相同的基础设施扩展到了聊天领域。团队使用 Cekura 来模拟真实用户对话，压力测试提示和 LLM 行为，并在问题影响生产环境前捕捉回归。核心...",
+      "reason": "介绍新发布的AI工具平台，实用性强，有教程潜力",
+      "writing_angle": "工具教程与使用指南",
+      "wechat_score": 0.85
+    },
+    {
+      "id": "a4459e76-a5fa-4a21-b695-cfa94fb457a0",
+      "suggested_title": "零代码构建AI代理引擎",
+      "source_title": "显示 HN：我不会编程——但我还是为AI代理构建了一个绑定执行引擎",
+      "source_url": "https://github.com/selfradiance/agentgate/blob/main/docs/manifesto.md",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "显示 HN：我不会编程——但我还是为AI代理构建了一个绑定执行引擎",
+      "reason": "展示无编程经验者构建AI工具，有启发性和教程价值",
+      "writing_angle": "AIGC创作工具与技巧",
+      "wechat_score": 0.85
+    },
+    {
+      "id": "db0f8d85-4b07-4e1c-8852-951dbc0b1f57",
+      "suggested_title": "AI写代码，谁来把关？",
+      "source_title": "当人工智能编写软件时，谁来验证它？",
+      "source_url": "https://leodemoura.github.io/blog/2026/02/28/when-ai-writes-the-worlds-software.html",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "当人工智能编写软件时，谁来验证它？",
+      "reason": "探讨AI编程的验证问题，行业热点，有讨论价值",
+      "writing_angle": "行业热点与动态",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "2bc799ef-7f07-4058-8703-86620f023532",
+      "suggested_title": "LLM能识别匿名用户？",
+      "source_title": "大型语言模型能够以惊人的准确度大规模识别匿名用户。",
+      "source_url": "https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "大型语言模型能够以惊人的准确度大规模识别匿名用户。",
+      "reason": "涉及大模型能力与隐私，是行业热点话题",
+      "writing_angle": "AI行业热点与动态",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "844182c8-4ed3-49da-8975-39a9de89297d",
+      "suggested_title": "扁豆：LLM驱动的代码检查工具",
+      "source_title": "扁豆——LLM驱动的代码检查",
+      "source_url": "https://github.com/Haizzz/lentil",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "扁豆——LLM驱动的代码检查",
+      "reason": "介绍开源或新的AI编程工具，实用性强",
+      "writing_angle": "开源软件与开发框架介绍",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "5d8c5279-d645-4c13-a079-593c0863a265",
+      "suggested_title": "如何为LLM赋予个性？",
+      "source_title": "赋予大型语言模型个性是卓越的工程实践。",
+      "source_url": "https://www.seangoedecke.com/giving-llms-a-personality/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "赋予大型语言模型个性不过是精良的工程实践。",
+      "reason": "探讨LLM工程实践，有技术分享和实用价值",
+      "writing_angle": "AI技术分享与深度解析",
+      "wechat_score": 0.75
+    },
+    {
+      "id": "8ce3785b-ebd4-4290-a9cc-c71d42f17b6b",
+      "suggested_title": "人类手写代码将消亡？",
+      "source_title": "人类手写代码于2025年消亡，代码审查将在2026年终结。",
+      "source_url": "https://www.latent.space/p/reviews-dead",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "人类手写代码于2025年消亡，代码审查将在2026年终结。",
+      "reason": "预测性观点，引发对AI编程未来的思考",
+      "writing_angle": "AI行业热点与动态",
+      "wechat_score": 0.7
+    },
+    {
+      "id": "691cd556-bdea-4710-a815-8d9dd121a098",
+      "suggested_title": "HumanRoot：让AI代理获得人类授权",
+      "source_title": "展示 HN：HumanRoot——AI代理的人类授权签名证明",
+      "source_url": "https://github.com/Thinklanceai/humanroot",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "HN展示：HumanRoot——为AI代理提供的人类授权签名证明",
+      "reason": "涉及AI代理与人类协作的前沿方向，有探讨价值",
+      "writing_angle": "技术解析与行业动态",
+      "wechat_score": 0.7
+    }
+  ]
+}

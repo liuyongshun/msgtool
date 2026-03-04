@@ -163,19 +163,6 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "llamaindex_blog": {
-        "enabled": false,
-        "name": "LlamaIndex Blog",
-        "url": "https://blog.llamaindex.ai/feed",
-        "description": "LlamaIndex官方博客",
-        "category": "engineering",
-        "tags": [
-          "AI工具",
-          "技术博客"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "techmeme": {
         "enabled": true,
         "name": "Techmeme",
@@ -220,19 +207,6 @@
         "category": "papers",
         "tags": [
           "AI论文"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
-      "sspai": {
-        "enabled": true,
-        "name": "少数派",
-        "url": "https://sspai.com/feed",
-        "description": "少数派科技深度内容",
-        "category": "news",
-        "tags": [
-          "AI资讯",
-          "技术博客"
         ],
         "ai_filter_enabled": true,
         "translation_enabled": true
@@ -362,36 +336,11 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
-      "v2ex": {
-        "enabled": true,
-        "name": "V2EX",
-        "url": "https://www.v2ex.com/feed/tab/tech.xml",
-        "description": "V2EX技术社区（官方RSS）",
-        "category": "tech_community",
-        "tags": [
-          "AI资讯"
-        ],
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
       "tldr_tech": {
         "enabled": false,
         "name": "TLDR Tech",
         "url": "https://incomplete.placeholder",
         "description": "TLDR Tech每日科技/AI精华（Newsletter）",
-        "category": "newsletter",
-        "tags": [
-          "AI资讯"
-        ],
-        "note": "Newsletter类型，非RSS，需邮件流处理",
-        "ai_filter_enabled": true,
-        "translation_enabled": true
-      },
-      "therundown_ai": {
-        "enabled": false,
-        "name": "The Rundown AI",
-        "url": "https://incomplete.placeholder",
-        "description": "The Rundown AI全球最大AI社区（Newsletter）",
         "category": "newsletter",
         "tags": [
           "AI资讯"
@@ -602,7 +551,7 @@
         },
         "hackernews": {
           "enabled": true,
-          "time": ["10:20", "14:05", "18:20", "21:52"],
+          "time": ["10:20", "14:05", "18:20", "21:10"],
           "max_results": 50,
           "note": "控制原始抓取数量，AI筛选后的所有结果都会保存"
         },
@@ -615,11 +564,26 @@
         "github": {
           "enabled": true,
           "time": "21:52",
-          "max_results": 100,
+          "max_results": 70,
           "note": "控制每种查询类型的抓取上限，AI筛选后的所有结果都会保存"
+        },
+        "wechat_topics": {
+          "enabled": true,
+          "time": ["15:00", "21:30"],
+          "note": "公众号选题评估任务：从当日 RSS + HackerNews 数据中筛选值得发布的内容"
         }
       }
     }
+  },
+  "wechat_llm": {
+    "enabled": true,
+    "provider": "gemini",
+    "api_key": "",
+    "api_url": "",
+    "model_name": "gemini-2.5-flash",
+    "max_tokens": 5000,
+    "temperature": 0.7,
+    "note": "公众号文章生成专用 LLM 配置，使用 Gemini 2.5 Flash 高质量稳定模型"
   },
   "llm": {
     "enabled": true,
@@ -658,6 +622,10 @@
       "arxiv": {
         "database_id": "",
         "description": "arXiv论文数据库（可选，为空则使用github数据库）"
+      },
+      "wechat": {
+        "database_id": "",
+        "description": "公众号文章数据库（存储 AI 生成的公众号内容，需在 Notion 中创建并填写 database_id）"
       }
     }
   }

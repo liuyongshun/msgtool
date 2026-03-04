@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-04T14:32:38.174764",
+  "source_date": "2026-03-04",
+  "total_evaluated": 22,
+  "selected_count": 1,
+  "topics": [
+    {
+      "id": "05f10fd4-b922-4316-8ef5-9278d6c8860d",
+      "suggested_title": "HumanRoot：为AI代理加上人类授权签名",
+      "source_title": "展示 HN：HumanRoot——AI代理的人类授权签名证明",
+      "source_url": "https://github.com/Thinklanceai/humanroot",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "HN展示：HumanRoot——为AI代理提供的人类授权签名证明",
+      "reason": "AI代理安全与授权新工具，有实用价值",
+      "writing_angle": "工具介绍与技术解析",
+      "wechat_score": 0.7
+    }
+  ]
+}

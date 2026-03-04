@@ -13,6 +13,10 @@
 - **📊 数据预览**: 美观的Web界面实时预览output数据 + 单条Notion同步
 - **🔄 Notion集成**: 支持自动/手动同步到Notion数据库
 
+rss公开内容：https://www.notion.so/303e0cb030e280f9ad48fb29ce52566f?v=303e0cb030e28082a99b000c8f3772cc
+
+hackernews公开内容：https://www.notion.so/303e0cb030e280faa697d7ae879d82b8?v=303e0cb030e280e2869d000ced69cbb7
+
 ## 📋 系统要求
 
 ### 必需
@@ -25,6 +29,10 @@
 - **DeepSeek API Key**: 用于 AI 内容筛选和翻译
   - 获取地址: https://platform.deepseek.com/api_keys
   - 如不配置，将跳过 AI 筛选和翻译功能
+- **Docker 和 Docker Compose**: 用于自动运行 RSSHub 服务
+  - 如果配置中使用了 RSSHub 源（`localhost:8878`），需要安装 Docker
+  - 安装指南: https://docs.docker.com/get-docker/
+  - 项目会自动检测并启动 RSSHub 容器，无需手动操作
 
 ---
 
@@ -151,8 +159,15 @@ python src\msgskill\preview_server.py
 **启动后：**
 - 🔄 定时任务自动在后台运行（Windows 会在新窗口显示）
 - 🌐 访问 `http://localhost:5001` 预览数据
+- 🐳 如果配置了 RSSHub 源，会自动启动 RSSHub 容器（需要 Docker）
 - 按 `Ctrl+C` 停止预览服务
 - 关闭调度器窗口停止定时任务
+
+**RSSHub 自动集成**：
+- 项目会自动检测配置中是否使用了 RSSHub 源（`localhost:8878`）
+- 如果检测到，会自动启动 RSSHub Docker 容器
+- 无需手动运行 RSSHub，项目会管理其生命周期
+- 如果未安装 Docker，会显示警告但不会影响其他功能
 
 ```
 
@@ -472,6 +487,88 @@ python src\msgskill\preview_server.py
 - 如果提示 `python` 命令不存在，尝试使用 `py` 或 `python3`
 - PowerShell 脚本可能需要设置执行策略：`Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - 预览服务器会在端口 5001 启动，确保端口未被占用
+- RSSHub 服务会在端口 8878 启动（如果配置了相关源）
+
+## 🔧 RSSHub 集成说明
+
+项目已集成 RSSHub，**无需用户手动运行 RSSHub 服务**。
+
+### 自动启动机制
+
+1. **自动检测**：项目启动时会自动检测配置中是否使用了 RSSHub 源（URL 包含 `localhost:8878`）
+2. **自动启动**：如果检测到 RSSHub 源，会自动启动 RSSHub Docker 容器
+3. **健康检查**：等待 RSSHub 服务就绪后再继续执行任务
+4. **无需配置**：完全自动化，用户无需任何额外操作
+
+### 使用 RSSHub 源
+
+在 `config/sources.json` 中，RSS 源的 URL 使用 `http://localhost:8878/` 前缀即可：
+
+```json
+{
+  "rss": {
+    "huxiu": {
+      "enabled": true,
+      "name": "虎嗅",
+      "url": "http://localhost:8878/huxiu/article",
+      "description": "虎嗅商业科技评论（通过RSSHub）"
+    }
+  }
+}
+```
+
+### 系统要求
+
+- **Docker**: 需要安装 Docker Desktop（Windows/macOS）或 Docker Engine（Linux）
+- **Docker Compose**: 通常随 Docker 一起安装
+- **端口**: 确保 8878 端口未被占用
+
+### 手动管理（可选）
+
+如果需要手动管理 RSSHub 容器：
+
+```bash
+# 启动 RSSHub
+docker-compose up -d rsshub
+
+# 停止 RSSHub
+docker-compose stop rsshub
+
+# 查看日志
+docker-compose logs -f rsshub
+
+# 重启 RSSHub
+docker-compose restart rsshub
+```
+
+### 故障排查
+
+如果 RSSHub 启动失败：
+
+1. **检查 Docker**：确保 Docker 已安装并正在运行
+   ```bash
+   docker --version
+   docker-compose --version
+   ```
+
+2. **检查端口**：确保 8878 端口未被占用
+   ```bash
+   # Linux/macOS
+   lsof -i :8878
+   
+   # Windows
+   netstat -ano | findstr :8878
+   ```
+
+3. **查看日志**：检查容器日志
+   ```bash
+   docker-compose logs rsshub
+   ```
+
+4. **手动启动**：如果自动启动失败，可以手动启动
+   ```bash
+   docker-compose up -d rsshub
+   ```
 
 ## 🛠️ 维护管理
 

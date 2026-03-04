@@ -52,6 +52,8 @@ OUTPUT_DIR = BASE_DIR / 'output' / 'daily'
 # 导入GitHub数据库模块
 from src.msgskill.utils.github_db_new import get_github_db
 from src.msgskill.utils.notion_sync import get_notion_sync
+from src.msgskill.utils.wechat_topic_evaluator import get_wechat_topic_evaluator
+from src.msgskill.utils.wechat_content_generator import get_wechat_content_generator
 from src.msgskill.models import ArticleItem
 from pydantic import ValidationError
 
@@ -438,6 +440,97 @@ def get_files(date):
         })
     except Exception as e:
         return jsonify({'error': str(e), 'files': []}), 500
+
+@app.route('/wechat')
+def wechat_topics_page():
+    """公众号选题页面"""
+    return send_from_directory(str(BASE_DIR / 'templates'), 'wechat_topics.html')
+
+
+@app.route('/api/wechat/topics')
+def get_wechat_topics():
+    """获取今日最新公众号选题列表"""
+    try:
+        date_str = request.args.get('date')  # 可选，默认今天
+        evaluator = get_wechat_topic_evaluator()
+        data = evaluator.load_latest_topics(date_str)
+
+        if data is None:
+            return jsonify({
+                'success': True,
+                'data': None,
+                'message': '今日暂无选题数据，请等待定时任务执行（15:00 / 21:30）或手动触发'
+            })
+
+        return jsonify({'success': True, 'data': data})
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/wechat/evaluate', methods=['POST'])
+def trigger_wechat_evaluate():
+    """手动触发今日选题评估（异步执行）"""
+    import asyncio
+    try:
+        date_str = (request.get_json(force=True) or {}).get('date')
+        evaluator = get_wechat_topic_evaluator()
+
+        # 同步运行异步评估
+        result = asyncio.run(evaluator.evaluate(date_str))
+
+        return jsonify({
+            'success': True,
+            'message': f"评估完成，共筛选出 {result.get('selected_count', 0)} 条推荐选题",
+            'data': result
+        })
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/wechat/generate', methods=['POST'])
+def wechat_generate_article():
+    """根据选题和用户要求生成公众号文章"""
+    import asyncio
+    try:
+        payload = request.get_json(force=True) or {}
+        topic = payload.get('topic')
+        user_prompt = payload.get('user_prompt', '')
+
+        if not topic:
+            return jsonify({'success': False, 'error': '缺少 topic 参数'}), 400
+
+        generator = get_wechat_content_generator()
+        result = asyncio.run(generator.generate(topic, user_prompt))
+
+        return jsonify(result)
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/wechat/sync-notion', methods=['POST'])
+def wechat_sync_to_notion():
+    """将生成的公众号文章同步到 Notion"""
+    try:
+        payload = request.get_json(force=True) or {}
+        title = payload.get('title', '')
+        content = payload.get('content', '')
+        topic = payload.get('topic', {})
+        user_prompt = payload.get('user_prompt', '')
+
+        if not title or not content:
+            return jsonify({'success': False, 'error': '缺少 title 或 content 参数'}), 400
+
+        generator = get_wechat_content_generator()
+        result = generator.sync_to_notion(title, content, topic, user_prompt)
+
+        return jsonify(result)
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
 
 def main():
     """启动服务器"""

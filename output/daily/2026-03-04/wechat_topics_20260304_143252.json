@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-03-04T14:32:52.501815",
+  "source_date": "2026-03-04",
+  "total_evaluated": 22,
+  "selected_count": 12,
+  "topics": [
+    {
+      "id": "27961fe4-aee2-4ddc-98af-3500c2471d43",
+      "suggested_title": "GPT-5.3即时版发布？最新进展速览",
+      "source_title": "GPT‑5.3 即时版",
+      "source_url": "https://openai.com/index/gpt-5-3-instant/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "GPT‑5.3 即时版",
+      "reason": "涉及大模型最新进展，时效性强，读者关注度高。",
+      "writing_angle": "大模型进展与评测",
+      "wechat_score": 0.9
+    },
+    {
+      "id": "4d14bd57-b040-4ed2-933e-ddb45963c7d8",
+      "suggested_title": "Cekura：AI代理的测试与监控平台",
+      "source_title": "发布HN：Cekura（YC F24）——语音与聊天AI代理的测试与监控平台",
+      "source_url": "https://news.ycombinator.com/item?id=47232903",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "嘿 HN——我们是来自 Cekura（https://www.cekura.ai）的 Tarush、Sidhant 和 Shashij。我们运行语音代理模拟已有一年半时间，最近将相同的基础设施扩展到了聊天领域。团队使用 Cekura 来模拟真实用户对话，压力测试提示和 LLM 行为，并在问题影响生产环境前捕捉回归。核心...",
+      "reason": "介绍新工具/平台，实用性强，属于AI工具教程与使用指南方向。",
+      "writing_angle": "工具测评与使用指南",
+      "wechat_score": 0.85
+    },
+    {
+      "id": "d8d55fc4-ca79-4a15-a65e-bbe7fe478aeb",
+      "suggested_title": "零代码构建AI代理执行引擎",
+      "source_title": "显示 HN：我不会编程——但我还是为AI代理构建了一个绑定执行引擎",
+      "source_url": "https://github.com/selfradiance/agentgate/blob/main/docs/manifesto.md",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "显示 HN：我不会编程——但我还是为AI代理构建了一个绑定执行引擎",
+      "reason": "展示低门槛AI开发实践，故事性强，有启发和教程价值。",
+      "writing_angle": "工具教程与使用指南",
+      "wechat_score": 0.85
+    },
+    {
+      "id": "b48c0c9c-37a3-4055-a13d-506b25277747",
+      "suggested_title": "AI写代码，谁来保证质量？",
+      "source_title": "当人工智能编写软件时，谁来验证它？",
+      "source_url": "https://leodemoura.github.io/blog/2026/02/28/when-ai-writes-the-worlds-software.html",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "当人工智能编写软件时，谁来验证它？",
+      "reason": "切中AI编程热点，探讨行业实践问题，话题性强。",
+      "writing_angle": "行业热点与动态",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "f68b002b-f36f-434a-9df7-ac3860d122ad",
+      "suggested_title": "Meta AI眼镜背后的隐私隐忧",
+      "source_title": "Meta的AI智能眼镜与数据隐私之忧",
+      "source_url": "https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "Meta的AI智能眼镜与数据隐私之忧",
+      "reason": "结合AI硬件与隐私热点，时效性和话题性俱佳。",
+      "writing_angle": "行业热点与动态",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "91a78d0a-fdd2-4af6-9720-49c6bc9f84e0",
+      "suggested_title": "扁豆：LLM驱动的智能代码检查工具",
+      "source_title": "扁豆——LLM驱动的代码检查",
+      "source_url": "https://github.com/Haizzz/lentil",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "扁豆——LLM驱动的代码检查",
+      "reason": "介绍开源/工具类项目，实用性强，属于开发框架/工具方向。",
+      "writing_angle": "开源软件与开发框架介绍",
+      "wechat_score": 0.8
+    },
+    {
+      "id": "393d4b81-8b0f-4abe-a58b-c96fd2d4e9db",
+      "suggested_title": "LLM能识别匿名用户？隐私新挑战",
+      "source_title": "大型语言模型能够以惊人的准确度大规模识别匿名用户。",
+      "source_url": "https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "大型语言模型能够以惊人的准确度大规模识别匿名用户。",
+      "reason": "涉及大模型能力与隐私热点，话题性强，有讨论价值。",
+      "writing_angle": "行业热点与动态",
+      "wechat_score": 0.75
+    },
+    {
+      "id": "11e3bec1-2330-403e-a551-9edad4db7577",
+      "suggested_title": "AI编程将终结人类手写代码？",
+      "source_title": "人类手写代码于2025年消亡，代码审查将在2026年终结。",
+      "source_url": "https://www.latent.space/p/reviews-dead",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "人类手写代码于2025年消亡，代码审查将在2026年终结。",
+      "reason": "预言性话题，引发对AI编程未来的思考，讨论度高。",
+      "writing_angle": "行业热点与动态",
+      "wechat_score": 0.75
+    },
+    {
+      "id": "0d14e21c-d461-492f-8981-238a414d9125",
+      "suggested_title": "SSD：加速大模型推理的新解码技术",
+      "source_title": "推测性推测解码（SSD）",
+      "source_url": "https://arxiv.org/abs/2603.03251",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "推测性推测解码（SSD）",
+      "reason": "技术方向强相关，属于大模型推理优化热点，有技术解析价值。",
+      "writing_angle": "技术解析",
+      "wechat_score": 0.7
+    },
+    {
+      "id": "d40ab3d2-b519-4f0e-9545-25dee04f6dc6",
+      "suggested_title": "如何为LLM赋予“个性”？",
+      "source_title": "赋予大型语言模型个性是卓越的工程实践。",
+      "source_url": "https://www.seangoedecke.com/giving-llms-a-personality/",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "赋予大型语言模型个性不过是精良的工程实践。",
+      "reason": "涉及大模型应用技巧，有实用和工程指导价值。",
+      "writing_angle": "AIGC创作工具与技巧",
+      "wechat_score": 0.7
+    },
+    {
+      "id": "ee9e50c5-976b-4eed-b5aa-ca9915ba29f7",
+      "suggested_title": "双路径：突破AI代理推理瓶颈",
+      "source_title": "双路径：突破代理式大语言模型推理中的存储带宽瓶颈",
+      "source_url": "https://arxiv.org/abs/2602.21548",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "双路径：突破代理式大语言模型推理中的存储带宽瓶颈",
+      "reason": "涉及AI代理推理优化技术，方向前沿，有技术解析价值。",
+      "writing_angle": "技术解析",
+      "wechat_score": 0.7
+    },
+    {
+      "id": "0d1b6658-4a53-4b3f-8aeb-86bbaeef3308",
+      "suggested_title": "HumanRoot：为AI代理加上人类授权签名",
+      "source_title": "展示 HN：HumanRoot——AI代理的人类授权签名证明",
+      "source_url": "https://github.com/Thinklanceai/humanroot",
+      "source_type": "hackernews",
+      "feed_name": "",
+      "summary": "HN展示：HumanRoot——为AI代理提供的人类授权签名证明",
+      "reason": "涉及AI代理安全与授权，概念新颖，有讨论价值。",
+      "writing_angle": "技术解析与行业动态",
+      "wechat_score": 0.7
+    }
+  ]
+}

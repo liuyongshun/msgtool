@@ -526,7 +526,7 @@ def get_notion_sync() -> Optional[NotionSync]:
         databases = {}
         
         # 提取各数据源的数据库ID
-        for source_type in ["github", "rss", "hackernews", "arxiv"]:
+        for source_type in ["github", "rss", "hackernews", "arxiv", "wechat"]:
             db_config = databases_config.get(source_type, {})
             if isinstance(db_config, dict):
                 db_id = db_config.get("database_id", "")

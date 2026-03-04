@@ -15,6 +15,23 @@ if ! python3 -c "import flask" 2>/dev/null; then
     pip3 install -r requirements.txt
 fi
 
+# 检查 Docker（如果需要 RSSHub）
+echo ""
+echo "检查 Docker 环境..."
+if command -v docker &> /dev/null && command -v docker-compose &> /dev/null; then
+    echo "  ✓ Docker 和 Docker Compose 已安装"
+    # 检查是否有使用 RSSHub 的配置
+    if grep -q "localhost:8878" config/sources.json 2>/dev/null; then
+        echo "  ✓ 检测到 RSSHub 配置，将在启动时自动启动 RSSHub 容器"
+    fi
+else
+    if grep -q "localhost:8878" config/sources.json 2>/dev/null; then
+        echo "  ⚠ 警告: 检测到 RSSHub 配置，但未安装 Docker"
+        echo "    请安装 Docker 和 Docker Compose，或手动启动 RSSHub 服务"
+        echo "    安装指南: https://docs.docker.com/get-docker/"
+    fi
+fi
+
 echo ""
 echo "================================================"
 echo "启动服务"
@@ -40,6 +57,12 @@ echo "================================================"
 echo "✅ 首次同步完成"
 echo "================================================"
 echo ""
+
+# 创建 logs 目录（如果不存在）
+if [ ! -d "logs" ]; then
+    mkdir -p logs
+    echo "  ✓ 创建 logs 目录"
+fi
 
 # 启动定时任务（后台运行，日志同时输出到控制台和文件）
 echo "▶ 启动后台定时调度器..."

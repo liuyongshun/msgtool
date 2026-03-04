@@ -24,6 +24,8 @@ try:
     from .utils.logger import logger
     from .config import get_config
     from .output import get_output_manager
+    from .utils.rsshub_manager import get_rsshub_manager
+    from .utils.wechat_topic_evaluator import get_wechat_topic_evaluator
 except ImportError:
     # 直接运行时的导入（从项目根目录）
     import sys
@@ -36,6 +38,8 @@ except ImportError:
     from src.msgskill.utils.logger import logger
     from src.msgskill.config import get_config
     from src.msgskill.output import get_output_manager
+    from src.msgskill.utils.rsshub_manager import get_rsshub_manager
+    from src.msgskill.utils.wechat_topic_evaluator import get_wechat_topic_evaluator
 
 
 class MultiSourceScheduler:
@@ -61,6 +65,9 @@ class MultiSourceScheduler:
         logger.info(f"📅 多源调度器初始化 - 全局启用: {self.scheduler_enabled}")
         if self.scheduler_enabled:
             self._log_schedule_config()
+        
+        # 检查是否需要 RSSHub，如果需要则启动
+        self._ensure_rsshub_if_needed()
     
     def _log_schedule_config(self):
         """记录调度配置信息"""
@@ -70,6 +77,39 @@ class MultiSourceScheduler:
                 logger.info(f"   ✅ {source}: {config.get('time', '未设置')} (最多{config.get('max_results', 10)}条)")
             else:
                 logger.info(f"   ❌ {source}: 已禁用")
+    
+    def _needs_rsshub(self) -> bool:
+        """检查配置中是否有使用 RSSHub 的 RSS 源"""
+        try:
+            config_manager = get_config()
+            rss_sources = config_manager.get_rss_sources(enabled_only=True)
+            
+            for source_config in rss_sources.values():
+                url = source_config.url
+                if url and "localhost:8878" in url:
+                    return True
+            return False
+        except Exception as e:
+            logger.warning(f"检查 RSSHub 需求时出错: {str(e)}")
+            return False
+    
+    def _ensure_rsshub_if_needed(self):
+        """如果需要 RSSHub，确保它正在运行"""
+        if not self._needs_rsshub():
+            return
+        
+        logger.info("🔍 检测到配置中使用了 RSSHub 源，正在检查 RSSHub 服务...")
+        
+        try:
+            rsshub_manager = get_rsshub_manager()
+            if rsshub_manager.ensure_running():
+                logger.info("✅ RSSHub 服务已就绪")
+            else:
+                logger.warning("⚠️ RSSHub 服务启动失败，RSS 源可能无法正常工作")
+                logger.warning("   提示: 请确保已安装 Docker 和 Docker Compose")
+        except Exception as e:
+            logger.warning(f"⚠️ 启动 RSSHub 时出错: {str(e)}")
+            logger.warning("   RSS 源可能无法正常工作，请手动启动 RSSHub 或检查 Docker 环境")
     
     async def sync_arxiv(self, max_results: int = 20):
         """同步arXiv论文"""
@@ -507,6 +547,20 @@ class MultiSourceScheduler:
             logger.error(f"❌ GitHub同步异常: {str(e)}")
             self.sync_stats["failed_sources"].append("github")
     
+    async def sync_wechat_topics(self):
+        """评估当日公众号选题（RSS + HackerNews 数据）"""
+        logger.info("📱 开始公众号选题评估任务...")
+        try:
+            evaluator = get_wechat_topic_evaluator()
+            result = await evaluator.evaluate()
+            selected = result.get("selected_count", 0)
+            total = result.get("total_evaluated", 0)
+            logger.info(f"✅ 公众号选题评估完成：共评估 {total} 条，筛选出 {selected} 条推荐选题")
+            self.sync_stats["success_count"] += 1
+        except Exception as e:
+            logger.error(f"❌ 公众号选题评估异常: {str(e)}")
+            self.sync_stats["failed_sources"].append("wechat_topics")
+    
     def create_sync_job(self, source_name: str, sync_func):
         """创建同步任务包装器"""
         def wrapper():
@@ -519,6 +573,9 @@ class MultiSourceScheduler:
         if not self.scheduler_enabled:
             logger.warning("⚠️ 调度器全局禁用，如需启用请修改配置")
             return
+        
+        # 确保 RSSHub 运行（如果需要）
+        self._ensure_rsshub_if_needed()
         
         logger.info("🚀 多源调度器启动")
         logger.info("💡 提示: 如需启动时立即执行一次，请使用 --once 参数")
@@ -554,6 +611,8 @@ class MultiSourceScheduler:
                     sync_func = lambda mr=max_results: self.sync_rss(mr)
                 elif source == "github":
                     sync_func = lambda mr=max_results: self.sync_github(mr)
+                elif source == "wechat_topics":
+                    sync_func = lambda: self.sync_wechat_topics()
                 
                 if sync_func:
                     # 为每个时间点创建一个任务
@@ -622,6 +681,8 @@ class MultiSourceScheduler:
                     tasks.append(self.sync_rss(max_results))
                 elif source == "github":
                     tasks.append(self.sync_github(max_results))
+                elif source == "wechat_topics":
+                    tasks.append(self.sync_wechat_topics())
         
         if tasks:
             await asyncio.gather(*tasks)
@@ -630,6 +691,9 @@ class MultiSourceScheduler:
     
     def run_once(self):
         """立即执行所有已启用的同步任务（用于测试）"""
+        # 确保 RSSHub 运行（如果需要）
+        self._ensure_rsshub_if_needed()
+        
         logger.info("⚡ 立即执行所有已启用的同步任务...")
         asyncio.run(self.run_all_sources_async())
     

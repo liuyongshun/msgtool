@@ -162,13 +162,6 @@ rss:
       tags: ["AI工具", "技术博客"]
       ai_filter_enabled: true
       translation_enabled: true
-    - name: "LlamaIndex Blog"
-      url: "https://blog.llamaindex.ai/feed"
-      enabled: false
-      category: "engineering"
-      tags: ["AI工具", "技术博客"]
-      ai_filter_enabled: true
-      translation_enabled: true
     - name: "Product Hunt AI Tools"
       url: "https://www.producthunt.com/feed?category=artificial_intelligence"
       enabled: true
@@ -196,13 +189,6 @@ rss:
       translation_enabled: true
 
     # 中文科技媒体
-    - name: "少数派"
-      url: "https://sspai.com/feed"
-      enabled: true
-      category: "news"
-      tags: ["AI资讯", "技术博客"]
-      ai_filter_enabled: true
-      translation_enabled: false
     - name: "量子位 (QbitAI)"
       url: "https://www.qbitai.com/feed"
       enabled: true
@@ -270,24 +256,9 @@ rss:
       tags: ["AI资讯", "技术博客"]
       ai_filter_enabled: true
       translation_enabled: true
-    - name: "V2EX"
-      url: "https://www.v2ex.com/feed/tab/tech.xml"
-      enabled: true
-      category: "tech_community"
-      tags: ["AI资讯"]
-      ai_filter_enabled: true
-      translation_enabled: true
     
     # Newsletter (可选，需要邮件处理)
     - name: "TLDR Tech"
-      url: "https://incomplete.placeholder"
-      enabled: false
-      category: "newsletter"
-      tags: ["AI资讯"]
-      note: "Newsletter类型，非RSS，需邮件流处理"
-      ai_filter_enabled: true
-      translation_enabled: true
-    - name: "The Rundown AI"
       url: "https://incomplete.placeholder"
       enabled: false
       category: "newsletter"

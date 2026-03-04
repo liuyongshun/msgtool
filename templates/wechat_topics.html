@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>公众号选题助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    .fade-in { animation: fadeIn 0.3s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Markdown article preview styles */
+    .markdown-body h1 { font-size: 1.5rem; font-weight: 700; margin: 1rem 0 0.5rem; }
+    .markdown-body h2 { font-size: 1.25rem; font-weight: 700; margin: 1rem 0 0.4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    .markdown-body h3 { font-size: 1.1rem; font-weight: 600; margin: 0.8rem 0 0.3rem; }
+    .markdown-body p { margin: 0.5rem 0; line-height: 1.75; }
+    .markdown-body ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .markdown-body ol { list-style: decimal; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .markdown-body li { margin: 0.25rem 0; }
+    .markdown-body code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 0.875rem; font-family: monospace; }
+    .markdown-body pre { background: #1f2937; color: #f9fafb; padding: 1rem; border-radius: 6px; overflow-x: auto; margin: 0.75rem 0; font-size: 0.85rem; }
+    .markdown-body pre code { background: transparent; padding: 0; color: inherit; }
+    .markdown-body blockquote { border-left: 4px solid #d1d5db; padding-left: 1rem; color: #6b7280; margin: 0.5rem 0; }
+    .markdown-body hr { border: 0; border-top: 1px solid #e5e7eb; margin: 1rem 0; }
+    .markdown-body strong { font-weight: 700; }
+
+    /* Score badge color */
+    .score-high { background-color: #dcfce7; color: #16a34a; }
+    .score-mid  { background-color: #fef9c3; color: #ca8a04; }
+    .score-low  { background-color: #fee2e2; color: #dc2626; }
+
+    /* Modal backdrop */
+    #modal-backdrop { transition: opacity 0.2s; }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans text-gray-800">
+
+<!-- ========= 顶部导航 ========= -->
+<div class="bg-white border-b shadow-sm sticky top-0 z-30">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-xl">📱</span>
+      <div>
+        <h1 class="font-bold text-lg leading-tight">公众号选题助手</h1>
+        <p class="text-xs text-gray-400" id="subtitle">今日推荐选题 · AI技术 / 工具 / 教程</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="/" class="text-sm text-blue-500 hover:underline">← 返回预览</a>
+      <button id="btn-refresh" onclick="loadTopics()"
+        class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-1.5 rounded-md transition-colors flex items-center gap-1">
+        <span id="refresh-icon">🔄</span> 刷新
+      </button>
+      <button id="btn-evaluate" onclick="triggerEvaluate()"
+        class="bg-purple-500 hover:bg-purple-600 text-white text-sm px-4 py-1.5 rounded-md transition-colors">
+        ⚡ 立即评估
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ========= 主内容区 ========= -->
+<div class="max-w-5xl mx-auto px-4 py-6">
+
+  <!-- 状态信息栏 -->
+  <div id="info-bar" class="bg-white rounded-lg shadow-sm p-4 mb-5 flex flex-col sm:flex-row items-start sm:items-center gap-3 justify-between text-sm text-gray-500">
+    <span id="info-text">正在加载...</span>
+    <span id="info-time" class="text-xs text-gray-400"></span>
+  </div>
+
+  <!-- 加载中 -->
+  <div id="loading-panel" class="text-center py-16 text-gray-400">
+    <div class="text-4xl mb-3 animate-pulse">⏳</div>
+    <p>正在加载选题数据...</p>
+  </div>
+
+  <!-- 空状态 -->
+  <div id="empty-panel" class="hidden text-center py-16 text-gray-400">
+    <div class="text-5xl mb-4">📭</div>
+    <p class="text-lg font-medium text-gray-500 mb-2">今日暂无选题数据</p>
+    <p class="text-sm mb-4">定时任务将在 <strong>15:00</strong> 和 <strong>21:30</strong> 自动运行</p>
+    <button onclick="triggerEvaluate()"
+      class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-md text-sm transition-colors">
+      ⚡ 立即触发评估
+    </button>
+  </div>
+
+  <!-- 选题列表 -->
+  <div id="topics-list" class="hidden space-y-4 fade-in"></div>
+
+</div>
+
+<!-- ========= 创作弹窗 ========= -->
+<div id="modal-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden flex items-center justify-center p-4">
+  <div id="modal-box" class="bg-white rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+
+    <!-- 弹窗头部 -->
+    <div class="flex items-center justify-between px-6 py-4 border-b sticky top-0 bg-white rounded-t-xl z-10">
+      <h2 class="font-bold text-base flex items-center gap-2">
+        <span id="modal-stage-icon">✍️</span>
+        <span id="modal-title-text">创作内容</span>
+      </h2>
+      <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-xl leading-none">✕</button>
+    </div>
+
+    <!-- 阶段1：选题信息 + 创作要求输入 -->
+    <div id="stage-input" class="px-6 py-5">
+      <!-- 选题信息摘要 -->
+      <div id="topic-info-card" class="bg-gray-50 rounded-lg p-4 mb-4 text-sm space-y-1.5 border border-gray-200">
+        <p><span class="font-medium text-gray-600">推荐标题：</span><span id="ti-suggested" class="font-semibold text-blue-700"></span></p>
+        <p><span class="font-medium text-gray-600">原始标题：</span><span id="ti-source" class="text-gray-700"></span></p>
+        <p><span class="font-medium text-gray-600">来源：</span><span id="ti-source-type" class="text-gray-500"></span></p>
+        <p><span class="font-medium text-gray-600">写作角度：</span><span id="ti-angle" class="text-gray-700"></span></p>
+        <p><span class="font-medium text-gray-600">推荐理由：</span><span id="ti-reason" class="text-gray-700 italic"></span></p>
+        <p>
+          <span class="font-medium text-gray-600">原文链接：</span>
+          <a id="ti-url" href="#" target="_blank" class="text-blue-500 hover:underline text-xs break-all"></a>
+        </p>
+      </div>
+
+      <!-- 用户创作要求 -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+          创作要求 <span class="text-gray-400 font-normal">（可选，补充写作方向、受众、重点内容等）</span>
+        </label>
+        <textarea id="user-prompt" rows="4"
+          placeholder="例如：面向初学者，重点介绍安装步骤和基本用法，加入实际使用案例..."
+          class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 resize-vertical"></textarea>
+      </div>
+
+      <div class="flex justify-end gap-3">
+        <button onclick="closeModal()" class="px-5 py-2 text-sm text-gray-500 hover:text-gray-700 border rounded-lg">取消</button>
+        <button id="btn-generate" onclick="generateArticle()"
+          class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 text-sm rounded-lg transition-colors flex items-center gap-2">
+          <span id="generate-spinner" class="hidden animate-spin">⏳</span>
+          ✨ 开始创作
+        </button>
+      </div>
+    </div>
+
+    <!-- 阶段2：文章预览 + Notion 同步 -->
+    <div id="stage-preview" class="hidden px-6 py-5">
+      <!-- 文章标题 -->
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-bold text-base text-gray-800" id="article-title-display"></h3>
+        <button onclick="backToInput()" class="text-xs text-gray-400 hover:text-gray-600 border rounded px-2 py-0.5">← 重新创作</button>
+      </div>
+
+      <!-- Markdown 预览 -->
+      <div id="article-preview"
+        class="markdown-body bg-gray-50 rounded-lg p-5 text-sm border border-gray-200 mb-5 max-h-[55vh] overflow-y-auto">
+      </div>
+
+      <!-- 操作按钮 -->
+      <div class="flex items-center justify-between gap-3">
+        <span class="text-xs text-gray-400">共 <span id="article-word-count">0</span> 字</span>
+        <div class="flex gap-3">
+          <button onclick="copyArticle()"
+            class="px-4 py-2 text-sm border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 flex items-center gap-1">
+            📋 复制内容
+          </button>
+          <button id="btn-sync-notion" onclick="syncToNotion()"
+            class="bg-black hover:bg-gray-800 text-white px-5 py-2 text-sm rounded-lg transition-colors flex items-center gap-2">
+            <span id="sync-spinner" class="hidden animate-spin">⏳</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg>
+            同步到 Notion
+          </button>
+        </div>
+      </div>
+
+      <!-- Notion 同步结果提示 -->
+      <div id="notion-result" class="hidden mt-4 p-3 rounded-lg text-sm"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========= 全局提示 ========= -->
+<div id="toast" class="hidden fixed bottom-6 right-6 z-50 bg-gray-800 text-white text-sm px-5 py-3 rounded-lg shadow-xl transition-all">
+  <span id="toast-text"></span>
+</div>
+
+<script>
+  // ===== 全局状态 =====
+  let currentTopic = null;
+  let generatedArticle = null; // { title, content }
+  const ARTICLE_CACHE_KEY = 'wechat_article_cache_v1';
+
+  // ===== 本地缓存工具函数 =====
+  function getArticleCacheMap() {
+    try {
+      const raw = localStorage.getItem(ARTICLE_CACHE_KEY);
+      if (!raw) return {};
+      const data = JSON.parse(raw);
+      return (data && typeof data === 'object') ? data : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveArticleCache(topicId, payload) {
+    if (!topicId) return;
+    const cache = getArticleCacheMap();
+    cache[topicId] = {
+      title: payload.title,
+      content: payload.content,
+      user_prompt: payload.user_prompt || '',
+      topic: payload.topic || null,
+      saved_at: new Date().toISOString()
+    };
+    try {
+      localStorage.setItem(ARTICLE_CACHE_KEY, JSON.stringify(cache));
+    } catch {
+      // 忽略本地存储失败
+    }
+  }
+
+  function loadArticleCache(topicId) {
+    if (!topicId) return null;
+    const cache = getArticleCacheMap();
+    return cache[topicId] || null;
+  }
+
+  // ===== 初始化 =====
+  document.addEventListener('DOMContentLoaded', loadTopics);
+
+  // ===== 加载选题 =====
+  async function loadTopics() {
+    showLoading(true);
+    try {
+      const res = await fetch('/api/wechat/topics');
+      const json = await res.json();
+
+      showLoading(false);
+
+      // 调试日志
+      console.log('API Response:', json);
+
+      if (!json.success) {
+        showToast('加载失败: ' + json.error, 'error');
+        return;
+      }
+
+      const data = json.data;
+      console.log('Data loaded:', data);
+      
+      if (!data || !data.topics || data.topics.length === 0) {
+        document.getElementById('empty-panel').classList.remove('hidden');
+        document.getElementById('info-text').textContent = '今日暂无选题数据';
+        if (data && data.message) {
+          document.getElementById('info-text').textContent = data.message;
+        }
+        return;
+      }
+
+      renderTopics(data);
+
+    } catch (e) {
+      showLoading(false);
+      document.getElementById('info-text').textContent = '加载失败: ' + e.message;
+      showToast('网络错误: ' + e.message, 'error');
+    }
+  }
+
+  // ===== 渲染选题列表 =====
+  function renderTopics(data) {
+    // 隐藏空状态和加载状态
+    document.getElementById('empty-panel').classList.add('hidden');
+    document.getElementById('loading-panel').classList.add('hidden');
+    
+    const list = document.getElementById('topics-list');
+    list.innerHTML = '';
+    list.classList.remove('hidden');
+
+    // 信息栏
+    const generatedAt = data.generated_at
+      ? new Date(data.generated_at).toLocaleString('zh-CN', { hour12: false })
+      : '';
+    document.getElementById('info-text').textContent =
+      `共 ${data.selected_count} 条推荐选题（评估了 ${data.total_evaluated} 条内容）`;
+    document.getElementById('info-time').textContent = generatedAt ? `更新于 ${generatedAt}` : '';
+
+    data.topics.forEach((topic, idx) => {
+      const score = topic.wechat_score || 0;
+      const scoreClass = score >= 0.8 ? 'score-high' : score >= 0.6 ? 'score-mid' : 'score-low';
+      const sourceIcon = topic.source_type === 'hackernews' ? '🔶' : '📰';
+      const feedLabel = topic.feed_name ? `<span class="text-gray-400">· ${escHtml(topic.feed_name)}</span>` : '';
+
+      const card = document.createElement('div');
+      card.className = 'bg-white rounded-xl shadow-sm p-4 sm:p-5 fade-in border border-gray-100 hover:border-blue-200 transition-colors';
+      card.innerHTML = `
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-start justify-between gap-3 sm:gap-4">
+          <div class="flex-1 min-w-0">
+            <!-- 序号 + 推荐标题 -->
+            <div class="flex items-start gap-2 mb-1">
+              <span class="text-gray-300 font-mono text-xs mt-0.5 shrink-0">${String(idx + 1).padStart(2, '0')}</span>
+              <h3 class="font-bold text-base sm:text-lg text-gray-900 leading-snug break-words">${escHtml(topic.suggested_title || topic.source_title)}</h3>
+            </div>
+
+            <!-- 分数 + 来源 -->
+            <div class="flex flex-wrap items-center gap-2 ml-6 mb-3 text-xs sm:text-[13px]">
+              <span class="text-xs px-2 py-0.5 rounded-full font-medium ${scoreClass}">
+                推荐分 ${(score * 100).toFixed(0)}
+              </span>
+              <span class="text-xs text-gray-400">${sourceIcon} ${topic.source_type} ${feedLabel}</span>
+            </div>
+
+            <!-- 写作角度 -->
+            ${topic.writing_angle ? `
+              <div class="ml-6 mb-2 flex items-center gap-1.5 text-sm">
+                <span class="text-gray-400 shrink-0">角度：</span>
+                <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full">${escHtml(topic.writing_angle)}</span>
+              </div>` : ''}
+
+            <!-- 推荐理由 -->
+            ${topic.reason ? `
+              <p class="ml-6 text-sm text-gray-500 italic mb-2 break-words">"${escHtml(topic.reason)}"</p>` : ''}
+
+            <!-- 摘要 -->
+            ${topic.summary ? `
+              <p class="ml-6 text-xs text-gray-400 break-words">${escHtml(topic.summary.substring(0, 120))}${topic.summary.length > 120 ? '…' : ''}</p>` : ''}
+
+            <!-- 原始标题 + 链接 -->
+            <div class="ml-6 mt-2 text-xs text-gray-400 break-words">
+              原文：<a href="${escHtml(topic.source_url)}" target="_blank"
+                class="hover:text-blue-500 hover:underline break-all">${escHtml(topic.source_title)}</a>
+            </div>
+          </div>
+
+          <!-- 创作按钮 -->
+          <div class="shrink-0 mt-2 sm:mt-1 sm:ml-4 w-full sm:w-auto">
+            <button onclick="openCreateModal(${idx})"
+              data-topic-idx="${idx}"
+              class="bg-purple-600 hover:bg-purple-700 text-white text-sm px-4 py-2 rounded-lg transition-colors flex items-center justify-center gap-1 w-full sm:w-auto">
+              ✍️ 创作内容
+            </button>
+          </div>
+        </div>
+      `;
+      list.appendChild(card);
+    });
+
+    // 保存数据供弹窗使用
+    window._topicsData = data.topics;
+  }
+
+  // ===== 打开创作弹窗 =====
+  function openCreateModal(idx) {
+    const topics = window._topicsData || [];
+    if (!topics[idx]) return;
+
+    currentTopic = topics[idx];
+    generatedArticle = null;
+
+    // 填充选题信息
+    document.getElementById('ti-suggested').textContent = currentTopic.suggested_title || currentTopic.source_title;
+    document.getElementById('ti-source').textContent = currentTopic.source_title || '';
+    document.getElementById('ti-source-type').textContent = currentTopic.source_type + (currentTopic.feed_name ? ' · ' + currentTopic.feed_name : '');
+    document.getElementById('ti-angle').textContent = currentTopic.writing_angle || '通用';
+    document.getElementById('ti-reason').textContent = currentTopic.reason || '';
+    const urlEl = document.getElementById('ti-url');
+    urlEl.href = currentTopic.source_url || '#';
+    urlEl.textContent = currentTopic.source_url || '';
+
+    // 尝试从本地缓存恢复上次生成的内容
+    const cached = loadArticleCache(currentTopic.id);
+    if (cached && cached.content) {
+      generatedArticle = { title: cached.title, content: cached.content };
+      document.getElementById('user-prompt').value = cached.user_prompt || '';
+      showArticlePreview(cached.title, cached.content);
+      switchStage('preview');
+      showToast('已从本地缓存恢复上次生成的内容');
+    } else {
+      // 重置到阶段1
+      document.getElementById('user-prompt').value = '';
+      switchStage('input');
+    }
+
+    // 显示弹窗
+    document.getElementById('modal-backdrop').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // ===== 关闭弹窗 =====
+  function closeModal() {
+    document.getElementById('modal-backdrop').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // 点击遮罩关闭
+  document.getElementById('modal-backdrop').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // ===== 切换弹窗阶段 =====
+  function switchStage(stage) {
+    const isInput = stage === 'input';
+    document.getElementById('stage-input').classList.toggle('hidden', !isInput);
+    document.getElementById('stage-preview').classList.toggle('hidden', isInput);
+    document.getElementById('modal-stage-icon').textContent = isInput ? '✍️' : '📄';
+    document.getElementById('modal-title-text').textContent = isInput ? '创作内容' : '文章预览';
+  }
+
+  function backToInput() {
+    switchStage('input');
+  }
+
+  // ===== 生成文章 =====
+  async function generateArticle() {
+    if (!currentTopic) return;
+
+    const userPrompt = document.getElementById('user-prompt').value.trim();
+    const btn = document.getElementById('btn-generate');
+    const spinner = document.getElementById('generate-spinner');
+
+    btn.disabled = true;
+    spinner.classList.remove('hidden');
+    btn.querySelector('span:not(#generate-spinner)') && (btn.textContent = '');
+    btn.innerHTML = '<span id="generate-spinner" class="animate-spin">⏳</span> 创作中...';
+
+    try {
+      const res = await fetch('/api/wechat/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic: currentTopic, user_prompt: userPrompt }),
+      });
+      const result = await res.json();
+
+      if (!result.success) {
+        showToast('生成失败: ' + result.error, 'error');
+        return;
+      }
+
+      generatedArticle = { title: result.title, content: result.content };
+      // 写入本地缓存，避免弹窗关闭或刷新后丢失
+      saveArticleCache(currentTopic.id, {
+        title: result.title,
+        content: result.content,
+        user_prompt: userPrompt,
+        topic: currentTopic
+      });
+      showArticlePreview(result.title, result.content);
+      switchStage('preview');
+
+    } catch (e) {
+      showToast('网络错误: ' + e.message, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<span id="generate-spinner" class="hidden animate-spin">⏳</span> ✨ 开始创作';
+    }
+  }
+
+  // ===== 显示文章预览 =====
+  function showArticlePreview(title, content) {
+    document.getElementById('article-title-display').textContent = title;
+    const preview = document.getElementById('article-preview');
+    // 使用 marked 渲染 Markdown
+    if (typeof marked !== 'undefined') {
+      preview.innerHTML = marked.parse(content || '');
+    } else {
+      preview.textContent = content;
+    }
+    // 字数统计
+    const wordCount = (content || '').replace(/\s+/g, '').length;
+    document.getElementById('article-word-count').textContent = wordCount.toLocaleString();
+  }
+
+  // ===== 复制文章 =====
+  async function copyArticle() {
+    if (!generatedArticle) return;
+    try {
+      await navigator.clipboard.writeText(generatedArticle.content);
+      showToast('已复制到剪贴板 ✓');
+    } catch {
+      showToast('复制失败，请手动选择文本', 'error');
+    }
+  }
+
+  // ===== 同步到 Notion =====
+  async function syncToNotion() {
+    if (!generatedArticle || !currentTopic) return;
+
+    const btn = document.getElementById('btn-sync-notion');
+    const spinner = document.getElementById('sync-spinner');
+    const resultEl = document.getElementById('notion-result');
+
+    btn.disabled = true;
+    spinner.classList.remove('hidden');
+
+    const userPrompt = document.getElementById('user-prompt').value.trim();
+
+    try {
+      const res = await fetch('/api/wechat/sync-notion', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: generatedArticle.title,
+          content: generatedArticle.content,
+          topic: currentTopic,
+          user_prompt: userPrompt,
+        }),
+      });
+      const result = await res.json();
+
+      resultEl.classList.remove('hidden', 'bg-green-50', 'text-green-700', 'bg-red-50', 'text-red-700');
+
+      if (result.success) {
+        resultEl.className = 'mt-4 p-3 rounded-lg text-sm bg-green-50 text-green-700 border border-green-200';
+        resultEl.innerHTML = `✅ ${result.message}` +
+          (result.notion_url ? ` <a href="${escHtml(result.notion_url)}" target="_blank" class="underline ml-1">查看页面 →</a>` : '');
+        showToast('已同步到 Notion ✓');
+      } else {
+        resultEl.className = 'mt-4 p-3 rounded-lg text-sm bg-red-50 text-red-700 border border-red-200';
+        resultEl.textContent = '❌ ' + result.message;
+      }
+
+    } catch (e) {
+      resultEl.classList.remove('hidden');
+      resultEl.className = 'mt-4 p-3 rounded-lg text-sm bg-red-50 text-red-700 border border-red-200';
+      resultEl.textContent = '❌ 网络错误: ' + e.message;
+    } finally {
+      btn.disabled = false;
+      spinner.classList.add('hidden');
+    }
+  }
+
+  // ===== 手动触发评估 =====
+  async function triggerEvaluate() {
+    const btn = document.getElementById('btn-evaluate');
+    btn.disabled = true;
+    btn.textContent = '⏳ 评估中...';
+    showToast('正在评估今日内容，请稍候（约需1-2分钟）...', 'info', 8000);
+
+    try {
+      const res = await fetch('/api/wechat/evaluate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({}),
+      });
+      const result = await res.json();
+
+      if (result.success) {
+        showToast(result.message + ' ✓');
+        loadTopics(); // 刷新列表
+      } else {
+        showToast('评估失败: ' + result.error, 'error');
+      }
+    } catch (e) {
+      showToast('网络错误: ' + e.message, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '⚡ 立即评估';
+    }
+  }
+
+  // ===== 工具函数 =====
+  function showLoading(show) {
+    document.getElementById('loading-panel').classList.toggle('hidden', !show);
+    document.getElementById('topics-list').classList.add('hidden');
+    document.getElementById('empty-panel').classList.add('hidden');
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  let _toastTimer = null;
+  function showToast(msg, type = 'success', duration = 3000) {
+    const el = document.getElementById('toast');
+    const text = document.getElementById('toast-text');
+    text.textContent = msg;
+    el.className = 'fixed bottom-6 right-6 z-50 text-sm px-5 py-3 rounded-lg shadow-xl transition-all ' +
+      (type === 'error' ? 'bg-red-600 text-white' :
+       type === 'info'  ? 'bg-blue-600 text-white' :
+                          'bg-gray-800 text-white');
+    el.classList.remove('hidden');
+    clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(() => el.classList.add('hidden'), duration);
+  }
+</script>
+</body>
+</html>

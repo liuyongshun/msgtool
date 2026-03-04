@@ -1,0 +1,23 @@
+services:
+  rsshub:
+    image: diygod/rsshub:latest
+    container_name: msgtool-rsshub
+    restart: unless-stopped
+    ports:
+      - "8878:1200"  # 映射到本地 8878 端口
+    environment:
+      # 可选：配置缓存（使用内存缓存，适合单机使用）
+      CACHE_TYPE: memory
+      # 可选：配置请求超时
+      REQUEST_TIMEOUT: 30000
+      # 可选：配置 User-Agent
+      UA: "Mozilla/5.0 (compatible; RSSHub/1.0; +https://github.com/DIYgod/RSSHub)"
+    # 可选：如果需要持久化缓存，可以挂载卷
+    # volumes:
+    #   - ./rsshub_cache:/app/.cache
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1200/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
