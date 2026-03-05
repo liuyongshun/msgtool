@@ -430,6 +430,9 @@ def get_files(date):
             name_parts = file.stem.split('_')
             if len(name_parts) >= 1:
                 data_type = name_parts[0]
+                # 过滤掉 wechat 类型（wechat 有专门的 /wechat 页面，不在主预览页显示）
+                if data_type == 'wechat':
+                    continue
                 files[data_type] = file.name
         
         return jsonify({

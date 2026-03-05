@@ -66,8 +66,16 @@
 
   <!-- 状态信息栏 -->
   <div id="info-bar" class="bg-white rounded-lg shadow-sm p-4 mb-5 flex flex-col sm:flex-row items-start sm:items-center gap-3 justify-between text-sm text-gray-500">
-    <span id="info-text">正在加载...</span>
-    <span id="info-time" class="text-xs text-gray-400"></span>
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <span class="text-xs text-gray-400 shrink-0">日期：</span>
+      <select id="date-selector" class="flex-1 border border-gray-300 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="">加载中...</option>
+      </select>
+    </div>
+    <div class="flex flex-col items-start sm:items-end gap-1 w-full sm:w-auto">
+      <span id="info-text">正在加载...</span>
+      <span id="info-time" class="text-xs text-gray-400"></span>
+    </div>
   </div>
 
   <!-- 加载中 -->
@@ -186,6 +194,7 @@
   // ===== 全局状态 =====
   let currentTopic = null;
   let generatedArticle = null; // { title, content }
+  let currentDate = ''; // 当前选中的日期（YYYY-MM-DD）
   const ARTICLE_CACHE_KEY = 'wechat_article_cache_v1';
 
   // ===== 本地缓存工具函数 =====
@@ -224,13 +233,66 @@
   }
 
   // ===== 初始化 =====
-  document.addEventListener('DOMContentLoaded', loadTopics);
+  document.addEventListener('DOMContentLoaded', () => {
+    initDateSelector();
+  });
+
+  async function initDateSelector() {
+    const selector = document.getElementById('date-selector');
+    if (!selector) {
+      // 兼容：如果没找到日期选择器，直接加载今天
+      await loadTopics();
+      return;
+    }
+
+    selector.innerHTML = '<option value=\"\">加载中...</option>';
+
+    try {
+      const res = await fetch('/api/dates');
+      const json = await res.json();
+      if (!json.success) {
+        selector.innerHTML = '<option value=\"\">加载失败</option>';
+        showToast('加载日期列表失败: ' + (json.error || ''), 'error');
+        await loadTopics();
+        return;
+      }
+
+      const dates = json.dates || [];
+      if (!dates.length) {
+        selector.innerHTML = '<option value=\"\">暂无数据</option>';
+        await loadTopics();
+        return;
+      }
+
+      selector.innerHTML = '';
+      dates.forEach((d, idx) => {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = d;
+        selector.appendChild(opt);
+        if (idx === 0) currentDate = d; // 默认选最新一天
+      });
+
+      selector.value = currentDate;
+      selector.addEventListener('change', () => {
+        currentDate = selector.value || '';
+        loadTopics();
+      });
+
+      await loadTopics();
+    } catch (e) {
+      selector.innerHTML = '<option value=\"\">加载失败</option>';
+      showToast('加载日期列表失败: ' + e.message, 'error');
+      await loadTopics();
+    }
+  }
 
   // ===== 加载选题 =====
   async function loadTopics() {
     showLoading(true);
     try {
-      const res = await fetch('/api/wechat/topics');
+      const url = currentDate ? `/api/wechat/topics?date=${encodeURIComponent(currentDate)}` : '/api/wechat/topics';
+      const res = await fetch(url);
       const json = await res.json();
 
       showLoading(false);

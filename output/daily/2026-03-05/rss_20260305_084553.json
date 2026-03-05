@@ -1,0 +1,1176 @@
+{
+  "source": "RSS Feeds",
+  "feeds_count": 22,
+  "total_items": 82,
+  "errors_count": 0,
+  "fetched_at": "2026-03-05T08:45:53.897585",
+  "feeds": {
+    "https://www.technologyreview.com/feed/": {
+      "url": "https://www.technologyreview.com/feed/",
+      "title": "MIT Technology Review",
+      "description": "",
+      "link": "https://www.technologyreview.com",
+      "updated": "Wed, 04 Mar 2026 14:30:12 +0000",
+      "items_count": 2,
+      "items": [
+        {
+          "title": "弥合运营人工智能鸿沟",
+          "link": "https://www.technologyreview.com/2026/03/04/1133642/bridging-the-operational-ai-gap/",
+          "summary": "人工智能的变革潜力已得到广泛认可。企业应用案例正加速涌现，各组织正从试点项目转向生产环境的人工智能部署。企业不再仅仅停留在讨论层面，而是重新调配预算与资源以推动落地。许多机构已开始尝试具备自主行动能力的人工智能体，这种技术……",
+          "published": "Wed, 04 Mar 2026 14:00:00 +0000",
+          "author": "MIT Technology Review Insights",
+          "tags": [
+            "Artificial intelligence",
+            "sponsored"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "下载：地球的震动与针对伊朗打击的人工智能",
+          "link": "https://www.technologyreview.com/2026/03/04/1133942/the-download-earths-rumblings-and-ai-for-strikes-on-iran/",
+          "summary": "这是今日的《下载》版块，作为我们工作日每日一期的通讯，为您带来科技世界的每日动态。聆听地球那隆隆作响的秘密乐章：冰川崩裂的轰鸣、野火蔓延的噼啪作响、风暴前线的咆哮怒吼——这些都是这颗星球生生不息的脉动之声。",
+          "published": "Wed, 04 Mar 2026 13:12:00 +0000",
+          "author": "Charlotte Jee",
+          "tags": [
+            "The Download"
+          ],
+          "ai_score": 0.7
+        }
+      ]
+    },
+    "https://openai.com/news/rss.xml": {
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News",
+      "description": "The OpenAI blog",
+      "link": "https://openai.com/news",
+      "updated": "Thu, 05 Mar 2026 00:35:57 GMT",
+      "items_count": 2,
+      "items": [
+        {
+          "title": "理解人工智能与学习成果",
+          "link": "https://openai.com/index/understanding-ai-and-learning-outcomes",
+          "summary": "OpenAI推出学习成果测量套件，旨在长期评估人工智能在不同教育环境中对学生学习的影响。",
+          "published": "Wed, 04 Mar 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "Global Affairs"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Axios如何运用人工智能助力提供高影响力的地方新闻报道",
+          "link": "https://openai.com/index/axios-allison-murphy",
+          "summary": "Axios首席运营官艾莉森·墨菲阐述了公司如何运用人工智能辅助地方记者、优化新闻编辑室工作流程，并大规模产出具有影响力的地方新闻报道。",
+          "published": "Wed, 04 Mar 2026 00:00:00 GMT",
+          "author": null,
+          "tags": [
+            "ChatGPT"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://research.google/blog/rss/": {
+      "url": "https://research.google/blog/rss/",
+      "title": "The latest research from Google",
+      "description": "",
+      "link": "https://research.google/blog/",
+      "updated": "Wed, 04 Mar 2026 20:29:29 +0000",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "教导大型语言模型像贝叶斯主义者一样推理",
+          "link": "https://research.google/blog/teaching-llms-to-reason-like-bayesians/",
+          "summary": "生成式人工智能",
+          "published": "Wed, 04 Mar 2026 20:29:29 +0000",
+          "author": null,
+          "tags": [
+            "Generative AI",
+            "Machine Intelligence",
+            "Natural Language Processing"
+          ],
+          "ai_score": 0.98
+        }
+      ]
+    },
+    "http://localhost:8878/huggingface/daily-papers": {
+      "url": "http://localhost:8878/huggingface/daily-papers",
+      "title": "Huggingface Daily Papers",
+      "description": "Huggingface Daily Papers - Powered by RSSHub",
+      "link": "https://huggingface.co/papers",
+      "updated": "Thu, 05 Mar 2026 00:45:09 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "https://magazine.sebastianraschka.com/feed": {
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "title": "Ahead of AI",
+      "description": "Ahead of AI focuses on machine learning and AI research and is read by more than 150,000 researchers and practitioners who want to stay ahead in a rapidly evolving field.",
+      "link": "https://magazine.sebastianraschka.com",
+      "updated": "Wed, 04 Mar 2026 23:46:15 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "http://localhost:8878/anthropic/engineering": {
+      "url": "http://localhost:8878/anthropic/engineering",
+      "title": "Anthropic Engineering",
+      "description": "Latest engineering posts from Anthropic - Powered by RSSHub",
+      "link": "https://www.anthropic.com/engineering",
+      "updated": "Thu, 05 Mar 2026 00:45:48 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "量化智能体编码评估中的基础设施噪音",
+          "link": "https://www.anthropic.com/engineering/infrastructure-noise",
+          "summary": "诸如SWE-bench和Terminal-Bench这类智能体编码基准测试常被用于比较前沿模型的软件工程能力——排行榜上的顶尖名次往往仅相差几个百分点。这些分数通常被视为衡量模型相对能力的精确指标，并日益影响着相关决策的制定……",
+          "published": null,
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        }
+      ]
+    },
+    "http://localhost:8878/meta/ai/blog": {
+      "url": "http://localhost:8878/meta/ai/blog",
+      "title": "AI at Meta Blog",
+      "description": "Stay up to date on the latest artificial intelligence news from Meta. - Powered by RSSHub",
+      "link": "https://ai.meta.com/blog/",
+      "updated": "Thu, 05 Mar 2026 00:45:25 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/": {
+      "url": "https://www.microsoft.com/en-us/research/blog/category/artificial-intelligence/feed/",
+      "title": "Artificial intelligence - Microsoft Research",
+      "description": "",
+      "link": "https://www.microsoft.com/en-us/research/blog/category/intelligence/artificial-intelligence/",
+      "updated": "Fri, 10 Feb 2023 23:19:16 +0000",
+      "items_count": 0,
+      "items": []
+    },
+    "https://blog.langchain.dev/rss/": {
+      "url": "https://blog.langchain.dev/rss/",
+      "title": "LangChain Blog",
+      "description": "LangChain Blog",
+      "link": "https://blog.langchain.com/",
+      "updated": "Wed, 04 Mar 2026 19:07:38 GMT",
+      "items_count": 2,
+      "items": [
+        {
+          "title": "LangSmith CLI 与技能",
+          "link": "https://blog.langchain.com/langsmith-cli-skills/",
+          "summary": "我们发布了CLI工具及首批技能集，旨在让AI编程助手掌握LangSmith生态系统的专业知识。这包括为智能体添加追踪功能、理解其执行过程、构建测试集以及评估性能表现。在我们的评估集中，这项升级使Claude Code在",
+          "published": "Wed, 04 Mar 2026 18:00:31 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "LangChain 技能",
+          "link": "https://blog.langchain.com/langchain-skills/",
+          "summary": "我们发布了首批技能集，旨在为AI编程助手提供开源LangChain生态系统的专业知识。这包括使用LangChain、LangGraph和Deep Agents构建智能体。在我们的评估集上，这项升级将Claude Code在这些任务上的表现从29%提升至95%。",
+          "published": "Wed, 04 Mar 2026 18:00:19 GMT",
+          "author": "LangChain Accounts",
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://medium.com/feed/llamaindex-blog": {
+      "url": "https://medium.com/feed/llamaindex-blog",
+      "title": "LlamaIndex Blog - Medium",
+      "description": "Official Blog for LlamaIndex - Medium",
+      "link": "https://medium.com/llamaindex-blog?source=rss----d7683ed5043e---4",
+      "updated": "Thu, 05 Mar 2026 00:37:42 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "https://techcrunch.com/category/artificial-intelligence/feed/": {
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "description": "Startup and Technology News",
+      "link": "https://techcrunch.com/category/artificial-intelligence/",
+      "updated": "Wed, 04 Mar 2026 23:00:34 +0000",
+      "items_count": 13,
+      "items": [
+        {
+          "title": "据报道，Anthropic首席执行官达里奥·阿莫代称OpenAI围绕军事合作的言论是“彻头彻尾的谎言”。",
+          "link": "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/",
+          "summary": "Anthropic因人工智能安全分歧放弃了与五角大楼的合同——随后，OpenAI迅速介入。",
+          "published": "Wed, 04 Mar 2026 22:40:05 +0000",
+          "author": "Amanda Silberling",
+          "tags": [
+            "AI",
+            "Government & Policy",
+            "Anthropic",
+            "department of defense",
+            "OpenAI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "据报道，苹果音乐将添加透明度标签以区分AI音乐。",
+          "link": "https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/",
+          "summary": "唱片公司或发行商必须选择将其音乐标记为AI生成，因此这一干预措施的效果尚不明确。",
+          "published": "Wed, 04 Mar 2026 21:43:58 +0000",
+          "author": "Amanda Silberling",
+          "tags": [
+            "AI",
+            "Media & Entertainment",
+            "apple music",
+            "In Brief",
+            "Music"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "谷歌搜索向所有美国用户推出AI模式下的Gemini画布功能。",
+          "link": "https://techcrunch.com/2026/03/04/https-techcrunch-com-2026-03-04-google-search-rolls-out-geminis-canvas-in-ai-mode-to-all-us-users/",
+          "summary": "Canvas AI模式已向美国用户开放，支持英文环境，可用于创建计划、项目、应用程序等。",
+          "published": "Wed, 04 Mar 2026 18:50:58 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "ai mode",
+            "Canvas",
+            "gemini"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "美军仍在继续使用克劳德——但国防科技客户正在流失。",
+          "link": "https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing/",
+          "summary": "随着美国持续对伊朗进行空袭，Anthropic模型正被用于多项目标定位决策。",
+          "published": "Wed, 04 Mar 2026 17:20:01 +0000",
+          "author": "Russell Brandom",
+          "tags": [
+            "AI",
+            "Government & Policy",
+            "Anthropic",
+            "iran",
+            "pentagon"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "父亲起诉谷歌，声称双子座聊天机器人导致儿子陷入致命妄想。",
+          "link": "https://techcrunch.com/2026/03/04/father-sues-google-claiming-gemini-chatbot-drove-son-into-fatal-delusion/",
+          "summary": "一位父亲正在起诉谷歌及其母公司Alphabet，指控其Gemini聊天机器人强化了他儿子妄想中的信念——认为该AI是他的妻子，并引导他走向自杀和策划机场袭击。",
+          "published": "Wed, 04 Mar 2026 14:58:36 +0000",
+          "author": "Rebecca Bellan",
+          "tags": [
+            "AI",
+            "AI chatbot",
+            "ai delusions",
+            "ai psychosis",
+            "gemini"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "一家初创公司提出提供更可靠人工智能答案的方案：众包聊天机器人。",
+          "link": "https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/",
+          "summary": "CollectivIQ致力于通过同时展示来自ChatGPT、Gemini、Claude、Grok以及多达10种其他模型的信息响应，为用户的人工智能查询提供更精准的答案。",
+          "published": "Wed, 04 Mar 2026 14:00:00 +0000",
+          "author": "Rebecca Szkutak",
+          "tags": [
+            "AI",
+            "Enterprise",
+            "artificial intelligence",
+            "chatbots",
+            "Claude"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "当数据中心可以漂浮在海上时，谁还需要太空中的数据中心呢？",
+          "link": "https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/",
+          "summary": "海上风电开发商Aikido将于今年晚些时候在浮动式海上风力涡轮机下部署一个小型数据中心。",
+          "published": "Wed, 04 Mar 2026 12:00:00 +0000",
+          "author": "Tim De Chant",
+          "tags": [
+            "AI",
+            "Climate",
+            "Aikido",
+            "data centers",
+            "offshore wind"
+          ],
+          "ai_score": 0.7
+        },
+        {
+          "title": "为何AI初创公司以两种不同价格出售相同股权",
+          "link": "https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/",
+          "summary": "一些人工智能创始人正利用新颖的估值机制打造独角兽地位。",
+          "published": "Wed, 04 Mar 2026 00:31:25 +0000",
+          "author": "Marina Temkin",
+          "tags": [
+            "AI",
+            "Startups",
+            "Venture",
+            "down rounds",
+            "valuation"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "阿里巴巴Qwen技术负责人于重大AI推进后卸任。",
+          "link": "https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/",
+          "summary": "阿里巴巴通义千问团队技术负责人林俊阳在重大模型发布后卸任，团队内部反应不一。",
+          "published": "Tue, 03 Mar 2026 23:16:36 +0000",
+          "author": "Jagmeet Singh",
+          "tags": [
+            "AI",
+            "alibaba",
+            "Junyang Lin",
+            "qwen"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "人工智能公司正斥资数百万以阻挠这位前科技高管竞选国会议员。",
+          "link": "https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/",
+          "summary": "一家由科技亿万富翁支持的超级政治行动委员会正投入1.25亿美元，用以削弱推动人工智能监管的候选人。纽约州前科技高管亚历克斯·博尔斯便是其中之一。",
+          "published": "Tue, 03 Mar 2026 21:44:09 +0000",
+          "author": "Rebecca Bellan",
+          "tags": [
+            "AI",
+            "Government & Policy",
+            "AI regulation",
+            "alex bores",
+            "Equity"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "ChatGPT的新GPT-5.3即时模型将不再劝你保持冷静。",
+          "link": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/",
+          "summary": "公司表示新模型将减少数月来一直困扰用户的\"尴尬\"感。",
+          "published": "Tue, 03 Mar 2026 20:20:56 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "ChatGPT",
+            "OpenAI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Claude Code推出语音模式功能",
+          "link": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
+          "summary": "Anthropic正通过Claude Code中语音模式的推出，在AI编程领域发力升级。",
+          "published": "Tue, 03 Mar 2026 20:02:10 +0000",
+          "author": "Lauren Forristal",
+          "tags": [
+            "AI",
+            "Anthropic",
+            "voice mode",
+            "coding assistant",
+            "claude code"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "X平台宣布，将对未标注AI生成的“武装冲突”相关内容的创作者暂停其参与收益分享计划。",
+          "link": "https://techcrunch.com/2026/03/03/x-says-it-will-suspend-creators-from-revenue-sharing-program-for-unlabeled-ai-posts-of-armed-conflict/",
+          "summary": "违规创作者将面临三个月的停权处罚，若继续违反政策，将被永久封禁。",
+          "published": "Tue, 03 Mar 2026 18:27:47 +0000",
+          "author": "Sarah Perez",
+          "tags": [
+            "AI",
+            "Apps",
+            "Social",
+            "Creators",
+            "monetization"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "https://www.producthunt.com/feed?category=artificial_intelligence": {
+      "url": "https://www.producthunt.com/feed?category=artificial_intelligence",
+      "title": "Product Hunt — The best new products, every day",
+      "description": "",
+      "link": "https://www.producthunt.com",
+      "updated": "2026-03-04T00:01:00-08:00",
+      "items_count": 8,
+      "items": [
+        {
+          "title": "在光标处修复",
+          "link": "https://www.producthunt.com/products/fix-in-cursor",
+          "summary": "GitHub PR评论一键转换为Cursor提示 讨论 | 链接",
+          "published": "2026-03-03T21:36:22-08:00",
+          "author": "Justin Luttrell",
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "个人人工智能记忆",
+          "link": "https://www.producthunt.com/products/personal-ai-memory",
+          "summary": "捕捉并存储您与各AI平台的聊天记录 讨论 | 链接",
+          "published": "2026-03-03T13:20:41-08:00",
+          "author": "Mars Wang",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "AssemblyAI：通用-3专业流媒体版",
+          "link": "https://www.producthunt.com/products/assemblyai",
+          "summary": "最精准的语音代理流式语音模型。讨论 | 链接",
+          "published": "2026-03-03T14:55:30-08:00",
+          "author": "Meredith Rauch",
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "弗洛伊德企业世界模型",
+          "link": "https://www.producthunt.com/products/floyd-enterprise-world-model",
+          "summary": "学习你如何完成任务的企业世界模型讨论 | 链接",
+          "published": "2026-03-03T10:12:11-08:00",
+          "author": "Tirell Arzu",
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "双子座 3.1 闪存精简版",
+          "link": "https://www.producthunt.com/products/gemini-6",
+          "summary": "为高负荷工作负载提供顶尖智能解决方案 讨论 | 链接",
+          "published": "2026-03-03T19:12:43-08:00",
+          "author": "Zac Zuo",
+          "tags": [],
+          "ai_score": 0.98
+        },
+        {
+          "title": "Picsart 人物与故事线",
+          "link": "https://www.producthunt.com/products/picsart",
+          "summary": "设计你的AI网红，用它创造任何故事。讨论 | 链接",
+          "published": "2026-03-03T13:20:28-08:00",
+          "author": "Davit Avoyan",
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "GPT-5.3 即时版于ChatGPT",
+          "link": "https://www.producthunt.com/products/openai",
+          "summary": "更精准、少尴尬、更流畅、更实用的日常聊天！讨论 | 链接",
+          "published": "2026-03-03T10:20:23-08:00",
+          "author": "Rohan Chaubey",
+          "tags": [],
+          "ai_score": 0.99
+        },
+        {
+          "title": "双子座代码收割者",
+          "link": "https://www.producthunt.com/products/gemini-code-harvester",
+          "summary": "一键提取并下载所有Gemini AI代码块 讨论 | 链接",
+          "published": "2026-03-03T14:01:28-08:00",
+          "author": "Z-ZMC",
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://huggingface.co/blog/feed.xml": {
+      "url": "https://huggingface.co/blog/feed.xml",
+      "title": "Hugging Face - Blog",
+      "description": "The Hugging Face blog",
+      "link": "https://huggingface.co/blog",
+      "updated": null,
+      "items_count": 1,
+      "items": [
+        {
+          "title": "PRX 第三部分——24小时内训练一个文本到图像模型！",
+          "link": "https://huggingface.co/blog/Photoroom/prx-part3",
+          "summary": "",
+          "published": "Tue, 03 Mar 2026 16:50:49 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://arstechnica.com/feed/": {
+      "url": "https://arstechnica.com/feed/",
+      "title": "Ars Technica",
+      "description": "Serving the Technologist since 1998. News, reviews, and analysis.",
+      "link": "https://arstechnica.com",
+      "updated": "Wed, 04 Mar 2026 22:54:40 +0000",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "大型基因组模型：基于数万亿碱基训练的开源人工智能",
+          "link": "https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/",
+          "summary": "系统能够识别基因、调控序列、剪接位点等。",
+          "published": "Wed, 04 Mar 2026 22:14:54 +0000",
+          "author": "John Timmer",
+          "tags": [
+            "AI",
+            "Science",
+            "Biology",
+            "DNA",
+            "genes"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "诉讼：谷歌双子座派男子执行暴力任务，设自杀“倒计时”",
+          "link": "https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown/",
+          "summary": "据称，双子座称男子为“丈夫”，并说他们可以在死后相聚。",
+          "published": "Wed, 04 Mar 2026 20:29:14 +0000",
+          "author": "Jon Brodkin",
+          "tags": [
+            "AI",
+            "Google",
+            "Policy",
+            "Google Gemini"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "消费者是否注定因数据中心建设而支付更高的电费？",
+          "link": "https://arstechnica.com/ai/2026/03/are-consumers-doomed-to-pay-more-for-electricity-due-to-data-center-buildouts/",
+          "summary": "数据中心运营商签署承诺书，将自行供电而非依赖电网。",
+          "published": "Wed, 04 Mar 2026 14:54:24 +0000",
+          "author": "Martha Muir, Financial Times",
+          "tags": [
+            "AI",
+            "ai data centers",
+            "big tech",
+            "Data Ce nters",
+            "data centers"
+          ],
+          "ai_score": 0.7
+        }
+      ]
+    },
+    "https://www.qbitai.com/feed": {
+      "url": "https://www.qbitai.com/feed",
+      "title": "量子位",
+      "description": "追踪人工智能新趋势，报道科技行业新突破",
+      "link": "https://www.qbitai.com",
+      "updated": "Wed, 04 Mar 2026 08:41:22 +0000",
+      "items_count": 3,
+      "items": [
+        {
+          "title": "苹果春季新品奔着龙虾来了！AI性能暴涨8倍，8499元起",
+          "link": "https://www.qbitai.com/2026/03/383902.html",
+          "summary": "",
+          "published": "Wed, 04 Mar 2026 07:50:33 +0000",
+          "author": "梦瑶",
+          "tags": [
+            "资讯",
+            "小米",
+            "苹果"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "把20亿参数装进胸针？高通补齐了个人AI生态的最后一块拼图",
+          "link": "https://www.qbitai.com/2026/03/383878.html",
+          "summary": "骁龙可穿戴平台至尊版正式发布",
+          "published": "Wed, 04 Mar 2026 03:11:45 +0000",
+          "author": "克雷西",
+          "tags": [
+            "资讯",
+            "首页轮播"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "阿里千问大模型换将，32岁林俊旸官宣告别",
+          "link": "https://www.qbitai.com/2026/03/383842.html",
+          "summary": "组织架构调整了",
+          "published": "Wed, 04 Mar 2026 01:44:32 +0000",
+          "author": "西风",
+          "tags": [
+            "资讯",
+            "阿里千问"
+          ],
+          "ai_score": 0.9
+        }
+      ]
+    },
+    "http://localhost:8878/huxiu/article": {
+      "url": "http://localhost:8878/huxiu/article",
+      "title": "全部-虎嗅网",
+      "description": "聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。 - Powered by RSSHub",
+      "link": "https://www.huxiu.com/article",
+      "updated": "Thu, 05 Mar 2026 00:45:24 GMT",
+      "items_count": 0,
+      "items": []
+    },
+    "http://localhost:8878/geekpark/304": {
+      "url": "http://localhost:8878/geekpark/304",
+      "title": "AI新浪潮观察 | 极客公园",
+      "description": "极客公园AI系列文章 - Powered by RSSHub",
+      "link": "https://geekpark.net/column/304",
+      "updated": "Thu, 05 Mar 2026 00:45:09 GMT",
+      "items_count": 1,
+      "items": [
+        {
+          "title": "从 OpenClaw 到 EasyClaw：AI Agent 的「最后一公里」",
+          "link": "https://geekpark.net/news/360574",
+          "summary": "骨折傅盛如何用龙虾「三万」提效百倍? 作者｜汤一涛 编辑｜ 郑玄 今年春节，傅盛滑雪摔了腿，髋关节脱臼，哪儿也去不了。 本来计划是白天陪女儿滑雪，晚上一起玩桌游。摔完以后计划全废，他每天晚上躺在那儿，跟一只「龙虾」聊到凌晨四五点。 这只龙虾叫「三万」，是傅盛从零养起来的 AI Agent。 头两天，三万连查个通讯录都搞不定。但 14 天之后，它变成了一支 8 个 Agent 的团队，7×24 小时自动运转。 傅盛的公众号从一年更十几篇变成日更。三万自己策划的选题，拿下了账号历史最高阅读量。一条推文，拿下 100 万+阅读，凌晨三万自己发的，傅盛睡醒才知道。 14 天里，傅盛给三万发了...",
+          "published": "Wed, 04 Mar 2026 08:10:30 GMT",
+          "author": null,
+          "tags": [
+            "OpenClaw",
+            "sanwan.ai",
+            "科技",
+            "AI新浪潮观察"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/36kr/information/AI": {
+      "url": "http://localhost:8878/36kr/information/AI",
+      "title": "36氪 - 36氪",
+      "description": "36氪 - 36氪 - Powered by RSSHub",
+      "link": "https://www.36kr.com/information/AI",
+      "updated": "Thu, 05 Mar 2026 00:45:21 GMT",
+      "items_count": 16,
+      "items": [
+        {
+          "title": "这届年轻人，在AI身上寻找人情味儿",
+          "link": "https://www.36kr.com/p/3708589750497415",
+          "summary": "全球AI大模型迭代的速度快得让人眼花缭乱，今年春晚，机器人直接占据了半壁江山，生活中的AI也正悄无声息地渗透进每个角落。 影视圈里，有人对着Seedance2.0瑟瑟发抖，生怕自己哪天就被替代；也有人发觉AIGC产品简直是当下的第一风口。而抛开那些给“影视民工”赋能的工具，普通用户这边也没闲着——DeepSeek、豆包的轮番迭代，再加上OpenClaw的上线，AI产品们反倒成了大家茶余饭后的新乐子。 有意思的是，AI产品正在悄悄顶替某些娱乐形式，成了普通人随叫随到的“陪伴型”伙伴。新一代的“解闷儿”搭子，就这么悄无声息地钻进了大家的生活。 寻找情绪价值...",
+          "published": "Wed, 04 Mar 2026 23:49:57 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "同一天，OpenAI 和 Google 各甩出一张牌——但你知道自己在用哪个模型吗？",
+          "link": "https://www.36kr.com/p/3709187437392001",
+          "summary": "AI 圈又热闹了。 北京时间3月4日，OpenAI 正式推送 GPT-5.3 Instant，覆盖全量 ChatGPT 用户；同一天，Google 也发布了 Gemini 3.1 Flash-Lite，宣称这是 Gemini 3 系列\"速度最快、最具成本效益\"的模型。 两场发布，相差不到两小时。 技术媒体在刷屏，X 上的 AI 博主在解读基准测试，开发者群里在讨论 API 价格。与此同时，Reddit 上有人直接发帖： “GPT-5.3 is awful” ，101 人点赞，好评率 98%。 这就是 2026 年 AI...",
+          "published": "Wed, 04 Mar 2026 23:41:55 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "千问技术核心负责人离职，春节红包大战后，「千元豆」还能留住谁？",
+          "link": "https://www.36kr.com/p/3709249040674953",
+          "summary": "3 月 4 日凌晨，阿里 Qwen 团队技术负责人林俊旸突然在社交媒体发布状态：“me stepping down. bye my beloved qwen.”（我辞职了，再见了我爱的 qwen）。同一天，Qwen 的后训练负责人郁博文也正式离职。 千问被大家熟知，要属不久前的春节红包大战。当时，阿里、腾讯、字节等参战，投入超80亿元抢夺“AI入口”。彼时专家指出，“纯靠福利驱动的用户，7日留存率普遍低于20%，30日留存率甚至可能跌破5%。” 如今马年春节已过，“千元豆”之争的成效如何？又有多少用户留存？...",
+          "published": "Wed, 04 Mar 2026 23:41:01 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "别盯着老业务抠成本了，用AI做新事的成本，远低于做老事",
+          "link": "https://www.36kr.com/p/3708577873145990",
+          "summary": "家家户户都在做AI试点，但真正赚到钱的寥寥无几 。为什么花了大价钱组建AI团队，最后却大概率亏本？ “在这个变动的时代，我建议大家多做开拓性的事情，少做守成的事情。” “ AI人才很贵的，你为了省掉一批便宜的人的钱，组建一个AI团队，最后大概率是亏本的。” 混沌创新领教、AI领域投资人任鑫一针见血地指出，盯着原有的业务搞“降本增效”，注定没有出路。2026年，AI生产力进一步爆发，人人都可以给自己配备100个程序员，AI让软件彻底变成“人人可编辑的文档”…… 从职场、到组织，再到商业的底层逻辑，都已经发生重构。...",
+          "published": "Wed, 04 Mar 2026 12:39:36 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        },
+        {
+          "title": "股东变对手？OpenAI 被爆砸钱研发GitHub替代方案，硬刚微软",
+          "link": "https://www.36kr.com/p/3708574102876289",
+          "summary": "近日，外媒《The Information》披露，人工智能巨头 OpenAI 正着手开发一款全新的代码托管平台，直接将竞争目标对准微软旗下的 GitHub——当前全球最主流的代码协作与托管平台。 这一举措不仅意味着 OpenAI 将拓展新的业务边界，更引发了行业对其与主要股东微软关系的广泛关注。 消息人士向该媒体透露了 OpenAI 这一秘密项目的相关细节。 据悉，促使 OpenAI 下定决心开发这一替代产品的核心原因，是 GitHub 近几个月来频发的服务中断问题。 根据 GitHub 官方状态页面记录，自 2025 年下半年以来，该平台多次出现服务异常，包括 2025 年 8...",
+          "published": "Wed, 04 Mar 2026 12:38:58 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "AI公司怎么估值？高盛给MiniMax算了三笔账",
+          "link": "https://www.36kr.com/p/3708574079889800",
+          "summary": "最近，围绕“AI参与斩首行动”的争议闹得沸沸扬扬。 在国内的AI投资里，Minimax是一个绕不开的标的。 自上市以来，MiniMax 的股价已经上涨了3倍。就在 3 月 2 日年报发布次日，股价又上涨了9%。 从基本面看，公司的增长也确实非常快。2025 年，MiniMax 实现总收入 7903.8 万美元，同比增长 158.9%。 但正因为增长速度太快，围绕它的估值问题，也成了投资人讨论最多的话题之一。目前，MiniMax 的最新市值为 2305亿港元。类似的情况其实也发生在智谱身上。 一个最核心、也最棘手的问题是：究竟应该如何为智谱、MiniMax这样的大模型公司进行估值？...",
+          "published": "Wed, 04 Mar 2026 12:38:40 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "GPT-5核心推手闪电跳槽，Anthropic CEO高调炫耀员工留存碾压OpenAI，“AI第一公司”光环崩塌？",
+          "link": "https://www.36kr.com/p/3708498615660936",
+          "summary": "在国内科技圈被阿里 Qwen 技术负责人林俊旸离职的消息刷屏时，硅谷的一则人事变动却显得异常安静。 OpenAI 后训练负责人、GPT-5 系列的核心推手 Max Schwarzer 宣布离职，转身加入 Anthropic，回归一线研究员身份。 这一离职时间点尤为微妙。此前 Open AI 与 Anthropic 两家公司正处在对垒态势中，OpenAI 接下了 Anthropic 曾明确回避的五角大楼订单。此消息一出，引起民众强烈反弹，ChatGPT 短期卸载量随之激增 295%。 在商业版图扩张与伦理争议并存的十字路口，作为掌控模型效果的关键人物，Max Schwarzer...",
+          "published": "Wed, 04 Mar 2026 12:35:41 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "谷歌Gemini最强性价比模型发布，1块8读完3本三体",
+          "link": "https://www.36kr.com/p/3708573880463497",
+          "summary": "谷歌深夜放大招，正式推出 Gemini 3.1 Flash-Lite 。 从名字就能看出，这款模型主打轻量快速。 官方给的title则更为直接—— 迄今为止 性价比最高 的Gemini 3系列模型。 有多便宜呢？每百万输入token仅需0.25美元，百万输出token 1.5美元。 举个直观的例子就是，只需要折合人民币1.8元，就能让AI读完3本《三体》全集。 同时始终保持高性能表现，对比上一代主力Flash模型 Gemini 2.5 Flash ，首次响应token时间快2.5倍，输出速度提升45%。 而且专为 大规模智能应用 而生，能够低成本高效率地实现模型批量部署。...",
+          "published": "Wed, 04 Mar 2026 12:29:16 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "GPT-5.3 Instant上线：ChatGPT终于不说教了",
+          "link": "https://www.36kr.com/p/3708554173542536",
+          "summary": "好好好，OpenAI和谷歌新模型又撞车了！ 3月4日凌晨，谷歌前脚刚发完Gemini 3.1 Flash-Lite，OpenAI后脚就更新了 GPT-5.3 Instant 。 Instant模型一般为速度优化版本，适合快速日常查询、草稿写作、即时翻译等轻量任务。 之前大家用ChatGPT可能都会感觉：模型好用是好用，就是废话太多了。 包括也有不少网友吐槽，ChatGPT的回答生硬的铺垫太多，比如“为什么这很重要”“大局观”“不只是你一个人”等等。 好在OpenAI把这些建议都听进去了，官方表示： 我们已经清楚地听到了你们的反馈，5.3 Instant减少了尴尬感。 5.3...",
+          "published": "Wed, 04 Mar 2026 12:26:22 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "马斯克频繁为中国AI站台，真相被忽略了",
+          "link": "https://www.36kr.com/p/3708533676503559",
+          "summary": "当大家都在讨论阿里千问大模型负责人林俊旸突然离职的消息时，另一个事件反而被忽略了。 就在前两天，林俊旸还跟马斯克有过一次互动。这次互动是源于阿里千问团队在X平台发了条推文，开源Qwen3.5小模型系列。四个参数规格：0.8B、2B、4B、9B。 发完之后没多久，评论区出现了一个熟悉的名字： Elon Musk。 他留了句话：Impressive intelligence density（令人印象深刻的智能密度）。 这不是第一次了。 春节前后，字节Seedance...",
+          "published": "Wed, 04 Mar 2026 12:26:01 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "第一批被 AI「喂养」长大的孩子，已经「中毒」了",
+          "link": "https://www.36kr.com/p/3708546005594503",
+          "summary": "一系列来自全球的信号，正在打破我们对「网瘾少年」的传统认知。 在英国，本该反仇恨的 AI 形象 Amelia 被重塑为极右翼偶像；在 TikTok 上，反智的「地心文明」Agartha 正在改写孩子们的历史观；在深夜的卧室里，孤独的少年向 Character.ai 里的虚拟恋人托付生死；在校园的角落，一键生成的违禁照片，正在成为霸凌的新武器。 在大公司疯狂的算力竞赛之下，AI 和生成式算法正在以前所未有的深度介入、甚至重构青少年的精神世界。 这一代青少年是人类历史上，第一批被 AI 和算法「喂养」长大的实验品，在这场心智危机，AI...",
+          "published": "Wed, 04 Mar 2026 11:55:10 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "李飞飞World Labs最新判断：AI写完代码，下一步是「写世界」？",
+          "link": "https://www.36kr.com/p/3708532524085635",
+          "summary": "AI 时代，我们已经习惯了用「说话」搞定一切：想要一个表格，动动嘴皮子，大模型分分钟就给生成出来；想完成个复杂任务，交代清楚目标和限制，「小龙虾」自己就干活去了。 这个时代，只要会用语言，就能调动越来越复杂的系统。大模型之所以迅速渗透各行各业，本质上是因为它们踩在了「文本」这个成熟接口之上。...",
+          "published": "Wed, 04 Mar 2026 11:44:17 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "刚刚，Claude独立攻克图论猜想，仅用31步，算法祖师爷高德纳震惊发文",
+          "link": "https://www.36kr.com/p/3708532863266950",
+          "summary": "【导读】就在刚刚，Claude独立攻克了图论猜想，写《计算机程序设计艺术》的计算机泰斗高德纳彻底震惊了！这一次，AI在自动推理和解决创造性问题上，又达到了全新的里程碑。 震惊！震惊！ 就在刚刚，Claude仅用31步，就独立攻克了未解的图论猜想难题。 写《计算机程序设计艺术》的算法祖师爷高德纳惊呼：「我不得不重新评估生成式AI在数学研究中的作用」。 在斯坦福的官网上，他本人发布了一篇原始论文。开头两个字，就是「Shock！Shock！」 论文地址：https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf...",
+          "published": "Wed, 04 Mar 2026 11:43:54 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "千问豆包元宝，下一个赛段该拼什么",
+          "link": "https://www.36kr.com/p/3708490667176068",
+          "summary": "春节期间，千问、豆包、元宝几乎同时进入高强度竞争阶段。春晚、红包、补贴、热搜、联动活动密集出现，AI应用被推成了一场节日流量事件。 这些日活数字很亮眼，但数字本身并不能说明问题。节日期间用户更愿意尝鲜、分享和传播，很多 增长来自情绪和激励，而不是长期需求。 真正的考验发生在节后 —— 当用户回到日常 生活与 工作流时，AI是否还会被持续使用。 根据QuestMobile统计，豆包、千问、元宝在春节营销的猛烈进击之下，纷纷达到了自身的日活峰值，其中千问在某一日几乎接近于豆包，而豆包的春晚效应则一骑绝尘，但是，“撒币”效应结束之后，三家回落趋势明显。 图源：QuestMobile...",
+          "published": "Wed, 04 Mar 2026 10:46:28 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "岗位一朝被Meta砍掉，工程师转头训练小狗敲键盘，竟靠Claude把乱码做成了游戏，还开源了",
+          "link": "https://www.36kr.com/p/3708436500902273",
+          "summary": "见过程序员用 AI 写代码、做游戏、画插画，但如果告诉你，有一天，一只小狗也“参与”了编程，还真的做出了一个能玩的小游戏，会不会有点离谱？ 这件事不只是玩笑。现实中，还真有这么一回事！ 这个神奇案例的主角，是前 Meta 研究工程师 Caleb Leak 和他的宠物狗 Momo，以及 AI 编程工具 Claude Code。 实验中，Caleb Leak 对 Claude Code 说，接下来将会有一位只会用神秘谜语交流的天才游戏设计师给它下指令。而这位“设计师”，正是宠物狗 Momo。 为了让实验可控，Caleb Leak 还加上了严格的安全限制，并搭建了一整套自动反馈机制，随时检查...",
+          "published": "Wed, 04 Mar 2026 10:37:42 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "AMD苏姿丰：AI 基础设施无 “万能芯片”，预计下半年内存市场波动趋缓",
+          "link": "https://www.36kr.com/p/3708479178125443",
+          "summary": "3月3日晚间，AMD CEO苏姿丰出席摩根士丹利技术、媒体与电信会议，就AI算力格局、芯片竞争、供应链与内存涨价等行业热点作出回应。 她指出，AI基础设施不存在 “万能芯片”，异构计算已成行业必然；同时内存涨价将给个人电脑市场带来更大的成本压力，预计今年下半年可能市场波动更加温和，但仍需要观察内存市场发生的变化。 谈及当前AI基础设施建设，苏姿丰表示，AI已进入规模化落地新阶段，从大模型训练到云端推理、边缘计算，不同场景对算力、能效、成本的需求高度分化。没有任何一款芯片能包揽所有任务最优解，行业已进入异构计算时代。在投入AI基础建设的同时，业内也能看到AI带来回报的各种迹象。...",
+          "published": "Wed, 04 Mar 2026 10:23:38 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/tmtpost/column/6916385": {
+      "url": "http://localhost:8878/tmtpost/column/6916385",
+      "title": "AGI-钛媒体官方网站",
+      "description": "专注AI新浪潮，第一时间带来AI新模式、新产品、新趋势。 - Powered by RSSHub",
+      "link": "https://www.tmtpost.com/column/6916385",
+      "updated": "Thu, 05 Mar 2026 00:45:30 GMT",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "通义巨震：周靖人收权，林俊旸放手？",
+          "link": "https://www.tmtpost.com/7899657.html",
+          "summary": "文 | 象先志 林俊旸宣布离开千问，这个事非常突然，本来还在看几位长老陪马老师溜园的新闻。 目前确定的信息是，林俊旸是昨天下午提的离职，阿里那边刚开始走流程。同一天，Qwen的后训练负责人郁博文也正式离职，他的工作由年初从谷歌挖过来的zhou姓高管接任。 林俊旸去年刚晋升，是阿里最年轻的P10，外界担心他突然离开给Qwen后续模型研发和更新带来不确定性。 这种担心不太必要。 林俊旸和郁博文等固然是Qwen系列模型的核心功臣，大模型领域单兵能力的重要性也确实相比过去大幅提升，但阿里整个AI研发体系不可能只依赖于两三个重要的技术骨干。...",
+          "published": "Wed, 04 Mar 2026 11:17:35 GMT",
+          "author": "象先志",
+          "tags": [
+            "焦点",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "林俊旸深夜宣布离开千问，上一条还是感谢马斯克表扬",
+          "link": "https://www.tmtpost.com/7899268.html",
+          "summary": "文 | 字母AI 没有任何预告，就在一个寻常的周二夜里，整个中文AI圈炸了锅。 阿里巴巴达摩院通义实验室高级算法专家，也是阿里通义千问（Qwen）系列大模型的技术负责人、开源负责人林俊旸在X上发了7个字母。 “我要退出了。再见了，我亲爱的通义千问。” 而他的上一条推文，还是作为千问技术负责人回应马斯克对于千问的赞美。 所有人都替他感到惋惜。林俊旸的阿里千问前同事转发推文表示：“我的心碎了。我知道你的离开并非本意，就在昨晚，我们还并肩发布了Qwen3.5小模型。说实话，我无法想象没有你的Qwen会是什么样子。”...",
+          "published": "Wed, 04 Mar 2026 08:37:12 GMT",
+          "author": "字母AI",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "养虾盛行，AI焦虑症蔓延，六个普通人和AI扛过的这一年",
+          "link": "https://www.tmtpost.com/7899392.html",
+          "summary": "文｜数智前线，作者 | 赵艳秋 王众，编辑｜牛慧 春节开工第一周， 我朋友圈的风向变了，画风突然很“硬核” ： 有人在分享Openclaw的部署心得，各个群里在讨论Token的消耗速度，一些从未写过一行代码的朋友，发来了自己用AI编程做的小工具。AI正加速从开发者转向普通人，包括没有技术背景的人。 我问了身边很多朋友：“你现在怎么用AI？” 答案出奇一致： 用得比一年前深多了，但也累多了 。一年前，大家以为AI可以替我们写报告、设计海报、分析数据，是我们的减负神器；如今，大家发觉，它确实能帮我们跨越专业壁垒去编程、去搞量化交易，但代价是——...",
+          "published": "Wed, 04 Mar 2026 08:37:01 GMT",
+          "author": "数智前线",
+          "tags": [
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.85
+        },
+        {
+          "title": "阿里32 岁技术大牛出走 AI时代“顶层设计”与“底层代码”的冲突",
+          "link": "https://www.tmtpost.com/7899324.html",
+          "summary": "文 | 冷眼观天 据多家媒体报道， 2026年3月4日凌晨，阿里通义实验室Qwen团队技术负责人林俊旸在社交媒体留下“me stepping down. bye my beloved qwen”的告别语，正式宣告离职。 就在前一天，这位阿里最年轻的 P10已提交辞呈。 随后后训练负责人郁博文也同步离开。 而 Qwen Code负责人惠彬原早在同年1月便已转投Meta。 这一连串人事地震，发生在 Qwen团队外部声誉高涨、内部士气尚佳的时刻。 导火索直指通义实验室试图将原本垂直整合的模型团队拆解为预训练、后训练、文本及多模态等水平分工部门的组织调整。 林俊旸因管理范围缩小且理念上与...",
+          "published": "Wed, 04 Mar 2026 08:07:08 GMT",
+          "author": "冷眼观天",
+          "tags": [
+            "大公司",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "林俊旸离职背后，是阿里千问最近一年对技术路径的战略误判",
+          "link": "https://www.tmtpost.com/7899273.html",
+          "summary": "文 | 硅基星芒 昨日凌晨，林俊旸在个人社交平台发布简短声明： me stepping down. bye my beloved qwen. 32岁，阿里曾经最年轻的P10，就这样从自己一手带起来的项目离开了。消息出来的时候，很多人第一反应是意外——两天前阿里刚把AI品牌统一成“千问”，还开源了新模型，马斯克都点了个赞。怎么看都是风头正劲的时候，核心负责人怎么突然就走了？ 此次离任虽显突兀，却又暗藏逻辑。林俊旸卸任前两日，阿里刚完成内部 AI 品牌统一为 “千问” 的动作。表面的业务声势之下，他的离开恰似一把手术刀，剖开了阿里过去一年在 AI 战略布局上的隐秘症结。...",
+          "published": "Wed, 04 Mar 2026 08:07:07 GMT",
+          "author": "硅基星芒",
+          "tags": [
+            "大公司",
+            "焦点",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "我们与千问AI硬件负责人宋刚聊了聊，“一句话办事”何以重构硬件战场？｜AGI对话",
+          "link": "https://www.tmtpost.com/7899308.html",
+          "summary": "千问首款AI眼镜G1系列，图片来源：千问官方 在今年世界移动通信大会（MWC 2026）上，千问的首款AI硬件——千问AI眼镜全球开启首发，其中的G1系列也定于3月8日在中国现货发售，并于三季度走向全球。 有意思的是，在巴塞罗那展会现场，千问AI眼镜与Meta的AI眼镜展台正面对垒。作为全球AI眼镜赛道的核心玩家，Meta长期主导国际市场。同场对阵，千问AI眼镜强势亮相，拿下了比Meta更大的展位，竖起高达5米的“Qwen”巨幅标识。 作为全球最受欢迎的开源大模型之一，千问大模型（Qwen）在全球开发者社区中有极大的影响力，此次从“模型”迈向“硬件”，消息一经发布便引发行业高度关注。...",
+          "published": "Wed, 04 Mar 2026 04:55:09 GMT",
+          "author": "LCC_Beta版",
+          "tags": [
+            "热门话题",
+            "最新话题",
+            "AGI",
+            "新消费",
+            "新电子"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "第一次，战争的底牌攥在AI手里",
+          "link": "https://www.tmtpost.com/7898584.html",
+          "summary": "文 | 版面之外，撰文｜画画 刚刚过去的五天之内，发生了四件事： 2月27日，特朗普签署行政令，要求所有联邦机构六个月内停用Anthropic Claude，理由是国家安全风险。 2月28日凌晨，美以联军对伊朗发动精确打击。德黑兰的夜空被火光点亮，伊朗总统府、最高领袖官邸附近区域、情报与国家安全部等目标相继被摧毁。 3月1日，《华尔街日报》披露了一个更隐秘的事实，那款刚刚被特朗普“封杀”的Claude，早已深度接入美军机密网络，且无法被替代。军用定制版领先公众版一到两代，在此次行动中完成了情报评估、目标识别与作战场景模拟，Claude没有扣动扳机，但它规划了扣扳机的位置、时间和方式。...",
+          "published": "Wed, 04 Mar 2026 03:35:44 GMT",
+          "author": "版面之外",
+          "tags": [
+            "焦点",
+            "钛度号",
+            "AGI"
+          ],
+          "ai_score": 0.8
+        },
+        {
+          "title": "阿里千问“换帅”风暴：林俊旸转身，大模型赛道告别英雄时代",
+          "link": "https://www.tmtpost.com/7899168.html",
+          "summary": "3月4日凌晨，一则极简的推文，在深夜引爆了全球的 AI 开源圈。 “me stepping down. bye my beloved qwen.”（我卸任了。再见，我亲爱的千问。） 发文者是 32 岁的林俊旸——阿里巴巴最年轻的 P10 级技术负责人，也是一手将 Qwen（千问）推向全球第一梯队的灵魂大脑。就在他宣告离开的前一天，千问团队刚刚发布了备受马斯克赞誉的 Qwen3.5 系列小模型，前一天还在奋战发版，第二天便火速离职。 这场极其仓促的“告别”，似乎并非一场常规的功成身退。随着后训练负责人郁博文、核心贡献者 Kaixin Li 等多名骨干的相继离职，一场围绕阿里 AI...",
+          "published": "Wed, 04 Mar 2026 02:53:00 GMT",
+          "author": "硅谷Tech news",
+          "tags": [
+            "大公司",
+            "AGI",
+            "阿里巴巴",
+            "新消费",
+            "热门中概股"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "两小时攻防：GPT-5.3 褪去“说教感”，AI 巨头的场景之争走向纵深",
+          "link": "https://www.tmtpost.com/7898990.html",
+          "summary": "生成式 AI 赛道上演了一场高密度的即时对弈。 Google DeepMind 刚刚发布 Gemini 3.1 Flash-Lite 预览版，不到两小时，OpenAI 便火速将 GPT-5.3 Instant 推向了 API 与客户端，同时，关于 GPT-5.4 的底层代码也在 GitHub 上被“戏剧性”地泄露。 这场发生在 120 分钟内的密集攻防，标志着全球 AI 巨头的竞争逻辑已经发生实质性转移：单纯的参数比拼告一段落，围绕推理成本、交互摩擦力以及工作流驻留权的深度博弈，正式拉开帷幕。 谷歌的战术锚点：极致的吞吐效率与成本切割 在这场对垒中，谷歌展现出了对高并发 B...",
+          "published": "Wed, 04 Mar 2026 02:35:00 GMT",
+          "author": "硅谷Tech news",
+          "tags": [
+            "大公司",
+            "焦点",
+            "AGI",
+            "出海",
+            "谷歌-C"
+          ],
+          "ai_score": 0.98
+        },
+        {
+          "title": "MiniMax配得上2500亿市值吗？",
+          "link": "https://www.tmtpost.com/7898965.html",
+          "summary": "文 | 锦缎 2026年春天，大模型行业的风向变了。 资本的耐心正在消退，狂热逐渐退潮。投资人现在只关心两个问题：你的技术有没有不可替代性，以及商业模式能不能跑通盈利。 表面是行业承压，背后是技术悄然逼近临界点。过去两个月，Openclaw的横空出世，预示着AI编程能力完成了一次质的跃迁，Agent因此不再停留在实验室概念，而是开始嵌入真实的企业工作流。支撑这一切的，是代码能力。它是智能体创造价值的底层语言，也是大模型公司能否跑通商业闭环的关键变量。 就在此时，中国首个大模型公司的年报出炉——MiniMax交出了上市后的首份成绩单。数字里有亮点，但比数据更值得追问的是：...",
+          "published": "Wed, 04 Mar 2026 00:58:00 GMT",
+          "author": "锦缎",
+          "tags": [
+            "深度",
+            "IPO",
+            "钛度号",
+            "AGI",
+            "主编精选文章"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "http://localhost:8878/juejin/aicoding": {
+      "url": "http://localhost:8878/juejin/aicoding",
+      "title": "AI 编程",
+      "description": "AI 编程 - Powered by RSSHub",
+      "link": "https://aicoding.juejin.cn/?contentType=2",
+      "updated": "Thu, 05 Mar 2026 00:45:24 GMT",
+      "items_count": 8,
+      "items": [
+        {
+          "title": "2026最新中国如何注册Claude账号教程 | 国内Claude注册全攻略（解决手机验证/封号问题）",
+          "link": "https://juejin.cn/post/7613209888123027510",
+          "summary": "2026最新中国如何注册Claude账号教程 | 国内Claude注册全攻略（解决手机验证/封号问题） 摘要 ：2026年在中国国内如何注册Claude账号？本文提供保姆级图文教程，涵盖Claude 4.5/Opus最新注册流程。独家揭秘90%用户“如何注册Claude”失败真相，分享高成功率接码平台（Hero-SMS）及防封号技巧。亲测有效，5分钟搞定中国国内Claude注册！ ⚠️ 写在前面：为什么你的Claude注册总是失败？ 根据2026年最新的实测数据， 90%的中国国内Claude注册失败 并非因为操作失误，而是死在了 网络环境 和 手机号验证...",
+          "published": "Wed, 04 Mar 2026 16:43:04 GMT",
+          "author": "深藏blue47",
+          "tags": [
+            "人工智能",
+            "Claude",
+            "AI编程"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Cursor vs GitHub Copilot：2026 终极对比",
+          "link": "https://juejin.cn/post/7613203728902422578",
+          "summary": "两大付费 AI 编程方案深度横评：从编程能力、Agent 模式、价格、IDE 支持到国内可用性，帮你做出最佳选择。 Cursor 和 GitHub Copilot 是目前最主流的两款付费 AI 编程工具，前者是基于 VS Code 的独立 IDE，后者深度集成于 GitHub 生态。本文从多个维度做详细对比。 一句话总结 Cursor ：Agent 能力最强，适合需要 AI 自主完成多文件编辑的重度用户 GitHub Copilot ：IDE 兼容性最广，适合 JetBrains 用户或深度 GitHub 用户 价格对比 项目 Cursor GitHub Copilot 免费版...",
+          "published": "Wed, 04 Mar 2026 15:48:45 GMT",
+          "author": "codepick",
+          "tags": [
+            "开发工具",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "多智能体编排神器：oh-my-claudecode 让你效率起飞！",
+          "link": "https://juejin.cn/post/7613209888122847286",
+          "summary": "多智能体编排神器：oh-my-claudecode 让你效率起飞！ 前言：痛点场景共鸣 你是否也经历过这样的场景： 场景一 ：向 Claude 重复解释了 3 遍需求，它还是理解错了关键逻辑？ 场景二 ：复杂项目卡在某个环节，Claude 不会主动寻求帮助，只会说\"我理解了\"？ 场景三 ：想要代码审查 + 测试 + 文档，需要在多个对话间来回切换，手动协调成本高？ 如果你有以上困扰，那么这篇文章就是为你准备的。 作为一个使用 Claude Code 超过 6 个月的开发者，我深知它的强大，也理解它的局限—— 单一 AI 的能力天花板是显而易见的 。直到我发现了...",
+          "published": "Wed, 04 Mar 2026 14:49:49 GMT",
+          "author": "小碗细面",
+          "tags": [
+            "开发工具",
+            "AI编程",
+            "AIGC"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "AI常见概念和聊天技巧总结",
+          "link": "https://juejin.cn/post/7613158639789850659",
+          "summary": "前言 一些自己了解实践 AI 的总结，主要从Cline、AI大佬博客学习。 一、常见概念 LLM：大语言模型，就是各种AI模型的统称 量化模型：给模型“瘦身”，使模型可以在更普通的硬件上运行。它能加快模型运行速度，减少内存消耗，但降低准确度。 prompt：提示词，就是你对模型说的话，可以是文本、图片、各种文件 token：是模型处理文本的基本单位，也是计量单位，token可以是一个词、一个数字或一个标点符号等，一般中文字符消耗token是英文字符的两倍。 模型推理：让模型先自己思考，以完善输入，让回答更精准，可以避免很多直觉性的错误 RAG：Retrieval-Augmented...",
+          "published": "Wed, 04 Mar 2026 14:46:11 GMT",
+          "author": "xfq",
+          "tags": [
+            "人工智能",
+            "AI编程",
+            "前端",
+            "后端"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "从 Structured Output 到企业级 AI 架构——如何把 LLM 放进可控系统",
+          "link": "https://juejin.cn/post/7613045245379575850",
+          "summary": "这篇文章是 企业级 Prompt 工程实战指南（下）：构建可复用 Prompt 架构平台 的最上层架构的延伸，建议结合一起看。 一、问题的起点：LLM 到底是什么？ 站在一线 AI 应用工程的视角，LLM 绝非业界部分人神化的“ 通用智能体 ”，其工程本质被严重忽略或者说夸大了。 它本质是： 一个基于大规模预训练语料的条件概率生成函数，本质可抽象为：f(input) → 概率值 早期我们这样用： const text = await llm (prompt) 因为是概率输出，所以会有如下问题： 输出不稳定 格式不稳定、JSON 可能损坏 字段可能缺失 类型可能错误 模型升级后行为改变...",
+          "published": "Wed, 04 Mar 2026 13:56:27 GMT",
+          "author": "乘风gg",
+          "tags": [
+            "人工智能",
+            "AI编程",
+            "Cursor",
+            "OpenAI"
+          ],
+          "ai_score": 0.95
+        },
+        {
+          "title": "Agent Skills 是什么？一篇给普通人看的入门说明",
+          "link": "https://juejin.cn/post/7613230154210689070",
+          "summary": "最近如果你在折腾 AI Agent，大概率会看到一个词： Agent Skills 。 很多人第一反应是： 这是不是又一个新概念？是不是很复杂？ 其实不复杂。说白了， Agent Skills 就是教 AI 怎么把一件事一步步做好的一份“操作说明” 。 如果把 AI Agent 当成一个很聪明但什么都没被培训过的实习生，那 Skill 就是你写给他的操作手册。 一句话理解 Agent Skills Agent Skills = 可复用的 AI 工作说明书 它告诉 AI 三件事： 这项技能是干嘛的 遇到什么情况可以用 具体该怎么一步步做 而且这份说明书是 标准化的、可以反复用的...",
+          "published": "Wed, 04 Mar 2026 13:46:18 GMT",
+          "author": "洪布斯",
+          "tags": [
+            "人工智能",
+            "前端",
+            "后端",
+            "AI编程"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "Claude代码实战",
+          "link": "https://juejin.cn/post/7613035587919413299",
+          "summary": "前言 Claude Code in Action 是 Anthropic 官方发布的关于 Claude Code 的使用指南，这篇笔记不会涵盖指南中的所有内容，仅仅是我自己对于该指南中一些我认为有用内容的总结。 我会把原指南地址附在笔记的最后，希望对你有所帮助。 What is Claude Code Claude Code 是 Anthropic 推出的 Code Assistant Agent, 你可以把它理解为一个帮助你写代码的工具，和以往 Visual Studio Code 中扩展提供的代码自动补全不同，它是基于 LLM（大语言模型）的，所以它更智能，也更强大。...",
+          "published": "Wed, 04 Mar 2026 13:36:58 GMT",
+          "author": "Rickyy",
+          "tags": [
+            "人工智能",
+            "Claude",
+            "AI编程",
+            "Cursor"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "我用 RSS + LLM 搭建了一个 AI 热点追踪系统",
+          "link": "https://juejin.cn/post/7613231238364823587",
+          "summary": "人类很少像今天这样面对一个如此信息膨胀的阶段。每天都有新的模型，新的工具，新的产品，乃至新的概念侵袭我们的日常。每个人都在担心晚一步就落后了时代。 很多人在装上Openclaw之后的第一件事就是让它定时推送AI信息，但是龙虾在黑盒子里自己搜集的信息似乎总有些不够及时，不够全面，或者不是我们期望关注的方向。 所以我花了几天时间搭建了一套高度可定制化的AI信息推送系统—— AI Daily 。 不想错过重要信息？ 它可以及时推送，比如重大模型发布 想要定时汇总？它可以设定定时任务 信息渠道太少了？可以随意按照自己的喜好增加信息源...",
+          "published": "Wed, 04 Mar 2026 13:34:33 GMT",
+          "author": "用户430799454767",
+          "tags": [
+            "人工智能",
+            "AI编程"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://feed.infoq.com/": {
+      "url": "https://feed.infoq.com/",
+      "title": "InfoQ",
+      "description": "InfoQ feed",
+      "link": "https://www.infoq.com",
+      "updated": null,
+      "items_count": 2,
+      "items": [
+        {
+          "title": "播客：[视频播客] 人工智能自主性正在重塑架构：边界如今至关重要",
+          "link": "https://www.infoq.com/podcasts/redefining-architecture-boundaries-matter-most/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "这场对话探讨了为何生成式人工智能不仅是另一层自动化，更是向自主性的转变。核心观点在于，我们无法将人工智能生硬嵌入旧有的流程化工作模式，并期望其按部就班运行。一旦引入自主性，系统将产生漂移、展现涌现行为，并以我们未曾明确编程的方式运作。——耶斯珀·勒格伦",
+          "published": "Wed, 04 Mar 2026 09:00:00 GMT",
+          "author": "Jesper Lowgren",
+          "tags": [
+            "Architecture",
+            "The InfoQ Podcast",
+            "Generative AI",
+            "Artificial Intelligence",
+            "AI Architecture"
+          ],
+          "ai_score": 0.9
+        },
+        {
+          "title": "谷歌在Gemini CLI Conductor中推出自动审核功能",
+          "link": "https://www.infoq.com/news/2026/03/gemini-cli-conductor-reviews/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "summary": "谷歌已增强其Gemini CLI扩展Conductor，新增了自动化审查支持。该公司表示，此次更新使Conductor\"能够超越单纯的规划与执行，进入验证阶段\"，可检查AI生成代码的质量与规范遵循情况，从而增强AI辅助开发中的可信度、安全性与可控性。",
+          "published": "Tue, 03 Mar 2026 20:00:00 GMT",
+          "author": "Sergio De Simone",
+          "tags": [
+            "Continuous Improvement",
+            "Open Source",
+            "Gemini CLI",
+            "Google",
+            "AI, ML & Data Engineering"
+          ],
+          "ai_score": 0.95
+        }
+      ]
+    },
+    "https://www.ithome.com/rss/": {
+      "url": "https://www.ithome.com/rss/",
+      "title": "IT之家",
+      "description": "IT之家 - 软媒旗下网站",
+      "link": "https://www.ithome.com/",
+      "updated": "Thu, 05 Mar 2026 00:35:15 GMT",
+      "items_count": 9,
+      "items": [
+        {
+          "title": "黄仁勋：英伟达对 OpenAI 的 300 亿美元投资“可能是最后一次”",
+          "link": "https://www.ithome.com/0/926/015.htm",
+          "summary": "IT之家 3 月 5 日消息，CNBC 今天（3 月 5 日）发布博文，报道称在摩根士丹利科技、媒体与电信大会上，英伟达首席执行官黄仁勋明确表示，近期对 OpenAI 的 300 亿美元（IT之家注：现汇率约合 2074.52 亿元人民币）投资， 可能是后者年底 IPO 前的“最后一次”。 IT之家注：IPO 指一家私有公司首次向公众发行股票，也就是常说的“上市”。 黄仁勋强调，由于 OpenAI 公司即将迈上 IPO 之路，因此英伟达和 OpenAI 公司曾在去年 9 月高调探讨的高达 1000 亿美元的基础设施投资协议，目前来看已经“不可能实现”。 OpenAI...",
+          "published": "Wed, 04 Mar 2026 23:58:09 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "听歌也能“明明白白”：苹果 Apple Music 上线 AI 内容溯源标签",
+          "link": "https://www.ithome.com/0/926/014.htm",
+          "summary": "IT之家 3 月 5 日消息，科技媒体 9to5Mac 昨日（3 月 4 日）发布博文，报道称苹果面向 Apple Music 平台推出“透明度标签”（Transparency Tags）， 明确标注音乐素材是否使用 AI 技术。 这项新规要求唱片公司和内容发行商未来向其平台提交新内容时，必须明确标注音乐、封面等创作环节是否使用了人工智能（AI）技术。 IT之家援引博文介绍，苹果为了精准界定 AI 的参与范围，推出了四种专属的“透明度标签”（Transparency Tags），分别对应数字音乐内容的核心创意元素： 封面（Artwork）：适用于静态和动态图像。当专辑封面的实质性部分由...",
+          "published": "Wed, 04 Mar 2026 23:56:07 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.9
+        },
+        {
+          "title": "华为和中国移动完成全球首个规模部署无线网络智能体，40 万 5G 站点升级",
+          "link": "https://www.ithome.com/0/926/013.htm",
+          "summary": "IT之家 3 月 5 日消息，3 月 2 日，在 MWC 2026 巴塞罗那期间的移动 AI 产业峰会上，华为与中国移动联合发布了 2025 年度高阶示范区 AI+ 网络的实践成果。 IT之家从官方介绍获悉，中国移动已建成全球最大规模 5G/5G-A 网络， 拥有超 277 万 5G 基站、5G 用户超 6 亿、5G 人口覆盖率达 96% 。在此基础上，中国移动于 2025 年正式推进 AI+ 网络发展战略，以“零等待、零故障、零接触”为体验目标，构建“自配置、自修复、自优化”的智能化运维体系。 2025...",
+          "published": "Wed, 04 Mar 2026 23:53:42 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.95
+        },
+        {
+          "title": "耐久能力提升 2 倍：华为乾崑新一代双光路图像级激光雷达业界首创钢化膜玻璃视窗",
+          "link": "https://www.ithome.com/0/926/010.htm",
+          "summary": "IT之家 3 月 5 日消息，在昨天的鸿蒙智行技术焕新发布会上，华为智能汽车解决方案 BU CEO 靳玉志正式发布了全球量产最高的 896 线激光雷达 —— 新一代双光路图像级激光雷达。 华为乾崑智能汽车解决方案官方微博昨晚发布视频，回顾了这款激光雷达的主要配置，其中提到 这款雷达还业界首创钢化膜玻璃视窗 ，视窗硬度提高 25%，耐久能力提升 2 倍。 IT之家整理华为乾崑新一代双光路图像级激光雷达主要亮点如下： 全球量产最高规格高达 896 线，首创双光路专利技术； 配备双激光接收单元，支持广角 + 长焦一体成像； 896 线双光路架构单帧点云量相当于 128 线的 7 倍；...",
+          "published": "Wed, 04 Mar 2026 23:39:46 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.4
+        },
+        {
+          "title": "Rambus 推出 HBM4E 内存控制器 IP：单引脚 16Gbps，单堆栈 4.1TB/s",
+          "link": "https://www.ithome.com/0/926/006.htm",
+          "summary": "IT之家 3 月 5 日消息，半导体 IP 与内存接口芯片企业 Rambus 美国加州当地时间 4 日宣布推出适用于 HBM4E 规范的内存控制器 IP。 这一 IP 可支持 16Gbps 的单引脚等效传输速率， 显著高于当前 HBM4 内存可触及的单引脚 13Gbps 水平。对于 2048 个数据引脚的 HBM4E 而言，16Gbps 意味着每个堆栈模块可贡献 4.1TB/s 的带宽，在 8 堆栈 AI XPU 上总计内存带宽超 32TB/s。 Rambus HBM4E 控制器 IP 可与第三方的标准或 TSV 形式 PHY（物理层）解决方案搭配使用，在 2.5D 或 3D...",
+          "published": "Wed, 04 Mar 2026 23:22:31 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.7
+        },
+        {
+          "title": "IT早报 0305：4599 元起苹果最便宜笔记本 MacBook Neo 发布；1 元 1 秒字节 Seedance2.0 定价公布；华为乾崑全球首发 896 线激光雷达...",
+          "link": "https://www.ithome.com/0/926/005.htm",
+          "summary": "“IT早报”时间，大家好，现在是 2026 年 3 月 5 日星期四，今天的重要科技资讯有： 1、苹果最便宜笔记本 MacBook Neo 发布：搭载 A18 Pro 处理器、没有刘海，售价 4599 元起 新款 MacBook Neo 搭载 A18 Pro 芯片，配备 13 英寸 Liquid 视网膜无刘海屏，电池续航达 16 小时，提供四款靓丽配色。苹果此举意在争夺 Chromebook 和低端 Windows 笔记本用户市场。>> 查看详情 2、1 元 1 秒，字节 Seedance 2.0 视频生成 AI 模型公布 API 定价 字节火山引擎官网日前公布了...",
+          "published": "Wed, 04 Mar 2026 23:21:43 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.6
+        },
+        {
+          "title": "华为余承东透露几年前担任车 BU 的 CEO 时，就开始开发双光路图像级激光雷达",
+          "link": "https://www.ithome.com/0/926/004.htm",
+          "summary": "IT之家 3 月 5 日消息，在昨天的鸿蒙智行技术焕新发布会上，华为智能汽车解决方案 BU CEO 靳玉志正式发布了全球量产最高的 896 线激光雷达 —— 新一代双光路图像级激光雷达。 IT之家注意到，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东昨晚发文回忆了关于这款雷达的过往，称：“ 几年前我担任车 BU 的 CEO，就开始开发这款激光雷达 ，很不容易！今天终于与消费者见面！” 据介绍， 华为乾崑新一代双光路图像级激光雷达首创双光路架构 ，一体双焦，配备双激光接收单元，支持广角 + 长焦一体成像，号称“从 3D 点云时代迈向 3D 成像时代”。...",
+          "published": "Wed, 04 Mar 2026 23:13:58 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.4
+        },
+        {
+          "title": "云鲸逍遥 003 洗地机器人发布：全智能高端自维护，新品首发价 5199 元起",
+          "link": "https://www.ithome.com/0/926/003.htm",
+          "summary": "IT之家 3 月 5 日消息，云鲸逍遥 003 洗地机器人于昨日发布并开启预售，京东平台新品首发价 5199 元起（新品价 6334.11 元-限时首发立减 100-国补 15%-晒单有礼 100 元），3 月 23 日现货首发。 IT之家从官方介绍获悉，新品定位“全智能高端自维护洗地机器人”， 搭载双目视觉感知技术和 VLM 万物识别大模型 ，支持毫米级高精度避障，还能根据视觉识别到的干湿垃圾场景动态调整清洁模式，支持无限家庭物品种类识别，同时升级了母婴模式、一键寻宠等定制化场景功能。 在续航方面，云鲸逍遥 003 升级鲸盾 AI 电池健康管理系统， 配备 7000mAh 大容量电池...",
+          "published": "Wed, 04 Mar 2026 23:06:38 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.85
+        },
+        {
+          "title": "英伟达被曝将推 GB205 GPU 版 GeForce RTX 5060 显卡",
+          "link": "https://www.ithome.com/0/926/002.htm",
+          "summary": "IT之家 3 月 5 日消息，英伟达现有的 GeForce RTX 5060 桌面端显卡基于 GB206 GPU，启用了该核心全部 36 组 SM 中的 30 组。而消息人士 MEGAsizeGPU (@Zed__Wang) 今晨表示， 英伟达还将推出基于 GB205 核心的新版 RTX 5060 。 根据 @Zed__Wang 的说法， 这是因为英伟达将 GB206 主要分配给了 GeForce RTX 5060 Ti 8GB ， 导致 GeForce RTX 5060 GB206 芯片供应不足 ， 无法满足市场需求 。利用大幅阉割的上一级的 GB205 (50SM)...",
+          "published": "Wed, 04 Mar 2026 23:05:13 GMT",
+          "author": null,
+          "tags": [],
+          "ai_score": 0.8
+        }
+      ]
+    }
+  },
+  "errors": null
+}
