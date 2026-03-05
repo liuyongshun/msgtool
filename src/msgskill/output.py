@@ -7,6 +7,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Union
 from .models import FetchResult, SearchResult
+from .utils.logger import logger
 
 
 # 默认输出目录结构

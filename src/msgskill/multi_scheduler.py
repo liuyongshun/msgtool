@@ -288,6 +288,8 @@ class MultiSourceScheduler:
                 # 保存RSS数据到文件（当天追加到同一个文件）
                 try:
                     daily_dir = self.output_manager.get_daily_dir()
+                    # 确保目录存在
+                    daily_dir.mkdir(parents=True, exist_ok=True)
                     
                     # 查找当天是否已有RSS文件
                     existing_files = list(daily_dir.glob("rss_*.json"))

@@ -286,7 +286,7 @@ async def _fetch_hackernews(
 
             # 调用AI筛选
             logger.info(f"开始AI筛选 {len(title_batch)} 个标题（仅最近 {recent_days} 天）...")
-            classification_results = await classify_titles_batch(title_batch, batch_size=25)
+            classification_results = await classify_titles_batch(title_batch, batch_size=20)
             
             # 创建结果映射 {id: classification_result}
             result_map = {r["id"]: r for r in classification_results}

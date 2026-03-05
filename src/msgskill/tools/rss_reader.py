@@ -350,7 +350,7 @@ async def _fetch_single_feed(url: str, limit: int, ai_filter_enabled: bool = Tru
                 item_map[temp_id] = item
             
             # 调用AI筛选
-            classification_results = await classify_titles_batch(title_batch, batch_size=25)
+            classification_results = await classify_titles_batch(title_batch, batch_size=20)
             result_map = {r["id"]: r for r in classification_results}
             
             # 根据AI筛选结果过滤

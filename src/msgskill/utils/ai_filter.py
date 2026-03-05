@@ -24,7 +24,7 @@ class TitleClassificationResult(TypedDict):
 
 async def classify_titles_batch(
     titles: list[tuple[str, str]],  # [(id, title), ...]
-    batch_size: int = 25  # 批次大小，减小以避免JSON截断
+    batch_size: int = 20  # 批次大小，减小以避免JSON截断
 ) -> list[TitleClassificationResult]:
     """
     批量分类文章标题，判断是否与AI相关
@@ -142,8 +142,8 @@ reason：简要说明判断理由（1-2句话）"""
 请返回JSON数组，每个元素对应一个标题的判断结果。"""
     
     try:
-        # 超时设置：减少超时时间，提高响应速度
-        timeout = httpx.Timeout(45.0, connect=10.0)  # 从60秒减少到45秒
+        # 超时设置
+        timeout = httpx.Timeout(60.0, connect=10.0)  # 总超时60秒，连接超时10秒
         async with httpx.AsyncClient(timeout=timeout) as client:
             headers = {
                 "Authorization": f"Bearer {llm_config.api_key}",
