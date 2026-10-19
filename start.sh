@@ -50,7 +50,7 @@ echo ""
 
 # 先执行一次所有任务（前台运行，显示进度）
 echo "执行首次同步..."
-# python3 src/msgskill/multi_scheduler.py --once
+python3 src/multi_scheduler.py --once
 
 echo ""
 echo "================================================"
@@ -68,7 +68,7 @@ fi
 echo "▶ 启动后台定时调度器..."
 # 使用 tee 同时输出到终端和文件，-a 表示追加模式
 # 注意：后台进程的输出会同时显示在终端和写入文件
-python3 src/msgskill/multi_scheduler.py 2>&1 | tee -a logs/scheduler.log &
+python3 src/multi_scheduler.py 2>&1 | tee -a logs/scheduler.log &
 SCHEDULER_PID=$!
 echo "  ✓ 调度器PID: $SCHEDULER_PID"
 echo "  ✓ 日志同时输出到控制台和文件: logs/scheduler.log"
@@ -102,7 +102,7 @@ echo ""
 trap "echo ''; echo '正在停止服务...'; kill $SCHEDULER_PID 2>/dev/null; exit" INT TERM
 
 # 启动预览服务（前台）
-python3 src/msgskill/preview_server.py
+python3 src/preview_server.py
 
 # 如果预览服务退出，也停止调度器
 kill $SCHEDULER_PID 2>/dev/null

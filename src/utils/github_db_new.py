@@ -29,16 +29,14 @@ class GitHubProjectDB:
             db_dir: 数据库目录，默认 output/github/
         """
         if db_dir is None:
-            # Skill 不需要文件缓存，使用内存数据库
-            db_dir = None
+            # 默认使用项目根目录下的 output/github/
+            db_dir = Path(__file__).parent.parent.parent / "output" / "github"
         
         self.db_dir = db_dir
-        # Skill 不需要文件缓存，如果 db_dir 为 None，使用内存数据库
-        if self.db_dir:
-            self.db_dir.mkdir(parents=True, exist_ok=True)
-            self.projects_file = self.db_dir / "github_projects.json"
-        else:
-            self.projects_file = None
+        self.db_dir.mkdir(parents=True, exist_ok=True)
+        
+        # 单一数据库文件路径
+        self.projects_file = self.db_dir / "github_projects.json"
         
         # 当前已加载的数据
         self.projects: Dict[str, Dict] = {}
@@ -47,22 +45,20 @@ class GitHubProjectDB:
         self._load_database()
     
     def _load_database(self) -> None:
-        """加载数据库文件（Skill 不需要文件缓存，只使用内存数据库）"""
-        # Skill 不需要文件缓存，只使用内存数据库
-        if not self.projects_file:
-            self.projects = {}
-            logger.info("✅ GitHub项目数据库：使用内存数据库（Skill模式）")
-            return
-        
+        """加载数据库文件"""
         try:
-            # 如果 projects_file 存在，尝试加载（向后兼容）
+            # 首先尝试加载新格式的单一文件
             if self.projects_file.exists():
                 with open(self.projects_file, 'r', encoding='utf-8') as f:
                     self.projects = json.load(f)
                 logger.info(f"✅ 加载GitHub项目数据库: {len(self.projects)} 个项目")
             else:
+                # 如果新格式文件不存在，检查是否有旧格式文件需要迁移
                 self.projects = {}
-                logger.info("✅ GitHub项目数据库为空，将创建新数据库")
+                if (self.db_dir / "all_projects.json").exists():
+                    logger.warning("📋 检测到旧格式数据库文件，请运行迁移脚本")
+                else:
+                    logger.info("✅ GitHub项目数据库为空，将创建新数据库")
         
         except Exception as e:
             logger.error(f"❌ 加载GitHub数据库失败: {e}")
@@ -70,11 +66,7 @@ class GitHubProjectDB:
             self.projects = {}
     
     def _save_database(self) -> None:
-        """保存数据库到文件（Skill 不需要文件缓存，此方法已禁用）"""
-        # Skill 不需要文件缓存，直接返回
-        if not self.projects_file:
-            return
-        
+        """保存数据库到文件"""
         try:
             with open(self.projects_file, 'w', encoding='utf-8') as f:
                 json.dump(self.projects, f, ensure_ascii=False, indent=2)

@@ -88,7 +88,7 @@
 #### 3.1 一次性执行（推荐调试 / 手动刷新）
 
 ```bash
-python3 src/msgskill/multi_scheduler.py --once
+python3 src/multi_scheduler.py --once
 ```
 
 - 会并行执行所有配置为 `enabled: true` 的任务，其中包括 GitHub。
@@ -164,32 +164,7 @@ python3 src/msgskill/multi_scheduler.py --once
 
 ---
 
-### 5. 与其他组件的关系
-
-- **Notion 同步（可选，默认关闭）**：
-  - `notion_sync` 模块提供统一的 Notion 同步能力（`sync_items` / `sync_json_file`），并通过 `config/sources.json` 中的 `notion_sync` 段配置 token 和各数据源数据库。
-  - 额外增加了 GitHub 专用开关：
-    ```jsonc
-    "notion_sync": {
-      "enabled": true,
-      "auto_sync": {
-        "github": false
-      },
-      "databases": {
-        "github": { "database_id": "..." }
-      }
-    }
-    ```
-  - 行为说明：
-    - 当 `notion_sync.enabled = true` 且 `auto_sync.github = true` 时：
-      - 每次调度器执行 `sync_github()` 并成功获取结果后，会自动调用 Notion，同步本次抓取到的 GitHub 项目（去重基于 `source_url`）。
-    - 当 `auto_sync.github = false`（默认）时：
-      - 不会自动同步 GitHub 到 Notion；
-      - 如需同步，可单独编写脚本，基于 `github_projects.json` 调用 `notion_sync.sync_json_file(...)` 或 `sync_items(...)`。
-
----
-
-### 6. 常见调整场景（简要）
+### 5. 常见调整场景（简要）
 
 - **想要更多候选项目**：
   - 降低 `star_limits`；

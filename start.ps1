@@ -56,13 +56,13 @@ if (-not (Test-Path "logs")) {
 }
 
 # Check files
-if (-not (Test-Path "src\msgskill\multi_scheduler.py")) {
+if (-not (Test-Path "src\multi_scheduler.py")) {
     Write-Host "ERROR: multi_scheduler.py not found!" -ForegroundColor Red
     Read-Host "Press Enter to exit"
     exit 1
 }
 
-if (-not (Test-Path "src\msgskill\preview_server.py")) {
+if (-not (Test-Path "src\preview_server.py")) {
     Write-Host "ERROR: preview_server.py not found!" -ForegroundColor Red
     Read-Host "Press Enter to exit"
     exit 1
@@ -72,7 +72,7 @@ if (-not (Test-Path "src\msgskill\preview_server.py")) {
 Write-Host "Starting scheduler in new window..." -ForegroundColor Green
 try {
     $schedulerProcess = Start-Process -FilePath "python" `
-        -ArgumentList "src\msgskill\multi_scheduler.py" `
+        -ArgumentList "src\multi_scheduler.py" `
         -WindowStyle Normal `
         -WorkingDirectory $scriptDir `
         -PassThru `
@@ -102,7 +102,7 @@ Write-Host ""
 
 # Run preview server
 try {
-    python src\msgskill\preview_server.py
+    python src\preview_server.py
 } catch {
     Write-Host ""
     Write-Host "Preview server error: $_" -ForegroundColor Red

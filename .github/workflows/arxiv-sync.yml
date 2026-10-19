@@ -41,7 +41,7 @@ jobs:
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: |
-        python src/msgskill/scheduler.py --once --limit ${{ github.event.inputs.max_results || '20' }} 2>&1 | tee output/arxiv_sync_$(date +%Y%m%d_%H%M%S).log
+        python src/multi_scheduler.py --once 2>&1 | tee output/arxiv_sync_$(date +%Y%m%d_%H%M%S).log
       continue-on-error: true
     
     - name: 🔍 Check for arXiv failures

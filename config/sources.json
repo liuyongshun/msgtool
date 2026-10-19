@@ -67,7 +67,7 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "google_ai": {
@@ -81,7 +81,7 @@
           "AI工具"
         ],
         "note": "RSS源不稳定，暂时禁用",
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "huggingface": {
@@ -95,7 +95,7 @@
           "技术博客"
         ],
         "note": "RSS源不稳定，暂时禁用",
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "sebastian_raschka": {
@@ -108,7 +108,7 @@
           "AI资讯",
           "技术博客"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "anthropic_blog": {
@@ -121,7 +121,7 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "meta_ai": {
@@ -134,7 +134,7 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "microsoft_ai": {
@@ -147,7 +147,7 @@
           "AI资讯",
           "AI工具"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "langchain_blog": {
@@ -208,7 +208,7 @@
         "tags": [
           "AI论文"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "arstechnica": {
@@ -233,7 +233,7 @@
         "tags": [
           "AI资讯"
         ],
-        "ai_filter_enabled": true,
+        "ai_filter_enabled": false,
         "translation_enabled": true
       },
       "jiqizhixin": {
@@ -336,6 +336,70 @@
         "ai_filter_enabled": true,
         "translation_enabled": true
       },
+      "simon_willison": {
+        "enabled": true,
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "description": "LLM 实践笔记：模型、工具与评测",
+        "category": "personal_blog",
+        "tags": [
+          "AI资讯",
+          "技术博客"
+        ],
+        "ai_filter_enabled": false,
+        "translation_enabled": true
+      },
+      "armin_ronacher": {
+        "enabled": true,
+        "name": "Armin Ronacher",
+        "url": "https://lucumr.pocoo.org/feed.atom",
+        "description": "Agent 与 LLM 工程实践",
+        "category": "personal_blog",
+        "tags": [
+          "技术博客",
+          "AI工具"
+        ],
+        "ai_filter_enabled": false,
+        "translation_enabled": true
+      },
+      "max_woolf": {
+        "enabled": true,
+        "name": "Max Woolf",
+        "url": "https://minimaxir.com/index.xml",
+        "description": "应用向 LLM 实验与工具用法",
+        "category": "personal_blog",
+        "tags": [
+          "技术博客",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true,
+        "translation_enabled": true
+      },
+      "antirez": {
+        "enabled": true,
+        "name": "antirez",
+        "url": "http://antirez.com/rss",
+        "description": "Redis 作者，近期集中写编程 Agent",
+        "category": "personal_blog",
+        "tags": [
+          "技术博客",
+          "AI工具"
+        ],
+        "ai_filter_enabled": true,
+        "translation_enabled": true
+      },
+      "gary_marcus": {
+        "enabled": true,
+        "name": "Gary Marcus",
+        "url": "https://garymarcus.substack.com/feed",
+        "description": "AI 批评与行业判断",
+        "category": "personal_blog",
+        "tags": [
+          "AI资讯"
+        ],
+        "ai_filter_enabled": false,
+        "translation_enabled": true
+      },
       "tldr_tech": {
         "enabled": false,
         "name": "TLDR Tech",
@@ -416,7 +480,7 @@
         "translation_enabled": true
       },
       "cs_cv": {
-        "enabled": true,
+        "enabled": false,
         "name": "Computer Vision",
         "category": "cs.CV",
         "description": "计算机视觉领域论文",
@@ -426,7 +490,7 @@
         "translation_enabled": true
       },
       "cs_ne": {
-        "enabled": true,
+        "enabled": false,
         "name": "Neural and Evolutionary Computing",
         "category": "cs.NE",
         "description": "神经网络与进化计算",
@@ -456,7 +520,7 @@
         "translation_enabled": true
       },
       "cs_ir": {
-        "enabled": true,
+        "enabled": false,
         "name": "Information Retrieval",
         "category": "cs.IR",
         "description": "信息检索（RAG、向量检索、检索增强生成）",
@@ -466,7 +530,7 @@
         "translation_enabled": true
       },
       "cs_se": {
-        "enabled": true,
+        "enabled": false,
         "name": "Software Engineering",
         "category": "cs.SE",
         "description": "软件工程（AI辅助编程、代码大模型）",
@@ -476,7 +540,7 @@
         "translation_enabled": true
       },
       "cs_ma": {
-        "enabled": true,
+        "enabled": false,
         "name": "Multiagent Systems",
         "category": "cs.MA",
         "description": "多智能体系统（Multi-Agent、协作AI）",
@@ -486,7 +550,7 @@
         "translation_enabled": true
       },
       "cs_hc": {
-        "enabled": true,
+        "enabled": false,
         "name": "Human-Computer Interaction",
         "category": "cs.HC",
         "description": "人机交互（AI Agent界面、交互设计）",
@@ -496,7 +560,7 @@
         "translation_enabled": true
       },
       "cs_dc": {
-        "enabled": true,
+        "enabled": false,
         "name": "Distributed Computing",
         "category": "cs.DC",
         "description": "分布式计算（大模型训练、推理优化）",
@@ -506,7 +570,7 @@
         "translation_enabled": true
       },
       "eess_as": {
-        "enabled": true,
+        "enabled": false,
         "name": "Audio and Speech Processing",
         "category": "eess.AS",
         "description": "音频与语音处理（语音大模型）",
@@ -538,10 +602,10 @@
       "enabled": true,
       "tasks": {
         "arxiv": {
-          "enabled": false,
+          "enabled": true,
           "time": "21:52",
-          "max_results": 20,
-          "note": "每个分类最多抓取的论文数（优化token消耗：从50减少到20）",
+          "max_results": 8,
+          "note": "少量关注：仅 cs.AI / cs.LG / cs.CL，每个分类最多 8 篇",
           "translation_strategy": {
             "enabled": true,
             "selective_translation": true,
@@ -551,39 +615,30 @@
         },
         "hackernews": {
           "enabled": true,
-          "time": ["10:20", "14:05", "18:20", "21:10"],
+          "time": [
+            "10:20",
+            "18:20"
+          ],
           "max_results": 50,
-          "note": "控制原始抓取数量，AI筛选后的所有结果都会保存"
+          "note": "每天两次。控制原始抓取数量，AI筛选后的结果都会保存"
         },
         "rss": {
           "enabled": true,
-          "time": ["07:00", "11:45", "15:20", "20:10"],
+          "time": [
+            "08:45",
+            "20:10"
+          ],
           "max_results": 20,
-          "note": "每个RSS源最多抓取的条目数，AI筛选后的所有结果都会保存。每天从06:00到21:00，每2小时同步一次（共9次）。"
+          "note": "每天两次。每个RSS源最多抓取的条目数，AI筛选后的结果都会保存"
         },
         "github": {
           "enabled": true,
           "time": "21:52",
           "max_results": 70,
           "note": "控制每种查询类型的抓取上限，AI筛选后的所有结果都会保存"
-        },
-        "wechat_topics": {
-          "enabled": true,
-          "time": ["15:00", "21:30"],
-          "note": "公众号选题评估任务：从当日 RSS + HackerNews 数据中筛选值得发布的内容"
         }
       }
     }
-  },
-  "wechat_llm": {
-    "enabled": true,
-    "provider": "gemini",
-    "api_key": "",
-    "api_url": "",
-    "model_name": "gemini-2.5-flash",
-    "max_tokens": 5000,
-    "temperature": 0.7,
-    "note": "公众号文章生成专用 LLM 配置，使用 Gemini 2.5 Flash 高质量稳定模型"
   },
   "llm": {
     "enabled": true,
@@ -594,39 +649,5 @@
     "max_tokens": 1000,
     "temperature": 0.3,
     "recent_days": 1
-  },
-  "notion_sync": {
-    "enabled": true,
-    "api_token": "",
-    "description": "Notion同步配置 - 将output数据同步到Notion数据库",
-    "note": "1. 在Notion中创建集成获取api_token\n2. 为每个数据源创建独立的数据库并连接集成\n3. 数据库建议字段：Title(title), Summary(rich_text), Source URL(url), Source Type(select), Article Tag(select), Author(rich_text), Score(number), Published Date(date), Tags(multi_select), AI Score(number), Story Type(select)",
-    "auto_sync": {
-      "github": true,
-      "rss": true,
-      "hackernews": true,
-      "arxiv": false
-    },
-    "databases": {
-      "github": {
-        "database_id": "",
-        "description": "GitHub项目数据库"
-      },
-      "rss": {
-        "database_id": "",
-        "description": "RSS文章数据库（可选，为空则使用github数据库）"
-      },
-      "hackernews": {
-        "database_id": "",
-        "description": "HackerNews新闻数据库（可选，为空则使用github数据库）"
-      },
-      "arxiv": {
-        "database_id": "",
-        "description": "arXiv论文数据库（可选，为空则使用github数据库）"
-      },
-      "wechat": {
-        "database_id": "",
-        "description": "公众号文章数据库（存储 AI 生成的公众号内容，需在 Notion 中创建并填写 database_id）"
-      }
-    }
   }
 }

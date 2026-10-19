@@ -13,7 +13,7 @@ msgskill/
 ├── config/                    # 配置文件
 │   ├── sources.json          # 数据源配置（核心）
 │   └── sources_schema.json   # 配置JSON Schema
-├── src/msgskill/             # 核心代码
+├── src/             # 核心代码
 │   ├── tools/                # 数据获取工具
 │   │   ├── arxiv_fetcher.py      # arXiv论文
 │   │   ├── github_fetcher.py     # GitHub项目
@@ -26,8 +26,7 @@ msgskill/
 │   │   ├── cache.py               # 缓存
 │   │   ├── logger.py              # 日志
 │   │   ├── parser.py              # 文本解析
-│   │   ├── github_db_new.py       # GitHub数据库管理
-│   │   └── notion_sync.py         # Notion同步
+│   │   └── github_db_new.py       # GitHub数据库管理
 │   ├── config.py             # 配置管理
 │   ├── models.py             # 数据模型
 │   ├── output.py             # 输出管理
@@ -44,7 +43,8 @@ msgskill/
 │   └── js/
 ├── scripts/                  # 工具脚本
 │   ├── cleanup_logs.sh       # 日志清理
-│   └── sync_to_notion.py     # Notion手动同步
+│   ├── cleanup_logs.sh
+│   └── cleanup_all.sh
 ├── test/                     # 测试脚本
 └── docs/                     # 文档
 ```
@@ -52,9 +52,9 @@ msgskill/
 ### 1.2 数据流
 
 ```
-配置加载 → 数据获取 → 时间过滤 → AI筛选 → 翻译 → 输出保存 → Notion同步（可选）
+配置加载 → 数据获取 → 时间过滤 → AI筛选 → 翻译 → 输出保存 → 预览展示
    ↓          ↓         ↓          ↓        ↓        ↓            ↓
-sources.json  tools/  recent_days  ai_filter  translator  output/  notion_sync
+sources.json  tools/  recent_days  ai_filter  translator  output/
 ```
 
 **关键流程说明**：
@@ -64,7 +64,6 @@ sources.json  tools/  recent_days  ai_filter  translator  output/  notion_sync
 4. **AI筛选**: 使用LLM批量判断内容相关性（可选）
 5. **翻译**: 将标题/摘要翻译为中文（可选，各数据源独立控制）
 6. **输出保存**: 保存到 `output/daily/` 或 `output/github/`
-7. **Notion同步**: 自动或手动同步到Notion数据库（可选）
 
 ---
 
@@ -152,8 +151,8 @@ class ArticleItem(BaseModel):
 ### 3.1 文件组织
 
 ```
-新增数据源工具：src/msgskill/tools/新工具_fetcher.py
-新增工具函数：src/msgskill/utils/新功能.py
+新增数据源工具：src/tools/新工具_fetcher.py
+新增工具函数：src/utils/新功能.py
 输出文件：
   - RSS/HackerNews/arXiv: output/daily/YYYY-MM-DD/source_timestamp.json
   - GitHub: output/github/github_projects.json（持久化全量数据库）
@@ -245,7 +244,7 @@ logger.info(f"时间过滤：最近 {recent_days} 天内 {len(filtered_items)} �
 ### 4.1 步骤概览
 
 1. 在 `config/sources.json` 添加配置
-2. 在 `src/msgskill/tools/` 创建 fetcher
+2. 在 `src/tools/` 创建 fetcher
 3. 在 `multi_scheduler.py` 注册任务
 4. 测试和验证
 
@@ -277,7 +276,7 @@ logger.info(f"时间过滤：最近 {recent_days} 天内 {len(filtered_items)} �
 
 ### 4.3 Fetcher 实现
 
-创建 `src/msgskill/tools/example_fetcher.py`：
+创建 `src/tools/example_fetcher.py`：
 
 ```python
 """
@@ -394,16 +393,6 @@ def sync_example(self, max_results: int = 10):
             output_file = self.output_manager.get_daily_dir() / f"example_{timestamp}.json"
             self.output_manager._write_json(output_file, result.model_dump())
             
-            # Notion自动同步（如果启用）
-            try:
-                config_manager = get_config()
-                notion_cfg = config_manager.get_notion_config() or {}
-                auto_sync_cfg = notion_cfg.get("auto_sync", {})
-                if bool(auto_sync_cfg.get("example", False)):
-                    self._sync_example_items_to_notion(result.items)
-            except Exception as notion_error:
-                logger.debug(f"Notion自动同步检查失败: {notion_error}")
-            
             logger.info(f"✅ 同步完成: {result.total_count}条")
             self.sync_stats["success_count"] += 1
         else:
@@ -458,7 +447,7 @@ def start(self):
 
 ### 5.1 添加新的 AI 筛选逻辑
 
-编辑 `src/msgskill/utils/ai_filter.py`：
+编辑 `src/utils/ai_filter.py`：
 
 ```python
 async def classify_with_custom_logic(
@@ -481,7 +470,7 @@ async def classify_with_custom_logic(
 
 ### 5.2 添加新的翻译策略
 
-编辑 `src/msgskill/utils/translator.py`：
+编辑 `src/utils/translator.py`：
 
 ```python
 async def translate_with_strategy(
@@ -510,7 +499,7 @@ async def translate_with_strategy(
 
 ### 5.3 自定义输出格式
 
-编辑 `src/msgskill/output.py`：
+编辑 `src/output.py`：
 
 ```python
 def save_result_custom_format(
@@ -545,7 +534,7 @@ def save_result_custom_format(
 
 ```bash
 # 立即执行一次所有任务
-python -m src.msgskill.multi_scheduler --once
+python -m src.multi_scheduler --once
 
 # 检查输出目录
 ls -lh output/daily/$(date +%Y-%m-%d)/
@@ -558,7 +547,7 @@ ls -lh output/daily/$(date +%Y-%m-%d)/
 ### 7.1 配置管理
 
 ```python
-from src.msgskill.config import get_config
+from src.config import get_config
 
 config = get_config()
 
@@ -573,7 +562,7 @@ rss_urls = config.get_rss_feed_urls()
 ### 7.2 缓存操作
 
 ```python
-from src.msgskill.utils.cache import get_cache
+from src.utils.cache import get_cache
 
 cache = get_cache()
 
@@ -590,7 +579,7 @@ cache.delete("key")
 ### 7.3 日志记录
 
 ```python
-from src.msgskill.utils.logger import logger
+from src.utils.logger import logger
 
 logger.info("ℹ️ 信息日志")
 logger.warning("⚠️ 警告日志")
@@ -600,7 +589,7 @@ logger.error("❌ 错误日志")
 ### 7.4 AI 筛选
 
 ```python
-from src.msgskill.utils.ai_filter import classify_titles_batch
+from src.utils.ai_filter import classify_titles_batch
 
 titles = ["AI论文标题1", "AI论文标题2"]
 results = await classify_titles_batch(
@@ -613,7 +602,7 @@ results = await classify_titles_batch(
 ### 7.5 翻译
 
 ```python
-from src.msgskill.utils.translator import translate_article_item
+from src.utils.translator import translate_article_item
 
 article = ArticleItem(...)
 translated = await translate_article_item(article)
@@ -711,7 +700,7 @@ translated = await translate_article_item(article)
 ./start.sh
 
 # 立即执行一次所有任务（不启动定时调度）
-python3 src/msgskill/multi_scheduler.py --once
+python3 src/multi_scheduler.py --once
 
 # 查看今日输出
 ls -lh output/daily/$(date +%Y-%m-%d)/
@@ -722,42 +711,11 @@ cat output/github/github_projects.json | jq 'keys | length'  # 项目总数
 # 清理日志（7天前）
 ./scripts/cleanup_logs.sh
 
-# Notion手动同步
-python3 scripts/sync_to_notion.py --date $(date +%Y-%m-%d)
-
 # 查看实时日志
 tail -f logs/scheduler.log
 ```
 
-## 11. Notion 同步开发规范
-
-### 11.1 自动同步
-
-在 `multi_scheduler.py` 的同步方法中添加：
-
-```python
-# 检查是否启用自动同步
-config_manager = get_config()
-notion_cfg = config_manager.get_notion_config() or {}
-auto_sync_cfg = notion_cfg.get("auto_sync", {})
-if bool(auto_sync_cfg.get("数据源名", False)):
-    self._sync_数据源_items_to_notion(result.items)
-```
-
-### 11.2 手动同步
-
-预览页提供单条同步按钮，通过 `/api/notion/sync` API实现。
-
-### 11.3 数据转换
-
-确保 `ArticleItem` 字段符合 Notion 数据库字段要求：
-- `title` → Title (title)
-- `source_url` → Source URL (url)
-- `summary` → Summary (rich_text)
-- `published_date` → Published Date (date)
-- `ai_score` → AI Score (number)
-
 ---
 
-**最后更新**: 2026-02-10
-**版本**: 3.3.0
+**最后更新**: 2026-10-16
+**版本**: 3.5.0

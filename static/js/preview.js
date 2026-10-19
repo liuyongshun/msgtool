@@ -50,13 +50,6 @@ class OutputPreview {
             });
         });
 
-        // 同步到 Notion 按钮
-        const syncBtn = document.getElementById('sync-notion-btn');
-        if (syncBtn) {
-            syncBtn.addEventListener('click', () => {
-                this.syncToNotion();
-            });
-        }
     }
 
     async loadDates() {
@@ -79,7 +72,7 @@ class OutputPreview {
         } catch (error) {
             console.error('加载日期列表失败:', error);
             this.showStatus('error', `加载失败: ${error.message}`);
-            this.showError('无法连接到服务器', '请确保已启动预览服务器：python src/msgskill/preview_server.py');
+            this.showError('无法连接到服务器', '请确保已启动预览服务器：python src/preview_server.py');
         }
     }
 
@@ -219,33 +212,6 @@ class OutputPreview {
         }
     }
 
-    async syncItemToNotion(type, item) {
-        try {
-            const payload = { type, item };
-            const res = await fetch(`${this.apiBase}/notion/sync`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload)
-            });
-            const data = await res.json();
-
-            if (!data.success) {
-                throw new Error(data.error || '同步失败');
-            }
-
-            const typeName = this.getTypeName(type);
-            const title = (item && (item.title || item.name || item.source_url)) || '';
-            const shortTitle = title ? `「${title.slice(0, 40)}${title.length > 40 ? '...' : ''}」` : '1 条记录';
-            this.showStatus('success', data.message || `${typeName} ${shortTitle} 已同步到 Notion`);
-        } catch (error) {
-            console.error('同步到 Notion 失败:', error);
-            const typeName = this.getTypeName(type);
-            this.showStatus('error', `${typeName} 同步失败: ${error.message || '未知错误'}`);
-        }
-    }
-
     showError(title, message) {
         const contentEl = document.getElementById('content');
         contentEl.innerHTML = `
@@ -311,43 +277,6 @@ class OutputPreview {
         contentEl.classList.add('fade-in');
         setTimeout(() => contentEl.classList.remove('fade-in'), 300);
 
-        // 绑定单条同步按钮
-        this.bindItemSyncHandlers(contentEl, dataType, data);
-    }
-
-    bindItemSyncHandlers(container, dataType, data) {
-        const buttons = container.querySelectorAll('.sync-notion-item');
-        if (!buttons.length) return;
-
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const type = btn.dataset.type;
-                let itemData = null;
-
-                if (type === 'arxiv') {
-                    const idx = parseInt(btn.dataset.index, 10);
-                    itemData = (data.papers || [])[idx];
-                } else if (type === 'hackernews' || type === 'github' || type === 'github-db') {
-                    const idx = parseInt(btn.dataset.index, 10);
-                    itemData = (data.items || [])[idx];
-                } else if (type === 'rss') {
-                    const feedIndex = parseInt(btn.dataset.feedIndex, 10);
-                    const itemIndex = parseInt(btn.dataset.itemIndex, 10);
-                    const entries = Object.entries(data.feeds || {});
-                    const entry = entries[feedIndex];
-                    if (entry && entry[1] && Array.isArray(entry[1].items)) {
-                        itemData = entry[1].items[itemIndex];
-                    }
-                }
-
-                if (!itemData) {
-                    this.showStatus('error', '未找到要同步的数据');
-                    return;
-                }
-
-                this.syncItemToNotion(type, itemData);
-            });
-        });
     }
 
     renderArxivData(data, container, fileInfoHtml = '') {
@@ -372,11 +301,6 @@ class OutputPreview {
                             <div class="mt-3 flex gap-2 items-center">
                                 <a href="${paper.pdf_url}" target="_blank" class="text-sm text-blue-600 hover:underline">PDF</a>
                                 ${paper.arxiv_url ? `<a href="${paper.arxiv_url}" target="_blank" class="text-sm text-blue-600 hover:underline">arXiv</a>` : ''}
-                                <button class="ml-auto text-sm text-emerald-600 hover:underline sync-notion-item"
-                                        data-type="arxiv"
-                                        data-index="${index}">
-                                    同步到 Notion
-                                </button>
                             </div>
                         </div>
                     `).join('')}
@@ -406,13 +330,6 @@ class OutputPreview {
                                 <span>💬 ${item.comments_count || 0}</span>
                                 <span>📅 ${this.formatToBeijingTime(item.published_date)}</span>
                                 ${item.article_tag ? `<span>🏷️ ${item.article_tag}</span>` : ''}
-                            </div>
-                            <div class="mt-2 text-right">
-                                <button class="text-xs text-emerald-600 hover:underline sync-notion-item"
-                                        data-type="hackernews"
-                                        data-index="${index}">
-                                    同步到 Notion
-                                </button>
                             </div>
                         </div>
                     `).join('')}
@@ -453,14 +370,6 @@ class OutputPreview {
                                             </h4>
                                             <p class="text-gray-600 text-sm mb-1">${this.formatToBeijingTime(item.published)}</p>
                                             <p class="text-gray-700 text-sm">${item.summary}</p>
-                                            <div class="mt-1 text-right">
-                                                <button class="text-xs text-emerald-600 hover:underline sync-notion-item"
-                                                        data-type="rss"
-                                                        data-feed-index="${feedEntries.findIndex(([u]) => u === url)}"
-                                                        data-item-index="${itemIndex}">
-                                                    同步到 Notion
-                                                </button>
-                                            </div>
                                         </div>
                                     `).join('')}
                                 </div>
@@ -493,13 +402,6 @@ class OutputPreview {
                                 <span>⭐ ${item.score || 0}</span>
                                 <span>🕒 ${this.formatToBeijingTime(item.published_date)}</span>
                                 ${item.author ? `<span>👤 ${item.author}</span>` : ''}
-                            </div>
-                            <div class="mt-2 text-right">
-                                <button class="text-xs text-emerald-600 hover:underline sync-notion-item"
-                                        data-type="github"
-                                        data-index="${index}">
-                                    同步到 Notion
-                                </button>
                             </div>
                         </div>
                     `).join('')}
@@ -558,13 +460,6 @@ class OutputPreview {
                                             <span>👤 ${item.author || 'Unknown'}</span>
                                             <span>🕒 ${this.formatToBeijingTime(item.published_date)}</span>
                                         </div>
-                                        <div class="mt-2 text-right">
-                                            <button class="text-xs text-emerald-600 hover:underline sync-notion-item"
-                                                    data-type="github-db"
-                                                    data-index="${index}">
-                                                同步到 Notion
-                                            </button>
-                                        </div>
                                     </div>
                                 `).join('')}
                             </div>
@@ -594,13 +489,6 @@ class OutputPreview {
                                             ${item.tags && item.tags.length > 0 ? `<span>🏷️ ${item.tags.join(', ')}</span>` : ''}
                                             <span>👤 ${item.author || 'Unknown'}</span>
                                             <span>🕒 ${this.formatToBeijingTime(item.published_date)}</span>
-                                        </div>
-                                        <div class="mt-2 text-right">
-                                            <button class="text-xs text-emerald-600 hover:underline sync-notion-item"
-                                                    data-type="github-db"
-                                                    data-index="${index}">
-                                                同步到 Notion
-                                            </button>
                                         </div>
                                     </div>
                                 `).join('')}

@@ -88,7 +88,7 @@
 
 ```bash
 # 测试arXiv同步
-python src/msgskill/scheduler.py --once --limit 5
+python src/multi_scheduler.py --once
 
 # 测试RSS验证
 python test/validate_sources.py

@@ -4,18 +4,13 @@
 
 ## ✨ 特色功能
 
-- **📚 学术追踪**: 自动同步arXiv 13个AI分类最新论文（11个默认启用，含中文翻译）
+- **📚 学术追踪**: 少量同步 arXiv（cs.AI / cs.LG / cs.CL，含中文翻译）
 - **📰 资讯精选**: HackerNews热门技术新闻AI筛选
-- **📺 媒体监控**: 31个AI相关RSS源内容聚合（28个启用）
+- **📺 媒体监控**: AI相关RSS源内容聚合
 - **🐙 项目发现**: GitHub AI趋势项目实时跟踪 + 智能数据库管理
-- **⏰ 自动调度**: 支持本地和云端定时任务执行
-- **🤖 智能过滤**: DeepSeek AI模型内容相关性判断 + 时间过滤优化
-- **📊 数据预览**: 美观的Web界面实时预览output数据 + 单条Notion同步
-- **🔄 Notion集成**: 支持自动/手动同步到Notion数据库
-
-rss公开内容：https://www.notion.so/303e0cb030e280f9ad48fb29ce52566f?v=303e0cb030e28082a99b000c8f3772cc
-
-hackernews公开内容：https://www.notion.so/303e0cb030e280faa697d7ae879d82b8?v=303e0cb030e280e2869d000ced69cbb7
+- **⏰ 自动调度**: 本地定时任务
+- **🤖 智能过滤**: DeepSeek AI模型内容相关性判断 + 时间过滤
+- **📊 数据预览**: Web 界面预览 output 数据
 
 ## 📋 系统要求
 
@@ -148,12 +143,12 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 终端 1 - 启动定时任务：
 ```cmd
-python src\msgskill\multi_scheduler.py
+python src\multi_scheduler.py
 ```
 
 终端 2 - 启动预览服务：
 ```cmd
-python src\msgskill\preview_server.py
+python src\preview_server.py
 ```
 
 **启动后：**
@@ -181,7 +176,7 @@ python src\msgskill\preview_server.py
     "scheduler": {
       "enabled": true,
       "tasks": {
-        "arxiv": {"enabled": true, "time": "21:52", "max_results": 20},
+        "arxiv": {"enabled": true, "time": "21:52", "max_results": 8},
         "hackernews": {"enabled": true, "time": ["10:20", "14:05", "17:20", "21:52"], "max_results": 50},
         "rss": {"enabled": true, "time": ["10:20", "14:05", "17:20", "21:52"], "max_results": 20},
         "github": {"enabled": true, "time": "21:52", "max_results": 100}
@@ -193,15 +188,6 @@ python src\msgskill\preview_server.py
     "provider": "deepseek",
     "api_key": "your-api-key",
     "recent_days": 1
-  },
-  "notion_sync": {
-    "enabled": true,
-    "auto_sync": {
-      "github": false,
-      "rss": false,
-      "hackernews": false,
-      "arxiv": false
-    }
   }
 }
 ```
@@ -275,7 +261,7 @@ python src\msgskill\preview_server.py
 
 ```
 msgskill/
-├── src/msgskill/              # 核心功能模块
+├── src/              # 核心功能模块
 │   ├── tools/                # 数据抓取工具
 │   │   ├── arxiv_fetcher.py   # arXiv论文抓取
 │   │   ├── news_scraper.py    # HackerNews抓取
@@ -288,18 +274,6 @@ msgskill/
 │   ├── multi_scheduler.py    # 定时任务调度器
 │   ├── preview_server.py     # 数据预览服务器
 │   └── config.py             # 配置管理
-│
-├── mcp_server/               # MCP服务器模块（未来扩展）
-│   ├── __init__.py
-│   └── msgskill_server.py    # 原MCP服务器代码
-│
-├── getaimsg-skill/           # Agent技能模块（独立技能，按需触发）
-│   ├── config.yaml           # 技能专用配置
-│   ├── config.py             # 配置管理
-│   ├── tools/                # 数据抓取工具（独立版）
-│   ├── utils/                # 工具函数（独立版）
-│   ├── scripts/              # 独立运行脚本
-│   └── output/               # 技能输出目录
 │
 ├── templates/                # HTML模板文件
 │   └── output_preview.html   # 数据预览页面
@@ -321,8 +295,7 @@ msgskill/
 │
 ├── scripts/                  # 工具脚本
 │   ├── cleanup_logs.sh      # 日志清理
-│   ├── cleanup_all.sh       # 一键清理
-│   └── sync_to_notion.py    # Notion手动同步
+│   └── cleanup_all.sh       # 一键清理
 │
 ├── test/                     # 测试脚本
 │
@@ -339,19 +312,19 @@ msgskill/
 
 ### 核心模块说明
 
-**数据抓取模块** (`src/msgskill/tools/`)
+**数据抓取模块** (`src/tools/`)
 - `arxiv_fetcher.py`: 抓取arXiv最新AI论文
 - `news_scraper.py`: 抓取HackerNews热门技术新闻
 - `rss_reader.py`: 抓取RSS源的最新文章
 - `github_fetcher.py`: 抓取GitHub trending AI项目 + 智能数据库管理
 
-**定时任务模块** (`src/msgskill/multi_scheduler.py`)
+**定时任务模块** (`src/multi_scheduler.py`)
 - 配置化的定时任务调度
 - 支持独立启用/禁用各个数据源
 - 自动重试和异常隔离
 - 详细的日志记录
 
-**数据预览模块** (`src/msgskill/preview_server.py`)
+**数据预览模块** (`src/preview_server.py`)
 - Flask Web服务器
 - RESTful API接口
 - 实时扫描output目录
@@ -363,45 +336,14 @@ msgskill/
 - 使用htmx实现动态交互
 - 支持桌面和移动端
 
-### getaimsg-skill 技能模块
-
-**getaimsg-skill** (`getaimsg-skill/`) - 独立的按需触发技能版本，与主项目定时任务并行存在：
-
-| 对比项 | 主项目（定时任务） | getaimsg-skill（技能） |
-|--------|-----------------|----------------|
-| 触发方式 | 定时自动执行 | 用户按需触发 |
-| 时间窗口 | `recent_days: 1`（仅当天） | `recent_days: 7`（近7天） |
-| 输出位置 | `output/daily/` | `getaimsg-skill/output/` |
-| 缓存 | 持久化文件缓存 | 内存缓存，无文件依赖 |
-| GitHub过滤 | 关键词 + AI筛选 | 按 star/语言/时间筛选 |
-| arXiv分类 | 13个（11个启用） | 13个（5个启用，减少耗时） |
-
-**独立运行技能脚本**：
-```bash
-cd getaimsg-skill
-
-# 单独测试各数据源
-python scripts/fetch_github.py      # GitHub趋势项目
-python scripts/fetch_hackernews.py  # HackerNews热点
-python scripts/fetch_rss.py         # RSS聚合
-python scripts/fetch_arxiv.py       # arXiv论文
-```
-
-### 未来扩展模块
-
-**MCP Server** (`mcp_server/`)
-- 与Claude等AI助手集成
-- 提供结构化的AI信息查询接口
-- 支持多种MCP工具
-
 ### 数据流转
 
 ```
-配置加载 → 数据获取 → 时间过滤 → AI筛选 → 翻译 → 存储到output → Notion同步（可选） → 预览服务展示
-   ↓          ↓         ↓          ↓        ↓           ↓              ↓                    ↓
-sources.json  tools/  recent_days  ai_filter  translator  output/    notion_sync    preview_server
-                                                          ├─daily/                        ↓
-                                                          └─github/                   浏览器访问
+配置加载 → 数据获取 → 时间过滤 → AI筛选 → 翻译 → 存储到output → 预览服务展示
+   ↓          ↓         ↓          ↓        ↓           ↓              ↓
+sources.json  tools/  recent_days  ai_filter  translator  output/    preview_server
+                                                          ├─daily/
+                                                          └─github/
 ```
 
 ## 📊 数据预览功能
@@ -414,7 +356,6 @@ sources.json  tools/  recent_days  ai_filter  translator  output/    notion_sync
 - **📑 数据分类**: arXiv论文、HackerNews、RSS源、GitHub项目分tab展示
 - **🎨 美观UI**: 响应式设计，支持桌面和移动端，两列布局
 - **⚡ 实时加载**: 自动识别可用数据类型，智能禁用不可用tab
-- **🔄 Notion同步**: 每个条目提供"同步到Notion"按钮，支持单条手动同步
 - **📊 数据统计**: 显示各数据源的数量统计和AI项目筛选结果
 
 ## 📚 API访问示例
@@ -422,7 +363,7 @@ sources.json  tools/  recent_days  ai_filter  translator  output/    notion_sync
 ### MCP API使用
 ```python
 import asyncio
-from src.msgskill.tools.arxiv_fetcher import fetch_arxiv_papers
+from src.tools.arxiv_fetcher import fetch_arxiv_papers
 
 async def main():
     result = await fetch_arxiv_papers(category="cs.AI", max_results=5)
@@ -433,7 +374,7 @@ asyncio.run(main())
 
 ### 直接调用工具示例
 ```python
-from src.msgskill.multi_scheduler import MultiSourceScheduler
+from src.multi_scheduler import MultiSourceScheduler
 
 scheduler = MultiSourceScheduler()
 scheduler.run_once()  # 立即同步所有数据源
@@ -460,10 +401,10 @@ scheduler.run_once()  # 立即同步所有数据源
 **单独启动**
 ```bash
 # 仅启动定时任务
-python3 src/msgskill/multi_scheduler.py
+python3 src/multi_scheduler.py
 
 # 仅启动预览服务
-python3 src/msgskill/preview_server.py
+python3 src/preview_server.py
 ```
 
 #### Windows
@@ -477,10 +418,10 @@ python3 src/msgskill/preview_server.py
 **单独启动**
 ```cmd
 REM 仅启动定时任务
-python src\msgskill\multi_scheduler.py
+python src\multi_scheduler.py
 
 REM 仅启动预览服务
-python src\msgskill\preview_server.py
+python src\preview_server.py
 ```
 
 **Windows 注意事项：**
@@ -639,7 +580,7 @@ Remove-Item -Path .cache -Recurse -Force
 ## 🔄 开发指南
 
 ### 添加新数据源
-1. 在 `src/msgskill/tools/` 创建新的fetcher模块
+1. 在 `src/tools/` 创建新的fetcher模块
 2. 在 `config/sources.json` 添加配置
 3. 在 `multi_scheduler.py` 注册新任务
 4. 在 `preview_server.py` 添加API支持
@@ -653,7 +594,6 @@ Remove-Item -Path .cache -Recurse -Force
 - 执行时间配置
 - 数据抓取量控制
 - LLM配置（DeepSeek API、时间过滤）
-- Notion同步配置（自动同步开关、数据库ID）
 
 **`requirements.txt`** - Python依赖
 - Flask, Flask-CORS: Web服务
@@ -668,19 +608,19 @@ Remove-Item -Path .cache -Recurse -Force
 - [配置说明](./docs/配置说明.md) - 完整的配置文件说明和最佳实践
 - [GitHub配置与使用说明](./docs/github配置与使用说明.md) - GitHub数据源详细说明
 - [RSS配置与使用说明](./docs/rss配置与使用说明.md) - RSS源配置和管理
-- [Notion同步使用指南](./docs/Notion同步使用指南.md) - Notion集成配置和使用
 - [AI开发指南](./__docAI__/AI开发指南.md) - 开发者快速上手指南
 
 ## 🆕 最新更新 (v3.4.0)
 
-- ✅ **getaimsg-skill技能模块**: 独立的按需触发技能，支持4个数据源独立运行（已从 `agent_skill` 重命名为 `getaimsg-skill`）
+- ✅ **项目精简**: 移除未使用的 `getaimsg-skill` 与 `mcp_server`，主路径统一为定时任务 + 预览服务
 - ✅ **GitHub查询优化**: 移除关键词限制，改为按 star数/语言/时间 过滤，扩大有效数据量
-- ✅ **时间策略优化**: 定时任务 `recent_days=1`（仅当天），技能模式 `recent_days=7`（近7天），策略更合理
+- ✅ **时间策略优化**: 定时任务 `recent_days=1`（仅当天）
 - ✅ **RSS缓存修复**: 修复翻译缓存key未区分 `translation_enabled` 导致的脏缓存问题
 - ✅ **时间过滤优化**: 新增 `llm.recent_days` 配置，仅处理最近N天内的数据，节省30-50% Token
-- ✅ **Notion集成**: 支持自动/手动同步到Notion数据库，各数据源独立控制
+- ✅ **去掉 Notion 和公众号**: 只保留抓取、筛选和本地预览
+- ✅ **arXiv 少量关注**: 只启用 cs.AI / cs.LG / cs.CL，每类最多 8 篇
 - ✅ **GitHub数据库重构**: 单一文件架构，智能去重，增量AI筛选
-- ✅ **UI优化**: 两列布局，单条Notion同步，Toast提示
+- ✅ **UI优化**: 两列布局，Toast提示
 - ✅ **arXiv优化**: 单日文件合并，动态更新，去重机制
 
 ---

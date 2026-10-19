@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 
 
 # 配置文件路径
-CONFIG_DIR = Path(__file__).parent.parent.parent / "config"
+CONFIG_DIR = Path(__file__).parent.parent / "config"
 SOURCES_CONFIG_FILE = CONFIG_DIR / "sources.json"
 
 
@@ -441,18 +441,6 @@ class ConfigManager:
             return self.get_github_source(name)
         else:
             return None
-    
-    def get_notion_config(self) -> Optional[dict[str, Any]]:
-        """
-        获取Notion同步配置
-        
-        Returns:
-            Notion配置字典，包含:
-            - enabled: 是否启用
-            - api_token: Notion Integration Token
-            - database_id: Notion数据库ID
-        """
-        return self._config.get("notion_sync")
 
 
 # 全局配置管理器实例

@@ -7,7 +7,7 @@
   - 聚合多源 AI / 科技相关文章；
   - 通过 LLM 对文章标题做相关性筛选；
   - 可选对标题/摘要做翻译；
-  - 将结果按天写入 `output/daily/YYYY-MM-DD/rss_*.json`，并可选同步到 Notion。
+  - 将结果按天写入 `output/daily/YYYY-MM-DD/rss_*.json`。
 
 ---
 
@@ -86,7 +86,7 @@
 #### 3.1 一次性执行（手动刷新）
 
 ```bash
-python3 src/msgskill/multi_scheduler.py --once
+python3 src/multi_scheduler.py --once
 ```
 
 - 会执行所有 `enabled=true` 的任务，其中包括 RSS。
@@ -94,7 +94,7 @@ python3 src/msgskill/multi_scheduler.py --once
   - 从配置中读取所有启用源的 URL；
   - 对每个源调用 `fetch_rss_feeds` 抓取 + LLM 筛选 + 翻译；
   - 按天写入/追加到 `output/daily/YYYY-MM-DD/rss_*.json`；
-  - 可选同步新增文章到 Notion（如果配置了 notion_sync 且启用）。
+  - 结果写入当天的 RSS JSON 文件。
 
 #### 3.2 长期定时运行
 
@@ -176,21 +176,7 @@ python3 src/msgskill/multi_scheduler.py --once
 
 ---
 
-### 6. Notion 同步关系
-
-- 配置：`config/sources.json` → `notion_sync` 段中的 `databases.rss.database_id`。
-- 逻辑（在 `multi_scheduler.sync_rss()` 中）：
-  - 当天已有 RSS 文件：
-    - 取这次新增的 `new_items`，调用 `_sync_rss_items_to_notion(new_items)`；
-  - 当天第一批：
-    - 合并所有 `feeds[*].items`，一次性调用 `_sync_rss_items_to_notion(all_items)`。
-- `_sync_rss_items_to_notion` 会把每条 RSS item 转成 `ArticleItem`，并通过 `NotionSync.sync_items(..., skip_existing=true)`：
-  - 基于 `source_url`（也就是 RSS 的 `link`）在 Notion 中查重；
-  - 已存在页面不会重复创建。
-
----
-
-### 7. 调整与优化建议（简要）
+### 6. 调整与优化建议（简要）
 
 - **想多一点 RSS 内容**：
   - 提高 `tasks.rss.max_results`；

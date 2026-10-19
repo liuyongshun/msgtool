@@ -39,7 +39,7 @@ def parse_date_string(date_str):
 
 # 获取项目根目录
 import sys
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
 app = Flask(__name__, 
@@ -50,15 +50,7 @@ CORS(app)
 OUTPUT_DIR = BASE_DIR / 'output' / 'daily'
 
 # 导入GitHub数据库模块
-from src.msgskill.utils.github_db_new import get_github_db
-from src.msgskill.utils.notion_sync import get_notion_sync
-from src.msgskill.utils.wechat_topic_evaluator import get_wechat_topic_evaluator
-from src.msgskill.utils.wechat_content_generator import get_wechat_content_generator
-from src.msgskill.models import ArticleItem
-from pydantic import ValidationError
-
-# 允许的 story_type 枚举值（与 ArticleItem 定义保持一致）
-ALLOWED_STORY_TYPES = {"top", "new", "best", "pushed", "created", "stars"}
+from src.utils.github_db_new import get_github_db
 
 @app.route('/')
 def index():
@@ -204,90 +196,6 @@ def get_dates():
         return jsonify({'error': str(e), 'dates': []}), 500
 
 
-@app.route('/api/notion/sync', methods=['POST'])
-def sync_to_notion():
-    """同步单条数据到 Notion（手动触发，按 item 粒度）"""
-    try:
-        payload = request.get_json(force=True) or {}
-        data_type = payload.get('type')
-        item_data = payload.get('item') or {}
-
-        notion_sync = get_notion_sync()
-        if not notion_sync or not notion_sync.enabled:
-            return jsonify({'success': False, 'error': 'Notion 同步未启用，请检查 config/sources.json 中的 notion_sync 配置'}), 400
-
-        if data_type not in ['arxiv', 'hackernews', 'rss', 'github', 'github-db']:
-            return jsonify({'success': False, 'error': f'不支持的数据类型: {data_type}'}), 400
-
-        # 构造 ArticleItem
-        article: ArticleItem
-        try:
-            if data_type in ['github', 'hackernews', 'arxiv']:
-                # 这三类在预览数据中已经基本是 ArticleItem 结构
-                article = ArticleItem(
-                    title=item_data.get('title', ''),
-                    summary=(item_data.get('summary', '') or '')[:300],
-                    source_url=item_data.get('source_url', ''),
-                    published_date=item_data.get('published_date'),
-                    source_type=item_data.get('source_type', data_type),
-                    article_tag=item_data.get('article_tag', 'AI资讯'),
-                    author=item_data.get('author'),
-                    score=item_data.get('score'),
-                    comments_count=item_data.get('comments_count'),
-                    tags=item_data.get('tags', []),
-                    # story_type 只接受限定值，其它情况一律置为 None，避免校验错误
-                    story_type=item_data.get('story_type') if item_data.get('story_type') in ALLOWED_STORY_TYPES else None,
-                    ai_score=item_data.get('ai_score')
-                )
-            elif data_type == 'github-db':
-                # GitHub数据库视为github源
-                article = ArticleItem(
-                    title=item_data.get('title', ''),
-                    summary=(item_data.get('summary', '') or '')[:300],
-                    source_url=item_data.get('source_url', ''),
-                    published_date=item_data.get('published_date'),
-                    source_type='github',
-                    article_tag=item_data.get('article_tag', 'AI工具'),
-                    author=item_data.get('author'),
-                    score=item_data.get('score'),
-                    comments_count=None,
-                    tags=item_data.get('tags', []),
-                    # 数据库视图不区分 story_type，统一置为 None
-                    story_type=None,
-                    ai_score=item_data.get('ai_score')
-                )
-            elif data_type == 'rss':
-                # RSS项：来自 feed.items
-                article = ArticleItem(
-                    title=item_data.get('title', ''),
-                    summary=(item_data.get('summary', '') or '')[:300],
-                    source_url=item_data.get('link', ''),
-                    published_date=item_data.get('published'),
-                    source_type='rss',
-                    article_tag=item_data.get('article_tag', 'AI资讯'),
-                    author=item_data.get('author'),
-                    score=None,
-                    comments_count=None,
-                    tags=item_data.get('tags', []),
-                    story_type=None,
-                    ai_score=item_data.get('ai_score')
-                )
-        except ValidationError as e:
-            return jsonify({'success': False, 'error': f'数据格式不合法: {str(e)}'}), 400
-
-        # 执行单条同步
-        result = notion_sync.sync_items([article], skip_existing=True)
-        synced = result.get('synced', 0)
-
-        if synced == 0:
-            return jsonify({'success': True, 'message': '该条数据已存在于 Notion（未重复创建）'})
-
-        return jsonify({'success': True, 'message': '已同步 1 条数据到 Notion'})
-
-    except Exception as e:
-        print(f"Notion 手动同步失败: {e}")
-        return jsonify({'success': False, 'error': f'Notion 同步失败: {str(e)}'}), 500
-
 @app.route('/api/data/<date>/<data_type>')
 def get_data(date, data_type):
     """获取指定日期和类型的数据 - 合并所有同类型文件"""
@@ -430,7 +338,6 @@ def get_files(date):
             name_parts = file.stem.split('_')
             if len(name_parts) >= 1:
                 data_type = name_parts[0]
-                # 过滤掉 wechat 类型（wechat 有专门的 /wechat 页面，不在主预览页显示）
                 if data_type == 'wechat':
                     continue
                 files[data_type] = file.name
@@ -443,97 +350,6 @@ def get_files(date):
         })
     except Exception as e:
         return jsonify({'error': str(e), 'files': []}), 500
-
-@app.route('/wechat')
-def wechat_topics_page():
-    """公众号选题页面"""
-    return send_from_directory(str(BASE_DIR / 'templates'), 'wechat_topics.html')
-
-
-@app.route('/api/wechat/topics')
-def get_wechat_topics():
-    """获取今日最新公众号选题列表"""
-    try:
-        date_str = request.args.get('date')  # 可选，默认今天
-        evaluator = get_wechat_topic_evaluator()
-        data = evaluator.load_latest_topics(date_str)
-
-        if data is None:
-            return jsonify({
-                'success': True,
-                'data': None,
-                'message': '今日暂无选题数据，请等待定时任务执行（15:00 / 21:30）或手动触发'
-            })
-
-        return jsonify({'success': True, 'data': data})
-
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-
-@app.route('/api/wechat/evaluate', methods=['POST'])
-def trigger_wechat_evaluate():
-    """手动触发今日选题评估（异步执行）"""
-    import asyncio
-    try:
-        date_str = (request.get_json(force=True) or {}).get('date')
-        evaluator = get_wechat_topic_evaluator()
-
-        # 同步运行异步评估
-        result = asyncio.run(evaluator.evaluate(date_str))
-
-        return jsonify({
-            'success': True,
-            'message': f"评估完成，共筛选出 {result.get('selected_count', 0)} 条推荐选题",
-            'data': result
-        })
-
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-
-@app.route('/api/wechat/generate', methods=['POST'])
-def wechat_generate_article():
-    """根据选题和用户要求生成公众号文章"""
-    import asyncio
-    try:
-        payload = request.get_json(force=True) or {}
-        topic = payload.get('topic')
-        user_prompt = payload.get('user_prompt', '')
-
-        if not topic:
-            return jsonify({'success': False, 'error': '缺少 topic 参数'}), 400
-
-        generator = get_wechat_content_generator()
-        result = asyncio.run(generator.generate(topic, user_prompt))
-
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-
-@app.route('/api/wechat/sync-notion', methods=['POST'])
-def wechat_sync_to_notion():
-    """将生成的公众号文章同步到 Notion"""
-    try:
-        payload = request.get_json(force=True) or {}
-        title = payload.get('title', '')
-        content = payload.get('content', '')
-        topic = payload.get('topic', {})
-        user_prompt = payload.get('user_prompt', '')
-
-        if not title or not content:
-            return jsonify({'success': False, 'error': '缺少 title 或 content 参数'}), 400
-
-        generator = get_wechat_content_generator()
-        result = generator.sync_to_notion(title, content, topic, user_prompt)
-
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
 
 def main():
     """启动服务器"""

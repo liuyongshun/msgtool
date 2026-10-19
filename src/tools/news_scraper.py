@@ -23,16 +23,16 @@ from typing import Any, Optional
 
 import httpx
 
-from utils.cache import get_cache
-from utils.parser import clean_text
-from utils.translator import translate_article_item, has_chinese
-from utils.logger import logger
-from utils.ai_filter import classify_titles_batch
-from models import ArticleItem, FetchResult, truncate_summary, classify_article_tag
-from config import get_config
-# from output import get_output_manager  # Skill 不需要 output 管理
+from ..utils.cache import get_cache
+from ..utils.parser import clean_text
+from ..utils.translator import translate_article_item, has_chinese
+from ..utils.logger import logger
+from ..utils.ai_filter import classify_titles_batch
+from ..models import ArticleItem, FetchResult, truncate_summary, classify_article_tag
+from ..config import get_config
+from ..output import get_output_manager
 
-# 支持的新闻源列表（用于MCP服务器）
+# 支持的新闻源列表
 NEWS_SOURCES = {
     "hackernews": "Hacker News - Tech news community"
 }
@@ -154,23 +154,26 @@ async def _fetch_hackernews(
     # 从配置获取 API URL
     base_url = source_config.api_base_url
 
-    # 从配置读取需要抓取的故事类型（默认只用 top，减少请求量）
-    configured_types = getattr(source_config, 'story_types', None) or ["top"]
+    # 从配置读取需要抓取的故事类型（读取 sources.json 中的 story_types，默认 top+new）
+    configured_types = getattr(source_config, 'story_types', None) or ["top", "new"]
     type_map = {"top": "topstories", "new": "newstories", "best": "beststories"}
     story_types = [
         (type_map[t], t) for t in configured_types if t in type_map
     ] or [("topstories", "top")]
-    
+
+    # 从配置读取每类最多抓取数量（fetch_limit.max，默认50）
+    fetch_per_type = source_config.fetch_limit.get("max", 50) if source_config.fetch_limit else 50
+
     async with httpx.AsyncClient(timeout=30.0) as client:
         try:
-            # 第一步：抓取三类列表的ID
+            # 第一步：抓取各类列表的ID
             all_story_data = []  # [(story_id, story_type), ...]
             
             for endpoint, story_type in story_types:
                 try:
                     response = await client.get(f"{base_url}/{endpoint}.json")
                     response.raise_for_status()
-                    story_ids = response.json()[:limit]  # 每类取前 limit 条（由 max_results 控制）
+                    story_ids = response.json()[:fetch_per_type]  # 按配置取条目数
                     
                     for sid in story_ids:
                         all_story_data.append((sid, story_type))
@@ -238,13 +241,8 @@ async def _fetch_hackernews(
             
             # 第三步：按发布时间过滤，仅对最近 N 天内的文章进行 LLM 处理
             config = get_config()
-            # 优先使用 HackerNews 配置中的 recent_days，否则使用 LLM 配置中的值
-            hn_recent_days = getattr(source_config, 'recent_days', None)
-            if hn_recent_days is None or hn_recent_days == 0:
-                llm_cfg = config.get_llm_config()
-                recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
-            else:
-                recent_days = max(1, int(hn_recent_days))
+            llm_cfg = config.get_llm_config()
+            recent_days = max(1, int(getattr(llm_cfg, "recent_days", 7) or 7))
             cutoff_dt = datetime.utcnow() - timedelta(days=recent_days)
             cutoff_ts = cutoff_dt.timestamp()
 
@@ -288,7 +286,7 @@ async def _fetch_hackernews(
 
             # 调用AI筛选
             logger.info(f"开始AI筛选 {len(title_batch)} 个标题（仅最近 {recent_days} 天）...")
-            classification_results = await classify_titles_batch(title_batch, batch_size=25)
+            classification_results = await classify_titles_batch(title_batch, batch_size=20)
             
             # 创建结果映射 {id: classification_result}
             result_map = {r["id"]: r for r in classification_results}
@@ -307,12 +305,14 @@ async def _fetch_hackernews(
                 story_info = story_map[temp_id]
                 filtered_story_data.append((temp_id, story_info, classification))
             
-            # 分批处理（Skill 不需要 output 管理，直接处理所有数据）
+            # 分批处理并增量输出
+            output_manager = get_output_manager()
             BATCH_SIZE = 20  # 每批处理20条新闻
             total_stories = len(filtered_story_data)
             total_batches = (total_stories + BATCH_SIZE - 1) // BATCH_SIZE
             
             ai_stories = []
+            output_file = None
             
             for batch_idx in range(total_batches):
                 start_idx = batch_idx * BATCH_SIZE
@@ -321,10 +321,7 @@ async def _fetch_hackernews(
                 
                 logger.info(f"处理批次 {batch_idx + 1}/{total_batches} ({len(batch_data)} 条新闻)...")
                 
-                # 第一步：准备所有需要翻译的数据
-                translation_tasks = []
-                story_data_list = []
-                
+                batch_items = []
                 for temp_id, story_info, classification in batch_data:
                     story = story_info["data"]
                     story_type = story_info["story_type"]
@@ -341,59 +338,54 @@ async def _fetch_hackernews(
                     else:
                         original_summary = original_title
                     
-                    # 准备翻译任务（并发执行）
+                    # 翻译标题和摘要
                     if source_config.translation_enabled:
-                        translation_tasks.append(translate_article_item(original_title, original_summary))
+                        translated_title, translated_summary = await translate_article_item(
+                            original_title,
+                            original_summary
+                        )
+                    else:
+                        translated_title = original_title
+                        translated_summary = original_summary
                     
-                    # 保存 story 数据，用于后续构建 ArticleItem
-                    story_data_list.append({
-                        "story": story,
-                        "story_type": story_type,
-                        "original_title": original_title,
-                        "original_summary": original_summary,
-                        "classification": classification
-                    })
-                
-                # 第二步：并发执行所有翻译任务
-                if source_config.translation_enabled and translation_tasks:
-                    translation_results = await asyncio.gather(*translation_tasks)
-                    # 将结果映射回对应的 story
-                    for i, (title, summary) in enumerate(translation_results):
-                        story_data_list[i]["translated_title"] = title
-                        story_data_list[i]["translated_summary"] = summary
-                else:
-                    # 不需要翻译，直接使用原文
-                    for data in story_data_list:
-                        data["translated_title"] = data["original_title"]
-                        data["translated_summary"] = data["original_summary"]
-                
-                # 第三步：构建 ArticleItem 列表
-                batch_items = []
-                for data in story_data_list:
-                    story = data["story"]
+                    # 创建标准化的 ArticleItem
                     article = ArticleItem(
-                        title=data["translated_title"],
-                        summary=data["translated_summary"],
+                        title=translated_title,
+                        summary=translated_summary,
                         source_url=story.get("url") or f"https://news.ycombinator.com/item?id={story.get('id')}",
                         published_date=datetime.fromtimestamp(
                             story.get("time", 0)
                         ).isoformat() if story.get("time") else None,
                         source_type="hackernews",
                         article_tag=classify_article_tag(
-                            title=data["original_title"],
-                            summary=data["original_summary"],
+                            title=original_title,
+                            summary=original_summary,
                             source_type="hackernews"
                         ),
                         author=story.get("by"),
                         score=story.get("score", 0),
                         comments_count=story.get("descendants", 0),
                         tags=[],
-                        story_type=data["story_type"],
-                        ai_score=data["classification"]["score"]
+                        story_type=story_type,
+                        ai_score=classification["score"]
                     )
                     batch_items.append(article)
                 
-                # Skill 不需要 output 管理，直接添加到结果列表
+                # 【增量输出】立即保存这一批
+                try:
+                    output_file = output_manager.append_items_batch(
+                        source_type="hackernews",
+                        items=batch_items,
+                        batch_info={
+                            "batch": batch_idx + 1,
+                            "total_batches": total_batches,
+                            "batch_size": len(batch_items)
+                        }
+                    )
+                    logger.info(f"✅ 批次 {batch_idx + 1}/{total_batches} 已保存到: {output_file.name}")
+                except Exception as save_error:
+                    logger.error(f"⚠️ 批次 {batch_idx + 1} 保存失败: {save_error}，继续处理...")
+                
                 ai_stories.extend(batch_items)
             
             # 按AI评分和原始评分综合排序

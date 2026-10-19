@@ -25,21 +25,19 @@ try:
     from .config import get_config
     from .output import get_output_manager
     from .utils.rsshub_manager import get_rsshub_manager
-    from .utils.wechat_topic_evaluator import get_wechat_topic_evaluator
 except ImportError:
     # 直接运行时的导入（从项目根目录）
     import sys
     import os
-    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-    from src.msgskill.tools.arxiv_fetcher import fetch_arxiv_papers, ARXIV_CATEGORIES
-    from src.msgskill.tools.news_scraper import fetch_ai_news
-    from src.msgskill.tools.rss_reader import fetch_rss_feeds
-    from src.msgskill.tools.github_fetcher import fetch_github_trending
-    from src.msgskill.utils.logger import logger
-    from src.msgskill.config import get_config
-    from src.msgskill.output import get_output_manager
-    from src.msgskill.utils.rsshub_manager import get_rsshub_manager
-    from src.msgskill.utils.wechat_topic_evaluator import get_wechat_topic_evaluator
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from src.tools.arxiv_fetcher import fetch_arxiv_papers, ARXIV_CATEGORIES
+    from src.tools.news_scraper import fetch_ai_news
+    from src.tools.rss_reader import fetch_rss_feeds
+    from src.tools.github_fetcher import fetch_github_trending
+    from src.utils.logger import logger
+    from src.config import get_config
+    from src.output import get_output_manager
+    from src.utils.rsshub_manager import get_rsshub_manager
 
 
 class MultiSourceScheduler:
@@ -239,19 +237,6 @@ class MultiSourceScheduler:
             
             if result.success:
                 logger.info(f"✅ HackerNews同步完成: {result.total_count}条新闻")
-
-                # 可选：根据配置决定是否自动同步到Notion
-                try:
-                    config_manager = get_config()
-                    notion_cfg = config_manager.get_notion_config() or {}
-                    auto_sync_cfg = notion_cfg.get("auto_sync", {})
-                    hn_auto = bool(auto_sync_cfg.get("hackernews", False))
-                    
-                    if hn_auto:
-                        self._sync_hackernews_items_to_notion(result.items)
-                except Exception as notion_error:
-                    logger.debug(f"HackerNews Notion自动同步检查失败: {notion_error}")
-
                 self.sync_stats["success_count"] += 1
             else:
                 logger.error(f"❌ HackerNews同步失败: {result.error}")
@@ -350,10 +335,6 @@ class MultiSourceScheduler:
                         
                         self.output_manager._write_json(output_file, existing_data)
                         
-                        # 同步新增的items到Notion
-                        if new_items:
-                            self._sync_rss_items_to_notion(new_items)
-                        
                         if errors_count > 0:
                             logger.warning(f"⚠️ RSS同步部分失败: 追加{total_items}条 (累计{total_count}条)，{errors_count}个源失败 | 输出: {output_file.name}")
                         else:
@@ -363,14 +344,6 @@ class MultiSourceScheduler:
                         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                         output_file = daily_dir / f"rss_{timestamp}.json"
                         self.output_manager._write_json(output_file, result)
-                        
-                        # 同步所有items到Notion
-                        all_items = []
-                        for feed_name, feed_data in result.get("feeds", {}).items():
-                            if isinstance(feed_data, dict):
-                                all_items.extend(feed_data.get("items", []))
-                        if all_items:
-                            self._sync_rss_items_to_notion(all_items)
                         
                         if errors_count > 0:
                             logger.warning(f"⚠️ RSS同步部分失败: {total_items}条内容，来自{feeds_count}个源，{errors_count}个源失败 | 输出: {output_file.name}")
@@ -389,135 +362,6 @@ class MultiSourceScheduler:
             logger.error(f"❌ RSS同步异常: {str(e)}")
             self.sync_stats["failed_sources"].append("rss")
     
-    def _sync_rss_items_to_notion(self, items: list) -> None:
-        """
-        将RSS items同步到Notion（受配置开关控制）
-        
-        Args:
-            items: RSS items列表（字典格式）
-        """
-        try:
-            # 根据配置判断是否开启 RSS 自动同步
-            config_manager = get_config()
-            notion_cfg = config_manager.get_notion_config() or {}
-            auto_sync_cfg = notion_cfg.get("auto_sync", {})
-            rss_auto = bool(auto_sync_cfg.get("rss", False))
-            
-            if not rss_auto:
-                logger.debug("RSS Notion自动同步已在配置中关闭，跳过同步")
-                return
-
-            try:
-                from .utils.notion_sync import get_notion_sync
-                from .models import ArticleItem
-            except ImportError:
-                from src.msgskill.utils.notion_sync import get_notion_sync
-                from src.msgskill.models import ArticleItem
-            
-            notion_sync = get_notion_sync()
-            if not notion_sync or not notion_sync.enabled:
-                return
-            
-            # 转换RSS items为ArticleItem
-            article_items = []
-            for item in items:
-                try:
-                    # RSS格式: {title, link, summary, published, author, tags, ai_score}
-                    article = ArticleItem(
-                        title=item.get("title", ""),
-                        summary=item.get("summary", "")[:300],  # 限制长度
-                        source_url=item.get("link", ""),
-                        published_date=item.get("published"),
-                        source_type="rss",
-                        article_tag=item.get("article_tag", "AI资讯"),
-                        author=item.get("author"),
-                        tags=item.get("tags", []),
-                        ai_score=item.get("ai_score")
-                    )
-                    article_items.append(article)
-                except Exception as e:
-                    logger.debug(f"跳过无效的RSS item: {e}")
-                    continue
-            
-            if article_items:
-                result = notion_sync.sync_items(article_items, skip_existing=True)
-                if result.get("synced", 0) > 0:
-                    logger.info(f"📝 已同步 {result['synced']} 条RSS内容到Notion")
-        except Exception as e:
-            logger.debug(f"RSS Notion同步失败: {e}")
-
-    def _sync_github_items_to_notion(self, items: list) -> None:
-        """
-        将GitHub items同步到Notion（受配置开关控制）
-        
-        items 可能是 ArticleItem 列表或 dict 列表
-        """
-        try:
-            try:
-                from .utils.notion_sync import get_notion_sync
-                from .models import ArticleItem
-            except ImportError:
-                from src.msgskill.utils.notion_sync import get_notion_sync
-                from src.msgskill.models import ArticleItem
-            
-            notion_sync = get_notion_sync()
-            if not notion_sync or not notion_sync.enabled:
-                return
-            
-            article_items = []
-            for item in items or []:
-                try:
-                    if isinstance(item, ArticleItem):
-                        article_items.append(item)
-                    elif isinstance(item, dict):
-                        article_items.append(ArticleItem(**item))
-                except Exception as e:
-                    logger.debug(f"跳过无效的GitHub item: {e}")
-                    continue
-            
-            if article_items:
-                result = notion_sync.sync_items(article_items, skip_existing=True)
-                if result.get("synced", 0) > 0:
-                    logger.info(f"📝 已同步 {result['synced']} 条GitHub项目到Notion")
-        except Exception as e:
-            logger.debug(f"GitHub Notion同步失败: {e}")
-
-    def _sync_hackernews_items_to_notion(self, items: list) -> None:
-        """
-        将HackerNews items同步到Notion（受配置开关控制）
-        
-        items 可能是 ArticleItem 列表或 dict 列表
-        """
-        try:
-            try:
-                from .utils.notion_sync import get_notion_sync
-                from .models import ArticleItem
-            except ImportError:
-                from src.msgskill.utils.notion_sync import get_notion_sync
-                from src.msgskill.models import ArticleItem
-
-            notion_sync = get_notion_sync()
-            if not notion_sync or not notion_sync.enabled:
-                return
-
-            article_items = []
-            for item in items or []:
-                try:
-                    if isinstance(item, ArticleItem):
-                        article_items.append(item)
-                    elif isinstance(item, dict):
-                        article_items.append(ArticleItem(**item))
-                except Exception as e:
-                    logger.debug(f"跳过无效的HackerNews item: {e}")
-                    continue
-
-            if article_items:
-                result = notion_sync.sync_items(article_items, skip_existing=True)
-                if result.get("synced", 0) > 0:
-                    logger.info(f"📝 已同步 {result['synced']} 条HackerNews内容到Notion")
-        except Exception as e:
-            logger.debug(f"HackerNews Notion同步失败: {e}")
-    
     async def sync_github(self, max_results: int = 20):
         """同步GitHub趋势项目"""
         logger.info(f"🐙 开始同步GitHub趋势 - 最多{max_results}个项目")
@@ -527,19 +371,6 @@ class MultiSourceScheduler:
             
             if result.success:
                 logger.info(f"✅ GitHub同步完成: {result.total_count}个趋势项目")
-                
-                # 可选：根据配置决定是否自动同步到Notion
-                try:
-                    config_manager = get_config()
-                    notion_cfg = config_manager.get_notion_config() or {}
-                    auto_sync_cfg = notion_cfg.get("auto_sync", {})
-                    github_auto = bool(auto_sync_cfg.get("github", False))
-                    
-                    if github_auto:
-                        self._sync_github_items_to_notion(result.items)
-                except Exception as notion_error:
-                    logger.debug(f"GitHub Notion自动同步检查失败: {notion_error}")
-                
                 self.sync_stats["success_count"] += 1
             else:
                 logger.error(f"❌ GitHub同步失败: {result.error}")
@@ -548,20 +379,6 @@ class MultiSourceScheduler:
         except Exception as e:
             logger.error(f"❌ GitHub同步异常: {str(e)}")
             self.sync_stats["failed_sources"].append("github")
-    
-    async def sync_wechat_topics(self):
-        """评估当日公众号选题（RSS + HackerNews 数据）"""
-        logger.info("📱 开始公众号选题评估任务...")
-        try:
-            evaluator = get_wechat_topic_evaluator()
-            result = await evaluator.evaluate()
-            selected = result.get("selected_count", 0)
-            total = result.get("total_evaluated", 0)
-            logger.info(f"✅ 公众号选题评估完成：共评估 {total} 条，筛选出 {selected} 条推荐选题")
-            self.sync_stats["success_count"] += 1
-        except Exception as e:
-            logger.error(f"❌ 公众号选题评估异常: {str(e)}")
-            self.sync_stats["failed_sources"].append("wechat_topics")
     
     def create_sync_job(self, source_name: str, sync_func):
         """创建同步任务包装器"""
@@ -613,8 +430,6 @@ class MultiSourceScheduler:
                     sync_func = lambda mr=max_results: self.sync_rss(mr)
                 elif source == "github":
                     sync_func = lambda mr=max_results: self.sync_github(mr)
-                elif source == "wechat_topics":
-                    sync_func = lambda: self.sync_wechat_topics()
                 
                 if sync_func:
                     # 为每个时间点创建一个任务
@@ -683,8 +498,6 @@ class MultiSourceScheduler:
                     tasks.append(self.sync_rss(max_results))
                 elif source == "github":
                     tasks.append(self.sync_github(max_results))
-                elif source == "wechat_topics":
-                    tasks.append(self.sync_wechat_topics())
         
         if tasks:
             await asyncio.gather(*tasks)

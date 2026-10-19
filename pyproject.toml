@@ -5,11 +5,11 @@ build-backend = "hatchling.build"
 [project]
 name = "msgskill"
 version = "0.1.0"
-description = "MCP Server for fetching AI news from multiple sources"
+description = "AI news aggregation: arXiv, HackerNews, RSS, and GitHub trending"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = ["mcp", "ai", "news", "scraper", "claude"]
+keywords = ["ai", "news", "scraper", "arxiv", "rss", "github"]
 authors = [
     { name = "Developer" }
 ]
@@ -38,11 +38,8 @@ dev = [
     "pytest-asyncio>=0.23.0",
 ]
 
-[project.scripts]
-msgskill = "msgskill.server:main"
-
 [tool.hatch.build.targets.wheel]
-packages = ["src/msgskill"]
+packages = ["src"]
 
 [tool.hatch.build.targets.sdist]
 include = [

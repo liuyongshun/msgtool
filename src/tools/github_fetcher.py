@@ -39,7 +39,7 @@ def _load_existing_github_items() -> Dict[str, ArticleItem]:
         Dict[str, ArticleItem]: 以source_url为key的已存在项目字典
     """
     # 获取output/github目录
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
+    github_output_dir = Path(__file__).parent.parent.parent / "output" / "github"
     github_output_dir.mkdir(parents=True, exist_ok=True)
     
     existing_items: Dict[str, ArticleItem] = {}
@@ -183,7 +183,7 @@ def _save_github_repos_to_file(repos: List[Dict], is_ai_project_map: Optional[Di
     Returns:
         Path: 保存的文件路径
     """
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
+    github_output_dir = Path(__file__).parent.parent.parent / "output" / "github"
     github_output_dir.mkdir(parents=True, exist_ok=True)
     
     output_file = github_output_dir / "github_projects.json"
@@ -364,7 +364,7 @@ def _save_github_items_to_file(items: List[ArticleItem], all_repos: Optional[Lis
     Returns:
         Path: 保存的文件路径
     """
-    github_output_dir = Path(__file__).parent.parent.parent.parent / "output" / "github"
+    github_output_dir = Path(__file__).parent.parent.parent / "output" / "github"
     github_output_dir.mkdir(parents=True, exist_ok=True)
     
     # 使用统一的文件名：github_projects.json

@@ -52,7 +52,7 @@ jobs:
 import asyncio
 import sys
 sys.path.insert(0, '.')
-from src.msgskill.tools.github_fetcher import fetch_github_trending
+from src.tools.github_fetcher import fetch_github_trending
 
 async def test():
     result = await fetch_github_trending(limit=5)
@@ -73,7 +73,7 @@ sys.exit(asyncio.run(test()))
 import asyncio
 import sys
 sys.path.insert(0, '.')
-from src.msgskill.tools.news_scraper import fetch_ai_news
+from src.tools.news_scraper import fetch_ai_news
 
 async def test():
     result = await fetch_ai_news(source='hackernews', limit=5)
@@ -94,7 +94,7 @@ sys.exit(asyncio.run(test()))
 import asyncio
 import sys
 sys.path.insert(0, '.')
-from src.msgskill.tools.arxiv_fetcher import fetch_arxiv_papers
+from src.tools.arxiv_fetcher import fetch_arxiv_papers
 
 async def test():
     result = await fetch_arxiv_papers(category='cs.AI', max_results=3)
