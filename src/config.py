@@ -94,7 +94,6 @@ class GlobalSettings:
     request_timeout: int = 30
     user_agent: str = "Mozilla/5.0 (compatible; MsgSkill/1.0)"
     scheduler: dict[str, Any] = field(default_factory=dict)
-    maintenance: dict[str, Any] = field(default_factory=dict)
 
 
 class ConfigManager:

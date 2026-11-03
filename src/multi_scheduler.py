@@ -308,11 +308,21 @@ class MultiSourceScheduler:
                                 existing_items = existing_feed.get("items", [])
                                 new_items = new_feed_data.get("items", [])
                                 
-                                # 去重（基于link）
-                                existing_links = {item.get("link") for item in existing_items}
+                                # 同 link 用新条目覆盖，避免旧的未翻译内容挡住新结果
+                                merged_by_link = {}
+                                for item in existing_items:
+                                    link = item.get("link")
+                                    if link:
+                                        merged_by_link[link] = item
+                                    else:
+                                        merged_by_link[id(item)] = item
                                 for item in new_items:
-                                    if item.get("link") not in existing_links:
-                                        existing_items.append(item)
+                                    link = item.get("link")
+                                    if link:
+                                        merged_by_link[link] = item
+                                    else:
+                                        merged_by_link[id(item)] = item
+                                existing_items = list(merged_by_link.values())
                                 
                                 # 更新items和计数
                                 existing_feed["items"] = existing_items

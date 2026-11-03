@@ -1,5 +1,4 @@
 {
-  "$schema": "./sources_schema.json",
   "version": "1.1.0",
   "last_updated": "2026-01-21",
   "sources": {
@@ -87,14 +86,14 @@
       "huggingface": {
         "enabled": true,
         "name": "Hugging Face Blog",
-        "url": "http://localhost:8878/huggingface/daily-papers",
+        "url": "https://huggingface.co/blog/feed.xml",
         "description": "Hugging Face官方博客",
         "category": "company_blog",
         "tags": [
           "AI工具",
           "技术博客"
         ],
-        "note": "RSS源不稳定，暂时禁用",
+        "note": "改用官方 blog feed；原 RSSHub daily-papers 本地返回 503",
         "ai_filter_enabled": false,
         "translation_enabled": true
       },
@@ -153,7 +152,7 @@
       "langchain_blog": {
         "enabled": true,
         "name": "LangChain Blog",
-        "url": "https://blog.langchain.dev/rss/",
+        "url": "https://blog.langchain.dev/rss.xml",
         "description": "LangChain官方博客",
         "category": "engineering",
         "tags": [
@@ -161,7 +160,8 @@
           "技术博客"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": true
+        "translation_enabled": true,
+        "note": "旧地址 /rss/ 已返回 HTML，改用 /rss.xml"
       },
       "techmeme": {
         "enabled": true,
@@ -200,16 +200,17 @@
         "translation_enabled": true
       },
       "huggingface_daily_papers": {
-        "enabled": true,
+        "enabled": false,
         "name": "Hugging Face Daily Papers",
-        "url": "https://huggingface.co/blog/feed.xml",
-        "description": "Hugging Face每日论文",
+        "url": "http://localhost:8878/huggingface/daily-papers",
+        "description": "Hugging Face每日论文（RSSHub）",
         "category": "papers",
         "tags": [
           "AI论文"
         ],
         "ai_filter_enabled": false,
-        "translation_enabled": true
+        "translation_enabled": true,
+        "note": "本地 RSSHub 路由 503；且此前误配成 blog feed，与 huggingface 重复。暂禁用"
       },
       "arstechnica": {
         "enabled": true,
@@ -246,7 +247,8 @@
           "AI资讯"
         ],
         "ai_filter_enabled": true,
-        "translation_enabled": true
+        "translation_enabled": true,
+        "note": "官方 /rss 现返回 HTML，本地 RSSHub 无可用路由，暂无法修复"
       },
       "huxiu": {
         "enabled": true,
@@ -401,15 +403,15 @@
         "translation_enabled": true
       },
       "tldr_tech": {
-        "enabled": false,
-        "name": "TLDR Tech",
-        "url": "https://incomplete.placeholder",
-        "description": "TLDR Tech每日科技/AI精华（Newsletter）",
+        "enabled": true,
+        "name": "TLDR AI",
+        "url": "https://tldr.tech/api/rss/ai",
+        "description": "TLDR AI 每日摘要（官方 RSS）",
         "category": "newsletter",
         "tags": [
           "AI资讯"
         ],
-        "note": "Newsletter类型，非RSS，需邮件流处理",
+        "note": "已改为官方 RSS；也可用 /api/rss/tech",
         "ai_filter_enabled": true,
         "translation_enabled": true
       }
@@ -587,17 +589,6 @@
     "max_fetch_limit": 50,
     "request_timeout": 30,
     "user_agent": "Mozilla/5.0 (compatible; MsgSkill/1.0; +https://github.com/msgskill)",
-    "maintenance": {
-      "log_retention_days": 7,
-      "cache_retention_days": 30,
-      "auto_cleanup": {
-        "enabled": true,
-        "log_cleanup_time": "03:00",
-        "cache_cleanup_time": "02:00",
-        "cache_cleanup_day": "sunday",
-        "note": "自动清理配置：日志每天3点清理，缓存每周日2点清理"
-      }
-    },
     "scheduler": {
       "enabled": true,
       "tasks": {

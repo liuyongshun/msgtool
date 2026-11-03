@@ -332,11 +332,9 @@ async def _fetch_hackernews(
                     if raw_text:
                         # 清理 HTML 标签和实体
                         original_summary = _clean_html(raw_text)
-                        # 如果 text 太长，截断到 500 字符
-                        if len(original_summary) > 500:
-                            original_summary = original_summary[:497] + "..."
                     else:
                         original_summary = original_title
+                    original_summary = truncate_summary(original_summary, 300)
                     
                     # 翻译标题和摘要
                     if source_config.translation_enabled:
@@ -344,6 +342,7 @@ async def _fetch_hackernews(
                             original_title,
                             original_summary
                         )
+                        translated_summary = truncate_summary(translated_summary, 300)
                     else:
                         translated_title = original_title
                         translated_summary = original_summary

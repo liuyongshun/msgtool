@@ -285,8 +285,7 @@ msgskill/
 │       └── preview.js        # 前端交互逻辑
 │
 ├── config/                   # 配置文件
-│   ├── sources.json          # 数据源配置
-│   └── sources_schema.json   # 配置JSON Schema
+│   └── sources.json          # 数据源配置
 │
 ├── output/                   # 输出数据目录
 │   ├── daily/               # 按日期存储（RSS/HackerNews/arXiv）
@@ -302,10 +301,9 @@ msgskill/
 ├── logs/                     # 日志文件
 │   └── scheduler.log         # 调度器日志
 │
-├── docs/                     # 文档目录
-├── .github/workflows/       # GitHub Actions工作流
 ├── start.sh                  # Linux/macOS 启动脚本
 ├── start.ps1                 # Windows PowerShell 启动脚本
+├── docker-compose.yml        # 本地 RSSHub
 ├── requirements.txt          # Python依赖
 └── pyproject.toml           # 项目配置
 ```
@@ -603,27 +601,16 @@ Remove-Item -Path .cache -Recurse -Force
 - arxiv: arXiv API
 - pydantic: 数据验证
 
-## 📖 文档
+## 🆕 最新更新
 
-- [配置说明](./docs/配置说明.md) - 完整的配置文件说明和最佳实践
-- [GitHub配置与使用说明](./docs/github配置与使用说明.md) - GitHub数据源详细说明
-- [RSS配置与使用说明](./docs/rss配置与使用说明.md) - RSS源配置和管理
-- [AI开发指南](./__docAI__/AI开发指南.md) - 开发者快速上手指南
-
-## 🆕 最新更新 (v3.4.0)
-
+- ✅ **继续精简**: 移除未使用的 `registry`、配置 schema、GitHub Actions、规格/文档目录；去掉无效 `maintenance` 配置
+- ✅ **RSS 修复**: LangChain/HF Blog/TLDR 地址修正；RSS 同 link 用新条目覆盖；HN summary 截断修复
 - ✅ **项目精简**: 移除未使用的 `getaimsg-skill` 与 `mcp_server`，主路径统一为定时任务 + 预览服务
-- ✅ **GitHub查询优化**: 移除关键词限制，改为按 star数/语言/时间 过滤，扩大有效数据量
-- ✅ **时间策略优化**: 定时任务 `recent_days=1`（仅当天）
-- ✅ **RSS缓存修复**: 修复翻译缓存key未区分 `translation_enabled` 导致的脏缓存问题
-- ✅ **时间过滤优化**: 新增 `llm.recent_days` 配置，仅处理最近N天内的数据，节省30-50% Token
 - ✅ **去掉 Notion 和公众号**: 只保留抓取、筛选和本地预览
-- ✅ **arXiv 少量关注**: 只启用 cs.AI / cs.LG / cs.CL，每类最多 8 篇
-- ✅ **GitHub数据库重构**: 单一文件架构，智能去重，增量AI筛选
-- ✅ **UI优化**: 两列布局，Toast提示
-- ✅ **arXiv优化**: 单日文件合并，动态更新，去重机制
+- ✅ **arXiv 少量关注**: 只启用 cs.AI / cs.LG / cs.CL
+- ✅ **调度/Token**: RSS/HN 降频，纯 AI 源关闭 AI filter
 
 ---
 
-**版本**: 3.4.0  
-**最后更新**: 2026-02-26
+**版本**: 3.5.0  
+**最后更新**: 2026-11-03
